@@ -1,29 +1,34 @@
-\chapter{Capitolato C1: Progetto Butterfly}
+\chapter{Capitolato C1: Butterfly}
 \section{Descrizione generale}
-Il primo capitolato propone lo sviluppo di un applicativo in grado di 
-raccogliere le segnalazioni provenienti da tutte le tecnologie coinvolte nei processi di Continuos Delivery e Continuos Integration, accentrandole e standardizzandole.
+Il primo capitolato prevede la realizzazione di una piattaforma in grado di gestire le segnalazioni provenienti dagli strumenti utilizzati nei processi di integrazione e rilascio continui in aziende di grandi dimensioni. 
 
 \section{Finalit\`a del progetto}
-
- 
-
-
-\section{Tecnologie interessate}
-\subsection{Tecnologie su cui sviluppare}
-\begin{itemize}
-	\item Java/NodeJs/Python%todo
-	\item Kafka%todo
-	\item Docker%todo
-	\item Api Rest%todo
-\end{itemize}
-
-\subsection{}
-\begin{itemize}
-	\item \textbf{Git}: Strumento usato per il versionamento del codice
-	\item \textbf{Jenkins}: Applicativo in grado di facilitare la Continuos Integration
+Viene proposto lo sviluppo di un applicativo in grado di raccogliere e smistare le segnalazioni provenienti da tecnologie coinvolte nei processi di Continuos Delivery e Continuos Integration.
+Viene delineata una distinzione tra componenti \texttt{Producer} e \texttt{Consumer}, dove i primi generano i messaggi, e i secondi sono i destinatari di quest'ultimi.\\
+\\
+\textbf{Producer}
+	\begin{itemize}
+	\item \textbf{GitLab}: Strumento utilizzato per il versionamento del codice
 	\item \textbf{SonarQube}: Utilizzato per l'analisi statica della qualità del codice
 	\item \textbf{Redmine}: Piattaforma web per la gestione generale di progetti di dimensioni considerevoli.
-\end{itemize}
+	\end{itemize}
+\textbf{Consumer}
+	\begin{itemize}	
+		\item \textbf{Telegram}
+		\item \textbf{Slack}
+		\item \textbf{Email}
+	\end{itemize}
+
+Lo scopo è fornire, attraverso un pattern \texttt{Publisher/Subscriber}, una piattaforma in grado di interagire con il maggior numero possibile di tali tecnologie. 	
+	
+	
+\section{Tecnologie interessate}
+	\begin{itemize}
+		\item Utilizzo dell'architettura \textbf{REST}(Representational State Transfer) per la strutturazione di un sistema distribuito.
+		\item A scelta \textbf{Java/NodeJs/Python} per lo sviluppo dei componenti applicativi.
+		\item \textbf{Kafka}: Sistema di messaggistica instantanea distribuito, ideale per la gestione di pattern \texttt{Publisher/Subscriber} sopra citati. 
+		\item \textbf{Docker} per la containerizzazione e gestione dell'infrastruttura
+	\end{itemize}
 
 
 \section{Conclusione}
