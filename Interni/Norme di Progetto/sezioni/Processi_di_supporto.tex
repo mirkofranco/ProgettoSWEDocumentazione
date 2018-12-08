@@ -1,0 +1,213 @@
+\section{Processi di Supporto}
+\subsection{Documentazione}
+Il processo di Documentazione stabilisce una serie di norme e convenzioni per la stesura dei documenti in modo da renderli formali, validi e coerenti.
+Un documento viene definito formale quando viene approvato dal \textit{Responsabile di progetto}.
+Ogni documento formale verrà classificato come interno o esterno con le seguenti differenze:
+\begin{itemize}
+	\item \textbf{Interno:} ad uso del gruppo ZeroSeven... 
+	\item \textbf{Esterno:} ad uso anche esterno (da sistemare). 
+	
+\end{itemize}
+
+\subsubsection{Nomenclatura}
+Tutti i documenti formali, esclusi i verbali, seguiranno questo sistema di nomenclatura:
+\begin{itemize}
+	\item \textbf{Nome del documento:} Il nome del documento deve essere scritto in \textit{Upper Camel Case$_{G}$}.
+	NormeDiProgetto per il documento corrente. 
+	\item \textbf{Versione:} La documentazione prodotta deve essere corredata del numero di versione secondo la seguente codifica:
+	
+	\textbf{v.X.Y.Z}
+	
+	dove:
+	\begin{itemize}
+		\item \textbf{X:} indica il numero crescente di uscite formali. Sarà compito del responsabile di progetto azzerare gli indici Y e Z all'uscita di ogni rilascio.
+		\item \textbf{Y:} indica lo stato del documento secondo la seguente numerazione:
+		\begin{enumerate}
+			\setcounter{enumi}{-1}
+			\item per la documentazione in fase di sviluppo;
+			\item per la documentazione in fase di verifica;
+			\item per la documentazione in fase di approvazione;
+			\item per la documentazione approvata e formale.
+		\end{enumerate}
+		\item \textbf{Z:} indica il numero crescente di modifiche apportate al documento. Ogni modifica deve essere riscontrabile con il diario delle modifiche. Deve essere azzerato quando il responsabile approva il documento. 	
+	\end{itemize}
+\end{itemize}
+
+I documenti verranno citati secondo il formato NomeDocumento v.X.Y.Z mentre i file saranno rinominati \texttt{NomeDocumento\_v.X.Y.Z.pdf} \\
+I verbali sia interni che esterni seguiranno la nomenclatura VerbaleUsoData.
+
+\subsubsection{Ciclo di vita documentazione}
+Ogni documento formale deve passare gli stadi di ”Sviluppo”, ”Verifica” e ”Approvato”.
+\begin{itemize}
+	\item \textbf{Sviluppo:} inizia con la creazione del documento e termina con la conclusione	della stesura di tutte le sue parti. In questa fase i Redattori aggiungono le parti assegnate tramite ticket;
+	
+	\item  \textbf{Verifica:} il documento entra nella fase di verifica dopo l’assegnazione da
+	parte del Responsabile. I Verificatori effettueranno le procedure di controllo
+	dello stesso.
+	Al termine del controllo in caso positivo il documento entra automaticamente
+	in fase di ”Approvazione”, altrimenti i loro riscontri vengono consegnati
+	al Responsabile di Progetto, che provvederà ad assegnare nuovamente il
+	documento ad un Redattore attraverso una nuova fase di Sviluppo;
+	
+	\item  \textbf{Approvazione:} l’approvazione di un documento coincide con il superamento
+	positivo da parte di un verificatore. 
+	Sarà onere del Responsabile decidere, dopo un attenta lettura, se approvare il documento per il rilascio esterno o se è necessario modificare il documento.
+	
+	\item  \textbf{Approvato:} il documento è pronto per il rilascio esterno.
+\end{itemize}
+
+
+\subsubsection{Struttura dei documenti}
+Al fine di uniformare la struttura grafica e di permettere ai membri del gruppo di concentrarsi solo sulla stesura del contenuto è stato creato un template \LaTeX.
+Ogni documento sarà composto da:
+\begin{itemize}
+	\item Frontespizio;
+	\item Diario delle modifiche;
+	\item Indice;
+	\item Contenuto delle pagine interne;
+	\item Elenco delle immagini/tabelle.
+\end{itemize}
+\paragraph{Frontespizio}
+La prima pagina di tutti i documenti dovrà essere così composta:
+\begin{itemize}
+	\item Titolo del progetto
+	\item Titolo del documento
+	\item Logo e nome del gruppo
+	\item Descrizione in forma tabellare contenente informazioni importanti quali:
+	\begin{itemize}
+		\item Versione del documento;
+		\item Data di Redazione;
+		\item Redatore;
+		\item Verifica;
+		\item Approvazione;
+		\item Uso;
+		\item Distribuzione;
+		\item Email di contatto.
+	\end{itemize}
+\end{itemize}
+
+\paragraph{Diario delle modifiche}
+Successivo al frontespizio deve essere sempre presente un registro riassuntivo delle modifiche del documento in forma tabellare contenente:
+\begin{itemize}
+\item Versione dopo la modifica;
+\item Data della pubblicazione della modifica;
+\item Breve descrizione della modifica effettuata;
+\item Autore della modifica;
+\item Ruolo.
+\end{itemize}
+\paragraph{Indice}
+Tutti i documenti, eccezion fatta per i verbali, devono contenere un indice il quale permette una visione macroscopica del contenuto del documento,
+permettendo una lettura ipertestuale e non necessariamente sequenziale.
+\paragraph{Struttura delle pagine interne}
+Le pagine interne dei documenti rispettano i canoni previsti dal template \LaTeX e oltre al contenuto interno sono composte da: \\
+
+**********************************************
+
+(Valutare se modificare il template)
+\begin{itemize}
+	\item \textbf{intestazione:}
+	\begin{itemize}
+		\item Logo del gruppo posto a sinistra;
+		\item Nome del capitolo corrente a destra. 
+	\end{itemize}
+	\item \textbf {Piè di pagina:}
+	\begin{itemize}
+	\item titolo del documento completo di versione, posto a sinistra;
+	\item numero di pagina posto a destra.
+	\end{itemize}
+
+\end{itemize}
+ ********************************************
+ 
+ \subsubsection{Elenco delle immagini/tabelle}
+ ...
+ 
+ ...
+\subsubsection{Norme tipografiche}
+Questa sezione racchiude le convenzioni riguardanti tipografia, ortografia e uno stile
+uniforme e disciplinato per tutti i documenti.
+\paragraph{Punteggiatura}
+La punteggiatura (chiamata anche interpunzione) è un sistema di segni che sono usati per iniziare, terminare o separare frasi, parti di frasi o parole. \\
+Ogni segno della punteggiatura va sempre unito all'ultima lettera della parola che lo precede e separato con uno spazio dalla lettera iniziale della parola che lo segue.
+le lettere maiuscole vanno poste solo dopo il punto, il punto di domanda, il punto esclamativo e all’inizio di ogni elemento di un elenco puntato, oltre che dove previsto dalla lingua italiana. È inoltre utilizzata l’iniziale maiuscola nel nome del team, del progetto, dei documenti, dei ruoli di progetto, delle fasi di
+lavoro e nelle parole Proponente e Committente.
+\paragraph{Formati}
+\begin{itemize}
+\item  Date: le date presenti nei documenti devono seguire la notazione definita dallo
+standard ISO(?) YYYY-MM-DD
+
+dove:
+\begin{itemize}
+	\item  YYYY: rappresenta l’anno scritto utilizzando quattro cifre;
+	\item MM: rappresenta il mese scritto utilizzando due cifre;
+	\item DD: rappresenta il giorno scritto utilizzando due cifre.
+\end{itemize}
+  \item  
+\end{itemize}
+
+\subsection{Attività}
+\paragraph{Analisi dei requisiti}
+Questo documento sarà redatto dagli \textit{Analisti$_{G}$} e dovrà includere
+\begin{itemize}
+	\item{\textbf{Casi d'uso:}}  devono essere descritti i casi d’uso con una descrizione testuale e
+	un diagramma rappresentativo dove utile per una più immediata comprensione;
+	\item{\textbf{Requisiti:}}  devono essere descritti i casi d’uso con una descrizione testuale e
+	un diagramma rappresentativo dove utile per una più immediata comprensione;
+	\item{\textbf{Tracciamento dei requisiti:}}  ogni requisito deve essere tracciato alle fonti da cui è stato generato.
+\end{itemize}
+\paragraph {Casi d'uso}
+Ogni caso d'uso è descritto dalla seguente struttura:
+\begin{itemize}
+\item Codice identificativo;
+\item Titolo;
+\item Diagramma UML;
+\item Attori primari;
+\item Attori secondari;
+\item Scopo e descrizione;
+\item Precondizione;
+\item Postcondizione;
+\item Flusso base degli eventi;
+\item Inclusioni;
+\item Estensioni;
+\end{itemize}
+Ogni caso d’uso è identificato da un codice, che segue il seguente formalismo: \\
+
+\textbf{ UC [codice padre].[codice livello]} \\ 
+
+Dove:
+\begin{itemize}
+\item{\textbf{ codice padre:}}  numero che identifica univocamente i casi d’uso;
+\item{\textbf{ codice livello:}}  numero progressivo che identifica i sottocasi. Può a sua volta includere altri livelli.
+\end{itemize}
+\paragraph{Requisiti}
+Ogni requisito è strutturato come segue:
+
+\begin{itemize}
+	\item Codice identificativo;
+	\item Descrizione;
+	\item Fonti;
+\end{itemize}
+Ogni requisito ha il seguente formalismo:\\
+
+\textbf{ R[Importanza][Tipologia][codice padre].[codice livello]} \\
+
+Dove:
+\begin{itemize}
+	\item \textbf{Importanza:} identifica uno dei seguenti gradi di necessità:
+	\begin{itemize}
+		\item \textbf{O:} requisito obbligatorio;
+		\item \textbf{D:} requisito desiderabile;
+		\item \textbf{F:} requisito facoltativo.
+		
+	\end{itemize}
+	\item \textbf{Tipologia:}  identifica uno dei seguenti tipi di requisito:
+	\begin{itemize}
+	\item 1: requisito funzionale;
+	\item 2: requisito prestazionale;
+	\item 3: requisito qualitativo;
+	\item 4: requisito progettuale.
+	
+	\end{itemize}
+	\item \textbf{codice padre:} numero che identifica in modo univoco i requisiti;
+	\item \textbf{codice livello:} numero progressivo che identifica i sottorequisiti e può a sua volta includere altri livelli.
+\end{itemize}
