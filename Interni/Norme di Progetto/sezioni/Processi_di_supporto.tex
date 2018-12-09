@@ -1,10 +1,10 @@
 \section{Processi di Supporto}
 \subsection{Documentazione}
-Il processo di Documentazione stabilisce una serie di norme e convenzioni per la stesura dei documenti in modo da renderli formali, validi e coerenti.
+Il processo di Documentazione stabilisce una serie di norme e convenzioni per la stesura dei documenti così da renderli formali, validi e coerenti.
 Un documento viene definito formale quando viene approvato dal \textit{Responsabile di progetto}.
-Ogni documento formale verrà classificato come interno o esterno con le seguenti differenze:
+Ogni documento formale verrà classificato come:
 \begin{itemize}
-	\item \textbf{Interno:} ad uso del gruppo ZeroSeven... 
+	\item \textbf{Interno:} documenti ad uso esclusivo del gruppo ZeroSeven, quali Norme di progetto e Studio di fattibilità.  
 	\item \textbf{Esterno:} ad uso anche esterno (da sistemare). 
 	
 \end{itemize}
@@ -160,7 +160,7 @@ dove:
 		\item Documenti: Il nome di un documento andrà scritto in corsivo (es. \textit{Norme di progetto}).
 	\end{itemize}
 	\item  \textbf{Grassetto:} il grassetto può essere utilizzato esclusivamente negli elenchi puntati per dare risalto al concetto sviluppato.
-	\item \textbf{\LaTeX:} Ogni riferimento a \LaTeX verrà scritto utilizzando il comando \texttt{\textbackslash LaTeX};
+	\item  \textbf{Sottolineato:} Non è previsto l'uso del testo sottolineato.
 	\end{itemize}
 \paragraph{Altre norme} 
 Le seguenti norme serviranno a rendere la stesura dei documenti un processo coerente (frase da rivedere!!!).
@@ -169,6 +169,7 @@ Le seguenti norme serviranno a rendere la stesura dei documenti un processo coer
 	\item \textbf{Riferimenti informativi:} Ogni riferimento a prodotti, guide, software,
 	libri esterno al progetto dovrà essere indicato tramite un’annotazione a piè di
 	pagina.
+	\item \textbf{\LaTeX:} Ogni riferimento a \LaTeX verrà scritto utilizzando il comando \texttt{\textbackslash LaTeX};
 	\item \textbf{Comandi \LaTeX:} sono stati realizzati dei comandi personalizzati al fine di evitare errori di battitura e unificare tutti i documenti facilitando il lavoro dei Redattori. (COMANDI ANCORA DA CREARE!!!)
 	*******************************
 	comandi che andrebbero creati... nome del gruppo, parola del glossario, nome del proponente e del committente, nomi dei documenti e altri che mi verranno in mente.
@@ -194,9 +195,10 @@ Le seguenti norme serviranno a rendere la stesura dei documenti un processo coer
 	Le immagini presenti all'interno dei documenti devono essere nel formato Scalable Vector Graphics (SVG). In questo modo si garantisce una maggior qualità dell'immagine in caso di ridimensionamento. Per consentire l’inclusione delle immagini nei documenti,
 	le immagini dovranno essere convertite nel formato PDF. Qualora non sia possibile
 	salvare le immagine in formato vettoriale è preferito il formato Portable Network
-	Graphics (PNG).
+	Graphics (PNG).
+
 	\end{itemize}
-\subsection{Attività}
+\subsubsection{Attività}
 \paragraph{Analisi dei requisiti}
 Questo documento sarà redatto dagli \textit{Analisti$_{G}$} e dovrà includere
 \begin{itemize}
@@ -206,7 +208,7 @@ Questo documento sarà redatto dagli \textit{Analisti$_{G}$} e dovrà includere
 	un diagramma rappresentativo dove utile per una più immediata comprensione;
 	\item{\textbf{Tracciamento dei requisiti:}}  ogni requisito deve essere tracciato alle fonti da cui è stato generato.
 \end{itemize}
-\paragraph {Casi d'uso}
+\subparagraph {Casi d'uso}
 Ogni caso d'uso è descritto dalla seguente struttura:
 \begin{itemize}
 \item Codice identificativo;
@@ -230,7 +232,7 @@ Dove:
 \item{\textbf{ codice padre:}}  numero che identifica univocamente i casi d’uso;
 \item{\textbf{ codice livello:}}  numero progressivo che identifica i sottocasi. Può a sua volta includere altri livelli.
 \end{itemize}
-\paragraph{Requisiti}
+\subparagraph{Requisiti}
 Ogni requisito è strutturato come segue:
 
 \begin{itemize}
@@ -262,3 +264,25 @@ Dove:
 	\item \textbf{codice padre:} numero che identifica in modo univoco i requisiti;
 	\item \textbf{codice livello:} numero progressivo che identifica i sottorequisiti e può a sua volta includere altri livelli.
 \end{itemize}
+\paragraph{Specifica tecnica}
+Questo documento sarà scritto dal Progettista e dovrà includere:
+\begin{itemize}
+\item \textbf{Diagrammi UML:}
+	\begin{itemize}
+	\item Diagrammi delle classi;
+	\item Diagrammi dei Package;
+	\item Diagrammi di attività;
+	\item Diagrammi di sequenza.
+	\end{itemize}
+\item \textbf{Tecnologie utilizzate:} devono essere descritte le tecnologie adottate specificandone l’utilizzo nel progetto, i vantaggi e gli svantaggi;
+\item \textbf{Design Pattern:}  devono essere descritti i design pattern utilizzati per realizzare l’architettura. Ogni design pattern deve essere accompagnato da una descrizione ed un diagramma, che ne esponga il significato e la struttura;
+\item \textbf{Tracciamento delle componenti:};
+\item \textbf{Tecnologie utilizzate};
+\textbf{PARTE DA COMPLETARE!!!}
+\end{itemize}
+
+\subsection{Verifica}
+
+\subsection{Validazione}
+\subsection{Strumenti}
+
