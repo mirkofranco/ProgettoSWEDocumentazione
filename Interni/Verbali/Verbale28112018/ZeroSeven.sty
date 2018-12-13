@@ -1,0 +1,130 @@
+%-------------------INIZIO pacchetti utilizzati -----------------------------------------
+\RequirePackage[T1]{fontenc}	% codifica dei font in uscita
+\RequirePackage[utf8]{inputenc} % codifica dei font in uscita
+\RequirePackage[italian]{babel} % lingua del documento
+\RequirePackage{graphicx}		% pacchetto per la grafica
+\RequirePackage{url}			% per scrivere gli indirizzi Internet
+\RequirePackage{enumerate} % liste  lettere
+\RequirePackage{subfiles}
+\RequirePackage[bookmarks=true,hyperfootnotes=false,colorlinks=true]{hyperref}
+\RequirePackage{fancyhdr}
+
+\RequirePackage{longtable}
+\RequirePackage{tabularx}
+\RequirePackage{booktabs}
+\RequirePackage{appendix}
+\RequirePackage[official]{eurosym} % per riprodurre il simbolo €
+\RequirePackage{caption}
+\RequirePackage[table]{xcolor}
+\RequirePackage{tabu}
+
+
+\captionsetup{tableposition=top,figureposition=bottom,font=small}
+\captionsetup{format=hang,labelfont={sf,bf}}
+\captionsetup[table]{position=bottom}
+\newcolumntype{C}{>{\centering\arraybackslash}X} % nell'ambiente tabularx è possibile usare C invece di X per centrare
+\renewcommand{\arraystretch}{1.27}  % Aumenta il padding delle tabelle
+
+%-------------------FINE pacchetti utilizzati --------------------------------------------
+
+%-------------------INIZIO stile intestazioni e piè di pagina -----------------------------------------
+\newcommand{\intestazioni}[1]{
+\fancypagestyle{myfront}{
+		\hypersetup{
+				colorlinks=true,
+				linkcolor=black,
+		}
+		\pagenumbering{Roman}
+		\fancyhf{}
+		\lhead{Verbale interno del 2018-11-28}
+		\rhead{#1}
+		\cfoot{\thepage~di \pageref{LastFrontPage}}
+		\renewcommand{\headrulewidth}{0.4pt}
+		\renewcommand{\footrulewidth}{0.4pt}
+	}
+
+	
+	\fancypagestyle{mymain}{
+		\hypersetup{
+				colorlinks=true,
+				linkcolor=blue,
+				anchorcolor=black,
+				citecolor=black,
+				urlcolor=blue,
+		}
+		\pagenumbering{arabic}
+		\fancyhf{}
+		\lhead{Verbale interno del 2018-11-28}
+		\rhead{#1}
+		\cfoot{
+			\hypersetup{
+				colorlinks=true,
+				linkcolor=black,
+			}
+			\thepage~di \pageref{LastPage}
+		}
+		\renewcommand{\headrulewidth}{0.4pt}
+		\renewcommand{\footrulewidth}{0.4pt}
+	}
+
+}
+%-------------------FINE stile intestazioni e piè di pagina -----------------------------------------
+
+
+%-------------------INIZIO comandi personalizzati-----------------------------------------
+
+\newcommand{\mail}[1]{\href{mailto:#1}{\texttt{#1}}}
+\newcommand{\mailleaf}{\mail{zerosevenswe@gmail.com}}
+
+
+
+
+
+
+
+\newcommand{\frmdate}[3]{#3-#2-#1}
+\newcommand{\frmtime}[2]{#1:#2}
+\newcommand{\frmURI}[1]{{\color{blue}\url{#1}}}
+\newcommand{\frmspath}[1]{\texttt{#1}}
+\newcommand{\frmrole}[1]{\textit{#1}}
+\newcommand{\frmdoc}[1]{\textit{“#1”}}
+\newcommand{\frmfile}[1]{\texttt{“#1”}}
+\newcommand{\frmrev}[1]{\textbf{#1}}
+\newcommand{\frmphase}[1]{\textbf{#1}}
+
+\newcommand{\progetto}{\textit{MegAlexa}}
+
+%-------------------INIZIO creazione subsubparagraph--------------------------------------
+\makeatletter
+\newcounter{subsubparagraph}[subparagraph]
+\def\toclevel@subsubparagraph{6}
+\renewcommand\thesubsubparagraph{%
+  \thesubparagraph.\@arabic\c@subsubparagraph}
+\newcommand\subsubparagraph{%
+  \@startsection{subsubparagraph}    % counter
+    {6}                              % level
+    {\parindent}                     % indent
+    {3.25ex \@plus 1ex \@minus .2ex} % beforeskip
+    {-1em}                           % afterskip
+    {\normalfont\normalsize\bfseries}}
+\newcommand\l@subsubparagraph{\@dottedtocline{6}{13.5em}{5em}}
+\newcommand{\subsubparagraphmark}[1]{}
+\setcounter{tocdepth}{6}
+\setcounter{secnumdepth}{6} % aggiunge contatore ai paragrafi
+\makeatother
+%-------------------FINE creazione subsubparagraph--------------------------------------
+
+\newcommand{\logo}{ 
+	\vspace{1.5cm}
+	{\includegraphics[height=10em]{images/logo_home} \DeclareGraphicsExtensions{.png}\par}
+	\vspace{2cm}
+	%{\includegraphics[scale=0.7]{images/logo_home} \DeclareGraphicsExtensions{.png}\par}
+	%\vspace{2cm}
+	%\vfill \vfill
+	%\texttt{zerosevenswe@gmail.com}	 
+}
+
+
+%-------------------FINE comandi personalizzati-----------------------------------------
+
+\endinput
