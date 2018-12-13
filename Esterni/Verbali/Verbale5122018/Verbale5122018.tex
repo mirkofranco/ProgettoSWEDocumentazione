@@ -14,19 +14,19 @@
 	{\huge\bfseries MegAlexa\par}
 	Arricchitore di skill di Amazon Alexa
 	\line(1,0){350} \\
-	{\scshape\LARGE Verbale 5-12-2018 \par}
+	{\scshape\LARGE Verbale Esterno del 5-12-2018 \par}
 	\vspace{1cm}
 	{\scshape Gruppo ZeroSeven \par}
 	\logo
 	%devono essere compilati questi campi ogni volta
 	\begin{tabular}{c|c}
-		{\hfill \textbf{Versione}} 			& 0.0.2				\\
+		{\hfill \textbf{Versione}} 			& 1.0.0				\\
 		{\hfill\textbf{Data Redazione}} 	& 8-12-2018		\\ 
 		{\hfill\textbf{Redazione}} 			&  		Matteo Depascale			\\ 
-		{\hfill\textbf{Verifica}} 				&  				\\ 
-		{\hfill\textbf{Approvazione}} 		&  			\\ 
+		{\hfill\textbf{Verifica}} 				&  		Bianca Ciuche		\\ 
+		{\hfill\textbf{Approvazione}} 		&  		Mirko Franco	\\ 
 		{\hfill\textbf{Uso}} 					& 	Esterno	\\ 
-		{\hfill\textbf{Distribuzione}} 			& 			Prof. Tullio Vardanega \\ & Prof. Riccardo Cardin \\ & zero12 - Innovation Company \\ & Gruppo ZeroSeven		\\ 
+		{\hfill\textbf{Distribuzione}} 			& 			Prof. Tullio Vardanega \\ & Prof. Riccardo Cardin \\ & Zero12 - Innovation Company \\ & Gruppo ZeroSeven		\\ 
 		{\hfill\textbf{Email di contatto}} & zerosevenswe@gmail.com \\
 	\end{tabular}
 \end{titlepage}
@@ -49,6 +49,10 @@
 			\hline
 			0.0.2 & 2018-12-8 & Stesura verbale & Matteo Depascale & Verificatore \\
 			\hline
+			0.0.3 & 2018-12-11 & Verifica con esito positivo & Bianca Ciuche & Verificatore \\
+			\hline
+			1.0.0 & 2018-12-13 & Approvazione per Revisione dei Requisiti & Mirko Franco & Responsabile \\
+			\hline
 		\end{tabularx}
 		\caption{Diario delle modifiche}
 	\end{table}
@@ -61,10 +65,10 @@
 	
 	\section{Informazioni sulla riunione}
 	\subsection{Motivo della riunione}
-	La riunione è stata convocata attraverso l'invio di una mail all'azienda zero12 per avere un quadro più completo del capitolato e per ottenere delle delucidazioni su argomenti poco chiari. \\
+	La riunione è stata convocata attraverso l'invio di una mail all'azienda Zero12 per avere un quadro più completo del capitolato e per ottenere delle delucidazioni su argomenti poco chiari. \\
 	Di seguito vengono riportate le informazioni dell'incontro:
 	\begin{itemize}
-		\item \textbf{Luogo e data}: sede dell'azienda \textbf{zero12}, Mercoledì 5 Dicembre 2018
+		\item \textbf{Luogo e data}: sede dell'azienda \textbf{Zero12}, Mercoledì 5 Dicembre 2018
 		\item \textbf{Ora di inizio}: 15:00
 		\item \textbf{Ora di fine}: 16:00
 		\item \textbf{Partecipanti}:  
@@ -73,6 +77,7 @@
 		\item Mirko Franco
 		\item Andrea Deidda
 		\item Matteo Depascale
+		\item Sig. Stefano Dindo
 		\end{itemize}
 	\end{itemize}
 
@@ -115,10 +120,10 @@
 
 	\subsection{Che cosa si intende per \textit{Voice Dialog Flow}?}
 	E' un documento (di testo) di \textit{story telling} che può essere visto come una chat messaggio tra l'utente che interagisce e \textit{Alexa} che risponde. \\
-	Questo argomento verrà spiegato più in dettaglio durante la lezione del 14 Dicembre.Dovrà essere incluso nel documento dell'\textbf{Analisi dei Requisiti}.
+	Questo argomento verrà spiegato più in dettaglio durante la lezione del 14 Dicembre.Dovrà essere incluso nel documento \textbf{Analisi dei Requisiti}.
 	
 	\subsection{Schema di basi di dati da utilizzare?}
-	Si consiglia di usare come \textit{NoSQL}: \textbf{dynamodb} piuttosto che \textbf{MongoDB}, entrambi utilizzano \textit{Jason}. Essendo entrambi i database documentali, si dovrà spiegare la struttura del documento che andremo a fare a supporto del progetto. Oppure si potrà valutare l'opzione di \textbf{Amazon Aurora Serverless} utilizzando quindi un \textit{MySQL}.
+	Si consiglia di usare come \textit{NoSQL}: \textbf{dynamodb} piuttosto che \textbf{MongoDB}, entrambi utilizzano \textit{JSON}. Essendo entrambi i database documentali, si dovrà spiegare la struttura del documento che andremo a fare a supporto del progetto. Oppure si potrà valutare l'opzione di \textbf{Amazon Aurora Serverless} utilizzando quindi un database relazionale.
 	
 	\subsection{I documenti devono essere redatti in Inglese?}
 	Non è necessario, però i commenti del codice andranno fatti in inglese.
@@ -139,8 +144,8 @@
 	\end{itemize}
 	
 	\subsection{Principali \textit{tool} da utilizzare?}
-	L'azienda zero12 utilizza \textit{CodeCommit}, \textit{CodePIpeline}, \textit{CodeDeploy} per quanto riguarda \textit{Amazon Web Services}. \\
-	Sarà inoltre possibile utilizzare servizi che al gruppo \textit{ZeroSeven} sono più conosciuti in quanto questi servizi non sono oggetto di valutazione, in caso contrario l'azienda \textbf{zero12} fornirà servizi di formazioni in merito.
+	L'azienda Zero12 utilizza \textit{CodeCommit}, \textit{CodePipeline}, \textit{CodeDeploy} per quanto riguarda \textit{Amazon Web Services}. \\
+	Sarà inoltre possibile utilizzare servizi che al gruppo \textit{ZeroSeven} sono più conosciuti in quanto questi servizi non sono oggetto di valutazione, in caso contrario l'azienda \textbf{Zero12} fornirà servizi di formazioni in merito.
 	
 	\subsection{Quali strumenti verranno messi a disposizione?}
 	Verrà messa a disposizione una \textit{repository} dove caricare il codice sorgente, oppure potrà essere concordato l'utilizzo di \textit{GitHub}. \\
