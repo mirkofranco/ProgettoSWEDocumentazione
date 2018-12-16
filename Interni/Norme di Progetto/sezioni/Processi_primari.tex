@@ -54,6 +54,13 @@ Ogni caso d'uso deve presentare i seguenti campi:
 	\item Flusso principale degli eventi
 \end{itemize}
 
+\subparagraph{Diagrammi UML}
+Per la stesura dei diagrammi UML vengono adottate le seguenti convenzioni:
+\begin{itemize}
+	\item \textbf{Versione:} lo standard utilizzato per i grafici UML è la \textit{v2.0}
+	\item \textbf{Lingua:} la lingua utilizzata è l'italiano
+\end{itemize}
+
 \subparagraph{Codice identificativo CU}
 Ogni caso d'uso deve avere la seguente nomenclatura:
 
@@ -63,20 +70,107 @@ Ogni caso d'uso deve avere la seguente nomenclatura:
 dove:
 \begin{itemize}
 	\item \textbf{UC:} Use Case
-	\item \textbf{{XX}:} iniziali dell'attore primario
+	\item \textbf{{XX}:} numero che identifica i casi d'uso.
 	\item \textbf{{YY}:} numero progressivo che identifica i sottocasi, esso può a sua volta includere altri sottocasi.
 \end{itemize}
 
 \subparagraph{Requisiti}
+Ogni requisito deve presentare i seguenti campi:
+\begin{itemize}
+	\item Codice identificativo
+	\item Descrizione
+	\item Fonti
+\end{itemize}
+
 \subparagraph{Codice identificativo requisiti}
-\paragraph{Progettazione Scopo - Aspettative - Descrizione}
+Ogni requisito deve avere la seguente nomenclatura:
+\begin{center}
+	\textbf{R$\Bigl\{$A$\Bigr\}$$\Bigl\{$B$\Bigr\}$$\Bigl\{$XX$\Bigr\}$-$\Bigl\{$YY$\Bigr\}$}
+\end{center}
+dove:
+\begin{itemize}
+	\item \textbf{A:} corrisponde ad uno dei seguenti requisiti:
+	\begin{itemize}
+		\item 1: funzionale
+		\item 2: di qualità
+		\item 3: di prestazione
+		\item 4: di vincolo
+	\end{itemize}
+	\item \textbf{B:} corrisponde ad uno dei seguenti requisiti:
+	\begin{itemize}
+		\item O: obbligatorio
+		\item F: facoltativo
+		\item D: desiderabile
+	\end{itemize}
+	\item \textbf{{XX}:} numero che identifica i requisiti.
+	\item \textbf{{YY}:} numero progressivo che identifica i sottocasi, esso può a sua volta includere altri sottocasi.
+\end{itemize}
+
+\paragraph{Progettazione}
+La progettazione deve poter dimostrare che tutti i requisiti specificati nell'\textit{Analisi dei Requisiti} siano rispettati. Per far ciò c'è bisogno della stesura dei seguenti documenti:
+\begin{itemize}
+	\item Specifica tecnica
+	\item Definizione di Prodotto
+\end{itemize}
+
 \subparagraph{Specifica tecnica}
+Contiene le specifiche riguardanti la progettazione ad alto livello del prodotto e delle sue componenti, inoltre descrive i diagrammi UML utilizzati per la realizzazione dell'architettura e i test di verifica. Il documento deve quindi includere:
+\begin{itemize}
+	\item \textbf{Diagrammi UML:}
+	\begin{itemize}
+		\item Diagrammi delle classi
+		\item Diagrammi dei package
+		\item Diagrammi di attività
+		\item Diagrammi di sequenza
+	\end{itemize}
+	\item \textbf{Design pattern:} devono essere specificati tutti i \glossario{design pattern} utilizzati e la scelta di questi deve essere giustificata. 
+	\item \textbf{Tracciamento delle componenti:} ogni requisito deve riferirsi al componente che lo soddisfa.
+	\item \textbf{Test di integrazione:} vengono definite delle classi di verifica per far si che ogni componente del sistema funzioni correttamente.
+\end{itemize}
+
 \subparagraph{Definizione di prodotto}
-\paragraph{Codifica Scopo - Aspettative - Descrizione}
+Descrive nel dettaglio la progettazione, integrando il contenuto della \textit{Specifica tecnica}. Inoltre specifica le definizioni delle classi e i diagrammi UML relativi e i test necessari alla verifica. Il documento deve quindi includere:
+\begin{itemize}
+	\item \textbf{Diagrammi UML:}
+	\begin{itemize}
+		\item Diagrammi delle classi
+		\item Diagrammi di attività
+		\item Diagrammi di sequenza
+	\end{itemize}
+	\item \textbf{Definizione delle classi:} ogni classe deve essere descritta in maniera esaustiva.
+	\item \textbf{Tracciamento delle classi:} ogni requisito deve essere tracciato in modo da garantire che ogni classe ne soddisfi almeno uno e che sia possibile risalire alle classi a esso associate.
+	\item \textbf{Test di unità:} si definiscono dei test di unità volti a verificare che il sistema funzioni nella maniera corretta.
+\end{itemize}
+
+\paragraph{Codifica}
 \subparagraph{Stile di codifica}
+Vengono elencate le norme alle quali i \textit{Programmatori} devono attenersi durante l'attività di programmazione e implementazione.
+\begin{itemize}
+	\item \textbf{Indentazione:} viene richiesto l'utilizzo di esattamente una tabulazione.
+	\item \textbf{Parentesi:} devono essere aperte utilizzando il metodo \textit{inline}, ovvero iniziano nella stessa riga del costrutto, inoltre blocchi di codice vanno racchiusi tra parentesi graffe.
+	\item \textbf{Univocità dei nomi:} il nome delle classi, dei metodi e delle variabili deve essere il più esplicativo possibile al fine di garantire una maggior comprensione.
+	\item \textbf{Nomi delle costanti:} la definizione delle costanti deve essere fatta utilizzando solo lettere maiuscole.
+	\item \textbf{Nomi delle classi:} il nome delle classi deve iniziare con la lettera maiuscola.
+	\item \textbf{Nomi dei metodi:} il nome dei metodi deve iniziare con la lettera minuscola, se sono composti da più parole allora le parole successive iniziano con la lettera maiuscola.
+	\item \textbf{Lingua:} la lingua utilizzata è l'inglese, sia per i nomi delle classi, dei metodi e delle variabili, sia per i commenti del codice scritto.
+\end{itemize}
+
 \subparagraph{Intestazione}
+L'intestazione di ogni file deve essere scritta nella seguente maniera: \\
+/$^{*}$\\
+$^{*}$ File: nome del file \\
+$^{*}$ Version: versione del file \\
+$^{*}$ Date: data di creazione del file \\
+$^{*}$ Author: nome di crea e successivamente di chi modifica il file \\
+$^{*}$ \\
+$^{*}$ License: tipo di licenza \\
+$^{*}$ \\
+$^{*}$ History: registro delle modifiche \\
+$^{*}$ Author || Date || Description \\
+$^{*}$ \\
+$^{*}$/ 
 \subparagraph{Versionamento}
-\subparagraph{Ricorsione}
+
 \paragraph{Strumenti}
 \subparagraph{Da definire}
 \subparagraph{Da definire}
