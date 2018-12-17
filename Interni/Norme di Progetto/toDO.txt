@@ -1,0 +1,66 @@
+﻿SEZIONI DA SCRIVERE COMPLETAMENTE***************************************
+
+1.4 riferimenti
+
+	1.4.1 Informativi
+	1.4.2 Normativi
+
+
+
+	2.1.1 Attività
+		 ̶2̶.̶1̶.̶1̶.̶1̶ ̶S̶t̶u̶d̶i̶o̶ ̶d̶i̶ ̶f̶a̶t̶t̶i̶b̶i̶l̶i̶t̶à̶		
+		2.1.1.2 Piano di Progetto
+		2.1.1.3 Piano di Qualifica
+
+	2.2.1 Attività
+
+		2.2.1.1 Analisi dei requisiti Scopo - Aspettative-Descrizione
+			2.2.1.1.1 Casi d’uso
+			2.2.1.1.2 Codice identificativo UC
+			2.2.1.1.3 Requisiti
+			2.2.1.1.4 Codice identificativo requisiti
+
+		2.2.1.2
+		Progettazione Scopo - Aspettative - Descrizione
+			2.2.1.2.1 Specifica tecnica
+			2.2.1.2.2 Definizione di prodotto
+		
+		2.2.1.3 Codifica Scopo - Aspettative - Descrizione
+			2.2.1.3.1 Stile di codifica
+			2.2.1.3.2 Intestazione
+			2.2.1.3.3 Versionamento
+			2.2.1.3.4 Ricorsione
+
+		2.2.1.4 Strumenti
+			2.2.1.4.1 Da definire
+			2.2.1.4.2 Da definire
+			2.2.1.4.3 Da definire
+
+
+	3.1.4 Elenco delle immagini/tabelle
+
+3.2 Verifica
+3.3 Validazione
+3.4 Strumenti
+
+	4.1.1.7 Validatore
+
+4.2 Procedure
+	4.2.1 Gestione delle comunicazioni
+		4.2.1.1 Comunicazioni interne
+		4.2.1.2 Comunicazioni esterne
+	4.2.2 Gestione degli incontri
+		4.2.2.1 Incontri interni
+		4.2.2.2 Incontri esterni
+	4.2.3 Gestione degli strumenti di coordinamento
+
+SEZIONI DA COMPLETARE*************************************************
+
+3.1 Documentazione
+
+		3.1.3.4 Struttura delle pagine interne
+		3.1.5.4 Altre norme (in vari punti)
+
+		3.1.6.2 Specifica tecnica
+
+
