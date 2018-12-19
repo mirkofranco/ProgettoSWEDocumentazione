@@ -1,0 +1,46 @@
+\documentclass[a4paper,12pt]{book}
+
+\usepackage{ZeroSeven}
+
+\titlepage{}
+
+\author{Ludovico Brocca}
+\date{26-11-2018}
+\intestazioni{\includegraphics[scale=0.3]{images/logo_intestazione}}
+\pagestyle{myfront}
+\begin{document}
+\begin{titlepage}
+	\centering
+	{\huge\bfseries MegAlexa\par}
+	Arricchitore di skill di Amazon Alexa
+	\line(1,0){350} \\
+	{\scshape\LARGE Analisi Dei Requisiti \par}
+	\vspace{1cm}
+	{\scshape Gruppo ZeroSeven \par}
+	\logo
+	%devono essere compilati questi campi ogni volta
+	\begin{tabular}{c|c}
+		{\hfill \textbf{Versione}} 			& 0.0.1				\\
+		{\hfill\textbf{Data Redazione}} 	& 19-12-2018		\\ 
+		{\hfill\textbf{Redazione}} 			&  		Ludovico Brocca			\\ 
+		{\hfill\textbf{Verifica}} 				&  	Nome Cognome			\\ 
+		{\hfill\textbf{Approvazione}} 		&  		Nome Cognome			\\ 
+		{\hfill\textbf{Uso}} 					& 		Esterno		\\ 
+		{\hfill\textbf{Distribuzione}} 			& 			Prof. Tullio Vardanega \\ & Prof. Riccardo Cardin \\ & Gruppo ZeroSeven		\\ 
+		{\hfill\textbf{Email di contatto}} & zerosevenswe@gmail.com \\
+	\end{tabular}
+\end{titlepage}
+	
+
+	
+	\label{LastFrontPage}
+	\newpage	
+	\input{tabella_modifiche}
+	\pagestyle{mymain}
+	\tableofcontents
+	\input{sezioni/introduzione}
+	\input{sezioni/descrizioneGenerale}
+	\input{sezioni/casiUso}
+	\label{LastPage}
+
+\end{document}
