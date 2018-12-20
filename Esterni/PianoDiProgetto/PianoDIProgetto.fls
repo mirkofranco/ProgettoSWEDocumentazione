@@ -185,16 +185,20 @@ INPUT images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1440.tfm
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1440.tfm
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
 INPUT pianificazione.tex
 INPUT pianificazione.tex
 INPUT images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
 INPUT images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
-INPUT suddivisione_lavoro.tex
-INPUT suddivisione_lavoro.tex
 INPUT images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT suddivisione_lavoro.tex
+INPUT suddivisione_lavoro.tex
 INPUT images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
 INPUT prospetto_economico.tex
