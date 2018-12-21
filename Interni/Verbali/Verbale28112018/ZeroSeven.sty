@@ -29,32 +29,32 @@
 
 %-------------------INIZIO stile intestazioni e piè di pagina -----------------------------------------
 \newcommand{\intestazioni}[1]{
-\fancypagestyle{myfront}{
+	\fancypagestyle{myfront}{
 		\hypersetup{
-				colorlinks=true,
-				linkcolor=black,
+			colorlinks=true,
+			linkcolor=black,
 		}
 		\pagenumbering{Roman}
 		\fancyhf{}
-		\lhead{Verbale interno del 2018-11-28}
+		\lhead{Verbale interno 2018-11-28}
 		\rhead{#1}
 		\cfoot{\thepage~di \pageref{LastFrontPage}}
 		\renewcommand{\headrulewidth}{0.4pt}
 		\renewcommand{\footrulewidth}{0.4pt}
 	}
-
+	
 	
 	\fancypagestyle{mymain}{
 		\hypersetup{
-				colorlinks=true,
-				linkcolor=blue,
-				anchorcolor=black,
-				citecolor=black,
-				urlcolor=blue,
+			colorlinks=true,
+			linkcolor=black,
+			anchorcolor=black,
+			citecolor=black,
+			urlcolor=blue,
 		}
 		\pagenumbering{arabic}
 		\fancyhf{}
-		\lhead{Verbale interno del 2018-11-28}
+		\lhead{Verbale interno 2018-11-28}
 		\rhead{#1}
 		\cfoot{
 			\hypersetup{
@@ -66,7 +66,7 @@
 		\renewcommand{\headrulewidth}{0.4pt}
 		\renewcommand{\footrulewidth}{0.4pt}
 	}
-
+	
 }
 %-------------------FINE stile intestazioni e piè di pagina -----------------------------------------
 
@@ -99,14 +99,14 @@
 \newcounter{subsubparagraph}[subparagraph]
 \def\toclevel@subsubparagraph{6}
 \renewcommand\thesubsubparagraph{%
-  \thesubparagraph.\@arabic\c@subsubparagraph}
+	\thesubparagraph.\@arabic\c@subsubparagraph}
 \newcommand\subsubparagraph{%
-  \@startsection{subsubparagraph}    % counter
-    {6}                              % level
-    {\parindent}                     % indent
-    {3.25ex \@plus 1ex \@minus .2ex} % beforeskip
-    {-1em}                           % afterskip
-    {\normalfont\normalsize\bfseries}}
+	\@startsection{subsubparagraph}    % counter
+	{6}                              % level
+	{\parindent}                     % indent
+	{3.25ex \@plus 1ex \@minus .2ex} % beforeskip
+	{-1em}                           % afterskip
+	{\normalfont\normalsize\bfseries}}
 \newcommand\l@subsubparagraph{\@dottedtocline{6}{13.5em}{5em}}
 \newcommand{\subsubparagraphmark}[1]{}
 \setcounter{tocdepth}{6}
@@ -116,7 +116,7 @@
 
 \newcommand{\logo}{ 
 	\vspace{1.5cm}
-	{\includegraphics[height=10em]{images/logo_home} \DeclareGraphicsExtensions{.png}\par}
+	{\includegraphics[scale=0.5]{images/logo_home} \DeclareGraphicsExtensions{.png}\par}
 	\vspace{2cm}
 	%{\includegraphics[scale=0.7]{images/logo_home} \DeclareGraphicsExtensions{.png}\par}
 	%\vspace{2cm}
@@ -124,6 +124,10 @@
 	%\texttt{zerosevenswe@gmail.com}	 
 }
 
+
+\newcommand{\glossario}[1]{
+	\textit{$#1_{G}$}
+}
 
 %-------------------FINE comandi personalizzati-----------------------------------------
 
