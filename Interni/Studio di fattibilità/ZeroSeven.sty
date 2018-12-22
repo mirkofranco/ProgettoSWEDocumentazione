@@ -29,44 +29,45 @@
 
 %-------------------INIZIO stile intestazioni e piè di pagina -----------------------------------------
 \newcommand{\intestazioni}[1]{
-\fancypagestyle{myfront}{
+	\fancypagestyle{myfront}{
 		\hypersetup{
-				colorlinks=true,
-				linkcolor=black,
+			colorlinks=true,
+			linkcolor=black,
 		}
 		\pagenumbering{Roman}
 		\fancyhf{}
-		\lhead{Studio di Fattibilità}
-		\rhead{#1}
-		\cfoot{\thepage~di \pageref{LastFrontPage}}
+		\lhead{#1}
+		\rhead{\nouppercase{\leftmark}}
+		\rfoot{\thepage~di \pageref{LastFrontPage}}
 		\renewcommand{\headrulewidth}{0.4pt}
 		\renewcommand{\footrulewidth}{0.4pt}
 	}
-
+	
 	
 	\fancypagestyle{mymain}{
 		\hypersetup{
-				colorlinks=true,
-				linkcolor=black,
-				anchorcolor=black,
-				citecolor=black,
-				urlcolor=blue,
+			colorlinks=true,
+			linkcolor=black,
+			anchorcolor=black,
+			citecolor=black,
+			urlcolor=blue,
 		}
 		\pagenumbering{arabic}
 		\fancyhf{}
-		\lhead{Studio di Fattibilità}
-		\rhead{#1}
-		\cfoot{
+		\lhead{#1}
+		\rhead{\nouppercase{\leftmark}}
+		\rfoot{
 			\hypersetup{
 				colorlinks=true,
 				linkcolor=black,
 			}
 			\thepage~di \pageref{LastPage}
 		}
+		\lfoot{Studio di fattibilità 0.0.1}
 		\renewcommand{\headrulewidth}{0.4pt}
 		\renewcommand{\footrulewidth}{0.4pt}
 	}
-
+	
 }
 %-------------------FINE stile intestazioni e piè di pagina -----------------------------------------
 
