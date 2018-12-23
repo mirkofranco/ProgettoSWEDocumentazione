@@ -36,9 +36,9 @@
 		}
 		\pagenumbering{Roman}
 		\fancyhf{}
-		\lhead{Glossario}
-		\rhead{#1}
-		\cfoot{\thepage~di \pageref{LastFrontPage}}
+		\lhead{#1}
+		\rhead{\nouppercase{\rightmark}}
+		\rfoot{\thepage~di \pageref{LastFrontPage}}
 		\renewcommand{\headrulewidth}{0.4pt}
 		\renewcommand{\footrulewidth}{0.4pt}
 	}
@@ -47,22 +47,23 @@
 	\fancypagestyle{mymain}{
 		\hypersetup{
 			colorlinks=true,
-			linkcolor=blue,
+			linkcolor=black,
 			anchorcolor=black,
 			citecolor=black,
 			urlcolor=blue,
 		}
 		\pagenumbering{arabic}
 		\fancyhf{}
-		\lhead{Glossario}
-		\rhead{#1}
-		\cfoot{
+		\lhead{#1}
+		\rhead{\nouppercase{\rightmark}}
+		\rfoot{
 			\hypersetup{
 				colorlinks=true,
 				linkcolor=black,
 			}
 			\thepage~di \pageref{LastPage}
 		}
+		\lfoot{Glossario 0.0.1}
 		\renewcommand{\headrulewidth}{0.4pt}
 		\renewcommand{\footrulewidth}{0.4pt}
 	}

@@ -4,8 +4,13 @@
 \usepackage{ltablex}
 \usepackage{graphicx}
 \usepackage{verbatim}
+\usepackage{hyperref} 
 \usepackage{glossaries}
-\makeglossaries
+\usepackage{imakeidx} 
+\usepackage{bookmark}
+
+\makeindex[intoc]
+\indexsetup{firstpagestyle=empty}  
 \titlepage{}
 
 \author{Mirko Franco}
@@ -39,8 +44,10 @@
 	\newpage	
 	\input{tabella_modifiche}
 	\pagestyle{mymain}
+	\tableofcontents
+	
 	\input{sezioni/A_words}
-	\begin{comment}
+\begin{comment}
 	\input{sezioni/B_words}
 	\input{sezioni/C_words}
 	\input{sezioni/D_words}
@@ -63,8 +70,10 @@
 	\input{sezioni/V_words}
 	\input{sezioni/W_words}
 	\input{sezioni/Z_words}
-	\end{comment}
-	\printglossaries
+\end{comment}
+	
+	\printindex
 	\label{LastPage}
-
+	
+	
 \end{document}

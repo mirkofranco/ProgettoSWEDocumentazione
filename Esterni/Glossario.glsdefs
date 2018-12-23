@@ -1,16 +1,16 @@
-\ifglsentryexists{bo}{}%
+\ifglsentryexists{Asana}{}%
 {%
-\gls@defglossaryentry{bo}%
+\gls@defglossaryentry{Asana}%
 {%
-name={ciao},%
-sort={ciao},%
+name={Asana},%
+sort={Asana},%
 type={main},%
-first={ciao},%
-firstplural={ciaos},%
-text={ciao},%
-plural={ciaos},%
-description={description},%
-descriptionplural={description},%
+first={Asana},%
+firstplural={Asanas},%
+text={Asana},%
+plural={Asanas},%
+description={Software di merda},%
+descriptionplural={Software di merda},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
