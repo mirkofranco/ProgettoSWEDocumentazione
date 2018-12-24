@@ -1,0 +1,50 @@
+\documentclass[a4paper,12pt]{book}
+
+\usepackage{ZeroSeven}
+
+\titlepage{}
+
+\author{Mirko Franco}
+\date{26-11-2018}
+\intestazioni{\includegraphics[scale=0.3]{images/logo_intestazione}}
+\pagestyle{myfront}
+\begin{document}
+\begin{titlepage}
+	\centering
+	{\huge\bfseries MegAlexa\par}
+	Arricchitore di skill di Amazon Alexa
+	\line(1,0){350} \\
+	{\scshape\LARGE Nome documento \par}
+	\vspace{1cm}
+	{\scshape Gruppo ZeroSeven \par}
+	\logo
+	%devono essere compilati questi campi ogni volta
+	\begin{tabular}{c|c}
+		{\hfill \textbf{Versione}} 			& 0.0.1				\\
+		{\hfill\textbf{Data Redazione}} 	& 24-12-2018		\\ 
+		{\hfill\textbf{Redazione}} 			&  		Stefano Zanatta			\\ 
+		{\hfill\textbf{Verifica}} 				&  	Andrea Deidda			\\ 
+		{\hfill\textbf{Approvazione}} 		&  		Stefano Zanatta			\\ 
+		{\hfill\textbf{Uso}} 					& 		Esterno		\\ 
+		{\hfill\textbf{Distribuzione}} 			& 			Prof. Tullio Vardanega \\ & Prof. Riccardo Cardin \\ & Gruppo ZeroSeven		\\ 
+		{\hfill\textbf{Email di contatto}} & zerosevenswe@gmail.com \\
+	\end{tabular}
+\end{titlepage}
+	
+
+	
+	\label{LastFrontPage}
+	\newpage	
+	\input{tabella_modifiche}
+	\pagestyle{mymain}
+	\tableofcontents
+	\input{sezioni/introduzione}
+	\input{sezioni/qualita_processo}
+	\input{sezioni/qualita_prodotto}
+	\input{sezioni/qualita_test}
+	\input{sezioni/resoconto}
+
+			
+	\label{LastPage}
+
+\end{document}
