@@ -4,8 +4,8 @@ Il processo di Documentazione stabilisce una serie di norme e convenzioni per la
 Un documento viene definito formale quando viene approvato dal \textit{Responsabile di progetto}.
 Ogni documento formale verrà classificato come:
 \begin{itemize}
-	\item \textbf{Interno:} documenti ad uso esclusivo del gruppo ZeroSeven, quali Norme di progetto e Studio di fattibilità.  
-	\item \textbf{Esterno:} ad uso anche esterno (da sistemare). 
+	\item \textbf{Interno:} documenti ad uso esclusivo del gruppo ZeroSeven, quali Norme di progetto e Studio di fattibilità;
+	\item \textbf{Esterno:} documenti consultabili anche da attori esterni al gruppo ZeroSeven.
 	
 \end{itemize}
 
@@ -66,7 +66,7 @@ Ogni documento sarà composto da:
 	\item Diario delle modifiche;
 	\item Indice;
 	\item Contenuto delle pagine interne;
-	\item Elenco delle immagini/tabelle.
+	\item Elenco delle immagini e tabelle.
 \end{itemize}
 \paragraph{Frontespizio}
 La prima pagina di tutti i documenti dovrà essere così composta:
@@ -102,9 +102,6 @@ permettendo una lettura ipertestuale e non necessariamente sequenziale.
 \paragraph{Struttura delle pagine interne}
 Le pagine interne dei documenti rispettano i canoni previsti dal template \LaTeX e oltre al contenuto interno sono composte da: \\
 
-**********************************************
-
-(Valutare se modificare il template)
 \begin{itemize}
 	\item \textbf{intestazione:}
 	\begin{itemize}
@@ -117,16 +114,11 @@ Le pagine interne dei documenti rispettano i canoni previsti dal template \LaTeX
 	\item numero di pagina posto a destra.
 	\end{itemize}
 
-\end{itemize}
- ********************************************
- 
- \subsubsection{Elenco delle immagini/tabelle}
- ...
- 
- ...
+\end{itemize} 
+ \subsubsection{Elenco delle immagini e tabelle} 
+Al termine di ogni documento dovrà essere presente un \textit{Elenco delle figure} presenti ed un \textit{Elenco delle tabelle}.
 \subsubsection{Norme tipografiche}
-Questa sezione racchiude le convenzioni riguardanti tipografia, ortografia e uno stile
-uniforme e disciplinato per tutti i documenti.
+Questa sezione racchiude le convenzioni riguardanti tipografia, ortografia e uno stile uniforme e disciplinato per tutti i documenti.
 \paragraph{Punteggiatura}
 La punteggiatura (chiamata anche interpunzione) è un sistema di segni che sono usati per iniziare, terminare o separare frasi, parti di frasi o parole. \\
 Ogni segno della punteggiatura va sempre unito all'ultima lettera della parola che lo precede e separato con uno spazio dalla lettera iniziale della parola che lo segue.
@@ -134,8 +126,7 @@ le lettere maiuscole vanno poste solo dopo il punto, il punto di domanda, il pun
 lavoro e nelle parole Proponente e Committente.
 \paragraph{Formati}
 \begin{itemize}
-\item  Date: le date presenti nei documenti devono seguire la notazione definita dallo
-standard ISO(?) YYYY-MM-DD
+\item  Date: le date presenti nei documenti devono seguire la notazione definita dallo standard ISO 8601:2004 YYYY-MM-DD
 
 dove:
 \begin{itemize}
@@ -147,7 +138,6 @@ dove:
   \item  Percorsi: per gli indirizzi email e web  deve essere utilizzato il comando
   \LaTeX \url, mentre per gli indirizzi relativi va usato il formato monospace;
   \item Maiuscolo: l'utilizzo del carattere maiuscolo per l'intera parola è riservato esclusivamente agli acronimi.
-  \item etc...
 \end{itemize}
 \paragraph{Stile del testo}
 \begin{itemize}
@@ -162,8 +152,8 @@ dove:
 	\item  \textbf{Grassetto:} il grassetto può essere utilizzato esclusivamente negli elenchi puntati per dare risalto al concetto sviluppato.
 	\item  \textbf{Sottolineato:} Non è previsto l'uso del testo sottolineato.
 	\end{itemize}
-\paragraph{Altre norme} 
-Le seguenti norme serviranno a rendere la stesura dei documenti un processo coerente (frase da rivedere!!!).
+\paragraph{Norme redazionali} 
+
 \begin{itemize}
 	\item \textbf{Elenchi:} Al termine di ogni punto di un elenco verrà utilizzato il carattere (;) eccetto per l'ultimo punto per il quale verrà utilizzato il carattere (.);
 	\item \textbf{Riferimenti informativi:} Ogni riferimento a prodotti, guide, software,
@@ -179,9 +169,6 @@ Le seguenti norme serviranno a rendere la stesura dei documenti un processo coer
 		\item \textbf{ \textbackslash glossario}: indica un termine da inserire nel glossario(marcato da una G maiuscola a pedice).	
 	\end{itemize}
 	
-	*******************************
-	comandi che andrebbero creati... nome del gruppo, nome del proponente e del committente, nomi dei documenti e altri che mi verranno in mente.
-	*******************************
 	\item \textbf{Sigle:} Nonostante sarà preferito l'utilizzo delle parole per intero potranno essere utilizzate le seguenti sigle:
 	\begin{itemize}
 	\item AdR = Analisi dei Requisiti;
@@ -206,91 +193,32 @@ Le seguenti norme serviranno a rendere la stesura dei documenti un processo coer
 	Graphics (PNG).
 
 	\end{itemize}
-\subsubsection{Attività}
-\paragraph{Analisi dei requisiti}
-Questo documento sarà redatto dagli \glossario{Analisti} e dovrà includere
-\begin{itemize}
-	\item{\textbf{Casi d'uso:}}  devono essere descritti i casi d’uso con una descrizione testuale e
-	un diagramma rappresentativo dove utile per una più immediata comprensione;
-	\item{\textbf{Requisiti:}}  devono essere descritti i casi d’uso con una descrizione testuale e
-	un diagramma rappresentativo dove utile per una più immediata comprensione;
-	\item{\textbf{Tracciamento dei requisiti:}}  ogni requisito deve essere tracciato alle fonti da cui è stato generato.
-\end{itemize}
-\subparagraph {Casi d'uso}
-Ogni caso d'uso è descritto dalla seguente struttura:
-\begin{itemize}
-\item Codice identificativo;
-\item Titolo;
-\item Diagramma UML;
-\item Attori primari;
-\item Attori secondari;
-\item Scopo e descrizione;
-\item Precondizione;
-\item Postcondizione;
-\item Flusso base degli eventi;
-\item Inclusioni;
-\item Estensioni;
-\end{itemize}
-Ogni caso d’uso è identificato da un codice, che segue il seguente formalismo: \\
-
-\textbf{ UC [codice padre].[codice livello]} \\ 
-
-Dove:
-\begin{itemize}
-\item{\textbf{ codice padre:}}  numero che identifica univocamente i casi d’uso;
-\item{\textbf{ codice livello:}}  numero progressivo che identifica i sottocasi. Può a sua volta includere altri livelli.
-\end{itemize}
-\subparagraph{Requisiti}
-Ogni requisito è strutturato come segue:
-
-\begin{itemize}
-	\item Codice identificativo;
-	\item Descrizione;
-	\item Fonti;
-\end{itemize}
-Ogni requisito ha il seguente formalismo:\\
-
-\textbf{ R[Importanza][Tipologia][codice padre].[codice livello]} \\
-
-Dove:
-\begin{itemize}
-	\item \textbf{Importanza:} identifica uno dei seguenti gradi di necessità:
-	\begin{itemize}
-		\item \textbf{O:} requisito obbligatorio;
-		\item \textbf{D:} requisito desiderabile;
-		\item \textbf{F:} requisito facoltativo.
-		
-	\end{itemize}
-	\item \textbf{Tipologia:}  identifica uno dei seguenti tipi di requisito:
-	\begin{itemize}
-	\item 1: requisito funzionale;
-	\item 2: requisito prestazionale;
-	\item 3: requisito qualitativo;
-	\item 4: requisito progettuale.
-	
-	\end{itemize}
-	\item \textbf{codice padre:} numero che identifica in modo univoco i requisiti;
-	\item \textbf{codice livello:} numero progressivo che identifica i sottorequisiti e può a sua volta includere altri livelli.
-\end{itemize}
-\paragraph{Specifica tecnica}
-Questo documento sarà scritto dal Progettista e dovrà includere:
-\begin{itemize}
-\item \textbf{Diagrammi UML:}
-	\begin{itemize}
-	\item Diagrammi delle classi;
-	\item Diagrammi dei Package;
-	\item Diagrammi di attività;
-	\item Diagrammi di sequenza.
-	\end{itemize}
-\item \textbf{Tecnologie utilizzate:} devono essere descritte le tecnologie adottate specificandone l’utilizzo nel progetto, i vantaggi e gli svantaggi;
-\item \textbf{Design Pattern:}  devono essere descritti i design pattern utilizzati per realizzare l’architettura. Ogni design pattern deve essere accompagnato da una descrizione ed un diagramma, che ne esponga il significato e la struttura;
-\item \textbf{Tracciamento delle componenti:};
-\item \textbf{Tecnologie utilizzate};
-\textbf{PARTE DA COMPLETARE!!!}
-\end{itemize}
-
 \subsection{Verifica}
+La \glossario{verifica} è un processo atto ad evidenziare ed eliminare la possibile presenza di errori.
+Di seguito verranno descritti gli strumenti e le pratiche utilizzate per la verifica del codice e dei documenti durante la loro realizzazione.
+Durante questa prima fase di progetto la verifica si è focalizzata principalmente su documenti e diagrammi.
+\subsubsection{Analisi statica}
+L'analisi statica di un programma o documento permette di rilevare problemi al loro interno. Si può svolgere principalmente in due modi:
+\begin{itemize}
+\item \textbf{Walkthrough:} questa metodologia prevede una revisione ad ampio spettro parallelizzabile, così da stilare una prima lista degli errori più comuni. Risulta fondamentale nelle prime fasi di sviluppo del progetto dal momento che è il più semplice da imparare, di contro però è molto dispendioso in termini di efficienza;
+\item \textbf{Inspection} al contrario della metodologia precedente, questa risulta essere molto più veloce perché attraverso una lista di controllo degli errori e delle misurazioni effettuate permette un'analisi più efficace delle criticità, omettendo le parti che non presentano problematiche. 
+\end{itemize}
+\subsubsection{Analisi dinamica}
+L'analisi dinamica al contrario dell'analisi statica è applicabile unicamente al software e non ai documenti. Il processo prevede la realizzazione e l'esecuzione di test sul codice. Ogni test per essere valido deve essere ripetibile, cioè attraverso il medesimo input di partenza si deve poter risalire a un dato output. A tal fine è necessario che per ogni test vengano segnati i seguenti riferimenti: 
+\begin{itemize}
+\item \textbf{Ambiente:} sono i sistemi software e hardware utilizzati nel corso dei test;
+\item \textbf{Stato iniziale:} lo stato di partenza del prodotto prima del test;
+\item \textbf{Input};
+\item \textbf{Output};
+\item \textbf{Avvisi}: un eventuale insieme di istruzioni riguardanti l'esecuzione del test e i suoi risultati.
+\end{itemize}
+\subsubsection{Verifica diagrammi UML}
+Sarà compito dei verificatori accertarsi che tutti i diagrammi UML prodotti rispettino lo standard UML e che siano corretti semanticamente.
+\subsubsection{Strumenti}
+\paragraph{Verifica ortografica}
+Per la verifica ortografica verrà utilizzato lo strumento integrato in TexStudio, mentre l'analisi del periodo sarà effettuata dai Verificatori.
+\paragraph{Indice di Gulpease}
+Per il calcolo dell'/glossario{indice di Gulpease} il gruppo utilizzerà strumenti automatici disponibili online quali Farfalla Project \footnote{\url{https://farfalla-project.org/readability_static}} e Corrige!it \footnote{\url{http://www.corrige.it}}.
 
 \subsection{Validazione}
-\subsection{Strumenti}
-
+Il processo di Validazione verrà svolto nella fase finale del progetto e ha l'obbiettivo di verificare che il prodotto sia conforme a quanto pianificato.
