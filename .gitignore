@@ -5,10 +5,8 @@
 *.synctex.gz
 *.toc
 .DS_Store
-Esterni/PianoDiProgetto/PianoDIProgetto.fdb_latexmk
+Esterni/PianoDiProgetto/*.fdb_latexmk
 *.lot
-*.lot
-*.lot
-*.lot
-*.lot
-*.lot
+Esterni/PianoDiProgetto/*.lot
+Esterni/PianoDiProgetto/*.fls
+Esterni/PianoDiProgetto/*.lof
