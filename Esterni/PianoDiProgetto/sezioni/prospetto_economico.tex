@@ -1,23 +1,23 @@
 \chapter{Preventivo}
-Di seguito viene riportato il preventivo per il progetto MegAlexa; esso si divide,per ogni periodo,in:
+Di seguito viene riportato il preventivo per il progetto MegAlexa; esso si divide, per ogni periodo, in:
 \begin{itemize}
 	\item \textbf{Prospetto orario:} presenta la distribuzione oraria e la suddivisione nei ruoli per ogni membro del gruppo ZeroSeven;
-	\item \textbf{Prospetto economico:}presenta le ore di impegno calcolate per i ruoli coinvolti ed il rispettivo costo;
+	\item \textbf{Prospetto economico:} presenta le ore di impegno calcolate per i ruoli coinvolti ed il rispettivo costo;
 \end{itemize}
 La suddivisione oraria viene svolta avendo come riferimento le seguenti regole:
 \begin{itemize}
 	\item Ogni membro del gruppo deve coprire ogni ruolo almeno una volta durante il ciclo di sviluppo del prodotto;
-	\item Il totale delle ore di lavoro dovrà essere equamente distribuito tra i membri;
-	\item Non ci devono essere conflitti di interesse in cui un Verificatore debba controllare il proprio lavoro.
+	\item Il totale delle ore di lavoro deve essere equamente distribuito tra i membri;
+	\item Non ci devono essere conflitti di interesse in cui un \textit{Verificatore} debba controllare il proprio lavoro.
 \end{itemize}
 Le sigle utilizzate per i vari ruoli saranno:
 \begin{itemize}
-	\item \textbf{Re:} Responsabile di Progetto;
-	\item \textbf{Am:} Amministratore;
-	\item \textbf{An:} Analista;
-	\item \textbf{Pt:} Progettista;
-	\item \textbf{Pr:} Programmatore;
-	\item \textbf{Ve:} Verificatore;
+	\item \textbf{Re:} \textit{Responsabile di Progetto};
+	\item \textbf{Am:} \textit{Amministratore};
+	\item \textbf{An:} \textit{Analista};
+	\item \textbf{Pt:} \textit{Progettista};
+	\item \textbf{Pr:} \textit{Programmatore};
+	\item \textbf{Ve:} \textit{Verificatore};
 \end{itemize}
 
 Per il preventivo si tiene conto che i periodi di Analisi dei Requisiti e di Analisi dei Requisiti di Dettaglio sono considerati di investimento del gruppo e  non a carico dei committente, per cui  le ore di impegno svolte durante questi non saranno conteggiate nelle ore totali da retribuire.
@@ -26,10 +26,25 @@ Per il preventivo si tiene conto che i periodi di Analisi dei Requisiti e di Ana
 \section{Analisi  dei Requisiti}
 \subsection{Prospetto orario}
 Il prospetto orario per il periodo di Analisi dei Requisiti è illustrato nella seguente tabella:
-\begin{table}[!ht]
-	\begin{center}  	
-		\begin{tabular}{c}
-			\includegraphics{images/tabellaProspettoOrario.png}
+
+\begin{table}[ht]
+	\begin{center}
+		\rowcolors{1}{}{lightgray}
+		\begin{tabular}{cccccccccccc}
+			\rowcolor{coolblack}
+			\hline 
+			& \textcolor{white}{Nome} & \textcolor{white}{Re} & \textcolor{white}{Am} & \textcolor{white}{An} & \textcolor{white}{Pt} &\textcolor{white}{Pr} & \textcolor{white}{Ve} & \textcolor{white}{Totale} \\
+			\hline
+			
+			&Mirko Franco          & 10 & - & 9 & - & - & 5 &24  \\
+			&Bianca Ciuche        & -  & 6 & 10 & - & - & 8 & 24 \\
+			&Stefano Zanatta     & 12& 8 & 4 & - & - & - & 24 \\
+			&Andrea Deidda       &  -& 9 & 8 & - & - & 7 & 24 \\
+			&Ludovico Brocca    & -& 4 & 9 & - & - & 11 & 24 \\
+			&Matteo Depascale  & -& 6& 10 & - & - & 8 & 24 \\
+			&Gian Marco Bratzu & -& 6 & 8 & - & - & 10 & 24 \\
+			\hline
+			&\textbf{Ore totali ruolo} & 22 & 39 & 58 & - & - & 49 & 168 \\
 		\end{tabular}
 		\caption{Prospetto Orario nel periodo di Analisi dei Requisiti}
 	\end{center}
@@ -47,14 +62,27 @@ Il seguente grafico rappresenta la suddivisione oraria dei ruoli all'interno del
 Il prospetto economico per il periodo di Analisi dei Requisiti è illustrato nella seguente tabella.
 Le spese per questa attività non sono a carico del committente.
 
-\begin{table}[!ht]
+\begin{table}[ht]
 	\begin{center}
-		\begin{tabular}{c}
-			\includegraphics{images/tabellaProspettoEconomico.png}
+		\rowcolors{1}{}{lightgray}
+			\begin{tabular}{cccccc}
+			\rowcolor{coolblack}
+			\hline
+			&\textcolor{white}{Ruolo}&	\textcolor{white}{Ore} &\textcolor{white}{Costo(\euro)} \\
+			\hline
+			&Responsabile           &22& 660  \\
+			&Amministratore        & 39& 780 \\
+			&Analista                   & 58& 1.450 \\
+			&Progettista              &  -& - \\
+			&Programmatore       & - & -  \\
+			&Verificatore             & 49 & 735 \\
+			\hline
+			&\textbf{Ore totali}    &168& 3.625 \\
 		\end{tabular}
 		\caption{Prospetto Economico nel periodo di Analisi dei Requisiti}
 	\end{center}
 \end{table}
+
 La raffigurazione grafica del peso di ogni ruolo sul costo totale è così rappresentata:
 \begin{figure}[!ht]
 	\centering
@@ -67,15 +95,30 @@ La raffigurazione grafica del peso di ogni ruolo sul costo totale è così rappr
 \subsection{Prospetto Orario}
 Il prospetto orario per il periodo di Analisi dei Requisiti di Dettaglio è illustrato nella seguente tabella:
 
-\begin{table}[!ht]
+\begin{table}[ht]
 	\begin{center}
-		\begin{tabular}{c}
-			\includegraphics[scale=0.90]{images/tabellaProspettoOrarioDett.png}
+		\rowcolors{1}{}{lightgray}
+		\begin{tabular}{cccccccccccc}
+			\rowcolor{coolblack}
+			\hline 
+			& \textcolor{white}{Nome} & \textcolor{white}{Re} & \textcolor{white}{Am} & \textcolor{white}{An} & \textcolor{white}{Pt} &\textcolor{white}{Pr} & \textcolor{white}{Ve} & \textcolor{white}{Totale} \\
+			\hline
+			
+			&Mirko Franco          & - & 3 & - & - & - & 2 &5  \\
+			&Bianca Ciuche        & 5  & - & - & - & - & - & 5 \\
+			&Stefano Zanatta     & -& - & 2 & - & - & 3&5 \\
+			&Andrea Deidda       &  -& - & 2 & - & - & 3 &5 \\
+			&Ludovico Brocca    & -& -& 3 & - & - & 2 & 5 \\
+			&Matteo Depascale  & -& 2& -& - & - & 3 & 5 \\
+			&Gian Marco Bratzu & -& - & 2 & - & - & 3& 5 \\
+			\hline
+			&\textbf{Ore totali ruolo} & 5 & 5 & 9 & - & - & 16 & 35 \\
 		\end{tabular}
 		\caption{Prospetto Orario nel periodo di Analisi dei Requisiti di Dettaglio}
 	\end{center}
 \end{table}
-Il seguente grafico rapresenta la suddivisione oraria dei ruoli all'interno del gruppo:
+
+Il seguente grafico rappresenta la suddivisione oraria dei ruoli all'interno del gruppo:
 \begin{figure}[!ht]
 	\begin{center}
 		\includegraphics{images/grafoProspettoOrarioDett.png}
@@ -86,21 +129,32 @@ Il seguente grafico rapresenta la suddivisione oraria dei ruoli all'interno del 
 \subsection{Prospetto economico}
 Il prospetto economico per il periodo di Analisi dei Requisiti di Dettaglio è illustrato nella seguente tabella.
 Le spese per questa attività non sono a carico del committente.
-
-\begin{table}[!ht]
+\begin{table}[ht]
 	\begin{center}
-		\begin{tabular}{c}
-			\includegraphics{images/tabellaProspettoEconomicoDett.png}
+		\rowcolors{1}{}{lightgray}
+		\begin{tabular}{cccccc}
+			\rowcolor{coolblack}
+			\hline
+			&\textcolor{white}{Ruolo}&	\textcolor{white}{Ore} &\textcolor{white}{Costo(\euro)} \\
+			\hline
+			&Responsabile           &5&150  \\
+			&Amministratore        & 5& 100 \\
+			&Analista                   & 9& 225 \\
+			&Progettista              &  -& - \\
+			&Programmatore       & - & -  \\
+			&Verificatore             & 16 & 240 \\
+			\hline
+			&\textbf{Ore totali}    &35& 715\\
 		\end{tabular}
 		\caption{Prospetto Economico nel periodo di Analisi dei Requisiti di Dettaglio}
 	\end{center}
 \end{table}
 
-La raffigurazione grafica del peso di ogni ruolo sul costo totale è così rappresentata:
+La raffigurazione grafica del peso di ogni ruolo sul costo totale è così rappresentata: (DA SISTEMARE LE PERCENTUALI)
 \begin{figure}[!ht]
 	\begin{center}
 		\includegraphics{images/grafoProspettoEconomicoDett.png}
-		\caption{Grafico prospetto economico nel periodo di Analisi dei requisiti in dettaglio }
+		\caption{Grafico prospetto economico nel periodo di Analisi dei Requisiti in Dettaglio }
 	\end{center}
 \end{figure}
 
@@ -110,15 +164,13 @@ La raffigurazione grafica del peso di ogni ruolo sul costo totale è così rappr
 Il prospetto orario durante il periodo di Progettazione della Base Tecnologica è illustrato nella seguente tabella:
 
 \begin{table}[ht]
-	\caption{Prospetto Orario nel periodo di Progettazione della Base Tecnologica}
 	\begin{center}
 		\rowcolors{1}{}{lightgray}
 		\begin{tabular}{ccccccccc}
-			\rowcolor{lightblue}
+			\rowcolor{coolblack}
 			\hline
 			& \textcolor{white}{Nome} & \textcolor{white}{Re} & \textcolor{white}{Am} & \textcolor{white}{An} & \textcolor{white}{Pt} &\textcolor{white}{Pr} & \textcolor{white}{Ve} & \textcolor{white}{Totale} \\
 			\hline
-			
 			&Mirko Franco & - & 5 & 9 & 9 & 6 & - & 29  \\
 			&Bianca Ciuche & -& - & 6 & 10 & - & 11 & 27 \\
 			&Stefano Zanatta & 5 & - & - & 22 & - & - & 27 \\
@@ -128,12 +180,12 @@ Il prospetto orario durante il periodo di Progettazione della Base Tecnologica �
 			&Gian Marco Bratzu & 7& - & - & 20 & - & - & 27 \\
 			\hline
 			&\textbf{Ore totali ruolo} & 12 & 10 & 15 & 103 & 15 & 42 & 197 \\
-			
 		\end{tabular}
+		\caption{Prospetto Orario nel periodo di Progettazione della Base Tecnologica}
 	\end{center}
 \end{table}
 
-Il seguente grafico rapresenta la suddivisione oraria dei ruoli all'interno del gruppo:
+Il seguente grafico rappresenta la suddivisione oraria dei ruoli all'interno del gruppo:
 \begin{figure}[!ht]
 	\begin{center}
 		\includegraphics[scale=0.80]{images/grafoProgettazioneTecnologica.png}
@@ -144,20 +196,33 @@ Il seguente grafico rapresenta la suddivisione oraria dei ruoli all'interno del 
 \subsection{Prospetto economico}
 Il prospetto economico per il periodo di Progettazione della Base Tecnologica è illustrato nella seguente tabella:
 
-\begin{table}[!ht]
+\begin{table}[ht]
 	\begin{center}
-		\begin{tabular}{c}
-			\includegraphics{images/tabellaProgettazioneTecnologicaEuro.png}
+		\rowcolors{1}{}{lightgray}
+		\begin{tabular}{cccccc}
+			\rowcolor{coolblack}
+			\hline
+			&\textcolor{white}{Ruolo}&	\textcolor{white}{Ore} &\textcolor{white}{Costo(\euro)} \\
+			\hline
+			&Responsabile           &12&360 \\
+			&Amministratore        & 10& 200 \\
+			&Analista                   & 15& 375 \\
+			&Progettista              &  103& 2.266\\
+			&Programmatore       & 15& 225 \\
+			&Verificatore             & 42& 630 \\
+			\hline
+			&\textbf{Ore totali}    &197&4.056\\
 		\end{tabular}
 		\caption{Prospetto Economico nel periodo di Progettazione della Base Tecnologica}
 	\end{center}
 \end{table}
 
+
 La raffigurazione grafica del peso di ogni ruolo sul costo totale è così rappresentata:
 \begin{figure}[!ht]
 	\begin{center}
 		\includegraphics{images/grafoProgettazioneTecnologicaEuro.png}
-		\caption{Grafico prospetto orario nel periodo di Analisi dei requisiti in dettaglio}
+		\caption{Grafico prospetto orario nel periodo di Progettazione della Base Tecnologica}
 	\end{center}
 \end{figure}
 \newpage
@@ -165,12 +230,25 @@ La raffigurazione grafica del peso di ogni ruolo sul costo totale è così rappr
 \subsection{Prospetto orario}
 Il prospetto orario durante il periodo di Progettazione di Dettaglio e Codifica è illustrato nella seguente tabella:
 
-\begin{table}[!ht]
+\begin{table}[ht]
 	\begin{center}
-		\begin{tabular}{c}
-			\includegraphics[scale=0.90]{images/tabellaProgettazioneDettaglioCodifica.png}
+		\rowcolors{1}{}{lightgray}
+		\begin{tabular}{ccccccccc}
+			\rowcolor{coolblack}
+			\hline
+			& \textcolor{white}{Nome} & \textcolor{white}{Re} & \textcolor{white}{Am} & \textcolor{white}{An} & \textcolor{white}{Pt} &\textcolor{white}{Pr} & \textcolor{white}{Ve} & \textcolor{white}{Totale} \\
+			\hline
+			&Mirko Franco & - & - & - & 8 & 22 & 21 & 51  \\
+			&Bianca Ciuche & -& 6& - & 16 & 22 & 9 & 53 \\
+			&Stefano Zanatta & - & - & 4 & 15 & 25 & 9 & 53 \\
+			&Andrea Deidda &  -& - & 7 & 23 & 22 & - & 52 \\
+			&Ludovico Brocca & 8& - & - & 13 & 18 & 11 & 50 \\
+			&Matteo Depascale & -& 6& - & 20 & 14 & 12 & 52 \\
+			&Gian Marco Bratzu & -& - & - & 22 & 21 & 10 & 53 \\
+			\hline
+			&\textbf{Ore totali ruolo} & 8 & 12 & 11 & 117 & 144 & 72 & 364 \\
 		\end{tabular}
-		\caption{Prospetto orario nel periodo di Progettazione di Dettaglio e Codifica}
+	\caption{Prospetto orario nel periodo di Progettazione di Dettaglio e Codifica}
 	\end{center}
 \end{table}
 
@@ -185,10 +263,22 @@ Il seguente grafico mostra una rappresentazione visiva della suddivisione oraria
 \subsection{Prospetto economico}
 Il prospetto economico durante il periodo di Progettazione di Dettaglio e Codifica è illustrato nella seguente tabella:
 
-\begin{table}[!ht]
+\begin{table}[ht]
 	\begin{center}
-		\begin{tabular}{c}
-			\includegraphics{images/tabellaProgettazioneDettaglioCodificaEuro.png}
+		\rowcolors{1}{}{lightgray}
+		\begin{tabular}{cccccc}
+			\rowcolor{coolblack}
+			\hline
+			&\textcolor{white}{Ruolo}&	\textcolor{white}{Ore} &\textcolor{white}{Costo(\euro)} \\
+			\hline
+			&Responsabile           &8&240\\
+			&Amministratore        & 12& 240 \\
+			&Analista                   & 11& 275 \\
+			&Progettista              &  117& 2.574\\
+			&Programmatore       & 144& 2.160 \\
+			&Verificatore             & 72& 1.080 \\
+			\hline
+			&\textbf{Ore totali}    &364&6.569\\
 		\end{tabular}
 		\caption{Prospetto Economico nel periodo di Progettazione di Dettaglio e Codifica}
 	\end{center}
@@ -206,10 +296,23 @@ Il prospetto economico durante il periodo di Progettazione di Dettaglio e Codifi
 \subsection{Prospetto orario}
 Il prospetto orario durante il periodo di Validazione e Collaudo è illustrato nella seguente tabella:
 
-\begin{table}[!ht]
+\begin{table}[ht]
 	\begin{center}
-		\begin{tabular}{c}
-			\includegraphics[scale=0.90]{images/tabellaValidazioneCollaudo.png}
+		\rowcolors{1}{}{lightgray}
+		\begin{tabular}{ccccccccc}
+			\rowcolor{coolblack}
+			\hline
+			& \textcolor{white}{Nome} & \textcolor{white}{Re} & \textcolor{white}{Am} & \textcolor{white}{An} & \textcolor{white}{Pt} &\textcolor{white}{Pr} & \textcolor{white}{Ve} & \textcolor{white}{Totale} \\
+			\hline
+			&Mirko Franco & - & - & - & 9& - & 12 & 21  \\
+			&Bianca Ciuche & -& -& - & 12 & - & 9 & 21 \\
+			&Stefano Zanatta & - & 8& - & - & - & 13 & 21 \\
+			&Andrea Deidda &  6& - & - & - & - & 14 & 20 \\
+			&Ludovico Brocca & -& 9 & - & - & - & 13 & 22 \\
+			&Matteo Depascale & 6& -& - & 3& 11& -& 20 \\
+			&Gian Marco Bratzu & -& 4 & - & - & 14 & 3 & 21 \\
+			\hline
+			&\textbf{Ore totali ruolo} & 12& 21 & - & 24 & 25 & 64 & 146 \\
 		\end{tabular}
 		\caption{Prospetto orario nel periodo di Validazione e Collaudo}
 	\end{center}
@@ -226,10 +329,22 @@ Il seguente grafico mostra una rappresentazione visiva della suddivisione oraria
 \subsection{Prospetto economico}
 Il prospetto economico durante il periodo di Validazione e Collaudo è illustrato nella seguente tabella:
 
-\begin{table}[!ht]
+\begin{table}[ht]
 	\begin{center}
-		\begin{tabular}{c}
-			\includegraphics{images/tabellaValidazioneCollaudoEuro.png}
+		\rowcolors{1}{}{lightgray}
+		\begin{tabular}{cccccc}
+			\rowcolor{coolblack}
+			\hline
+			&\textcolor{white}{Ruolo}&	\textcolor{white}{Ore} &\textcolor{white}{Costo(\euro)} \\
+			\hline
+			&Responsabile           &12&360\\
+			&Amministratore        & 21& 420 \\
+			&Analista                   & -& -\\
+			&Progettista              &  24& 528\\
+			&Programmatore       & 25& 375 \\
+			&Verificatore             & 64& 960\\
+			\hline
+			&\textbf{Ore totali}    &146&2.643\\
 		\end{tabular}
 		\caption{Prospetto Economico nel periodo di Validazione e Collaudo}
 	\end{center}
@@ -247,14 +362,28 @@ La raffigurazione grafica del peso di ogni ruolo sul costo totale è così rappr
 \subsection{Totale del  prospetto orario rendicontato}
 Il totale del prospetto orario rendicontato è illustrato nella seguente tabella:
 
-\begin{table}[!ht]
+\begin{table}[ht]
 	\begin{center}
-		\begin{tabular}{c}
-			\includegraphics{images/tabellaOreRendicontate.png}
+		\rowcolors{1}{}{lightgray}
+		\begin{tabular}{ccccccccc}
+			\rowcolor{coolblack}
+			\hline
+			& \textcolor{white}{Nome} & \textcolor{white}{Re} & \textcolor{white}{Am} & \textcolor{white}{An} & \textcolor{white}{Pt} &\textcolor{white}{Pr} & \textcolor{white}{Ve} & \textcolor{white}{Totale} \\
+			\hline
+			&Mirko Franco & - & - & 14 & 26& 28 & 33 & 101  \\
+			&Bianca Ciuche & -& 6& 6 & 38 & 22& 29 &101 \\
+			&Stefano Zanatta & 5 & 8& 4 & 37 & 25 & 22 & 101 \\
+			&Andrea Deidda &  6& - & 7 &35 & 26 & 27 & 101\\
+			&Ludovico Brocca & 8& 14 & - & 32 & 23 & 24 & 101 \\
+			&Matteo Depascale & 6& 6& - & 34& 25& 30& 101\\
+			&Gian Marco Bratzu & 7& 4 & - & 42 & 35 & 13 &101 \\
+			\hline
+			&\textbf{Ore totali ruolo} & 32& 38 & 31 & 244 & 184 & 178 & 707 \\
 		\end{tabular}
 		\caption{Prospetto orario totale delle ore rendicontate}
 	\end{center}
 \end{table}
+
 
 Il seguente grafico mostra una rappresentazione visiva della suddivisione oraria dei ruoli all'interno del gruppo:
 \begin{figure}[!ht]
@@ -265,12 +394,24 @@ Il seguente grafico mostra una rappresentazione visiva della suddivisione oraria
 \end{figure}
 
 \subsection{Totale del prospetto economico rendicontato}
-Il totale del prospetto economico rendicontato che  include le ore rendicontate nel preventivo a carico del committente cioè dei periodi di Progettazione della Base Tecnologica, Progettazione di Dettaglio e Codifica e il periodo di Validazione e Collaudo è illustrato nella seguente tabella:
+La seguente tabella mostra il totale del prospetto economico rendicontato che  include le ore rendicontate nel preventivo a carico del committente cioè dei periodi di Progettazione della Base Tecnologica, Progettazione di Dettaglio e Codifica e il periodo di Validazione e Collaudo.
 
-\begin{table}[!ht]
+\begin{table}[ht]
 	\begin{center}
-		\begin{tabular}{c}
-			\includegraphics{images/tabellaOreRendicontateEuro.png}
+		\rowcolors{1}{}{lightgray}
+		\begin{tabular}{cccccc}
+			\rowcolor{coolblack}
+			\hline
+			&\textcolor{white}{Ruolo}&	\textcolor{white}{Ore} &\textcolor{white}{Costo(\euro)} \\
+			\hline
+			&Responsabile           &32&960\\
+			&Amministratore        & 38& 760 \\
+			&Analista                   & 31& 775\\
+			&Progettista              &  244& 5.368\\
+			&Programmatore       & 184& 2.760 \\
+			&Verificatore             & 178& 2.670\\
+			\hline
+			&\textbf{Ore totali}    &707&13.293\\
 		\end{tabular}
 		\caption{Prospetto economico totale delle ore rendicontate}
 	\end{center}
@@ -287,12 +428,25 @@ La raffigurazione grafica del peso di ogni ruolo sul costo totale è così rappr
 
 \section{Totale ore con investimento}
 \subsection{Totale del prospetto orario con investimento}
-Il totale del prospetto orario con investimento che include sia le ore rendicontate nel preventivo a carico del committente sia le ore di investimento iniziali,è illustrato nella seguente tabella:
+Il totale del prospetto orario con investimento include sia le ore rendicontate nel preventivo a carico del committente sia le ore di investimento iniziali, esso è illustrato nella seguente tabella:
 
-\begin{table}[!ht]
+\begin{table}[ht]
 	\begin{center}
-		\begin{tabular}{c}
-			\includegraphics[scale=0.80]{images/tabellaOreInvestimento.png}
+		\rowcolors{1}{}{lightgray}
+		\begin{tabular}{ccccccccc}
+			\rowcolor{coolblack}
+			\hline
+			& \textcolor{white}{Nome} & \textcolor{white}{Re} & \textcolor{white}{Am} & \textcolor{white}{An} & \textcolor{white}{Pt} &\textcolor{white}{Pr} & \textcolor{white}{Ve} & \textcolor{white}{Totale} \\
+			\hline
+			&Mirko Franco & 10 & 8 & 18 & 26& 28 & 40 & 130  \\
+			&Bianca Ciuche & 5& 12& 16& 38 & 22& 37 &130 \\
+			&Stefano Zanatta & 17 & 16& 10 & 37 & 25 & 25 & 130\\
+			&Andrea Deidda &  6& 9 & 17 &35 & 26 & 37 & 130\\
+			&Ludovico Brocca & 8& 18 & 12 & 32 & 23 & 37 & 130 \\
+			&Matteo Depascale & 6& 14& 10& 34& 25& 41& 130\\
+			&Gian Marco Bratzu & 7& 10 & 10 & 42 & 35 & 26 &130 \\
+			\hline
+			&\textbf{Ore totali ruolo} & 59& 87 & 93 & 244 & 184 & 243 & 910 \\
 		\end{tabular}
 		\caption{Prospetto orario totale delle ore di investimento e rendicontate}
 	\end{center}
@@ -301,17 +455,30 @@ Il totale del prospetto orario con investimento che include sia le ore rendicont
 Il seguente grafico mostra una rappresentazione visiva della suddivisione oraria dei ruoli all'interno del gruppo:
 \begin{figure}[!ht]
 	\begin{center}
-		\includegraphics[scale=0.80]{images/grafoOreInvestimento.png}
+		\includegraphics[scale=0.70]{images/grafoOreInvestimento.png}
 		\caption{Grafico prospetto orario totale delle ore di investimento e rendicontate}
 	\end{center}
 \end{figure}
-
+\newpage
 \subsection{Totale del prospetto economico con investimento}
-Il totale del prospetto economico con investimento che include sia le ore rendicontate nel preventivo a carico del committente sia  le ore  di investimento iniziali per l'intera durata del progetto è illustrato nella seguente tabella:
-\begin{table}[!ht]
+Il totale del prospetto economico con investimento include sia le ore rendicontate nel preventivo a carico del committente sia  le ore  di investimento iniziali, esso è illustrato nella seguente tabella:
+
+\begin{table}[ht]
 	\begin{center}
-		\begin{tabular}{c}
-			\includegraphics{images/tabellaOreInvestimentoEuro.png}
+		\rowcolors{1}{}{lightgray}
+		\begin{tabular}{cccccc}
+			\rowcolor{coolblack}
+			\hline
+			&\textcolor{white}{Ruolo}&	\textcolor{white}{Ore} &\textcolor{white}{Costo(\euro)} \\
+			\hline
+			&Responsabile           &59&1.770\\
+			&Amministratore        & 87& 1.740 \\
+			&Analista                   & 93& 2.325\\
+			&Progettista              &  244& 5.368\\
+			&Programmatore       & 184& 2.760 \\
+			&Verificatore             & 243& 3.645\\
+			\hline
+			&\textbf{Ore totali}    &910&17.608\\
 		\end{tabular}
 		\caption{Prospetto economico totale delle ore di investimento e rendicontate}
 	\end{center}
