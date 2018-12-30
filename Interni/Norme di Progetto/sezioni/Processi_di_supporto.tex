@@ -213,7 +213,7 @@ L'analisi dinamica al contrario dell'analisi statica è applicabile unicamente a
 \item \textbf{Avvisi}: un eventuale insieme di istruzioni riguardanti l'esecuzione del test e i suoi risultati.
 \end{itemize}
 \subsubsection{Verifica diagrammi UML}
-Sarà compito dei verificatori accertarsi che tutti i diagrammi UML prodotti rispettino lo standard UML e che siano corretti semanticamente.
+Sarà compito dei verificatori accertarsi che tutti i diagrammi\glossario{UML} prodotti rispettino lo standard UML e che siano corretti semanticamente.
 \subsubsection{Strumenti}
 \paragraph{Verifica ortografica}
 Per la verifica ortografica verrà utilizzato lo strumento integrato in TexStudio, mentre l'analisi del periodo sarà effettuata dai Verificatori.
@@ -223,11 +223,21 @@ Per il calcolo dell'\glossario{indice di Gulpease} il gruppo utilizzerà strumen
 \subsubsection{Metriche per il controllo della qualità}
 Segue una descrizione dettagliata delle metriche stabilite dal gruppo per il controllo della qualità del \glossario{prodotto}, fare riferimento al \textit{Piano di Qualifica v 1.0.0} per una valutazione precisa degli indici adottati.\\
 Le line guida adottate riprendono in parte lo standard di riferimento ISO/IEC 25010.
+
 \paragraph{Qualità dei documenti}
 \begin{itemize}
-	\item \textbf{MD001 Indice di Gulpease:} todo
-	\item \textbf{MD002 Ortografia:} todo
-	\item \textbf{MD003 Formula di Flesch:} todo
+	\item \textbf{MD001 - Indice Gulpease:} L'indice di Gulpease è un indice di leggibilità di un testo tarato sulla lingua italiana. Vengono tenute in considerazione due variabili linguistiche:  la lunghezza della parola e la lunghezza della frase rispetto al numero di lettere.
+	\[ IG = 89+ \frac{300*nf - 10*nl}{np} \]
+	Dove:
+	\begin{itemize}
+		\item nf è il numero delle frasi;
+		\item nl è il numero delle lettere;
+		\item np è il numero delle parole.
+	\end{itemize}
+	Il risultato è un numero compreso nel range di valori $0 \le{IG} \le{100}$, dove il valore "100" indica la leggibilità più alta e "0" la leggibilità più bassa.
+	
+	\item \textbf{MD002 - Ortografia:} todo
+	\item \textbf{MD003 - Formula di Flesch:} todo
 \end{itemize}
 
 \paragraph{Qualità del software} 
