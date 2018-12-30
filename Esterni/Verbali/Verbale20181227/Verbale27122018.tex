@@ -5,7 +5,7 @@
 \titlepage{}
 
 \author{Bianca Ciuche}
-\date{27-12-2018}
+\date{2018-12-27}
 \intestazioni{Gruppo ZeroSeven}
 \pagestyle{myfront}
 \begin{document}
@@ -14,16 +14,16 @@
 	{\huge\bfseries MegAlexa\par}
 	Arricchitore di skill di Amazon Alexa
 	\line(1,0){350} \\
-	{\scshape\LARGE Verbale 27-12-2018 \par}
+	{\scshape\LARGE Verbale 2018-12-27 \par}
 	\vspace{1cm}
 	{\scshape Gruppo ZeroSeven \par}
 	\logo
 	%devono essere compilati questi campi ogni volta
 	\begin{tabular}{c|c}
-		{\hfill \textbf{Versione}} 			& 0.0.1				\\
-		{\hfill\textbf{Data Redazione}} 	& 29-12-2018		\\ 
+		{\hfill \textbf{Versione}} 			& 0.1.0				\\
+		{\hfill\textbf{Data Redazione}} 	& 2018-12-29		\\ 
 		{\hfill\textbf{Redazione}} 			&  		Ciuche Bianca		\\ 
-		{\hfill\textbf{Verifica}} 				&  				\\ 
+		{\hfill\textbf{Verifica}} 				&  	Stefano Zanatta			\\ 
 		{\hfill\textbf{Approvazione}} 		&  			\\ 
 		{\hfill\textbf{Uso}} 					& 	Esterno	\\ 
 		{\hfill\textbf{Distribuzione}} 			& 			Prof. Tullio Vardanega \\ & Prof. Riccardo Cardin \\ & zero12 - Innovation Company \\ & Gruppo ZeroSeven		\\ 
@@ -42,10 +42,12 @@
 			\hline
 			\textbf{Versione} & \textbf{Data} & \textbf{Descrizione} & \textbf{Autore} & \textbf{Ruolo} \\
 			\hline
-			0.0.1 & 2018-12-8 & Creazione scheletro documento
+			0.0.1 & 2018-12-28 & Creazione scheletro documento
 			& Bianca Ciuche & Analista\\
 			\hline
-			0.0.2 & 2018-12-8 & Stesura verbale & Bianca Ciuche &Analista \\
+			0.0.2 & 2018-12-29 & Stesura verbale & Bianca Ciuche &Analista \\
+			\hline
+			0.1.0 & 2018-12-30 & Verifica & Stefano Zanatta &Verificatore \\
 			\hline
 		\end{tabularx}
 		\caption{Diario delle modifiche}
@@ -56,10 +58,7 @@
 	
 	\tableofcontents
 	\cleardoublepage
-	
-	
-	
-	
+
 	\section{Informazioni sulla riunione}
 	\subsection{Motivo della riunione}
 	La riunione è stata effetuata su  \textit{Hangouts} ed è stata convocata attraverso l'invio di una mail all'azienda  \textit{Zero12}. Sono stati esposti e discussi i casi d'uso e i requisiti individuati, dati chiarimenti inerenti il progetto e la sua implementazione.\\
@@ -84,7 +83,7 @@
 	La riunione si è focalizzata sulle caratteristiche che la  \textit{skill} dovrà avere: è stata data particolare attenzione sull'implementazione dei \textit{connettori} e dei \textit{workflow}. Il proponente specifica la richiesta di \textit{connettori} generalizzati, in modo che l'utente possa creare dei \textit{workflow} modulari.
 	\section{Domande e risposte principali}
 	\subsection{Possono essere in esecuzione più \textit{workflow} contemporaneamente?}
-	Non posso essere eseguiti contemporanemante più \textit{workflow} della stessa \textit{skill.}
+	Non posso essere eseguiti contemporaneamente più \textit{workflow} della stessa \textit{skill.}
 	\subsection{Dove vengono memorizzati i \textit{workflow}?}
 	I \textit{workflow} vengono memorizzati sui servizi web messi a disposizione a supporto della \textit{skill}. La \textit{skill} ha solo servizi esterni, non ci sono servizi memorizzati dentro al \textit{device}. 
 	\subsection{Prima di chiamare un \textit{workflow} specifico, bisogna invocare la \textit{skill} che lo contiene ?}
@@ -92,10 +91,10 @@
 	\subsection{Come vanno risolti i problemi riguardo il riconoscimento di più utenti?}
 	Il riconoscimento degli utenti avviene attraverso delle \textit{chiavi} che vengono salvate nel \textit{database}. Una \textit{chiave} corrisponde all'univoca coppia \{nome\_utente, password\} che ha a disposizione i \textit{workflow} che l'utente stesso  ha creato.
 	\subsection{I \textit{workflow} di una \textit{skill} possono utilizzare \textit{connettori}  di altre \textit{skill}?}
-	Si ma non è una giusta implementazione poichè per fare ciò devono essere installate altre \textit{skill}.
+	Si ma non è una giusta implementazione poiché per fare ciò devono essere installate altre \textit{skill}.
     \subsection{Dal punto di vista della qualità ci sono delle metriche specifiche da rispettare?}
-    Una metrica da soddisfare è permettere all'utente di interagire con \textit{l'echo di Alexa} nel linguaggio più naturale possibile,non in maniera robotica, a parte questo non ci sono particolari metriche da rispettare.
-    \subsection{E' possibile aggiungere dei \textit{blocchi} in futuro?}
+    Una metrica da soddisfare è permettere all'utente di interagire con \textit{l'echo di Alexa} nel linguaggio più naturale possibile, non in maniera robotica, a parte questo non ci sono particolari metriche da rispettare.
+    \subsection{È possibile aggiungere dei \textit{blocchi} in futuro?}
     Si, mettendosi d'accordo è possibile aggiungere dei \textit{blocchi}.	
 		\label{LastPage}
 \end{document}
