@@ -237,7 +237,16 @@ Le line guida adottate riprendono in parte lo standard di riferimento ISO/IEC 25
 	Il risultato è un numero compreso nel range di valori $0 \le{IG} \le{100}$, dove il valore "100" indica la leggibilità più alta e "0" la leggibilità più bassa.
 	
 	\item \textbf{MD002 - Ortografia:} todo
-	\item \textbf{MD003 - Formula di Flesch:} todo
+	\item \textbf{MD003 - Formula di Flesch:} La formula di Flesch serve a misurare la leggibilità di un testo in inglese.
+	Il modo di calcolare questo indice è il seguente:
+	
+	\[ F = 206,835 - (0,846*S) - (1,015*P) \]
+	Dove:
+	\begin{itemize}
+		\item S è il numero delle sillabe, calcolato su un campione di 100 parole;
+		\item P è il numero medio di parole per frase.
+	\end{itemize}
+Più questo indice è alto e più il testo risulta semplice da leggere. La leggibilità è alta se F è superiore a 60, media se fra 50 e 60, bassa sotto 50.
 \end{itemize}
 
 \paragraph{Qualità del software} 
