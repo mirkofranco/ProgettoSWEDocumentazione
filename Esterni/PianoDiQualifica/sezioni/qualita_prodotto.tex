@@ -19,7 +19,12 @@ Segue un elenco dettagliato delle metriche stabilithe dal gruppo per il controll
 \subsection{Usabilità}
 todo
 \subsection{Affidabilità}
-todo
+Caratteristica che rappresenta la capacità del prodotto software di svolgere correttamente il suo compito, mantenendo delle buone prestazioni al verificarsi di situazioni anomale. 
+Il prodotto software dovrà presentare le seguenti caratteristiche:
+ \begin{itemize}
+	\item \textbf{MS000 Tolleranza agli errori:} Il prodotto software continua a lavorare nel workflow corrente in presenza di errori dovuti a uno scorretto uso dell'applicativo.
+	\item \textbf{MS000 Recuperabilità:} Nel caso in cui si presentano errori, dovuti a uno scoretto comando da parte dell'utente,l'echo riesce a recuperare l'esecuzione  del workflow nel punto dove è stato interrotto.
+\end{itemize}
 \subsection{Sicurezza}
 \begin{itemize}
 	\item \textbf{MS003 Confidenzialità:} percentuale per la quale l'applicazione assicura che i dati siano accessibili solo da utenti autorizzati. E' importante notare che l'\textit{Alexa} di Amazon è uno speaker, pertanto l'output prodotto è accessibile a chiunque nella stanza.
@@ -48,6 +53,8 @@ Nella seguente tabella vengono riportati gli indici con i relativi range di acce
         MD003       & Formula di Flesch     & 80-100\\\hline
         MS001       & Efficacia funzionale  & 100-100\\
         MS002       & Correttezza  			& 80-100\\
+        MS000       & Tolleranza errori    & 60-100\\
+        MS000       & Recuperabilità			& 70-100\\
         MS003       & Confidenzialità 	 	& 60-100\\
         MS004       & Integrità  			& 80-100\\
         MS005       & Autenticità		    & 80-100\\\hline
