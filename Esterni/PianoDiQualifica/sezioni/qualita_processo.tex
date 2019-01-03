@@ -17,4 +17,14 @@ Come metrica per i processi si è deciso di utilizzare indici che ci permettano 
 Indica se si è in linea, in anticipo o in ritardo rispetto alla pianificazione temporale indicata delle attività. 
 Se SV > 0 significa che il gruppo sta procedendo con maggiore velocità rispetto a quanto pianificato, viceversa se negativo. 
 Essendo stati inseriti slack durante la pianificazione delle attività dei processi, il valore di tale indice è inizialmente positivo.
+\begin{itemize}
+	\item Range accettazione: >= -(costo preventivo fase x 10\%)
+	\item Range ottimale: [>= 0] 
+\end{itemize}
 \subsection{Budget Variance (BV)}
+Indica se alla data corrente corrente si è speso di più o meno rispetto a quanto pianificato.
+Se BV >= 0 significa che si sta usando più budget di quanto preventivato, negativo viceversa.
+\begin{itemize}
+	\item  Range accettazione: >= -( costo preventivo fase x 10\%)
+	\item Range ottimale: >= 0
+\end{itemize}
