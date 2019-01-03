@@ -1,6 +1,5 @@
 \chapter{Qualità di Prodotto}
-\section{Scopo}
-Per garantire e misurare la qualità dei prodotti sviluppati, il gruppo ha scelto di seguire una parte delle linee guida fornite dallo standard ISO/IEC 25010.
+
 \section{Qualità dei documenti}
 I documenti prodotti dal gruppo ZeroSeven devono essere leggibili e corretti. Vengono utilizzate le seguenti metriche, definite nelle \textit{Norme di Progetto}:
 \begin{itemize}
@@ -8,85 +7,33 @@ I documenti prodotti dal gruppo ZeroSeven devono essere leggibili e corretti. Ve
     \item \textbf{MD002 Ortografia};
     \item \textbf{MD003 Formula di Flesch:} per i Dialog Flow descritti nell' \textit{Analisi dei Requisiti}.
 \end{itemize}
+
 \section{Qualità del software}
-Segue un elenco dettagliato delle metriche stabilithe dal gruppo per il controllo della qualità del software.
+Segue una descrizione dettagliata delle metriche stabilite dal gruppo per perseguire obbiettivi di qualità software. \newline
+Esse costituiscono una dichiarazione d'intenti, e potrà subire modifiche nelle revisioni successive.
+\subsection{Complessità ciclomatica}
+Metrica software che indica la complessità di un programma tenedo in considerazione \glossario{moduli}, \glossario{funzioni}, \glossario{metodi} e \glossario{classi}.
+Nello specifico, essa è calcolata tramite il grafo di controllo di flusso del programma, dove i nodi sono gruppi indivisibili di istruzioni e gli archi connettono due nodi se il secondo gruppo di istruzioni può essere eseguito immediatamente dopo il primo , e il suo valore è determinato dal numero di cammini linearmente indipendenti all'interno del codice sorgente. 
+\'E quindi opportuno definire un valore di complessità ciclomatica preciso: valori alti sono indice di scarsa manutenibilità del codice e valori bassi potrebbero indicare scarsa efficienza dei metodi.
+Esso fornisce, inoltre, un indice del carico di lavoro richiesto per la fase di testing (un valore alto richiede più test per una copertura completa).
+Il range di ottimalità stabilito varia da 0 a 10, come suggerito dall'ideatore della materica Thomas J. McCabe.  
 
-\subsection{Funzionalità}
-\subsection{Fuzionalità}
-\begin{itemize}
-	\item \textbf{MS001 - Efficacia funzionale:} Indice che determina il grado di copertura di bisogni e obiettivi richiesti dall'utente. Il range stabilito varia da 0 a 100;
-	\item \textbf{MS002 - Correttezza:} Indice che determina la precisione e la correttezza degli output forniti dal software. Il range stabilito varia da 0 a 100
-	\end{itemize}
 
-\subsection{Usabilità}
-l'usabilità definisce il grado di facilità e soddisfazione con cui si compie l'interazione tra l'uomo e il prodotto, ovvero l'efficacia, l'efficienza e la soddisfazione con le quali determinati utenti raggiungono determinati obiettivi in determinati contesti.
-\begin{itemize}
-	\item \textbf{Curva d'apprendimento:} Indica il rapporto tra tempo necessario per l'apprendimento e quantità di informazioni correttamente apprese.
-	La curva d'apprendimento sarà differente in base al dispositivo considerato in quanto l'applicazione mobile avrà funzionalità più complesse rispetto all'echo che dovrà essere utilizzato da un qualsiasi utente;
-	Dunque verranno suddivisi i requisiti in base al dispositivo:
-	\begin{itemize}
-		\item \textbf{MS003 Curva d'apprendimento App};
-		\item \textbf{MS004 Curva d'apprendimento Alexa}.
-	\end{itemize}
-	\item \textbf{MS005 Protezione dall'errore:} Rappresenta il grado in cui il prodotto protegge l'utente dal commettere errori.
-	\item \textbf{MS006 Estetica dell'interfaccia utente:} Rappresenta la capacità dell'interfaccia di evitare smarrimento.
-	L'interfaccia dell'echo ha un'usabilità differente  in quanto si parla di interfaccia vocale, dunque soggetta a diversi tempi di reattività e apprendimento rispetto ad un'interfaccia mobile.
-	\item \textbf{MS007 Accessibilità:}  Si intende la possibilità di fornire i servizi anche a coloro che sono affetti da disabilità temporanee e non, che quindi utilizzano tecnologie ausiliarie.
-	Nel caso dell'echo alcune disabilità sono per ora vincolanti in quanto presuppongono necessariamente l'utilizzo della voce.
-\end{itemize}
-\subsection{Affidabilità}
-Caratteristica che rappresenta la capacità del prodotto software di svolgere correttamente il suo compito, mantenendo delle buone prestazioni al verificarsi di situazioni anomale. 
-Il prodotto software dovrà presentare le seguenti caratteristiche:
- \begin{itemize}
-	\item \textbf{MS008 Tolleranza agli errori:} Il prodotto software continua a lavorare nel workflow corrente in presenza di errori dovuti a uno scorretto uso dell'applicativo.
-	\item \textbf{MS009 Recuperabilità:} Nel caso in cui si presentano errori, dovuti a uno scoretto comando da parte dell'utente,l'echo riesce a recuperare l'esecuzione  del workflow nel punto dove è stato interrotto.
-\end{itemize}
-\subsection{Sicurezza}
-\begin{itemize}
-	\item \textbf{MS010 Confidenzialità:} percentuale per la quale l'applicazione assicura che i dati siano accessibili solo da utenti autorizzati. E' importante notare che l'\textit{Alexa} di Amazon è uno speaker, pertanto l'output prodotto è accessibile a chiunque nella stanza.
-	\item \textbf{MS011 Integrità:} percentuale per la quale l'applicazione previene accessi o modifiche non autorizzati.
-	\item \textbf{MS012 Autenticità:} percentuale per la quale l'identità dichiarata di un utente può essere provata.
-\end{itemize}
-\subsection{Manutenibilità}
-Con manutenibilità intendiamo la capacità del prodotto di essere modificato tramite correzioni, miglioramenti e adattamenti.
-Nello specifico il software deve avere le seguenti caratteristiche:
-\begin{itemize}
-	\item \textbf{MM001 Analizzabilità:} Il software deve poter essere analizzato per poter trovare gli errori.
-	\item \textbf{MM002 Modificabilità:} Il prodotto deve permettere la modifica delle sue parti.
-	\item \textbf{MM003 Modularità:} Il prodotto è diviso in parti che svolgono compiti ben precisi.
-	\item \textbf{MM004 Riusabilità:} Le parti del software possono essere riusate in altre applicazioni.
-	\item \textbf{MM005 Testabilità:} Il software deve essere testabile per consentire la validazione e l'approvazione di modifiche.
-\end{itemize}
+
+
+
 \section{Tabella delle metriche}
-Nella seguente tabella vengono riportati gli indici con i relativi range di accettazione.\\
-\begin{table}[h]
-    \begin{center}
-      \begin{tabular}{|c|c|c|}
-        \hline
-        \textbf{ID} & \textbf{Indice}       & \textbf{Range di accettazione}\\
-        \hline
-        MD001       & Indice di Gulpease    & 60-100\\
-        MD002       & Ortografia            & 100-100\\
-        MD003       & Formula di Flesch     & 80-100\\\hline
-        MS001       & Efficacia funzionale  & 100-100\\
-        MS002       & Correttezza  			& 80-100\\
-        MS003       & Curva d'apprendimento App & 70-100\\
-        MS004       & Curva d'apprendimento Alexa   & 90-100\\
-        MS005       & Protezione dall'errore  & 80-100\\
-        MS006       & Estetica dell'interfaccia utente  & 80-100\\
-        MS007       & Accessibilità			  & 60-100\\
-        MS008       & Tolleranza errori    & 60-100\\
-        MS009       & Recuperabilità			& 70-100\\
-        MS010       & Confidenzialità 	 	& 60-100\\
-        MS011       & Integrità  			& 80-100\\
-        MS012       & Autenticità		    & 80-100\\\hline
-        MM001       & Analizzabilità	    & 80-100\\
-        MM002       & Modificabilità		& 80-100\\
-        MM003       & Modularità		    & 80-100\\
-        MM004       & Riusabilità			& 70-100\\
-		MM005       & Testabilità			& 90-100\\
-        \hline
-      \end{tabular}
-      \caption{Tabella metriche qualità di prodotto}
-    \end{center}
-\end{table}
+\begin{center}
+	\begin{tabularx}{\textwidth}{|c|X|c|c|}
+		\hline
+		\textbf{Codice} & \textbf{Nome} & \textbf{Range di accettazione} & \textbf{Range di ottimalità} \\
+		\hline
+		MD001 & Indice di Gulpease & 50-100 &60-100\\
+		MD002 &Ortografia & 100-100 & 100-100\\
+		MD003 &Formula di Flesch& 75-100 &80-100 \\
+		\hline
+		MS001 & Complessità ciclomatica & 0-16 & 0-10 \\
+		
+		
+	\end{tabularx}
+\end{center}
