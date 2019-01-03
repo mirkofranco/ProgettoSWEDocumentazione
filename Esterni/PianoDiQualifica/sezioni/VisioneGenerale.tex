@@ -31,7 +31,7 @@ Le metodologie per l'individuazione e la correzione degli errori sono descritte 
 Per garantire che il processo di verifica sia efficace ed efficiente vengono attribuite delle responsabilità a dei specifici ruoli di progetto.
 I ruoli che possiedono la responsabilità del processo di verifica sono il \textit{Responsabile} e i \textit{Verificatori}, fermo restando che ogni membro del gruppo è responsabile di quanto prodotto.
 \section{Risorse}
-\section{Msiure e metriche}
+\section{Misure e metriche}
 Il processo di verifica, per essere utile ed informativo, deve essere quantificabile. Le misure effettuate attraverso il processo di verifica devono quindi basarsi su metriche decise a priori.
 Nel caso vi fossero metriche approssimate e/o incerte, queste verranno corrette in modo incrementale.
 Essendo la natura delle metriche molto variabile, vi sono due tipologie di range:
@@ -77,5 +77,124 @@ Nello specifico, essa è calcolata tramite il grafo di controllo di flusso del p
 \'E quindi opportuno definire un valore di complessità ciclomatica preciso: valori alti sono indice di scarsa manutenibilità del codice e valori bassi potrebbero indicare scarsa efficienza dei metodi.
 Esso fornisce, inoltre, un indice del carico di lavoro richiesto per la fase di testing (un valore alto richiede più test per una copertura completa).
 Il range di ottimalità stabilito varia da 0 a 10, come suggerito dall'ideatore della materica Thomas J. McCabe.  
+
+\begin{itemize}
+	\item \textbf{Range accettazione:} [1 - 15];
+	\item \textbf{Range ottimale:} [1 - 10].
+\end{itemize}
+
+\subsection{Numero di parametri per metodo}
+Definire un range relativo al numero di parametri permette di individuare possibili errori nella progettazione (nel caso in cui un metodo abbia un numero di parametri eccessivo).
+ 
+\begin{itemize}
+	\item \textbf{Range accettazione:} [0 - 8];
+	\item \textbf{Range ottimale:} [0 - 4].
+\end{itemize}  
+
+
+\subsection{Numero di livelli di annidamento}
+Metrica per indicare il numero di chiamate annidate di procedure controllate all'interno dei metodi.\newline
+Un valore elevato è indice di un basso livello di astrazione del codice e una complessità eccessivamente elevata. 
+
+\begin{itemize}
+	\item \textbf{Range accettazione:} [1 - 6];
+	\item \textbf{Range ottimale:} [1 - 3].
+\end{itemize}  
+
+
+\subsection{Attributi per classe}
+Un numero elevato di attributi in una classe potrebbe essere indice di un errore di progettazione.
+Viene quindi definita una metrica che identifichi range accettabili e ottimali per questo parametro.
+Nel caso in cui una classe abbia un numero eccessivo di parametri, valutare la possiblità di suddividere la stessa in più classi, suddividendo quindi le funzioni ad essa assegnate.
+
+\begin{itemize}
+	\item \textbf{Range accettazione:} [0 - 16];
+	\item \textbf{Range ottimale:} [3 - 8].
+\end{itemize}  
+
+\subsection{Linee di codice per commento}
+Metrica identificata dal rapporto tra linee di codice e linee di commento: risulta utile per garantire una maggiore manutenibilità del codice.
+
+\begin{itemize}
+	\item \textbf{Range accettazione:} [>=0.25];
+	\item \textbf{Range ottimale:} [>=0.30]\footnote{ricavato dal rapporo 22/78 \url{https://www.ohloh.net/p/firefox/factoids\#FactoidCommentsLow}}.
+\end{itemize}  
+
+\subsection{Flusso di informazioni}
+Metrica proposta da S. Henry e D. Kafura che misura il flusso di informazioni così definito:
+
+\begin{itemize}
+	\item \textbf{fan-in:} numero di moduli che passano informazioni dentro al modulo in esame;
+	\item \textbf{fan-out:}numero di moduli a cui il modulo in esame passa informazioni.
+\end{itemize} 
+il valore viene calcolato tramite questa funzione:
+\begin{center}
+(lunghezzafunzione)$^2\times fan-in\times fan-out$
+\end{center}
+
+
+\subsection{Accoppiamento}
+La definizione dei range di ottimalità e accettazione delle metriche presenti in questa sezione viene rimandata alla fase di progettazione nel dettaglio 
+\subsubsection{Accoppiamento Afferente}
+Indica la dipendenza di classi esterne a un package rispetto alle classi interne contenute nel package stesso.
+Tale valore, sebbene non indicante necessariamente errori di progettazione, può evidenziare criticità riguardanti la robustezza e l'utilità del package a
+cui fa riferimento.
+Un valore basso può evidenziare scarsa utilità del package, mentre un valore alto necessita di ulteriori verifiche di robustezza, in quanto rappresentante un punto critico nel sfotware.
+\subsubsection{Accoppiamento Efferente}
+Indica la dipendenza di classi interne a un package rispetto alle classi esterne ad esso.
+Un valore basso indica un forte indipendenza del package rispetto al resto del sistema.
+
+\subsection{Copertura del codice}
+Indica la percentuale di istruzioni che sono eseguite durante i test.
+Maggiore è la percentuale di istruzioni coperte dai test eseguiti, maggiore sarà la probabilità che le componenti testate abbiano una ridotta quantità di errori.
+Il valore di tale indice può essere abbassato da metodi molto semplici che non richiedono
+testing. Esempi di questi metodi sono: get e set.
+Parametri utilizzati:
+
+\begin{itemize}
+	
+	\item \textbf{Range accettazione:} [42\%-100\%];
+	\item \textbf{Range ottimale:} [65\%-100\%].
+	
+\end{itemize}
+
+
+
+\begin{tabularx}{\textwidth}{|X|X|X|X|}
+
+	\hline
+	\textbf{Codice} & \textbf{Nome} & 	\textbf{Range di accettazione} & \textbf{Range di ottimalità}\\
+	\endhead
+	\hline
+			SV & Schedule Variance& >= -(c.p.f \footnote{costo preventivo fase} x 10\%)& >=0  \\
+	\hline
+	BV & Budget Variance & >= -(c.p.f x 10\%)& >=0 \\
+	\hline
+	MD001 & Indice di Gulpease & 40-100 & 50-100\\
+	\hline
+	MS001 & Complessità ciclomatica & 1-15 & 1-10 \\
+	\hline
+	MS002 & Numero di parametri per metodo & 0-8 & 0-4 \\
+	\hline
+	MS003 & Numero di livelli di annidamento & 1-6 & 1-3 \\
+	\hline
+	MS004 & Attributi per classe & 0-16 & 3-8 \\
+	\hline
+	MS005 & Linee di codice per commento & >=0.25 & >=0.30 \\
+	\hline
+	MS006 & Flusso di informazioni & - & - \\
+	\hline
+	MS007 & Accoppiamento Afferente & N.D & N.D. \\
+	\hline
+	MS008 & Accoppiamento Efferente& N.D & N.D. \\
+	\hline
+	MS009 & Copertura del codice & 42\%-100\% & 65\%-100\% \\
+	\hline
+	
+\end{tabularx}
+
+
+
+
 
 
