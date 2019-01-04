@@ -31,7 +31,7 @@ Le metodologie per l'individuazione e la correzione degli errori sono descritte 
 Per garantire che il processo di verifica sia efficace ed efficiente vengono attribuite delle responsabilità a dei specifici ruoli di progetto.
 I ruoli che possiedono la responsabilità del processo di verifica sono il \textit{Responsabile} e i \textit{Verificatori}, fermo restando che ogni membro del gruppo è responsabile di quanto prodotto.
 \section{Risorse}
-\section{Misure e metriche}
+\section{Misure e metriche}\label{Metriche}
 Il processo di verifica, per essere utile ed informativo, deve essere quantificabile. Le misure effettuate attraverso il processo di verifica devono quindi basarsi su metriche decise a priori.
 Nel caso vi fossero metriche approssimate e/o incerte, queste verranno corrette in modo incrementale.
 Essendo la natura delle metriche molto variabile, vi sono due tipologie di range:
@@ -159,7 +159,7 @@ Parametri utilizzati:
 \end{itemize}
 
 
-
+\begin{center}
 \begin{tabularx}{\textwidth}{|X|X|X|X|}
 
 	\hline
@@ -190,11 +190,31 @@ Parametri utilizzati:
 	\hline
 	MS009 & Copertura del codice & 42\%-100\% & 65\%-100\% \\
 	\hline
-	
+	\caption{Tabella delle metriche}
 \end{tabularx}
+\end{center}
 
-
-
-
-
-
+\section{Metodi}
+Questa sezione ha lo scopo di definire precisamente le procedure di analisi statica e dinamica del codice.
+\subsection{Analisi dei processi}
+Processo che si identifica in queste fasi:
+\begin{enumerate}
+	\item \textbf{Analisi delle metriche:} Alla conclusione di ogni fase del progetto, per ogni macro-attività, definita nel
+	\textit{Piano di Progetto} , si calcolano gli indici definiti nella \hyperref[Metriche]{Sezione 2.8}. Al fine
+	di avere un indice complessivo di fase dovrà essere inoltre calcolato il valore medio
+	di tali indici.
+	\item \textbf{Analisi del grafico PDCA:} Con l'utilizzo dei dati forniti in output dal grafico PDCA, si possono trarre considerazioni sullo svolgimento generale dei processi.
+	I dati forniti sono visuali e quindi non numericamente identificabili, tuttavia risultano utili per evidenziare errori di pianficazione o criticità presenti nello svolgimento dei processi.
+\end{enumerate}
+\subsection{Analisi dei documenti}
+Viene definito un protocollo per la verifica dei documenti.
+\begin{enumerate}
+	\item \textbf{Controllo e sintattico del periodo:} Utilizzando \glossario{TexStudio} è possible evidenziare gran parte degli errori grammaticali presenti in un documento, tuttavia è comunque necessario un \glossario{walkthrough} da parte di un \glossario{verificatore} per l'individuazione di errori aggiuntivi sfuggiti al controllo automatico;
+	\item \textbf{Rispetto delle norme di progetto:} Nelle \textit{Norme di Progetto} sono definite alcune direttive tipografiche e relative alla struttura dei documenti.
+	I \glossario{verificatori} dovranno effettuare una \glossario{inspection} del documento per individuare errori di questo tipo.
+	\item \textbf{Verifica delle proprietà di glossario:}Seguendo le \textit{Norme di Progetto}, è possiblie utilizzare uno script automatico per l'individuazione di tutte le occorrenze di una parola del glossario in un documento.\\
+	Per ogni occorrenza viene applicato lo stile  predefinito dal comando \textbackslash glossario.
+	Il \glossario{Verificatore} dovrà quindi effettuare un ulteriore controllo allo scopo di constatare che l’output finale sia conforme a quanto precisato nelle \textit{Norme di Progetto};
+	\item \textbf{Calcolo dell'indice di Gulpease:}Utilizzando gli strumenti automatici definiti nelle \textit{Norme di Progetto},su ogni documento redatto il \\ \glossario{Verificatore} deve calcolare l’indice di leggibilità.
+	Si renderà necessario un ulteriore \glossario{walkthrough} nel caso in cui l’indice risultasse troppo basso, allo scopo di snellire e accorciare frasi troppo lunghe e complesse.
+\end{enumerate}
