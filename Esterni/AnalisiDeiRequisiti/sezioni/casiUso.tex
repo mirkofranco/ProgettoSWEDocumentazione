@@ -42,3 +42,21 @@ dove:
 		
 	}%
 }
+
+\section{Caso d'uso UC1: Operazioni ad alto livello}
+\begin{itemize}
+	\item \textbf{Attori}: Utente non autenticato;
+	\item \textbf{Descrizione:} L'utente ha avviato l'applicazione e questa è pronta all'uso. L'utente, non ancora autenticato, può registrarsi al nostro servizio o effettuare il login, nel caso fosse già registrato;
+	\item \textbf{Precondizione:} L'applicazione è avviata e pronta all'uso;
+	\item \textbf{Postcondizione:} L'applicazione ha soddisfatto le volontà dell'utente;
+	\item \textbf{Flusso principale degli eventi}:
+		\begin{enumerate}
+			\item L'utente ha la possibilità di: Registrazione (UC 1.1);
+			\item L'utente ha la possibilità di: Login (UC 1.2).
+		\end{enumerate}
+	\item \textbf{Estensioni}:
+		\begin{enumerate}
+			\item Visualizzazione errore sulla registrazione (UC 1.3);
+			\item Autenticazione fallita (UC 1.4)
+		\end{enumerate}
+\end{itemize}
