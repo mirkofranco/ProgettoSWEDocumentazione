@@ -31,9 +31,71 @@ v1.0.0.
 			\item L'utente ha la possibilità di: Registrazione (UC1.3);
 			\item L'utente ha la possibilità di: Login (UC1.4).
 		\end{enumerate}
-		\item \textbf{Postcondizione:} L'applicazione ha ricevuto tutte le informazioni dell'utente non autenticato sulle operazioni che vuole eseguire.
+		\item \textbf{Postcondizione}: L'applicazione ha ricevuto tutte le informazioni dell'utente non autenticato sulle operazioni che vuole eseguire.
 \end{itemize}
-\section{Caso d'uso UC 1.1}
+\section{Caso d'uso UC 1.1 - Registrazione}
+\section{Caso d'uso 1.2 - Login}
+\begin{figure} [h]
+	\centering
+	\includegraphics[scale=0.4]{./Diagram/UC1-2.png}
+	\caption{Login}\label{}
+\end{figure}
+	\begin{itemize}
+		\item \textbf{Attori primari}: Utente non autenticato;
+		\item \textbf{Attori secondari}: Amazon ;
+		\item \textbf{Descrizione}: Il sistema è avviato, ma è necessario effettuare il login per accedervi;
+		\item \textbf{Precondizione}: Il sistema non permette l'accesso all'utente non autenticato;
+		\item \textbf{Flusso principale degli eventi}:
+		\begin{enumerate}
+			\item L'utente inserisce la propria email (UC1.2.1);
+			\item L'utente inserisce la propria password (UC1.2.2);
+			\item L'utente invia le credenziali (UC1.2.3).
+		\end{enumerate}
+	\item \textbf{Scenario alternativo}: L'utente dopo aver inviato le proprie credenziali visualizza un messaggio d'errore (UC1.2.4);
+		\item \textbf{Postcondizione}: Il sistema permette l'accesso all'utente che ora diventa un utente autenticato; 
+		\item \textbf{Estensioni}:
+			\begin{enumerate}
+				\item	Visualizzazione errore login (UC1.2.4).
+			\end{enumerate}
+		\end{itemize}
+	
+\section{Caso d'uso UC1.2.1:  Inserimento email}
+\begin{itemize}
+	\item \textbf{Attori primari}: Utente non autenticato;
+	\item \textbf{Descrizione}: L'utente inserisce la sua email per effettuare il login;
+	\item \textbf{Precondizione}: Il sistema fa visualizzare il campo email
+	\item \textbf{Flusso principale degli eventi}: L'attore inserisce la sua mail per effettuare il login;
+	\item \textbf{Postcondizione:} E stata inserita la mail dell'attore nel campo predisposto. 
+\end{itemize}
+\section{Caso d'uso UC1.2.2:  Inserimento password
+	\begin{itemize}
+		\item \textbf{Attori primari}: Utente non autenticato;
+		\item \textbf{Descrizione:} L'utente inserisce la sua password per effettuare il login;
+		\item \textbf{Precondizione}: Il sistema fa visualizzare il campo password;
+		\item \textbf{Flusso principale degli eventi}: L'attore inserisce la sua password per effettuare il login;
+		\item \textbf{Postcondizione:} E stata inserita la password dell'attore nel campo predisposto. 
+	\end{itemize}
+\section{Caso d'uso UC1.2.3:  Invio credenziali
+	\begin{itemize}
+		\item \textbf{Attori primari}: Utente non autenticato;
+		\item \textbf{Descrizione:} Dopo aver inserito tutti i dati l'utente conferma il login;
+		\item \textbf{Precondizione}: Il sistema far visualizzare la pagina di login;
+		\item \textbf{Flusso principale degli eventi}: L'attore dopo aver inserito le credenziali può confermare il login;
+		\item \textbf{Postcondizione}: L'utente è riconosciuto dal sistema come utente autenticato;
+		\item \textbf{Scenari alternativi}: L'utente inserisce credenziali errate e viene visualizzato un messaggio d'errore;
+		\item \textbf{Estenzioni}:
+			\begin{enumerate}
+				\item Visualizzazione errore login (UC1.2.4).
+			\end{enumerate} 
+	\end{itemize}
+\section{Caso d'uso UC1.2.4:  Visualizzazione errore login
+	\begin{itemize}
+		\item \textbf{Attori primari}: Utente non autenticato;
+		\item \textbf{Descrizione:} L'attore può aver inserito delle credenziali errate;
+		\item \textbf{Precondizione}: Il sistema ha ricevuto campi dati errati;
+		\item \textbf{Flusso principale degli eventi}: L'attore visualizza un messaggio d'errore;
+		\item \textbf{Postcondizione:} L'utente non è riconosciuto dal sistema.
+	\end{itemize}
 
 \section{Caso d'uso UC2: Scenario principale dell'utente autenticato}
 \begin{itemize}
@@ -50,9 +112,7 @@ v1.0.0.
 	\end{enumerate}
 	\item \textbf{Postcondizione:} 
 	\item \textbf{Estensioni}:
-
 \end{itemize}
-
 
 
 \section{Caso d'uso UC1.1.2:Inserimento cognome}
@@ -131,12 +191,3 @@ v1.0.0.
 
 
 
-\section{Caso d'uso UC1.2: Login}
-\begin{itemize}
-	\item \textbf{Attori primari}: Utente non autenticato;
-	\item \textbf{Attori secondari}: ;
-	\item \textbf{Descrizione:} L'utente richiede il login al sistema.
-	\item \textbf{Precondizione:Il sistema non permette l'accesso all'utente non autenticato;}
-	\item \textbf{Flusso principale degli eventi}:L'utente effettua il login.
-	\item \textbf{Postcondizione:} Il sistema consente l'accesso all'utente che ora è autenticato.
-\end{itemize}
