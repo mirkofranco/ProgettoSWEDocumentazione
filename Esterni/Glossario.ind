@@ -1,18 +1,31 @@
 \begin{theindex}
 
-  \item AEntry, 5, 7--10, 12--21, 23--25
+  \item Account linking, 3
+  \item AEntry, 7, 8, 10, 12--14, 17--19, 22, 24
+  \item Agile, 3
   \item Alexa, 3
-  \item Amazon, 3
+  \item Amazon Web Services, 3
   \item Android, 3
+  \item AWS, 3
 
   \indexspace
 
-  \item BEntry, 4
+  \item Baseline, 4
+
+  \indexspace
+
+  \item Capitolato, 5
+  \item Connettore, 5
 
   \indexspace
 
   \item Design pattern, 6
+  \item Diagramma di Gantt, 6
   \item Diagramma UML, 6
+
+  \indexspace
+
+  \item Gantt, 9
 
   \indexspace
 
@@ -21,6 +34,32 @@
 
   \indexspace
 
-  \item UpperCamelCase, 22
+  \item MegAlexa, 15
+  \item Milestone, 15
+
+  \indexspace
+
+  \item NodeJS, 16
+
+  \indexspace
+
+  \item Requisito, 20
+  \item Routine, 20
+
+  \indexspace
+
+  \item Skill, 21
+
+  \indexspace
+
+  \item UpperCamelCase, 23
+
+  \indexspace
+
+  \item Workflow, 25
+
+  \indexspace
+
+  \item ZeroSeven, 26
 
 \end{theindex}
