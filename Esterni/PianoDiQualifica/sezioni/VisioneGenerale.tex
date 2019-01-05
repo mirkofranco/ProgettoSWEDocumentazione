@@ -23,6 +23,9 @@ Il controllo di qualità del prodotto è garantito:
 	\item \textbf{Validazione}: conferma in modo oggettivo e formale che il prodotto corrisponda ai requisiti.
 \end{itemize}
 \section{Organizzazione}
+Ognuna delle fasi del \glossario{progetto} descritte nel \textit{Piano di Progetto v1.0.0} necessità di diverse attività di verifica e approvazione:\\\newline
+ \textbf{Analisi:} in questa fase si fa riferimento ai metodi di verifica descritti nella \hyperref[Metodi]{sezione 2.12} sui documenti prodotti dal gruppo.\\ \newline
+Concluso il processo di verifica ha inizio il processo di approvazione.Durante tale processo sarà compito del \textit{Responsabile di Progetto} accertarsi che il livello macroscopico dei prodotti sia conforme a quanto pianificato e progettato precedentemente.
 \section{Pianificazione strategica e temporale}
 Avendo come obbiettivo principale il rispetto della pianificazione descritta nel \texttt{Piano di Progetto v1.0.0}, è necessario che l'attività di verifica di ogni attività sia sistematica e organizzata nel migliore dei modi. 
 Rispettando ciò si riesce a individuare e quindi correggere gli eventuali errori rilevati il prima possibile, evitandone una pericolosa proliferazione. 
@@ -30,7 +33,84 @@ Le metodologie per l'individuazione e la correzione degli errori sono descritte 
 \section{Reponsabilità}
 Per garantire che il processo di verifica sia efficace ed efficiente vengono attribuite delle responsabilità a dei specifici ruoli di progetto.
 I ruoli che possiedono la responsabilità del processo di verifica sono il \textit{Responsabile} e i \textit{Verificatori}, fermo restando che ogni membro del gruppo è responsabile di quanto prodotto.
-\section{Risorse}
+\section{Risorse} Per la relaizzazione del prodotto software sono necessarie sia risorse tecnologiche che umane.
+\begin{itemize}
+	\item \textbf{Risorse Umane:} descritte con maggiore dettaglio nel \textit{Piano di Progetto v.1.0.0}
+	\subitem	\textit{Responsabile di Progetto;}
+	\subitem	\textit{Amministratore di Progetto;}
+	\subitem	\textit{Analista}
+	\subitem	\textit{Progettista;}
+	\subitem	\textit{Programmatore;}
+	\subitem	\textit{Verificatore.}
+	
+	\item \textbf{Risorse Software:} descritte con maggiore dettaglio nelle \textit{Norme di Progetto}; comprendono tutti gli strumenti utilizzati dal gruppo per
+	\subitem Gestione della \glossario{repository};
+	\subitem Sviluppo del codice;
+	\subitem Creazione dei diagrammi in \glossario{UML};
+	\subitem Assegnazione di compiti per lo svolgimento delle \glossario{attività};
+	\subitem Gestione dei test e dell'analisi del codice;
+	\subitem Automatizzazione del processo di verifica;
+
+	\item \textbf{Risorse Hardware}
+	Ogni membro del gruppo ha a disposizione un computer personale contenente tutti gli strumenti descritti nel \textit{Piano di Qualifica} e nelle 
+	\textit{Norme di Progetto}.
+	
+\section{Tecniche di analisi}
+\subsection{Analisi statica}
+L’analisi statica, applicata alla documentazione e al
+codice, permette di effettuare la verifica di quanto prodotto individuando errori ed
+anomalie; essa può essere svolta in due modi distinti ma complementari.
+
+\begin{itemize}
+\item \textbf{Walkthrough:} questa metodologia prevede una revisione ad ampio
+spettro parallelizzabile, così da stilare una prima lista degli errori più
+comuni. Risulta fondamentale nelle prime fasi di sviluppo del progetto
+dal momento che è il più semplice da imparare, di contro però è molto
+dispendioso in termini di efficienza;
+
+\item \textbf{Inspection:} risulta essere molto più veloce perché attraverso una lista di controllo degli
+errori e delle misurazioni effettuate permette un'analisi più efficace delle
+criticità, omettendo le parti che non presentano problematiche.
+\end{itemize}
+	
+\subsection{Analisi dinamica}	L'analisi dinamica al contrario dell'analisi statica è applicabile unicamente
+al software e non ai documenti. Il processo prevede la realizzazione e l'esecuzione
+di test sul codice. Ogni test per essere valido deve essere ripetibile,
+cioè attraverso il medesimo input di partenza si deve poter risalire a un dato
+output. A tal fine è necessario che per ogni test vengano segnati i seguenti
+riferimenti:
+
+\begin{itemize}
+	\item \textbf{Ambiente}: sistemi software e hardware utilizzati nel corso dei
+	test;
+	\item \textbf{Stato iniziale}: lo stato di partenza del prodotto prima del test;
+	\item \textbf{Input};
+	\item \textbf{Output};
+	\item \textbf{Avvisi}: un eventuale insieme di istruzioni riguardanti l'esecuzione del
+test e i suoi risultati.
+
+\end{itemize}
+
+Sono inoltre identificabili 5 tipi diversi di test:
+\begin{itemize}
+	\item \textbf{Test di unità:} Per unità si intende una piccola quantità di software che è utile verificare singolarmente (spesso sviluppata da un singolo \textit{Programmatore}).
+	Testare la corretta esecuzione di queste porzioni di codice permette di evitare possibili errori di implementazione in fase di sviluppo; 
+	\item \textbf{Test di integrazione:} Servono a verificare che la combinazione di 2 o più unità
+	software funzioni come previsto. \\
+	Questo tipo di test serve ad individuare errori residui nella realizzazione dei singoli
+	moduli.
+	L'esecuzione di tali test prevede l'aggiunta di componenti non ancora sviluppate in modo fittizio, allo scopo di non influenzare in alcuna maniera l'esito delle analisi;
+	\item \textbf{Test di sistema:} Comprendono tutti i test di validazione del prodotto software una volta integrati tutti i componenti: l'esecuzione 
+	di tali test avviene solamente quando si ritiene che il prodotto abbia raggiunto la sua versione definitiva.\\
+	Tali test si occupano inoltre di verificare che la copertura dei requisiti software stabiliti in fase di Analisi
+	di Dettaglio sia totale.
+	\item \textbf{Test di regressione:} Da effettuare nel caso in cui certe parti del prodotto software vengano modificate nuovamente una volta complete; ciò implica la riesecuzione di test di unità e di integrazione per i moduli interessati.
+	\item \textbf{Test di accettazione:}È il test di collaudo del prodotto software che viene eseguito in presenza del proponente.
+	Se tale collaudo viene superato positivamente si può procedere al rilascio ufficiale del
+	prodotto sviluppato.
+\end{itemize}
+	
+\end{itemize}	
 \section{Misure e metriche}\label{Metriche}
 Il processo di verifica, per essere utile ed informativo, deve essere quantificabile. Le misure effettuate attraverso il processo di verifica devono quindi basarsi su metriche decise a priori.
 Nel caso vi fossero metriche approssimate e/o incerte, queste verranno corrette in modo incrementale.
@@ -194,7 +274,7 @@ Parametri utilizzati:
 \end{tabularx}
 \end{center}
 
-\section{Metodi}
+\section{Metodi}\label{Metodi}
 Questa sezione ha lo scopo di definire precisamente le procedure di analisi statica e dinamica del codice.
 \subsection{Analisi dei processi}
 Processo che si identifica in queste fasi:
