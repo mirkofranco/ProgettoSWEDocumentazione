@@ -1,27 +1,13 @@
 \chapter{Visione generale della strategia di verifica}
 \section{Obbiettivi}
+La seguente sezione intende descrivere sia gli obiettivi di qualità relativi al prodotto
+richiesto dal committente, che quelli relativi ai processi necessari al suo completamento.
 \subsection{Qualità di processo}
 Affinché la qualità di prodotto sia garantita è necessario perseguire al qualità dei processi che concorrono alla sua realizzazione. Per raggiungere questo obbiettivo viene adottato lo standard ISO/IEC 15504 denominato SPICE che fornisce strumenti per valutare la bontà dei processi che vengono realizzati.
 Per applicare correttamente questo standard è necessario utilizzare il ciclo di Deming (ciclo PCDA) che fornisce una metodologia per il controllo dei processi che consente di migliorarne in modo continuativo la qualità. 
 \subsection{Qualità di prodotto}
 Al fine di aumentare la possibilità di successo del prodotto in termini di conformità ai requisiti, idoneità all'uso, soddisfazione del committente è necessario fissare alcuni obbiettivi qualitativi e verificare che questi vengano rispettati.
 Lo standard ISO/IEC 9126:2001 fornisce gli obbiettivi e le metriche necessarie a misurare il raggiungimento di tali obbiettivi.
-\section{Procedure di controllo di qualità dei processi}
-La qualità dei processi viene garantita dall'applicazione del ciclo PDCA. Grazie a tale principio è possibile ottenere un miglioramento continuo della qualità di ogni processo e come diretta conseguenza si ottiene il miglioramento dei prodotti ottenuti.
-Per avere controllo dei processi, e di conseguenza migliorarne la qualità, bisogna: 
-\begin{itemize}
-	\item Definire in modo dettagliato i processi;
-	\item Assegnare in modo chiaro le risorse ai processi;
-	\item Avere controllo sui processi.
-\end{itemize} 
-La realizzazione di questi punti è descritta in modo dettagliato nel \textit{Piano di Progetto v1.0.0}.
-\section{Procedure di controllo di qualità di prodotto}
-Il controllo di qualità del prodotto è garantito: 
-\begin{itemize}
-	\item \textbf{Quality Assurance}:insieme di attività realizzate per garantire il raggiungimento degli obbiettivi di qualità;
-	\item \textbf{Verifica}: processo che determina se l'output di un'attività è consistente, coretto e completo. La verifica viene effettuata lungo tutta la durata del progetto. Questo permette di arrivare pronti al collaudo finale;
-	\item \textbf{Validazione}: conferma in modo oggettivo e formale che il prodotto corrisponda ai requisiti.
-\end{itemize}
 \section{Organizzazione}
 Ognuna delle fasi del \glossario{progetto} descritte nel \textit{Piano di Progetto v1.0.0} necessità di diverse attività di verifica e approvazione:\\\newline
  \textbf{Analisi:} in questa fase si fa riferimento ai metodi di verifica descritti nella \hyperref[Metodi]{sezione 2.12} sui documenti prodotti dal gruppo.\\ \newline
@@ -111,7 +97,7 @@ Sono inoltre identificabili 5 tipi diversi di test:
 \end{itemize}
 	
 \end{itemize}	
-\section{Misure e metriche}\label{Metriche}
+\chapter{Misure e metriche}\label{Metriche}
 Il processo di verifica, per essere utile ed informativo, deve essere quantificabile. Le misure effettuate attraverso il processo di verifica devono quindi basarsi su metriche decise a priori.
 Nel caso vi fossero metriche approssimate e/o incerte, queste verranno corrette in modo incrementale.
 Essendo la natura delle metriche molto variabile, vi sono due tipologie di range:
@@ -238,7 +224,7 @@ Parametri utilizzati:
 	
 \end{itemize}
 
-\section{Riassunto metriche}
+\subsection{Riassunto metriche}
 \begin{center}
 \begin{tabularx}{\textwidth}{|X|X|X|X|}
 
@@ -295,6 +281,26 @@ Viene definito un protocollo per la verifica dei documenti.
 	\item \textbf{Verifica delle proprietà di glossario:}Seguendo le \textit{Norme di Progetto}, è possiblie utilizzare uno script automatico per l'individuazione di tutte le occorrenze di una parola del glossario in un documento.\\
 	Per ogni occorrenza viene applicato lo stile  predefinito dal comando \textbackslash glossario.
 	Il \glossario{Verificatore} dovrà quindi effettuare un ulteriore controllo allo scopo di constatare che l’output finale sia conforme a quanto precisato nelle \textit{Norme di Progetto};
-	\item \textbf{Calcolo dell'indice di Gulpease:}Utilizzando gli strumenti automatici definiti nelle \textit{Norme di Progetto},su ogni documento redatto il \\ \glossario{Verificatore} deve calcolare l’indice di leggibilità.
+	\item \textbf{Calcolo dell'indice di Gulpease:} Utilizzando gli strumenti automatici definiti nelle \textit{Norme di Progetto},su ogni documento redatto il \\ \glossario{Verificatore} deve calcolare l’indice di leggibilità.
 	Si renderà necessario un ulteriore \glossario{walkthrough} nel caso in cui l’indice risultasse troppo basso, allo scopo di snellire e accorciare frasi troppo lunghe e complesse.
 \end{enumerate}
+
+
+\chapter{Gestione amministrativa della revisione}
+\section{Procedure di controllo di qualità dei processi}
+La qualità dei processi viene garantita dall'applicazione del ciclo PDCA. Grazie a tale principio è possibile ottenere un miglioramento continuo della qualità di ogni processo e come diretta conseguenza si ottiene il miglioramento dei prodotti ottenuti.
+Per avere controllo dei processi, e di conseguenza migliorarne la qualità, bisogna: 
+\begin{itemize}
+	\item Definire in modo dettagliato i processi;
+	\item Assegnare in modo chiaro le risorse ai processi;
+	\item Avere controllo sui processi.
+\end{itemize} 
+La realizzazione di questi punti è descritta in modo dettagliato nel \textit{Piano di Progetto v1.0.0}.
+\section{Procedure di controllo di qualità di prodotto}
+Il controllo di qualità del prodotto è garantito: 
+\begin{itemize}
+	\item \textbf{Quality Assurance}:insieme di attività realizzate per garantire il raggiungimento degli obbiettivi di qualità;
+	\item \textbf{Verifica}: processo che determina se l'output di un'attività è consistente, coretto e completo. La verifica viene effettuata lungo tutta la durata del progetto. Questo permette di arrivare pronti al collaudo finale;
+	\item \textbf{Validazione}: conferma in modo oggettivo e formale che il prodotto corrisponda ai requisiti.
+\end{itemize}
+  
