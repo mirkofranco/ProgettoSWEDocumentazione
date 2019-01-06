@@ -1,35 +1,48 @@
-\indexentry{Account linking}{3}
-\indexentry{Agile}{3}
-\indexentry{Alexa}{3}
-\indexentry{Amazon Web Services}{3}
-\indexentry{Android}{3}
-\indexentry{AWS}{3}
-\indexentry{Baseline}{4}
-\indexentry{Capitolato}{5}
-\indexentry{Connettore}{5}
-\indexentry{Design pattern}{6}
-\indexentry{Diagramma di Gantt}{6}
-\indexentry{Diagramma UML}{6}
-\indexentry{AEntry}{7}
-\indexentry{AEntry}{8}
-\indexentry{Gantt}{9}
-\indexentry{AEntry}{10}
-\indexentry{Indice di Gulpease}{11}
-\indexentry{iOS}{11}
-\indexentry{AEntry}{12}
-\indexentry{AEntry}{13}
-\indexentry{AEntry}{14}
-\indexentry{MegAlexa}{15}
-\indexentry{Milestone}{15}
-\indexentry{NodeJS}{16}
-\indexentry{AEntry}{17}
-\indexentry{AEntry}{18}
-\indexentry{AEntry}{19}
-\indexentry{Requisito}{20}
-\indexentry{Routine}{20}
-\indexentry{Skill}{21}
-\indexentry{AEntry}{22}
-\indexentry{UpperCamelCase}{23}
-\indexentry{AEntry}{24}
-\indexentry{Workflow}{25}
-\indexentry{ZeroSeven}{26}
+\indexentry{Account linking}{2}
+\indexentry{Agile}{2}
+\indexentry{Alexa}{2}
+\indexentry{Amazon Web Services}{2}
+\indexentry{Android}{2}
+\indexentry{API Gateway}{2}
+\indexentry{Asana}{2}
+\indexentry{AWS}{2}
+\indexentry{Baseline}{3}
+\indexentry{Capitolato}{4}
+\indexentry{Connettore}{4}
+\indexentry{Design pattern}{5}
+\indexentry{Diagramma di Gantt}{5}
+\indexentry{DynamoDB}{5}
+\indexentry{Formula di Flesch}{6}
+\indexentry{Framework}{6}
+\indexentry{Gantt}{7}
+\indexentry{GitHub}{7}
+\indexentry{Indice di Gulpease}{8}
+\indexentry{Instagantt}{8}
+\indexentry{iOS}{8}
+\indexentry{Javascript}{9}
+\indexentry{Kotlin}{10}
+\indexentry{MegAlexa}{11}
+\indexentry{Milestone}{11}
+\indexentry{Node.js}{12}
+\indexentry{Processo}{13}
+\indexentry{Prodotto}{13}
+\indexentry{Progetto}{13}
+\indexentry{Proponente}{13}
+\indexentry{Requisito}{14}
+\indexentry{Routine}{14}
+\indexentry{SCRUM}{15}
+\indexentry{Serverless}{15}
+\indexentry{Skill}{15}
+\indexentry{Skype}{15}
+\indexentry{SonarQube}{15}
+\indexentry{SPICE}{15}
+\indexentry{Sprint}{15}
+\indexentry{Swift}{15}
+\indexentry{Telegram}{16}
+\indexentry{Texstudio}{16}
+\indexentry{UML}{17}
+\indexentry{Upper Camel Case}{17}
+\indexentry{Verifica}{18}
+\indexentry{Walkthrough}{19}
+\indexentry{Workflow}{19}
+\indexentry{ZeroSeven}{20}
