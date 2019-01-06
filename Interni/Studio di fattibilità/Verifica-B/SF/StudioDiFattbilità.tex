@@ -1,0 +1,51 @@
+\documentclass[a4paper,12pt]{book}
+
+\usepackage{ZeroSeven}
+
+\titlepage{}
+
+\author{Mirko Franco}
+\date{26-11-2018}
+\intestazioni{\includegraphics[scale=0.3]{images/logo_intestazione}}
+\pagestyle{myfront}
+\begin{document}
+\begin{titlepage}
+	\centering
+	{\huge\bfseries MegAlexa\par}
+	Arricchitore di skill di Amazon Alexa
+	\line(1,0){350} \\
+	{\scshape\LARGE Studio di Fattibilità \par}
+	\vspace{1cm}
+	{\scshape Gruppo ZeroSeven \par}
+	\logo
+	%devono essere compilati questi campi ogni volta
+	\begin{tabular}{c|c}
+		{\hfill \textbf{Versione}} 			& 1.0.0			\\
+		{\hfill\textbf{Data Redazione}} 	& 26-11-2018		\\ 
+		{\hfill\textbf{Redazione}} 			&  		Ludovico Brocca \\ & Andrea Deidda\\ & Stefano Zanatta		\\
+		{\hfill\textbf{Verifica}} 				&  					Bianca Ciuche \\ & Matteo Depascale\\ 
+		{\hfill\textbf{Approvazione}} 		&  				Mirko Franco\\ 
+		{\hfill\textbf{Uso}} 					& 		Interno		\\ 
+		{\hfill\textbf{Distribuzione}} 			& 			Prof. Tullio Vardanega \\ & Prof. Riccardo Cardin \\ & Gruppo ZeroSeven		\\ 
+		{\hfill\textbf{Email di contatto}} & zerosevenswe@gmail.com \\
+	\end{tabular}
+\end{titlepage}
+	
+
+	
+\label{LastFrontPage}
+	\newpage	
+	\input{tabella_modifiche}
+	\pagestyle{mymain}
+	\tableofcontents
+	\input{introduzione}	
+	\input{capitolati/capitolato_scelto}
+	\input{capitolati/capitolato1}
+	\input{capitolati/capitolato2}
+	\input{capitolati/capitolato3}
+	\input{capitolati/capitolato5}
+	\input{capitolati/capitolato6}	
+	
+	\label{LastPage}
+
+\end{document}
