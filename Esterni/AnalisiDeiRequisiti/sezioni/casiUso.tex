@@ -172,6 +172,11 @@ v1.0.0.
 			\item \textbf{Postcondizione:} Il sistema consente l'accesso all'utente che ora è autenticato.
 		\end{itemize}
 		\section{Caso d'uso UC2: Scenario principale dell'utente autenticato}
+		\begin{figure} [h]
+			\centering
+			\includegraphics[scale=0.4]{./Diagram/UC2.png}
+			\caption{Scenario principale dell'utente autenticato }\label{}
+		\end{figure}
 		\begin{itemize}
 			\item \textbf{Attori primari}: Utente autenticato;
 			\item \textbf{Descrizione:} L'attore può creare, modificare ed eliminare un workflow, modificare i propri dati personali ed eseguire il logout.
@@ -181,12 +186,17 @@ v1.0.0.
 				\item l'utente può creare un Workflow (UC2.1);
 				\item l'utente può eliminare un Workflow (UC2.2);
 				\item l'utente può modificare un Workflow (UC2.3);
-				\item l'utente può modificare i dati personali (UC2.4);
+				\item l'utente può modificare l'account Amazon (UC2.4);
 				\item l'utente può effettuare il Logout (UC2.5).
 			\end{enumerate}
 			\item \textbf{Postcondizione:} Il sistema ha ricevuto le informazioni riguardanti i comandi che l'utente vuole eseguire.
 		\end{itemize}
 		\section{Caso d'uso UC2.1: Creazione workflow}
+		\begin{figure} [h]
+			\centering
+			\includegraphics[scale=0.4]{./Diagram/UC2-1.png}
+			\caption{Scenario principale dell'utente autenticato }\label{}
+		\end{figure}
 		\begin{itemize}
 			\item \textbf{Attori primari}: Utente autenticato;
 			\item \textbf{Descrizione:} L'attore può creare un workflow selezionando e configurando i blocchi disponibili;
@@ -244,6 +254,11 @@ v1.0.0.
 			\item \textbf{Postcondizione:} Il workflow che l'attore voleva eliminare è stato rimosso dal sistema.
 		\end{itemize}
 		\section{Caso d'uso UC2.3: Modifica workflow}
+		\begin{figure} [h]
+			\centering
+			\includegraphics[scale=0.4]{./Diagram/UC2-3.png}
+			\caption{Modifica workflow }\label{}
+		\end{figure}
 		\begin{itemize}
 			\item \textbf{Attori primari}: Utente autenticato.
 			\item \textbf{Descrizione:} L'attore modifica un workflow.
@@ -258,7 +273,7 @@ v1.0.0.
 			\end{enumerate}
 			\item \textbf{Postcondizione:} Il workflow è stato modificato.
 		\end{itemize}
-		\section{Caso d'uso UC2.3.1: Scelta nome }
+		\section{Caso d'uso UC2.3.1: Modifica nome workflow}
 		\begin{itemize}
 			\item \textbf{Attori primari}: Utente autenticato.
 			\item \textbf{Descrizione:} L'attore modifica il nome del workflow.
@@ -330,7 +345,17 @@ v1.0.0.
 			\end{enumerate}
 			\item \textbf{Postcondizione:} Il sistema è correttamente collegato a un account Amazon.
 		\end{itemize}
-
+		\section{Caso d'uso UC2.5: Logout }
+		\begin{itemize}
+			\item \textbf{Attori primari}: Utente autenticato.
+			\item \textbf{Descrizione:} L'attore effettua il logout dall'applicazione.
+			\item \textbf{Precondizione:} Il sistema fornisce un metodo per permettere all'utente di disconnettersi dal sistema.
+			\item \textbf{Flusso principale degli eventi:}
+			\begin{enumerate}
+				\item l'attore si disconnette dal sistema;
+			\end{enumerate}
+			\item \textbf{Postcondizione:} Il sistema non riconosce più l'utente.
+		\end{itemize}
 			
 
 			
