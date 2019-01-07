@@ -118,9 +118,9 @@ v1.0.0.
 	\end{enumerate}
 	\item \textbf{Scenario alternativo}: L'utente dopo aver inviato le proprie credenziali visualizza un messaggio d'errore (UC1.2.4);
 	\item \textbf{Postcondizione}: Il sistema permette l'accesso all'utente che ora diventa un utente autenticato; 
-	\item \textbf{Estensioni}:
+	\item \textbf{Generalizzazioni}:
 	\begin{enumerate}
-		\item	Visualizzazione errore login (UC1.2.4).
+		\item Login automatico (UC1.3)
 	\end{enumerate}
 \end{itemize}
 
@@ -162,6 +162,15 @@ v1.0.0.
 			\item \textbf{Precondizione}: Il sistema ha ricevuto campi dati errati;
 			\item \textbf{Flusso principale degli eventi}: L'attore visualizza un messaggio d'errore;
 			\item \textbf{Postcondizione:} L'utente non è riconosciuto dal sistema.
+		\end{itemize}
+	\section{Caso d'uso UC1.3: Login automatico}
+	\begin{itemize}
+		\item \textbf{Attori primari}: Utente non autenticato;
+		\item \textbf{Attori secondari}: Amazon;
+		\item \textbf{Descrizione}: Il sistema è avviato, ma è necessario effettuare il login per accedervi;
+		\item \textbf{Precondizione}: Il sistema non permette l'accesso all'utente non autenticato;
+		\item \textbf{Scenario alternativo}: L'utente dopo aver inviato le proprie credenziali visualizza un messaggio d'errore (UC1.2.4);
+		\item \textbf{Postcondizione}: Il sistema permette l'accesso all'utente che ora diventa un utente autenticato; 
 		\end{itemize}
 		\section{Caso d'uso UC1.1.2: Inserimento cognome}
 		\begin{itemize}
@@ -229,15 +238,6 @@ v1.0.0.
 				\item Conferma Password;
 			\end{itemize}
 			\item \textbf{Postcondizione:} Il sistema mostra un messaggio d'errore per segnalare il tentativo di registrarsi con campi dati errati.
-		\end{itemize}
-		\section{Caso d'uso UC1.2: Login}
-		\begin{itemize}
-			\item \textbf{Attori primari}: Utente non autenticato;
-			\item \textbf{Attori secondari}: ;
-			\item \textbf{Descrizione:} L'utente richiede il login al sistema;
-			\item \textbf{Precondizione:} Il sistema non permette l'accesso all'utente non autenticato;
-			\item \textbf{Flusso principale degli eventi:} L'utente effettua il login.
-			\item \textbf{Postcondizione:} Il sistema consente l'accesso all'utente che ora è autenticato.
 		\end{itemize}
 		\section{Caso d'uso UC2: Scenario principale dell'utente autenticato}
 		\begin{figure} [h]
