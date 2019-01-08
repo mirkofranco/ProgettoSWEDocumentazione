@@ -1,9 +1,180 @@
 \chapter{Voice Dialog Flow}
 
-\section{Help Intent}
+Il seguente capitolo presenta degli esempi di interazioni fra l'utente e il dispositivo \glossario{Alexa}, esse potranno essere soggette a modifiche e ampliamenti nelle fasi successive del  \glossario{progetto}, a seconda delle esigenze e richieste del committente e del proponente.
+Le interazioni sono strutturate come segue:
+\begin{itemize}
+	\item \textbf{U:} rappresenta l'utente
+	\item \textbf{A:} rappresenta Alexa,
+	\item \textbf{[Data]:} rappresenta un dato il cui contenuto è determinato da risorse non presenti nel dispositivo al momento dell'interazione
+\end{itemize}
+
+
+\section{Intents}
+Per \glossario{intent} si intende la richiesta da parte dell'utente di eseguire azioni che esulano dal normale flusso di controllo della \glossario{skill}.
+Questa sezione si occupa di elencare i principali \glossario{intents} a disposizione di un utente, insieme agli output previsti una volta ricevuta la richiesta.
+Si fa riferimento alla documentazione fornita da \glossario{Amazon} per lo sviluppo di una \glossario{skill} e la sua implementazione ottimale.\footnote{\url{https://developer.amazon.com/it/documentation}}
+
+
+\subsection{Help Intent}
+\subsubsection{English}
+\begin{itemize}
+	\intent{help}
+	\intent{help me}
+	\intent{can you help me}
+	\intent{tell me my workflows}
+	\intent{i'd like a list of my workflows}	
+\end{itemize}
+\subsubsection{Italiano}
+	\begin{itemize}
+	\intent{aiuto}	
+	\intent{aiutami}
+	\intent{aiuto per favore}
+	\end{itemize}
+
+\subsection{Cancel Intent}
+\subsubsection{English}
+\begin{itemize}
+	\intent{cancel}
+	\intent{never mind}
+	\intent{forget it}
+\end{itemize}
+
+\subsubsection{Italiano}
+\begin{itemize}
+	\intent{annulla}
+	\intent{non importa}
+	\intent{lascia stare}
+	
+	
+\end{itemize}
+
+
+
+
+\subsection{Stop Intent}
+\subsubsection{English}
+\begin{itemize}	
+	\intent{stop}
+	\intent{off}
+	\intent{shut up}
+	
+\end{itemize}
+
+\subsubsection{Italiano}
+
+\begin{itemize}
+	\intent{ferma}
+	\intent{smettila}
+	\intent{basta}
+	\intent{stop}
+	
+\end{itemize}
+
+
+\subsection{Next Intent}
+\subsubsection{English}
+\begin{itemize}
+	\intent{next}
+	\intent{skip}
+	\intent{skip forward}	
+\end{itemize}
+
+\subsubsection{Italiano}
+
+\begin{itemize}
+	
+	\intent{prossimo}
+	\intent{prossima}
+	\intent{successivo}
+	
+\end{itemize}
+
+
+\subsection{No Intent}
+\subsubsection{English}
+\begin{itemize}
+	
+	\intent{no}
+	\intent{no thanks}
+	
+\end{itemize}
+
+\subsubsection{Italiano}
+\begin{itemize}	
+	\intent{No}	
+	\intent{No grazie}
+	
+\end{itemize}
+
+
+
+\subsection{Pause Intent}
+\subsubsection{English}
+\begin{itemize}
+	
+	\intent {pause}
+	\intent {pause that}
+	
+\end{itemize}
+
+\subsubsection{Italiano}
+\begin{itemize}
+	
+	\intent{metti in pausa}
+	\intent{mettila in pausa}
+	
+\end{itemize}
+
+
+
+
+\subsection{Resume Intent}
+\subsubsection{English}
+\begin{itemize}
+	
+	\intent{resume}
+	\intent{continue}
+	\intent{keep going"}
+	
+\end{itemize}
+
+\subsubsection{Italiano}
+\begin{itemize}
+	\intent{riprendi}
+	\intent{continua}
+	\intent{riprendilo}
+	
+\end{itemize}
+
+
+
+\subsection{Yes Intent}
+\subsubsection{English}
+\begin{itemize}
+	
+	\intent{yes}
+	\intent{yes please}
+	\intent{sure"}
+	
+\end{itemize}
+
+\subsubsection{Italiano}
+\begin{itemize}
+\intent{sì}	
+\intent{sì per favore}	
+\intent{certo}		
+\end{itemize}
+
+
+
+
 
 \section{Avvio Skill}
 \subsection{Italiano}
+
+
+
+
 
 \subsection{Inglese}
 Una conversazione tipica con Alexa per accendere la skill e aprire un workflow potrebbe essere la seguente:\\
