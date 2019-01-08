@@ -10,12 +10,13 @@ Le interazioni sono strutturate come segue:
 
 
 \section{Intents}
-Per \glossario{intent} si intende la richiesta da parte dell'utente di eseguire azioni che esulano dal normale flusso di controllo della \glossario{skill}.
-Questa sezione si occupa di elencare i principali \glossario{intents} a disposizione di un utente, insieme agli output previsti una volta ricevuta la richiesta.
+Per \glossario{intent} si intende la richiesta da parte dell'utente di effettuare una particolare operazione al fine di gestire l'esecuzione della \glossario{skill}. 
+Questa sezione si occupa di elencare i principali \glossario{intents} a disposizione dell'utente, insieme agli output previsti una volta ricevuta la richiesta.
 Si fa riferimento alla documentazione fornita da \glossario{Amazon} per lo sviluppo di una \glossario{skill} e la sua implementazione ottimale.\footnote{\url{https://developer.amazon.com/it/documentation}}
 
 
 \subsection{Help Intent}
+Permette all'utente di ottenere ulteriori informazioni, come il numero di workflow disponibili e il loro contenuto.
 \subsubsection{English}
 \begin{itemize}
 	\intent{help}
@@ -29,9 +30,12 @@ Si fa riferimento alla documentazione fornita da \glossario{Amazon} per lo svilu
 	\intent{aiuto}	
 	\intent{aiutami}
 	\intent{aiuto per favore}
+	\intent{dimmi i miei workflow}
+	\intent{vorrei una lista dei miei workflow}
 	\end{itemize}
 
 \subsection{Cancel Intent}
+Permette all'utente di cancellare un'azione in esecuzione (come l'avvio di un workflow).
 \subsubsection{English}
 \begin{itemize}
 	\intent{cancel}
@@ -44,20 +48,15 @@ Si fa riferimento alla documentazione fornita da \glossario{Amazon} per lo svilu
 	\intent{annulla}
 	\intent{non importa}
 	\intent{lascia stare}
-	
-	
 \end{itemize}
 
-
-
-
 \subsection{Stop Intent}
+Permette all'utente di uscire dalla skill.
 \subsubsection{English}
 \begin{itemize}	
 	\intent{stop}
 	\intent{off}
 	\intent{shut up}
-	
 \end{itemize}
 
 \subsubsection{Italiano}
@@ -67,11 +66,12 @@ Si fa riferimento alla documentazione fornita da \glossario{Amazon} per lo svilu
 	\intent{smettila}
 	\intent{basta}
 	\intent{stop}
-	
+	\intent{spegni}
 \end{itemize}
 
 
 \subsection{Next Intent}
+Consente di passare a un blocco successivo di un workflow, sia nel caso in cui esso sia ancora in esecuzione oppure abbia terminato le proprie operazioni. 
 \subsubsection{English}
 \begin{itemize}
 	\intent{next}
@@ -91,6 +91,7 @@ Si fa riferimento alla documentazione fornita da \glossario{Amazon} per lo svilu
 
 
 \subsection{No Intent}
+Consente all'utente di fornire una risposta negativa in seguito a una domanda di Alexa.
 \subsubsection{English}
 \begin{itemize}
 	
@@ -109,6 +110,7 @@ Si fa riferimento alla documentazione fornita da \glossario{Amazon} per lo svilu
 
 
 \subsection{Pause Intent}
+Permette di fermare temporaneamente l'esecuzione di un blocco all'interno di un workflow.
 \subsubsection{English}
 \begin{itemize}
 	
@@ -126,9 +128,8 @@ Si fa riferimento alla documentazione fornita da \glossario{Amazon} per lo svilu
 \end{itemize}
 
 
-
-
 \subsection{Resume Intent}
+Premette di riprendere l'esecuzione di un blocco all'interno di un workflow precedentemente fermato.
 \subsubsection{English}
 \begin{itemize}
 	
@@ -149,6 +150,7 @@ Si fa riferimento alla documentazione fornita da \glossario{Amazon} per lo svilu
 
 
 \subsection{Yes Intent}
+Consente all'utente di fornire una risposta positiva in seguito a una domanda di Alexa.
 \subsubsection{English}
 \begin{itemize}
 	
@@ -160,9 +162,9 @@ Si fa riferimento alla documentazione fornita da \glossario{Amazon} per lo svilu
 
 \subsubsection{Italiano}
 \begin{itemize}
-\intent{sì}	
-\intent{sì per favore}	
-\intent{certo}		
+	\intent{sì}	
+	\intent{sì per favore}	
+	\intent{certo}		
 \end{itemize}
 
 
