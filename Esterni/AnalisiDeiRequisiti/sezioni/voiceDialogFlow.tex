@@ -15,7 +15,7 @@ Questa sezione si occupa di elencare i principali \glossario{intents} a disposiz
 Si fa riferimento alla documentazione fornita da \glossario{Amazon} per lo sviluppo di una \glossario{skill} e la sua implementazione ottimale.\footnote{\url{https://developer.amazon.com/it/documentation}}
 
 
-\subsection{Help Intent}
+\subsection{Help Intent}\label{help}
 Permette all'utente di ottenere ulteriori informazioni, come il numero di workflow disponibili e il loro contenuto.
 \subsubsection{English}
 \begin{itemize}
@@ -32,6 +32,7 @@ Permette all'utente di ottenere ulteriori informazioni, come il numero di workfl
 	\intent{aiuto per favore}
 	\intent{dimmi i miei workflow}
 	\intent{vorrei una lista dei miei workflow}
+	\intent{quali sono i workflow disponibili?}
 \end{itemize}
 
 \subsection{Cancel Intent}
@@ -86,6 +87,7 @@ Consente di passare a un blocco successivo di un workflow, sia nel caso in cui e
 	\intent{prossimo}
 	\intent{prossima}
 	\intent{successivo}
+	\intent{prosegui}
 	
 \end{itemize}
 
@@ -97,13 +99,15 @@ Consente all'utente di fornire una risposta negativa in seguito a una domanda di
 	
 	\intent{no}
 	\intent{no thanks}
+	\intent{i'm good, thanks}
 	
 \end{itemize}
 
 \subsubsection{Italiano}
 \begin{itemize}	
-	\intent{No}	
-	\intent{No grazie}
+	\intent{no}	
+	\intent{no grazie}
+	\intent{no basta così}
 	
 \end{itemize}
 
@@ -164,16 +168,18 @@ Consente all'utente di fornire una risposta positiva in seguito a una domanda di
 \begin{itemize}
 	\intent{sì}	
 	\intent{sì per favore}	
-	\intent{certo}		
+	\intent{certo}
+	\intent{ok, va bene}		
 \end{itemize}
 
 \section{Avvio Skill}
 Di seguito vengono riportati degli esempi di workflow, per la precisione due workflow: Mattina (Morning) e Social. \\
-E' importante far notare che non sempre Alexa risponderà, in quanto alcune volte l'utente sa già cosa desidera sentire, inoltre durante l'esecuzione del workflow l'utente potrà chiedere aiuto per sapere dove si trova all'interno del workflow. \\
-Le seguenti conversazioni sono esempi, frutto di uno schema di possibili domande e risposte tra utente e Alexa
+E' importante precisare che non sempre Alexa risponderà, in quanto alcune volte l'utente sa già cosa desidera sentire, inoltre durante l'esecuzione del workflow l'utente potrà usufruire degli help intent descritti nella \hyperref[help]{sezione 5.1.1} per ottenere informazioni che lo possano aiutare. \\
+Le seguenti conversazioni sono esempi, frutto di uno schema di possibili domande e risposte tra utente e Alexa.
 
 \subsection{Italiano}
 Una conversazione tipica con Alexa per accendere la skill e aprire un workflow potrebbe essere la seguente:\\
+\newline
 U: Alexa, apri MegAlexa \\
 A: Come posso aiutarti? \\
 U: Quali sono i workflow disponibili? \\
@@ -183,12 +189,13 @@ A: [Workflow], sono finiti \\
 U: Esegui [Workflow]
 
 Mentre è possibile che Alexa non dica nulla e che l'utente sappia già quale workflow scegliere, pertanto l'utente entrerà immediatamente nel workflow da lui detto: \\
+\newline
 U: Alexa, apri MegAlexa\\
 U: Esegui [Workflow]
 
 \subsection{Inglese}
 Una conversazione tipica con Alexa per accendere la skill e aprire un workflow potrebbe essere la seguente:\\
-
+\newline
 U: Alexa, open MegAlexa \\
 A: Welcome to MegAlexa, which workflow would you like to open?\\
 U: Show my workflow\\
@@ -198,6 +205,7 @@ A: Alrigh, there are also [Workflow] and [Workflow], which one should I open?\\
 U: Initiate [Workflow] \\
 
 Mentre è possibile che Alexa non dica nulla e che l'utente sappia già quale workflow scegliere, pertanto l'utente entrerà immediatamente nel workflow da lui detto: \\
+\newline
 U: Alexa, open MegAlexa\\
 U: Launch [Workflow]
 
@@ -214,15 +222,18 @@ Questo Workflow comprende i seguenti moduli:
 
 \subsubsection{Italiano}
 L'utente può interagire con il workflow per impostare la sveglia:\\
+\newline
+
 A: Quando vuoi svegliarti?\\
 U: Tutti i giorni alle [Orario]\\
 A: Ottimo, la sveglia è stata impostata alle [Orario] \\
 
 Inoltre il workflow, contenente il modulo Sveglia, può avviarsi automaticamente:\\
+\newline
 A: [Suona la sveglia]\\
 U: Spegni [Sveglia] | Posponi [Sveglia]\\
 A: Al momento a [Luogo] ci sono [$^\circ$C], inoltre per oggi sono previste minime di [$^\circ$C] e massime di [$^\circ$C]\\
-U: Che tempo a [Luogo]?\\
+U: Che tempo fa a [Luogo]?\\
 A: Attualmente a [Luogo] il tempo è [Meteo]\\
 U: E alle [Orario]?\\
 A: Il tempo sarà [Meteo]\\
@@ -241,6 +252,7 @@ U: Set an alarm at [Time]\\
 A: Perfect, the alarm is set at [Time]\\
 
 Inoltre il workflow, contenente il modulo Sveglia, può avviarsi automaticamente:\\
+\newline
 A: [Alarm is beeping]\\
 U: Stop [Alarm] | Snooze [Alarm]\\
 A: Currently in [Location] it's [$^\circ$C], today you can expect [Weather] with [$^\circ$C] minimum and [$^\circ$C] maximum\\
@@ -250,8 +262,8 @@ U: No, go on\\
 A: Your events today are [Events]\\
 A: Your workflow [Workflow] is completed\\
 
-Con quest'ultima istanza il workflow si chiude e Alexa chiederà all'utente se ha bisogno di altro\\
-Inoltre l'utente potrà chiedere il meteo di un'altra città oppure Alexa potrà rispondere che l'utente attualmente non dispone di eventi disponibili
+Con quest'ultima istanza il workflow si chiude e Alexa chiederà all'utente se ha bisogno di altro.\\
+Inoltre l'utente potrà chiedere il meteo di un'altra città oppure Alexa potrà rispondere che l'utente attualmente non dispone di eventi salvati nel calendario.
 
 \subsection{Workflow: Social}
 Questo Workflow comprende i seguenti moduli:
@@ -263,6 +275,7 @@ Questo Workflow comprende i seguenti moduli:
 \end{itemize}
 \subsubsection{Italiano}
 Una conversazione tipica con Alexa sarà la seguente: \\
+\newline
 A: Dimmi il tuo codice di blocco \\
 U: [PIN] \\
 A: Codice errato, riprova \\
@@ -277,6 +290,7 @@ A: Hai completato il workflow [Workflow]
 
 \subsubsection{Inglese}
 Una conversazione tipica con Alexa sarà la seguente:\\
+\newline
 A: What is your PIN? \\
 U: [PIN] \\
 A: Your PIN is not correct, try again \\
