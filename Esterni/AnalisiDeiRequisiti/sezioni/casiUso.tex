@@ -10,26 +10,30 @@ v1.0.0.
 \end{itemize}
 \textbf{Attori secondari}
 \begin{itemize}
-	\item \textbf{Amazon}:/(da completare)
+	\item \textbf{Amazon}.
 \end{itemize}
+
 \section{Caso d'uso UC1: Scenario principale dell'utente non autenticato}
-\begin{figure}[!ht]
+
+\begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.4]{Diagram/UC1.png}
 	\caption{Scenario principale}\label{}
 \end{figure}
+
 \begin{itemize}
 	\item \textbf{Attori primari}: Utente non autenticato;
-	\item \textbf{Attori secondari}: DataBase??;
+	\item \textbf{Attori secondari}: Amazon;
 	\item \textbf{Descrizione:} Un utente non  autenticato può registrarsi al nostro servizio se non ha ancora un account o effettuare il login, nel caso fosse già registrato;
 	\item \textbf{Precondizione:} L'applicazione è avviata e pronta all'uso;
 	\item \textbf{Flusso principale degli eventi}:
 	\begin{enumerate}
-		\item L'utente ha la possibilità di: Registrazione (UC1.3);
-		\item L'utente ha la possibilità di: Login (UC1.4).
+		\item L'utente ha la possibilità di: Registrazione (UC1.1);
+		\item L'utente ha la possibilità di: Login (UC1.2).
 	\end{enumerate}
 	\item \textbf{Postcondizione}: L'applicazione ha ricevuto tutte le informazioni dell'utente non autenticato sulle operazioni che vuole eseguire.
 \end{itemize}
+
 \section{Caso d'uso UC1.1: Registrazione}
 \begin{figure} [h]
 	\centering
