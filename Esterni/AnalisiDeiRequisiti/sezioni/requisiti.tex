@@ -23,6 +23,7 @@ dove:
 	\item \textbf{{YY}:} numero progressivo che identifica i sottocasi, esso può, a sua volta, includere altri sottocasi.
 \end{itemize}
 
+\newpage
 \section{Requisiti funzionali}
 \begin{tabularx}{\textwidth}{|C|C|C|C|}
 	\hline
@@ -45,19 +46,45 @@ dove:
 	\hline
 	R1O08&Funzionale Obbligatorio &L'utente tramite Alexa deve poter impostare una sveglia &Interno\\
 	\hline
+	R1O08.01 & Funzionale Obbligatorio & L'utente tramite Alexa deve poter creare una nuova sveglia &Interno\\
+	\hline
+	R1O08.02 & Funzionale Obbligatorio & L'utente tramite Alexa deve poter modificare l'orario di una sveglia. &Interno\\
+	\hline
+	R1O08.03 & Funzionale Obbligatorio & L'utente tramite Alexa deve poter posporre una sveglia mentre questa sta suonando. &Interno\\
+	\hline	
+	R1O08.04 & Funzionale Obbligatorio & L'utente tramite Alexa deve poter interrompere una sveglia mentre questa sta suonando. &Interno\\
+	\hline
 	R1O09&Funzionale Obbligatorio  &L'utente tramite Alexa deve poter mettere in pausa un workflow &Interno \\
 	\hline
 	R1O10&Funzionale Obbligatorio&Alexa deve fornire un sistema di aiuto che dice all'utente in qualsiasi istante in quale punto dell'esecuzione si trova & Interno\\
 	\hline
+	R1F01 & Funzionale facoltativo & I dati utente verranno automaticamente sincronizzati con il proprio account Amazon & Interno\\
+	\hline
+	R1F02 & Funzionale facoltativo & L'utente deve poter rispondere ad un tweet dopo che Alexa l'ha letto. & Interno\\
+	\hline
+	R1F03 & Funzionale facoltativo & L'utente deve poter rispondere ad una mail dopo che Alexa l'ha letta. & Interno\\
+	\hline
+	R1F04 & Funzionale facoltativo & L'utente deve poter inviare messaggi di testo su Telegram tramite Alexa a una persona o ad un gruppo. & Interno\\
+	\hline
+	R1F05 & Funzionale facoltativo & L'utente deve poter leggere tramite Alexa i nuovi messaggi testuali ricevuti da una persona o un gruppo su Telegram  & Interno\\
+	\hline
+	R1F06 & Funzionale facoltativo & L'utente deve poter inviare messaggi audio su Telegram tramite Alexa a una persona o ad un gruppo.  & Interno\\
+	\hline
+	R1F07 & Funzionale facoltativo & L'utente deve poter leggere tramite Alexa i nuovi messaggi audio ricevuti da una persona o un gruppo su Telegram   & Interno\\
+	\hline
+	R1F08 & Funzionale facoltativo & L'utente deve poter modificare un evento nel calendario tramite Alexa. & Interno\\
+	\hline
+	R1F09 & Funzionale facoltativo & L'utente potrà predisporre il suo workflow personalizzato per la riproduzione di musica tramite Youtube & Interno\\
+	\hline
 	R1F10&Funzionale Facoltativo  &L'utente tramite Alexa può impostare un timer &Interno \\
 	\hline
-	R1F11&Funzionale Facoltativo  &L'utente tramite Alexa può in grado di ascoltare la radio &Interno \\
+	R1F11&Funzionale Facoltativo  &L'utente tramite Alexa può ascoltare la radio &Interno \\
 	\hline	
-	R1F12&Funzionale Facoltativo  &L'utente tramite Alexa potrebbe controllare l'illuminazione &Interno \\
+	R1F12&Funzionale Facoltativo  &L'utente tramite Alexa può controllare l'illuminazione &Interno \\
 	\hline
-	R1F12.01&Funzionale Facoltativo  &L'utente ha la possibilità di accendere le luci &Interno \\
+	R1F12.01&Funzionale Facoltativo  &L'utente tramite Alexa può accendere le luci &Interno \\
 	\hline
-	R1F12.02&Funzionale Facoltativo  &L'utente ha la possibilità di spegnere le luci &Interno \\
+	R1F12.02&Funzionale Facoltativo  &L'utente tramite Alexa può spegnere le luci &Interno \\
 	\hline
 	R1D01&Funzionale Desiderabile  &L'utente tramite Alexa può pubblicare un tweet all'interno di Twitter &Interno \\
 	\hline
@@ -141,9 +168,9 @@ dove:
 	\hline
 	R4O13.01&Vincolo Obbligatorio& L'applicazione deve permettere all'utente autenticato di inserire il nome del workflow  & UC2.1.1\\
 	\hline
-	R1O13.02&Vincolo Obbligatorio&L'applicazione deve permettere all'utente autenticato di aggiungere un blocco & Capitolato UC2.1.2\\
+	R4O13.02&Vincolo Obbligatorio&L'applicazione deve permettere all'utente autenticato di aggiungere un blocco & Capitolato UC2.1.2\\
 	\hline	
-	R1O13.03&Vincolo Obbligatorio&L'applicazione deve permettere all'utente autenticato di configurare un blocco&UC2.1.3\\
+	R4O13.03&Vincolo Obbligatorio&L'applicazione deve permettere all'utente autenticato di configurare un blocco&UC2.1.3\\
 	\hline
 	R4O14&Vincolo Obbligatorio&L'applicazione deve permettere all'utente autenticato di eliminare un workflow&UC2.2\\
 	\hline
@@ -174,45 +201,121 @@ dove:
 	\hline
 	R1O05& UC2.4\\
 	\hline
-	R1O06& UC2.1\\
+	R1O06& Interno\\
 	\hline
-	R1O06.01& UC2.1.1\\
-	\hline
-	R1O06.02& UC2.1.2\\
-	\hline
-	R1O06.03& UC2.1.3\\
-	\hline
-	R1O07& UC2.2\\
+	R1O07& Interno\\
 	\hline	
-	R1O08& UC2.3\\
+	R1O08& Interno\\
+	\hline
+	R1O08.01& Interno\\
+	\hline	
+	R1O08.02& Interno\\
+	\hline		
+	R1O08.03& Interno\\
+	\hline		
+	R1O08.04& Interno\\
 	\hline	
 	R1O09& Interno\\
 	\hline	
 	R1O10& Interno\\
 	\hline
-	R1O11& Interno\\
-	\hline	
-	R1O12& Interno\\
+	R1F01& Interno\\
 	\hline
-	R1O13& Interno\\
+	R1F02& Interno\\
 	\hline
-	R2O01 &Capitolato\\
+	R1F03& Interno\\
 	\hline
-	R2O02 &Capitolato\\
+	R1F04& Interno\\
 	\hline
-	R2O03 &Capitolato\\
+	R1F05& Interno\\
 	\hline
-	R2O04 &Capitolato\\
+	R1F06& Interno\\
 	\hline
-	R2O05 &Capitolato\\
+	R1F07& Interno\\
 	\hline
-	R2O06 &Capitolato\\
+	R1F08& Interno\\
 	\hline
-	R2O07 &Interno\\
+	R1F09& Interno\\
 	\hline
-	R2O08 &Interno\\
+	R1F10& Interno\\
 	\hline
-	R4O06 &Interno\\
+	R1F11& Interno\\
+	\hline
+	R1F12& Interno\\
+	\hline
+	R1F12.01& Interno\\
+	\hline
+	R1F12.02& Interno\\
+	\hline
+	R1D01& Interno\\
+	\hline
+	R1D02& Interno\\
+	\hline
+	R1D03& Interno\\
+	\hline
+	R1D04& Interno\\
+	\hline
+	R1D05& Interno\\
+	\hline
+	R2O01&Capitolato\\
+	\hline
+	R2O02&Capitolato\\
+	\hline
+	R2O03&Capitolato\\
+	\hline
+	R2O04&Capitolato\\
+	\hline
+	R2O05&Capitolato\\
+	\hline
+	R2O06&Capitolato\\
+	\hline
+	R2O07&Interno\\
+	\hline
+	R2O08&Interno\\
+	\hline
+	R2O09&Interno\\
+	\hline
+	R2O10&Interno\\
+	\hline
+	R4O01&Verbale Esterno 2018-12-05\\
+	\hline
+	R4O02&Verbale Esterno 2018-12-05\\
+	\hline
+	R4O03&Verbale Esterno 2018-12-05\\
+	\hline
+	R4O04&Verbale Esterno 2018-12-05\\
+	\hline
+	R4O05&Verbale Esterno 2018-12-05\\
+	\hline
+	R4O06&Verbale Esterno 2018-12-05\\
+	\hline
+	R4O07&Verbale Esterno 2018-12-05\\
+	\hline
+	R4O08&Verbale Esterno 2018-12-05\\
+	\hline
+	R4O09&Verbale Esterno 2018-12-05\\
+	\hline
+	R4O10&Verbale Esterno 2018-12-05\\
+	\hline
+	R4O11&Verbale Esterno 2018-12-05\\
+	\hline
+	R4O12&Verbale Esterno 2018-12-05\\
+	\hline
+	R4O13&Capitolato  UC2.1\\
+	\hline
+	R4O13.01& UC2.1.1\\
+	\hline
+	R4O13.02&Capitolato UC2.1.2\\
+	\hline
+	R4O13.03&UC2.1.3\\
+	\hline
+	R4O14&UC2.2\\
+	\hline
+	R4O15&UC2.3\\
+	\hline
+	R4O15.01&UC2.3.1\\
+	\hline
+	R4O15.02&UC2.3.4\\
 	\hline
 	\caption{Tabella requisiti-fonti}
 \end{tabularx}
