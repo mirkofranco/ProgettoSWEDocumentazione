@@ -31,7 +31,7 @@ dove:
 	\endhead
 	R1O01& Funzionale Obbligatorio &L'applicazione deve permettere all'utente non autenticato di registrarsi con un account amazon& UC1.1	\\
 	\hline
-	R1O02& Funzionale Obbligatorio &L'applicazione deve permettere all'utente non autenticato di effettuare il login automatico con l'acount amazon & UC1.3\\
+	R1O02& Funzionale Obbligatorio &L'applicazione deve permettere all'utente non autenticato di effettuare il login automatico con l'account amazon & UC1.3\\
 	\hline
 	R1O03& Funzionale Obbligatorio &L'applicazione deve permettere all'utente autenticato di  effettuare il logout & UC2.5\\
 	\hline
@@ -47,7 +47,27 @@ dove:
 	\hline
 	R1O09&Funzionale Obbligatorio  &L'utente tramite Alexa deve poter mettere in pausa un workflow &Interno \\
 	\hline
-	R1O010&Funzionale Obbligatorio&Alexa deve fornire un sistema di aiuto che dice all'utente in qualsiasi istante in quale punto dell'esecuzione si trova & Interno\\
+	R1O10&Funzionale Obbligatorio&Alexa deve fornire un sistema di aiuto che dice all'utente in qualsiasi istante in quale punto dell'esecuzione si trova & Interno\\
+	\hline
+	R1F10&Funzionale Facoltativo  &L'utente tramite Alexa può impostare un timer &Interno \\
+	\hline
+	R1F11&Funzionale Facoltativo  &L'utente tramite Alexa può in grado di ascoltare la radio &Interno \\
+	\hline	
+	R1F12&Funzionale Facoltativo  &L'utente tramite Alexa potrebbe controllare l'illuminazione &Interno \\
+	\hline
+	R1F12.01&Funzionale Facoltativo  &L'utente ha la possibilità di accendere le luci &Interno \\
+	\hline
+	R1F12.02&Funzionale Facoltativo  &L'utente ha la possibilità di spegnere le luci &Interno \\
+	\hline
+	R1D01&Funzionale Desiderabile  &L'utente tramite Alexa può pubblicare un tweet all'interno di Twitter &Interno \\
+	\hline
+	R1D02&Funzionale Desiderabile  &L'utente tramite Alexa può ascoltare la musica tramite il servizio di Spotify &Interno \\
+	\hline
+	R1D03&Funzionale Desiderabile  &L'utente tramite Alexa può mettere in pausa il workflow &Interno \\
+	\hline
+	R1D04&Funzionale Desiderabile  &L'utente tramite Alexa può utilizzare un blocco per la pianificazione dell'apertura di un altro blocco in automatico &Interno \\
+	\hline
+	R1D05&Funzionale Desiderabile  &L'utente tramite Alexa può ascoltare le notizie riguardanti la borsa e le cryptovalute &Interno \\
 	\hline
 	\caption{Tabella requisiti funzionali}
 \end{tabularx}
@@ -78,7 +98,9 @@ dove:
 	R2O08 & Tutta la documentazione prodotta in inglese dal team deve avere
 	un indice per la formula di Flesh compreso tra 80 e 100 & Interno\\
 	\hline
-	R2O09 &  & Capitolato\\
+	R2O09 & Tutta la documentazione rispetta le norme delle \textit{Norme di Progetto v1.0.0} e le metriche del \textit{Piano di Qualifica v1.0.0}& Interno\\
+	\hline
+	R2O10 & Il codice prodotto rispetta le norme delle \textit{Norme di Progetto v1.0.0} e le metriche del \textit{Piano di Qualifica v1.0.0}& Interno\\
 	\hline
     \caption{Tabella requisiti di qualità}
 \end{tabularx}
@@ -91,25 +113,35 @@ dove:
 	\textbf{Codice Identificativo}& \textbf{Descrizione} & \textbf{Descrizione} & \textbf{Fonti}\\
 	\hline	
 	\endhead
-	R4O06 &Vincolo Obbligatorio& L'utente potrà ascoltare news da un sito di notizie tramite Alexa &Verbale Esterno 2018-12-5\\
+	R4O01&Vincolo Obbligatorio  &L'utente tramite Alexa deve poter ascoltare i tweet & Verbale Esterno 2018-12-05 \\
 	\hline
-	R4O07 &Vincolo Obbligatorio& L'utente potrà ascoltare notizie sportive tramite Alexa  &Verbale Eserno 2018-12-5\\
+	R4O02&Vincolo Obbligatorio  &L'utente tramite Alexa deve poter inviare delle mail & Verbale Esterno 2018-12-05 \\
 	\hline
-	R4O08 &Vincolo Obbligatorio&L'utente potrà ascoltare gli eventi presenti nel proprio calendario personale tramite Alexa  &Verbale 2018-12-5\\
+	R4O03&Vincolo Obbligatorio  &L'utente tramite Alexa deve poter leggere le proprie mail & Verbale Esterno 2018-12-05 \\
 	\hline
-	R4O09 &Vincolo Obbligatorio& L'utente potrà inserire eventi in programma nel proprio calendario personale  tramite Alexa& Verbale Esterno 2018-12-5\\
+	R4O04&Vincolo Obbligatorio  &Alexa deve essere in grado di riprodurre un blocco di testo personalizzato & Verbale Esterno 2018-12-05 \\
 	\hline
-	R4O10 &Vincolo Obbligatorio &L'utente potrà applicare un filtro sul numero di risultati ricevuti in output da Alexa &Verbale Esterno 2018-12-5\\
+	R4O05&Vincolo Obbligatorio  &L'utente tramite Alexa deve poter ascoltare il risultato prodotto dal feed RSS & Verbale Esterno 2018-12-05 \\
 	\hline
-	R4O11 &Vincolo Obbligatorio &L'utente potrà ricevere informazioni sul meteo tramite Alexa& Verbale Esterno 2018-12-5\\
+	R4O06 &Vincolo Obbligatorio& L'utente potrà ascoltare news da un sito di notizie tramite Alexa &Verbale Esterno 2018-12-05\\
 	\hline
-	R4O012&Vincolo Obbligatorio&L'utente potrà predisporre il suo workflow personalizzato per la riproduzione di musica tramite Amazon Music tramite Alexa& Verbale Esterno 2018-12-5 \\
+	R4O07 &Vincolo Obbligatorio& L'utente potrà ascoltare notizie sportive tramite Alexa  &Verbale Esterno 2018-12-05\\
 	\hline
-	R4O13&Vincolo Obbligatorio&L'applicazione deve permettere all'utente autenticato la  creazione un workflow& UC2.1\\
+	R4O08 &Vincolo Obbligatorio&L'utente potrà ascoltare gli eventi presenti nel proprio calendario personale tramite Alexa  &Verbale Esterno 2018-12-05\\
 	\hline
-	R4O13.01&Vincolo Obbligatorioo& L'applicazione deve permettere all'utente autenticato di inserire il nome del workflow  & UC2.1.1\\
+	R4O09 &Vincolo Obbligatorio& L'utente potrà inserire eventi in programma nel proprio calendario personale  tramite Alexa& Verbale Esterno 2018-12-05\\
 	\hline
-	R1O13.02&Vincolo Obbligatorio&L'applicazione deve permettere all'utente autenticato di aggiungere un blocco &UC2.1.2\\
+	R4O10 &Vincolo Obbligatorio &L'utente potrà applicare un filtro sul numero di risultati ricevuti in output da Alexa &Verbale Esterno 2018-12-05\\
+	\hline
+	R4O11 &Vincolo Obbligatorio &L'utente potrà ricevere informazioni sul meteo tramite Alexa& Verbale Esterno 2018-12-05\\
+	\hline
+	R4O12&Vincolo Obbligatorio&L'utente potrà predisporre il suo workflow personalizzato per la riproduzione di musica tramite Amazon Music tramite Alexa& Verbale Esterno 2018-12-5 \\
+	\hline
+	R4O13&Vincolo Obbligatorio&L'applicazione deve permettere all'utente autenticato la creazione di un workflow& Capitolato UC2.1\\
+	\hline
+	R4O13.01&Vincolo Obbligatorio& L'applicazione deve permettere all'utente autenticato di inserire il nome del workflow  & UC2.1.1\\
+	\hline
+	R1O13.02&Vincolo Obbligatorio&L'applicazione deve permettere all'utente autenticato di aggiungere un blocco & Capitolato UC2.1.2\\
 	\hline	
 	R1O13.03&Vincolo Obbligatorio&L'applicazione deve permettere all'utente autenticato di configurare un blocco&UC2.1.3\\
 	\hline
