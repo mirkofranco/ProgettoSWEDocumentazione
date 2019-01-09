@@ -1,5 +1,5 @@
 \chapter{Casi d'uso}
-In questa sezione sono elencati i casi d'uso del progetto MegAlexa dedotti da un'attenta indagine ed analisi da parte dei membri del gruppo sugli attori principali del sistema, sulle loro caratteristiche e possibilità.
+In questa sezione sono elencati i casi d'uso del \textit{progetto$_{G}$}\glossario{MegAlexa}dedotti da un'attenta indagine ed analisi da parte dei membri del gruppo sugli attori principali del sistema, sulle loro caratteristiche e possibilità.
 Ogni caso d'uso è identificato da un codice univoco e possiede una struttura interna accuratamente definita nel documento Norme Di Progetto 
 v1.0.0.
 \section{Attori dei casi d'uso}
@@ -10,7 +10,7 @@ v1.0.0.
 \end{itemize}
 \textbf{Attori secondari}
 \begin{itemize}
-	\item \textbf{Amazon}.
+	\item \textbf{Amazon$_{G}$}.
 \end{itemize}
 
 \section{Caso d'uso UC1: Scenario principale dell'utente non autenticato}
@@ -42,7 +42,7 @@ v1.0.0.
 \end{figure}
 \begin{itemize}
 	\item \textbf{Attori primari}: Utente non autenticato;
-	\item \textbf{Attori secondari}: Amazon;
+	\item \textbf{Attori secondari}:\glossario{Amazon};
 	\item \textbf{Descrizione}: Per accedere al sistema è necessario possedere un account;
 	\item \textbf{Precondizione}: L'attore non possiede un account per accedere al sistema;
 	\item \textbf{Flusso principale degli eventi}: 
@@ -51,8 +51,8 @@ v1.0.0.
 		\item L'attore inserisce la propria password (UC1.1.2);
 		\item L'attore conferma la registrazione(UC1.1.3).
 	\end{enumerate}
-	\item \textbf{Scenario alternativo}: L'attore dopo aver confermato le proprie credenziali visualizza un messaggio d'errore (UC1.1.4);
-	\item \textbf{Postcondizione}:E' stato creato un account per accedere al sistema.
+		\item \textbf{Scenario alternativo}: L'attore dopo aver confermato le proprie credenziali visualizza un messaggio d'errore (UC1.1.4);
+		\item \textbf{Postcondizione}:E' stato creato un account per accedere al sistema;
 		\item \textbf{Estensioni}:
 	\begin{enumerate}
 		\item	Visualizzazione errore di registrazione(UC1.1.4).
@@ -81,8 +81,8 @@ v1.0.0.
 	\item \textbf{Attori primari}: Utente non autenticato;
 	\item \textbf{Descrizione}: L'attore dopo aver compilato i campi richiesti decide di confermare  la registrazione;
 	\item \textbf{Precondizione}: Il sistema mostra un pulsante per confermare la registrazione;
-	\item \textbf{Flusso principale degli eventi}:L'attore decide di confermare la registrazione per completarla.
-	\item \textbf{Postcondizione:} Il sistema registra l'attore poiché questo ha confermato l'operazione.
+	\item \textbf{Flusso principale degli eventi}:L'attore decide di confermare la registrazione per completarla;
+	\item \textbf{Postcondizione:} Il sistema registra l'attore poiché questo ha confermato l'operazione;
 	\item \textbf{Estensione:}
 	\begin{itemize}
 		\item Visualizzazione dell'errore di registrazione(UC1.1.4).
@@ -93,12 +93,12 @@ v1.0.0.
 \section{Caso d'uso UC1.1.4: Visualizzazione dell'errore di registrazione}
 \begin{itemize}
 	\item \textbf{Attori primari}: Utente non autenticato;
-	\item \textbf{Descrizione}: L'attore visualizza un errore nel caso avesse compilato i campi con dati errati.
+	\item \textbf{Descrizione}: L'attore visualizza un errore nel caso avesse compilato i campi con dati errati;
 	\item \textbf{Precondizione}: Il sistema ha ricevuto campi dati errati: vuoti o non validi;
 	\item \textbf{Flusso principale degli eventi}: L'attore visualizza il messaggio d'errore relativo al campo dato del:
 	\begin{itemize}
 		\item E-mail;
-		\item Password;
+		\item Password.
 	\end{itemize}
 	\item \textbf{Postcondizione:} Il sistema mostra un messaggio d'errore per segnalare il tentativo di registrarsi con campi dati errati.
 \end{itemize}
@@ -111,7 +111,7 @@ v1.0.0.
 \end{figure}
 \begin{itemize}
 	\item \textbf{Attori primari}: Utente non autenticato;
-	\item \textbf{Attori secondari}: Amazon;
+	\item \textbf{Attori secondari}:\glossario{Amazon};
 	\item \textbf{Descrizione}: Il sistema è avviato, ma è necessario effettuare il login per accedervi;
 	\item \textbf{Precondizione}: Il sistema non permette l'accesso all'utente non autenticato;
 	\item \textbf{Flusso principale degli eventi}:
@@ -124,7 +124,7 @@ v1.0.0.
 	\item \textbf{Postcondizione}: Il sistema permette l'accesso all'utente che ora diventa un utente autenticato; 
 	\item \textbf{Generalizzazioni}:
 	\begin{enumerate}
-		\item Login automatico (UC1.3)
+		\item Login automatico (UC1.3).
 	\end{enumerate}
 \end{itemize}
 
@@ -170,11 +170,11 @@ v1.0.0.
 	\section{Caso d'uso UC1.3: Login automatico}
 	\begin{itemize}
 		\item \textbf{Attori primari}: Utente non autenticato;
-		\item \textbf{Attori secondari}: Amazon;
+		\item \textbf{Attori secondari}:\glossario{Amazon};
 		\item \textbf{Descrizione}: Il sistema è avviato, ma è necessario effettuare il login per accedervi;
 		\item \textbf{Precondizione}: Il sistema non permette l'accesso all'utente non autenticato;
 		\item \textbf{Scenario alternativo}: L'utente dopo aver inviato le proprie credenziali visualizza un messaggio d'errore (UC1.2.4);
-		\item \textbf{Postcondizione}: Il sistema permette l'accesso all'utente che ora diventa un utente autenticato; 
+		\item \textbf{Postcondizione}: Il sistema permette l'accesso all'utente che ora diventa un utente autenticato.
 		\end{itemize}
 		\section{Caso d'uso UC1.1.2: Inserimento cognome}
 		\begin{itemize}
@@ -221,17 +221,17 @@ v1.0.0.
 			\item \textbf{Attori primari}: Utente non autenticato;
 			\item \textbf{Descrizione}: L'attore dopo aver compilato i campi richiesti decide di confermare  la registrazione;
 			\item \textbf{Precondizione}: Il sistema mostra un pulsante per confermare la registrazione;
-			\item \textbf{Flusso principale degli eventi}:L'attore decide di confermare la registrazione per completarla.
-			\item \textbf{Postcondizione:} Il sistema registra l'attore poichè questo ha confermato l'operazione.
+			\item \textbf{Flusso principale degli eventi}:L'attore decide di confermare la registrazione per completarla;
+			\item \textbf{Postcondizione:} Il sistema registra l'attore poichè questo ha confermato l'operazione;
 			\item \textbf{Estensione:}
 			\begin{itemize}
-				\item Visualizzazione dell'errore di registrazione(UC)
+				\item Visualizzazione dell'errore di registrazione(UC).
 			\end{itemize}
 		\end{itemize}
 		\section{Caso d'uso UC1.1.8: Visualizzazione dell'errore di registrazione}
 		\begin{itemize}
 			\item \textbf{Attori primari}: Utente non autenticato;
-			\item \textbf{Descrizione}: L'attore visualizza un errore nel caso avesse compilato i campi con dati errati.
+			\item \textbf{Descrizione}: L'attore visualizza un errore nel caso avesse compilato i campi con dati errati;
 			\item \textbf{Precondizione}: Il sistema ha ricevuto campi dati errati: vuoti o non validi;
 			\item \textbf{Flusso principale degli eventi}: L'attore visualizza il messaggio d'errore relativo al campo dato  del:
 			\begin{itemize}
@@ -239,7 +239,7 @@ v1.0.0.
 				\item Cognome;
 				\item E-mail;
 				\item Password;
-				\item Conferma Password;
+				\item Conferma Password.
 			\end{itemize}
 			\item \textbf{Postcondizione:} Il sistema mostra un messaggio d'errore per segnalare il tentativo di registrarsi con campi dati errati.
 		\end{itemize}
@@ -251,14 +251,14 @@ v1.0.0.
 		\end{figure}
 		\begin{itemize}
 			\item \textbf{Attori primari}: Utente autenticato;
-			\item \textbf{Descrizione:} L'attore può creare, modificare ed eliminare un workflow, modificare i propri dati personali ed eseguire il logout.
-			\item \textbf{Precondizione:} Il sistema mostra la pagina principale per l'utente autenticato.
+			\item \textbf{Descrizione:} L'attore può creare, modificare ed eliminare un\glossario{workflow}, modificare i propri dati personali ed eseguire il logout;
+			\item \textbf{Precondizione:} Il sistema mostra la pagina principale per l'utente autenticato;
 			\item \textbf{Flusso principale degli eventi:}
 			\begin{enumerate}
-				\item l'utente può creare un Workflow (UC2.1);
-				\item l'utente può eliminare un Workflow (UC2.2);
-				\item l'utente può modificare un Workflow (UC2.3);
-				\item l'utente può modificare l'account Amazon (UC2.4);
+				\item l'utente può creare un\glossario{workflow}(UC2.1);
+				\item l'utente può eliminare un workflow (UC2.2);
+				\item l'utente può modificare un workflow (UC2.3);
+				\item l'utente può modificare l'account\glossario{Amazon}(UC2.4);
 				\item l'utente può effettuare il Logout (UC2.5).
 			\end{enumerate}
 			\item \textbf{Postcondizione:} Il sistema ha ricevuto le informazioni riguardanti i comandi che l'utente vuole eseguire.
@@ -271,59 +271,59 @@ v1.0.0.
 		\end{figure}
 		\begin{itemize}
 			\item \textbf{Attori primari}: Utente autenticato;
-			\item \textbf{Descrizione:} L'attore può creare un workflow selezionando e configurando i blocchi disponibili;
-			\item \textbf{Precondizione:} Il sistema mette a dispozione un form per la creazione di un workflow;
+			\item \textbf{Descrizione:} L'attore può creare un\glossario{workflow}selezionando e configurando i blocchi disponibili;
+			\item \textbf{Precondizione:} Il sistema mette a dispozione un form per la creazione di un \textit{workflow$_{G}$};
 			\item \textbf{Flusso principale degli eventi:}
 			\begin{enumerate}
-				\item l'utente sceglie il nome del workflow (UC2.1.1);
+				\item l'utente sceglie il nome del\glossario{workflow}(UC2.1.1);
 				\item l'utente seleziona quali blocchi vuole usare (UC2.1.2);
-				\item l'utente configura i blocchi selezionani (UC2.1.3);
+				\item l'utente configura i blocchi selezionati (UC2.1.3).
 			\end{enumerate}
 			\item \textbf{Postcondizione:} Il sistema contiene il workflow desiderato dall'attore.
 		\end{itemize}
 		\section{Caso d'uso UC2.1.1: Scelta nome }
 		\begin{itemize}
 			\item \textbf{Attori primari}: Utente autenticato;
-			\item \textbf{Descrizione:} L'attore inserisce il nome del workflow;
+			\item \textbf{Descrizione:} L'attore inserisce il nome del \textit{workflow$_{G}$};
 			\item \textbf{Precondizione:} Il sistema mette a dispozione un campo per l'inserimento del nome;
 			\item \textbf{Flusso principale degli eventi:}
 			\begin{enumerate}
-				\item l'utente inserisce il nome del workflow;
+				\item l'utente inserisce il nome del workflow.
 			\end{enumerate}
 			\item \textbf{Postcondizione:} Il form di creazione del workflow contiene il nome del workflow.
 		\end{itemize}
 		\section{Caso d'uso UC2.1.2: Scelta blocchi }
 		\begin{itemize}
-			\item \textbf{Attori primari}: Utente autenticato.
-			\item \textbf{Descrizione:} L'attore sceglie i blocchi che compongono il workflow.
-			\item \textbf{Precondizione:} Il sistema mette a disposizione un form per l'inserimento dei blocchi e una lista di blocchi disponibili.
+			\item \textbf{Attori primari}: Utente autenticato;
+			\item \textbf{Descrizione:} L'attore sceglie i blocchi che compongono il \textit{workflow$_{G}$};
+			\item \textbf{Precondizione:} Il sistema mette a disposizione un form per l'inserimento dei blocchi e una lista di blocchi disponibili;
 			\item \textbf{Flusso principale degli eventi:}
 			\begin{enumerate}
-				\item l'attore inserisce i blocchi nel form e li ordina come preferisce;
+				\item l'attore inserisce i blocchi nel form e li ordina come preferisce.
 			\end{enumerate}
 			\item \textbf{Postcondizione:} Il workflow contiene i blocchi desiderati dall'utente.
 		\end{itemize}
 		\section{Caso d'uso UC2.1.3: Configurazione blocchi }
 		\begin{itemize}
-			\item \textbf{Attori primari}: Utente autenticato.
-			\item \textbf{Descrizione:} L'attore configura i blocchi che compongono il workflow.
-			\item \textbf{Precondizione:} Il sistema mette a disposizione un form per la configurazione dei blocchi.
+			\item \textbf{Attori primari}: Utente autenticato;
+			\item \textbf{Descrizione:} L'attore configura i blocchi che compongono il \textit{workflow$_{G}$};
+			\item \textbf{Precondizione:} Il sistema mette a disposizione un form per la configurazione dei blocchi;
 			\item \textbf{Flusso principale degli eventi:}
 			\begin{enumerate}
-				\item l'attore configura i blocchi;
+				\item l'attore configura i blocchi.
 			\end{enumerate}
 			\item \textbf{Postcondizione:} Il workflow contiene solo blocchi confugrati.
 		\end{itemize}
 		\section{Caso d'uso UC2.2: Eliminazione workflow}
 		\begin{itemize}
-			\item \textbf{Attori primari}: Utente autenticato.
-			\item \textbf{Descrizione:} L'attore elimina un workflow.
-			\item \textbf{Precondizione:} Il sistema mette a dispozione un comando per eliminare un workflow.
+			\item \textbf{Attori primari}: Utente autenticato;
+			\item \textbf{Descrizione:} L'attore elimina un \textit{workflow$_{G}$};
+			\item \textbf{Precondizione:} Il sistema mette a dispozione un comando per eliminare un workflow;
 			\item \textbf{Flusso principale degli eventi:}
 			\begin{enumerate}
-				\item l'utente seleziona il comando per eliminare workflow che vuole rimuovere;
+				\item l'utente seleziona il comando per eliminare workflow che vuole rimuovere.
 			\end{enumerate}
-			\item \textbf{Postcondizione:} Il workflow che l'attore voleva eliminare è stato rimosso dal sistema.
+			\item \textbf{Postcondizione:} Il\glossario{workflow}che l'attore voleva eliminare è stato rimosso dal sistema.
 		\end{itemize}
 		\section{Caso d'uso UC2.3: Modifica workflow}
 		\begin{figure} [h]
@@ -332,108 +332,99 @@ v1.0.0.
 			\caption{Modifica workflow }\label{}
 		\end{figure}
 		\begin{itemize}
-			\item \textbf{Attori primari}: Utente autenticato.
-			\item \textbf{Descrizione:} L'attore modifica un workflow.
-			\item \textbf{Precondizione:} Il sistema mette a dispozione un form per la modifica di un workflow.
+			\item \textbf{Attori primari}: Utente autenticato;
+			\item \textbf{Descrizione:} L'attore modifica un \textit{workflow$_{G}$};
+			\item \textbf{Precondizione:} Il sistema mette a dispozione un form per la modifica di un workflow;
 			\item \textbf{Flusso principale degli eventi:}
 			\begin{enumerate}
-				\item l'attore può cambiare il nome del workflow (UC2.3.1);
+				\item l'attore può cambiare il nome del\glossario{workflow}(UC2.3.1);
 				\item l'attore può eliminare un blocco dal workflow (UC2.3.2);
 				\item l'attore può aggiungere un blocco nel workflow (UC2.3.3);
-				\item l'attore può modificare la configurazione di un blocco presente nel workflow (UC2.3.4);
-				\item 
+				\item l'attore può modificare la configurazione di un blocco presente nel workflow (UC2.3.4).
 			\end{enumerate}
-			\item \textbf{Postcondizione:} Il workflow è stato modificato.
+			\item \textbf{Postcondizione:} Il\glossario{workflow}è stato modificato.
 		\end{itemize}
 		\section{Caso d'uso UC2.3.1: Modifica nome workflow}
 		\begin{itemize}
-			\item \textbf{Attori primari}: Utente autenticato.
-			\item \textbf{Descrizione:} L'attore modifica il nome del workflow.
-			\item \textbf{Precondizione:} Il sistema mette a dispozione un campo per l'inserimento del nuovo nome.
+			\item \textbf{Attori primari}: Utente autenticato;
+			\item \textbf{Descrizione:} L'attore modifica il nome del \textit{workflow$_{G}$};
+			\item \textbf{Precondizione:} Il sistema mette a dispozione un campo per l'inserimento del nuovo nome;
 			\item \textbf{Flusso principale degli eventi:}
 			\begin{enumerate}
-				\item l'attore inserisce il nuovo nome del workflow;
+				\item l'attore inserisce il nuovo nome del workflow.
 			\end{enumerate}
 			\item \textbf{Postcondizione:} Il form di creazione del workflow contiene il nuovo nome del workflow.
 		\end{itemize}
 		\section{Caso d'uso UC2.3.2: Eliminazione blocco }
 		\begin{itemize}
 			\item \textbf{Attori primari}: Utente autenticato.
-			\item \textbf{Descrizione:} L'attore rimuove il blocco che non desidera più dal workflow.
-			\item \textbf{Precondizione:} Il sistema fornisce un comando per l'eliminazione del blocco.
+			\item \textbf{Descrizione:} L'attore rimuove il blocco che non desidera più dal \textit{workflow$_{G}$};
+			\item \textbf{Precondizione:} Il sistema fornisce un comando per l'eliminazione del blocco;
 			\item \textbf{Flusso principale degli eventi:}
 			\begin{enumerate}
-				\item l'attore elimina il blocco;
+				\item l'attore elimina il blocco.
 			\end{enumerate}
 			\item \textbf{Postcondizione:} Il workflow non contiene più il blocco indesiderato dall'attore.
 		\end{itemize}
 		\section{Caso d'uso UC2.3.3: Aggiunta blocco }
 		\begin{itemize}
-			\item \textbf{Attori primari}: Utente autenticato.
-			\item \textbf{Descrizione:} L'attore aggiunge il nuovo blocco al workflow.
-			\item \textbf{Precondizione:} Il sistema mette a disposizione un form per l'aggiunta del blocco.
+			\item \textbf{Attori primari}: Utente autenticato;
+			\item \textbf{Descrizione:} L'attore aggiunge il nuovo blocco al \textit{workflow$_{G}$};
+			\item \textbf{Precondizione:} Il sistema mette a disposizione un form per l'aggiunta del blocco;
 			\item \textbf{Flusso principale degli eventi:}
 			\begin{enumerate}
 				\item l'attore aggiunge il blocco;
-				\item l'attore configura il nuovo blocco;
+				\item l'attore configura il nuovo blocco.
 			\end{enumerate}
 			\item \textbf{Postcondizione:} Il workflow contiene il nuovo blocco configurato.
 		\end{itemize}
 		\section{Caso d'uso UC2.3.4: Modifica blocco }
 		\begin{itemize}
-			\item \textbf{Attori primari}: Utente autenticato.
-			\item \textbf{Descrizione:} L'attore modifica la configurazione del blocco che compone il workflow.
-			\item \textbf{Precondizione:} Il sistema mette a disposizione un form per la modifca dei blocchi.
+			\item \textbf{Attori primari}: Utente autenticato;
+			\item \textbf{Descrizione:} L'attore modifica la configurazione del blocco che compone il \textit{workflow$_{G}$};
+			\item \textbf{Precondizione:} Il sistema mette a disposizione un form per la modifca dei blocchi;
 			\item \textbf{Flusso principale degli eventi:}
 			\begin{enumerate}
-				\item l'attore modifica la configurazione del blocco;
+				\item l'attore modifica la configurazione del blocco.
 			\end{enumerate}
 			\item \textbf{Postcondizione:} Il blocco desiderato dall'attore è stato riconfigurato.
 		\end{itemize}
 		\section{Caso d'uso UC2.4: Modifica account Amazon }
 		\begin{itemize}
-			\item \textbf{Attori primari}: Utente autenticato.
-			\item \textbf{Descrizione:} L'attore cambia il proprio account Amazon.
+			\item \textbf{Attori primari}: Utente autenticato;
+			\item \textbf{Descrizione:} L'attore cambia il proprio account \textit{Amazon$_{G}$};
 			\item \textbf{Precondizione:} Il sistema mette a disposizione un form per la modifica dell'account Amazon.
 			\item \textbf{Flusso principale degli eventi:}
 			\begin{enumerate}
-				\item l'attore, attraverso il form di Amazon, sceglie il nuovo account;
+				\item l'attore, attraverso il form di Amazon, sceglie il nuovo account.
 			\end{enumerate}
 			\item \textbf{Postcondizione:} Il sistema è collegato al nuovo account Amazon.
 			\item \textbf{Estensione:}
 			\begin{itemize}
-				\item Visualizzazione dell'errore di cambio Account(UC2.4.1);
+				\item Visualizzazione dell'errore di cambio Account (UC2.4.1);
 			\end{itemize}
 		\end{itemize}
 		\section{Caso d'uso UC2.4.1: Errore di cambio account Amazon }
 		\begin{itemize}
-			\item \textbf{Attori primari}: Utente autenticato.
-			\item \textbf{Descrizione:} L'attore ha inserito dei dati non corretti e non riesce a collegarsi al nuovo account Amazon.
-			\item \textbf{Precondizione:} Il sistema non riesce a collegarsi all'account Amazon.
+			\item \textbf{Attori primari}: Utente autenticato;
+			\item \textbf{Descrizione:} L'attore ha inserito dei dati non corretti e non riesce a collegarsi al nuovo account \textit{Amazon$_{G}$};
+			\item \textbf{Precondizione:} Il sistema non riesce a collegarsi all'account Amazon;
 			\item \textbf{Flusso principale degli eventi:}
 			\begin{enumerate}
 				\item l'attore può inserire nuovamente i dati nel form di Amazon;
-				\item l'attore può tornare al vecchio account Amazon;
+				\item l'attore può tornare al vecchio account Amazon.
 			\end{enumerate}
 			\item \textbf{Postcondizione:} Il sistema è correttamente collegato a un account Amazon.
 		\end{itemize}
 		\section{Caso d'uso UC2.5: Logout }
 		\begin{itemize}
-			\item \textbf{Attori primari}: Utente autenticato.
-			\item \textbf{Descrizione:} L'attore effettua il logout dall'applicazione.
-			\item \textbf{Precondizione:} Il sistema fornisce un metodo per permettere all'utente di disconnettersi dal sistema.
+			\item \textbf{Attori primari}: Utente autenticato;
+			\item \textbf{Descrizione:} L'attore effettua il logout dall'applicazione;
+			\item \textbf{Precondizione:} Il sistema fornisce un metodo per permettere all'utente di disconnettersi dal sistema;
 			\item \textbf{Flusso principale degli eventi:}
 			\begin{enumerate}
-				\item l'attore si disconnette dal sistema;
+				\item l'attore si disconnette dal sistema.
 			\end{enumerate}
 			\item \textbf{Postcondizione:} Il sistema non riconosce più l'utente.
 		\end{itemize}
 			
-
-			
-
-
-
-
-
-
