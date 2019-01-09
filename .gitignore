@@ -5,3 +5,11 @@
 *.synctex.gz
 *.toc
 .DS_Store
+Esterni/Glossario.fdb_latexmk
+Esterni/Glossario.fls
+Esterni/Glossario.ilg
+Esterni/Glossario.ind
+Esterni/PianoDiProgetto/PianoDIProgetto.fdb_latexmk
+Esterni/PianoDiProgetto/PianoDIProgetto.fls
+Interni/Norme di Progetto/NormeDiProgetto.fdb_latexmk
+Interni/Norme di Progetto/NormeDiProgetto.fls
