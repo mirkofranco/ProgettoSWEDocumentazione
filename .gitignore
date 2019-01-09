@@ -5,7 +5,6 @@
 *.synctex.gz
 *.toc
 .DS_Store
-<<<<<<< HEAD
 Esterni/PianoDiProgetto/*.fdb_latexmk
 *.lot
 Esterni/PianoDiProgetto/*.lot
@@ -15,13 +14,12 @@ Interni/Norme di Progetto/NormeDiProgetto.fdb_latexmk
 Interni/Norme di Progetto/NormeDiProgetto.fls
 Esterni/PianoDiProgetto/PianoDIProgetto.lof
 Esterni/PianoDiProgetto/PianoDIProgetto.lot
-=======
 Esterni/Glossario.fdb_latexmk
 Esterni/Glossario.fls
 Esterni/Glossario.ilg
 Esterni/Glossario.ind
 Esterni/PianoDiProgetto/PianoDIProgetto.fdb_latexmk
 Esterni/PianoDiProgetto/PianoDIProgetto.fls
-Interni/Norme di Progetto/NormeDiProgetto.fdb_latexmk
+Esterni/PianoDiProgetto/PianoDIProgetto.lof
 Interni/Norme di Progetto/NormeDiProgetto.fls
->>>>>>> feature/Glossario
+Interni/Norme di Progetto/NormeDiProgetto.fdb_latexmk

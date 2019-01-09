@@ -3,11 +3,19 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+<<<<<<< HEAD
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Diagramma di Gantt: Analisi \relax }}{15}{figure.caption.9}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Diagramma di Gantt: Revisione Analisi \relax }}{15}{figure.caption.10}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Diagramma di Gantt: Base tecnologica \relax }}{16}{figure.caption.11}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Diagramma di Gantt: Progettazione di dettaglio e Codifica \relax }}{17}{figure.caption.12}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Diagramma di Gantt: Validazione e Collaudo \relax }}{18}{figure.caption.13}
+=======
+\contentsline {figure}{\numberline {3.1}{\ignorespaces \textit {Diagramma di} \textit {$Gantt_{G}$} : Analisi \relax }}{15}{figure.caption.9}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Diagramma di Gantt: Revisione Analisi \relax }}{15}{figure.caption.10}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces \textit {Diagramma di} \textit {$Gantt_{G}$} : Base tecnologica \relax }}{16}{figure.caption.11}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces \textit {Diagramma di} \textit {$Gantt_{G}$} : Progettazione di dettaglio e Codifica \relax }}{17}{figure.caption.12}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces \textit {Diagramma di} \textit {$Gantt_{G}$} : Validazione e Collaudo \relax }}{18}{figure.caption.13}
+>>>>>>> features/NormeDiProgetto
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Grafico prospetto orario nel periodo di Analisi dei Requisiti \relax }}{21}{figure.caption.15}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Grafico prospetto economico nel periodo di Analisi dei Requisiti \relax }}{22}{figure.caption.17}
