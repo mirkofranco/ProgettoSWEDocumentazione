@@ -23,3 +23,5 @@ Esterni/PianoDiProgetto/PianoDIProgetto.fls
 Esterni/PianoDiProgetto/PianoDIProgetto.lof
 Interni/Norme di Progetto/NormeDiProgetto.fls
 Interni/Norme di Progetto/NormeDiProgetto.fdb_latexmk
+*.lof
+*.ilg
