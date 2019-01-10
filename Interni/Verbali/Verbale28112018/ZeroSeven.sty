@@ -36,9 +36,9 @@
 		}
 		\pagenumbering{Roman}
 		\fancyhf{}
-		\lhead{Verbale interno 2018-11-28}
-		\rhead{#1}
-		\cfoot{\thepage~di \pageref{LastFrontPage}}
+		\lhead{#1}
+		\rhead{\nouppercase{\rightmark}}
+		\rfoot{\thepage~di \pageref{LastFrontPage}}
 		\renewcommand{\headrulewidth}{0.4pt}
 		\renewcommand{\footrulewidth}{0.4pt}
 	}
@@ -54,15 +54,16 @@
 		}
 		\pagenumbering{arabic}
 		\fancyhf{}
-		\lhead{Verbale interno 2018-11-28}
-		\rhead{#1}
-		\cfoot{
+		\lhead{#1}
+		\rhead{\nouppercase{\leftmark}}
+		\rfoot{
 			\hypersetup{
 				colorlinks=true,
 				linkcolor=black,
 			}
 			\thepage~di \pageref{LastPage}
 		}
+		\lfoot{Verbale interno 2018-11-28}
 		\renewcommand{\headrulewidth}{0.4pt}
 		\renewcommand{\footrulewidth}{0.4pt}
 	}
