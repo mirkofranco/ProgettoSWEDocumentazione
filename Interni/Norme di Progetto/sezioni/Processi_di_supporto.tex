@@ -17,17 +17,17 @@ La creazione della copia locale viene effettuata attraverso il comando:\\
 	\item \texttt{git pull}: aggiorna sovrascrivendo il repository locale con quello remoto.
 \end{itemize}
 \subsubsection{Git Flow}
-Per facilitare la collaborazione si sceglie usare il git flow\glossario{workflow}. L'Amministratore si assicurerà che tutte le macchine siano configurate correttamente per il suo utilizzo.
+Per facilitare la collaborazione si sceglie usare il git flow \footnote{\url{https://it.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow}}\glossario{workflow}. L'Amministratore si assicurerà che tutte le macchine siano configurate correttamente per il suo utilizzo.
 \subsubsection{Gestione dei rilasci}
-L'amministratore si occuperà di creare i rami di feature necessari per una proficua collaborazione tra i membri nel repository. Ogni documento (o parte di esso) e ogni funzionalità software verrà implementata in un ramo di feature, Quando la funzionalità diventa stabile e corretta verrà rilasciata in un ramo di integrazione chiamato "develop". Prima di ogni revisione verrà effettuato un rilascio nel ramo master a partire dall'ultimo commit. Tale rilascio costituirà\glossario{baseline}e sarà punto di partenza verso la prossima\glossario{milestone}. Tale attività verrà effettuata nei tempi descritti nel \texttt{Piano di Progetto v1.0.0}. 
+L'amministratore si occuperà di creare i rami di feature necessari per una proficua collaborazione tra i membri nel repository. Ogni documento (o parte di esso) e ogni funzionalità software verrà implementata in un ramo di feature. Quando la funzionalità diventa stabile e corretta verrà rilasciata in un ramo di integrazione chiamato "develop". Prima di ogni revisione verrà effettuato un rilascio nel ramo master a partire dall'ultimo commit. Tale rilascio costituirà\glossario{baseline}e sarà punto di partenza verso la prossima\glossario{milestone}. Tale attività verrà effettuata nei tempi descritti nel \texttt{Piano di Progetto v1.0.0}. 
 
 
 \section{Documentazione}
 Il\glossario{processo}di Documentazione stabilisce una serie di norme e convenzioni per la stesura dei documenti così da renderli formali, validi e coerenti.
-Un documento viene definito formale quando viene approvato dal \textit{Responsabile di progetto}.
+Un documento viene definito formale quando viene approvato dal \textit{Responsabile}.
 Ogni documento formale verrà classificato come:
 \begin{itemize}
-	\item \textbf{Interno:} documenti ad uso esclusivo del gruppo\glossario{ZeroSeven}, quali Norme di progetto e Studio di fattibilità;
+	\item \textbf{Interno:} documenti ad uso esclusivo del gruppo\glossario{ZeroSeven}, quali \textit{Norme di progetto} e \textit{Studio di fattibilità};
 	\item \textbf{Esterno:} documenti consultabili anche da attori esterni al gruppo ZeroSeven.
 	
 \end{itemize}
@@ -36,14 +36,14 @@ Ogni documento formale verrà classificato come:
 Tutti i documenti formali, esclusi i verbali, seguiranno questo sistema di nomenclatura:
 \begin{itemize}
 	\item \textbf{Nome del documento:} Il nome del documento deve essere scritto in \textit{Upper Camel}\glossario{Case}.
-	NormeDiProgetto per il documento corrente. 
+	NormeDiProgetto per il documento corrente;
 	\item \textbf{Versione:} La documentazione prodotta deve essere corredata del numero di versione secondo la seguente codifica:
 	
 	\textbf{v.X.Y.Z}
 	
 	dove:
 	\begin{itemize}
-		\item \textbf{X:} indica il numero crescente di uscite formali. Sarà compito del responsabile di progetto azzerare gli indici Y e Z all'uscita di ogni rilascio;
+		\item \textbf{X:} indica il numero crescente di uscite formali. Sarà compito del Responsabile azzerare gli indici Y e Z ad ogni rilascio;
 		\item \textbf{Y:} indica lo stato del documento secondo la seguente numerazione:
 		\begin{enumerate}
 			\setcounter{enumi}{-1}
@@ -59,21 +59,21 @@ Tutti i documenti formali, esclusi i verbali, seguiranno questo sistema di nomen
 I documenti verranno citati secondo il formato NomeDocumento v.X.Y.Z mentre i file saranno rinominati \texttt{NomeDocumento\_v.X.Y.Z.pdf} \\
 I verbali sia interni che esterni seguiranno la nomenclatura VerbaleUsoData.
 
-\subsubsection{Ciclo di vita documentazione}
+\subsubsection{Ciclo di vita della documentazione}
 Ogni documento formale deve passare gli stadi di ``Sviluppo”, ``Verifica” e ``Approvato”.
 \begin{itemize}
 	\item \textbf{Sviluppo:} inizia con la creazione del documento e termina con la conclusione	della stesura di tutte le sue parti. In questa fase i Redattori aggiungono le parti assegnate tramite\glossario{ticket};
 	
-	\item  \textbf{Verifica:} il documento entra nella fase di verifica dopo l’assegnazione da
+	\item  \textbf{Verifica:} il documento entra nella fase di verifica dopo l’assegnazione di un ticket a un \textit{Verificatore} da
 	parte del Responsabile. I Verificatori effettueranno le procedure di controllo
 	dello stesso.
 	Al termine del controllo in caso positivo il documento entra automaticamente
 	in fase di ``Approvazione”, altrimenti i loro riscontri vengono consegnati
-	al Responsabile di Progetto, che provvederà ad assegnare nuovamente il
+	al \textit{Responsabile}, che provvederà ad assegnare nuovamente il
 	documento ad un Redattore attraverso una nuova fase di Sviluppo;
 	
 	\item  \textbf{Approvazione:} l’approvazione di un documento coincide con il superamento
-	positivo da parte di un verificatore. 
+	positivo della verifica.
 	Sarà onere del Responsabile decidere, dopo un attenta lettura, se approvare il documento per il rilascio esterno o se è necessario modificare il documento;
 
 	
@@ -88,7 +88,7 @@ Ogni documento sarà composto da:
 	\item Frontespizio;
 	\item Diario delle modifiche;
 	\item Indice;
-	\item Elenco delle immagini e tabelle;
+	\item Elenco delle immagini e tabelle (se presenti);
 	\item Contenuto delle pagine interne.
 \end{itemize}
 \subsubsection{Frontespizio}
@@ -123,7 +123,7 @@ Successivo al frontespizio deve essere sempre presente un registro riassuntivo d
 Tutti i documenti, eccezion fatta per i verbali, devono contenere un indice il quale permette una visione macroscopica del contenuto del documento,
 permettendo una lettura ipertestuale e non necessariamente sequenziale.
  \subsubsection{Elenco delle immagini e tabelle} 
-Dopo il diario delle modifiche di ogni documento dovrà essere presente un \textit{Elenco delle figure} presenti ed un \textit{Elenco delle tabelle}.
+Dopo il diario delle modifiche di ogni documento dovrà essere presente un \textit{Elenco delle figure} ed un \textit{Elenco delle tabelle}.
 
 \subsubsection{Struttura delle pagine interne}
 Le pagine interne dei documenti rispettano i canoni previsti dal template \LaTeX e oltre al contenuto interno sono composte da: \\
@@ -144,9 +144,8 @@ Le pagine interne dei documenti rispettano i canoni previsti dal template \LaTeX
 \subsection{Norme tipografiche}
 Questa sezione racchiude le convenzioni riguardanti tipografia, ortografia e uno stile uniforme e disciplinato per tutti i documenti.
 \subsubsection{Punteggiatura}
-La punteggiatura (chiamata anche interpunzione) è un sistema di segni che sono usati per iniziare, terminare o separare frasi, parti di frasi o parole. \\
 Ogni segno della punteggiatura va sempre unito all'ultima lettera della parola che lo precede e separato con uno spazio dalla lettera iniziale della parola che lo segue.
-le lettere maiuscole vanno poste solo dopo il punto, il punto di domanda, il punto esclamativo e all’inizio di ogni elemento di un elenco puntato, oltre che dove previsto dalla lingua italiana. È inoltre utilizzata l’iniziale maiuscola nel nome del team, del\glossario{progetto}, dei documenti, dei ruoli di progetto, delle fasi di lavoro e nelle parole\glossario{Proponente}e Committente.
+Le lettere maiuscole vanno poste solo dopo il punto, il punto di domanda, il punto esclamativo e all’inizio di ogni elemento di un elenco puntato, oltre che dove previsto dalla lingua italiana. È inoltre utilizzata l’iniziale maiuscola nel nome del team, del\glossario{progetto}, dei documenti, dei ruoli di progetto e delle fasi di lavoro.
 \subsubsection{Formati}
 \begin{itemize}
 \item  Date: le date presenti nei documenti devono seguire la notazione definita dallo standard ISO 8601:2004 YYYY-MM-DD
@@ -167,8 +166,6 @@ dove:
 	\item \textbf{Corsivo:}
 	il corsivo deve essere utilizzato esclusivamente nei seguenti casi:
 	\begin{itemize}
-		\item Citazioni: Le frasi citate andranno scritte in corsivo;
-		\item Parole del \textit{Glossario}: Alla prima occorrenza le parole inserite nel glossario oltre ad avere una G a pedice saranno scritte in corsivo;
 		\item Ruoli: Dovrà essere utilizzato il corsivo quando si parla di ruoli di progetto (es. \textit{Analista});
 		\item Documenti: Il nome di un documento andrà scritto in corsivo (es. \textit{Norme di progetto}).
 	\end{itemize}
@@ -181,8 +178,8 @@ dove:
 	\item \textbf{Elenchi:} Al termine di ogni punto di un elenco verrà utilizzato il carattere (;) eccetto per l'ultimo punto per il quale verrà utilizzato il carattere (.);
 	\item \textbf{Riferimenti informativi:} Ogni riferimento a\glossario{prodotti}, guide, software,
 	libri esterno al progetto dovrà essere indicato tramite un’annotazione a piè di pagina;
-	\item \textbf{\LaTeX:} Ogni riferimento a \LaTeX  verrà scritto utilizzando il comando \texttt{\textbackslash LaTeX};
-	\item \textbf{Comandi \LaTeX:} sono stati realizzati dei comandi personalizzati al fine di evitare errori di battitura e unificare tutti i documenti facilitando il lavoro degli \textit{Analisti}.
+	\item \textbf{\LaTeX:} Ogni riferimento a \LaTeX verrà scritto utilizzando il comando \texttt{\textbackslash LaTeX};
+	\item \textbf{Comandi \LaTeX:} sono stati realizzati dei comandi personalizzati al fine di evitare errori di battitura e unificare tutti i documenti facilitando il lavoro del gruppo.
 	\begin{itemize}
 		\item \textbf{ \textbackslash intestazioni}: inserisce un'intestazione personalizzata con il nome del documento e il logo\glossario{ZeroSeven};
 		\item \textbf{ \textbackslash mailzeroseven}: inserisce l'indirizzo email del gruppo per un eventuale contatto;
@@ -193,15 +190,15 @@ dove:
 	
 	\item \textbf{Sigle:} Nonostante sarà preferito l'utilizzo delle parole per intero potranno essere utilizzate le seguenti sigle:
 	\begin{itemize}
-	\item AdR = Analisi dei Requisiti;
-	\item NdP = Norme di Progetto;
-	\item PdP = Piano di Progetto;
-	\item PdQ = Piano di Qualifica;
-	\item SdF = Studio di Fattibilità;
+	\item ADR = Analisi dei Requisiti;
+	\item NDP = Norme di Progetto;
+	\item PDP = Piano di Progetto;
+	\item PDQ = Piano di Qualifica;
+	\item SDF = Studio di Fattibilità;
 	\item RR = Revisione dei Requisiti;
 	\item RQ = Revisione di Qualifica;
 	\item RP = Revisione di Progetto;
-	\item Ra = Revisione di Accettazione.
+	\item RA = Revisione di Accettazione.
 	\end{itemize}
 \end{itemize}
 \subsubsection{Componenti grafiche}
@@ -226,7 +223,9 @@ Viene implementato uno script per permettere il calcolo automatico dell'\textit{
 Questa\glossario{processo}definisce norme e struttura delle metriche, obbiettivi di qualità, metodologie e strumenti per perseguire qualità di processo e di prodotto. 
 \subsubsection{Classificazioni degli obbiettivi} 
 Gli obbiettivi di qualità inclusi nel \textit{Piano di Qualifica v1.0.0} devono rispettare la seguente notazione: \\
-Q[Tipo][ID] : [Nome].\\
+\begin{center}
+Q[Tipo][ID] : [Nome].
+\end{center}
 \begin{itemize}
 	\item \textbf{Tipo}: stabilisce se l'obbiettivo si riferisce a\glossario{prodotti}o processi e può assumere i seguenti valori:
 	\begin{itemize}
@@ -250,26 +249,26 @@ M[Tipo][ID] : [Nome].\\
 \end{itemize}
 
 \section{Verifica}
-La\glossario{verifica}è un processo atto ad evidenziare ed eliminare la possibile presenza di errori.
+La\glossario{verifica}è un processo atto a evidenziare ed eliminare la possibile presenza di errori.
 Di seguito verranno descritti gli strumenti e le pratiche utilizzate per la verifica del codice e dei documenti durante la loro realizzazione.
-Durante questa prima fase di progetto la verifica si è focalizzata principalmente su documenti e diagrammi.
+Durante questa prima fase di progetto la verifica si è focalizzata principalmente su documenti.
 \subsection{Verifica di processi}
 Ciascun\glossario{processo}verrà costantemente monitorato in tutta la sua esecuzione e documentato alla fine di ogni periodo nell'appendice "Resoconto della verifica" nel \texttt{Piano di Qualifica v1.0.0}, secondo le metodologie ISO/IEC 15504.
 \subsection{Verifica dei prodotti}
-La verifica della qualità di prodotto si divide in attività e procedure differenti a seconda del\glossario{prodotto}che ci sta verificando. Per i prodotto software si procede con analisi statica e dinamica, mentre per i documenti si applica soltanto analisi statica.
+La verifica della qualità di prodotto si divide in attività e procedure differenti a seconda del\glossario{prodotto}che si sta verificando. Per i prodotto software si procede con analisi statica e dinamica, mentre per i documenti si applica soltanto analisi statica.
 \subsubsection{Verifica dei documenti}
 \paragraph{Analisi statica}
-Al fine di verificare i documenti verranno utilizzati\glossario{Inspection}e\glossario{Walkthrought}:
+Al fine di verificare i documenti verranno utilizzati\glossario{inspection}e\glossario{walkthrought}:
 \begin{itemize}
-	\item \textbf{Walkthrough:} questa metodologia prevede una lettura profonda e attenta del documento. Gli errori riscontrati verranno corretti e aggiunti all'appendice "Lista di controllo" delle \texttt{Norme di Progetto v1.0.0} per permettere di utilizzare Inspection le volte successive;
-	\item \textbf{Inspection:} al contrario della metodologia precedente, questa risulta essere molto più veloce perché attraverso una lista di controllo degli errori e delle misurazioni effettuate permette un'analisi più efficace delle criticità, omettendo le parti che non presentano problematiche. 
+	\item \textbf{Walkthrough:} questa metodologia prevede una lettura profonda e attenta del documento. Gli errori riscontrati verranno corretti e aggiunti all'appendice "Lista di controllo" delle \texttt{Norme di Progetto v1.0.0} per permettere di utilizzare inspection le volte successive;
+	\item \textbf{Inspection:} al contrario della metodologia precedente, questa risulta essere molto più veloce perché attraverso una lista di controllo degli errori permette un'analisi più efficace delle criticità, omettendo le parti che non presentano problematiche. 
 \end{itemize}
 \paragraph{Procedura di controllo dei documenti}
 \begin{enumerate}
-	\item Viene assegnato un\glossario{ticket}a un Verificatore;
+	\item Viene assegnato un\glossario{ticket}a un \textit{Verificatore};
 	\item Vengono controllati gli errori comuni attraverso la lista di controllo;
-	\item Viene controllato il rispetto delle Norme di Progetto;
-	\item Viene effettuato una lettura profonda e corrette eventuali nuove anomalie;
+	\item Viene controllato il rispetto delle \textit{Norme di Progetto};
+	\item Viene effettuata una lettura profonda e corrette eventuali nuove anomalie;
 	\item Calcolo dell'\textit{indice di}\glossario{Gulpease};
 	\item Vengono aggiunte eventuali nuove anomalie alla lista di controllo;
 	\item Viene chiuso il ticket.
