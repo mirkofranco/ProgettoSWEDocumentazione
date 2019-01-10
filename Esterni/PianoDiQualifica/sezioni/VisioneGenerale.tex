@@ -13,9 +13,9 @@ Ognuna delle fasi del \glossario{progetto} descritte nel \textit{Piano di Proget
  \textbf{Analisi:} in questa fase si fa riferimento ai metodi di verifica descritti nella \hyperref[Metodi]{sezione 2.12} sui documenti prodotti dal gruppo.\\ \newline
 Concluso il processo di verifica ha inizio il processo di approvazione.Durante tale processo sarà compito del \textit{Responsabile di Progetto} accertarsi che il livello macroscopico dei prodotti sia conforme a quanto pianificato e progettato precedentemente.
 \section{Pianificazione strategica e temporale}
-Avendo come obbiettivo principale il rispetto della pianificazione descritta nel \texttt{Piano di Progetto v1.0.0}, è necessario che l'attività di verifica di ogni attività sia sistematica e organizzata nel migliore dei modi. 
+Avendo come obbiettivo principale il rispetto della pianificazione descritta nel \textit{Piano di Progetto v1.0.0}, è necessario che l'attività di verifica di ogni attività sia sistematica e organizzata nel migliore dei modi. 
 Rispettando ciò si riesce a individuare e quindi correggere gli eventuali errori rilevati il prima possibile, evitandone una pericolosa proliferazione. 
-Le metodologie per l'individuazione e la correzione degli errori sono descritte nelle \texttt{Norme di Progetto v.1.0.0}.
+Le metodologie per l'individuazione e la correzione degli errori sono descritte nelle \textit{Norme di Progetto v.1.0.0}.
 \section{Reponsabilità}
 Per garantire che il processo di verifica sia efficace ed efficiente vengono attribuite delle responsabilità a dei specifici ruoli di progetto.
 I ruoli che possiedono la responsabilità del processo di verifica sono il \textit{Responsabile} e i \textit{Verificatori}, fermo restando che ogni membro del gruppo è responsabile di quanto prodotto.
@@ -35,7 +35,7 @@ I ruoli che possiedono la responsabilità del processo di verifica sono il \text
 	\subitem Creazione dei diagrammi in \glossario{UML};
 	\subitem Assegnazione di compiti per lo svolgimento delle \glossario{attività};
 	\subitem Gestione dei test e dell'analisi del codice;
-	\subitem Automatizzazione del processo di verifica;
+	\subitem Automatizzazione del processo di verifica.
 
 	\item \textbf{Risorse Hardware}
 	Ogni membro del gruppo ha a disposizione un computer personale contenente tutti gli strumenti descritti nel \textit{Piano di Qualifica} e nelle 
@@ -112,15 +112,15 @@ Indica se si è in linea, in anticipo o in ritardo rispetto alla pianificazione 
 Se SV > 0 significa che il gruppo sta procedendo con maggiore velocità rispetto a quanto pianificato, viceversa se negativo. 
 Essendo stati inseriti slack durante la pianificazione delle attività dei processi, il valore di tale indice è inizialmente positivo.
 \begin{itemize}
-	\item Range accettazione: >= -(costo preventivo fase x 10\%)
-	\item Range ottimale: [>= 0] 
+	\item Range accettazione: >= -(costo preventivo fase x 10\%);
+	\item Range ottimale: [>= 0]. 
 \end{itemize}
 \subsection{Budget Variance (BV)}
 Indica se alla data corrente corrente si è speso di più o meno rispetto a quanto pianificato.
 Se BV >= 0 significa che si sta usando più budget di quanto preventivato, negativo viceversa.
 \begin{itemize}
-	\item  Range accettazione: >= -( costo preventivo fase x 10\%)
-	\item Range ottimale: >= 0
+	\item  Range accettazione: >= -( costo preventivo fase x 10\%);
+	\item Range ottimale: >= 0.
 \end{itemize}
 \section{Metriche per la qualità di prodotto}
 \subsection{Indice di Gulpease} \label{IndicediGulpease}
@@ -134,8 +134,8 @@ Dove:
 \end{itemize}
 Il risultato è un numero compreso nel range di valori $0 \le{IG} \le{100}$, dove il valore "100" indica la leggibilità più alta e "0" la leggibilità più bassa.
 \begin{itemize}
-	\item Range accettazione: [40 - 100]
-	\item Range ottimale: [50 - 100]
+	\item Range accettazione: [40 - 100];
+	\item Range ottimale: [50 - 100].
 \end{itemize}
 \subsection{Complessità ciclomatica}
 Metrica software che indica la complessità di un programma tenendo in considerazione \glossario{moduli}, \glossario{funzioni}, \glossario{metodi} e \glossario{classi}.
@@ -263,27 +263,22 @@ Parametri utilizzati:
 \section{Metodi}\label{Metodi}
 Questa sezione ha lo scopo di definire precisamente le procedure di analisi statica e dinamica del codice.
 \subsection{Analisi dei processi}
-Processo che si identifica in queste fasi:
-\begin{enumerate}
-	\item \textbf{Analisi delle metriche:} Alla conclusione di ogni fase del progetto, per ogni macro-attività, definita nel
+	 \textbf{Analisi delle metriche:} Alla conclusione di ogni fase del progetto, per ogni macro-attività, definita nel
 	\textit{Piano di Progetto} , si calcolano gli indici definiti nella \hyperref[Metriche]{Sezione 2.8}. Al fine
 	di avere un indice complessivo di fase dovrà essere inoltre calcolato il valore medio
 	di tali indici.
-	\item \textbf{Analisi del grafico PDCA:} Con l'utilizzo dei dati forniti in output dal grafico PDCA, si possono trarre considerazioni sullo svolgimento generale dei processi.
-	I dati forniti sono visuali e quindi non numericamente identificabili, tuttavia risultano utili per evidenziare errori di pianificazione o criticità presenti nello svolgimento dei processi.
-\end{enumerate}
 \subsection{Analisi dei documenti}
 Viene definito un protocollo per la verifica dei documenti.
 \begin{enumerate}
 	\item \textbf{Controllo e sintattico del periodo:} Utilizzando \glossario{TexStudio} è possibile evidenziare gran parte degli errori grammaticali presenti in un documento, tuttavia è comunque necessario un \glossario{walkthrough} da parte di un \glossario{verificatore} per l'individuazione di errori aggiuntivi sfuggiti al controllo automatico;
-	\item \textbf{Rispetto delle norme di progetto:} Nelle \textit{Norme di Progetto} sono definite alcune direttive tipografiche e relative alla struttura dei documenti.
+	\item \textbf{Rispetto delle norme di progetto:} Nelle \textit{Norme di Progetto} sono definite alcune direttive tipografiche e relative alla struttura dei documenti;
 	I \glossario{verificatori} dovranno effettuare una \glossario{inspection} del documento per individuare errori di questo tipo.
 	\item \textbf{Lista di controllo} il \textit{Verificatore}, dovrà utilizzare la lista di controllo per i documenti, e verificare che gli errori più frequenti non siano presenti;
 	\item \textbf{Verifica delle proprietà di glossario:}Seguendo le \textit{Norme di Progetto}, è possibile utilizzare uno script automatico per l'individuazione di tutte le occorrenze di una parola del glossario in un documento.\\
 	Per ogni occorrenza viene applicato lo stile  predefinito dal comando \textbackslash glossario.
 	Il \glossario{Verificatore} dovrà quindi effettuare un ulteriore controllo allo scopo di constatare che l’output finale sia conforme a quanto precisato nelle \textit{Norme di Progetto};
 	\item \textbf{Calcolo dell'indice di Gulpease:} Utilizzando gli strumenti automatici definiti nelle \textit{Norme di Progetto},su ogni documento redatto il \\ \glossario{Verificatore} deve calcolare l’indice di leggibilità.
-	Si renderà necessario un ulteriore \glossario{walkthrough} nel caso in cui l’indice risultasse troppo basso, allo scopo di snellire e accorciare frasi troppo lunghe e complesse.
+	Si renderà necessario un ulteriore \glossario{walkthrough} nel caso in cui l’indice risultasse troppo basso, allo scopo di snellire e accorciare frasi troppo lunghe e complesse;
 	\item \textbf{Miglioramento Processo} Per avere un miglioramento del processo di verifica, quando i Verificatori eseguono
 	walkthrough di un documento, dovranno riportare gli errori più frequentemente
 	trovati. Grazie a tale pratica sarà possibile eseguire inspection su tali errori nelle
@@ -298,9 +293,9 @@ Viene definito un protocollo per la verifica dei documenti.
 Nel caso in cui un \textit{Verificatore} riscontri un'anomalia intesa come:
 
 \begin{itemize}
-	\item Violazione delle metriche disposte nel \hyperref[Metriche]{capitolo 3}
-	\item Incongruenza del prodotto con quanto specificato nell'\textit{Analisi dei Requisiti v 1.0.0}
-	\item Violazione delle norme tipografiche descritte nell \textit{Norme di Progetto}
+	\item Violazione delle metriche disposte nel \hyperref[Metriche]{capitolo 3};
+	\item Incongruenza del prodotto con quanto specificato nell'\textit{Analisi dei Requisiti v 1.0.0};
+	\item Violazione delle norme tipografiche descritte nell \textit{Norme di Progetto}.
 \end{itemize}
 
 egli potrà aprire una \glossario{task} su \glossario{Asana} per la sua risoluzione, seguendole procedure descritte nelle \textit{Norme di Progetto v 1.0.0}.
