@@ -14,7 +14,7 @@
 	{\huge\bfseries MegAlexa\par}
 	Arricchitore di skill di Amazon Alexa
 	\line(1,0){350} \\
-	{\scshape\LARGE Verbale 2018-12-27 \par}
+	{\scshape\LARGE Verbale Esterno 2018-12-27 \par}
 	\vspace{1cm}
 	{\scshape Gruppo ZeroSeven \par}
 	\logo
@@ -26,7 +26,7 @@
 		{\hfill\textbf{Verifica}} 				&  	Stefano Zanatta			\\ 
 		{\hfill\textbf{Approvazione}} 		&  		Mirko Franco	\\ 
 		{\hfill\textbf{Uso}} 					& 	Esterno	\\ 
-		{\hfill\textbf{Distribuzione}} 			& 			Prof. Tullio Vardanega \\ & Prof. Riccardo Cardin \\ & zero12 - Innovation Company \\ & Gruppo ZeroSeven		\\ 
+		{\hfill\textbf{Distribuzione}} 			& 			Prof. Tullio Vardanega \\ & Prof. Riccardo Cardin \\ & Zero12 s.r.l.	\\ & Gruppo ZeroSeven \\
 		{\hfill\textbf{Email di contatto}} & zerosevenswe@gmail.com \\
 	\end{tabular}
 \end{titlepage}
@@ -42,14 +42,14 @@
 			\hline
 			\textbf{Versione} & \textbf{Data} & \textbf{Descrizione} & \textbf{Autore} & \textbf{Ruolo} \\
 			\hline
-			0.0.1 & 2018-12-28 & Creazione scheletro documento
-			& Bianca Ciuche & Analista\\
-			\hline
-			0.0.2 & 2018-12-29 & Stesura verbale & Bianca Ciuche &Analista \\
+			1.0.0 & 2018-12-30 & Approvazione per Revisione dei Requisti & Mirko Franco & Responsabile \\
 			\hline
 			0.1.0 & 2018-12-30 & Verifica & Stefano Zanatta &Verificatore \\
 			\hline
-			1.0.0 & 2018-12-30 & Approvazione per Revisione dei Requisti & Mirko Franco & Responsabile \\
+			0.0.2 & 2018-12-29 & Stesura verbale & Bianca Ciuche &Analista \\
+			\hline
+			0.0.1 & 2018-12-28 & Creazione scheletro documento
+			& Bianca Ciuche & Analista\\
 			\hline
 		\end{tabularx}
 		\caption{Diario delle modifiche}
@@ -63,40 +63,40 @@
 
 	\section{Informazioni sulla riunione}
 	\subsection{Motivo della riunione}
-	La riunione è stata effetuata su  \textit{Hangouts} ed è stata convocata attraverso l'invio di una mail all'azienda  \textit{Zero12}. Sono stati esposti e discussi i casi d'uso e i requisiti individuati, dati chiarimenti inerenti il progetto e la sua implementazione.\\
+	La riunione è stata effetuata su\glossario{Hangouts}ed è stata convocata attraverso l'invio di una mail all'azienda Zero12. Sono stati esposti e discussi i casi d'uso e i\glossario{requisiti}individuati, dati chiarimenti inerenti il\glossario{progetto}e la sua implementazione.\\
 	Di seguito vengono riportate le informazioni dell'incontro:
 	\begin{itemize}
-		\item \textbf{Luogo e data}: Padova, Giovedì 27 Dicembre 2018
-		\item \textbf{Ora di inizio}: 17:00
-		\item \textbf{Ora di fine}: 17:40
+		\item \textbf{Luogo e data}: Padova, Giovedì 27 Dicembre 2018;
+		\item \textbf{Ora di inizio}: 17:00;
+		\item \textbf{Ora di fine}: 17:40;
 		\item \textbf{Partecipanti}:  
 		\begin{itemize}
-			\item Gian Marco Bratzu
-			\item Mirko Franco
-			\item Ciuche Bianca
-			\item Ludovico Brocca
-			\item Matteo Depascale
-			\item Stefano Zanatta
-			\item Sig. Stefano Dindo
+			\item Gian Marco Bratzu;
+			\item Mirko Franco;
+			\item Ciuche Bianca;
+			\item Ludovico Brocca;
+			\item Matteo Depascale;
+			\item Stefano Zanatta;
+			\item Sig. Stefano Dindo.
 		\end{itemize}
 	\end{itemize}
 
 	\section{Argomenti discussi}
-	La riunione si è focalizzata sulle caratteristiche che la  \textit{skill} dovrà avere: è stata data particolare attenzione sull'implementazione dei \textit{connettori} e dei \textit{workflow}. Il proponente specifica la richiesta di \textit{connettori} generalizzati, in modo che l'utente possa creare dei \textit{workflow} modulari.
+	La riunione si è focalizzata sulle caratteristiche che la\glossario{skill}dovrà avere: è stata data particolare attenzione sull'implementazione dei\glossario{connettori}e dei\glossario{workflow}. La proponente specifica la richiesta di connettori generalizzati, in modo che l'utente possa creare dei workflow modulari.
 	\section{Domande e risposte principali}
-	\subsection{Possono essere in esecuzione più \textit{workflow} contemporaneamente?}
-	Non possono essere eseguiti contemporaneamente più \textit{workflow} della stessa \textit{skill.}
-	\subsection{Dove vengono memorizzati i \textit{workflow}?}
-	I \textit{workflow} vengono memorizzati sui servizi web messi a disposizione a supporto della \textit{skill}. La \textit{skill} ha solo servizi esterni, non ci sono servizi memorizzati dentro al \textit{device}. 
-	\subsection{Prima di chiamare un \textit{workflow} specifico, bisogna invocare la \textit{skill} che lo contiene ?}
-	Si, bisogna prima invocare la \textit{skill} a cui il \textit{workflow} appartiene.
+	\subsection{Possono essere in esecuzione più workflow contemporaneamente?}
+	Non possono essere eseguiti contemporaneamente più workflow della stessa skill.
+	\subsection{Dove vengono memorizzati i workflow?}
+	I\glossario{workflow}vengono memorizzati sui servizi web messi a disposizione a supporto della\glossario{skill}. La skill ha solo servizi esterni, non ci sono servizi memorizzati dentro al device. 
+	\subsection{Prima di chiamare un workflow specifico, bisogna invocare la skill che lo contiene ?}
+	Si, bisogna prima invocare la skill a cui il workflow appartiene.
 	\subsection{Come vanno risolti i problemi riguardo il riconoscimento di più utenti?}
-	Il riconoscimento degli utenti avviene attraverso delle \textit{chiavi} che vengono salvate nel \textit{database}. Una \textit{chiave} corrisponde all'univoca coppia \{nome\_utente, password\} che ha a disposizione i \textit{workflow} che l'utente stesso  ha creato.
-	\subsection{I \textit{workflow} di una \textit{skill} possono utilizzare \textit{connettori}  di altre \textit{skill}?}
-	Si ma non è una giusta implementazione poiché per fare ciò devono essere installate altre \textit{skill}.
+	Il riconoscimento degli utenti avviene attraverso delle chiavi che vengono salvate nel database. Una chiave corrisponde all'univoca coppia \{nome\_utente, password\} che ha a disposizione i\glossario{workflow}che l'utente stesso  ha creato.
+	\subsection{I workflow di una skill possono utilizzare connettori  di altre skill?}
+	Si ma non è una giusta implementazione poiché per fare ciò devono essere installate altre\glossario{skill}.
     \subsection{Dal punto di vista della qualità ci sono delle metriche specifiche da rispettare?}
-    Una metrica da soddisfare è permettere all'utente di interagire con \textit{l'echo di Alexa} nel linguaggio più naturale possibile, non in maniera robotica, a parte questo non ci sono particolari metriche da rispettare.
-    \subsection{È possibile aggiungere dei \textit{blocchi} in futuro?}
-    Si, mettendosi d'accordo è possibile aggiungere dei \textit{blocchi}.	
+    Una metrica da soddisfare è permettere all'utente di interagire con l'echo di\glossario{Alexa}nel linguaggio più naturale possibile, non in maniera robotica, a parte questo non ci sono particolari metriche da rispettare.
+    \subsection{È possibile aggiungere dei blocchi in futuro?}
+    Si, mettendosi d'accordo è possibile aggiungere dei blocchi.
 		\label{LastPage}
 \end{document}
