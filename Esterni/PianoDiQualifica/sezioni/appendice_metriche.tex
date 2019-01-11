@@ -1,27 +1,26 @@
 \chapter{Standard di qualità}
 \section{Standard ISO/IEC 15504}
-Lo standard ISO/IEC 15504 descrive come ogni processo debba essere controllato continuamente con lo scopo di rilevare possibili rischi e debolezze intrinsechi che impediscono di raggiungere gli obiettivi prefissati. I risultati delle singole misurazioni devono essere oggettivi, ripetibili e comparabili in contesti simili a quelli presi in esame. 
+Lo standard ISO/IEC 15504 descrive come ogni\glossario{processo}debba essere controllato continuamente con lo scopo di rilevare possibili rischi e debolezze intrinsechi che impediscono di raggiungere gli obiettivi prefissati. I risultati delle singole misurazioni devono essere oggettivi, ripetibili e comparabili in contesti simili a quelli presi in esame. 
 \section{Standard ISO/IEC 25010}
-Segue una descrizione dettagliata dei principi derivanti dallo standard ISO/IEC 25010 a cui fa riferimento il gruppo per lo sviluppo di \glossario{MegAlexa}.
+Segue una descrizione dettagliata dei principi derivanti dallo standard ISO/IEC 25010 a cui fa riferimento il gruppo per lo sviluppo di\glossario{MegAlexa}.
 
 \subsection{Funzionalità}
 \begin{itemize}
-	\item \textbf{Efficacia funzionale:} Indice che determina il grado di copertura di bisogni e obiettivi richiesti dall'utente.
+	\item \textbf{Efficacia funzionale:} Indice che determina il grado di copertura di bisogni e obiettivi richiesti dall'utente;
 	\item \textbf{Correttezza:} Indice che determina la precisione e la correttezza degli output forniti dal software.
 \end{itemize}
 \subsection{Usabilità}
-L'usabilità definisce il grado di facilità e soddisfazione con cui si compie l'interazione tra l'uomo e il prodotto, ovvero l'efficacia, l'efficienza e la soddisfazione con le quali determinati utenti raggiungono determinati obiettivi in determinati contesti.
+L'usabilità definisce il grado di facilità e soddisfazione con cui si compie l'interazione tra l'uomo e il \textit{prodotto$_{G}$}, ovvero l'efficacia, l'efficienza e la soddisfazione con le quali determinati utenti raggiungono determinati obiettivi in determinati contesti:
 \begin{itemize}
 	\item \textbf{Curva d'apprendimento:} Indica il rapporto tra tempo necessario per l'apprendimento e quantità di informazioni correttamente apprese.
-	La curva d'apprendimento sarà differente in base al dispositivo considerato in quanto l'applicazione mobile avrà funzionalità più complesse rispetto all'echo che dovrà essere utilizzato da un qualsiasi utente;
-	Dunque verranno suddivisi i requisiti in base al dispositivo:
+	La curva d'apprendimento sarà differente in base al dispositivo considerato in quanto l'applicazione mobile avrà funzionalità più complesse rispetto all'echo che dovrà essere utilizzato da un qualsiasi utente; Dunque verranno suddivisi i requisiti in base al dispositivo:
 	\begin{itemize}
 		\item \textbf{Curva d'apprendimento App};
-		\item \textbf{Curva d'apprendimento Alexa}.
+		\item \textbf{Curva d'apprendimento Alexa$_{G}$}.
 	\end{itemize}
-	\item \textbf{Protezione dall'errore:} Rappresenta il grado in cui il prodotto protegge l'utente dal commettere errori.
+	\item \textbf{Protezione dall'errore:} Rappresenta il grado in cui il\glossario{prodotto}protegge l'utente dal commettere errori;
 	\item \textbf{Estetica dell'interfaccia utente:} Rappresenta la capacità dell'interfaccia di evitare smarrimento e confusione da parte dell'utente.
-	L'interfaccia dell'echo ha un'usabilità differente in quanto si parla di interfaccia vocale, dunque soggetta a diversi tempi di reattività e apprendimento rispetto ad un'interfaccia mobile.
+	L'interfaccia dell'echo ha un'usabilità differente in quanto si parla di interfaccia vocale, dunque soggetta a diversi tempi di reattività e apprendimento rispetto ad un'interfaccia mobile;
 	\item \textbf{Accessibilità:} Si intende la possibilità di fornire i servizi anche a coloro che sono affetti da disabilità temporanee e non, che quindi utilizzano tecnologie ausiliarie.
 	Nel caso dell'echo alcune disabilità sono per ora vincolanti in quanto presuppongono necessariamente l'utilizzo della voce.
 \end{itemize}
@@ -29,23 +28,23 @@ L'usabilità definisce il grado di facilità e soddisfazione con cui si compie l
 Caratteristica che rappresenta la capacità del prodotto software di svolgere correttamente il suo compito, mantenendo delle buone prestazioni al verificarsi di situazioni anomale. 
 Il prodotto software dovrà presentare le seguenti caratteristiche:
 \begin{itemize}
-	\item \textbf{Tolleranza agli errori:} Il prodotto software continua a lavorare correttamente in presenza di errori dovuti a uno scorretto uso dell'applicativo.
+	\item \textbf{Tolleranza agli errori:} Il\glossario{prodotto}software continua a lavorare correttamente in presenza di errori dovuti a uno scorretto uso dell'applicativo;
 	\item \textbf{Recuperabilità:} Nel caso in cui si presenta un'interruzione  o un errore dell'esecuzione, l'applicativo è in grado di recuperare i dati e ripristinare lo stato interrotto.
 \end{itemize}
 \subsection{Sicurezza}
 \begin{itemize}
-	\item \textbf{Confidenzialità:} percentuale per la quale l'applicazione assicura che i dati siano accessibili solo da utenti autorizzati. E' importante notare che l'\textit{Alexa} di Amazon è uno speaker, pertanto l'output prodotto è accessibile a chiunque nella stanza.
-	\item \textbf{Integrità:} percentuale per la quale l'applicazione previene accessi o modifiche non autorizzati.
+	\item \textbf{Confidenzialità:} percentuale per la quale l'applicazione assicura che i dati siano accessibili solo da utenti autorizzati. E' importante notare che l'\textit{Alexa$_{G}$} di\glossario{Amazon}è uno speaker, pertanto l'output prodotto è accessibile a chiunque nella stanza;
+	\item \textbf{Integrità:} percentuale per la quale l'applicazione previene accessi o modifiche non autorizzati;
 	\item \textbf{Autenticità:} percentuale per la quale l'identità dichiarata di un utente può essere provata.
 \end{itemize}
 \subsection{Manutenibilità}
-Con manutenibilità intendiamo la capacità del prodotto di essere modificato tramite correzioni, miglioramenti e adattamenti.
+Con manutenibilità intendiamo la capacità del\glossario{prodotto}di essere modificato tramite correzioni, miglioramenti e adattamenti.
 Nello specifico il software deve avere le seguenti caratteristiche:
 \begin{itemize}
-	\item \textbf{Analizzabilità:} Il software deve poter essere analizzato per poter trovare gli errori.
-	\item \textbf{Modificabilità:} Il prodotto deve permettere la modifica delle sue parti.
-	\item \textbf{Modularità:} Il prodotto è diviso in parti che svolgono compiti ben precisi.
-	\item \textbf{Riusabilità:} Le parti del software possono essere riusate in altre applicazioni.
+	\item \textbf{Analizzabilità:} Il software deve poter essere analizzato per poter trovare gli errori;
+	\item \textbf{Modificabilità:} Il prodotto deve permettere la modifica delle sue parti;
+	\item \textbf{Modularità:} Il prodotto è diviso in parti che svolgono compiti ben precisi;
+	\item \textbf{Riusabilità:} Le parti del software possono essere riusate in altre applicazioni;
 	\item \textbf{Testabilità:} Il software deve essere testabile per consentire la validazione e l'approvazione di modifiche.
 \end{itemize}	
 	
