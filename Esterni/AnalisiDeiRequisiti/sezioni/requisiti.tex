@@ -27,9 +27,9 @@ Vengono riportati i\glossario{requisiti}individuati basandosi sui casi d'uso, su
 	\hline
 	R1O08.01 & Obbligatorio & L'utente tramite\glossario{Alexa}deve poter creare una nuova sveglia &Interno\\
 	\hline
-	R1O08.02 & Obbligatorio & L'utente tramite\glossario{Alexa}deve poter modificare l'orario di una sveglia. &Interno\\
+	R1O08.02 & Obbligatorio & L'utente tramite\glossario{Alexa}deve poter modificare l'orario di una sveglia &Interno\\
 	\hline
-	R1O08.03 & Obbligatorio & L'utente tramite\glossario{Alexa}deve poter posporre una sveglia mentre questa sta suonando. &Interno\\
+	R1O08.03 & Obbligatorio & L'utente tramite\glossario{Alexa}deve poter posporre una sveglia mentre questa sta suonando &Interno\\
 	\hline	
 	R1O08.04 & Obbligatorio & L'utente tramite\glossario{Alexa}deve poter interrompere una sveglia mentre questa sta suonando. &Interno\\
 	\hline
@@ -37,23 +37,23 @@ Vengono riportati i\glossario{requisiti}individuati basandosi sui casi d'uso, su
 	\hline
 	R1O10& Obbligatorio&\glossario{Alexa}deve fornire un sistema di aiuto che dice all'utente in qualsiasi istante in quale punto dell'esecuzione si trova & Interno\\
 	\hline
-	R1F01 & facoltativo & I dati utente verranno automaticamente sincronizzati con il proprio account\glossario{Amazon} & Interno\\
+	R1F01 & Facoltativo & I dati utente verranno automaticamente sincronizzati con il proprio account\glossario{Amazon} & Interno\\
 	\hline
-	R1F02 & facoltativo & L'utente deve poter rispondere ad un tweet dopo che\glossario{Alexa}l'ha letto. & Interno\\
+	R1F02 & Facoltativo & L'utente deve poter rispondere ad un tweet dopo che\glossario{Alexa}l'ha letto & Interno\\
 	\hline
-	R1F03 & facoltativo & L'utente deve poter rispondere ad una mail dopo che\glossario{Alexa}l'ha letta. & Interno\\
+	R1F03 & Facoltativo & L'utente deve poter rispondere ad una mail dopo che\glossario{Alexa}l'ha letta & Interno\\
 	\hline
-	R1F04 & facoltativo & L'utente deve poter inviare messaggi di testo su\glossario{Telegram}tramite\glossario{Alexa}a una persona o ad un gruppo. & Interno\\
+	R1F04 & Facoltativo & L'utente deve poter inviare messaggi di testo su\glossario{Telegram}tramite\glossario{Alexa}a una persona o ad un gruppo & Interno\\
 	\hline
-	R1F05 & facoltativo & L'utente deve poter leggere tramite\glossario{Alexa}i nuovi messaggi testuali ricevuti da una persona o un gruppo su\glossario{Telegram}  & Interno\\
+	R1F05 & Facoltativo & L'utente deve poter leggere tramite\glossario{Alexa}i nuovi messaggi testuali ricevuti da una persona o un gruppo su\glossario{Telegram}  & Interno\\
 	\hline
-	R1F06 & facoltativo & L'utente deve poter inviare messaggi audio su\glossario{Telegram}tramite\glossario{Alexa}a una persona o ad un gruppo.  & Interno\\
+	R1F06 & Facoltativo & L'utente deve poter inviare messaggi audio su\glossario{Telegram}tramite\glossario{Alexa}a una persona o un gruppo  & Interno\\
 	\hline
-	R1F07 & facoltativo & L'utente deve poter leggere tramite\glossario{Alexa}i nuovi messaggi audio ricevuti da una persona o un gruppo su\glossario{Telegram}   & Interno\\
+	R1F07 & Facoltativo & L'utente deve poter leggere tramite\glossario{Alexa}i nuovi messaggi audio ricevuti da una persona o un gruppo su\glossario{Telegram}   & Interno\\
 	\hline
-	R1F08 & facoltativo & L'utente deve poter modificare un evento nel calendario tramite \textit{Alexa$_{G}$}. & Interno\\
+	R1F08 & Facoltativo & L'utente deve poter modificare un evento nel calendario tramite \textit{Alexa$_{G}$} & Interno\\
 	\hline
-	R1F09 & facoltativo & L'utente potrà predisporre il suo\glossario{workflow}personalizzato per la riproduzione di musica tramite Youtube & Interno\\
+	R1F09 & Facoltativo & L'utente potrà predisporre il suo\glossario{workflow}personalizzato per la riproduzione di musica tramite Youtube & Interno\\
 	\hline
 	R1F10& Facoltativo  &L'utente tramite\glossario{Alexa}può impostare un timer &Interno \\
 	\hline
@@ -78,41 +78,52 @@ Vengono riportati i\glossario{requisiti}individuati basandosi sui casi d'uso, su
 
 
 \section{Requisiti di qualità}
-\begin{tabularx}{\textwidth}{|C|C|C|}
+\begin{tabularx}{\textwidth}{|C|C|C|C|}
 	\hline
-	\textbf{Codice identificativo} & \textbf{Descrizione} & \textbf{Fonti} \\
+	\textbf{Codice identificativo}& \textbf{Tipologia} & \textbf{Descrizione} & \textbf{Fonti} \\
 	\hline
 	\endhead
-	R2O01 & Deve essere fornita la documentazione dettagliata di tutte le \glossario{API} & \glossario{Capitolato}\\
+	R2O01 & Obbligatoria &Deve essere fornita la documentazione dettagliata di tutte le \glossario{API} & \glossario{Capitolato}\\
 	\hline
-	R2O02 & Devono essere forniti i diagrammi\glossario{UML}relativi agli Use Cases di progetto  & \glossario{Capitolato}\\
+	R2O02 &Obbligatoria & Devono essere forniti i diagrammi\glossario{UML}relativi agli Use Cases di progetto  & \glossario{Capitolato}\\
 	\hline
-	R2O03 & Devono essere forniti i \textit{Voice Dialog Flow$_{G}$} & \glossario{Capitolato}\\
+	R2O03 &Obbligatoria & Devono essere forniti i \textit{Voice Dialog Flow$_{G}$} & \glossario{Capitolato}\\
 	\hline
-	R2O04 & Deve essere fornito lo \textit{Schema Design} relativo alla base dati  & \glossario{Capitolato}\\
+	R2O04 &Obbligatoria & Deve essere fornito lo \textit{Schema Design} relativo alla base dati  & \glossario{Capitolato}\\
 	\hline
-	R2O05 & Deve essere fornito il \textit{Piano di test di unità} & \glossario{Capitolato}\\
+	R2O05 &Obbligatoria & Deve essere fornito il \textit{Piano di test di unità} & \glossario{Capitolato}\\
 	\hline
-	R2O06 & Deve essere consegnato il \textit{Bug Reporting$_{G}$} per il tracciamento di
+	R2O06 &Obbligatoria & Deve essere consegnato il \textit{Bug Reporting$_{G}$} per il tracciamento di
 	tutte le problematiche o anomalie del sistema & \glossario{Capitolato}\\
 	\hline
-	R2O07 & Tutta la documentazione prodotta in italiano dal team deve avere
+	R2O07 &Obbligatoria & Tutta la documentazione prodotta in italiano dal team deve avere
 	un \textit{indice di}\glossario{Gulpease}compreso tra 60 e 100 & Interno\\
 	\hline
-	R2O08 & Tutta la documentazione prodotta in inglese dal team deve avere
-	un indice per la \textit{formula di}\glossario{Flesh}compreso tra 80 e 100 & Interno\\
+	R2O08 &Obbligatoria & Tutta la documentazione rispetta le \textit{Norme di Progetto v1.0.0} e le metriche del \textit{Piano di Qualifica v1.0.0}& Interno\\
 	\hline
-	R2O09 & Tutta la documentazione rispetta le norme delle \textit{Norme di Progetto v1.0.0} e le metriche del \textit{Piano di Qualifica v1.0.0}& Interno\\
-	\hline
-	R2O10 & Il codice prodotto rispetta le norme delle \textit{Norme di Progetto v1.0.0} e le metriche del \textit{Piano di Qualifica v1.0.0}& Interno\\
+	R2O09 &Obbligatoria & Il codice prodotto rispetta le \textit{Norme di Progetto v1.0.0} e le metriche del \textit{Piano di Qualifica v1.0.0}& Interno\\
 	\hline
     \caption{Tabella requisiti di qualità}
 \end{tabularx}
 
+\section{Requisiti di prestazione}
+\begin{tabularx}{\textwidth}{|C|C|C|C|}
+	\hline
+	\textbf{Codice Identificativo}& \textbf{Tipologia} & \textbf{Descrizione} & \textbf{Fonti}\\
+	\hline	
+	\endhead
+	R3O01&Obbligatorio  & L'applicazione sarà utilizzabile da versioni Android superiori alla 4.4 & Verbale Esterno 2018-12-05 \\
+	\hline
+
+	\caption{Tabella requisiti di prestazione}
+\end{tabularx}
+
+
+
 \section{Requisiti di vincolo}
 \begin{tabularx}{\textwidth}{|C|C|C|C|}
 	\hline
-	\textbf{Codice Identificativo}& \textbf{Descrizione} & \textbf{Descrizione} & \textbf{Fonti}\\
+	\textbf{Codice Identificativo}& \textbf{Tipologia} & \textbf{Descrizione} & \textbf{Fonti}\\
 	\hline	
 	\endhead
 	R4O01&Obbligatorio  &L'utente tramite\glossario{Alexa}deve poter ascoltare i tweet & Verbale Esterno 2018-12-05 \\
@@ -137,23 +148,23 @@ Vengono riportati i\glossario{requisiti}individuati basandosi sui casi d'uso, su
 	\hline
 	R4O11 &Obbligatorio &L'utente potrà ricevere informazioni sul meteo tramite\glossario{Alexa} & Verbale Esterno 2018-12-05\\
 	\hline
-	R4O12&Obbligatorio&L'utente potrà predisporre il suo\glossario{workflow}personalizzato per la riproduzione di musica tramite Amazon Music tramite\glossario{Alexa}& Verbale Esterno 2018-12-5 \\
+	R4O12&Obbligatorio&L'utente potrà predisporre il suo\glossario{workflow}personalizzato per la riproduzione di musica con Amazon Music tramite\glossario{Alexa}& Verbale Esterno 2018-12-5 \\
 	\hline
 	R4O13&Obbligatorio&L'applicazione deve permettere all'utente autenticato la creazione di un\glossario{workflow}& \glossario{Capitolato} UC2.1\\
 	\hline
-	R4O13.01&Obbligatorio& L'applicazione deve permettere all'utente autenticato di inserire il nome del\glossario{workflow}  & UC2.1.1\\
+	R4O13.01&Obbligatorio& L'applicazione deve permettere all'utente autenticato di inserire il nome del\glossario{workflow}  & Capitolato UC2.1.1\\
 	\hline
-	R4O13.02&Obbligatorio&L'applicazione deve permettere all'utente autenticato di aggiungere un blocco & \glossario{Capitolato} UC2.1.2\\
+	R4O13.02&Obbligatorio&L'applicazione deve permettere all'utente autenticato di aggiungere un blocco & \glossario{Capitolato} Capitolato UC2.1.2\\
 	\hline	
-	R4O13.03&Obbligatorio&L'applicazione deve permettere all'utente autenticato di configurare un blocco&UC2.1.3\\
+	R4O13.03&Obbligatorio&L'applicazione deve permettere all'utente autenticato di configurare un blocco& Capitolato UC2.1.3\\
 	\hline
-	R4O14&Obbligatorio&L'applicazione deve permettere all'utente autenticato di eliminare un\glossario{workflow}&UC2.2\\
+	R4O14&Obbligatorio&L'applicazione deve permettere all'utente autenticato di eliminare un\glossario{workflow}& Verbale Esterno 2018-12-27 UC2.2\\
 	\hline
-	R4O15&Obbligatorio& L'applicazione deve permettere all'utente autenticato di  modificare un\glossario{workflow}  &UC2.3\\
+	R4O15&Obbligatorio& L'applicazione deve permettere all'utente autenticato di  modificare un\glossario{workflow}  &Verbale Esterno 2018-12-27 UC2.3\\
 	\hline
-	R4O15.01&Obbligatorio& L'applicazione deve permettere all'utente autenticato di cambiare il nome di un\glossario{workflow}  &UC2.3.1\\
+	R4O15.01&Obbligatorio& L'applicazione deve permettere all'utente autenticato di cambiare il nome di un\glossario{workflow}  &Verbale Esterno 2018-12-27 UC2.3.1\\
 	\hline
-	R4O15.02&Obbligatorio& L'applicazione deve permettere all'utente autenticato di modificare i blocchi contenuti in un\glossario{workflow}  &UC2.3.4\\
+	R4O15.02&Obbligatorio& L'applicazione deve permettere all'utente autenticato di modificare i blocchi contenuti in un\glossario{workflow}  &Verbale Esterno 2018-12-27 UC2.3.4\\
 	\hline
 	\caption{Tabella requisiti di vincolo}
 \end{tabularx}
@@ -181,14 +192,6 @@ Vengono riportati i\glossario{requisiti}individuati basandosi sui casi d'uso, su
 	\hline	
 	R1O08& Interno\\
 	\hline
-	R1O08.01& Interno\\
-	\hline	
-	R1O08.02& Interno\\
-	\hline		
-	R1O08.03& Interno\\
-	\hline		
-	R1O08.04& Interno\\
-	\hline	
 	R1O09& Interno\\
 	\hline	
 	R1O10& Interno\\
@@ -217,10 +220,6 @@ Vengono riportati i\glossario{requisiti}individuati basandosi sui casi d'uso, su
 	\hline
 	R1F12& Interno\\
 	\hline
-	R1F12.01& Interno\\
-	\hline
-	R1F12.02& Interno\\
-	\hline
 	R1D01& Interno\\
 	\hline
 	R1D02& Interno\\
@@ -248,6 +247,8 @@ Vengono riportati i\glossario{requisiti}individuati basandosi sui casi d'uso, su
 	R2O09&Interno\\
 	\hline
 	R2O10&Interno\\
+	\hline
+	R3O01&Interno\\
 	\hline
 	R4O01&Verbale Esterno 2018-12-05\\
 	\hline
