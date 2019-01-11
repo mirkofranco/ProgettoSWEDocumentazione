@@ -3,16 +3,15 @@
 La seguente sezione intende descrivere sia gli obiettivi di qualità relativi al prodotto richiesto dal committente, che quelli relativi ai processi necessari al suo completamento.
 \subsection{Qualità di processo}
 Affinché la qualità di prodotto sia garantita è necessario perseguire la qualità dei processi che concorrono alla sua realizzazione. Per raggiungere questo obbiettivo viene adottato lo standard ISO/IEC 15504 denominato SPICE che fornisce strumenti per valutare la bontà dei processi che vengono realizzati.
-Per applicare correttamente questo standard è necessario utilizzare il ciclo di Deming (ciclo PCDA) che fornisce una metodologia per il controllo dei processi che consente di migliorarne in modo continuativo la qualità. 
 \subsection{Qualità di prodotto}
 Al fine di aumentare la possibilità di successo del prodotto in termini di conformità ai requisiti, idoneità all'uso e soddisfazione del committente, è necessario fissare alcuni obbiettivi qualitativi e verificare che questi vengano rispettati.
-Lo standard ISO/IEC 9126:2001 fornisce gli obbiettivi e le metriche necessarie a misurare il raggiungimento di tali obbiettivi.
+Lo standard ISO/IEC 9126 fornisce gli obbiettivi e le metriche necessarie a misurare il raggiungimento di tali obbiettivi.
 \section{Organizzazione}
 Ognuna delle fasi del \glossario{progetto} descritte nel \textit{Piano di Progetto v1.0.0} necessità di diverse attività di verifica e approvazione:\\\newline
- \textbf{Analisi:} in questa fase si fa riferimento ai metodi di verifica descritti nella \hyperref[Metodi]{sezione 2.12} sui documenti prodotti dal gruppo.\\ \newline
-Concluso il processo di verifica ha inizio il processo di approvazione. Durante tale processo sarà compito del \textit{Responsabile di Progetto} accertarsi che il livello macroscopico dei prodotti sia conforme a quanto pianificato e progettato precedentemente.
+ \textbf{Analisi:} in questa fase si fa riferimento ai metodi di verifica descritti nella \hyperref[Metodi]{sezione 3} sui documenti prodotti dal gruppo.\\ \newline
+Concluso il processo di verifica ha inizio il processo di approvazione. Durante tale processo sarà compito del \textit{Responsabile} accertarsi che il livello macroscopico dei prodotti sia conforme a quanto pianificato e progettato precedentemente.
 \section{Pianificazione strategica e temporale}
-Avendo come obbiettivo principale il rispetto della pianificazione descritta nel \textit{Piano di Progetto v1.0.0}, è necessario che l'attività di verifica di ogni attività sia sistematica e organizzata nel migliore dei modi. 
+Avendo come obbiettivo principale il rispetto della pianificazione descritta nel \textit{Piano di Progetto v1.0.0}, è necessario che la verifica di ogni attività sia sistematica e organizzata nel migliore dei modi. 
 Rispettando ciò si riesce a individuare e quindi correggere gli eventuali errori rilevati il prima possibile, evitandone una pericolosa proliferazione. 
 Le metodologie per l'individuazione e la correzione degli errori sono descritte nelle \textit{Norme di Progetto v.1.0.0}.
 \section{Responsabilità}
@@ -21,8 +20,8 @@ I ruoli che possiedono la responsabilità del processo di verifica sono il \text
 \section{Risorse} Per la realizzazione del prodotto software sono necessarie sia risorse tecnologiche che umane.
 \begin{itemize}
 	\item \textbf{Risorse Umane:} descritte con maggiore dettaglio nel \textit{Piano di Progetto v.1.0.0}
-	\subitem	\textit{Responsabile di Progetto;}
-	\subitem	\textit{Amministratore di Progetto;}
+	\subitem	\textit{Responsabile;}
+	\subitem	\textit{Amministratore;}
 	\subitem	\textit{Analista;}
 	\subitem	\textit{Progettista;}
 	\subitem	\textit{Programmatore;}
@@ -32,7 +31,7 @@ I ruoli che possiedono la responsabilità del processo di verifica sono il \text
 	\subitem Gestione della \glossario{repository};
 	\subitem Sviluppo del codice;
 	\subitem Creazione dei diagrammi in \glossario{UML};
-	\subitem Assegnazione di compiti per lo svolgimento delle \glossario{attivita'};
+	\subitem Assegnazione di compiti per lo svolgimento delle $\textit{attivit\'a}_G$;
 	\subitem Gestione dei test e dell'analisi del codice;
 	\subitem Automatizzazione del processo di verifica.
 
@@ -90,7 +89,7 @@ Sono inoltre identificabili 5 tipi diversi di test:
 	Tali test si occupano inoltre di verificare che la copertura dei requisiti software stabiliti in fase di Analisi
 	di Dettaglio sia totale;
 	\item \textbf{Test di regressione:} Da effettuare nel caso in cui certe parti del prodotto software vengano modificate nuovamente una volta complete; ciò implica l'esecuzione multipla di test di unità e di integrazione per i moduli interessati;
-	\item \textbf{Test di accettazione:} È il test di collaudo del prodotto software che viene eseguito in presenza del proponente.
+	\item \textbf{Test di accettazione:} È il test di collaudo del prodotto software che viene eseguito in presenza della proponente.
 	Se tale collaudo viene superato positivamente si può procedere al rilascio ufficiale del
 	prodotto sviluppato.
 \end{itemize}
@@ -104,7 +103,7 @@ Essendo la natura delle metriche molto variabile, vi sono due tipologie di range
 	\item \textbf{Accettazione}: valori richiesti affinché  il prodotto sia accettato;
 	\item \textbf{Ottimale}: valore entro il quale dovrebbe collocarsi la misurazione. Tale range non è vincolante, ma fortemente consigliato.
 \end{itemize}
-\section{Metriche per la qualità di processo}
+\section{Metriche per la qualità di processo}\label{ProcessoMetriche}
 Come metrica per i processi si è deciso di utilizzare indici che ci permettano di valutare costi e tempi. 
 \subsection{Schedule Variance (SV)}
 Indica se si è in linea, in anticipo o in ritardo rispetto alla pianificazione temporale indicata delle attività. 
@@ -199,7 +198,7 @@ il valore viene calcolato tramite questa funzione:
 
 
 \subsection{Accoppiamento}
-La definizione dei range di ottimalità e accettazione delle metriche presenti in questa sezione viene rimandata alla fase di progettazione nel dettaglio.
+La definizione dei range di ottimalità e accettazione delle metriche presenti in questa sezione viene rimandata alla fase di Revisione di Analisi
 \subsubsection{Accoppiamento Afferente}
 Indica la dipendenza di classi esterne a un package rispetto alle classi interne contenute nel package stesso.
 Tale valore, sebbene non indicante necessariamente errori di progettazione, può evidenziare criticità riguardanti la robustezza e l'utilità del package a cui fa riferimento.
@@ -261,20 +260,20 @@ Parametri utilizzati:
 Questa sezione ha lo scopo di definire precisamente le procedure di analisi statica e dinamica del codice.
 \subsection{Analisi dei processi}
 	 \textbf{Analisi delle metriche:} Alla conclusione di ogni fase del progetto, per ogni macro-attività, definita nel
-	\textit{Piano di Progetto v1.0.0}, si calcolano gli indici definiti nella \hyperref[Metriche]{Sezione 2.8}. Al fine
+	\textit{Piano di Progetto v1.0.0}, si calcolano gli indici definiti nella \hyperref[Metriche]{Sezione 3.2}. Al fine
 	di avere un indice complessivo di fase dovrà essere inoltre calcolato il valore medio
 	di tali indici.
 \subsection{Analisi dei documenti}
 Viene definito un protocollo per la verifica dei documenti.
 \begin{enumerate}
-	\item \textbf{Controllo e sintattico del periodo:} Utilizzando \glossario{TexStudio} è possibile evidenziare gran parte degli errori grammaticali presenti in un documento, tuttavia è comunque necessario un \glossario{walkthrough} da parte di un \glossario{verificatore} per l'individuazione di errori aggiuntivi sfuggiti al controllo automatico;
+	\item \textbf{Controllo e sintattico del periodo:} Utilizzando \glossario{TexStudio} è possibile evidenziare gran parte degli errori grammaticali presenti in un documento, tuttavia è comunque necessario un \glossario{walkthrough} da parte di un \textit{Verificatore} per l'individuazione di errori aggiuntivi sfuggiti al controllo automatico;
 	\item \textbf{Rispetto delle norme di progetto:} Nelle \textit{Norme di Progetto} sono definite alcune direttive tipografiche e relative alla struttura dei documenti;
-	i \glossario{verificatori} dovranno effettuare una \glossario{inspection} del documento per individuare errori di questo tipo.
+	i \textit{Verificatori} dovranno effettuare una \glossario{inspection} del documento per individuare errori di questo tipo.
 	\item \textbf{Lista di controllo} il \textit{Verificatore}, dovrà utilizzare la lista di controllo per i documenti, e verificare che gli errori più frequenti non siano presenti;
-	\item \textbf{Verifica delle proprietà di glossario:} Seguendo le \textit{Norme di Progetto v1.0.0}, è possibile utilizzare uno script automatico per l'individuazione di tutte le occorrenze di una parola del glossario in un documento.\\
+	\item \textbf{Verifica delle proprietà di glossario:} Seguendo le \textit{Norme di Progetto v1.0.0}, il \textit{Verificatore} dovrà trovare tutte le occorrenze dei termini presenti nel \textit{Glossario v 1.0.0}.\\
 	Per ogni occorrenza viene applicato lo stile  predefinito dal comando \textbackslash glossario.
-	Il \glossario{Verificatore} dovrà quindi effettuare un ulteriore controllo allo scopo di constatare che l’output finale sia conforme a quanto precisato nelle \textit{Norme di Progetto v1.0.0};
-	\item \textbf{Calcolo dell'indice di Gulpease:} Utilizzando gli strumenti automatici definiti nelle \textit{Norme di Progetto v1.0.0}, su ogni documento redatto il \\ \glossario{Verificatore} deve calcolare l’indice di leggibilità.
+	Il \textit{Verificatore} dovrà quindi effettuare un ulteriore controllo allo scopo di constatare che l’output finale sia conforme a quanto precisato nelle \textit{Norme di Progetto v1.0.0};
+	\item \textbf{Calcolo dell'indice di Gulpease:} Utilizzando gli strumenti automatici definiti nelle \textit{Norme di Progetto v1.0.0}, su ogni documento redatto il \textit{Verificatore} deve calcolare l’indice di leggibilità.\\
 	Si renderà necessario un ulteriore \glossario{walkthrough} nel caso in cui l’indice risultasse troppo basso, allo scopo di snellire e accorciare frasi troppo lunghe e complesse;
 	\item \textbf{Miglioramento Processo:} Per avere un miglioramento del processo di verifica, quando i Verificatori eseguono
 	walkthrough di un documento, dovranno riportare gli errori più frequentemente
