@@ -1,0 +1,340 @@
+PWD c:\Users\stefano\Desktop\universita\ZeroSeven\ProgettoSWEDocumentazione\Esterni\Glossario
+INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\stefano\Desktop\universita\ZeroSeven\ProgettoSWEDocumentazione\Esterni\Glossario\Glossario.tex
+OUTPUT Glossario.log
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multirow.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multirow.sty
+INPUT ZeroSeven.sty
+INPUT ZeroSeven.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1200.tfm
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.def
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-italian\italian.ldf
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-italian\italian.ldf
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.def
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\enumerate.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\enumerate.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfiles\subfiles.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfiles\subfiles.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\verbatim.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\verbatim.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\longtable.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\longtable.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\tabularx.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\tabularx.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\appendix\appendix.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\appendix\appendix.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\eurosym\eurosym.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\eurosym\eurosym.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\ltcaption.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\ltcaption.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\colortbl\colortbl.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\colortbl\colortbl.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tabu\tabu.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tabu\tabu.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\varwidth\varwidth.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\varwidth\varwidth.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ltablex\ltablex.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ltablex\ltablex.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\base\glossaries.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\base\glossaries.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mfirstuc\mfirstuc.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mfirstuc\mfirstuc.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\textcase\textcase.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\textcase\textcase.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xfor\xfor.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xfor\xfor.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datatool\datatool-base.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datatool\datatool-base.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\substr\substr.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\substr\substr.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datatool\datatool-fp.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datatool\datatool-fp.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\defpattern.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\defpattern.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-basic.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-basic.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-addons.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-addons.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-snap.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-snap.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-exp.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-exp.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-trigo.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-trigo.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-pas.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-pas.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-random.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-random.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-eqn.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-eqn.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-upn.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-upn.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-eval.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-eval.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\supertabular\supertabular.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\base\glossaries-compatible-307.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\base\glossaries-compatible-307.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tracklang\tracklang.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tracklang\tracklang.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\generic\tracklang\tracklang.tex
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\generic\tracklang\tracklang.tex
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\translator.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\translator.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\translator.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries-italian\glossaries-italian.ldf
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries-italian\glossaries-italian.ldf
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries-italian\glossaries-italian.ldf
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-hypernav.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-hypernav.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-list.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-list.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-long.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-long.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-super.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-super.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\supertabular\supertabular.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\supertabular\supertabular.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-tree.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-tree.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\imakeidx\imakeidx.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\imakeidx\imakeidx.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\multicol.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\multicol.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\bookmark.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\bookmark.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\bkm-pdftex.def
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\bkm-pdftex.def
+OUTPUT Glossario.idx
+INPUT Glossario.aux
+INPUT Glossario.aux
+OUTPUT Glossario.aux
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mkii
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mkii
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty
+OUTPUT Glossario.pdf
+INPUT Glossario.glsdefs
+INPUT Glossario.glsdefs
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm2488.tfm
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx2488.tfm
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\eccc1200.tfm
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\eccc2074.tfm
+INPUT images\logo_home.png
+INPUT .\images\logo_home.png
+INPUT .\images\logo_home.png
+INPUT .\images\logo_home.png
+INPUT .\images\logo_home.png
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr8.tfm
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr6.tfm
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi12.tfm
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi8.tfm
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi6.tfm
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy8.tfm
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy6.tfm
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1200.tfm
+INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
+INPUT tabella_modifiche.tex
+INPUT tabella_modifiche.tex
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1728.tfm
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1728.tfm
+INPUT Glossario.toc
+INPUT Glossario.toc
+OUTPUT Glossario.toc
+INPUT sezioni\A_words.tex
+INPUT sezioni\A_words.tex
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT sezioni\B_words.tex
+INPUT sezioni\B_words.tex
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT sezioni\C_words.tex
+INPUT sezioni\C_words.tex
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT sezioni\D_words.tex
+INPUT sezioni\D_words.tex
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT sezioni\F_words.tex
+INPUT sezioni\F_words.tex
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT sezioni\G_words.tex
+INPUT sezioni\G_words.tex
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT sezioni\I_words.tex
+INPUT sezioni\I_words.tex
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT sezioni\J_words.tex
+INPUT sezioni\J_words.tex
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT sezioni\K_words.tex
+INPUT sezioni\K_words.tex
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT sezioni\M_words.tex
+INPUT sezioni\M_words.tex
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT sezioni\N_words.tex
+INPUT sezioni\N_words.tex
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT sezioni\P_words.tex
+INPUT sezioni\P_words.tex
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT sezioni\R_words.tex
+INPUT sezioni\R_words.tex
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT sezioni\S_words.tex
+INPUT sezioni\S_words.tex
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT sezioni\T_words.tex
+INPUT sezioni\T_words.tex
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm0800.tfm
+INPUT sezioni\U_words.tex
+INPUT sezioni\U_words.tex
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT sezioni\V_words.tex
+INPUT sezioni\V_words.tex
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT sezioni\W_words.tex
+INPUT sezioni\W_words.tex
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT sezioni\Z_words.tex
+INPUT sezioni\Z_words.tex
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT Glossario.ind
+INPUT Glossario.ind
+INPUT Glossario.aux
+INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
+INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
+INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
+INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
+INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
+INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
+INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1200.pk
+INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1200.pk
+INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc2074.pk
+INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc2074.pk
+INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
+INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
+INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk
+INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk

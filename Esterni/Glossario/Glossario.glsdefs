@@ -1,0 +1,30 @@
+\ifglsentryexists{Asana}{}%
+{%
+\gls@defglossaryentry{Asana}%
+{%
+name={Asana},%
+sort={Asana},%
+type={main},%
+first={Asana},%
+firstplural={Asanas},%
+text={Asana},%
+plural={Asanas},%
+description={Software di merda},%
+descriptionplural={Software di merda},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%

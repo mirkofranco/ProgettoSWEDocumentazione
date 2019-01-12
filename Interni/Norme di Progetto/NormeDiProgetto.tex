@@ -1,0 +1,49 @@
+\documentclass[a4paper,12pt]{book}
+
+\usepackage{ZeroSeven}
+
+\titlepage{}
+
+\author{Bratzu Gian Marco}
+\date{2018-12-08}
+\intestazioni{\includegraphics[scale=0.3]{images/logo_intestazione}}
+\pagestyle{myfront}
+\begin{document}
+\begin{titlepage}
+	\centering
+	{\huge\bfseries MegAlexa\par}
+	Arricchitore di skill di Amazon Alexa
+	\line(1,0){350} \\
+	{\scshape\LARGE Norme di progetto \par}
+	\vspace{1cm}
+	{\scshape Gruppo ZeroSeven \par}
+	\logo
+	%devono essere compilati questi campi ogni volta
+	\begin{tabular}{c|c}
+		{\hfill \textbf{Versione}} 			& 1.0.0				\\
+		{\hfill\textbf{Data Redazione}} 	& 2018-12-08		\\ 
+		{\hfill\textbf{Redazione}} 			&  		Gian Marco Bratzu\\&Ludovico Brocca\\&Matteo Depascale\\&Andrea Deidda\\&Bianca Ciuche\\
+		{\hfill\textbf{Verifica}} 				&  	Mirko Franko\\& Stefano Zanatta	\\ 
+		{\hfill\textbf{Approvazione}} 		&  		Stefano Zanatta			\\ 
+		{\hfill\textbf{Uso}} 					& 		Interno		\\ 
+		{\hfill\textbf{Distribuzione}} 			& 			Prof. Tullio Vardanega \\ & Prof. Riccardo Cardin \\ & Gruppo ZeroSeven		\\ & Zero12 s.r.l \\
+		{\hfill\textbf{Email di contatto}} & zerosevenswe@gmail.com \\
+	\end{tabular}
+\end{titlepage}
+	
+
+	
+	\label{LastFrontPage}
+	\newpage	
+	\input{tabella_modifiche}
+	\pagestyle{mymain}
+	\tableofcontents
+	\input{./sezioni/introduzione.tex}
+	\input{./sezioni/Processi_primari.tex}
+	\input{./sezioni/Processi_di_supporto.tex}
+	\input{./sezioni/Processi_organizzativi.tex}
+	\appendix
+	\input{./sezioni/lista.tex}		
+	\label{LastPage}
+
+\end{document}

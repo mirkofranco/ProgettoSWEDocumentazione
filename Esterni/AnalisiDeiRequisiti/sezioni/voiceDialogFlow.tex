@@ -1,0 +1,305 @@
+\chapter{Voice Dialog Flow}
+
+Il seguente capitolo presenta degli esempi di interazioni fra l'utente e il dispositivo\glossario{Alexa}, esse potranno essere soggette a modifiche e ampliamenti nelle fasi successive del\glossario{progetto}, a seconda delle esigenze e richieste del committente e della proponente.
+Le interazioni sono strutturate come segue:
+\begin{itemize}
+	\item \textbf{U:} rappresenta l'utente;
+	\item \textbf{A:} rappresenta Alexa;
+	\item \textbf{[Data]:} rappresenta un dato il cui contenuto è determinato da risorse non presenti nel dispositivo al momento dell'interazione.
+\end{itemize}
+
+
+\section{Intents}
+Per intent si intende la richiesta da parte dell'utente di effettuare una particolare operazione al fine di gestire l'esecuzione della\glossario{skill}. 
+Questa sezione si occupa di elencare i principali intents a disposizione dell'utente, insieme agli output previsti una volta ricevuta la richiesta.
+Si fa riferimento alla documentazione fornita da\glossario{Amazon}\footnote{\url{https://developer.amazon.com/it/documentation}} per lo sviluppo di una skill e la sua implementazione ottimale.
+
+\subsection{Help Intent}\label{help}
+Permette all'utente di ottenere ulteriori informazioni, come il numero di\glossario{workflow}disponibili e il loro contenuto.
+\subsubsection{English}
+\begin{itemize}
+	\intent{help};
+	\intent{help me};
+	\intent{can you help me};
+	\intent{tell me my workflows};
+	\intent{i'd like a list of my workflows}.	
+\end{itemize}
+\subsubsection{Italiano}
+\begin{itemize}
+	\intent{aiuto};
+	\intent{aiutami};
+	\intent{aiuto per favore};
+	\intent{dimmi i miei workflow};
+	\intent{vorrei una lista dei miei workflow};
+	\intent{quali sono i workflow disponibili?}.
+\end{itemize}
+
+\subsection{Cancel Intent}
+Permette all'utente di cancellare un'azione in esecuzione (come l'avvio di un \textit{workflow$_{G}$}).
+\subsubsection{English}
+\begin{itemize}
+	\intent{cancel};
+	\intent{never mind};
+	\intent{forget it}.
+\end{itemize}
+
+\subsubsection{Italiano}
+\begin{itemize}
+	\intent{annulla};
+	\intent{non importa};
+	\intent{lascia stare}.
+\end{itemize}
+
+\subsection{Stop Intent}
+Permette all'utente di uscire dalla \textit{skill$_{G}$}.
+\subsubsection{English}
+\begin{itemize}	
+	\intent{stop};
+	\intent{off};
+	\intent{shut up}.
+\end{itemize}
+
+\subsubsection{Italiano}
+
+\begin{itemize}
+	\intent{ferma};
+	\intent{smettila};
+	\intent{basta};
+	\intent{stop};
+	\intent{spegni}.
+\end{itemize}
+
+
+\subsection{Next Intent}
+Consente di passare a un blocco successivo di un \textit{workflow$_{G}$}, sia nel caso in cui esso sia ancora in esecuzione oppure abbia terminato le proprie operazioni. 
+\subsubsection{English}
+\begin{itemize}
+	\intent{next};
+	\intent{skip};
+	\intent{skip forward}.	
+\end{itemize}
+
+\subsubsection{Italiano}
+
+\begin{itemize}
+	
+	\intent{prossimo};
+	\intent{prossima};
+	\intent{successivo};
+	\intent{prosegui}.
+	
+\end{itemize}
+
+
+\subsection{No Intent}
+Consente all'utente di fornire una risposta negativa in seguito a una domanda di \textit{Alexa$_{G}$}.
+\subsubsection{English}
+\begin{itemize}
+	
+	\intent{no};
+	\intent{no thanks};
+	\intent{i'm good, thanks}.
+	
+\end{itemize}
+
+\subsubsection{Italiano}
+\begin{itemize}	
+	\intent{no};
+	\intent{no grazie};
+	\intent{no basta così}.
+	
+\end{itemize}
+
+
+
+\subsection{Pause Intent}
+Permette di fermare temporaneamente l'esecuzione di un blocco all'interno di un \textit{workflow$_{G}$}.
+\subsubsection{English}
+\begin{itemize}
+	
+	\intent {pause};
+	\intent {pause that}.
+	
+\end{itemize}
+
+\subsubsection{Italiano}
+\begin{itemize}
+	
+	\intent{metti in pausa};
+	\intent{mettila in pausa}.
+	
+\end{itemize}
+
+
+\subsection{Resume Intent}
+Premette di riprendere l'esecuzione di un blocco all'interno di un\glossario{workflow}precedentemente fermato.
+\subsubsection{English}
+\begin{itemize}
+	
+	\intent{resume};
+	\intent{continue};
+	\intent{keep going}.
+	
+\end{itemize}
+
+\subsubsection{Italiano}
+\begin{itemize}
+	\intent{riprendi};
+	\intent{continua};
+	\intent{riprendilo}.
+	
+\end{itemize}
+
+
+
+\subsection{Yes Intent}
+Consente all'utente di fornire una risposta positiva in seguito a una domanda di \textit{Alexa$_{G}$}.
+\subsubsection{English}
+\begin{itemize}
+	
+	\intent{yes};
+	\intent{yes please};
+	\intent{sure}.
+	
+\end{itemize}
+
+\subsubsection{Italiano}
+\begin{itemize}
+	\intent{sì};
+	\intent{sì per favore};
+	\intent{certo};
+	\intent{ok, va bene}.		
+\end{itemize}
+
+\section{Avvio Skill}
+Di seguito vengono riportati degli esempi di \textit{workflow$_{G}$}, per la precisione due workflow: Mattina (Morning) e Social. \\
+E' importante precisare che non sempre\glossario{Alexa}risponderà, in quanto alcune volte l'utente sa già cosa desidera sentire, inoltre durante l'esecuzione del workflow l'utente potrà usufruire degli help intent descritti nella \hyperref[help]{sezione 5.1.1} per ottenere informazioni che lo possano aiutare. \\
+Le seguenti conversazioni sono esempi, frutto di uno schema di possibili domande e risposte tra utente e Alexa.
+
+\subsection{Italiano}
+Una conversazione tipica con\glossario{Alexa}per accendere la\glossario{skill}e aprire un\glossario{workflow}potrebbe essere la seguente:\\
+\newline
+\textit{U: Alexa, apri MegAlexa} \\
+\texttt{A: Come posso aiutarti?} \\
+\textit{U: Quali sono i workflow disponibili?} \\
+\texttt{A: I tuoi workflow sono [Workflow]x3, continuo?} \\
+\textit{U: Ok va bene} \\
+\texttt{A: [Workflow], sono finiti} \\
+\textit{U: Esegui [Workflow]} \\
+\newline
+Mentre è possibile che Alexa non dica nulla e che l'utente sappia già quale workflow scegliere, pertanto l'utente entrerà immediatamente nel workflow da lui detto: \\
+\newline
+\textit{U: Alexa, apri MegAlexa}\\
+\textit{U: Esegui [Workflow]}
+
+\subsection{Inglese}
+Una conversazione tipica con\glossario{Alexa}per accendere la\glossario{skill}e aprire un\glossario{workflow}potrebbe essere la seguente:\\
+\newline
+\textit{U: Alexa, open MegAlexa} \\
+\texttt{A: Welcome to MegAlexa, which workflow would you like to open?}\\
+\textit{U: Show my workflow}\\
+\texttt{A: Your workflow are [Workflow]x3, do you want to hear more?}\\
+\textit{U: Yes, go on}\\
+\texttt{A: Alrigh, there are also [Workflow] and [Workflow], which one should I open?}\\
+\textit{U: Initiate [Workflow]} \\
+\newline
+Mentre è possibile che\glossario{Alexa}non dica nulla e che l'utente sappia già quale\glossario{workflow}scegliere, pertanto l'utente entrerà immediatamente nel workflow da lui detto: \\
+\newline
+\textit{U: Alexa, open MegAlexa}\\
+\textit{U: Launch [Workflow]}
+
+\section{Esempi Workflow}
+\subsection{Workflow: Mattina}
+Questo\glossario{workflow}comprende i seguenti moduli:
+\begin{itemize}
+	\item Alarm;
+	\item Weather;
+	\item News;
+	\item Filter;
+	\item Calendar.
+\end{itemize}
+
+\subsubsection{Italiano}
+L'utente può interagire con il\glossario{workflow}per impostare la sveglia:\\
+\newline
+\texttt{A: Quando vuoi svegliarti?}\\
+\textit{U: Tutti i giorni alle [Orario]}\\
+\texttt{A: Ottimo, la sveglia è stata impostata alle [Orario]} \\
+
+Inoltre il workflow, contenente il modulo Sveglia, può avviarsi automaticamente:\\
+\newline
+\texttt{A: [Suona la sveglia]}\\
+\textit{U: Spegni [Sveglia] | Posponi [Sveglia]}\\
+\texttt{A: Al momento a [Luogo] ci sono [$^\circ$C], inoltre per oggi sono previste minime di [$^\circ$C] e massime di [$^\circ$C]}\\
+\textit{U: Che tempo fa a [Luogo]?}\\
+\texttt{A: Attualmente a [Luogo] il tempo è [Meteo]}\\
+\textit{U: E alle [Orario]?}\\
+\texttt{A: Il tempo sarà [Meteo]}\\
+\textit{U: Ottimo, vai avanti}\\
+\texttt{A: Ecco il tuo sommario, [Notizie] | Ecco le notizie di [Nome sito]}\\
+\texttt{A: Vuoi sentire altre notizie?}\\ 
+\textit{U: No grazie}\\
+\texttt{A: I tuoi eventi di oggi sono [Eventi]}\\
+\texttt{A: Non hai in programma niente altro}\\
+\texttt{A: Hai finito il workflow [Workflow]}
+
+\subsubsection{Inglese}
+L'utente può interagire con il\glossario{workflow}per impostare la sveglia:\\
+\texttt{A: When do you want to get up?}\\
+\textit{U: Set an alarm at [Time]}\\
+\texttt{A: Perfect, the alarm is set at [Time]}\\
+
+Inoltre il workflow, contenente il modulo Sveglia, può avviarsi automaticamente:\\
+\newline
+\texttt{A: [Alarm is beeping]}\\
+\textit{U: Stop [Alarm] | Snooze [Alarm]}\\
+\texttt{A: Currently in [Location] it's [$^\circ$C], today you can expect [Weather] with [$^\circ$C] minimum and [$^\circ$C] maximum}\\
+\textit{U: Go on}\\
+\texttt{A: Here is your flash briefing [News] [..], Do you want to hear more?}\\
+\textit{U: No, go on}\\
+\texttt{A: Your events today are [Events]}\\
+\texttt{A: Your workflow [Workflow] is completed}\\
+
+Con quest'ultima istanza il workflow si chiude e\glossario{Alexa}chiederà all'utente se ha bisogno di altro.\\
+Inoltre l'utente potrà chiedere il meteo di un'altra città oppure Alexa potrà rispondere che l'utente attualmente non dispone di eventi salvati nel calendario.
+
+\subsection{Workflow: Social}
+Questo\glossario{workflow}comprende i seguenti moduli:
+\begin{itemize}
+	\item PIN;
+	\item Mail;
+	\item Twitter;
+	\item Filter.
+\end{itemize}
+\subsubsection{Italiano}
+Una conversazione tipica con\glossario{Alexa}sarà la seguente: \\
+\newline
+\texttt{A: Dimmi il tuo codice di blocco} \\
+\textit{U: [PIN]} \\
+\texttt{A: Codice errato, riprova} \\
+\textit{U: [PIN]} \\
+\texttt{A: Corretto, ecco le tue email [Email]x2, vuoi ascoltarne altre?}\\
+\textit{U: Certo}\\
+\texttt{A: [Email]x1, le email sono finite}\\
+\textit{U: Prosegui}\\
+\texttt{A: [Legge tweets], vuoi che ne legga ancora?}\\
+\textit{U: No basta così}\\
+\texttt{A: Hai completato il workflow [Workflow]}
+
+\subsubsection{Inglese}
+Una conversazione tipica con\glossario{Alexa}sarà la seguente:\\
+\newline
+\texttt{A: What is your PIN?} \\
+\textit{U: [PIN]} \\
+\texttt{A: Your PIN is not correct, try again} \\
+\textit{U: [PIN]} \\
+\texttt{A: Correct, your email are [Email]x2, do you want to hear more?}\\
+\textit{U: Yes, please} \\
+\texttt{A: [Email]x2, would you like some more?} \\
+\textit{U: No, thanks} \\
+\texttt{A: [Start reading tweets], would you like to hear more?}\\
+\textit{U: Sure} \\
+\texttt{A: [Continue reading tweets], more?}\\
+\textit{U: I'm good, thanks} \\
+\texttt{A: Your workflow [Workflow] is completed}
+

@@ -1,0 +1,288 @@
+\chapter{Visione generale della strategia di verifica}
+\section{Obbiettivi}
+La seguente sezione intende descrivere sia gli obiettivi di qualità relativi al\glossario{prodotto}richiesto dal committente, che quelli relativi ai\glossario{processi}necessari al suo completamento.
+\subsection{Qualità di processo}
+Affinché la qualità di prodotto sia garantita è necessario perseguire la qualità dei processi che concorrono alla sua realizzazione. Per raggiungere questo obbiettivo viene adottato lo standard ISO/IEC 15504 denominato\glossario{SPICE}che fornisce strumenti per valutare la bontà dei processi che vengono realizzati.
+\subsection{Qualità di prodotto}
+Al fine di aumentare la possibilità di successo del prodotto in termini di conformità ai \textit{requisiti$_{G}$}, idoneità all'uso e soddisfazione del committente, è necessario fissare alcuni obbiettivi qualitativi e verificare che questi vengano rispettati.
+Lo standard ISO/IEC 9126 fornisce gli obbiettivi e le metriche necessarie a misurare il raggiungimento di tali obbiettivi.
+\section{Organizzazione}
+Ognuna delle fasi del\glossario{progetto}descritte nel \textit{Piano di Progetto v1.0.0} necessità di diverse attività di\glossario{verifica}e approvazione:\\\newline
+ \textbf{Analisi:} in questa fase si fa riferimento ai metodi di verifica descritti nella \hyperref[Metodi]{sezione 3} sui documenti prodotti dal gruppo.\\ \newline
+Concluso il\glossario{processo}di verifica ha inizio il processo di approvazione. Durante tale processo sarà compito del \textit{Responsabile} accertarsi che il livello macroscopico dei prodotti sia conforme a quanto pianificato e progettato precedentemente.
+\section{Pianificazione strategica e temporale}
+Avendo come obbiettivo principale il rispetto della pianificazione descritta nel \textit{Piano di Progetto v1.0.0}, è necessario che la\glossario{verifica}di ogni attività sia sistematica e organizzata nel migliore dei modi. 
+Rispettando ciò si riesce a individuare e quindi correggere gli eventuali errori rilevati il prima possibile, evitandone una pericolosa proliferazione. 
+Le metodologie per l'individuazione e la correzione degli errori sono descritte nelle \textit{Norme di Progetto v.1.0.0}.
+\section{Responsabilità}
+Per garantire che il processo di verifica sia efficace ed efficiente vengono attribuite delle responsabilità a dei specifici ruoli di progetto.
+I ruoli che possiedono la responsabilità del processo di verifica sono il \textit{Responsabile} e i \textit{Verificatori}, fermo restando che ogni membro del gruppo è responsabile di quanto prodotto.
+\section{Risorse} Per la realizzazione del\glossario{prodotto}software sono necessarie sia risorse tecnologiche che umane.
+\begin{itemize}
+	\item \textbf{Risorse Umane:} descritte con maggiore dettaglio nel \textit{Piano di Progetto v.1.0.0}
+	\subitem	\textit{Responsabile;}
+	\subitem	\textit{Amministratore;}
+	\subitem	\textit{Analista;}
+	\subitem	\textit{Progettista;}
+	\subitem	\textit{Programmatore;}
+	\subitem	\textit{Verificatore.}
+	
+	\item \textbf{Risorse Software:} descritte con maggiore dettaglio nelle \textit{Norme di Progetto}; comprendono tutti gli strumenti utilizzati dal gruppo per
+	\subitem Gestione della\glossario{repository};
+	\subitem Sviluppo del codice;
+	\subitem Creazione dei diagrammi in\glossario{UML};
+	\subitem Assegnazione di compiti per lo svolgimento delle attivit\'a;
+	\subitem Gestione dei test e dell'analisi del codice;
+	\subitem Automatizzazione del processo di\glossario{verifica}.
+
+	\item \textbf{Risorse Hardware}
+	Ogni membro del gruppo ha a disposizione un computer personale contenente tutti gli strumenti descritti nel \textit{Piano di Qualifica v1.0.0} e nelle 
+	\textit{Norme di Progetto v1.0.0}.
+	
+\section{Tecniche di analisi}
+\subsection{Analisi statica} \label{AnalisiStatica}
+L’analisi statica, applicata alla documentazione e al
+codice, permette di effettuare la verifica di quanto prodotto individuando errori ed
+anomalie; essa può essere svolta in due modi distinti ma complementari.
+
+\begin{itemize}
+\item \textbf{Walkthrough$_{G}$:} questa metodologia prevede una revisione ad ampio
+spettro parallelizzabile, così da stilare una prima lista degli errori più comuni. Risulta fondamentale nelle prime fasi di sviluppo del\glossario{progetto}dal momento che è il più semplice da imparare, di contro però è molto dispendioso in termini di efficienza;
+
+\item \textbf{Inspection$_{G}$:} risulta essere molto più veloce perché attraverso una lista di controllo degli
+errori e delle misurazioni effettuate, permette un'analisi più efficace delle
+criticità, omettendo le parti che non presentano problematiche.
+\end{itemize}
+	
+\subsection{Analisi dinamica}	L'analisi dinamica al contrario dell'analisi statica è applicabile unicamente
+al software e non ai documenti. Il\glossario{processo}prevede la realizzazione e l'esecuzione di test sul codice. Ogni test per essere valido deve essere ripetibile, cioè attraverso il medesimo input di partenza si deve poter risalire a un dato output. A tal fine è necessario che, per ogni test, vengano segnati i seguenti
+riferimenti:
+
+\begin{itemize}
+	\item \textbf{Ambiente}: sistemi software e hardware utilizzati nel corso dei
+	test;
+	\item \textbf{Stato iniziale}: lo stato di partenza del prodotto prima del test;
+	\item \textbf{Input};
+	\item \textbf{Output};
+	\item \textbf{Avvisi}: un eventuale insieme di istruzioni riguardanti l'esecuzione del
+test e i suoi risultati.
+
+\end{itemize}
+
+Sono inoltre identificabili 5 tipi diversi di test:
+\begin{itemize}
+	\item \textbf{Test di unità:} Per unità si intende una piccola quantità di software che è utile verificare singolarmente (spesso sviluppata da un singolo \textit{Programmatore}).
+	Testare la corretta esecuzione di queste porzioni di codice permette di evitare possibili errori di implementazione in fase di sviluppo; 
+	\item \textbf{Test di integrazione:} Servono a verificare che la combinazione di 2 o più unità
+	software funzioni come previsto. \\
+	Questo tipo di test serve ad individuare errori residui nella realizzazione dei singoli
+	moduli.
+	L'esecuzione di tali test prevede l'aggiunta di componenti non ancora sviluppate in modo fittizio, allo scopo di non influenzare in alcuna maniera l'esito delle analisi;
+	\item \textbf{Test di sistema:} Comprendono tutti i test di validazione del\glossario{prodotto}software una volta integrati tutti i componenti: l'esecuzione 
+	di tali test avviene solamente quando si ritiene che il prodotto abbia raggiunto la sua versione definitiva.\\
+	Tali test si occupano inoltre di verificare che la copertura dei requisiti software stabiliti in fase di Analisi
+	di Dettaglio sia totale;
+	\item \textbf{Test di regressione:} Da effettuare nel caso in cui certe parti del prodotto software vengano modificate nuovamente una volta complete; ciò implica l'esecuzione multipla di test di unità e di integrazione per i moduli interessati;
+	\item \textbf{Test di accettazione:} È il test di collaudo del prodotto software che viene eseguito in presenza della\glossario{proponente}.
+	Se tale collaudo viene superato positivamente si può procedere al rilascio ufficiale del prodotto sviluppato.
+\end{itemize}
+	
+\end{itemize}	
+\chapter{Misure e metriche}\label{Metriche}
+Il\glossario{processo}di \textit{verifica$_{G}$}, per essere utile ed informativo, deve essere quantificabile. Le misure effettuate attraverso il processo di verifica devono quindi basarsi su metriche decise a priori.
+Nel caso vi fossero metriche approssimate e/o incerte, queste verranno corrette in modo incrementale.
+Essendo la natura delle metriche molto variabile, vi sono due tipologie di range:
+\begin{itemize}
+	\item \textbf{Accettazione}: valori richiesti affinché  il prodotto sia accettato;
+	\item \textbf{Ottimale}: valore entro il quale dovrebbe collocarsi la misurazione. Tale range non è vincolante, ma fortemente consigliato.
+\end{itemize}
+\section{Metriche per la qualità di processo}\label{ProcessoMetriche}
+Come metrica per i processi si è deciso di utilizzare indici che ci permettano di valutare costi e tempi. 
+\subsection{Schedule Variance (SV)}
+Indica se si è in linea, in anticipo o in ritardo rispetto alla pianificazione temporale indicata delle attività. 
+Se SV > 0 significa che il gruppo sta procedendo con maggiore velocità rispetto a quanto pianificato, viceversa se negativo. 
+Essendo stati inseriti slack durante la pianificazione delle attività dei processi, il valore di tale indice è inizialmente positivo.
+\begin{itemize}
+	\item Range accettazione: >= -(costo preventivo fase x 10\%);
+	\item Range ottimale: [>= 0]. 
+\end{itemize}
+\subsection{Budget Variance (BV)}
+Indica se alla data corrente corrente si è speso di più o meno rispetto a quanto pianificato.
+Se BV >= 0 significa che si sta usando più budget di quanto preventivato, negativo viceversa.
+\begin{itemize}
+	\item  Range accettazione: >= -( costo preventivo fase x 10\%);
+	\item Range ottimale: >= 0.
+\end{itemize}
+\section{Metriche per la qualità di prodotto}
+\subsection{Indice di Gulpease} \label{IndicediGulpease}
+ L'\textit{indice di}\glossario{Gulpease}è un indice di leggibilità di un testo tarato sulla lingua italiana. Vengono tenute in considerazione due variabili linguistiche:  la lunghezza della parola e la lunghezza della frase rispetto al numero di lettere.
+\[ IG = 89+ \frac{300*nf - 10*nl}{np} \]
+Dove:
+\begin{itemize}
+	\item nf è il numero delle frasi;
+	\item nl è il numero delle lettere;
+	\item np è il numero delle parole.
+\end{itemize}
+Il risultato è un numero compreso nel range di valori $0 \le{IG} \le{100}$, dove il valore "100" indica la leggibilità più alta e "0" la leggibilità più bassa.
+\begin{itemize}
+	\item Range accettazione: [40 - 100];
+	\item Range ottimale: [50 - 100].
+\end{itemize}
+\subsection{Complessità ciclomatica}
+Metrica software che indica la complessità di un programma tenendo in considerazione moduli, funzioni, metodi e classi.
+Nello specifico, essa è calcolata tramite il grafo di controllo di flusso del programma, dove i nodi sono gruppi indivisibili di istruzioni e gli archi connettono due nodi se il secondo gruppo di istruzioni può essere eseguito immediatamente dopo il primo, e il suo valore è determinato dal numero di cammini linearmente indipendenti all'interno del codice sorgente. 
+\'E quindi opportuno definire un valore di complessità ciclomatica preciso: valori alti sono indice di scarsa manutenibilità del codice mentre valori bassi potrebbero indicare scarsa efficienza dei metodi.
+Esso fornisce, inoltre, un indice del carico di lavoro richiesto per la fase di testing (un valore alto richiede più test per una copertura completa).
+Il range di ottimalità stabilito varia da 0 a 10, come suggerito dall'ideatore della metrica Thomas J. McCabe.  
+
+\begin{itemize}
+	\item \textbf{Range accettazione:} [1 - 15];
+	\item \textbf{Range ottimale:} [1 - 10].
+\end{itemize}
+
+\subsection{Numero di parametri per metodo}
+Definire un range relativo al numero di parametri permette di individuare possibili errori nella progettazione (nel caso in cui un metodo abbia un numero di parametri eccessivo).
+ 
+\begin{itemize}
+	\item \textbf{Range accettazione:} [0 - 8];
+	\item \textbf{Range ottimale:} [0 - 4].
+\end{itemize}  
+
+
+\subsection{Numero di livelli di annidamento}
+Metrica per indicare il numero di chiamate annidate di procedure controllate all'interno dei metodi.\newline
+Un valore elevato è indice di un basso livello di astrazione del codice e una complessità eccessivamente elevata. 
+
+\begin{itemize}
+	\item \textbf{Range accettazione:} [1 - 6];
+	\item \textbf{Range ottimale:} [1 - 3].
+\end{itemize}  
+
+
+\subsection{Attributi per classe}
+Un numero elevato di attributi in una classe potrebbe essere indice di un errore di progettazione.
+Viene quindi definita una metrica che identifichi range accettabili e ottimali per questo parametro.
+Nel caso in cui una classe abbia un numero eccessivo di parametri, valutare la possibilità di suddividere la stessa in più classi, suddividendo quindi le funzioni ad essa assegnate.
+
+\begin{itemize}
+	\item \textbf{Range accettazione:} [0 - 16];
+	\item \textbf{Range ottimale:} [3 - 8].
+\end{itemize}  
+
+\subsection{Linee di codice per commento}
+Metrica identificata dal rapporto tra linee di codice e linee di commento: risulta utile per garantire una maggiore manutenibilità del codice.
+
+\begin{itemize}
+	\item \textbf{Range accettazione:} [>=0.25];
+	\item \textbf{Range ottimale:} [>=0.30]\footnote{Ricavato dal rapporto 22/78 \url{https://www.ohloh.net/p/firefox/factoids\#FactoidCommentsLow}}.
+\end{itemize}  
+
+\subsection{Flusso di informazioni}
+Metrica proposta da S. Henry e D. Kafura che misura il flusso di informazioni così definito:
+
+\begin{itemize}
+	\item \textbf{fan-in:} numero di moduli che passano informazioni dentro al modulo in esame;
+	\item \textbf{fan-out:} numero di moduli a cui il modulo in esame passa informazioni.
+\end{itemize} 
+il valore viene calcolato tramite questa funzione:
+\begin{center}
+(lunghezzafunzione)$^2\times fan-in\times fan-out$
+\end{center}
+
+
+\subsection{Accoppiamento}
+La definizione dei range di ottimalità e accettazione delle metriche presenti in questa sezione viene rimandata alla fase di Revisione di Analisi.
+\subsubsection{Accoppiamento Afferente}
+Indica la dipendenza di classi esterne a un package rispetto alle classi interne contenute nel package stesso.
+Tale valore, sebbene non indicante necessariamente errori di progettazione, può evidenziare criticità riguardanti la robustezza e l'utilità del package a cui fa riferimento.
+Un valore basso può evidenziare scarsa utilità del package, mentre un valore alto necessita di ulteriori verifiche di robustezza, in quanto rappresentante un punto critico nel software.
+\subsubsection{Accoppiamento Efferente}
+Indica la dipendenza di classi interne a un package rispetto alle classi esterne ad esso.
+Un valore basso indica un forte indipendenza del package rispetto al resto del sistema.
+
+\subsection{Copertura del codice}
+Indica la percentuale di istruzioni che sono eseguite durante i test.
+Maggiore è la percentuale di istruzioni coperte dai test eseguiti, maggiore sarà la probabilità che le componenti testate abbiano una ridotta quantità di errori.
+Il valore di tale indice può essere abbassato da metodi molto semplici che non richiedono testing. Esempi di questi metodi sono: get e set.\\
+Parametri utilizzati:
+
+\begin{itemize}
+	
+	\item \textbf{Range accettazione:} [42\%-100\%];
+	\item \textbf{Range ottimale:} [65\%-100\%].
+	
+\end{itemize}
+
+\subsection{Riassunto metriche}
+\begin{center}
+\begin{tabularx}{\textwidth}{|X|X|X|X|}
+
+	\hline
+	\textbf{Codice} & \textbf{Nome} & 	\textbf{Range di accettazione} & \textbf{Range di ottimalità}\\
+	\endhead
+	\hline
+	MP001 & Schedule Variance& >= -(c.p.f \footnote{costo preventivo fase} x 10\%)& >=0  \\
+	\hline
+	MP002 & Budget Variance & >= -(c.p.f x 10\%)& >=0 \\
+	\hline
+	MP003 & Indice di Gulpease & 40-100 & 50-100\\
+	\hline
+	MPR001 & Complessità ciclomatica & 1-15 & 1-10 \\
+	\hline
+	MPR002 & Numero di parametri per metodo & 0-8 & 0-4 \\
+	\hline
+	MPR003 & Numero di livelli di annidamento & 1-6 & 1-3 \\
+	\hline
+	MPR004 & Attributi per classe & 0-16 & 3-8 \\
+	\hline
+	MPR005 & Linee di codice per commento & >=0.25 & >=0.30 \\
+	\hline
+	MPR006 & Flusso di informazioni & - & - \\
+	\hline
+	MPR007 & Accoppiamento Afferente & N.D & N.D. \\
+	\hline
+	MPR008 & Accoppiamento Efferente& N.D & N.D. \\
+	\hline
+	MPR009 & Copertura del codice & 42\%-100\% & 65\%-100\% \\
+	\hline
+	\caption{Tabella delle metriche}
+\end{tabularx}
+\end{center}
+
+\section{Metodi}\label{Metodi}
+Questa sezione ha lo scopo di definire precisamente le procedure di analisi statica e dinamica del codice.
+\subsection{Analisi dei processi}
+	 \textbf{Analisi delle metriche:} Alla conclusione di ogni fase del \textit{progetto}, per ogni macro-attività, definita nel
+	\textit{Piano di Progetto v1.0.0}, si calcolano gli indici definiti nella \hyperref[Metriche]{Sezione 3.2}. Al fine
+	di avere un indice complessivo di fase dovrà essere inoltre calcolato il valore medio
+	di tali indici.
+\subsection{Analisi dei documenti}
+Viene definito un protocollo per la verifica dei documenti.
+\begin{enumerate}
+	\item \textbf{Controllo e sintattico del periodo:} Utilizzando\glossario{TeXstudio}è possibile evidenziare gran parte degli errori grammaticali presenti in un documento, tuttavia è comunque necessario un\glossario{walkthrough}da parte di un \textit{Verificatore} per l'individuazione di errori aggiuntivi sfuggiti al controllo automatico;
+	\item \textbf{Rispetto delle norme di progetto:} Nelle \textit{Norme di Progetto} sono definite alcune direttive tipografiche e relative alla struttura dei documenti;
+	i \textit{Verificatori} dovranno effettuare una\glossario{inspection}del documento per individuare errori di questo tipo;
+	\item \textbf{Lista di controllo} il \textit{Verificatore}, dovrà utilizzare la lista di controllo per i documenti, e verificare che gli errori più frequenti non siano presenti;
+	\item \textbf{Verifica delle proprietà di glossario:} Seguendo le \textit{Norme di Progetto v1.0.0}, il \textit{Verificatore} dovrà trovare tutte le occorrenze dei termini presenti nel \textit{Glossario v 1.0.0}.\\
+	Per ogni occorrenza viene applicato lo stile  predefinito dal comando \textbackslash glossario.
+	Il \textit{Verificatore} dovrà quindi effettuare un ulteriore controllo allo scopo di constatare che l’output finale sia conforme a quanto precisato nelle \textit{Norme di Progetto v1.0.0};
+	\item \textbf{Calcolo dell'indice di Gulpease:} Utilizzando gli strumenti automatici definiti nelle \textit{Norme di Progetto v1.0.0}, su ogni documento redatto il \textit{Verificatore} deve calcolare l’indice di leggibilità.\\
+	Si renderà necessario un ulteriore\glossario{walkthrough}nel caso in cui l’indice risultasse troppo basso, allo scopo di snellire e accorciare frasi troppo lunghe e complesse;
+	\item \textbf{Miglioramento Processo:} Per avere un miglioramento del\glossario{processo}di\glossario{verifica}, quando i Verificatori eseguono walkthrough di un documento, dovranno riportare gli errori più frequentemente
+	trovati. Grazie a tale pratica sarà possibile eseguire inspection su tali errori nelle verifiche future.
+	
+\end{enumerate}
+
+
+\chapter{Gestione amministrativa della revisione}
+\section{Comunicazione e risoluzione di anomalie}
+
+Nel caso in cui un \textit{Verificatore} riscontri un'anomalia intesa come:
+
+\begin{itemize}
+	\item Violazione delle metriche disposte nel \hyperref[Metriche]{capitolo 3};
+	\item Incongruenza del\glossario{prodotto}con quanto specificato nell'\textit{Analisi dei Requisiti v1.0.0};
+	\item Violazione delle norme tipografiche descritte nelle \textit{Norme di Progetto v1.0.0}.
+\end{itemize}
+
+Egli potrà aprire una task su\glossario{Asana}per la sua risoluzione, seguendo le procedure descritte nelle \textit{Norme di Progetto v1.0.0}.
