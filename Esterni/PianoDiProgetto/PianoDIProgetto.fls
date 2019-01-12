@@ -1,12 +1,14 @@
-PWD c:\Users\stefano\Desktop\universita\ZeroSeven\ProgettoSWEDocumentazione\Esterni\AnalisiDeiRequisiti
+PWD c:\Users\stefano\Desktop\universita\ZeroSeven\ProgettoSWEDocumentazione\Esterni\PianoDiProgetto
 INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\stefano\Desktop\universita\ZeroSeven\ProgettoSWEDocumentazione\Esterni\AnalisiDeiRequisiti\AnalisiDeiRequisiti.tex
-OUTPUT AnalisiDeiRequisiti.log
+INPUT c:\Users\stefano\Desktop\universita\ZeroSeven\ProgettoSWEDocumentazione\Esterni\PianoDiProgetto\PianoDIProgetto.tex
+OUTPUT PianoDIProgetto.log
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\book.cls
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\book.cls
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\bk12.clo
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\bk12.clo
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multirow.sty
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multirow.sty
 INPUT ZeroSeven.sty
 INPUT ZeroSeven.sty
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty
@@ -100,9 +102,9 @@ INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\varwidth\varw
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\varwidth\varwidth.sty
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ltablex\ltablex.sty
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ltablex\ltablex.sty
-INPUT AnalisiDeiRequisiti.aux
-INPUT AnalisiDeiRequisiti.aux
-OUTPUT AnalisiDeiRequisiti.aux
+INPUT PianoDIProgetto.aux
+INPUT PianoDIProgetto.aux
+OUTPUT PianoDIProgetto.aux
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mkii
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mkii
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty
@@ -113,14 +115,14 @@ INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\name
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty
-INPUT AnalisiDeiRequisiti.out
-INPUT AnalisiDeiRequisiti.out
-INPUT AnalisiDeiRequisiti.out
-INPUT AnalisiDeiRequisiti.out
-OUTPUT AnalisiDeiRequisiti.pdf
-INPUT .\AnalisiDeiRequisiti.out
-INPUT .\AnalisiDeiRequisiti.out
-OUTPUT AnalisiDeiRequisiti.out
+INPUT PianoDIProgetto.out
+INPUT PianoDIProgetto.out
+INPUT PianoDIProgetto.out
+INPUT PianoDIProgetto.out
+OUTPUT PianoDIProgetto.pdf
+INPUT .\PianoDIProgetto.out
+INPUT .\PianoDIProgetto.out
+OUTPUT PianoDIProgetto.out
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm2488.tfm
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx2488.tfm
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\eccc1200.tfm
@@ -147,189 +149,226 @@ INPUT .\images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
-INPUT AnalisiDeiRequisiti.toc
-INPUT AnalisiDeiRequisiti.toc
 INPUT images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
-OUTPUT AnalisiDeiRequisiti.toc
+INPUT PianoDIProgetto.toc
+INPUT PianoDIProgetto.toc
+OUTPUT PianoDIProgetto.toc
 INPUT images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
+INPUT PianoDIProgetto.lot
+INPUT PianoDIProgetto.lot
+OUTPUT PianoDIProgetto.lot
 INPUT images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
-INPUT AnalisiDeiRequisiti.lof
-INPUT AnalisiDeiRequisiti.lof
-OUTPUT AnalisiDeiRequisiti.lof
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT AnalisiDeiRequisiti.lot
-INPUT AnalisiDeiRequisiti.lot
-OUTPUT AnalisiDeiRequisiti.lot
-INPUT sezioni\introduzione.tex
-INPUT sezioni\introduzione.tex
+INPUT PianoDIProgetto.lof
+INPUT PianoDIProgetto.lof
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecti1200.tfm
+OUTPUT PianoDIProgetto.lof
+INPUT sezioni\organigramma.tex
+INPUT sezioni\organigramma.tex
 INPUT images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1728.tfm
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1728.tfm
-INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecti1200.tfm
-INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1440.tfm
-INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1440.tfm
-INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd
-INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd
-INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm0800.tfm
-INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1000.tfm
-INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm0700.tfm
-INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmtt.fd
-INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmtt.fd
-INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ectt1000.tfm
-INPUT sezioni\descrizioneGenerale.tex
-INPUT sezioni\descrizioneGenerale.tex
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT sezioni\casiUso.tex
-INPUT sezioni\casiUso.tex
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT Diagram\UC1.png
-INPUT .\Diagram\UC1.png
-INPUT .\Diagram\UC1.png
-INPUT .\Diagram\UC1.png
-INPUT .\Diagram\UC1.png
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1095.tfm
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmss.fd
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmss.fd
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecss1095.tfm
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecsx1095.tfm
-INPUT Diagram\UC1-1.png
-INPUT .\Diagram\UC1-1.png
-INPUT .\Diagram\UC1-1.png
-INPUT .\Diagram\UC1-1.png
-INPUT .\Diagram\UC1-1.png
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\eurosym\feymr10.tfm
+INPUT sezioni\introduzione.tex
+INPUT sezioni\introduzione.tex
 INPUT images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
 INPUT images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
 INPUT images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
-INPUT Diagram\UC1-2.png
-INPUT .\Diagram\UC1-2.png
-INPUT .\Diagram\UC1-2.png
-INPUT .\Diagram\UC1-2.png
-INPUT .\Diagram\UC1-2.png
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1440.tfm
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1440.tfm
+INPUT sezioni\pianificazione.tex
+INPUT sezioni\pianificazione.tex
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT images\analisi.jpg
+INPUT .\images\analisi.jpg
+INPUT .\images\analisi.jpg
+INPUT .\images\analisi.jpg
+INPUT .\images\analisi.jpg
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecti1095.tfm
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT images\revisione_analisi.jpg
+INPUT .\images\revisione_analisi.jpg
+INPUT .\images\revisione_analisi.jpg
+INPUT .\images\revisione_analisi.jpg
+INPUT .\images\revisione_analisi.jpg
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT images\base_tecnologica.jpg
+INPUT .\images\base_tecnologica.jpg
+INPUT .\images\base_tecnologica.jpg
+INPUT .\images\base_tecnologica.jpg
+INPUT .\images\base_tecnologica.jpg
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT images\codifica.jpg
+INPUT .\images\codifica.jpg
+INPUT .\images\codifica.jpg
+INPUT .\images\codifica.jpg
+INPUT .\images\codifica.jpg
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT images\validazione_collaudo.jpg
+INPUT .\images\validazione_collaudo.jpg
+INPUT .\images\validazione_collaudo.jpg
+INPUT .\images\validazione_collaudo.jpg
+INPUT .\images\validazione_collaudo.jpg
+INPUT sezioni\prospetto_economico.tex
+INPUT sezioni\prospetto_economico.tex
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT images\grafoProspettoOrario.png
+INPUT .\images\grafoProspettoOrario.png
+INPUT .\images\grafoProspettoOrario.png
+INPUT .\images\grafoProspettoOrario.png
+INPUT .\images\grafoProspettoOrario.png
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT images\grafoProspettoEconomico.png
+INPUT .\images\grafoProspettoEconomico.png
+INPUT .\images\grafoProspettoEconomico.png
+INPUT .\images\grafoProspettoEconomico.png
+INPUT .\images\grafoProspettoEconomico.png
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT images\grafoProspettoOrarioDett.png
+INPUT .\images\grafoProspettoOrarioDett.png
+INPUT .\images\grafoProspettoOrarioDett.png
+INPUT .\images\grafoProspettoOrarioDett.png
+INPUT .\images\grafoProspettoOrarioDett.png
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT images\grafoProspettoEconomicoDett.png
+INPUT .\images\grafoProspettoEconomicoDett.png
+INPUT .\images\grafoProspettoEconomicoDett.png
+INPUT .\images\grafoProspettoEconomicoDett.png
+INPUT .\images\grafoProspettoEconomicoDett.png
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT images\grafoProgettazioneTecnologica.png
+INPUT .\images\grafoProgettazioneTecnologica.png
+INPUT .\images\grafoProgettazioneTecnologica.png
+INPUT .\images\grafoProgettazioneTecnologica.png
+INPUT .\images\grafoProgettazioneTecnologica.png
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT images\grafoProgettazioneTecnologicaEuro.png
+INPUT .\images\grafoProgettazioneTecnologicaEuro.png
+INPUT .\images\grafoProgettazioneTecnologicaEuro.png
+INPUT .\images\grafoProgettazioneTecnologicaEuro.png
+INPUT .\images\grafoProgettazioneTecnologicaEuro.png
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT images\grafoProgettazioneDettaglioCodifica.png
+INPUT .\images\grafoProgettazioneDettaglioCodifica.png
+INPUT .\images\grafoProgettazioneDettaglioCodifica.png
+INPUT .\images\grafoProgettazioneDettaglioCodifica.png
+INPUT .\images\grafoProgettazioneDettaglioCodifica.png
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT images\grafoProgettazioneDettaglioCodificaEuro.png
+INPUT .\images\grafoProgettazioneDettaglioCodificaEuro.png
+INPUT .\images\grafoProgettazioneDettaglioCodificaEuro.png
+INPUT .\images\grafoProgettazioneDettaglioCodificaEuro.png
+INPUT .\images\grafoProgettazioneDettaglioCodificaEuro.png
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT images\grafoValidazioneCollaudo.png
+INPUT .\images\grafoValidazioneCollaudo.png
+INPUT .\images\grafoValidazioneCollaudo.png
+INPUT .\images\grafoValidazioneCollaudo.png
+INPUT .\images\grafoValidazioneCollaudo.png
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT images\grafoValidazioneCollaudoEuro.png
+INPUT .\images\grafoValidazioneCollaudoEuro.png
+INPUT .\images\grafoValidazioneCollaudoEuro.png
+INPUT .\images\grafoValidazioneCollaudoEuro.png
+INPUT .\images\grafoValidazioneCollaudoEuro.png
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT images\grafoOreRendicontate.png
+INPUT .\images\grafoOreRendicontate.png
+INPUT .\images\grafoOreRendicontate.png
+INPUT .\images\grafoOreRendicontate.png
+INPUT .\images\grafoOreRendicontate.png
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT images\grafoOreRendicontateEuro.png
+INPUT .\images\grafoOreRendicontateEuro.png
+INPUT .\images\grafoOreRendicontateEuro.png
+INPUT .\images\grafoOreRendicontateEuro.png
+INPUT .\images\grafoOreRendicontateEuro.png
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT images\grafoOreInvestimento.png
+INPUT .\images\grafoOreInvestimento.png
+INPUT .\images\grafoOreInvestimento.png
+INPUT .\images\grafoOreInvestimento.png
+INPUT .\images\grafoOreInvestimento.png
+INPUT images\logo_intestazione.png
+INPUT .\images\logo_intestazione.png
+INPUT images\grafoOreInvestimentoEuro.png
+INPUT .\images\grafoOreInvestimentoEuro.png
+INPUT .\images\grafoOreInvestimentoEuro.png
+INPUT .\images\grafoOreInvestimentoEuro.png
+INPUT .\images\grafoOreInvestimentoEuro.png
+INPUT sezioni\AnalisiRischi.tex
+INPUT sezioni\AnalisiRischi.tex
 INPUT images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
 INPUT images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
 INPUT images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
-INPUT Diagram\UC2.png
-INPUT .\Diagram\UC2.png
-INPUT .\Diagram\UC2.png
-INPUT .\Diagram\UC2.png
-INPUT .\Diagram\UC2.png
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT Diagram\UC2-1.png
-INPUT .\Diagram\UC2-1.png
-INPUT .\Diagram\UC2-1.png
-INPUT .\Diagram\UC2-1.png
-INPUT .\Diagram\UC2-1.png
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT Diagram\UC2-3.png
-INPUT .\Diagram\UC2-3.png
-INPUT .\Diagram\UC2-3.png
-INPUT .\Diagram\UC2-3.png
-INPUT .\Diagram\UC2-3.png
 INPUT images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
 INPUT images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
 INPUT images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT sezioni\requisiti.tex
-INPUT sezioni\requisiti.tex
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
+INPUT sezioni\consuntivoAfinire.tex
+INPUT sezioni\consuntivoAfinire.tex
 INPUT images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
 INPUT images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
 INPUT images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT sezioni\voiceDialogFlow.tex
-INPUT sezioni\voiceDialogFlow.tex
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ectt1200.tfm
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT images\logo_intestazione.png
-INPUT .\images\logo_intestazione.png
-INPUT AnalisiDeiRequisiti.aux
-INPUT .\AnalisiDeiRequisiti.out
-INPUT .\AnalisiDeiRequisiti.out
-INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
-INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
+INPUT PianoDIProgetto.aux
+INPUT .\PianoDIProgetto.out
+INPUT .\PianoDIProgetto.out
+INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk
+INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk
+INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
+INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
 INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk
 INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk
 INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1095.pk
 INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1095.pk
-INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk
-INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk
-INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0700.pk
-INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0700.pk
-INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
-INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
-INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
-INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
-INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
-INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
 INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
 INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
+INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
+INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
 INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
 INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
 INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1200.pk
@@ -340,11 +379,13 @@ INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
 INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
 INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk
 INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy8.pfb
-INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\eurosym\feymr10.pfb
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\eurosym\feymr10.pfb
