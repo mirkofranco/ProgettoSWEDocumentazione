@@ -51,9 +51,9 @@ NB_MISSPELLED=`echo "$MISSPELLED" | wc -l`
 if [ "$NB_MISSPELLED" -gt 0 ]
 then
     echo -e "$RED>> Words that might be misspelled, please check:$NC"
-    MISSPELLED=`echo "$MISSPELLED" | sed -E ':a;N;$!ba;s/\n/, /g'`
-    echo "$MISSPELLED"
-    COMMENT="$NB_MISSPELLED words might be misspelled, please check them: $MISSPELLED"
+    #MISSPELLED=`echo "$MISSPELLED" | sed -E ':a;N;$!ba;s/\n/, /g'`
+    echo "echo $MISSPELLED"
+    #COMMENT="$NB_MISSPELLED words might be misspelled, please check them: $MISSPELLED"
 else
     COMMENT="No spelling errors, congratulations!"
     echo -e "$GREEN>> $COMMENT $NC"
