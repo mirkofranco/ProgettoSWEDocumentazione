@@ -1,0 +1,6 @@
+addons:
+  apt:
+    packages:
+      - aspell
+      - aspell-it
+script: grammar.sh
