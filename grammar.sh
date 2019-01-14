@@ -20,7 +20,7 @@ fi
 echo -e "$BLUE>> Following markdown files were changed in this pull request (commit range: $TRAVIS_COMMIT_RANGE):$NC"
 echo "$MARKDOWN_FILES_CHANGED"
 
-USE_LANGUAGE='it_IT'
+USE_LANGUAGE='it_IT,en_EN'
 echo -e "$BLUE>> Will use this language as main one:$NC"
 echo "$USE_LANGUAGE"
 
