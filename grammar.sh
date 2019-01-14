@@ -43,7 +43,7 @@ echo "$TEXT_CONTENT"
 
 
 echo -e "$BLUE>> Checking in '$USE_LANGUAGE'"
-MISSPELLED=`echo "$TEXT_CONTENT" | hunspell -d "$USE_LANGUAGE" -t -l | sort -u`
+MISSPELLED=`echo "$TEXT_CONTENT" | hunspell -d "$USE_LANGUAGE" --encoding=UTF-8 -t -l | sort -u`
 echo $MISSPELLED
 
 NB_MISSPELLED=`echo "$MISSPELLED" | wc -l`
