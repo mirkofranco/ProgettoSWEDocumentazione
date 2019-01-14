@@ -7,8 +7,8 @@ GREEN='\033[0;32m'
 BLUE='\033[0;36m'
 NC='\033[0m' # No Color
 
-MARKDOWN_FILES_CHANGED=`(git diff --name-only $TRAVIS_COMMIT_RANGE || true) | grep .md`
-
+#MARKDOWN_FILES_CHANGED=`(git diff --name-only $TRAVIS_COMMIT_RANGE || true) | grep .md`
+MARKDOWN_FILES_CHANGED=`*.md |grep .md`
 if [ -z "$MARKDOWN_FILES_CHANGED" ]
 then
     echo -e "$GREEN>> No markdown file to check $NC"
