@@ -12,25 +12,16 @@ Esterni/PianoDiProgetto/*.fls
 Esterni/PianoDiProgetto/*.lof
 Interni/Norme di Progetto/NormeDiProgetto.fdb_latexmk
 Interni/Norme di Progetto/NormeDiProgetto.fls
-Esterni/PianoDiProgetto/PianoDIProgetto.lof
-Esterni/PianoDiProgetto/PianoDIProgetto.lot
 Esterni/Glossario.fdb_latexmk
 Esterni/Glossario.fls
 Esterni/Glossario.ilg
 Esterni/Glossario.ind
-Esterni/PianoDiProgetto/PianoDIProgetto.fdb_latexmk
-Esterni/PianoDiProgetto/PianoDIProgetto.fls
-Esterni/PianoDiProgetto/PianoDIProgetto.lof
-Interni/Norme di Progetto/NormeDiProgetto.fls
-Interni/Norme di Progetto/NormeDiProgetto.fdb_latexmk
 *.lof
 *.ilg
 Esterni/AnalisiDeiRequisiti/AnalisiDeiRequisiti.fls
 Esterni/AnalisiDeiRequisiti/AnalisiDeiRequisiti.fdb_latexmk
 Esterni/PianoDiQualifica/documentoPrincipale.fdb_latexmk
 Esterni/PianoDiQualifica/documentoPrincipale.fls
-Interni/Norme di Progetto/NormeDiProgetto.fdb_latexmk
-Interni/Norme di Progetto/NormeDiProgetto.fls
 Esterni/PianoDiQualifica/pianoDiQualifica.fdb_latexmk
 Esterni/PianoDiQualifica/pianoDiQualifica.fls
 Esterni/PianoDiProgetto/PianoDIProgetto.fdb_latexmk
@@ -40,7 +31,6 @@ Esterni/PianoDiProgetto/PianoDIProgetto.lot
 Interni/Studio di fattibilità/StudioDiFattbilità.fls
 Esterni/PianoDiProgetto/PianoDIProgetto.fls
 Interni/Studio di fattibilità/StudioDiFattbilità.fdb_latexmk
-Esterni/PianoDiProgetto/PianoDIProgetto.fdb_latexmk
 Esterni/Glossario/Glossario.ind
 Esterni/Glossario/Glossario.ilg
 Esterni/Glossario/Glossario.idx
