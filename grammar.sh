@@ -19,7 +19,7 @@ fi
 echo -e "$BLUE>> Following markdown files were changed in this pull request (commit range: $TRAVIS_COMMIT_RANGE):$NC"
 echo "$MARKDOWN_FILES_CHANGED"
 
-FOUND_LANGUAGES=`echo "$MARKDOWN_FILES_CHANGED" | xargs cat | grep "permalink: /" | sed -E 's/permalink: \/(fr|en)\/.*/\1/g'`
+FOUND_LANGUAGES=`echo "$MARKDOWN_FILES_CHANGED" | xargs cat | grep "permalink: /" | sed -E 's/permalink: \/(it|en)\/.*/\1/g'`
 echo -e "$BLUE>> Languages recognized from the permalinks:$NC"
 echo "$FOUND_LANGUAGES"
 
