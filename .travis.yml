@@ -3,4 +3,4 @@ addons:
     packages:
       - aspell
       - aspell-it
-script: grammar.sh
+script: bash grammar.sh
