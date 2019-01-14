@@ -43,7 +43,7 @@ echo "$TEXT_CONTENT_WITHOUT_METADATA"
 
 
 echo -e "$BLUE>> Checking in '$USE_LANGUAGE'"
-MISSPELLED=`hunspell -d "it_IT" -l $TEXT_CONTENT_WITHOUT_METADATA | sort -u`
+MISSPELLED=`hunspell -d "it_IT" -l "$TEXT_CONTENT_WITHOUT_METADATA" | sort -u`
 
 
 NB_MISSPELLED=`echo "$MISSPELLED" | wc -l`
@@ -52,7 +52,7 @@ if [ "$NB_MISSPELLED" -gt 0 ]
 then
     echo -e "$RED>> Words that might be misspelled, please check:$NC"
     #MISSPELLED=`echo "$MISSPELLED" | sed -E ':a;N;$!ba;s/\n/, /g'`
-    echo `$MISSPELLED`
+    echo `echo "$MISSPELLED"`
     #COMMENT="$NB_MISSPELLED words might be misspelled, please check them: $MISSPELLED"
 else
     COMMENT="No spelling errors, congratulations!"
