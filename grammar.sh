@@ -43,7 +43,7 @@ echo "$MARKDOWN_FILES_CHANGED"
 
 echo -e "$BLUE>> Checking in '$USE_LANGUAGE'"
 MISSPELLED=`echo "$MARKDOWN_FILES_CHANGED" | hunspell -d "$USE_LANGUAGE" -t -l | sort -u`
-
+echo $MISSPELLED
 
 NB_MISSPELLED=`echo "$MISSPELLED" | wc -l`
 
