@@ -1,6 +1,6 @@
 #source: https://github.com/eleven-labs/blog.eleven-labs.com/blob/master/bin/check-spelling.sh 
 #!/bin/bash
-# requires apt packages: aspell, aspell-en, aspell-it
+# requires apt packages: hunspell
 
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -40,7 +40,7 @@ echo -e "$BLUE>> Text content that will be checked (without metadata, html, and 
 echo "$TEXT_CONTENT_WITHOUT_METADATA"
 
 echo -e "$BLUE>> Checking in '$USE_LANGUAGE'"
-MISSPELLED=`echo "$MISSPELLED" | aspell --lang=$USE_LANGUAGE --encoding=utf-8 --personal=./.aspell.$USE_LANGUAGE.pws list | sort -u`
+MISSPELLED=`echo "$MISSPELLED" | hunspell --lang=$USE_LANGUAGE --encoding=utf-8 --personal=./.hunspell.$USE_LANGUAGE.pws list | sort -u`
 
 
 NB_MISSPELLED=`echo "$MISSPELLED" | wc -l`
