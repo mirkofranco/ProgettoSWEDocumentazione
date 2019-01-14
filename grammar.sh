@@ -52,7 +52,7 @@ if [ "$NB_MISSPELLED" -gt 0 ]
 then
     echo -e "$RED>> Words that might be misspelled, please check:$NC"
     #MISSPELLED=`echo "$MISSPELLED" | sed -E ':a;N;$!ba;s/\n/, /g'`
-    echo "$MISSPELLED"
+    echo `cat $MISSPELLED`
     #COMMENT="$NB_MISSPELLED words might be misspelled, please check them: $MISSPELLED"
 else
     COMMENT="No spelling errors, congratulations!"
