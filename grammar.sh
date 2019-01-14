@@ -36,7 +36,7 @@ echo "$USE_LANGUAGE"
 #TEXT_CONTENT_WITHOUT_METADATA=`echo "$TEXT_CONTENT_WITHOUT_METADATA" | sed  -n '/^\`\`\`/,/^\`\`\`/ !p'`
 # remove links
 #TEXT_CONTENT_WITHOUT_METADATA=`echo "$TEXT_CONTENT_WITHOUT_METADATA" | sed -E 's/http(s)?:\/\/([^ ]+)//g'`
-TEXT_CONTENT = `cat $(echo "$MARKDOWN_FILES_CHANGED")`
+TEXT_CONTENT=`cat $(echo "$MARKDOWN_FILES_CHANGED")`
 
 echo -e "$BLUE>> Text content that will be checked (without metadata, html, and links):$NC"
 echo "$TEXT_CONTENT"
