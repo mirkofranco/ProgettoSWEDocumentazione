@@ -1,5 +1,5 @@
 before_install:
   - sudo apt-get update
   - sudo apt-get install hunspell
-  - sudo apt-get install hunspell-it
+  - sudo apt-get install myspell-it
 script: bash grammar.sh
