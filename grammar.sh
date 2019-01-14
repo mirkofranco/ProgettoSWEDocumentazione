@@ -9,7 +9,6 @@ NC='\033[0m' # No Color
 
 #MARKDOWN_FILES_CHANGED=`(git diff --name-only $TRAVIS_COMMIT_RANGE || true) | grep .md`
 MARKDOWN_FILES_CHANGED=` git ls-files | grep "tex"`
-echo $MARKDOWN_FILES_CHANGED
 
 if [ -z "$MARKDOWN_FILES_CHANGED" ]
 then
@@ -39,11 +38,11 @@ echo "$USE_LANGUAGE"
 #TEXT_CONTENT_WITHOUT_METADATA=`echo "$TEXT_CONTENT_WITHOUT_METADATA" | sed -E 's/http(s)?:\/\/([^ ]+)//g'`
 
 echo -e "$BLUE>> Text content that will be checked (without metadata, html, and links):$NC"
-echo "$TEXT_CONTENT_WITHOUT_METADATA"
+echo "$MARKDOWN_FILES_CHANGED"
 
 
 echo -e "$BLUE>> Checking in '$USE_LANGUAGE'"
-MISSPELLED=`echo "$MARKDOWN_FILES_CHANGED" | hunspell -d "it_IT" -t -l | sort -u`
+MISSPELLED=`echo "$MARKDOWN_FILES_CHANGED" | hunspell -d "$USE_LANGUAGE" -t -l | sort -u`
 
 
 NB_MISSPELLED=`echo "$MISSPELLED" | wc -l`
@@ -53,6 +52,7 @@ then
     echo -e "$RED>> Words that might be misspelled, please check:$NC"
     MISSPELLED=`echo "$MISSPELLED" | sed -E ':a;N;$!ba;s/\n/, /g'`
     COMMENT="$NB_MISSPELLED words might be misspelled, please check them: $MISSPELLED"
+    echo -e "$COMMENT"
 else
     COMMENT="No spelling errors, congratulations!"
     echo -e "$GREEN>> $COMMENT $NC"
