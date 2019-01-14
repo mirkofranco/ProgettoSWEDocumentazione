@@ -41,9 +41,9 @@ TEXT_CONTENT_WITHOUT_METADATA=`echo "$TEXT_CONTENT_WITHOUT_METADATA" | sed -E 's
 echo -e "$BLUE>> Text content that will be checked (without metadata, html, and links):$NC"
 echo "$TEXT_CONTENT_WITHOUT_METADATA"
 
-hunspell -d it_IT
+
 echo -e "$BLUE>> Checking in '$USE_LANGUAGE'"
-MISSPELLED=`echo "$MISSPELLED" | hunspell TEXT_CONTENT_WITHOUT_METADATA list | sort -u`
+MISSPELLED=`echo hunspell -d "it_IT" TEXT_CONTENT_WITHOUT_METADATA list | sort -u`
 
 
 NB_MISSPELLED=`echo "$MISSPELLED" | wc -l`
