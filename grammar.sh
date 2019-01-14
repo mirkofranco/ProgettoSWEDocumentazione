@@ -9,7 +9,7 @@ NC='\033[0m' # No Color
 
 #MARKDOWN_FILES_CHANGED=`(git diff --name-only $TRAVIS_COMMIT_RANGE || true) | grep .md`
 MARKDOWN_FILES_CHANGED=` git ls-files | grep "md"`
-echo MARKDOWN_FILES_CHANGED
+echo $MARKDOWN_FILES_CHANGED
 
 if [ -z "$MARKDOWN_FILES_CHANGED" ]
 then
