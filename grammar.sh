@@ -36,13 +36,14 @@ echo "$USE_LANGUAGE"
 #TEXT_CONTENT_WITHOUT_METADATA=`echo "$TEXT_CONTENT_WITHOUT_METADATA" | sed  -n '/^\`\`\`/,/^\`\`\`/ !p'`
 # remove links
 #TEXT_CONTENT_WITHOUT_METADATA=`echo "$TEXT_CONTENT_WITHOUT_METADATA" | sed -E 's/http(s)?:\/\/([^ ]+)//g'`
+TEXT_CONTENT = `cat $(echo "$MARKDOWN_FILES_CHANGED")`
 
 echo -e "$BLUE>> Text content that will be checked (without metadata, html, and links):$NC"
-echo "$MARKDOWN_FILES_CHANGED"
+echo "$TEXT_CONTENT"
 
 
 echo -e "$BLUE>> Checking in '$USE_LANGUAGE'"
-MISSPELLED=`echo "$MARKDOWN_FILES_CHANGED" | hunspell -d "$USE_LANGUAGE" -t -l | sort -u`
+MISSPELLED=`echo "$TEXT_CONTENT" | hunspell -d "$USE_LANGUAGE" -t -l | sort -u`
 echo $MISSPELLED
 
 NB_MISSPELLED=`echo "$MISSPELLED" | wc -l`
