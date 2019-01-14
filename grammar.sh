@@ -19,23 +19,6 @@ fi
 echo -e "$BLUE>> Following markdown files were changed in this pull request (commit range: $TRAVIS_COMMIT_RANGE):$NC"
 echo "$MARKDOWN_FILES_CHANGED"
 
-#FOUND_LANGUAGES=`echo "$MARKDOWN_FILES_CHANGED" | xargs cat | grep "permalink: /" | sed -E 's/permalink: \/(it|en)\/.*/\1/g'`
-#echo -e "$BLUE>> Languages recognized from the permalinks:$NC"
-#echo "$FOUND_LANGUAGES"
-
-#while read LINE
-#do
- #   if [ "$LINE" != "en" ]
-#    then
- #       USE_LANGUAGE="$LINE"
-
- #   fi
-#done <<< "$FOUND_LANGUAGES"
-
-#if [ -z "$USE_LANGUAGE" ]
-#then
-#    USE_LANGUAGE='en'
-#fi
 USE_LANGUAGE='it'
 echo -e "$BLUE>> Will use this language as main one:$NC"
 echo "$USE_LANGUAGE"
@@ -56,14 +39,9 @@ TEXT_CONTENT_WITHOUT_METADATA=`echo "$TEXT_CONTENT_WITHOUT_METADATA" | sed -E 's
 echo -e "$BLUE>> Text content that will be checked (without metadata, html, and links):$NC"
 echo "$TEXT_CONTENT_WITHOUT_METADATA"
 
-echo -e "$BLUE>> Checking in 'en' (many technical words are in English anyway)...$NC"
-MISSPELLED=`echo "$TEXT_CONTENT_WITHOUT_METADATA" | aspell --lang=en --encoding=utf-8 --personal=./.aspell.en.pws list | sort -u`
+echo -e "$BLUE>> Checking in '$USE_LANGUAGE'"
+MISSPELLED=`echo "$MISSPELLED" | aspell --lang=$USE_LANGUAGE --encoding=utf-8 --personal=./.aspell.$USE_LANGUAGE.pws list | sort -u`
 
-if [ "$USE_LANGUAGE" != "en" ]
-then
-    echo -e "$BLUE>> Checking in '$USE_LANGUAGE' too..."
-    MISSPELLED=`echo "$MISSPELLED" | aspell --lang=$USE_LANGUAGE --encoding=utf-8 --personal=./.aspell.$USE_LANGUAGE.pws list | sort -u`
-fi
 
 NB_MISSPELLED=`echo "$MISSPELLED" | wc -l`
 
