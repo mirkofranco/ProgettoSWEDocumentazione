@@ -43,7 +43,7 @@ echo "$TEXT_CONTENT_WITHOUT_METADATA"
 
 
 echo -e "$BLUE>> Checking in '$USE_LANGUAGE'"
-MISSPELLED=`echo "$TEXT_CONTENT_WITHOUT_METADATA" | hunspell -d "it_IT" -t -l | sort -u`
+MISSPELLED=`echo "$MARKDOWN_FILES_CHANGED" | hunspell -d "it_IT" -t -l | sort -u`
 
 
 NB_MISSPELLED=`echo "$MISSPELLED" | wc -l`
