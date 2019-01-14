@@ -140,6 +140,7 @@ INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\e
 INPUT C:\Users\stefano\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
 INPUT tabella_modifiche.tex
 INPUT tabella_modifiche.tex
+INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecti1200.tfm
 INPUT images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
@@ -154,7 +155,6 @@ INPUT images\logo_intestazione.png
 INPUT .\images\logo_intestazione.png
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1728.tfm
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1728.tfm
-INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecti1200.tfm
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1440.tfm
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1440.tfm
 INPUT C:\Users\stefano\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd
