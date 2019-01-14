@@ -19,7 +19,7 @@ fi
 echo -e "$BLUE>> Following markdown files were changed in this pull request (commit range: $TRAVIS_COMMIT_RANGE):$NC"
 echo "$MARKDOWN_FILES_CHANGED"
 
-USE_LANGUAGE='it'
+USE_LANGUAGE='it_IT'
 echo -e "$BLUE>> Will use this language as main one:$NC"
 echo "$USE_LANGUAGE"
 
@@ -39,8 +39,9 @@ TEXT_CONTENT_WITHOUT_METADATA=`echo "$TEXT_CONTENT_WITHOUT_METADATA" | sed -E 's
 echo -e "$BLUE>> Text content that will be checked (without metadata, html, and links):$NC"
 echo "$TEXT_CONTENT_WITHOUT_METADATA"
 
+hunspell -d it_IT
 echo -e "$BLUE>> Checking in '$USE_LANGUAGE'"
-MISSPELLED=`echo "$MISSPELLED" | hunspell --lang=$USE_LANGUAGE --encoding=utf-8 --personal=./.hunspell.$USE_LANGUAGE.pws list | sort -u`
+MISSPELLED=`echo "$MISSPELLED" | hunspell TEXT_CONTENT_WITHOUT_METADATA list | sort -u`
 
 
 NB_MISSPELLED=`echo "$MISSPELLED" | wc -l`
