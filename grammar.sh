@@ -19,24 +19,24 @@ fi
 echo -e "$BLUE>> Following markdown files were changed in this pull request (commit range: $TRAVIS_COMMIT_RANGE):$NC"
 echo "$MARKDOWN_FILES_CHANGED"
 
-FOUND_LANGUAGES=`echo "$MARKDOWN_FILES_CHANGED" | xargs cat | grep "permalink: /" | sed -E 's/permalink: \/(it|en)\/.*/\1/g'`
-echo -e "$BLUE>> Languages recognized from the permalinks:$NC"
-echo "$FOUND_LANGUAGES"
+#FOUND_LANGUAGES=`echo "$MARKDOWN_FILES_CHANGED" | xargs cat | grep "permalink: /" | sed -E 's/permalink: \/(it|en)\/.*/\1/g'`
+#echo -e "$BLUE>> Languages recognized from the permalinks:$NC"
+#echo "$FOUND_LANGUAGES"
 
-while read LINE
-do
-    if [ "$LINE" != "en" ]
-    then
-        USE_LANGUAGE="$LINE"
+#while read LINE
+#do
+ #   if [ "$LINE" != "en" ]
+#    then
+ #       USE_LANGUAGE="$LINE"
 
-    fi
-done <<< "$FOUND_LANGUAGES"
+ #   fi
+#done <<< "$FOUND_LANGUAGES"
 
-if [ -z "$USE_LANGUAGE" ]
-then
-    USE_LANGUAGE='en'
-fi
-
+#if [ -z "$USE_LANGUAGE" ]
+#then
+#    USE_LANGUAGE='en'
+#fi
+USE_LANGUAGE='it'
 echo -e "$BLUE>> Will use this language as main one:$NC"
 echo "$USE_LANGUAGE"
 
