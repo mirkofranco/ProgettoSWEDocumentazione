@@ -1,1 +1,1 @@
-prova di testo corretta
+prova di testo corta corretta
