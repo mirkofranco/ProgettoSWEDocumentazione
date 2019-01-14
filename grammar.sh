@@ -41,10 +41,9 @@ echo "$USE_LANGUAGE"
 echo -e "$BLUE>> Text content that will be checked (without metadata, html, and links):$NC"
 echo "$TEXT_CONTENT_WITHOUT_METADATA"
 
-hunspell -d "it_IT" -l
-+
+
 echo -e "$BLUE>> Checking in '$USE_LANGUAGE'"
-MISSPELLED=`echo "$TEXT_CONTENT_WITHOUT_METADATA" |  | sort -u`
+MISSPELLED=`echo "$TEXT_CONTENT_WITHOUT_METADATA" | hunspell -d "it_IT" -t -l | sort -u`
 
 
 NB_MISSPELLED=`echo "$MISSPELLED" | wc -l`
