@@ -11,7 +11,6 @@ NC='\033[0m' # No Color
 cat .dictionary.dic | wc -l > dictionaryApp.dic
 cat .dictionary.dic >> dictionaryApp.dic
 cat dictionaryApp.dic > .dictionary.dic
-cat .dictionary.dic
 #MARKDOWN_FILES_CHANGED=`(git diff --name-only $TRAVIS_COMMIT_RANGE || true) | grep .md`
 TEX_FILES_CHANGED=` git ls-files | grep "tex"`
 
