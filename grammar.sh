@@ -62,4 +62,4 @@ fi
 
 echo -e "$BLUE>> errors"
 
-exit RETURN_STATUS
+exit $RETURN_STATUS
