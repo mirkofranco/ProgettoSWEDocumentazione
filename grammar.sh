@@ -49,7 +49,7 @@ echo -e "$BLUE>> Checking in '$USE_LANGUAGE'"
 MISSPELLED=`echo "$TEXT_CONTENT" | hunspell -d "$USE_LANGUAGE" --encoding=UTF-8 -t -l | sort -u`
 
 NB_MISSPELLED=`echo "$MISSPELLED" | wc -l`
-
+echo "$NB_MISSPELLED $MISSPELLED"
 if [ "$NB_MISSPELLED" -gt 0 ]
 then
     echo -e "$RED>> Words that might be misspelled, please check:$NC"
