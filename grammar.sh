@@ -8,10 +8,10 @@ BLUE='\033[0;36m'
 NC='\033[0m' # No Color
 
 #word count for .dictionary.dic
-echo "echo .dictionary.dic | wc -l > dictionaryApp.dic"
-echo ".dictionary.dic >> dictionaryApp.dic"
-echo "dictionaryApp.dic > .dictionary.dic"
-echo "cat .dictionary.dic"
+echo .dictionary.dic | wc -l > dictionaryApp.dic
+echo .dictionary.dic >> dictionaryApp.dic
+echo dictionaryApp.dic > .dictionary.dic
+cat .dictionary.dic
 #MARKDOWN_FILES_CHANGED=`(git diff --name-only $TRAVIS_COMMIT_RANGE || true) | grep .md`
 TEX_FILES_CHANGED=` git ls-files | grep "tex"`
 
