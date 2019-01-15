@@ -20,7 +20,7 @@ fi
 echo -e "$BLUE>> Following tex files were changed in this pull request (commit range: $TRAVIS_COMMIT_RANGE):$NC"
 echo "$TEX_FILES_CHANGED"
 
-USE_LANGUAGE='it_IT,en_US'
+USE_LANGUAGE='it_IT,en_US,dictionary'
 echo -e "$BLUE>> Will use this language as main one:$NC"
 echo "$USE_LANGUAGE"
 
