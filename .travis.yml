@@ -7,4 +7,4 @@ jobs:
   include:
     - stage: test
       name: "orthography"
-      script: bash grammar.sh
+      script: bash scripts/grammar.sh
