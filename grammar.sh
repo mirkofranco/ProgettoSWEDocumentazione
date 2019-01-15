@@ -12,8 +12,10 @@ cat .dictionary.dic | wc -l > dictionaryApp.dic
 cat .dictionary.dic >> dictionaryApp.dic
 cat dictionaryApp.dic > .dictionary.dic
 
-#MARKDOWN_FILES_CHANGED=`(git diff --name-only $TRAVIS_COMMIT_RANGE || true) | grep .md`
-TEX_FILES_CHANGED=` git ls-files | grep "tex"`
+#only diff files
+TEX_FILES_CHANGED=`(git diff --name-only $TRAVIS_COMMIT_RANGE || true) | grep .md`
+#all file check
+#TEX_FILES_CHANGED=` git ls-files | grep "tex"`
 
 if [ -z "$TEX_FILES_CHANGED" ]
 then
