@@ -3,4 +3,8 @@ before_install:
   - sudo apt-get install hunspell
   - sudo apt-get install myspell-en-us
   - sudo apt-get install myspell-it
-script: bash grammar.sh
+jobs:
+  include:
+    - stage: test
+      name: "orthography"
+      script: bash grammar.sh
