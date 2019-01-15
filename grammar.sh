@@ -8,19 +8,19 @@ BLUE='\033[0;36m'
 NC='\033[0m' # No Color
 
 #MARKDOWN_FILES_CHANGED=`(git diff --name-only $TRAVIS_COMMIT_RANGE || true) | grep .md`
-MARKDOWN_FILES_CHANGED=` git ls-files | grep "tex"`
+TEX_FILES_CHANGED=` git ls-files | grep "tex"`
 
-if [ -z "$MARKDOWN_FILES_CHANGED" ]
+if [ -z "$TEX_FILES_CHANGED" ]
 then
-    echo -e "$GREEN>> No markdown file to check $NC"
+    echo -e "$GREEN>> No TEX file to check $NC"
 
     exit 0;
 fi
 
-echo -e "$BLUE>> Following markdown files were changed in this pull request (commit range: $TRAVIS_COMMIT_RANGE):$NC"
-echo "$MARKDOWN_FILES_CHANGED"
+echo -e "$BLUE>> Following tex files were changed in this pull request (commit range: $TRAVIS_COMMIT_RANGE):$NC"
+echo "$TEX_FILES_CHANGED"
 
-USE_LANGUAGE='it_IT,en_EN'
+USE_LANGUAGE='it_IT,en_US'
 echo -e "$BLUE>> Will use this language as main one:$NC"
 echo "$USE_LANGUAGE"
 
@@ -36,11 +36,7 @@ echo "$USE_LANGUAGE"
 #TEXT_CONTENT_WITHOUT_METADATA=`echo "$TEXT_CONTENT_WITHOUT_METADATA" | sed  -n '/^\`\`\`/,/^\`\`\`/ !p'`
 # remove links
 #TEXT_CONTENT_WITHOUT_METADATA=`echo "$TEXT_CONTENT_WITHOUT_METADATA" | sed -E 's/http(s)?:\/\/([^ ]+)//g'`
-TEXT_CONTENT=`cat $(echo "$MARKDOWN_FILES_CHANGED")`
-
-echo -e "$BLUE>> Text content that will be checked (without metadata, html, and links):$NC"
-echo "$TEXT_CONTENT"
-
+TEXT_CONTENT=`cat $(echo "$TEX_FILES_CHANGED")`
 
 echo -e "$BLUE>> Checking in '$USE_LANGUAGE'"
 MISSPELLED=`echo "$TEXT_CONTENT" | hunspell -d "$USE_LANGUAGE" --encoding=UTF-8 -t -l | sort -u`
