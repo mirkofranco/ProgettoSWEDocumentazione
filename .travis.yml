@@ -10,5 +10,3 @@ jobs:
       script: bash scripts/grammar.sh
 notifications:
   slack: zerosevengroup:awH2p9uSzEPY9plMSyKBtAHF
-    on_success: always
-    on_failure: always 
