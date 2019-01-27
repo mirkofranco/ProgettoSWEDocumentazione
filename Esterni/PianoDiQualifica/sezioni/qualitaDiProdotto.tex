@@ -1,21 +1,41 @@
 \chapter{Qualità di Prodotto}
 \label{prodotto}
 \section{scopo}
-definizione standard
 
 \section{Qualità documento}
-
+\label{documento}
+Il team si impegna a produrre dei documenti di alta qualità, rispettando le seguenti caratteristiche.
 \subsection{Ortografia}
-
+Un documento, per essere privo di errori grammaticali e ortografici, viene controllato su diversi ambienti: durante la redazione tramite il controllo automatico integrato nell'ambiente di lavoro; nel repository condiviso tramite il plugin automatico eseguito da Travis-ci (con notifica in caso di errori); durante la verifica da parte di un \glossario{Verificatore}.
+\begin{itemize}
+    \item \textbf{Metrica:} Il numero di errori trovati durante la verifica;
+    \item \textbf{Soglia di accettabilità:} si accettano al massimo due errori dopo la verifica da parte dei \glossario{Verificatori};
+    \item \textbf{Soglia di ottimalità:} la soglia di ottimalità verrà raggiunta quando il documento sarà completamente privo di errori.
+\end{itemize}
 \subsection{Comprensibilità e leggibilità}
-
+Per misurare la leggibilità di un documento il gruppo ha scelto di utilizzare l'indice di \glossario{Gulpease}. Questo viene calcolato automaticamente ogni volta che il documento viene modificato nel repository condiviso.
+\begin{itemize}
+    \item \textbf{Metrica:} indice di \glossario{Gulpease};
+    \item \textbf{Soglia di accettabilità:} viene accettato un indice di Gulpease non inferiore a 40;
+    \item \textbf{Soglia di ottimalità:} la soglia di ottimalità verrà raggiunta con l'indice di Gulpease maggiore di 50.
+\end{itemize}
 \subsection{Correttezza dei contenuti}
-metrica:quantità di errori di contenuti
-
+La correttezza del documento è data anche dalla coerenza dei contenuti. Gli \glossario{Analisti} devono redigere dei buoni documenti, i verificatori devono controllarli e correggerli.
+\begin{itemize}
+    \item \textbf{Metrica:} numero di errori inerenti alla correttezza dei documenti;
+    \item \textbf{Soglia di accettabilità:} vengono accettati al massimo 3 errori di questo tipo dopo la verifica da parte dei \glossario{Verificatori};
+    \item \textbf{Soglia di ottimalità:} la soglia di ottimalità viene raggiunta quando il documento è privo di errori dopo la verifca.
+\end{itemize}
 \subsection{Adesione alla norme interne}
-metrica: errori di norme
+I contenuti di un documento devono rispettare le Norme di Progetto. I \glossario{Verificatori} hanno il compito di avvisare gli \glossario{Analisti} in caso di mancato rispetto delle norme.
+\begin{itemize}
+    \item \textbf{Metrica:} numero di errori inerenti alle Norme di Progetto;
+    \item \textbf{Soglia di accettabilità:} vengono accettati non più di 3 errori di questo tipo dopo la verifca da parte dei \glossario{Verificatori};
+    \item \textbf{Soglia di ottimalità:} la soglia di ottimalità viene raggiunta se il documento è privo di errori dopo la verifica.
+\end{itemize}
 
 \section{Qualità del software}
+\label{software}
 (-> principi iso9126. guardare sezioni vecchie) 
 
 \subsection{Funzionalità}
