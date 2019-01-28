@@ -32,7 +32,8 @@ USE_LANGUAGE='it_IT,en_US,scripts/.dictionary'
 echo -e "$BLUE>> Will use this language as main one:$NC"
 echo "$USE_LANGUAGE"
 
-TEXT_CONTENT=`cat $(echo "$TEX_FILES_CHANGED")`
+TEXT_CONTENT_ERR = `cat $(echo "$TEX_FILES_CHANGED") `
+TEXT_CONTENT= ${STRING[@]// \newglossaryentry{*}/}
 
 echo -e "$BLUE>> Checking in '$USE_LANGUAGE'"
 MISSPELLED=`echo "$TEXT_CONTENT" | hunspell -d "$USE_LANGUAGE" --encoding=UTF-8 -t -l | sort -u`
