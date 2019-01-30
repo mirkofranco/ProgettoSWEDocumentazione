@@ -8,7 +8,7 @@ viene applicato inoltre il ciclo di Deming (PDCA), al fine di assicurare un migl
 
 \subsection{Pianificazione}
 Per misurare l'efficacia della pianificazione viene adottata la \textbf{Schedule Variance (SV)}, che indica se si è in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto.
-Essa è il risultato della seguente formula.\\
+Essa è il risultato della seguente formula:\\
 \begin{center}
 	\begin{math}
 	SV = BCWP - BCWS
@@ -16,8 +16,8 @@ Essa è il risultato della seguente formula.\\
 \end{center}
 Dove:
 \begin{itemize}
-	\item[] \textbf{BCWS}\label{bcws}(Budgeted Cost of Work Scheduled) è il costo in giorni preventivato per il processo in esame(detto anche Planned Value);
-	\item[] \textbf{BCWP}\label{bcwp}(Budgeted Cost Of Work Performed) rappresenta (in giorni) il valore delle attività svolte.
+	\item[] \textbf{BCWS}\label{bcws} (Budgeted Cost of Work Scheduled) è il costo in giorni preventivato per il processo in esame(detto anche Planned Value);
+	\item[] \textbf{BCWP}\label{bcwp} (Budgeted Cost Of Work Performed) rappresenta (in giorni) il valore delle attività svolte.
 \end{itemize}
 
 \begin{itemize}
@@ -30,7 +30,26 @@ Dove:
 \subsection{Miglioramento}
 %STANDARD SPICE??%
 \subsection{Costo}
-%COST VARIANCE
+Per verificare che i costi siano conformi a quanto preventivato nel \textit{Piano di Progetto}, ciascun processo viene misurato tramite la sua \textbf{Cost Variance(CV)}, un valore positivo indica il rispetto dei costi preventivati, essa viene calcolata nel seguente modo:\\ 
+
+\begin{center}
+	\begin{math}
+	CV = BCWP - ACWP
+	\end{math}
+\end{center}
+Dove:
+\begin{itemize}
+	\item[] \textbf{BCWP} (Budgeted Cost Of Work Performed) descritto nella sezione \ref{bcwp}.
+	\item[] \textbf{ACWP} (Actual Cost of Work Performed) rappresenta il costo(in giorni) effettivamente sostenuto al momento del calcolo. 
+\end{itemize}
+
+
+\begin{itemize}
+	\item Range accettazione: Viene accettato uno scostamento massimo del 10\% rispetto ai costi preventivati;
+	\item Range ottimale: [>= 0].
+\end{itemize}
+
+
 \subsection{Analisi dei rischi}
 %spice +sv
 \section{Metriche}
