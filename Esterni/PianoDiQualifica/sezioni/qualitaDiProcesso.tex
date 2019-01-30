@@ -1,16 +1,37 @@
 \chapter{Qualità di Processo}
-\label{processo}
+\label{processo} 
 \section{Scopo}
-deming e pdca (da SoS)
+Al fine di garantire la massima efficacia del prodotto finale è necessario controllare e misurare i processi che concorrono alla sua realizzazione; a tal fine si fa riferimento ai principi stabiliti dallo standard ISO/IEC 12207 per la suddivsione dei processi in moduli disaccoppiati ma comunque coesi fra loro e alle responsabilità derivanti da ciascuno di essi.
+viene applicato inoltre il ciclo di Deming (PDCA), al fine di assicurare un miglioramento continuo delle attività di processo. 
 
 \section{Processi}
+
 \subsection{Pianificazione}
+Per misurare l'efficacia della pianificazione viene adottata la \textbf{Schedule Variance (SV)}, che indica se si è in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto.
+Essa è il risultato della seguente formula.\\
+\begin{center}
+	\begin{math}
+	SV = BCWP - BCWS
+	\end{math}
+\end{center}
+Dove:
+\begin{itemize}
+	\item[] \textbf{BCWS}\label{bcws}(Budgeted Cost of Work Scheduled) è il costo in giorni preventivato per il processo in esame(detto anche Planned Value);
+	\item[] \textbf{BCWP}\label{bcwp}(Budgeted Cost Of Work Performed) rappresenta (in giorni) il valore delle attività svolte.
+\end{itemize}
+
+\begin{itemize}
+	\item Range accettazione: $-BCWS *10\%$;
+	\item Range ottimale: [>= 0].
+\end{itemize}
+
+
 
 \subsection{Miglioramento}
-
+%STANDARD SPICE??%
 \subsection{Costo}
-
+%COST VARIANCE
 \subsection{Analisi dei rischi}
-
+%spice +sv
 \section{Metriche}
 tabella-metriche
