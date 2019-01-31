@@ -7,18 +7,36 @@ viene applicato inoltre il ciclo di Deming (PDCA), al fine di assicurare un migl
 \section{Processi}
 
 \subsection{Pianificazione}
-Per misurare l'efficacia della pianificazione viene adottata la \textbf{Schedule Variance (SV)}, che indica se si è in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto.
+Per misurare l'efficacia della pianificazione vengono adottate le seguenti metriche 
+
+\subsubsection{BCWP: Budgeted Cost Of Work Performed}\label{bcwp}
+Utlizzato per il calcolo di Cost Variance e Schedule Variance, rappresenta (in giorni) il valore delle attività svolte.
+\begin{itemize}
+	\item Range accettazione: [>= 0];
+	\item Range ottimale: [>= 0].
+\end{itemize}
+\subsubsection{BCWS: Budgeted Cost of Work Scheduled}\label{bcws}
+Rappresenta il costo in giorni preventivato per il processo in esame (è detto anche Planned Value);
+\begin{itemize}
+\item Range accettazione: [>=0].
+\item Range ottimale: [>= 0].
+\end{itemize}
+
+\subsubsection{ACWP: Actual Cost of Work Performed}\label{acwp}
+Rappresenta il costo (in \euro) effettivamente sostenuto al momento del calcolo.
+\begin{itemize}
+	\item Range accettazione: [>=0].
+	\item Range ottimale: [>= 0].
+\end{itemize}
+
+\subsubsection{SV: Schedule Variance}
+Metrica che indica se si è in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto.
 Essa è il risultato della seguente formula:\\
 \begin{center}
-	\begin{math}
-	SV = BCWP - BCWS
-	\end{math}
+	
+	$SV = $\hyperref[bcwp]{BCWP} $-$\hyperref[bcws]{BCWS}
+	
 \end{center}
-Dove:
-\begin{itemize}
-	\item[] \textbf{BCWS}\label{bcws} (Budgeted Cost of Work Scheduled) è il costo in giorni preventivato per il processo in esame(detto anche Planned Value);
-	\item[] \textbf{BCWP}\label{bcwp} (Budgeted Cost Of Work Performed) rappresenta (in giorni) il valore delle attività svolte.
-\end{itemize}
 
 \begin{itemize}
 	\item Range accettazione: $-BCWS *10\%$;
@@ -28,6 +46,7 @@ Dove:
 
 
 \subsection{Miglioramento}
+todo
 %STANDARD SPICE??%
 \subsection{Costo}
 Per verificare che i costi siano conformi a quanto preventivato nel \textit{Piano di Progetto}, ciascun processo viene misurato tramite la sua \textbf{Cost Variance(CV)}, un valore positivo indica il rispetto dei costi preventivati, essa viene calcolata nel seguente modo:\\ 
@@ -37,12 +56,10 @@ Per verificare che i costi siano conformi a quanto preventivato nel \textit{Pian
 	CV = BCWP - ACWP
 	\end{math}
 \end{center}
-Dove:
 \begin{itemize}
-	\item[] \textbf{BCWP} (Budgeted Cost Of Work Performed) descritto nella sezione \ref{bcwp}.
 	\item[] \textbf{ACWP} (Actual Cost of Work Performed) rappresenta il costo(in giorni) effettivamente sostenuto al momento del calcolo. 
 \end{itemize}
-
+Dove: BCWP e ACWP sono descritte rispettivamente nelle sezioni \ref{bcwp} e \ref{acwp}.
 
 \begin{itemize}
 	\item Range accettazione: Viene accettato uno scostamento massimo del 10\% rispetto ai costi preventivati;
@@ -51,6 +68,7 @@ Dove:
 
 
 \subsection{Analisi dei rischi}
+todo
 %spice +sv
 \section{Metriche}
 tabella-metriche
