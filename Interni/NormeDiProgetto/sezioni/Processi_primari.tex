@@ -140,6 +140,24 @@ La progettazione permette di:
 	\item perseguire la correttezza per costruzione.
 \end{itemize}
 Come da \textit{Piano di Progetto v1.0.0} la Progettazione si svolgerà nell'arco di due periodi distinti. 
+Nel primo di questi due periodi viene identificata una prima decomposizione logica dell'architettura, dopo aver opportunamente studiato i vari design patterns. Nel secondo la progettazione avviene in modo atomico e dettagliato, in modo che i \textit{Programmatori} possano implementare l'intero sistema nel modo più parallelo possibile. 
+L'architettura dovrà soddisfare le seguenti qualità: 
+\begin{itemize}
+	\item \textbf{Sufficienza}: deve soddisfare i requisiti descritti nell'\textit{Analisi dei Requisiti v1.0.0};
+	\item \textbf{Comprensibilità}: può essere compresa facilmente da tutti gli \glossario{stakeholder};
+	\item \textbf{Modularità}: deve essere suddivisa in parti chiare e ben distinte, ognuna con una singola responsabilità, perseguendo information hiding;
+	\item \textbf{Robustezza}: è in grado di sopportare ingressi di diversi, sia da parte dell'utente che dall'ambiente;
+	\item \textbf{Flessibilità}: deve permettere modifiche a costi contenuti in caso di variazione dei requisiti;
+	\item \textbf{Riusabilità}: deve permettere il riuso delle sue parti in altre applicazioni;
+	\item \textbf{Efficienza}: deve utilizzare il minor numero di risorse possibili, in termini di tempo e spazio;
+	\item \textbf{Affidabilità}: deve garantire di rispettare le sue specifiche di funzionamento nel tempo;
+	\item \textbf{Disponibilità}: deve essere possibile effettuare manutenzione in tempi ridotti, possibilmente senza rendere indisponibile l'intero sistema;
+	\item \textbf{Sicurezza}: deve essere esente da gravi malfunzionamenti e non deve essere vulnerabile a intrusioni;
+	\item \textbf{Semplicità}: ogni parte contiene solo il necessario;
+	\item \textbf{Incapsulazione}: le componente devono essere progettate in modo da nascondere dettagli implementativi;
+	\item \textbf{Coesione}: le parti con un obbiettivo comune devono stare insieme;
+	\item \textbf{Basso accopiamento}: parti distinte devono dipendere poco o niente tra di loro.
+\end{itemize}
 
 \subsection{Codifica}
 Questa attività segue la Progettazione e consiste nell'implementazione effettiva di quanto precedentemente progettato.
