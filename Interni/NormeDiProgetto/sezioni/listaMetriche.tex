@@ -1,0 +1,62 @@
+\chapter{Metriche}
+
+\subsection{Metriche per la qualità di processo}
+Verranno utilizzate le seguenti metriche per valutare l'efficienza e l'efficacia 
+processi.
+\subsection{Metriche per la qualità di prodotto}
+Verranno utilizzate le seguenti metriche per valutare l'efficienza e l'efficacia dei
+prodotti.
+\subsubsection{MPR001 Indice di Gulpease}
+L’Indice Gulpease è un indice di leggibilità di un testo tarato sulla lingua italiana, per il suo calcolo vengono considerate due variabili linguistiche: la lunghezza delle parole e la lunghezza delle frasi rispetto al numero delle lettere.
+\begin{center}{$G=89+\frac{300\times N_F-10\times N_L}{N_P}$}\end{center}
+
+$N_F$ indica il numero delle frasi, $N_L$ indica il numero di lettere e $N_P$ indica il numero di parole nel testo.
+\subsubsection{MPR002 Formula di Flesch}
+
+\subsubsection{MPR003 Errori ortografici}
+
+\subsubsection{MPR004 Completezza dell'implementazione funzionale}
+Misura la quantità in percentuale di requisiti funzionali soddisfatti dalla corrente implementazione. Viene utilizzata la seguente formula: 
+\begin{center}{$CO=\frac{N_{RS}}{N_{RT}}\times 100$}\end{center}
+$N_{RS}$  indica il numero di requisiti soddistatti, $N_{RT}$  indica il numero totale di requisiti.
+
+\subsubsection{MPR005 Correttezza  rispetto alle attese}
+Misura la percentuale di risultati affini rispetto alle attese. Viene utilizzata la seguente formula:
+\begin{center}{$CRA=(1-\frac{N_{TD}}{N_{TE}})\times 100$}\end{center}
+${N_{TD}}$ indica il numero di test che producono risultati discordi rispetto alle attese, ${N_{TE}}$ indica il numero totale di test-case eseguiti.
+
+\subsubsection{MPR006 Totalità di failure}
+Misura la percentuale di test conclusi con una failure. Viene utilizzata la seguente formula:
+\begin{center}{$TF=\frac{N_{FR}}{N_{TE}}\times 100$}\end{center}
+${N_{FR}}$ indica il numero di failure rilevati durante l'attività di testing,
+${N_{TE}}$ indica il numero totale di test-case eseguiti.
+
+\subsubsection{MPR007 Tempo di risposta}
+Misura la differenza media di tempo trascorsa dall’esecuzione di una funzionalità e la restituzione
+dell’eventuale risultato. Viene utilizzata la seguente formula:
+\begin{center}{$TR=\frac{\sum\limits_{i=1}^n {T_i }}{n}$}\end{center}
+${T_i}$ indica il tempo (in secondi) trascorso dalla richiesta di una funzionalità ed il completamento di questa con un eventuale restituzione del risultato;\\
+
+\subsubsection{MPR008 Comprensibilità  delle funzionalità offerte}
+Misura la quantità in percentuale di operazioni comprese dall’utente che non richiedono la
+consultazione del manuale. Viene utilizzata la seguente formula:
+\begin{center}{$C=\frac{N_{FC}}{N_{FO}}\times 100$}\end{center}
+${N_{FC}}$ indica il numero di funzionalità comprese in modo immediato dall'utente, ${N_{FO}}$ indica il numero di funzionalità totali offerte dal sistema;
+	
+\subsubsection{MPR09 Facilità apprendimento}
+Misura il tempo medio che occorre ad un utente per imparare ad usare in maniera corretta
+una certa funzionalità. Si misura tramite un indicatore numerico che indica i minuti
+impiegati da un utente per apprendere il funzionamento di una certa funzionalità;
+
+\subsubsection{MPR010 Capacità di analisi failure}
+Misura la quantità in percentuale di failures incontrate di cui sono state tracciate le cause. Viene
+utilizzata la seguente formula:
+\begin{center}{$CAF=\frac{N_{FI}}{N_{FR}}\times 100 $}\end{center}
+${N_{FI}}$ indica il numero di failure delle quali sono state individuate le cause, ${N_{FR}}$ indica il numero di failures rilevate.
+
+\subsubsection{MPR011 Impatto delle modifiche}
+Misura la quantità in percentuale di modifiche introdotte per risolvere failures che hanno introdotto nuove failures nel prodotto. Viene utilizzata la seguente formula:
+\begin{center}{$IM=\frac{N_{FRE}}{N_{FR}}\times 100 $}\end{center}
+${N_{FRF}}$ indica il numero di failure risolte introducentro nuove failure, ${N_{FR}}$ indica il numero di failures risolte.
+
+
