@@ -8,16 +8,16 @@ standard ISO/IEC 25010 le principale caratteristiche da possedere nel ciclo di v
 \label{documento}
 Il team si impegna a produrre dei documenti di alta qualità, rispettando le seguenti caratteristiche.
 \subsection{Ortografia}
-Un documento, per essere privo di errori grammaticali e ortografici, viene controllato su diversi ambienti: durante la redazione tramite il controllo automatico integrato nell'ambiente di lavoro; nel repository condiviso tramite il correttore automatico eseguito da Travis-ci (con notifica in caso di errori); durante la verifica da parte di un \glossario{Verificatore}.
+Un documento, per essere privo di errori grammaticali e ortografici, viene controllato su diversi ambienti: durante la redazione tramite il controllo automatico integrato nell'ambiente di lavoro; nel repository condiviso tramite il correttore automatico eseguito da Travis-ci (con notifica in caso di errori); durante la verifica da parte di un\glossario{Verificatore}.
 \begin{itemize}
     \item \textbf{Metrica:} Il numero di errori trovati durante la verifica;
     \item \textbf{Soglia di accettabilità:} si accettano al massimo due errori dopo la verifica da parte dei \glossario{Verificatori};
     \item \textbf{Soglia di ottimalità:} la soglia di ottimalità verrà raggiunta quando il documento sarà completamente privo di errori.
 \end{itemize}
 \subsection{Comprensibilità e leggibilità}
-Per misurare la leggibilità di un documento il gruppo ha scelto di utilizzare l'indice di \glossario{Gulpease}. Questo viene calcolato automaticamente ogni volta che il documento viene modificato nel repository condiviso.
+Per misurare la leggibilità di un documento il gruppo ha scelto di utilizzare l'indice di\glossario{Gulpease}. Questo viene calcolato automaticamente ogni volta che il documento viene modificato nel repository condiviso.
 \begin{itemize}
-    \item \textbf{Metrica:} indice di \glossario{Gulpease};
+    \item \textbf{Metrica:} \textbf{indice di Gulpease$_{G}$};
     \item \textbf{Soglia di accettabilità:} viene accettato un indice di Gulpease non inferiore a 40;
     \item \textbf{Soglia di ottimalità:} la soglia di ottimalità verrà raggiunta con l'indice di Gulpease maggiore di 50.
 \end{itemize}
@@ -88,4 +88,11 @@ Nello specifico il software deve avere le seguenti caratteristiche:
 	\item \textbf{Testabilità:} Il software deve essere testabile per consentire la validazione e l'approvazione di modifiche.
 \end{itemize}	
 
-\section{Metriche}
+\section{Tabella delle metriche}
+\begin{center}
+	\begin{tabularx}{\textwidth}{|c|c|c|c|}
+		\hline 
+		\textbf{ID} & \textbf{Nome} & \textbf{Range di accettazione}  & \textbf{Range di ottimalità}  \\ 
+		\hline
+	\end{tabularx}
+\end{center}

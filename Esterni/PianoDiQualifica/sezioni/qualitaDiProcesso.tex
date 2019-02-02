@@ -21,7 +21,7 @@ Verificare che il processo di pianificazione di progetto risulti adeguato è un 
 \end{itemize}
 \paragraph{Metriche utilizzate}
 \begin{itemize}
-	\item \textbf{MP001}: Budgeted Cost Of Work Performed;
+	\item \textbf{MP001}: Budgeted Cost of Work Performed;
 	\item \textbf{MP002}: Budgeted Cost of Work Scheduled;
 	\item \textbf{MP003}: Actual Cost of Work Performed;
 	\item \textbf{MP004}: Schedule Variance.
@@ -38,8 +38,8 @@ Lo standard SPICE definisce dei livelli di maturità da perseguire per assicurar
 
 \paragraph{Metriche utilizzate}
 \begin{itemize}
-	\item \textbf{MP006}: SPICE capability level;
-	\item \textbf{MP007}: SPICE process attributes;
+	\item \textbf{MP005}: SPICE capability level;
+	\item \textbf{MP006}: SPICE process attributes;
 \end{itemize}
 
 \subsection{QP003: Analisi e prevenzione dei rischi}
@@ -52,8 +52,8 @@ Il processo intende individuare e prevenire i rischi che potrebbero insorgere du
 
 \paragraph{Metriche utilizzate}
 \begin{itemize}	
-	\item \textbf{MP008}: Occorrenza rischi non previsti;
-	\item \textbf{MP009}: Indisponibilità dei servizi.
+	\item \textbf{MP007}: Occorrenza rischi non previsti;
+	\item \textbf{MP008}: Indisponibilità dei servizi.
 \end{itemize}
 \subsection{QP004: Verifica del software}
 Il processo si occupa di verificare che il software prodotto sia conforme ai \glossario{requisiti} stabiliti con la proponente e la committente, che sia privo di errori e che il codice scritto risulti chiaro, conciso ed efficiente.
@@ -67,14 +67,14 @@ Il processo si occupa di verificare che il software prodotto sia conforme ai \gl
 \paragraph{Metriche utilizzate}
 
 \begin{itemize}
-	\item \textbf{MP010}: Complessità ciclomatica;
-	\item \textbf{MP011}: Numero di parametri per metodo;
-	\item \textbf{MP012}: Numero di livelli di annidamento;
-	\item \textbf{MP013}: Attributi per classe;
-	\item \textbf{MP014}: Linee di codice per commento;
-	\item \textbf{MP015}: Flusso di informazioni;
-	\item \textbf{MP016}: Accoppiamento Afferente;
-	\item \textbf{MP017}: Accoppiamento Efferente;
+	\item \textbf{MP009}: Complessità ciclomatica;
+	\item \textbf{MP010}: Numero di parametri per metodo;
+	\item \textbf{MP011}: Numero di livelli di annidamento;
+	\item \textbf{MP012}: Attributi per classe;
+	\item \textbf{MP013}: Linee di codice per commento;
+	\item \textbf{MP014}: Flusso di informazioni;
+	\item \textbf{MP015}: Accoppiamento Afferente;
+	\item \textbf{MP016}: Accoppiamento Efferente;
 
 	
 \end{itemize}
@@ -88,15 +88,91 @@ Si fa riferimento a scopo informativo al libro \textit{Software Testing Fundamen
 \end{itemize}
 \paragraph{Metriche utilizzate}
 \begin{itemize}
-	\item \textbf{MP018}: Copertura del codice;
-	\item \textbf{MP019}: Efficacia dei test;
-	\item \textbf{MP020}: Errori risolti tramite test.
+	\item \textbf{MP017}: Copertura del codice;
+	\item \textbf{MP018}: Efficacia dei test;
+	\item \textbf{MP019}: Errori risolti tramite test.
 \end{itemize}
 
 \subsection{QP006: Conformità dei requisiti}
-
 \subsection{QP007: Versionamento e build}
-
-
-\section{Metriche}
-tabella-metriche
+\section{Tabella dei processi}
+\begin{center}
+\begin{tabularx}{\textwidth}{|c|c|}
+	\hline 
+	\textbf{ID} & \textbf{Nome} \\ 
+	\hline 
+	QP001 &  Pianificazione delle attività di progetto,
+			valutazione e controllo dei processi \\ 
+	\hline 
+	QP002 &  Miglioramento continuo delle attività di processo \\ 
+	\hline 
+	QP003 &  Analisi e prevenzione dei rischi \\ 
+	\hline 
+	QP004 &  Verifica del software \\ 
+	\hline 
+	QP005 &  Gestione dei test \\ 
+	\hline 
+	QP006 &  Conformità dei requisiti \\ 
+	\hline 
+	QP007 &  Versionamento e build \\ 
+	\hline
+	\caption{Tabella dei processi}
+\end{tabularx}
+\end{center}
+\section{Tabella delle metriche}
+\begin{center}
+\begin{tabularx}{\textwidth}{|c|c|c|c|}
+	\hline 
+	\textbf{ID} & \textbf{Nome} & \textbf{Range di accettazione}  & \textbf{Range di ottimalità}  \\ 
+	\hline
+	\multicolumn{4}{c}{\textbf{QP001}} \\
+	\hline
+	MP001 & Budget Cost of Work Performed &  &  \\ 
+	\hline 
+	MP002 & Budget Cost of Work Scheduled &  &  \\ 
+	\hline 
+	MP003 & Actual Cost of Work Performed &  &  \\ 
+	\hline 
+	MP004 & Schedule Variance &  &  \\ 
+	\hline
+	\multicolumn{4}{c}{\textbf{QP002}} \\
+	\hline
+	MP005 & SPICE capability level &  &  \\ 
+	\hline 
+	MP006 & SPICE process attributes &  &  \\ 
+	\hline
+	\multicolumn{4}{c}{\textbf{QP003}} \\
+	\hline
+	MP007 & Occorrenza rischi non previsti &  &  \\ 
+	\hline 
+	MP008 & Indisponibilità dei servizi &  &  \\ 
+	\hline
+	\multicolumn{4}{c}{\textbf{QP004}} \\
+	\hline
+	MP009 & Complessità ciclomatica &  &  \\ 
+	\hline 
+	MP010 & Numero di parametri per metodo &  &  \\ 
+	\hline 
+	MP011 & Numero di livelli di annidamento &  &  \\ 
+	\hline 
+	MP012 & Attributi per classe &  &  \\ 
+	\hline 
+	MP013 & Linee di codice per commento &  &  \\ 
+	\hline
+	MP014 & Flusso di informazioni &  &  \\ 
+	\hline 
+	MP015 & Accoppiamento Afferente &  &  \\ 
+	\hline 
+	MP016 & Accoppiamento Efferente &  &  \\ 
+	\hline
+	\multicolumn{4}{c}{\textbf{QP005}} \\
+	\hline
+	MP017 & Copertura del codice &  &  \\ 
+	\hline 
+	MP018 & Efficacia dei test &  &  \\ 
+	\hline 
+	MP019 & Errori risolti tramite test &  &  \\ 
+	\hline
+	\caption{Tabella delle metriche dei processi}
+\end{tabularx}
+\end{center}
