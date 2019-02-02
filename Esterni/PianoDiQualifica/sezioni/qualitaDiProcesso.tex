@@ -1,74 +1,89 @@
 \chapter{Qualità di Processo}
 \label{processo} 
 \section{Scopo}
-Al fine di garantire la massima efficacia del prodotto finale è necessario controllare e misurare i processi che concorrono alla sua realizzazione; a tal fine si fa riferimento ai principi stabiliti dallo standard ISO/IEC 12207 per la suddivisione dei processi in moduli disaccoppiati ma comunque coesi fra loro e alle responsabilità derivanti da ciascuno di essi.
+Al fine di garantire la massima efficacia del prodotto finale è necessario controllare e misurare i processi che concorrono alla sua realizzazione; a tal fine si fa riferimento allo standard ISO/IEC 15504 conosciuto anche come SPICE per una valutazione complessiva sulla maturità dei processi e il loro miglioramento continuo.\\
 Viene applicato inoltre il ciclo di Deming (PDCA), al fine di assicurare un miglioramento continuo delle attività di processo. 
 
 \section{Processi}
+Vengono elencati gli obiettivi perseguiti dal gruppo per assicurare la qualità di processo, insieme alle metriche adottate per misurare ciascuno di essi.
+\subsection{QP001: Pianificazione delle attività di progetto, valutazione e controllo dei processi}
+Verificare che il processo di pianificazione di progetto risulti adeguato è un obiettivo di primaria importanza: è opportuno quindi assicurarsi che la pianificazione temporale (comprendente l'assegnazione di \glossario{task} in conformità agli incrementi previsti nel calendario)e i costi sostenuti siano supportati da metriche in grado di verificare che lo stato del progetto sia conforme alle pianificazioni precedentemente prodotte.
 
-\subsection{Pianificazione}
-Per misurare l'efficacia della pianificazione vengono adottate le seguenti metriche 
 
-\subsubsection{BCWP: Budgeted Cost Of Work Performed}\label{bcwp}
-Utilizzato per il calcolo di Cost Variance e Schedule Variance, rappresenta (in giorni) il valore delle attività svolte.
+\paragraph{Obiettivi}
 \begin{itemize}
-	\item Range accettazione: [>= 0];
-	\item Range ottimale: [>= 0].
+	\item \textbf{Pianificazione temporale}
+		\begin{itemize}
+			\item \textbf{Gestione delle task}: verificare che l'assegnazione e il completamento delle task sia conforme a quanto pianificato e che non si verifichino scostamenti;
+			\item \textbf{Calendario}: la pianificazione delle task da assegnare deve essere adatta alla quantità di lavoro richiesto per il suo completamento.
+		\end{itemize}
+	\item \textbf{Budget}: accertarsi che i costi attuali derivanti dal lavoro svolto siano il più possibile conformi a quanto preventivato.
 \end{itemize}
-\subsubsection{BCWS: Budgeted Cost of Work Scheduled}\label{bcws}
-Rappresenta il costo in giorni preventivato per il processo in esame (è detto anche Planned Value):
+\paragraph{Metriche utilizzate}
 \begin{itemize}
-\item Range accettazione: [>=0].
-\item Range ottimale: [>= 0].
-\end{itemize}
-
-\subsubsection{ACWP: Actual Cost of Work Performed}\label{acwp}
-Rappresenta il costo (in \euro) effettivamente sostenuto al momento del calcolo:
-\begin{itemize}
-	\item Range accettazione: [>=0].
-	\item Range ottimale: [>= 0].
+	\item \textbf{MP001}: Budgeted Cost Of Work Performed;
+	\item \textbf{MP002}: Budgeted Cost of Work Scheduled;
+	\item \textbf{MP003}: Actual Cost of Work Performed;
+	\item \textbf{MP004}: Schedule Variance.
 \end{itemize}
 
-\subsubsection{SV: Schedule Variance}
-Metrica che indica se si è in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto.
-Essa è il risultato della seguente formula:\\
-\begin{center}
+
+\subsection{QP002: Miglioramento continuo delle attività di processo}
+Lo standard SPICE definisce dei livelli di maturità da perseguire per assicurare il miglioramento continuo delle attività di processo, obiettivo da perseguire se viene adottato il modello PDCA per lo sviluppo di un progetto software.
+\paragraph{Obiettivi}
+\begin{itemize}
+	\item \textbf{Maturità dei processi}: un processo diventa maturo quando il suo risultato è prevedibile prima della sua attuazione e risulta ottimizzato quando le risorse da lui impiegate vengono utlizzate con la massima efficienza possibile: vista l'inesperienza del gruppo, ottenere la piena ottimalità di tutti i processi è un obbiettivo molto difficile da raggiungere, tuttavia, attraverso il processo di miglioramento continuo è possibile prevedere una piena maturità degli stessi.\\
+	A tal scopo si fa riferimento alle metriche definite dallo standard ISO/IEC 15504 per la verifica della qualità dei processi.
+\end{itemize}
+
+\paragraph{Metriche utilizzate}
+\begin{itemize}
+	\item \textbf{MP006}: SPICE capability level;
+	\item \textbf{MP007}: SPICE process attributes;
+\end{itemize}
+
+\subsection{QP003: Analisi e prevenzione dei rischi}
+Il processo intende individuare e prevenire i rischi che potrebbero insorgere durante l'attività di progetto:
+
+\paragraph{Obiettivi}
+\begin{itemize}
+	\item \textbf{Individuazione dei rischi}: per ogni fase del progetto, verranno analizzati e attualizzati i rischi che potrebbero insorgere, cercando, ove possibile, di automatizzare le procedure che mitigano la loro occorrenza;
+\end{itemize}
+
+\paragraph{Metriche utilizzate}
+\begin{itemize}	
+	\item \textbf{MP008}: Occorrenza rischi non previsti;
+	\item \textbf{MP009}: Indisponibilità dei servizi.
+\end{itemize}
+\subsection{QP004: Verifica del software}
+Il processo si occupa di verificare che il software prodotto sia conforme ai \glossario{requisiti} stabiliti con la proponente e la committente, che sia privo di errori e che il codice scritto risulti chiaro, conciso ed efficente.
+\paragraph{Obiettivi}
+\begin{itemize}
+	\item \textbf{Chiarezza del codice}: il codice prodotto deve risultare il più possibile chiaro, devono essere seguite le norme descritte nelle \textit{Norme di Progetto} ed esso deve essere supportato da commenti che chiariscano il funzionamento delle unità di codice a cui fanno riferimento;
+	\item \textbf{Prevenzione degli errori} ogni unità di codice deve risultare il più possibile privo di errori e di \glossario{bug} prima del suo utilizzo.
+	\item \textbf{Passaggio dei Test}: ogni unità di codice fa riferimento a un test di unità a lui assegnato, è obbligatorio che tutti i test siano definiti pre-sviluppo e che ogni unità di codice passi il test a d essa riferita.\\
+	Per ulteriori informazioni si rimanda alla sezione \ref{test}.
+\end{itemize}
+\paragraph{Metriche utilizzate}
+
+\begin{itemize}
+	\item \textbf{MP010}: Complessità ciclomatica;
+	\item \textbf{MP011}: Numero di parametri per metodo;
+	\item \textbf{MP012}: Numero di livelli di annidamento;
+	\item \textbf{MP013}: Attributi per classe;
+	\item \textbf{MP014}: Linee di codice per commento;
+	\item \textbf{MP015}: Flusso di informazioni;
+	\item \textbf{MP016}: Accoppiamento Afferente;
+	\item \textbf{MP017}: Accoppiamento Efferente;
+	\item \textbf{MP018}: Copertura del codice.
 	
-	$SV = $\hyperref[bcwp]{BCWP} $-$\hyperref[bcws]{BCWS}
-	
-\end{center}
-
-\begin{itemize}
-	\item Range accettazione: $-BCWS *10\%$;
-	\item Range ottimale: [>= 0].
 \end{itemize}
 
+\subsection{QP005: Gestione dei Test}\label{test}
+
+\paragraph{Obiettivi}
+\paragraph{Metriche utilizzate}
 
 
-\subsection{Miglioramento}
-%todo
-%STANDARD SPICE??%
-\subsection{Costo}
-Per verificare che i costi siano conformi a quanto preventivato nel \textit{Piano di Progetto}, ciascun processo viene misurato tramite la sua \textbf{Cost Variance(CV)}, un valore positivo indica il rispetto dei costi preventivati, essa viene calcolata nel seguente modo:\\ 
-
-\begin{center}
-	\begin{math}
-	CV = BCWP - ACWP
-	\end{math}
-\end{center}
-\begin{itemize}
-	\item[] \textbf{ACWP} (Actual Cost of Work Performed) rappresenta il costo(in giorni) effettivamente sostenuto al momento del calcolo. 
-\end{itemize}
-Dove: BCWP e ACWP sono descritte rispettivamente nelle sezioni \ref{bcwp} e \ref{acwp}.
-
-\begin{itemize}
-	\item Range accettazione: Viene accettato uno scostamento massimo del 10\% rispetto ai costi preventivati;
-	\item Range ottimale: [>= 0].
-\end{itemize}
-
-
-\subsection{Analisi dei rischi}
-%todo
-%spice +sv
 \section{Metriche}
 tabella-metriche
