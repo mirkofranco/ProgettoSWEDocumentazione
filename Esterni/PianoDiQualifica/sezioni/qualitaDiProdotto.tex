@@ -8,32 +8,32 @@ standard ISO/IEC 25010 le principale caratteristiche da possedere nel ciclo di v
 \label{documento}
 Il team si impegna a produrre dei documenti di alta qualità, rispettando le seguenti caratteristiche.
 \subsection{Ortografia}
-Un documento, per essere privo di errori grammaticali e ortografici, viene controllato su diversi ambienti: durante la redazione tramite il controllo automatico integrato nell'ambiente di lavoro; nel repository condiviso tramite il correttore automatico eseguito da Travis-ci (con notifica in caso di errori); durante la verifica da parte di un\glossario{Verificatore}.
+\subsubsection{obbiettivi}
+Un documento, per essere privo di errori grammaticali e ortografici, viene controllato su diversi ambienti: durante la redazione, tramite il controllo automatico integrato nell'ambiente di lavoro; nel repository condiviso, tramite il correttore automatico eseguito da Travis-ci (con notifica in caso di errori); durante la verifica, da parte di un\glossario{Verificatore}.\\
+Le metriche utilizzate per la valutazione, definite nelle Norme di progetti in ??, sono le seguenti:
 \begin{itemize}
-    \item \textbf{Metrica:} Il numero di errori trovati durante la verifica;
-    \item \textbf{Soglia di accettabilità:} si accettano al massimo due errori dopo la verifica da parte dei \glossario{Verificatori};
-    \item \textbf{Soglia di ottimalità:} la soglia di ottimalità verrà raggiunta quando il documento sarà completamente privo di errori.
+    \item MPR001 numero di errori ortografici.
 \end{itemize}
 \subsection{Comprensibilità e leggibilità}
-Per misurare la leggibilità di un documento il gruppo ha scelto di utilizzare l'indice di\glossario{Gulpease}. Questo viene calcolato automaticamente ogni volta che il documento viene modificato nel repository condiviso.
+\subsubsection{obbiettivi}
+Per misurare la leggibilità di un documento il gruppo ha scelto di utilizzare l'indice di\glossario{Gulpease}. Questo viene calcolato automaticamente ogni volta che il documento viene modificato nel repository condiviso.\\
+Le metriche utilizzate per la valutazione, definite nelle Norme di progetti in ??, sono le seguenti:
 \begin{itemize}
-    \item \textbf{Metrica:} \textbf{indice di Gulpease$_{G}$};
-    \item \textbf{Soglia di accettabilità:} viene accettato un indice di Gulpease non inferiore a 40;
-    \item \textbf{Soglia di ottimalità:} la soglia di ottimalità verrà raggiunta con l'indice di Gulpease maggiore di 50.
+    \item MPR002 indice di Gulpease$_{G}$.
 \end{itemize}
 \subsection{Correttezza dei contenuti}
-La correttezza del documento è data anche dalla coerenza dei contenuti. Gli \glossario{Analisti} devono redigere dei buoni documenti, i verificatori devono controllarli e correggerli.
+\subsubsection{obbiettivi}
+La correttezza del documento è data anche dalla coerenza dei contenuti. Gli \glossario{Analisti} devono redigere dei buoni documenti, i verificatori devono controllarli e correggerli.\\
+Le metriche utilizzate per la valutazione, definite nelle Norme di progetti in ??, sono le seguenti:
 \begin{itemize}
-    \item \textbf{Metrica:} numero di errori inerenti alla correttezza dei documenti;
-    \item \textbf{Soglia di accettabilità:} vengono accettati al massimo 3 errori di questo tipo dopo la verifica da parte dei \glossario{Verificatori};
-    \item \textbf{Soglia di ottimalità:} la soglia di ottimalità viene raggiunta quando il documento è privo di errori dopo la verifica.
+    \item MPR003 Numero di errori inerenti alla correttezza dei documenti.
 \end{itemize}
 \subsection{Adesione alla norme interne}
-I contenuti di un documento devono rispettare le Norme di Progetto. I \glossario{Verificatori} hanno il compito di avvisare gli \glossario{Analisti} in caso di mancato rispetto delle norme.
+\subsubsection{obbiettivi}
+I contenuti di un documento devono rispettare le Norme di Progetto. I \glossario{Verificatori} hanno il compito di avvisare gli \glossario{Analisti} in caso di mancato rispetto delle norme.\\
+Le metriche utilizzate per la valutazione, definite nelle Norme di progetti in ??, sono le seguenti:
 \begin{itemize}
-    \item \textbf{Metrica:} numero di errori inerenti alle Norme di Progetto;
-    \item \textbf{Soglia di accettabilità:} vengono accettati non più di 3 errori di questo tipo dopo la verifica da parte dei \glossario{Verificatori};
-    \item \textbf{Soglia di ottimalità:} la soglia di ottimalità viene raggiunta se il documento è privo di errori dopo la verifica.
+    \item MPR004 numero di errori inerenti alle Norme di Progetto.
 \end{itemize}
 
 \section{Qualità del software}
@@ -48,8 +48,8 @@ Rappresenta la capacità del prodotto software di provvedere le funzionalità ne
 
 Le metriche utilizzate per la valutazione, definite nelle Norme di progetti in ??, sono le seguenti:
 \begin{itemize}
-	\item MPR000 Completezza dell'implementazione funzionale
-	\item MPR000 Correttezza rispetto alle attese;
+	\item MPR005 Completezza dell'implementazione funzionale;
+	\item MPR006 Correttezza rispetto alle attese.
 \end{itemize}
 
 \subsection{Affidabilità}
@@ -63,7 +63,7 @@ Rappresenta la capacità del prodotto software di svolgere correttamente le sue 
 
 Le metriche utilizzate per la valutazione, definite nelle Norme di progetto in ??, sono le seguenti:
 \begin{itemize}
-	\item MPR000 Totalità di failure.
+	\item MPR007 Totalità di failure.
 \end{itemize}
 
 
@@ -76,11 +76,11 @@ Rappresenta la capacità di un prodotto software di realizzare le funzioni richi
 \end{itemize}
 Le metriche utilizzate per la valutazione, definite nelle Norme di progetto in ??, sono le seguenti:
 \begin{itemize}
-	\item MPR000 Tempo di risposta.
+	\item MPR008 Tempo di risposta.
 \end{itemize}
 
 \subsection{Usabilità}
-L'usabilità rappresenta il grado di facilità e soddisfazione con cui si compie l'interazione tra l'uomo e il \textit{prodotto$_{G}$}, ovvero l'efficacia, l'efficienza e la soddisfazione con le quali gli utenti raggiungono determinati obiettivi in determinati contesti.
+L'usabilità rappresenta il grado di facilità e soddisfazione con cui si compie l'interazione tra l'uomo e il \textit{prodotto$_{G}$}, ovvero l'efficacia, l'efficienza e la soddisfazione con le quali gli utenti raggiungono determinati obbiettivi in determinati contesti.
 \subsubsection{Obbiettivi } Il prodotto dovrà possedere le seguenti caratteristiche :
 \begin{itemize}
 	\item \textbf{Apprendibilità:}l'utente deve essere in grado di riconoscele le funzionalità offerte dal software e comprendere se sono utili per il proprio scopo; ---->(prima)Indica il rapporto tra tempo necessario per l'apprendimento e quantità di informazioni correttamente apprese.
@@ -96,10 +96,10 @@ L'usabilità rappresenta il grado di facilità e soddisfazione con cui si compie
 	\end{itemize}
 	Le metriche utilizzate per la valutazione, definite nelle Norme di progetto in ??, sono le seguenti:
 	\begin{itemize}
-		\item MPR000 Comprensibilità delle funzioni offerte;
-		\item MPR000 Facilità di apprendimento;
+		\item MPR009 Comprensibilità delle funzioni offerte;
+		\item MPR010 Facilità di apprendimento;
 	\end{itemize}
-
+\end{itemize}
 
 \subsection{Manutenibilità}
 Rappresenta la capacità del\glossario{prodotto}di essere modificato tramite correzioni, miglioramenti e adattamenti.
@@ -112,8 +112,8 @@ Rappresenta la capacità del\glossario{prodotto}di essere modificato tramite cor
 	\item \textbf{Testabilità:} Il software deve essere testabile per consentire la validazione e l'approvazione di modifiche.
 \end{itemize}	Le metriche utilizzate per la valutazione, definite nelle Norme di progetto in ??, sono le seguenti:
 \begin{itemize}
-	\item MPR000 Capacità di analisi failure;
-	\item MPR000 Impatto delle modifiche
+	\item MPR011 Capacità di analisi failure;
+	\item MPR012 Impatto delle modifiche
 \end{itemize}
 
 \section{Tabella delle metriche}
