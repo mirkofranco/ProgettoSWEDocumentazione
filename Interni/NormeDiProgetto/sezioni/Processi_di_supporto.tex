@@ -391,9 +391,50 @@ Al fine di verificare i documenti verranno utilizzati\glossario{inspection}e\glo
 \subsubsection{Verifica del prodotti software}
 \paragraph{Analisi dinamica}
 \paragraph{Test di Unità}
+I test di unità sono del codice prodotto, prodotto dai \textit{Programmatori}, che esercitano un'unità del programma. Per unità si intende una funzionalità atomica che può essere verificata in modo isolato, in modo da assicurare che il risultato del test non sia influenzato da altre unità. 
+Vengono sviluppate del programmatore che sviluppa le unità, per verificare l'assenza di alcuni errori, e documentare il comportamento dell'unità prodotta. 
+Devono essere veloci da eseguire, indipendenti tra loro e nell'ordine di esecuzione. Inoltre dovrebbero essere eseguiti ad ogni modifica del codice sorgente.
 \paragraph{Test di Integrazione}
+I test di integrazione hanno il compito di verificare se sono rispettati i contratti di interfaccia tra più moduli o sottosistemi. I sottosistemi possono essere interni, quindi già verificati singolarmente dai test di unità, oppure esterni, come database, filesystem, ect. 
+Risultano più lenti da configurare ed eseguire rispetto ai test di unità.  
 \paragraph{Test di Sistema}
-\paragraph{Test di Validazione}
+I test di sistema verificano il comportamento del sistema nella sua interezza rispetto alle specifiche. 
+\paragraph{Test di accettazione}
+I test di accettazione vengono eseguiti su tutto il sistema e verificano la conformità rispetto agli use cases e ai requisiti concordati con il committente.
+\paragraph{Tracciamento dei test}
+Ogni test è strutturato come segue:
+\begin{itemize}
+	\item Codice identificativo;
+	\item Descrizione;
+	\item Stato.
+\end{itemize}
+Il codice identificativo segue la sintassi 
+\begin{center}
+	\textbf{T\{Tipo\}\{Codice\}}
+\end{center}
+dove 
+\begin{itemize}
+	\item \textbf{Tipo}: può essere
+		\begin{itemize}
+			\item U: se di unità;
+			\item I: se di integrazione;
+			\item S: se di sistema;
+			\item A: se di accettazione;
+		\end{itemize}
+	\item \textbf{Codice}: può essere
+		\begin{itemize}
+			\item \textbf{Numerico}: incrementale a partire da 1, associato a test di unità o di integrazione;
+			\item \textbf{Di Requisito}: riportando il numero del requisito che testa secondo il tracciamento dei requisiti requisiti presente in \texttt{Analisi dei Requisiti v2.0.0}.
+		\end{itemize}
+\end{itemize}
+	Lo stato di un test può essere:
+\begin{itemize}
+	\item implementato;
+	\item non implementato;
+	\item non eseguito;
+	\item superato;
+	\item non superato;
+\end{itemize}
 \subsubsection{Procedure di verifica del software}
 \paragraph{Strumenti}
 \section{Validazione}
