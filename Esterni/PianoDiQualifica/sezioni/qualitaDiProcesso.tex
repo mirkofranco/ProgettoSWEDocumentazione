@@ -24,7 +24,8 @@ Verificare che il processo di pianificazione di progetto risulti adeguato è un 
 	\item \textbf{MP001}: Budgeted Cost of Work Performed;
 	\item \textbf{MP002}: Budgeted Cost of Work Scheduled;
 	\item \textbf{MP003}: Actual Cost of Work Performed;
-	\item \textbf{MP004}: Schedule Variance.
+	\item \textbf{MP004}: Schedule Variance;
+	\item \textbf{MP024}: Cost Variance.
 \end{itemize}
 
 
@@ -142,20 +143,16 @@ Per assicurare la conformità del prodotto finale(e dei requisiti individuati ch
 \end{tabularx}
 \end{center}
 \section{Tabella delle metriche}
-
+La tabella elenca le metriche per le quali è stato definito un range di accettazione e di ottimalità
 \begin{tabularx}{\textwidth}{|c|c|X|X|}
 	\hline 
 	\textbf{ID} & \textbf{Nome} & \textbf{Range di accettazione}  & \textbf{Range di ottimalità}  \\ 
 	\hline
 	\multicolumn{4}{|c|}{\textbf{QP001}} \\
+	\hline 
+	MP004 & Schedule Variance & >= -(MP002 x 10\%) & >=0 \\ 
 	\hline
-	MP001 & Budget Cost of Work Performed &  &  \\ 
-	\hline 
-	MP002 & Budget Cost of Work Scheduled &  &  \\ 
-	\hline 
-	MP003 & Actual Cost of Work Performed &  &  \\ 
-	\hline 
-	MP004 & Schedule Variance & >= -(c.p.f\footnote{Costo preventivo fase} x 10\%) & >=0 \\ 
+	MP0024 &Cost Variance& >= -(MP002 x 10\%) & >=0 \\ 
 	\hline
 	\multicolumn{4}{|c|}{\textbf{QP002}} \\
 	\hline
@@ -197,9 +194,9 @@ Per assicurare la conformità del prodotto finale(e dei requisiti individuati ch
 	\hline
 	\multicolumn{4}{|c|}{\textbf{QP006}} \\
 	\hline
-	MP020 & Percentuale build superate& &\\
+	MP020 & Percentuale build superate& 60\% & 80\%\\
 	\hline
-	MP021 & Media commit per settimana & &\\
+	MP021 & Media commit per settimana & >=120 & >=140\\
 	\hline
 	\multicolumn{4}{|c|}{\textbf{QP007}} \\
 	\hline
