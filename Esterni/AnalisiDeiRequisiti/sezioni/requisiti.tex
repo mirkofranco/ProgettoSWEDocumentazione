@@ -2,174 +2,187 @@
 Vengono riportati i\glossario{requisiti}individuati basandosi sui casi d'uso, sul capitolato$_{G}$, sui diversi incontri avuti con l'azienda \textit{Zero12 s.r.l.} e per necessità interne. \\
 
 
-\newpage
-\section{Requisiti funzionali}
-\begin{tabularx}{\textwidth}{|C|C|C|C|}
-	\hline
-     \textbf{Codice identificativo} & \textbf{Tipologia} & \textbf{Descrizione} & \textbf{Fonti} \\
-    \hline
-	\endhead
-	R1O01& Obbligatorio &L'applicazione deve permettere all'utente non autenticato di registrarsi con un account\glossario{Amazon}& UC1.1	\\
-	\hline
-	R1O02& Obbligatorio &L'applicazione deve permettere all'utente non autenticato di effettuare il login automatico con l'account\glossario{Amazon} & UC1.3\\
-	\hline
-	R1O03& Obbligatorio &L'applicazione deve permettere all'utente autenticato di  effettuare il logout & UC2.5\\
-	\hline
-	R1O04& Obbligatorio &L'applicazione deve permettere all'utente non autenticato di effettuare il login manuale con l'account\glossario{Amazon}& UC1.2\\
-	\hline
-	R1O05& Obbligatorio&L'applicazione deve permettere all'utente autenticato di modificare l'account\glossario{Amazon}& UC2.4\\
-	\hline
-	R1O06& Obbligatorio&L'utente tramite\glossario{Alexa}deve poter inserire un pin per proteggere il\glossario{workflow} & Interno \\
-	\hline
-	R1O07& Obbligatorio & L'utente tramite\glossario{Alexa}deve poter gestire una lista& Interno\\
-	\hline
-	R1O08& Obbligatorio &L'utente tramite\glossario{Alexa}deve poter impostare una sveglia &Interno\\
-	\hline
-	R1O08.01 & Obbligatorio & L'utente tramite\glossario{Alexa}deve poter creare una nuova sveglia &Interno\\
-	\hline
-	R1O08.02 & Obbligatorio & L'utente tramite\glossario{Alexa}deve poter modificare l'orario di una sveglia &Interno\\
-	\hline
-	R1O08.03 & Obbligatorio & L'utente tramite\glossario{Alexa}deve poter posporre una sveglia mentre questa sta suonando &Interno\\
-	\hline	
-	R1O08.04 & Obbligatorio & L'utente tramite\glossario{Alexa}deve poter interrompere una sveglia mentre questa sta suonando. &Interno\\
-	\hline
-	R1O09& Obbligatorio  &L'utente tramite\glossario{Alexa}deve poter mettere in pausa un\glossario{workflow} &Interno \\
-	\hline
-	R1O10& Obbligatorio&\glossario{Alexa}deve fornire un sistema di aiuto che dice all'utente in qualsiasi istante in quale punto dell'esecuzione si trova & Interno\\
-	\hline
-	R1F01 & Facoltativo & I dati utente verranno automaticamente sincronizzati con il proprio account\glossario{Amazon} & Interno\\
-	\hline
-	R1F02 & Facoltativo & L'utente deve poter rispondere ad un tweet dopo che\glossario{Alexa}l'ha letto & Interno\\
-	\hline
-	R1F03 & Facoltativo & L'utente deve poter rispondere ad una mail dopo che\glossario{Alexa}l'ha letta & Interno\\
-	\hline
-	R1F04 & Facoltativo & L'utente deve poter inviare messaggi di testo su\glossario{Telegram}tramite\glossario{Alexa}a una persona o ad un gruppo & Interno\\
-	\hline
-	R1F05 & Facoltativo & L'utente deve poter leggere tramite\glossario{Alexa}i nuovi messaggi testuali ricevuti da una persona o un gruppo su\glossario{Telegram}  & Interno\\
-	\hline
-	R1F06 & Facoltativo & L'utente deve poter inviare messaggi audio su\glossario{Telegram}tramite\glossario{Alexa}a una persona o un gruppo  & Interno\\
-	\hline
-	R1F07 & Facoltativo & L'utente deve poter leggere tramite\glossario{Alexa}i nuovi messaggi audio ricevuti da una persona o un gruppo su\glossario{Telegram}   & Interno\\
-	\hline
-	R1F08 & Facoltativo & L'utente deve poter modificare un evento nel calendario tramite \textit{Alexa$_{G}$} & Interno\\
-	\hline
-	R1F09 & Facoltativo & L'utente potrà predisporre il suo\glossario{workflow}personalizzato per la riproduzione di musica tramite Youtube & Interno\\
-	\hline
-	R1F10& Facoltativo  &L'utente tramite\glossario{Alexa}può impostare un timer &Interno \\
-	\hline
-	R1F11& Facoltativo  &L'utente tramite\glossario{Alexa}può in grado di ascoltare la radio &Interno \\
-	\hline	
-	R1F12& Facoltativo  &L'utente tramite\glossario{Alexa}potrebbe controllare l'illuminazione &Interno \\
-	\hline
-	R1F12.01& Facoltativo  &L'utente tramite\glossario{Alexa}può accendere le luci &Interno \\
-	\hline
-	R1F12.02& Facoltativo  &L'utente tramite\glossario{Alexa}può spegnere le luci &Interno \\
-	\hline
-	R1D01&Desiderabile  &L'utente tramite\glossario{Alexa}può pubblicare un tweet all'interno di Twitter &Interno \\
-	\hline
-	R1D02&Desiderabile  &L'utente tramite\glossario{Alexa}può ascoltare la musica tramite il servizio di Spotify &Interno \\
-	\hline
-	R1D03&Desiderabile  &L'utente tramite\glossario{Alexa}può utilizzare un blocco per la pianificazione dell'apertura di un altro blocco in automatico &Interno \\
-	\hline
-	R1D04&Desiderabile  &L'utente tramite\glossario{Alexa}può ascoltare le notizie riguardanti la borsa e le cryptovalute &Interno \\
-	\hline
-	\caption{Tabella requisiti funzionali}
-\end{tabularx}
-
-
-\section{Requisiti di qualità}
-\begin{tabularx}{\textwidth}{|C|C|C|C|}
-	\hline
-	\textbf{Codice identificativo}& \textbf{Tipologia} & \textbf{Descrizione} & \textbf{Fonti} \\
+\subsection{Requisiti Funzionali}
+\normalsize
+\begin{longtable}{|c|>{\centering}m{7cm}|c|}
+	\hline 
+	\textbf{Id Requisito} & \textbf{Descrizione} & \textbf{Stato}\\
 	\hline
 	\endhead
-	R2O01 & Obbligatoria &Deve essere fornita la documentazione dettagliata di tutte le\glossario{API} & \glossario{Capitolato}\\
+	\hypertarget{RFO1}{RFO1} & L'applicazione deve permettere all'utente non autenticato di registrarsi con un account Amazon & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO2}{RFO2} & L'applicazione deve permettere all'utente non autenticato di effettuare il login automatico con l'account Amazon & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO3}{RFO3} & L'applicazione deve permettere all'utente non autenticato di effettuare il login manuale con l'account Amazon & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO4}{RFO4} & L'applicazione deve permettere all'utente autenticato di effettuare il logout & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO5}{RFO5} & L'applicazione deve permettere all'utente autenticato di modificare l'account Amazon & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO6}{RFO6} & L'utente tramite Alexa deve poter impostare una sveglia & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO6.1}{RFO6.1} & L'utente tramite Alexa deve poter creare una nuova sveglia & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO6.2}{RFO6.2} & L'utente tramite Alexa deve poter modificare l'orario di una sveglia & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO6.3}{RFO6.3} & L'utente tramite Alexa deve poter posporre una sveglia mentre questa sta suonando & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO6.4}{RFO6.4} & L'utente tramite Alexa deve poter interrompere una sveglia mentre questa sta suonando & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO7}{RFO7} & L'utente tramite Alexa deve poter inserire un Pin per proteggere il workflow & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO8}{RFO8} & L'utente tramite Alexa deve poter gestire una lista & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO9}{RFO9} & L'utente tramite Alexa deve poter ascoltare i tweet & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO10}{RFO10} & L'utente tramite Alexa deve poter inviare delle mail & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO11}{RFO11} & L'utente tramite Alexa deve poter leggere le proprie mail & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO12}{RFO12} & Alexa deve essere in grado di riprodurre un blocco di testo personalizzato & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO13}{RFO13} & L'utente potrà ascoltare gli eventi presenti nel proprio calendario personale tramite Alexa & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO14}{RFO14} & L'utente potrà inserire eventi in programma nel proprio calendario personale tramite Alexa & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO15}{RFO15} & L'applicazione deve permettere all'utente autenticato la creazione di un workflow & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO15.1}{RFO15.1} & L'applicazione deve permettere all'utente autenticato di inserire il nome del workflow & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO15.2}{RFO15.2} & L'applicazione deve permettere all'utente autenticato di aggiungere un blocco & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO16}{RFO16} & L'applicazione deve permettere all'utente autenticato di eliminare un workflow & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO17}{RFO17} & L'applicazione deve permettere all'utente autenticato di modificare un workflow & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO17.1}{RFO17.1} & L'applicazione deve permettere all'utente autenticato di cambiare il nome di un workflow & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO17.2}{RFO17.2} & L'applicazione deve permettere all'utente autenticato di modificare i blocchi contenuti in un workflow & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO18}{RFO18} & L'utente tramite Alexa deve poter ascoltare il risultato prodotto dal feed RSS & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO19}{RFO19} & L'utente potrà ascoltare news da un sito di notizie tramite Alexa & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO20}{RFO20} & L'utente potrà ascoltare notizie sportive tramite Alexa & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO21}{RFO21} & L'utente potrà applicare un filtro sul numero di risultati ricevuti in output da Alexa & \textit{Non Soddisfatt}\\ \hline
+	
+	\hypertarget{RFO22}{RFO22} & L'utente potrà ricevere informazioni sul meteo tramite Alexa & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO23}{RFO23} & L'utente potrà predisporre il suo workflow personalizzato per la riproduzione di musica con Amazon Music tramite Alexa & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO24}{RFO24} & L'utente tramite Alexa deve poter mettere in pausa un workflow & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFO25}{RFO25} & Alexa deve fornire un sistema di aiuto che dice all'utente in qualsiasi istante in quale punto dell'esecuzione si trova & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFF26}{RFF26} & I dati utente verranno automaticamente sincronizzati con il proprio account Amazon & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFF27}{RFF27} & L'utente deve poter rispondere ad un tweet dopo che Alexa l'ha letto & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFF28}{RFF28} & L'utente deve poter rispondere ad una mail dopo che Alexa l'ha letta & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFF29}{RFF29} & L'utente deve poter inviare messaggi di testo su Telegram tramite Alexa a una persona o ad un gruppo & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFF30}{RFF30} &  L'utente deve poter leggere tramite Alexa i nuovi messaggi testuali ricevuti da una persona o un gruppo su Telegram & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFF31}{RFF31} & L'utente deve poter inviare messaggi audio su Telegram tramite Alexa a una persona o un gruppo & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFF32}{RFF32} & L'utente deve poter modificare un evento nel calendario tramite Alexa & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFF33}{RFF33} & L'utente potrà predisporre il suo workflow personalizzato per la riproduzione di musica tramite Youtube & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFF34}{RFF34} & L'utente tramite Alexa può impostare un timer & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFF35}{RFF35} & L'utente tramite Alexa può in grado di ascoltare la radio & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFF36}{RFF36} & L'utente tramite Alexa potrebbe controllare l'illuminazione & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFF36.1}{RFF36.1} & L'utente tramite Alexa può accendere le luci & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFF36.2}{RFF36.2} & L'utente tramite Alexa può spegnere le luci & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFD37}{RFD37} & L'utente tramite Alexa può pubblicare un tweet all'interno di Twitter & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFD38}{RFD38} & L'utente tramite Alexa può ascoltare la musica tramite il servizio di Spotify & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFD39}{RFD39} & L'utente tramite Alexa può utilizzare un blocco per la pianificazione dell'apertura di un altro blocco in automatico & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RFD40}{RFD40} & L'utente tramite Alexa può ascoltare le notizie riguardanti la borsa e le cryptovalute & \textit{Non Soddisfatto}\\ \hline
+	
+	\caption[Requisiti Funzionali]{Requisiti Funzionali}
+	\label{tabella:req0}
+\end{longtable}
+\clearpage
+\subsection{Requisiti Prestazionali}
+\normalsize
+\begin{longtable}{|c|>{\centering}m{7cm}|c|}
+	\hline 
+	\textbf{Id Requisito} & \textbf{Descrizione} & \textbf{Stato}\\
 	\hline
-	R2O02 &Obbligatoria & Devono essere forniti i diagrammi\glossario{UML}relativi agli Use Cases di progetto  & \glossario{Capitolato}\\
-	\hline
-	R2O03 &Obbligatoria & Devono essere forniti i \textit{Voice Dialog Flow$_{G}$} & \glossario{Capitolato}\\
-	\hline
-	R2O04 &Obbligatoria & Deve essere fornito lo \textit{Schema Design} relativo alla base dati  & \glossario{Capitolato}\\
-	\hline
-	R2O05 &Obbligatoria & Deve essere fornito il \textit{Piano di test di unità} & \glossario{Capitolato}\\
-	\hline
-	R2O06 &Obbligatoria & Deve essere consegnato il Bug Reporting per il tracciamento di
-	tutte le problematiche o anomalie del sistema & \glossario{Capitolato}\\
-	\hline
-	R2O07 &Obbligatoria & Tutta la documentazione prodotta in italiano dal team deve avere
-	un \textit{indice di}\glossario{Gulpease}compreso tra 60 e 100 & Interno\\
-	\hline
-	R2O08 &Obbligatoria & Tutta la documentazione rispetta le \textit{Norme di Progetto v1.0.0} e le metriche del \textit{Piano di Qualifica v1.0.0}& Interno\\
-	\hline
-	R2O09 &Obbligatoria & Il codice prodotto rispetta le \textit{Norme di Progetto v1.0.0} e le metriche del \textit{Piano di Qualifica v1.0.0}& Interno\\
-	\hline
-    \caption{Tabella requisiti di qualità}
-\end{tabularx}
-
-\section{Requisiti di prestazione}
-\begin{tabularx}{\textwidth}{|C|C|C|C|}
-	\hline
-	\textbf{Codice Identificativo}& \textbf{Tipologia} & \textbf{Descrizione} & \textbf{Fonti}\\
-	\hline	
 	\endhead
-	R3O01&Obbligatorio  & L'applicazione sarà utilizzabile da versioni Android superiori alla 4.4 & Verbale Esterno 2018-12-05 \\
+	\hypertarget{RPO1}{RPO1} & L'applicazione Android deve essere compatibile dalla versione 4.4 & \textit{Non Soddisfatto}\\ \hline
+	
+	\caption[Requisiti Prestazionali]{Requisiti Prestazionali}
+	\label{tabella:req1}
+\end{longtable}
+\clearpage
+\subsection{Requisiti di Qualità}
+\normalsize
+\begin{longtable}{|c|>{\centering}m{7cm}|c|}
+	\hline 
+	\textbf{Id Requisito} & \textbf{Descrizione} & \textbf{Stato}\\
 	\hline
-
-	\caption{Tabella requisiti di prestazione}
-\end{tabularx}
-
-
-
-\section{Requisiti di vincolo}
-\begin{tabularx}{\textwidth}{|C|C|C|C|}
-	\hline
-	\textbf{Codice Identificativo}& \textbf{Tipologia} & \textbf{Descrizione} & \textbf{Fonti}\\
-	\hline	
 	\endhead
-	R4O01&Obbligatorio  &L'utente tramite\glossario{Alexa}deve poter ascoltare i tweet & Verbale Esterno 2018-12-05 \\
+	\hypertarget{RQO1}{RQO1} & Deve essere fornita la documentazione dettagliata di tutte le API & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RQO2}{RQO2} & Devono essere forniti i diagrammi UML relativi agli Use Cases di progetto & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RQO3}{RQO3} & Devono essere forniti i Voice Dialog Flow & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RQO4}{RQO4} & Deve essere fornito lo Schema Design relativo alla base dati & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RQO5}{RQO5} & Deve essere fornito il \textit{Piano di test di unità} & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RQO6}{RQO6} & Deve essere consegnato il Bug Reporting per il tracciamento di tutte le problematiche o anomalie del sistema & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RQO7}{RQO7} & Tutta la documentazione prodotta in italiano dal team deve avere un indice di Gulpease compreso tra 60 e 100 & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RQO8}{RQO8} & Tutta la documentazione rispetta le \textit{Norme di Progetto v2.0.0} e le metriche del \textit{Piano di Qualifica v2.0.0} & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RQO9}{RQO9} & Il codice prodotto rispetta le \textit{Norme di Progetto v2.0.0} e le metriche del \textit{Piano di Qualifica v2.0.0} & \textit{Non Soddisfatto}\\ \hline
+	
+	\caption[Requisiti di Qualità]{Requisiti di Qualità}
+	\label{tabella:req2}
+\end{longtable}
+\clearpage
+\subsection{Requisiti di Vincolo}
+\normalsize
+\begin{longtable}{|c|>{\centering}m{7cm}|c|}
+	\hline 
+	\textbf{Id Requisito} & \textbf{Descrizione} & \textbf{Stato}\\
 	\hline
-	R4O02&Obbligatorio  &L'utente tramite\glossario{Alexa}deve poter inviare delle mail & Verbale Esterno 2018-12-05 \\
-	\hline
-	R4O03&Obbligatorio  &L'utente tramite\glossario{Alexa}deve poter leggere le proprie mail & Verbale Esterno 2018-12-05 \\
-	\hline
-	R4O04&Obbligatorio  & \glossario{Alexa}deve essere in grado di riprodurre un blocco di testo personalizzato & Verbale Esterno 2018-12-05 \\
-	\hline
-	R4O05&Obbligatorio  &L'utente tramite\glossario{Alexa}deve poter ascoltare il risultato prodotto dal feed RSS & Verbale Esterno 2018-12-05 \\
-	\hline
-	R4O06 &Obbligatorio& L'utente potrà ascoltare news da un sito di notizie tramite\glossario{Alexa} &Verbale Esterno 2018-12-05\\
-	\hline
-	R4O07 &Obbligatorio& L'utente potrà ascoltare notizie sportive tramite\glossario{Alexa} &Verbale Esterno 2018-12-05\\
-	\hline
-	R4O08 &Obbligatorio&L'utente potrà ascoltare gli eventi presenti nel proprio calendario personale tramite\glossario{Alexa}  &Verbale Esterno 2018-12-05\\
-	\hline
-	R4O09 &Obbligatorio& L'utente potrà inserire eventi in programma nel proprio calendario personale  tramite\glossario{Alexa}& Verbale Esterno 2018-12-05\\
-	\hline
-	R4O10 &Obbligatorio &L'utente potrà applicare un filtro sul numero di risultati ricevuti in output da\glossario{Alexa} &Verbale Esterno 2018-12-05\\
-	\hline
-	R4O11 &Obbligatorio &L'utente potrà ricevere informazioni sul meteo tramite\glossario{Alexa} & Verbale Esterno 2018-12-05\\
-	\hline
-	R4O12&Obbligatorio&L'utente potrà predisporre il suo\glossario{workflow}personalizzato per la riproduzione di musica con Amazon Music tramite\glossario{Alexa}& Verbale Esterno 2018-12-05 \\
-	\hline
-	R4O13&Obbligatorio&L'applicazione deve permettere all'utente autenticato la creazione di un\glossario{workflow}& \glossario{Capitolato} UC2.1\\
-	\hline
-	R4O13.01&Obbligatorio& L'applicazione deve permettere all'utente autenticato di inserire il nome del\glossario{workflow}  & \glossario{Capitolato} UC2.1.1\\
-	\hline
-	R4O13.02&Obbligatorio&L'applicazione deve permettere all'utente autenticato di aggiungere un blocco & \glossario{Capitolato}  UC2.1.2\\
-	\hline	
-	R4O13.03&Obbligatorio&L'applicazione deve permettere all'utente autenticato di configurare un blocco& \glossario{Capitolato}UC2.1.3\\
-	\hline
-	R4O14&Obbligatorio&L'applicazione deve permettere all'utente autenticato di eliminare un\glossario{workflow}& Verbale Esterno 2018-12-27 UC2.2\\
-	\hline
-	R4O15&Obbligatorio& L'applicazione deve permettere all'utente autenticato di  modificare un\glossario{workflow}  &Verbale Esterno 2018-12-27 UC2.3\\
-	\hline
-	R4O15.01&Obbligatorio& L'applicazione deve permettere all'utente autenticato di cambiare il nome di un\glossario{workflow}  &Verbale Esterno 2018-12-27 UC2.3.1\\
-	\hline
-	R4O15.02&Obbligatorio& L'applicazione deve permettere all'utente autenticato di modificare i blocchi contenuti in un\glossario{workflow}  &Verbale Esterno 2018-12-27 UC2.3.4\\
-	\hline
-	\caption{Tabella requisiti di vincolo}
-\end{tabularx}
+	\endhead
+	\hypertarget{RVO1}{RVO1} & L'applicazione sarà utilizzabile da versioni Android & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RVO2}{RVO2} & L'applicazione deve essere sviluppata utilizzando il linguaggio di programmazione Kotlin & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RVO3}{RVO3} & Per lo sviluppo in back-end si utilizza NodeJS versione 10.15.1 & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RVO4}{RVO4} & Per i test viene utilizzato il Framework Jasmine versione 3.3.0 & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RVO5}{RVO5} & Viene utilizzato il framework Express versione 4.x per NodeJS & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RVO6}{RVO6} & Viene utilizzato DynamoDB come database NoSQL offerto dai servizi Amazon & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RVO7}{RVO7} & Si utilizza AWS Lambda per l'esecuzione del codice nel server & \textit{Non Soddisfatto}\\ \hline
+	
+	\hypertarget{RVO8}{RVO8} & Viene utilizzato NPM per la gestione della build del codice prodotto & \textit{Non Soddisfatto}\\ \hline
+	
+	\caption[Requisiti di Vincolo]{Requisiti di Vincolo}
+	\label{tabella:req3}
+\end{longtable}
+\clearpage
 
-\newpage
 \section{Tracciamento requisiti-fonti}
 \begin{tabularx}{\textwidth}{|C|C|}
 	\hline
@@ -335,3 +348,18 @@ Vengono riportati i\glossario{requisiti}individuati basandosi sui casi d'uso, su
 	\hline
 	\caption{Tabella fonti-requisiti}
 \end{tabularx}
+
+\subsection{Riepilogo Requisiti}
+\normalsize
+\begin{longtable}{|c|c|c|c|}
+	\hline 
+	\textbf{Tipo} & \textbf{Obbligatorio} & \textbf{Desiderabile} & \textbf{Facoltativo}\\
+	\hline
+	Funzionale & 33 & 4 & 13\\ \hline
+	Prestazionale & 1 & 0 & 0\\ \hline
+	Di Qualità & 9 & 0 & 0\\ \hline
+	Di Vincolo & 8 & 0 & 0\\ \hline
+	\caption[Riepilogo Requisiti]{Riepilogo Requisiti}
+	\label{tabella:riepilogorequi}
+\end{longtable}
+\clearpage
