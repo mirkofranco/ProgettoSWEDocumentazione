@@ -3,13 +3,11 @@
 \section{Metriche per la qualità di processo}
 Verranno utilizzate le seguenti metriche per valutare l'efficienza e l'efficacia 
 processi.
-\section{Metriche per la qualità di processo}
 \subsection{MP001: Budgeted Cost Of Work Performed}\label{bcwp}
 Utilizzato per il calcolo di Cost Variance e Schedule Variance, rappresenta (in giorni) il valore delle attività svolte.
 
 \subsection{MP002: Budgeted Cost of Work Scheduled}\label{bcws}
-Rappresenta il costo in giorni preventivato per il processo in esame (è detto anche Planned Value):
-
+Rappresenta il costo in giorni preventivato per il processo in esame (è detto anche Planned Value).
 
 \subsection{MP003: Actual Cost of Work Performed}\label{acwp}
 Rappresenta il costo (in \euro) effettivamente sostenuto al momento del calcolo:
@@ -19,58 +17,58 @@ Metrica che indica se si è in anticipo o in ritardo rispetto alla schedulazione
 Essa è il risultato della seguente formula:\\
 \begin{center}
 	
-	$SV = ${MP001} $-${MP002}
+	$MP004 = ${MP001} $-${MP002}
 	
 \end{center}
 
-\subsection{Costo}
-Per verificare che i costi siano conformi a quanto preventivato nel \textit{Piano di Progetto}, ciascun processo viene misurato tramite la sua \textbf{Cost Variance(CV)}, un valore positivo indica il rispetto dei costi preventivati, essa viene calcolata nel seguente modo:\\ 
-\subsection{MP005: Cost Variance}
+\subsection{MP024: Cost Variance}
+Per verificare che i costi siano conformi a quanto preventivato nel \textit{Piano di Progetto}, ciascun processo viene misurato tramite la sua \textbf{Cost Variance}, un valore positivo indica il rispetto dei costi preventivati, essa viene calcolata nel seguente modo:\\ 
 \begin{center}
 	\begin{math}
-	CV = MP001 - MP003
+	MP024 = MP001 - MP003
 	\end{math}
 \end{center}
 MP001 e MP003 sono descritte rispettivamente nelle sezioni \ref{bcwp} e \ref{acwp}.
 
-\subsection{MP006: SPICE capability level}
+\subsection{MP005: SPICE capability level}
 Per ogni processo, lo standard 15504 definisce 6 livelli di maturità(da 0 a 5) determinati da un processo di  \textit{Process Assessment} che ha lo scopo di determinare l'effettiva qualità dei processi in uso, un processo raggiunge la sua massima efficacia quando raggiunge il livello 5 (raggiunge quindi l'ottimalità).
 
+\subsection{MP006: SPICE process attributes}
+Per ogni attributo di processo, lo SPICE definisce 4 livelli (N-P-L-F) di ottimalità riferiti all'attributo stesso, il valore viene dedotto in base ai risultati delle metriche adottate per ciascun processo, un processo raggiunge il livello massimo quando tutte le metriche a lui riferite presentano risultati circoscritti al range di ottimalità definito.
 
-\subsection{MP007: SPICE process attributes}
-Per ogni attributo di processo, lo SPICE definisce 4 livelli (N-P-L-F) di ottimalità riferiti all'attributo stesso, il valore viene dedotto in base ai risultati delle metriche adottate per ciascun processo, un processo raggiunge il livello massimo quando tutte le metriche a lui riferite presentano risultati circoscritti al range di ottimalità definito:
-
-\subsection{MP008: Occorrenza rischi non previsti}
+\subsection{MP007: Occorrenza rischi non previsti}
 Contatore che viene incrementato all'occorrenza di un rischio non elencato nell'analisi dei rischi del \textit{Piano di Progetto}, un alto valore indica l'eccessiva occorrenza dello stesso e la necessità di un'analisi al fine di mitigare il suo impatto nell'attività di progetto.\\
 Viene resettato ad ogni inizio di una nuova fase del progetto.
 
-\subsection{MP009: Indisponibilità dei servizi}
+\subsection{MP008: Indisponibilità dei servizi}
 Contatore che viene incrementato ogni qualvolta uno strumento esterno risulta inutilizzabile a causa di errori non gestibili dai membri del gruppo.\\
 Viene resettato ad ogni inizio di una nuova fase del progetto.
 
-\subsection{MP010: Complessità ciclomatica}
+\subsection{MP009: Complessità ciclomatica}
 Metrica software che indica la complessità di un programma tenendo in considerazione moduli, funzioni, metodi e classi.
-Nello specifico, essa è calcolata tramite il grafo di controllo di flusso del programma, dove i nodi sono gruppi indivisibili di istruzioni e gli archi connettono due nodi se il secondo gruppo di istruzioni può essere eseguito immediatamente dopo il primo, e il suo valore è determinato dal numero di cammini linearmente indipendenti all'interno del codice sorgente. 
+Nello specifico, essa è calcolata tramite il grafo di controllo di flusso del programma, dove i nodi sono gruppi indivisibili di istruzioni e gli archi connettono due nodi se il secondo gruppo di istruzioni può essere eseguito immediatamente dopo il primo, e il suo valore è determinato dal numero di cammini linearmente indipendenti all'interno del codice sorgente.\\
 \'E quindi opportuno definire un valore di complessità ciclomatica preciso: valori alti sono indice di scarsa manutenibilità del codice mentre valori bassi potrebbero indicare scarsa efficienza dei metodi.
-Esso fornisce, inoltre, un indice del carico di lavoro richiesto per la fase di testing (un valore alto richiede più test per una copertura completa).
+Esso fornisce, inoltre, un indice del carico di lavoro richiesto per la fase di testing (un valore alto richiede più test per una copertura completa).\\
 Il range di ottimalità stabilito varia da 0 a 10, come suggerito dall'ideatore della metrica Thomas J. McCabe.  
 
-\subsection{MP011: Numero di parametri per metodo}
+\subsection{MP010: Numero di parametri per metodo}
 Definire un range relativo al numero di parametri permette di individuare possibili errori nella progettazione (nel caso in cui un metodo abbia un numero di parametri eccessivo).
 
-\subsection{MP012: Numero di livelli di annidamento}
+\subsection{MP011: Numero di livelli di annidamento}
 Metrica per indicare il numero di chiamate annidate di procedure controllate all'interno dei metodi.\newline
 Un valore elevato è indice di un basso livello di astrazione del codice e una complessità eccessivamente elevata. 
 
-\subsection{MP013: Attributi per classe}
+\subsection{MP012: Attributi per classe}
 Un numero elevato di attributi in una classe potrebbe essere indice di un errore di progettazione.
 Viene quindi definita una metrica che identifichi range accettabili e ottimali per questo parametro.
 Nel caso in cui una classe abbia un numero eccessivo di parametri, valutare la possibilità di suddividere la stessa in più classi, suddividendo quindi le funzioni ad essa assegnate.
 
-\subsection{MP014: Linee di codice per commento}
+\subsection{MP013: Linee di codice per commento}
 Metrica identificata dal rapporto tra linee di codice e linee di commento: risulta utile per garantire una maggiore manutenibilità del codice.
 
-\subsection{MP015: Flusso di informazioni}
+$\frac{\mbox{linee di codice}}{\mbox{linee di commento}}$
+
+\subsection{MP014: Flusso di informazioni}
 Metrica proposta da S. Henry e D. Kafura che misura il flusso di informazioni così definito:
 
 \begin{itemize}
@@ -84,21 +82,21 @@ il valore viene calcolato tramite questa funzione:
 
 \subsection{Accoppiamento}
 La definizione dei range di ottimalità e accettazione delle metriche presenti in questa sezione viene rimandata alla fase di Revisione di Analisi.
-\subsubsection{MP016: Accoppiamento Afferente}
+\subsubsection{MP015: Accoppiamento Afferente}
 Indica la dipendenza di classi esterne a un package rispetto alle classi interne contenute nel package stesso.
 Tale valore, sebbene non indicante necessariamente errori di progettazione, può evidenziare criticità riguardanti la robustezza e l'utilità del package a cui fa riferimento.\\
 Un valore basso può evidenziare scarsa utilità del package, mentre un valore alto necessita di ulteriori verifiche di robustezza, in quanto rappresentante un punto critico nel software.
-\subsubsection{MP017: Accoppiamento Efferente}
+\subsubsection{MP016: Accoppiamento Efferente}
 Indica la dipendenza di classi interne a un package rispetto alle classi esterne ad esso.\\
 Un valore basso indica un forte indipendenza del package rispetto al resto del sistema.
 
-\subsection{MP018: Copertura del codice}
+\subsection{MP017: Copertura del codice}
 Indica la percentuale di istruzioni che sono eseguite durante i test.
 Maggiore è la percentuale di istruzioni coperte dai test eseguiti, maggiore sarà la probabilità che le componenti testate abbiano una ridotta quantità di errori.\\
 Il valore di tale indice può essere abbassato da metodi molto semplici che non richiedono testing. Esempi di questi metodi sono: get e set.\\
 Parametri utilizzati:
 
-\subsection{MP019: efficacia dei test}
+\subsection{MP018: efficacia dei test}
 Misura la capacità di un test di trovare errori all'interno del codice, essa è calcolata nel seguente modo
 \begin{center}
 	\vspace{1em}
@@ -107,72 +105,96 @@ Misura la capacità di un test di trovare errori all'interno del codice, essa è
 \vspace{1em}
 Dove il totale dei bug trovati è risultato dei bug già conosciuti + i nuovi bug scoperti durante le prove di utilizzo del software
 
-\subsection{MP020:Test Effort Performance}
+\subsection{MP020:Errori risolti tramite test}
 Attesta l'effettiva efficacia di un test misurando il numero di bug risolti, l'obiettivo è quello di minimizzare il numero di bug presenti nel software al momento del rilascio.
 La metrica risulta dal seguente calcolo:
 \begin{center}
 \vspace{1em}
 $\frac{\mbox{n bug risolti}}{\mbox{numero di bug trovati}}$
-
 \end{center}
-\subsection{Metriche per la qualità di prodotto}
+\subsection{MP021:Percentuale build superate}
+Ogni build viene controllata tramite script automatici con Travis CI, e la metrica è il risultato del seguente calcolo:
+\begin{center}
+$\frac{\mbox{build superate con esito positivo}}{\mbox{build totali}}$
+\end{center}
+
+
+\subsection{MP022:Media commit per settimana}
+\begin{center}
+	$\frac{\mbox{commit totali}}{\mbox{totale settimane di lavoro}}$
+\end{center}
+
+
+\subsection{MP023:Percentuale requisiti obbligatori soddisfatti}
+ Tale metrica è risultato del seguente calcolo:
+ \begin{center}
+ 	$\frac{\mbox{requisiti obbligatori soddisfatti}}{\mbox{requisiti obbligatori totali}}$
+ \end{center}
+
+\subsection{MP024:Percentuale requisiti desiderabili soddisfatti}
+Tale metrica è risultato del seguente calcolo:
+\begin{center}
+$\frac{\mbox{requisiti desiderabili soddisfatti}}{\mbox{requisiti desiderabili totali}}$
+\end{center}
+
+\section{Metriche per la qualità di prodotto}
 Verranno utilizzate le seguenti metriche per valutare l'efficienza e l'efficacia dei
 prodotti.
-\subsection{MPR001 Errori ortografici}
+\subsection{MPR001: Errori ortografici}
 Misura il numero di errori ortografici presenti nel documento. La misura viene fatta attraverso script automatici e la verifica da parte dei \textit{verificatori}.
 
-\subsection{MPR002 Indice di Gulpease}
+\subsection{MPR002: Indice di Gulpease}
 L’Indice Gulpease è un indice di leggibilità di un testo tarato sulla lingua italiana, per il suo calcolo vengono considerate due variabili linguistiche: la lunghezza delle parole e la lunghezza delle frasi rispetto al numero delle lettere.
 \begin{center}{$G=89+\frac{300\times N_F-10\times N_L}{N_P}$}\end{center}
 $N_F$ indica il numero delle frasi, $N_L$ indica il numero di lettere e $N_P$ indica il numero di parole nel testo.
 
-\subsection{MPR003 errori inerenti alla correttezza dei documenti}
+\subsection{MPR003: errori inerenti alla correttezza dei documenti}
 Misura il numero di errori inerenti alla correttezza del documento. I \textit{verificatori} hanno il compito di valutare se un documento rispetta le scelte prese dal gruppo.
 
-\subsection{MPR004 errori inerenti alle Norme di Progetto}
+\subsection{MPR004: errori inerenti alle Norme di Progetto}
 Misura il numero di errori inerenti alle \textbf{Norme di Progetto}. I \textit{verificatori} hanno il compito di valutare se un documento rispetta le \textbf{Norme di Progetto}.
 
 
-\subsection{MPR005 Completezza dell'implementazione funzionale}
+\subsection{MPR005: Completezza dell'implementazione funzionale}
 Misura la quantità in percentuale di requisiti funzionali soddisfatti dalla corrente implementazione. Viene utilizzata la seguente formula: 
 \begin{center}{$CO=\frac{N_{RS}}{N_{RT}}\times 100$}\end{center}
 $N_{RS}$  indica il numero di requisiti soddistatti, $N_{RT}$  indica il numero totale di requisiti.
 
-\subsection{MPR006 Correttezza  rispetto alle attese}
+\subsection{MPR006: Correttezza  rispetto alle attese}
 Misura la percentuale di risultati affini rispetto alle attese. Viene utilizzata la seguente formula:
 \begin{center}{$CRA=(1-\frac{N_{TD}}{N_{TE}})\times 100$}\end{center}
 ${N_{TD}}$ indica il numero di test che producono risultati discordi rispetto alle attese, ${N_{TE}}$ indica il numero totale di test-case eseguiti.
 
-\subsection{MPR007 Totalità di failure}
+\subsection{MPR007: Totalità di failure}
 Misura la percentuale di test conclusi con una failure. Viene utilizzata la seguente formula:
 \begin{center}{$TF=\frac{N_{FR}}{N_{TE}}\times 100$}\end{center}
 ${N_{FR}}$ indica il numero di failure rilevati durante l'attività di testing,
 ${N_{TE}}$ indica il numero totale di test-case eseguiti.
 
-\subsection{MPR008 Tempo di risposta}
+\subsection{MPR008: Tempo di risposta}
 Misura la differenza media di tempo trascorsa dall’esecuzione di una funzionalità e la restituzione
 dell’eventuale risultato. Viene utilizzata la seguente formula:
 \begin{center}{$TR=\frac{\sum\limits_{i=1}^n {T_i }}{n}$}\end{center}
 ${T_i}$ indica il tempo (in secondi) trascorso dalla richiesta di una funzionalità ed il completamento di questa con un eventuale restituzione del risultato;\\
 
-\subsection{MPR009 Comprensibilità  delle funzionalità offerte}
+\subsection{MPR009: Comprensibilità  delle funzionalità offerte}
 Misura la quantità in percentuale di operazioni comprese dall’utente che non richiedono la
 consultazione del manuale. Viene utilizzata la seguente formula:
 \begin{center}{$C=\frac{N_{FC}}{N_{FO}}\times 100$}\end{center}
 ${N_{FC}}$ indica il numero di funzionalità comprese in modo immediato dall'utente, ${N_{FO}}$ indica il numero di funzionalità totali offerte dal sistema;
 	
-\subsection{MPR010 Facilità apprendimento}
+\subsection{MPR010: Facilità apprendimento}
 Misura il tempo medio che occorre ad un utente per imparare ad usare in maniera corretta
 una certa funzionalità. Si misura tramite un indicatore numerico che indica i minuti
 impiegati da un utente per apprendere il funzionamento di una certa funzionalità;
 
-\subsection{MPR011 Capacità di analisi failure}
+\subsection{MPR011: Capacità di analisi failure}
 Misura la quantità in percentuale di failures incontrate di cui sono state tracciate le cause. Viene
 utilizzata la seguente formula:
 \begin{center}{$CAF=\frac{N_{FI}}{N_{FR}}\times 100 $}\end{center}
 ${N_{FI}}$ indica il numero di failure delle quali sono state individuate le cause, ${N_{FR}}$ indica il numero di failures rilevate.
 
-\subsection{MPR012 Impatto delle modifiche}
+\subsection{MPR012: Impatto delle modifiche}
 Misura la quantità in percentuale di modifiche introdotte per risolvere failures che hanno introdotto nuove failures nel prodotto. Viene utilizzata la seguente formula:
 \begin{center}{$IM=\frac{N_{FRE}}{N_{FR}}\times 100 $}\end{center}
 ${N_{FRF}}$ indica il numero di failure risolte introducentro nuove failure, ${N_{FR}}$ indica il numero di failures risolte.
