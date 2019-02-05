@@ -48,7 +48,7 @@ Il processo intende individuare e prevenire i rischi che potrebbero insorgere du
 
 \subsubsection{Obiettivi}
 \begin{itemize}
-	\item \textbf{Individuazione dei rischi}: per ogni fase del progetto, verranno analizzati e attualizzati i rischi che potrebbero insorgere, cercando, ove possibile, di automatizzare le procedure che mitigano la loro occorrenza;
+	\item \textbf{Individuazione dei rischi}: per ogni fase del progetto, verranno analizzati e attualizzati i rischi che potrebbero insorgere, cercando, ove possibile, di automatizzare le procedure che mitigano la loro occorrenza; non vengono definiti range di accettazione e ottimalità per le metriche adottate in questo processo.
 \end{itemize}
 
 \subsubsection{Metriche utilizzate}
@@ -158,15 +158,9 @@ La tabella elenca le metriche per le quali è stato definito un range di accetta
 	\hline
 	\multicolumn{4}{|c|}{\textbf{QP002}} \\
 	\hline
-	MP005 & SPICE capability level &  &  \\ 
+	MP005 & SPICE capability level & 3 & 4-5 \\ 
 	\hline 
-	MP006 & SPICE process attributes &  &  \\ 
-	\hline
-	\multicolumn{4}{|c|}{\textbf{QP003}} \\
-	\hline
-	MP007 & Occorrenza rischi non previsti &  &  \\ 
-	\hline 
-	MP008 & Indisponibilità dei servizi &  &  \\ 
+	MP006 & SPICE process attributes & L -(>50\% - 85\%)  & F >85\% - 100\% \\ 
 	\hline
 	\multicolumn{4}{|c|}{\textbf{QP004}} \\
 	\hline
@@ -179,20 +173,12 @@ La tabella elenca le metriche per le quali è stato definito un range di accetta
 	MP012 & Attributi per classe & 0-16 & 3-8 \\ 
 	\hline 
 	MP013 & Linee di codice per commento & >=0.25 & >=0.30 \\ 
-	\hline
-	MP014 & Flusso di informazioni & - & - \\ 
 	\hline 
-	MP015 & Accoppiamento Afferente & N.D. & N.D. \\ 
-	\hline 
-	MP016 & Accoppiamento Efferente & N.D. & N.D. \\ 
-	\hline
 	\multicolumn{4}{|c|}{\textbf{QP005}} \\
 	\hline
 	MP017 & Copertura del codice & 42\%-100\% & 65\%-100\% \\ 
 	\hline 
-	MP018 & Efficacia dei test &  &  \\ 
-	\hline 
-	MP019 & Errori risolti tramite test &  &  \\ 
+	MP018 & Efficacia dei test & 100\% & 100\% \\  
 	\hline
 	\multicolumn{4}{|c|}{\textbf{QP006}} \\
 	\hline
@@ -202,9 +188,9 @@ La tabella elenca le metriche per le quali è stato definito un range di accetta
 	\hline
 	\multicolumn{4}{|c|}{\textbf{QP007}} \\
 	\hline
-	MP022& Percentuale requisiti obbligatori soddisfatti& 100\% & 100\% \\
+	MP022& \makecell{Percentuale requisiti \\ obbligatori soddisfatti}& 100\% & 100\% \\
 	\hline
-	MP023& Percentuale requisiti desiderabili soddisfatti& >=50\% &>=50\%\\
+	MP023& \makecell{Percentuale requisiti \\ desiderabili soddisfatti}& >=50\% &>=50\%\\
 	\hline
 	\caption{Tabella delle metriche dei processi}
 \end{tabularx}
