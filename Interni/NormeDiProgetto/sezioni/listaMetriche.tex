@@ -65,9 +65,9 @@ Nel caso in cui una classe abbia un numero eccessivo di parametri, valutare la p
 
 \subsection{MP013: Linee di codice per commento}
 Metrica identificata dal rapporto tra linee di codice e linee di commento: risulta utile per garantire una maggiore manutenibilità del codice.
-
+\begin{center}
 $\frac{\mbox{linee di codice}}{\mbox{linee di commento}}$
-
+\end{center}
 \subsection{MP014: Flusso di informazioni}
 Metrica proposta da S. Henry e D. Kafura che misura il flusso di informazioni così definito:
 
@@ -105,33 +105,33 @@ Misura la capacità di un test di trovare errori all'interno del codice, essa è
 \vspace{1em}
 Dove il totale dei bug trovati è risultato dei bug già conosciuti + i nuovi bug scoperti durante le prove di utilizzo del software
 
-\subsection{MP020:Errori risolti tramite test}
+\subsection{MP019:Errori risolti tramite test}
 Attesta l'effettiva efficacia di un test misurando il numero di bug risolti, l'obiettivo è quello di minimizzare il numero di bug presenti nel software al momento del rilascio.
 La metrica risulta dal seguente calcolo:
 \begin{center}
 \vspace{1em}
 $\frac{\mbox{n bug risolti}}{\mbox{numero di bug trovati}}$
 \end{center}
-\subsection{MP021:Percentuale build superate}
+\subsection{MP020:Percentuale build superate}
 Ogni build viene controllata tramite script automatici con Travis CI, e la metrica è il risultato del seguente calcolo:
 \begin{center}
 $\frac{\mbox{build superate con esito positivo}}{\mbox{build totali}}$
 \end{center}
 
 
-\subsection{MP022:Media commit per settimana}
+\subsection{MP021:Media commit per settimana}
 \begin{center}
 	$\frac{\mbox{commit totali}}{\mbox{totale settimane di lavoro}}$
 \end{center}
 
 
-\subsection{MP023:Percentuale requisiti obbligatori soddisfatti}
+\subsection{MP022:Percentuale requisiti obbligatori soddisfatti}
  Tale metrica è risultato del seguente calcolo:
  \begin{center}
  	$\frac{\mbox{requisiti obbligatori soddisfatti}}{\mbox{requisiti obbligatori totali}}$
  \end{center}
 
-\subsection{MP024:Percentuale requisiti desiderabili soddisfatti}
+\subsection{MP023:Percentuale requisiti desiderabili soddisfatti}
 Tale metrica è risultato del seguente calcolo:
 \begin{center}
 $\frac{\mbox{requisiti desiderabili soddisfatti}}{\mbox{requisiti desiderabili totali}}$
