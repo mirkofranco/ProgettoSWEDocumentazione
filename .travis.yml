@@ -13,6 +13,9 @@ jobs:
       name: "orthography"
       script: 
        - bash scripts/grammar.sh
-       - python scripts/gulpease.py
+      after_success:
+       - pdflatex Esterni/PianoDiProgetto/PianoDiProgetto.tex 
+       - python scripts/gulpease.py 
+
 notifications:
   slack: zerosevengroup:awH2p9uSzEPY9plMSyKBtAHF
