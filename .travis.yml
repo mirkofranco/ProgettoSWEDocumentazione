@@ -4,7 +4,7 @@ before_install:
   - sudo apt-get install myspell-en-us
   - sudo apt-get install myspell-it
   - sudo apt-get install python2.7
-  - sudo apt-get install apt-get install python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext tesseract-ocr flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig
+  - sudo apt-get install python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext tesseract-ocr flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig
   - pip install textract 
 jobs:
   include:
