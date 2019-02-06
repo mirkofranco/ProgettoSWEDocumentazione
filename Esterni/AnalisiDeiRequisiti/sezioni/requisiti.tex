@@ -1,5 +1,5 @@
 \chapter{Requisiti} \label{Requisiti}
-Vengono riportati i\glossario{requisiti}individuati basandosi sui casi d'uso, sul capitolato$_{G}$, sui diversi incontri avuti con l'azienda \textit{Zero12 s.r.l.} e per necessità interne. \\
+Vengono riportati i\glossario{requisiti}individuati basandosi sui casi d'uso, sul \textit{capitolato$_{G}$}, sui diversi incontri avuti con l'azienda \textit{Zero12 s.r.l.} e per necessità interne. \\
 
 Ogni\glossario{requisito}deve avere la seguente nomenclatura:
 \begin{center}
@@ -23,7 +23,7 @@ dove:
 	\item \textbf{{XX}:} numero che identifica i\glossario{requisiti};
 	\item \textbf{{YY}:} numero progressivo che identifica i sottocasi, esso può, a sua volta, includere altri sottocasi.
 \end{itemize}
-
+\pagebreak
 \section{Requisiti Funzionali}
 \normalsize
 \begin{longtable}{|c|>{\centering}m{7cm}|c|}
@@ -115,9 +115,9 @@ dove:
 	
 	\hypertarget{RFF34}{RFF34} & L'utente tramite Alexa può impostare un timer & \textit{Non Soddisfatto}\\ \hline
 	
-	\hypertarget{RFF35}{RFF35} & L'utente tramite Alexa può in grado di ascoltare la radio & \textit{Non Soddisfatto}\\ \hline
+	\hypertarget{RFF35}{RFF35} & L'utente tramite Alexa può ascoltare la radio & \textit{Non Soddisfatto}\\ \hline
 	
-	\hypertarget{RFF36}{RFF36} & L'utente tramite Alexa potrebbe controllare l'illuminazione & \textit{Non Soddisfatto}\\ \hline
+	\hypertarget{RFF36}{RFF36} & L'utente tramite Alexa può controllare l'illuminazione, se compatibile con il dispositivo & \textit{Non Soddisfatto}\\ \hline
 	
 	\hypertarget{RFF36.1}{RFF36.1} & L'utente tramite Alexa può accendere le luci & \textit{Non Soddisfatto}\\ \hline
 	
@@ -184,7 +184,7 @@ dove:
 	\textbf{Id Requisito} & \textbf{Descrizione} & \textbf{Stato}\\
 	\hline
 	\endhead
-	\hypertarget{RVO1}{RVO1} & L'applicazione sarà utilizzabile da versioni Android & \textit{Non Soddisfatto}\\ \hline
+	\hypertarget{RVO1}{RVO1} & L'applicazione sarà utilizzabile da versioni Android 4.4 e successive & \textit{Non Soddisfatto}\\ \hline
 	
 	\hypertarget{RVO2}{RVO2} & L'applicazione deve essere sviluppata utilizzando il linguaggio di programmazione Kotlin & \textit{Non Soddisfatto}\\ \hline
 	
@@ -194,7 +194,7 @@ dove:
 	
 	\hypertarget{RVO5}{RVO5} & Viene utilizzato il framework Express versione 4.x per NodeJS & \textit{Non Soddisfatto}\\ \hline
 	
-	\hypertarget{RVO6}{RVO6} & Viene utilizzato DynamoDB come database NoSQL offerto dai servizi Amazon & \textit{Non Soddisfatto}\\ \hline
+	\hypertarget{RVO6}{RVO6} & Viene utilizzato DynamoDB come database NoSQL offerto dai servizi Amazon Web Services & \textit{Non Soddisfatto}\\ \hline
 	
 	\hypertarget{RVO7}{RVO7} & Si utilizza AWS Lambda per l'esecuzione del codice nel server & \textit{Non Soddisfatto}\\ \hline
 	
@@ -249,7 +249,7 @@ dove:
 	\hyperlink{RFO14}{RFO14} & \hyperref[UC2.1.2.9]{UC2.1.2.9} \\& Verbale Esterno 2018-12-05\\ \hline
 	
 	\hyperlink{RFO15}{RFO15} & \hyperref[UC2.1]{UC2.1} \\& Verbale Esterno 2018-12-05\\ \hline
-	
+	\pagebreak
 	\hyperlink{RFO15.1}{RFO15.1} & \hyperref[UC2.1.1]{UC2.1.1} \\& Verbale Esterno 2018-12-05\\ \hline
 	
 	\hyperlink{RFO15.2}{RFO15.2} & \hyperref[UC2.1.2]{UC2.1.2} \\& Verbale Esterno 2018-12-05\\ \hline
@@ -420,14 +420,7 @@ dove:
 	\hyperlink{UC2.1.2.9}{UC2.1.2.9} & \hyperlink{RFO13}{RFO13}\\
 	& \hyperlink{RFO14}{RFO14}\\
 	& \hyperlink{RFF32}{RFF32}\\ \hline
-	\hyperlink{UC2.2}{UC2.2} & \hyperlink{RFO16}{RFO16}\\ \hline
-	\hyperlink{UC2.3}{UC2.3} & \hyperlink{RFO17}{RFO17}\\ \hline
-	\hyperlink{UC2.3.1}{UC2.3.1} & \hyperlink{RFO17.1}{RFO17.1}\\ \hline
-	\hyperlink{UC2.3.4}{UC2.3.4} & \hyperlink{RFO17.2}{RFO17.2}\\ \hline
-	\hyperlink{UC2.4}{UC2.4} & \hyperlink{RFO5}{RFO5}\\ \hline
-	\hyperlink{UC2.5}{UC2.5} & \hyperlink{RFO4}{RFO4}\\ \hline
-	\hyperlink{Verbale Esterno 2018-12-05}{Verbale Esterno 2018-12-05} & \hyperlink{RPO1}{RPO1}\\ & \hyperlink{RVO1}{RVO1}\\ & \hyperlink{RFO9}{RFO9}\\ & \hyperlink{RFO10}{RFO10}\\ & \hyperlink{RFO11}{RFO11}\\ & \hyperlink{RFO12}{RFO12}\\ & \hyperlink{RFO13}{RFO13}\\ & \hyperlink{RFO14}{RFO14}\\ & \hyperlink{RFO15}{RFO15}\\ & \hyperlink{RFO15.1}{RFO15.1}\\ & \hyperlink{RFO15.2}{RFO15.2}\\ & \hyperlink{RFO16}{RFO16}\\ & \hyperlink{RFO17}{RFO17}\\ & \hyperlink{RFO17.1}{RFO17.1}\\ & 
-	\hyperlink{RFO17.2}{RFO17.2}\\ & \hyperlink{RFO18}{RFO18}\\ & \hyperlink{RFO19}{RFO19}\\ & \hyperlink{RFO20}{RFO20}\\ & \hyperlink{RFO21}{RFO21}\\ & \hyperlink{RFO22}{RFO22}\\ & \hyperlink{RFO23}{RFO23}\\ \hline
+
 	\hyperref[UC1.1]{UC1.1} & \hyperlink{RFO1}{RFO1}\\ \hline
 	\hyperref[UC1.2]{UC1.2} & \hyperlink{RFO3}{RFO3}\\ \hline
 	\hyperref[UC1.3]{UC1.3} & \hyperlink{RFO2}{RFO2}\\ \hline
@@ -467,6 +460,14 @@ dove:
 	\hyperref[UC2.1.2.17]{UC2.1.2.17} & \hyperlink{RFO21}{RFO21}\\ \hline
 	\hyperref[UC2.1.2.18]{UC2.1.2.18} & \hyperlink{RFO22}{RFO22}\\ \hline
 	\hyperref[UC2.1.2.19]{UC2.1.2.19} & \hyperlink{RFO23}{RFO23}\\ \hline
+	\hyperlink{UC2.2}{UC2.2} & \hyperlink{RFO16}{RFO16}\\ \hline
+	\hyperlink{UC2.3}{UC2.3} & \hyperlink{RFO17}{RFO17}\\ \hline
+	\hyperlink{UC2.3.1}{UC2.3.1} & \hyperlink{RFO17.1}{RFO17.1}\\ \hline
+	\hyperlink{UC2.3.4}{UC2.3.4} & \hyperlink{RFO17.2}{RFO17.2}\\ \hline
+	\hyperlink{UC2.4}{UC2.4} & \hyperlink{RFO5}{RFO5}\\ \hline
+	\hyperlink{UC2.5}{UC2.5} & \hyperlink{RFO4}{RFO4}\\ \hline
+	\hyperlink{Verbale Esterno 2018-12-05}{Verbale Esterno 2018-12-05} & \hyperlink{RPO1}{RPO1}\\ & \hyperlink{RVO1}{RVO1}\\ & \hyperlink{RFO9}{RFO9}\\ & \hyperlink{RFO10}{RFO10}\\ & \hyperlink{RFO11}{RFO11}\\ & \hyperlink{RFO12}{RFO12}\\ & \hyperlink{RFO13}{RFO13}\\ & \hyperlink{RFO14}{RFO14}\\ & \hyperlink{RFO15}{RFO15}\\ & \hyperlink{RFO15.1}{RFO15.1}\\ & \hyperlink{RFO15.2}{RFO15.2}\\ & \hyperlink{RFO16}{RFO16}\\ & \hyperlink{RFO17}{RFO17}\\ & \hyperlink{RFO17.1}{RFO17.1}\\ & 
+	\hyperlink{RFO17.2}{RFO17.2}\\ & \hyperlink{RFO18}{RFO18}\\ & \hyperlink{RFO19}{RFO19}\\ & \hyperlink{RFO20}{RFO20}\\ & \hyperlink{RFO21}{RFO21}\\ & \hyperlink{RFO22}{RFO22}\\ & \hyperlink{RFO23}{RFO23}\\ \hline
 	\hyperref[UC2.2]{UC2.2} & \hyperlink{RFO16}{RFO16}\\ \hline
 	\hyperref[UC2.3]{UC2.3} & \hyperlink{RFO17}{RFO17}\\ \hline
 	\hyperref[UC2.3.1]{UC2.3.1} & \hyperlink{RFO17.1}{RFO17.1}\\ \hline
