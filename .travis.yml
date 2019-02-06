@@ -6,7 +6,7 @@ before_install:
   - sudo apt-get install myspell-it
   - sudo apt-get install python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext tesseract-ocr flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev libpulse-dev swig pocketsphinx
   - pip install wheel 
-  - pip install textract 
+  - pip install --user textract 
 jobs:
   include:
     - stage: test
