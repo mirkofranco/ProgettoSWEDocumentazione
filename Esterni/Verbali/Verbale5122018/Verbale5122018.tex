@@ -20,20 +20,20 @@
 	%devono essere compilati questi campi ogni volta
 	\begin{tabular}{c|c}
 		{\hfill \textbf{Versione}} 			& 1.0.0				\\
-		{\hfill\textbf{Data Redazione}} 	& 2018-12-08		\\ 
-		{\hfill\textbf{Redazione}} 			&  		Matteo Depascale			\\ 
-		{\hfill\textbf{Verifica}} 				&  		Bianca Andreea Ciuche		\\ 
-		{\hfill\textbf{Approvazione}} 		&  		Mirko Franco	\\ 
-		{\hfill\textbf{Uso}} 					& 	Esterno	\\ 
+		{\hfill\textbf{Data Redazione}} 	& 2018-12-08		\\
+		{\hfill\textbf{Redazione}} 			&  		Matteo Depascale			\\
+		{\hfill\textbf{Verifica}} 				&  		Bianca Andreea Ciuche		\\
+		{\hfill\textbf{Approvazione}} 		&  		Mirko Franco	\\
+		{\hfill\textbf{Uso}} 					& 	Esterno	\\
 		{\hfill\textbf{Distribuzione}} 			& 			Prof. Tullio Vardanega \\ & Prof. Riccardo Cardin \\ & Gruppo ZeroSeven \\ & Zero12 s.r.l. \\
 		{\hfill\textbf{Email di contatto}} & zerosevenswe@gmail.com \\
 	\end{tabular}
 \end{titlepage}
-	
 
-	
+
+
 	\label{LastFrontPage}
-	
+
 
 	\newpage
 	\cleardoublepage
@@ -55,13 +55,13 @@
 		\end{tabularx}
 		\caption{Diario delle modifiche}
 	\end{table}
-	
+
 	\cleardoublepage
 	\pagestyle{mymain}
-	
+
 	\tableofcontents
 	\cleardoublepage
-	
+
 	\section{Informazioni sulla riunione}
 	\subsection{Motivo della riunione}
 	La riunione è stata convocata attraverso l'invio di una mail all'azienda Zero12 per avere un quadro più completo del\glossario{capitolato}e per ottenere delle delucidazioni su argomenti poco chiari. \\
@@ -70,7 +70,7 @@
 		\item \textbf{Luogo e data}: sede dell'azienda Zero12, Mercoledì 5 Dicembre 2018;
 		\item \textbf{Ora di inizio}: 15:00;
 		\item \textbf{Ora di fine}: 16:00;
-		\item \textbf{Partecipanti}: 
+		\item \textbf{Partecipanti}:
 		\begin{itemize}
 		\item Gian Marco Bratzu;
 		\item Mirko Franco;
@@ -89,20 +89,20 @@
 		\item blocco 3: contenente un filtro.
 	\end{itemize}
 	A questo punto, dopo aver salvato, ci si aspetta che ci sia una\glossario{skill}che chiede quale\glossario{workflow}vuole essere eseguito. Verrà quindi letto il messaggio scritto nel blocco 1 e successivamente il contenuto del blocco 2 dopo aver filtrato in base alle scelte del blocco 3.
-	
+
 	\subsection{Un utente può avere più workflow?}
 	Sì, non è possibile avere più\glossario{workflow}con lo stesso nome.
-	
+
 	\subsection{Dovranno essere sviluppati i connettori?}
 	Sì, verranno decisi assieme quali connettori sviluppare.
-	
+
 	\subsection{E' possibile sviluppare il progetto solamente in mobile?}
-	Sì, anche se sviluppare il\glossario{progetto}tramite interfaccia web sarebbe  più semplice poichè basterebbe renderla responsive per averla a disposizione anche nel mobile.
-	
+	Sì, anche se sviluppare il\glossario{progetto}tramite interfaccia web sarebbe  più semplice poiché basterebbe renderla responsive per averla a disposizione anche nel mobile.
+
 	\subsection{E' possibile fare anche una versione sperimentale per iOS?}
 	Certo, inoltre l'idea del progetto è stata presa da un'applicazione per\glossario{iOS}chiamata Shortcuts. \\
 	Volendo fare sia\glossario{Android}che iOS è importante che le due applicazioni non siano completamente sbilanciate, in quanto avere un'applicazione iOS con poche funzionalità è abbastanza inutile e pertanto è preferibile non farla.
-	
+
 	\subsection{Possibili moduli da implementare?}
 	Ci saranno i seguenti moduli di base:
 	\begin{itemize}
@@ -120,19 +120,19 @@
 	\subsection{Che cosa si intende per Voice Dialog Flow?}
 	Il \textit{Voice Dialog}\glossario{Flow}è un documento (di testo) di story telling che può essere visto come una chat messaggio tra l'utente che interagisce e Alexa che risponde. \\
 	Questo argomento verrà spiegato più in dettaglio durante la lezione del 14 Dicembre. Dovrà essere incluso nel documento \textit{Analisi dei Requisiti}.
-	
+
 	\subsection{Tipo di basi di dati da utilizzare?}
 	Si consiglia di usare come NoSQL:\glossario{DynamoDB}piuttosto che MongoDB, entrambi utilizzano JSON. Essendo entrambi i database documentali, si dovrà spiegare la struttura del documento che andremo a fare a supporto del progetto. Oppure si potrà valutare l'opzione di Amazon \textit{Aurora}\glossario{Serverless}utilizzando quindi un database relazionale.
-	
+
 	\subsection{I documenti devono essere redatti in inglese?}
 	Non è necessario, però i commenti del codice andranno fatti in inglese.
-	
+
 	\subsection{Lingue da implementare nel progetto?}
 	Come lingua principale ci sarà inglese, mentre come secondaria Italiano.
-	
+
 	\subsection{Cosa si intende per piano di test di unità?}
 	Il piano di test di unità è principalmente usato per la parte server, ovvero bisognerà fare dei test per verificare che l'\textit{API$_{G}$} creata risponda alle richieste. \\
-	Inoltre nel blog di\glossario{Amazon}sono presenti degli articoli che suggeriscono come implementare i test in modo  automatico sulle \textit{skill$_{G}$}, facendo attenzione poichè è un ambito abbastanza inesplorato. \\
+	Inoltre nel blog di\glossario{Amazon}sono presenti degli articoli che suggeriscono come implementare i test in modo  automatico sulle \textit{skill$_{G}$}, facendo attenzione poiché è un ambito abbastanza inesplorato. \\
 	Dato che bisognerà utilizzare un approccio basato sui test, conviene predisporre un piano di test su un foglio excel formato nella maniera seguente:
 	\begin{itemize}
 		\item lista dei test;
@@ -141,15 +141,15 @@
 		\item chi ha fatto il test;
 		\item risultato reale.
 	\end{itemize}
-	
+
 	\subsection{Principali tool da utilizzare?}
 	L'azienda Zero12 utilizza CodeCommit, CodePipeline, CodeDeploy per quanto riguarda \textit{Amazon Web}\glossario{Services}. \\
 	Sarà inoltre possibile utilizzare servizi che al gruppo\glossario{ZeroSeven}sono più conosciuti in quanto non sono oggetto di valutazione, in caso contrario l'azienda Zero12 fornirà servizi di formazioni in merito.
-	
+
 	\subsection{Quali strumenti verranno messi a disposizione?}
 	Verrà messa a disposizione una repository dove caricare il codice sorgente, oppure potrà essere concordato l'utilizzo di\glossario{GitHub}. \\
 	Ci sarà la possibilità di concordare delle sessioni di formazioni su argomenti non trattati a lezione, come ad esempio le architetture serverless. \\
-	Per quanto riguarda l'account AWS, l'azienda è disponibile a condividere il proprio account se Amazon metterà a disposizione dei crediti.	
+	Per quanto riguarda l'account AWS, l'azienda è disponibile a condividere il proprio account se Amazon metterà a disposizione dei crediti.
 	\label{LastPage}
 
 \end{document}
