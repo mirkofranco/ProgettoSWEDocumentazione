@@ -23,9 +23,31 @@ jobs:
         - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error PianoDiProgetto.tex
         - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error PianoDiProgetto.tex
         - cd ../../
+        - cd Esterni/PianoDiQualifica 
+        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error PianoDiQualifica.tex
+        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error PianoDiQualifica.tex
+        - cd ../../
+        - cd Esterni/AnalisiDeiRequisiti
+        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error AnalisiDeiRequisiti.tex
+        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error AnalisiDeiRequisiti.tex
+        - cd ../../
+        - cd Esterni/Glossario
+        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error Glossario.tex
+        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error Glossario.tex
+        - cd ../../
+        - cd Interni/NormeDiProgetto
+        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error NormeDiProgetto.tex
+        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error NormeDiProgetto.tex
+        - cd ../../
     - stage: "gulpease"
       script:
        - cd Esterni/PianoDiProgetto
+       - python scripts/gulpease.py PianoDiProgetto.pdf
+       - cd ../../
+       - cd Esterni/PianoDiQualifica
+       - python scripts/gulpease.py PianoDiQualifica.pdf
+       - cd ../../
+       - cd Esterni/AnalisiDeiRequisiti
        - python scripts/gulpease.py PianoDiProgetto.pdf
        - cd ../../
 notifications:
