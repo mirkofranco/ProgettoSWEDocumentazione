@@ -3,8 +3,27 @@ before_install:
   - sudo apt-get install hunspell
   - sudo apt-get install myspell-en-us
   - sudo apt-get install myspell-it
+  - sudo apt-get install python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext tesseract-ocr flac lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig libpulse-dev
+  - pip install --user textract 
+  - sudo apt-get install -y --no-install-recommends texlive-full
 jobs:
   include:
     - stage: test
-      name: "orthography"
-      script: bash scripts/grammar.sh
+      - script: 
+        name: "orthography"
+        - bash scripts/grammar.sh
+      - script:
+        name: "gulpease"
+        - cd Esterni/PianoProgetto
+        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error PianoDiProgetto.tex
+        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error PianoDiProgetto.tex
+        - cd ../../
+        - cd Interni/NormeDiProgetto
+        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error NormeDiProgetto.tex
+        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error NormeDiProgetto.tex
+        - cd ../../
+      after_success:
+       - python scripts/gulpease.py PianoDiProgetto.pdf
+       - python scripts/gulpease.py NormeDiProgetto.pdf
+notifications:
+  slack: zerosevengroup:awH2p9uSzEPY9plMSyKBtAHF
