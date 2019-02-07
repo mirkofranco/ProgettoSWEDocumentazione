@@ -15,5 +15,8 @@ jobs:
     - stage: "grammar"
       script:
        - bash scripts/grammar.sh
+    - stage: "compile"
+      script:
+        - cd Esterni
 notifications:
   slack: zerosevengroup:awH2p9uSzEPY9plMSyKBtAHF
