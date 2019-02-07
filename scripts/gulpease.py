@@ -1,11 +1,13 @@
 # Calcolare l'indice di Leggibilita' di un PDF
 # aimriccardop & atk23 (aka AnnaP) x TEAM_N0
+import sys
+
+nomeScript, nomeFile = sys.argv
 
 import textract
 
 #nf = raw_input("Digita il nome del PDF di cui vuoi calcolare l'indice di leggibilita': ")
-testo = textract.process("Esterni/PianoDiProgetto/PianoDiProgetto.pdf", method='pdftotext')
-
+testo = textract.process(nomeFile, method='pdftotext')
 #print(testo)
 
 import re
