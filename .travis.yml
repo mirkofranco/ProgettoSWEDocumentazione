@@ -13,7 +13,7 @@ jobs:
       script: 
        - bash scripts/grammar.sh
       after_success:
-       - pdflatex -halt-on-error Esterni/PianoDiProgetto/PianoDiProgetto.tex 
+       - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error Esterni/PianoDiProgetto/PianoDiProgetto.tex 
        - python scripts/gulpease.py 
 
 notifications:
