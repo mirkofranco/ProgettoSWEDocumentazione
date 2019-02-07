@@ -10,10 +10,8 @@ jobs:
   include:
     - stage: test
       - script: 
-        name: "orthography"
         - bash scripts/grammar.sh
       - script:
-        name: "gulpease"
         - cd Esterni/PianoProgetto
         - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error PianoDiProgetto.tex
         - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error PianoDiProgetto.tex
