@@ -2,6 +2,8 @@ stages:
   - "grammar"
   - name: "compile"
     if: (branch = develop) OR (branch = master)
+  - name: "gulpease"
+    if: (branch = develop) OR (branch = master)
 before_install:
   - sudo apt-get update
   - sudo apt-get install hunspell
@@ -9,7 +11,6 @@ before_install:
   - sudo apt-get install myspell-it
   - sudo apt-get install python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext tesseract-ocr flac lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig libpulse-dev
   - pip install --user textract 
-  - sudo apt-get install -y --no-install-recommends texlive-full
 jobs:
   include:
     - stage: "grammar"
@@ -17,6 +18,15 @@ jobs:
        - bash scripts/grammar.sh
     - stage: "compile"
       script:
-        - cd Esterni
+        - sudo apt-get install -y --no-install-recommends texlive-full
+        - cd Esterni/PianoDiProgetto
+        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error PianoDiProgetto.tex
+        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error PianoDiProgetto.tex
+        - cd ../../
+      - stage: "gulpease"
+        script:
+         - cd Esterni/PianoDiProgetto
+         - python scripts/gulpease.py PianoDiProgetto.pdf
+         - cd ../../
 notifications:
   slack: zerosevengroup:awH2p9uSzEPY9plMSyKBtAHF
