@@ -4,7 +4,7 @@
 import textract
 
 #nf = raw_input("Digita il nome del PDF di cui vuoi calcolare l'indice di leggibilita': ")
-testo = textract.process("../Esterni/PianoDiProgetto/PianoDiProgetto.pdf", method='pdftotext')
+testo = textract.process("Esterni/PianoDiProgetto/PianoDiProgetto.pdf", method='pdftotext')
 
 #print(testo)
 
