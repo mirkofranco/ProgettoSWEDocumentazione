@@ -23,10 +23,10 @@ jobs:
         - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error PianoDiProgetto.tex
         - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error PianoDiProgetto.tex
         - cd ../../
-      - stage: "gulpease"
-        script:
-         - cd Esterni/PianoDiProgetto
-         - python scripts/gulpease.py PianoDiProgetto.pdf
-         - cd ../../
+    - stage: "gulpease"
+      script:
+       - cd Esterni/PianoDiProgetto
+       - python scripts/gulpease.py PianoDiProgetto.pdf
+       - cd ../../
 notifications:
   slack: zerosevengroup:awH2p9uSzEPY9plMSyKBtAHF
