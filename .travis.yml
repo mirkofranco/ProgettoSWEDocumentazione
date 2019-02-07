@@ -1,5 +1,7 @@
 stages:
   - "grammar"
+  - "compile"
+    if: (branch = develop) OR (branch = master)
 before_install:
   - sudo apt-get update
   - sudo apt-get install hunspell
