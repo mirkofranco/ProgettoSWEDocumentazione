@@ -11,9 +11,11 @@ jobs:
     - stage: test
       name: "orthography"
       script: 
+       - cd Esterni/PianoDiProgetto
+       - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error PianoDiProgetto.tex
+       - cd /
        - bash scripts/grammar.sh
       after_success:
-       - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error Esterni/PianoDiProgetto/PianoDiProgetto.tex 
        - python scripts/gulpease.py 
 
 notifications:
