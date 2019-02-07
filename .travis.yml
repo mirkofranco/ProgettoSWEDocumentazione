@@ -39,5 +39,7 @@ jobs:
         - python scripts/gulpease.py Esterni/PianoDiProgetto/PianoDiProgetto.pdf
         - python scripts/gulpease.py Esterni/PianoDiQualifica/PianoDiQualifica.pdf
         - python scripts/gulpease.py Esterni/AnalisiDeiRequisiti/AnalisiDeiRequisiti.pdf
+        - python scripts/gulpease.py Esterni/Glossario/Glossario.pdf
+        - python scripts/gulpease.py Interni/NormeDiProgetto/NormeDiProgetto.pdf
 notifications:
   slack: zerosevengroup:awH2p9uSzEPY9plMSyKBtAHF
