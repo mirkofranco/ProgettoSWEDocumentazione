@@ -13,7 +13,8 @@ jobs:
       script: 
        - cd Esterni/PianoDiProgetto
        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error PianoDiProgetto.tex
-       - cd /
+       - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error PianoDiProgetto.tex
+       - cd ../../
        - bash scripts/grammar.sh
       after_success:
        - python scripts/gulpease.py 
