@@ -1,6 +1,6 @@
 stages:
   - "grammar"
-  - name: "CompileAnsGulpease"
+  - name: "CompileAndGulpease"
     if: (branch = develop) OR (branch = master)
 jobs:
   include:
