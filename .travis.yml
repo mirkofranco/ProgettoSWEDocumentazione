@@ -1,6 +1,6 @@
 stages:
   - "grammar"
-  - "compile"
+  - name: "compile"
     if: (branch = develop) OR (branch = master)
 before_install:
   - sudo apt-get update
