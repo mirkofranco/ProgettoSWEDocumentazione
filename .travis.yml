@@ -4,15 +4,14 @@ stages:
     if: (branch = develop) OR (branch = master)
   - name: "gulpease"
     if: (branch = develop) OR (branch = master)
-before_install:
-  - sudo apt-get update
-  - sudo apt-get install hunspell
-  - sudo apt-get install myspell-en-us
-  - sudo apt-get install myspell-it
 jobs:
   include:
     - stage: "grammar"
       script:
+       - sudo apt-get update
+       - sudo apt-get install hunspell
+       - sudo apt-get install myspell-en-us
+       - sudo apt-get install myspell-it
        - bash scripts/grammar.sh
     - stage: "compile"
       script:
