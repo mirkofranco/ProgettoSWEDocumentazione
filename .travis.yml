@@ -5,6 +5,7 @@ before_install:
   - sudo apt-get install myspell-it
   - sudo apt-get install python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext tesseract-ocr flac lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig libpulse-dev
   - pip install --user textract 
+  - sudo apt-get install texlive-latex-base
 jobs:
   include:
     - stage: test
@@ -12,7 +13,7 @@ jobs:
       script: 
        - bash scripts/grammar.sh
       after_success:
-       - pdflatex Esterni/PianoDiProgetto/PianoDiProgetto.tex 
+       - pdflatex -halt-on-error Esterni/PianoDiProgetto/PianoDiProgetto.tex 
        - python scripts/gulpease.py 
 
 notifications:
