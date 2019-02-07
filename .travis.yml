@@ -1,3 +1,7 @@
+stages:
+  - "grammar"
+  - name: "compile"
+    if: branch = develop 
 before_install:
   - sudo apt-get update
   - sudo apt-get install hunspell
@@ -8,20 +12,28 @@ before_install:
   - sudo apt-get install -y --no-install-recommends texlive-full
 jobs:
   include:
-    - stage: test
-      - script: 
-        - bash scripts/grammar.sh
-      - script:
-        - cd Esterni/PianoProgetto
-        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error PianoDiProgetto.tex
-        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error PianoDiProgetto.tex
-        - cd ../../
-        - cd Interni/NormeDiProgetto
-        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error NormeDiProgetto.tex
-        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error NormeDiProgetto.tex
-        - cd ../../
-      after_success:
-       - python scripts/gulpease.py PianoDiProgetto.pdf
-       - python scripts/gulpease.py NormeDiProgetto.pdf
+    - stage: "grammar"
+      script:
+       - bash scripts/grammar.sh
+    - stage: "compile"
+      script:
+       - cd Esterni/PianoProgetto
+       - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error PianoDiProgetto.tex
+       - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error PianoDiProgetto.tex
+       - cd ../../
+       - cd Interni/NormeDiProgetto
+       - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error NormeDiProgetto.tex
+       - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error NormeDiProgetto.tex
+       - cd ../../
+      - stage: "gulpease"
+        script:
+         - cd Esterni/PianoProgetto
+         - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error PianoDiProgetto.tex
+         - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error PianoDiProgetto.tex
+         - cd ../../
+         - cd Interni/NormeDiProgetto
+         - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error NormeDiProgetto.tex
+         - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error NormeDiProgetto.tex
+         - cd ../../
 notifications:
   slack: zerosevengroup:awH2p9uSzEPY9plMSyKBtAHF
