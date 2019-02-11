@@ -256,7 +256,7 @@ dove:
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
 	\item \textbf{Descrizione}: L'attore sceglie i blocchi che compongono il workflow. Può scegliere tra due categorie di blocchi: blocchi principali e blocchi di supporto.
-	Blocchi principali: Twitter, Sveglia, Email, Telegram, Calendario, Youtube, Radio, Illuminazione, Spotify, Pianificazione, Notizie borsa e Crypto, Timer, Lista.
+	Blocchi principali: Twitter, Sveglia, Email, Telegram, Calendario, Youtube, Radio, Illuminazione, Spotify, Pianificazione, Notizie, Borsa e Crypto, Timer, Lista, Feed RSS, Meteo, Amazon Music.
 	Blocchi di supporto: Pin, Pianificazione, Filtro, Blocco di testo.
 	\item \textbf{Precondizione}: Il sistema mette a disposizione un form per l'inserimento dei blocchi e una lista di blocchi disponibili.
 	\item \textbf{Postcondizione}: Il workflow contiene i blocchi desiderati dall'utente.
@@ -269,8 +269,8 @@ dove:
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
 	\item \textbf{Descrizione}: L'attore può inserire il blocco "Pin" nel suo workflow. Questo blocco permette all'attore di proteggere il proprio workflow con un pin di 4 cifre. L'attore dovrà dire il pin ad Alexa prima di continuare con i blocchi che seguono.
-	\item \textbf{Precondizione}: L'attore sta creando il workflow e il sistema gli permette di selezionare i blocchi
-	\item \textbf{Postcondizione}: L'attore ha inserito il blocco Pin nel suo workflow
+	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
+	\item \textbf{Postcondizione}: L'attore ha inserito il blocco Pin nel suo workflow.
 	\item \textbf{Scenario principale}:
 	\begin{enumerate} \item L'attore seleziona il blocco Pin;  \item 
 		L'attore inserisce il numero di 4 cifre richiesto dal sistema.\end{enumerate}
@@ -280,9 +280,9 @@ dove:
 \label{UC2.1.2.2}
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
-	\item \textbf{Descrizione}: L'attore può inserire il blocco di supporto Pianificazione. Questo blocco indica quando far partire il prossimo blocco
-	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco
-	\item \textbf{Postcondizione}: L'attore ha inserito il blocco Pianificazione nel suo workflow
+	\item \textbf{Descrizione}: L'attore può inserire il blocco di supporto Pianificazione. Questo blocco indica quando far partire il prossimo blocco, ovvero pianificare l'esecuzione del blocco.
+	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
+	\item \textbf{Postcondizione}: L'attore ha inserito il blocco Pianificazione nel suo workflow.
 	\item \textbf{Scenario principale}:
 	\begin{enumerate} \item L'attore include il blocco Pianificazione nel workflow.\end{enumerate}
 \end{itemize}
@@ -293,7 +293,7 @@ dove:
 	\item \textbf{Attori}: utente autenticato;
 	\item \textbf{Descrizione}: L'attore può inserire un blocco di testo che verrà letto da Alexa.
 	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
-	\item \textbf{Postcondizione}: L'attore ha inserito il blocco di testo nel suo workflow
+	\item \textbf{Postcondizione}: L'attore ha inserito il blocco di testo nel suo workflow.
 	\item \textbf{Scenario principale}:
 	\begin{enumerate} \item L'attore seleziona il blocco;  \item  L'attore inserisce il testo.\end{enumerate}
 \end{itemize}
@@ -302,19 +302,19 @@ dove:
 \label{UC2.1.2.4}
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
-	\item \textbf{Descrizione}: L'attore può inserire un blocco "Twitter" nel proprio workflow, che permette all'utente di pubblicare o rispondere ai tweet.
-	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco
+	\item \textbf{Descrizione}: L'attore può inserire un blocco "Twitter" nel proprio workflow, che permette all'utente di pubblicare o rispondere ai tweets.
+	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
 	\item \textbf{Postcondizione}: L'attore ha inserito le credenziali (del suo account Twitter) e configurato il blocco "Twitter".
 	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore seleziona il blocco Twitter;  \item  L'attore inserisce le credenziali del proprio account;  \item  L'attore seleziona quali tweet vuole visualizzare (ordine cronologico, di importanza, account specifici).\end{enumerate}
+	\begin{enumerate} \item L'attore seleziona il blocco Twitter;  \item  L'attore inserisce le credenziali del proprio account;  \item  L'attore seleziona quali tweets vuole visualizzare (ordine cronologico, di importanza, account specifici).\end{enumerate}
 \end{itemize}
 
 \section{UC2.1.2.5: Inserimento Lista}
 \label{UC2.1.2.5}
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
-	\item \textbf{Descrizione}: L'attore può inserire un blocco "Lista" al suo workflow. Questo blocco permette all'attore di creare una lista personalizzata, modificabile sia dall'applicazione che tramite Alexa
-	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco
+	\item \textbf{Descrizione}: L'attore può inserire un blocco "Lista" al suo workflow. Questo blocco permette all'attore di creare una lista personalizzata, modificabile sia dall'applicazione che tramite Alexa.
+	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
 	\item \textbf{Postcondizione}: L'attore ha inserito il blocco "Lista" nel suo workflow.
 	\item \textbf{Scenario principale}:
 	\begin{enumerate} \item L'attore seleziona il blocco "Lista";  \item  L'attore popola la lista (opzionale).\end{enumerate}
@@ -324,7 +324,7 @@ dove:
 \label{UC2.1.2.6}
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
-	\item \textbf{Descrizione}: L'attore può inserire un blocco "sveglia" nel suo workflow. La sveglia suona all'orario indicato dall'attore. L'attore può posporre o spegnere la sveglia (mente questa è attiva)
+	\item \textbf{Descrizione}: L'attore può inserire un blocco "sveglia" nel suo workflow. La sveglia suona all'orario indicato dall'attore. L'attore può posporre o spegnere la sveglia mente questa è attiva, può inoltre spegnere la sveglia o modificare l'orario in un momento diverso dall'accensione della sveglia.
 	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
 	\item \textbf{Postcondizione}: L'attore ha inserito una sveglia nel suo workflow.
 	\item \textbf{Scenario principale}:
@@ -337,9 +337,9 @@ dove:
 	\item \textbf{Attori}: Google, utente autenticato;
 	\item \textbf{Descrizione}: L'attore può inserire un blocco "Mail" nel suo workflow. Questo blocco permette all'utente di leggere oppure inviare email tramite Alexa.
 	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
-	\item \textbf{Postcondizione}: L'attore ha inserito il blocco "Mail" e ha inserito le sue credenziali (della mail)
+	\item \textbf{Postcondizione}: L'attore ha inserito il blocco "Mail" e ha inserito le sue credenziali della mail.
 	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore seleziona il blocco Mail;  \item  L'attore inserisce le credenziali per accedere alla mail;  \item  L'attore seleziona quali tipi di email vuole leggere (tutte, più importanti, personalizzate).\end{enumerate}
+	\begin{enumerate} \item L'attore seleziona il blocco Mail;  \item  L'attore inserisce le credenziali per accedere alla mail;  \item  L'attore seleziona quali tipi di email vuole leggere (tutte, non lette, più recenti, più importanti, personalizzate).\end{enumerate}
 \end{itemize}
 
 \section{UC2.1.2.8: Inserimento Telegram}
@@ -350,7 +350,7 @@ dove:
 	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
 	\item \textbf{Postcondizione}: L'attore ha inserito il blocco "Telegram" e le credenziali d'accesso nel suo workflow.
 	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore seleziona il blocco "Telegram";  \item  L'attore inserisce le credenziali d'accesso;  \item  L'attore seleziona quali chat non devono essere lette.\end{enumerate}
+	\begin{enumerate} \item L'attore seleziona il blocco "Telegram";  \item  L'attore inserisce le credenziali d'accesso.\end{enumerate}
 \end{itemize}
 
 \section{UC2.1.2.9: Inserimento Calendario}
@@ -368,11 +368,11 @@ dove:
 \label{UC2.1.2.10}
 \begin{itemize}
 	\item \textbf{Attori}: Google, utente autenticato;
-	\item \textbf{Descrizione}: L'attore può inserire il blocco "Youtube". Questo blocco permette all'attore di ascoltare musica attraverso Youtube.
+	\item \textbf{Descrizione}: L'attore può inserire il blocco "Youtube" e collegarlo al proprio account Google. Questo blocco permette all'attore di ascoltare musica attraverso Youtube.
 	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
 	\item \textbf{Postcondizione}: L'attore ha inserito il blocco "Youtube" al proprio workflow.
 	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore seleziona il blocco "Youtube";  \item  L'attore inserisce gli URL dei video che vuole riprodurre (solo audio).\end{enumerate}
+	\begin{enumerate} \item L'attore seleziona il blocco "Youtube"; \item L'attore inserisce le proprie credenziali Google; \item  L'attore inserisce gli URL dei video che vuole riprodurre (solo audio).\end{enumerate}
 	\item \textbf{Scenari alternativi}:
 	Il video non esiste(UC2.1.2.10.1)
 \end{itemize}
@@ -381,18 +381,18 @@ dove:
 \label{UC2.1.2.10.1}
 \begin{itemize}
 	\item \textbf{Attori}: Google, utente autenticato;
-	\item \textbf{Descrizione}: L'attore ha inserito un URL (di Youtube) errato.
-	\item \textbf{Precondizione}: L'attore ha provato a inserire un URL (di Youtube) che non esiste
-	\item \textbf{Postcondizione}: Il sistema ha avvisato l'utente dell'inesistenza dell'URL e gli permette di modificarlo oppure eliminarlo
+	\item \textbf{Descrizione}: L'attore ha inserito un URL di un video di Youtube errato.
+	\item \textbf{Precondizione}: L'attore ha provato a inserire un URL di un video di Youtube che non esiste.
+	\item \textbf{Postcondizione}: Il sistema ha avvisato l'utente dell'inesistenza dell'URL e gli permette di modificarlo oppure eliminarlo.
 	\item \textbf{Scenario principale}:
 	\begin{enumerate} \item L'utente inserisce un URL errato;  \item  Il sistema avvisa l'utente dell'inesistenza dell'URL;  \item  L'utente modifica l'URL o lo elimina.\end{enumerate}
 \end{itemize}
 
-\section{UC2.1.2.11: Inserimento timer}
+\section{UC2.1.2.11: Inserimento Timer}
 \label{UC2.1.2.11}
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
-	\item \textbf{Descrizione}: L'attore può inserire un blocco "Timer" nel workflow. Questo blocco permette la riproduzione di un suono dopo un tempo specificato
+	\item \textbf{Descrizione}: L'attore può inserire un blocco "Timer" nel workflow. Questo blocco permette la riproduzione di un suono dopo un tempo specificato.
 	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
 	\item \textbf{Postcondizione}: L'attore ha inserito il blocco "Timer".
 	\item \textbf{Scenario principale}:
@@ -403,7 +403,7 @@ dove:
 \label{UC2.1.2.12}
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
-	\item \textbf{Descrizione}: L'attore può inserire un modulo "Radio" nel workflow.
+	\item \textbf{Descrizione}: L'attore può inserire un modulo "Radio" nel workflow, permettendo la riproduzione della stazione radio scelta.
 	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
 	\item \textbf{Postcondizione}: L'attore ha inserito il blocco "Radio".
 	\item \textbf{Scenario principale}:
@@ -425,20 +425,20 @@ dove:
 \label{UC2.1.2.14}
 \begin{itemize}
 	\item \textbf{Attori}: Spotify, utente autenticato;
-	\item \textbf{Descrizione}: L'attore può inserire il blocco "Spotify" al workflow.
+	\item \textbf{Descrizione}: L'attore può inserire il blocco "Spotify" al workflow, immettendo le proprie credenziali, questo permetterà l'accesso al noto servizio di musica digitale.
 	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
-	\item \textbf{Postcondizione}: L'attore ha inserito il blocco "Spotify"
+	\item \textbf{Postcondizione}: L'attore ha inserito il blocco "Spotify".
 	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore seleziona il blocco "Spotify";  \item  L'attore inserisce l proprie credenziali di Spotify;  \item  L'attore seleziona quale playlist riprodurre di default.\end{enumerate}
+	\begin{enumerate} \item L'attore seleziona il blocco "Spotify";  \item  L'attore inserisce le proprie credenziali di Spotify;  \item  L'attore seleziona quale playlist riprodurre di default.\end{enumerate}
 \end{itemize}
 
 \section{UC2.1.2.15: Inserimento Borsa e Crypto}
 \label{UC2.1.2.15}
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
-	\item \textbf{Descrizione}: L'attore può inserire il blocco "Borsa e Crypto". Questo blocco permette all'attore di conoscere i valori delle monete e cryptovalute. 
+	\item \textbf{Descrizione}: L'attore può inserire il blocco "Borsa e Crypto". Questo blocco permette all'attore di conoscere i valori delle monete e criptovalute. 
 	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
-	\item \textbf{Postcondizione}: L'attore ha inserito il blocco "Borsa e Crypto"
+	\item \textbf{Postcondizione}: L'attore ha inserito il blocco "Borsa e Crypto".
 	\item \textbf{Scenario principale}:
 	\begin{enumerate} \item L'attore seleziona il blocco "Borsa e Crypto";  \item  Il sistema fornisce una lista inerente di monete e criptovalute;  \item  L'attore seleziona le monete e criptovalute che vuole monitorare.\end{enumerate}
 \end{itemize}
@@ -449,9 +449,9 @@ dove:
 	\item \textbf{Attori}: utente autenticato;
 	\item \textbf{Descrizione}: L'attore può inserire un feed RSS personalizzato.
 	\item \textbf{Precondizione}: Il sistema mette a disposizione un form per l'inserimento dei blocchi e una lista di blocchi disponibili.
-	\item \textbf{Postcondizione}: L'attore ha inserito il blocco di feed RSS.
+	\item \textbf{Postcondizione}: L'attore ha inserito il blocco di ``feed RSS''.
 	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore seleziona il blocco RSS;  \item  L'attore inserisce il link del feed RSS.\end{enumerate}
+	\begin{enumerate} \item L'attore seleziona il blocco ``Feed RSS'';  \item  L'attore inserisce il link del feed RSS.\end{enumerate}
 	\item \textbf{Scenari alternativi}:
 	L'attore inserisce un URL sbagliato. (UC2.1.2.16.1)
 \end{itemize}
@@ -460,8 +460,8 @@ dove:
 \label{UC2.1.2.16.1}
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
-	\item \textbf{Descrizione}: L'attore ha inserito un feed RSS non corretto
-	\item \textbf{Precondizione}: L'attore ha inserito un feed RSS non corretto
+	\item \textbf{Descrizione}: L'attore ha inserito un feed RSS non corretto.
+	\item \textbf{Precondizione}: L'attore ha inserito un feed RSS non corretto.
 	\item \textbf{Postcondizione}: L'attore ha inserito un feed RSS corretto, oppure ha annullato l'operazione.
 	\item \textbf{Scenario principale}:
 	\begin{enumerate} \item Il sistema chiede nuovamente il feed RSS oppure permette di annullare l'inserimento;  \item  L'attore inserisce un Feed RSS corretto oppure annulla l'operazione.\end{enumerate}
@@ -471,33 +471,33 @@ dove:
 \label{UC2.1.2.17}
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
-	\item \textbf{Descrizione}: L'attore può inserire un blocco Filtro. Questo blocco va collegato ad un altro blocco, per filtrarne i risultati. 
+	\item \textbf{Descrizione}: L'attore può inserire un blocco ``Filtro''. Questo blocco va collegato ad un altro blocco, per filtrarne i risultati. 
 	\item \textbf{Precondizione}: L'attore ha inserito un blocco compatibile con il Filtro e il sistema permette l'inserimento del prossimo blocco.
-	\item \textbf{Postcondizione}: L'attore ha configurato il Filtro. 
+	\item \textbf{Postcondizione}: L'attore ha configurato il filtro. 
 	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore seleziona il Filtro;  \item  L'attore seleziona quanti record vuole filtrare.\end{enumerate}
+	\begin{enumerate} \item L'attore seleziona il filtro;  \item  L'attore seleziona quanti record vuole filtrare.\end{enumerate}
 \end{itemize}
 
 \section{UC2.1.2.18: Inserimento Meteo}
 \label{UC2.1.2.18}
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
-	\item \textbf{Descrizione}: L'attore può inserire il blocco Meteo. Questo blocco permette di conoscere il meteo nella città selezionata dall'attore.
+	\item \textbf{Descrizione}: L'attore può inserire il blocco ``Meteo''. Questo blocco permette di conoscere il meteo nella città selezionata dall'attore.
 	\item \textbf{Precondizione}: Il sistema mette a disposizione un form per l'inserimento dei blocchi e una lista di blocchi disponibili.	
-	\item \textbf{Postcondizione}: L'attore ha inserito il blocco meteo e selezionato la città.
+	\item \textbf{Postcondizione}: L'attore ha inserito il blocco ``Meteo'' e selezionato la città.
 	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore seleziona il blocco Meteo;  \item  L'attore seleziona la città.\end{enumerate}
+	\begin{enumerate} \item L'attore seleziona il blocco ``Meteo'';  \item  L'attore seleziona la città.\end{enumerate}
 \end{itemize}
 
 \section{UC2.1.2.19: Inserimento Amazon Music}
 \label{UC2.1.2.19}
 \begin{itemize}
 	\item \textbf{Attori}: Amazon, utente autenticato;
-	\item \textbf{Descrizione}: L'attore può inserire in blocco Amazon Music. Questo blocco permette di ascoltare la musica attraverso Amazon Music
+	\item \textbf{Descrizione}: L'attore può inserire in blocco ``Amazon Music''. Questo blocco permette di ascoltare la musica attraverso il servizio Amazon Music.
 	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.	
-	\item \textbf{Postcondizione}: L'attore ha inserito il blocco workflow
+	\item \textbf{Postcondizione}: L'attore ha inserito il blocco workflow.
 	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore seleziona il blocco Amazon Music;  \item  L'attore seleziona la playlist di default.\end{enumerate}
+	\begin{enumerate} \item L'attore seleziona il blocco ``Amazon Music'';  \item  L'attore seleziona la playlist di default.\end{enumerate}
 \end{itemize}
 
 \section{UC2.2: Eliminazione workflow}
