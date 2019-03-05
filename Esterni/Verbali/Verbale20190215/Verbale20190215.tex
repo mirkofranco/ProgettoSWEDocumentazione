@@ -21,7 +21,7 @@
 			{\hfill \textbf{Versione}} 			& 1.0.0				\\
 			{\hfill\textbf{Data Redazione}} 	& 2019-02-17		\\ 
 			{\hfill\textbf{Redazione}} 			&  		Bianca Andreea Ciuche		\\ 
-			{\hfill\textbf{Verifica}} 				&  	  	\\ 
+			{\hfill\textbf{Verifica}} 				&  	Matteo Depascale  	\\ 
 			{\hfill\textbf{Approvazione}} 		&  		\\ 
 			{\hfill\textbf{Uso}} 					& 	Esterno	\\ 
 			{\hfill\textbf{Distribuzione}} 			& 			Prof. Tullio Vardanega \\ & Prof. Riccardo Cardin \\ & Gruppo ZeroSeven \\ & Zero12 s.r.l.	\\ 
@@ -42,6 +42,8 @@
 			\hline
 			\textbf{Versione} & \textbf{Data} & \textbf{Descrizione} & \textbf{Autore} & \textbf{Ruolo} \\
 			\hline
+			0.1.0 & 2019-02-20 & Verifica verbale & Matteo Depascale & Verificatore \\
+			\hline
 			0.0.2 & 2019-02-17 & Stesura verbale &Bianca Andreea Ciuche  & Analista \\
 			\hline
 			0.0.1 & 2018-12-08 & Creazione template documento & Ludovico Brocca & Amministratore\\
@@ -55,10 +57,10 @@
 	\tableofcontents
 	\cleardoublepage
 	\section{Informazioni sulla riunione}
-	\subsection{Motivo della riunione}E' stata richiesta questa riunione per aggiornare la Proponente sul lavoro che stiamo svolgendo e per chiarire alcuni dubbi riguardanti le tecnologie che sono sorti lavorando sul prototipo.
+	\subsection{Motivo della riunione}E' stata richiesta questa riunione per aggiornare la Proponente sul lavoro che stiamo svolgendo e per chiarire alcuni dubbi riguardanti le tecnologie che sono sorte lavorando sul prototipo.
 	
 	\begin{itemize}
-		\item \textbf{Luogo e data}: Padova, Venerdì 15 Febbraio 2019;
+		\item \textbf{Luogo e data}: Google Hangout, Venerdì 15 Febbraio 2019;
 		\item \textbf{Ora di inizio}: 17:00;
 		\item \textbf{Ora di fine}: 17:20;
 		\item \textbf{Partecipanti}:  
@@ -76,14 +78,14 @@
 	
 	\section{Resoconto}
 	\subsection{Argomenti discussi}
-	Nel corso della riunione effettuata mediante Hangouts, è stato mostrato all'azienda il Moc dell'applicazione.  
+	Nel corso della riunione effettuata mediante Hangouts, è stato mostrato all'azienda il mock dell'applicazione.  
 	Inoltre, sono state discusse varie problematiche emerse durante la programmazione del prototipo.
 	\begin{itemize}
-		\item {Si è discusso sulla possibilità di integrare il codice delle funzioni lambda con git hub per avere un codice più controllato senza effettuare ogni volta il caricamento tramite lo zip. Git hub ha  un'area di configurazione che si interfaccia con Amazon web service, quindi si può,dopo aver eseguito un commit fare partire uno script che si collega al git di una lambda che effettua lo zip e la carica tramite l'API di Amazon. Oppure c'è la possibilità di usare Code commit.}
-		\item {Si è discusso sullo sviluppo dei voice dialog flow. Questi devono essere composti da tutte le possibili iterazioni necessarie per il progetto. Bisogna inoltre creare dei scenari in cui si deve chiarire quali workflow l'utente ha a disposizione.}
-		\item {Si è discusso su come avviene in dettaglio il login. E' corretto eseguire la registrazione e il login tramite un account Amazon. Inoltre è possibile interrogare un token per avere i dati dell'utente provenienti da Amazon. Dopo aver effettuato il login una prima volta, successivamente è possibile effettuare il login automatico grazie al token. Il token ha un tempo di durata durante il quale rimane attivo.}
-		\item {Si è discusso sull'utilizzo di DynamoDB. E' corretto scaricare le classi che JSON genera in automatico, queste classi rispecchialo la struttura del nostro data base.}
-		\item{Per testare il codice in NodeJs è stato consigliato l'utilizzo di due framework: Mocha e Chai/Asser Istambul.}
+		\item {Si è discusso sulla possibilità di integrare il codice delle funzioni lambda con github per avere un codice più controllato senza effettuare ogni volta il caricamento tramite lo zip. Git hub ha  un'area di configurazione che si interfaccia con Amazon Web Service, quindi si può, dopo aver eseguito un commit far partire uno script che si collega al git di una lambda che effettua lo zip e la carica tramite l'API di Amazon. Oppure c'è la possibilità di usare Code Commit, la quale è stata scartata dal gruppo preferendo github}
+		\item {Si è discusso sullo sviluppo del voice dialog flow. Questi devono essere composti da tutte le possibili iterazioni necessarie per il progetto. Bisogna inoltre creare dei scenari in cui si deve chiarire quali workflow l'utente ha a disposizione.}
+		\item {Si è discusso su come avviene in dettaglio il login. E' corretto eseguire la registrazione e il login tramite un account Amazon. Inoltre è possibile interrogare Amazon, usando un token, per avere i dati dell'utente provenienti da Amazon. Dopo aver effettuato il login una prima volta, successivamente è possibile effettuare il login automatico grazie al token. Il token ha un tempo di durata durante il quale rimane attivo.}
+		\item {Si è discusso sull'utilizzo di DynamoDB. E' corretto scaricare le classi che JSON genera in automatico, queste classi rispecchiano la struttura del nostro database.}
+		\item {Per testare il codice in NodeJs è stato consigliato l'utilizzo di due framework: Mocha e Chai/Asser Istanbul.}
 	\end{itemize}
 	\subsection{Tracciamento decisioni}
 	\begin{table}[tbph]
@@ -92,9 +94,9 @@
 			\hline
 			\textbf{Codice } & \textbf{Decisione} \\
 			\hline
-			01-VER\_2019-02-15& Sviluppare tre blocchi per la consegna del prototipo.\\
+			01-VER\_2019-02-15& Sviluppare due blocchi per la consegna del prototipo.\\
 			\hline
-			02-VER\_2019-02-15& Sviluppare i voice dialog flow con una struttura a dialogo.\\
+			02-VER\_2019-02-15& Sviluppare il voice dialog flow con una struttura a dialogo.\\
 			\hline
 			03-VER\_2019-02-15& Mocha: framework utilizzato per effettuare i test sul codice in NodeJS.\\
 			
