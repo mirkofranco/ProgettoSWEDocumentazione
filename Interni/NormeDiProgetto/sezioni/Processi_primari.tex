@@ -169,38 +169,6 @@ Al fine di rendere chiare e comprensibili le scelte progettuali effettuate e rid
 \subsubsection{Integrazione}
 L'integrazione continua avviene mediante l'azione congiunta di \glossario{Travis} e \glossario{SonarQube}:ad ogni modifica vengono eseguiti script automatici per il controllo della qualità del codice, il risultato di ogni build viene notificata ai membri del gruppo tramite il canale \glossario{Slack} dedicato.
 
-\subsection{Test}
-\'E compito dei \textit{Progettisti} definire i test nel periodo di progettazione,è opportuno inoltre stabilire quali test eseguire in modo automatico tramite \textit{Travis-CI}, e quali richiedono un'esecuzione manuale da parte di un Verificatore, vengono fornite inoltre ulteriori indicazioni sulla coretta codifica dei test e la loro natura, suddividendo per tecnologie adottate qualora le differenze richiedano un dettaglio maggiore.\\
-Per i test riguardanti il back-end (\textit{Aws Lambda e Api Gateway}), si ricorda che la copertura del codice deve essere totale.
-
-\subsubsection{Tecnologie adottate}
-	\paragraph{JUnit} Viene adottato per la codifica dei test su \glossario{Kotlin}; 
-	\paragraph{Mocha e Chai Assert} Vengono adottati per la codifica dei test su NodeJs: il primo è un \glossario{framework} che fornisce funzioni specifiche e log sul risultato dei test, mentre il secondo ne amplia le funzionalità tramite l'inclusione di una \glossario{assertion-library} che rende la sintassi molto più leggibile e facile da codificare.
-  
-\subsubsection{Codifica e esecuzione dei test}
-	\paragraph{JUnit:}
-	la struttura di un progetto su 	\glossario{Android-studio} prevede una suddivisione dei test a seconda se richiedano o meno l'ambiente di sviluppo Android per essere eseguiti: i primi sono posizionati nel percorso \textit{app/src/androidTest}, mentre i secondi in \textit{app/src/test}.\\
-	Alternativamente, è possibile definire un test che utilizzi dei \glossario{Mock} degli oggetti creati dall'ambiente di sviluppo, tuttavia è altamente sconsigliato perchè richiederebbe una quantità di lavoro eccessivo e letture successive del codice sarebbero poco intuitive.\\
-	I test che richiedono l'ambiente di sviluppo Android sono:
-	\begin{itemize}
-		\item test che fanno riferimento a metodi che utilizzano le librerie android; 
-		\item test che richiedono l'utilizzo della rete per essere effettuati; 
-		\item test che fanno riferimento a parti dell'interfaccia grafica.
-	\end{itemize}
-	I test che non rientrano nelle seguenti categorie (riguardanti, ad esempio, la logica dell'applicazione) possono essere scritti come normali test JUnit nella cartella sopracitata.
-		\subparagraph{Esecuzione:} L'esecuzione dei test avviene mediante l'invocazione del test con il comando \textit{gradle} [\textit{myTask}] fornito da gradle. 
-	
-	\paragraph{Mocha e Chai Assert:} Mocha permette l'esecuzione seriale di test asincroni mediante l'invocazione di un singolo comando, e rende la loro codifica semplice ed efficace.\\
-	Segue una lista di direttive da perseguire nella codifica dei test con Mocha.
-	\begin{itemize}
-			\item Evitare l'utilizzo dell'operatore lambda (=>) in tutti i casi, poichè esso non permette al compilatore di Mocha di accedere al contesto delle funzioni a cui fa riferimento, se ciò non risulta necessario, una soluzione che prevede delle lambda porta a difficoltà riguardanti la manutenibilità del codice;
-			\item Studiare con cura gli \glossario{Hooks} per la concatenazione dell'esecuzione dei test;
-			\item Segnare con la dicitura \textit{Pending} i test non ancora implementati, in modo che i \textit{Progettisti} possano immediatamente identificare i test da codificare;
-			\item Evitare di commentare i test da non eseguire, usare invece il comando \textit{skip()}, che da dalla versione 3.0 è supportato anche per i test asincroni;
-			\item Evitare l'utlizzo del comando \textit{retries()} del tutto.
-		\end{itemize}
-
-	\subparagraph{Esecuzione:} L'esecuzione avviene mediante l'invocazione del comando \textit{npm test} da terminale. 
 \subsection{Codifica}
 Questa attività segue la Progettazione e consiste nell'implementazione effettiva di quanto precedentemente progettato.
 Questa sezione verrà completata dopo la Revisione dei Requisiti.
