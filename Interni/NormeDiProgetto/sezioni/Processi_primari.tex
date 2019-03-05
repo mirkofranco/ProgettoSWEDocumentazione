@@ -171,16 +171,19 @@ L'integrazione continua avviene mediante l'azione congiunta di \glossario{Travis
 
 \subsection{Codifica}
 Questa attività segue la Progettazione e consiste nell'implementazione effettiva di quanto precedentemente progettato.
-Questa sezione verrà completata dopo la Revisione dei Requisiti.
-\subsubsection{Suddivisione dei package}
+\subsubsection{Suddivisione dei package dell'applicazione}
 Con riferimento al sito elencato nella sezione \ref{package}, la suddivisione dei file sorgente per package avverrà nel modo seguente:
 
 \begin{itemize}
-
-	\item  \textbf{com.megalexa.models} conterrà tutti i file riguardanti la modellazione delle classi;
-	\item  \textbf{com.megalexa.ui} conterrà tutti i file riguardanti lo sviluppo dell'interfaccia grafica;
-	\item  \textbf{com.megalexa.network} conterrà tutto il codice necessario per la comunicazione attraverso l'utilizzo della rete;
-	\item  \textbf{com.megalexa.utils} conterrà tutte la classi di utilità definite nel corso dello sviluppo;	
+	\item  \textbf{com.megalexa.activities:} conterrà tutti file contententi le \glossario{activities} dell'applicazione.
+	\item  \textbf{com.megalexa.adapters} Conterrà tutti i file contenti gli adapters
+			\subitem \textbf{view} conterrà tutti gli \glossario{adapters} che alcuni widget particolari di android richiedono (come le RecyclerView e le ListView);
+			\subitem \textbf{connectors} conterrà tutti i file a supporto dei blocchi contenuti nel model: nello specifico, un connettore si rende necessario se il blocco a cui fa riferimento necessita di controlli aggiuntivi in rete per risultare corretto;
+	\item  \textbf{com.megalexa.fragments} conterranno i file riguardanti i \glossario{fragments} prodotti dalle activities;
+	\item  \textbf{com.megalexa.viewModels}	conterranno tutti i file che compongono il \glossario{ViewModel}, che mette in comunicazione la parte grafica con quella logica;	
+	\item  \textbf{com.megalexa.models} conterrà tutti i file riguardanti la 
+	logica dell'applicazione;
+	\item  \textbf{com.megalexa.util} conterrà tutte la classi di utilità definite nel corso dello sviluppo.	
 
 \end{itemize}
 Sarà permesso definire ulteriori package all'interno di quelli sopra elencati, nel caso in cui ci sia bisogno di un maggiore dettaglio.
@@ -195,6 +198,97 @@ Vengono elencate le norme alle quali i \textit{Programmatori} devono attenersi d
 	\item \textbf{Nomi dei metodi:} il nome dei metodi deve iniziare con la lettera minuscola, se sono composti da più parole allora le parole successive iniziano con la lettera maiuscola;
 	\item \textbf{Lingua:} la lingua utilizzata è l'inglese, sia per i nomi delle classi, dei metodi e delle variabili, sia per i commenti del codice scritto.
 \end{itemize}
+
+\subsubsection{Kotlin}
+
+\paragraph{Dichiarazione di variabili}
+In Kotlin vi è una distinzione fra variabili in sola lettura (\texttt{val}) e in lettura e scrittura(\texttt{var}). \'E opportuno scegliere accuratamente il tipo di variabile da dichiarare, e tutte devono seguire la seguente sintassi.
+
+\begin{lstlisting}
+val foo = Foo() 						
+\end{lstlisting}
+
+Se risulta necessario dichiarare una variabile come \texttt{lateinit}, specificare il tipo come segue
+\begin{lstlisting}
+lateinit val foo: Type							
+\end{lstlisting}
+
+Per dichiarare i campi dati di una classe, Kotlin fornisce una sintassi compatta che è opportuno seguire, l'inizializzazione dei campi dati deve avvenire mediante il costrutto \texttt{init}:
+
+\begin{lstlisting}
+class myClass(private val param1: Type,private val param2: Type) {	
+		init{
+			this.param1= param1
+			this.param2= param2	
+		} 
+}
+\end{lstlisting}
+
+
+\paragraph{Parentesizzazione}
+
+\paragraph{Passaggio dei parametri}
+
+\subsubsection{XML}
+\glossario{XML} viene utilizzato da kotlin per definire la disposizione degli oggetti grafici sullo schermo, vengono quindi definite le norme sull'indentazione del codice e l'annidamento dei tag.
+
+\paragraph{Apertura e chiusura dei tag}
+Nel caso in cui un tag non abbia figli, esso dovrà essere chiuso come segue
+
+\begin{lstlisting}
+
+<exampletag/>
+\end{lstlisting}
+
+La presenza di molteplici proprietà lo stile di scrittura deve essere come segue
+
+\begin{lstlisting}
+
+<exampleTag 
+	attribute1= 1
+	attribute2= 2
+	attribute3= 3
+	attribute4= 4
+	attribute5= 5
+/>
+\end{lstlisting}
+
+La presenza di parametri annidati deve essere indentata nel seguente modo 
+\begin{center}
+\begin{lstlisting}
+
+<parentTag
+		attribute1= 1
+		attribute2= 2
+		attribute3= 3
+		attribute4= 4
+		attribute5= 5
+> 
+		<childTag1
+				attribute1= 1
+				attribute2= 2
+		/>	
+		<childTag2
+				attribute3= 3
+				attribute4= 4
+				attribute5= 5
+		/>
+</parentTag>
+\end{lstlisting}
+
+\end{center}
+
+
+
+\subsubsection{NodeJs}
+
+\paragraph{Dichiarazione di variabili}
+
+\paragraph{Parentesizzazione}
+
+
+
+
 
 \subsubsection{Intestazione}
 L'intestazione di ogni file deve essere scritta nella seguente maniera: \\
