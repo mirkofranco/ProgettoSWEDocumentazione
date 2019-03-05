@@ -1,6 +1,7 @@
 ADR
 Alexa
 Andreea
+androidTest
 arricchitore
 Asana
 Astah
@@ -9,6 +10,7 @@ Bratzu
 BV
 ciclomatica
 Ciuche
+Chai
 CodeCommit
 CodeDeploy
 CodePipeline
@@ -26,6 +28,7 @@ gantt
 Gantt
 Gitflow
 GitHub
+gradle
 gulpease
 Gulpease
 hashtag
@@ -39,6 +42,7 @@ javascript
 Javascript
 js
 JSON
+JUnit
 Kafura
 Kotlin
 LaTeX
@@ -53,14 +57,18 @@ MegAlexa
 MongoDB
 monospace
 Monospace
+myTask
 MPR
 NDP
 nf
 nl
+NodeJs
 NomeDocumento
 nomeFile
 NormeDiProgetto
+NumeroDecisione
 np
+npm
 ottimalità
 PDC
 pdf
@@ -120,7 +128,9 @@ nell
 pianif
 ProcessoMetriche
 smartphone
+src
 sull
+VER
 VerbaleUsoData
 ect
 filesystem
