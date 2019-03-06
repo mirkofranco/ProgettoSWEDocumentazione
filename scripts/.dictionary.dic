@@ -1,4 +1,4 @@
-     125
+﻿     125
 
 ADR
 Alexa
@@ -71,6 +71,7 @@ NomeDocumento
 nomeFile
 NormeDiProgetto
 np
+npm
 NodeJs
 NodeJS
 ottimalità
@@ -82,6 +83,7 @@ PDP
 PNG
 poichè
 Postcondizione
+PragmaDB
 prefatti
 py
 Recuperabilità
@@ -141,3 +143,8 @@ listgroup
 Gitflow
 NumeroDecisione
 VER
+
+JavaDoc
+JDK
+eXtensible
+ViewModel
