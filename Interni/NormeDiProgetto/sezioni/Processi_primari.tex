@@ -188,7 +188,7 @@ Con riferimento al sito elencato nella sezione \ref{package}, la suddivisione de
 \end{itemize}
 Sarà permesso definire ulteriori package all'interno di quelli sopra elencati, nel caso in cui ci sia bisogno di un maggiore dettaglio.
 
-\subsubsection{Stile di codifica} 
+\subsubsection{Stile di codifica: regole generali} 
 Vengono elencate le norme alle quali i \textit{Programmatori} devono attenersi durante l'attività di programmazione e implementazione.
 \begin{itemize}
 	\item \textbf{Parentesi:} devono essere aperte utilizzando il metodo \textit{inline}, ovvero iniziano nella stessa riga del costrutto saltando uno spazio, inoltre blocchi di codice vanno racchiusi tra parentesi graffe;
@@ -199,11 +199,83 @@ Vengono elencate le norme alle quali i \textit{Programmatori} devono attenersi d
 	\item \textbf{Lingua:} la lingua utilizzata è l'inglese, sia per i nomi delle classi, dei metodi e delle variabili, sia per i commenti del codice scritto.
 \end{itemize}
 
-\subsubsection{Kotlin}
+\subsubsection{Utilizzo delle librerie}
+\begin{itemize}
+	\item Assicurarsi che le librerie utilizzate non presentino funzioni deprecate;
+	\item assicurarsi che le versioni delle librerie utilizzate siano stabili (versioni 1.0.0 e successive);
+	\item minimizzare il più possibile l'inclusione di librerie aggiuntive.
+\end{itemize}
 
-\paragraph{Dichiarazione di variabili}
+\subsubsection{Indentazione}
+Viene definito il modo corretto di indentare il codice: l'apertura delle parentesi deve essere posta sulla stessa linea della dichiarazione a cui fa riferimento e separata da uno spazio.\\
+\begin{minipage}{0.45\textwidth}
+\begin{tabular}{p{\textwidth}}	
+	\textbf{Corretto}
+	\begin{lstlisting}
+	
+	private fun Foo() {
+	\\contenuto
+	}
+	
+	\end{lstlisting}
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+\begin{tabular}{|p{\textwidth}}
+
+\textbf{Errato}
+\begin{lstlisting}
+	private fun Foo()
+	{
+	\\contenuto
+	}
+
+\end{lstlisting}
+\end{tabular}
+
+\end{minipage}
+
+
+\subsubsection{Linee vuote} Lasciare righe vuote dopo i blocchi e prima di un nuovo statement. \\
+\begin{minipage}{0.45\textwidth}
+	\begin{tabular}{p{\textwidth}}	
+		\textbf{Corretto}
+		\begin{lstlisting}
+	\\contenuto
+		function a():Any {
+		return bar
+		}
+		
+		function b(): Any {
+		return foo
+		}
+					
+		\end{lstlisting}
+	\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+	\begin{tabular}{|p{\textwidth}}
+		
+		\textbf{Errato}
+		\begin{lstlisting}
+	
+	\\contenuto
+		function a():Any {
+		return bar
+		}	
+		function b(): Any {
+		return foo
+		}
+		\end{lstlisting}
+	\end{tabular}
+	
+\end{minipage}
+\subsubsection{Dichiarazione di variabili}
+
+\paragraph{Kotlin}
 In Kotlin vi è una distinzione fra variabili in sola lettura (\texttt{val}) e in lettura e scrittura(\texttt{var}). \'E opportuno scegliere accuratamente il tipo di variabile da dichiarare, e tutte devono seguire la seguente sintassi.
-
 \begin{lstlisting}
 val foo = Foo() 						
 \end{lstlisting}
@@ -217,77 +289,320 @@ Per dichiarare i campi dati di una classe, Kotlin fornisce una sintassi compatta
 
 \begin{lstlisting}
 class myClass(private val param1: Type,private val param2: Type) {	
-		init{
-			this.param1= param1
-			this.param2= param2	
-		} 
+	init {
+	this.param1= param1
+	this.param2= param2	
+	} 
 }
 \end{lstlisting}
 
+Le dichiarazioni di import vanno poste obbligatoriamente all'inizio del file:\\
+\begin{minipage}{0.45\textwidth}
+	\begin{tabular}{p{\textwidth}}	
+		\textbf{Corretto}
+		\begin{lstlisting}
+		import java.util.*
+		
+		class example() {
+		\\
+		}
+		\end{lstlisting}
+	\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+	\begin{tabular}{|p{\textwidth}}		
+		\textbf{Errato}
+		\begin{lstlisting}
+		class example {
+		\\
+		}
+		
+		import java.util.*
+		\end{lstlisting}
+	\end{tabular}
+	
+\end{minipage}
 
-\paragraph{Parentesizzazione}
+\paragraph{NodeJS}
+Le variabili globali e le dichiarazioni di \texttt{require} devono essere poste all'inizio del file:\\
 
-\paragraph{Passaggio dei parametri}
+\begin{minipage}{0.45\textwidth}
+	\begin{tabular}{p{\textwidth}}	
+		\textbf{Corretto}
+		\begin{lstlisting}
+		var axios = require("axios")
+		
+		class Example {
+		\\
+		}
+		
+		class SecondExample {
+		\\
+		}
+		\end{lstlisting}
+	\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+	\begin{tabular}{|p{\textwidth}}		
+		\textbf{Errato}
+		\begin{lstlisting}
+		class Example{
+		\\
+		}
+		
+		var axios = require("axios")
+		
+		class SecondExample {
+		\\
+		}
+		\end{lstlisting}
+	\end{tabular}
+	
+\end{minipage}
 
-\subsubsection{XML}
+La dichiarazione di \texttt{export} viene posta obbligatoriamente alla fine del file:\\
+
+\begin{minipage}{0.45\textwidth}
+	\begin{tabular}{p{\textwidth}}	
+		\textbf{Corretto}
+		\begin{lstlisting}
+		\\..
+		class Example {
+		\\..
+		}
+
+		modules.export= Example;
+		\end{lstlisting}
+	\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+	\begin{tabular}{|p{\textwidth}}		
+		\textbf{Errato}
+		\begin{lstlisting}
+		\\..
+		modules.export= Example;
+		\\..
+		class Example {
+		\\..
+		}
+		\end{lstlisting}
+	\end{tabular}
+	
+\end{minipage}
+
+\subsubsection{Parentesizzazione}
+
+I blocchi di codice aventi una sola riga devono omettere le parentesi graffe:\\
+\begin{minipage}{0.45\textwidth}
+	\begin{tabular}{p{\textwidth}}	
+		\textbf{Corretto}
+		\begin{lstlisting}
+		if(foo.isValid())
+			return true
+		
+		\end{lstlisting}
+	\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+	\begin{tabular}{|p{\textwidth}}		
+		\textbf{Errato}
+		\begin{lstlisting}
+		if(foo.isValid()) {
+			return true
+		}
+		\end{lstlisting}
+	\end{tabular}
+	
+\end{minipage}
+
+In presenza di blocchi annidati l'indentazione deve essere la seguente:\\
+
+\begin{minipage}{0.45\textwidth}
+	\begin{tabular}{p{\textwidth}}	
+		\\
+		\textbf{Corretto}
+		\begin{lstlisting}
+		class a() {
+			\\contenuto		
+			function b() {			
+			\\
+			}
+			
+			function c() {
+			\\
+			}
+		}
+		\end{lstlisting}
+	\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+	\begin{tabular}{|p{\textwidth}}
+		\textbf{Errato}
+		\begin{lstlisting}			
+		class a() {
+		\\contenuto		
+		function b() {
+		\\
+		}
+		function c() {
+		\\
+		}
+		}
+		\end{lstlisting}
+	\end{tabular}
+	
+\end{minipage}
+
+\paragraph{NodeJS}
+La parentesizzazione di blocchi annidati deve seguire il seguente schema:\\
+
+\begin{minipage}{0.45\textwidth}
+	\begin{tabular}{p{\textwidth}}	
+		\textbf{Corretto}
+		\begin{lstlisting}
+		class Example {
+			constructor {
+			\\..
+			}
+			
+			data() {	
+				fetchData() {
+				\\..
+				}	
+			}
+		}
+		\end{lstlisting}
+	\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+	\begin{tabular}{|p{\textwidth}}
+		\textbf{Errato}
+		\begin{lstlisting}	
+		class Example {
+		constructor {
+		\\..
+		}
+		
+		data() {	
+			fetchData() {
+			\\..
+			}	
+		}
+		}		
+	
+		\end{lstlisting}
+	\end{tabular}
+	
+\end{minipage}
+\subsubsection{Commenti}
+Sfruttare il comando fornito da javadoc per fornire una descrzione accurata delle funzioni che vengono implementate.\\
+
+\begin{minipage}{0.45\textwidth}
+	\begin{tabular}{p{\textwidth}}		
+		\textbf{Corretto}
+		\begin{lstlisting}	
+		/** fun()
+		* description
+		* description
+		*/
+		fun a():Unit {
+		\\...
+		}	
+		\end{lstlisting}
+	\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+	\begin{tabular}{|p{\textwidth}}		
+		\textbf{Errato}
+		\begin{lstlisting}
+		\\description
+		\\description
+		\\description
+		\\description
+		fun a(): Unit {
+		\\...
+		}
+		\end{lstlisting}
+	\end{tabular}
+	
+\end{minipage}
+
+JavaDoc inoltre mette a disposizione dei comandi aggiuntivi che permettono di identificare automaticamente i parametri e il tipo di ritorno delle funzioni:
+\begin{itemize}
+	\item \textbf{@param:} per fornire la descrizione di un parametro;
+	\item \textbf{@return:} per fornire un dettaglio maggiore sul risultato della funzione;
+	\item \textbf{@exception \textbackslash @throws:} descrive le eccezioni lanciate dai metodi;
+	\item \textbf{@link:} per collegare un package o una classe a cui si fa riferimento.
+\end{itemize}
+\subsubsection{Codifica di XML}
 \glossario{XML} viene utilizzato da kotlin per definire la disposizione degli oggetti grafici sullo schermo, vengono quindi definite le norme sull'indentazione del codice e l'annidamento dei tag.
 
 \paragraph{Apertura e chiusura dei tag}
-Nel caso in cui un tag non abbia figli, esso dovrà essere chiuso come segue
+Nel caso in cui un tag non abbia figli, esso dovrà essere chiuso come segue:
 
 \begin{lstlisting}
 <exampletag />
 \end{lstlisting}
 
-La presenza di molteplici proprietà lo stile di scrittura deve essere come segue
+In presenza di molteplici attributi lo stile di scrittura deve essere il seguente:
 
 \begin{lstlisting}
 
 <exampleTag 
-	attribute1= 1
-	attribute2= 2
-	attribute3= 3
-	attribute4= 4
-	attribute5= 5
+		attribute1= "1"
+		attribute2= "2"
+		attribute3= "3"
+		attribute4= "4"
+		attribute5= "5"
 />
 \end{lstlisting}
 
-La presenza di parametri annidati deve essere indentata nel seguente modo 
-\begin{center}
+La presenza di tag annidati deve essere indentata nel seguente modo:
 \begin{lstlisting}
 
 <parentTag
-		attribute1= 1
-		attribute2= 2
-		attribute3= 3
-		attribute4= 4
-		attribute5= 5
+		attribute1= "1"
+		attribute2= "2"
+		attribute3= "3"
+		attribute4= "4"
+		attribute5= "5"
 > 
 		<childTag1
-				attribute1= 1
-				attribute2= 2
+				attribute1= "1"
+				attribute2= "2"
 		/>	
 		<childTag2
-				attribute3= 3
-				attribute4= 4
-				attribute5= 5
+				attribute3= "3"
+				attribute4= "4"
+				attribute5= "5"
 		/>
 </parentTag>
 \end{lstlisting}
 
-\end{center}
+\paragraph{Dichiarazione di id e stringhe univoche} 
+La \glossario{schema} adottato da Kotlin per definire i layout in XML permette di definire id univoci nel seguente modo: 
 
+\begin{lstlisting}
 
+<TextView
+		android:id="@+id/idView"
+/> s
+\end{lstlisting}
+e di definire le stringhe collegandole in un file separato chiamato \texttt{strings.xml}, in modo da permettere una facile conversione a una seconda lingua:
+\begin{lstlisting}
 
-\subsubsection{NodeJs}
-
-\paragraph{Dichiarazione di variabili}
-
-\paragraph{Parentesizzazione}
-
-
-
-
+<TextView
+		android:text="@string/todo"
+/> 
+\end{lstlisting}
+ è quindi obbligatorio definire id univoci e inserire componenti testuali come appena descritto.
 
 \subsubsection{Intestazione}
 L'intestazione di ogni file deve essere scritta nella seguente maniera: \\
@@ -316,8 +631,5 @@ dove:
 	\item \textbf{Z:}: rappresenta l'indice di modifica, il suo incremento corrisponde a una modifica del file.
 \end{itemize}
 La versione \textit{1.0.0} rappresenta un file completo e stabile in grado di essere testato, questo significa che le funzionalità obbligatorie sono state implementate e pertanto sono disponibili per essere testate.
-
-
-
 
 
