@@ -1,137 +1,102 @@
 \chapter{Metriche}
-
 \section{Metriche per la qualità di processo}\label{processo}
 Verranno utilizzate le seguenti metriche per valutare l'efficienza e l'efficacia 
 processi.
-\subsection{MP001: Budgeted Cost Of Work Performed}\label{bcwp}
-Utilizzato per il calcolo di Cost Variance e Schedule Variance, rappresenta (in giorni) il valore delle attività svolte.
 
-\subsection{MP002: Budgeted Cost of Work Scheduled}\label{bcws}
-Rappresenta il costo in giorni preventivato per il processo in esame (è detto anche Planned Value).
-
-\subsection{MP003: Actual Cost of Work Performed}\label{acwp}
-Rappresenta il costo (in \euro) effettivamente sostenuto al momento del calcolo:
-
-\subsection{MP004: Schedule Variance}
-Metrica che indica se si è in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto.
+\subsection{MP001: Schedule Variance}
+Fornisce una misura di quanto lo stato del progetto è in ritardo o in anticipo rispetto alla pianificazione delle attività.
 Essa è il risultato della seguente formula:\\
 \begin{center}
-	
-	$MP004 = ${MP001} $-${MP002}
-	
+	$SV = ${ BCWP} $-${BCWS}
 \end{center}
+Dove:
+\begin{itemize}
+		\item \textbf{ BCWP ( Budget Cost of Work Performed ) } : E' il valore (in giorni o Euro) delle attività realizzate alla data corrente. Rappresenta il valore prodotto dal progetto ossia la somma di tutte le parti completate e di tutte le porzioni completate delle parti ancora da terminare.
+		\item \textbf{ BCWS ( Budget Cost of Work Scheduled)}: E' il costo pianificato (in giorni o Euro) per realizzare le attività di progetto alla data corrente.
+\end{itemize}
 
-\subsection{MP024: Cost Variance}
-Per verificare che i costi siano conformi a quanto preventivato nel \textit{Piano di Progetto}, ciascun processo viene misurato tramite la sua \textbf{Cost Variance}, un valore positivo indica il rispetto dei costi preventivati, essa viene calcolata nel seguente modo:\\ 
+\subsection{MP002: Cost  Variance }
+Indica se si è speso più o meno di quanto è stato previsto.
+Il Budget Variance è dato dalla seguente formula:
+Essa è il risultato della seguente formula:\\
 \begin{center}
-	\begin{math}
-	MP024 = MP001 - MP003
-	\end{math}
+	$BV = ${ BCWS} $-${ACWP}
 \end{center}
-MP001 e MP003 sono descritte rispettivamente nelle sezioni \ref{bcwp} e \ref{acwp}.
+Dove:
+\begin{itemize}
+	\item \textbf{ BCWS ( Budget Cost of Work Scheduled ) } : E' il costo pianificato (in giorni o Euro) delle attività svolte ad una certa data; 
+	\item \textbf{ ACWS ( Actual Cost of Work Performed )}: E' il costo effettivamente sostenuto (in giorni o Euro) dalle attività svolte a tale data.
+\end{itemize}
 
-\subsection{MP005: SPICE capability level}
+\subsection{MP003: SPICE capability level}
 Per ogni processo, lo standard 15504 definisce 6 livelli di maturità(da 0 a 5) determinati da un processo di  \textit{Process Assessment} che ha lo scopo di determinare l'effettiva qualità dei processi in uso, un processo raggiunge la sua massima efficacia quando raggiunge il livello 5 (raggiunge quindi l'ottimalità).
 
-\subsection{MP006: SPICE process attributes}
+\subsection{MP004: SPICE process attributes}
 Per ogni attributo di processo, lo SPICE definisce 4 livelli (N-P-L-F) di ottimalità riferiti all'attributo stesso, il valore viene dedotto in base ai risultati delle metriche adottate per ciascun processo, un processo raggiunge il livello massimo quando tutte le metriche a lui riferite presentano risultati circoscritti al range di ottimalità definito.
 
-\subsection{MP007: Occorrenza rischi non previsti}
+\subsection{MP005: Occorrenza rischi non previsti}
 Contatore che viene incrementato all'occorrenza di un rischio non elencato nell'analisi dei rischi del \textit{Piano di Progetto}, un alto valore indica l'eccessiva occorrenza dello stesso e la necessità di un'analisi al fine di mitigare il suo impatto nell'attività di progetto.\\
 Viene resettato ad ogni inizio di una nuova fase del progetto.
 
-\subsection{MP008: Indisponibilità dei servizi}
+\subsection{MP006: Indisponibilità dei servizi}
 Contatore che viene incrementato ogni qualvolta uno strumento esterno risulta inutilizzabile a causa di errori non gestibili dai membri del gruppo.\\
 Viene resettato ad ogni inizio di una nuova fase del progetto.
 
-\subsection{MP009: Complessità ciclomatica}
+\subsection{MP007: Complessità ciclomatica}
 Metrica software che indica la complessità di un programma tenendo in considerazione moduli, funzioni, metodi e classi.
 Nello specifico, essa è calcolata tramite il grafo di controllo di flusso del programma, dove i nodi sono gruppi indivisibili di istruzioni e gli archi connettono due nodi se il secondo gruppo di istruzioni può essere eseguito immediatamente dopo il primo, e il suo valore è determinato dal numero di cammini linearmente indipendenti all'interno del codice sorgente.\\
 \'E quindi opportuno definire un valore di complessità ciclomatica preciso: valori alti sono indice di scarsa manutenibilità del codice mentre valori bassi potrebbero indicare scarsa efficienza dei metodi.
 Esso fornisce, inoltre, un indice del carico di lavoro richiesto per la fase di testing (un valore alto richiede più test per una copertura completa).\\
 Il range di ottimalità stabilito varia da 0 a 10, come suggerito dall'ideatore della metrica Thomas J. McCabe.  
 
-\subsection{MP010: Numero di parametri per metodo}
+\subsection{MP08: Numero di parametri per metodo}
 Definire un range relativo al numero di parametri permette di individuare possibili errori nella progettazione (nel caso in cui un metodo abbia un numero di parametri eccessivo).
 
-\subsection{MP011: Numero di livelli di annidamento}
+\subsection{MP009: Numero di livelli di annidamento}
 Metrica per indicare il numero di chiamate annidate di procedure controllate all'interno dei metodi.\newline
 Un valore elevato è indice di un basso livello di astrazione del codice e una complessità eccessivamente elevata. 
 
-\subsection{MP012: Attributi per classe}
+\subsection{MP010: Attributi per classe}
 Un numero elevato di attributi in una classe potrebbe essere indice di un errore di progettazione.
 Viene quindi definita una metrica che identifichi range accettabili e ottimali per questo parametro.
 Nel caso in cui una classe abbia un numero eccessivo di parametri, valutare la possibilità di suddividere la stessa in più classi, suddividendo quindi le funzioni ad essa assegnate.
 
-\subsection{MP013: Linee di codice per commento}
-Metrica identificata dal rapporto tra linee di codice e linee di commento: risulta utile per garantire una maggiore manutenibilità del codice.
-\begin{center}
-$\frac{\mbox{linee di codice}}{\mbox{linee di commento}}$
-\end{center}
-\subsection{MP014: Flusso di informazioni}
-Metrica proposta da S. Henry e D. Kafura che misura il flusso di informazioni così definito:
-
-\begin{itemize}
-	\item \textbf{fan-in:} numero di moduli che passano informazioni dentro al modulo in esame;
-	\item \textbf{fan-out:} numero di moduli a cui il modulo in esame passa informazioni.
-\end{itemize} 
-il valore viene calcolato tramite questa funzione:
-\begin{center}
-	(lunghezzafunzione)$^2\times fan-in\times fan-out$
-\end{center}
-
-\subsection{Accoppiamento}
-La definizione dei range di ottimalità e accettazione delle metriche presenti in questa sezione viene rimandata alla fase di Revisione di Analisi.
-\subsubsection{MP015: Accoppiamento Afferente}
-Indica la dipendenza di classi esterne a un package rispetto alle classi interne contenute nel package stesso.
-Tale valore, sebbene non indicante necessariamente errori di progettazione, può evidenziare criticità riguardanti la robustezza e l'utilità del package a cui fa riferimento.\\
-Un valore basso può evidenziare scarsa utilità del package, mentre un valore alto necessita di ulteriori verifiche di robustezza, in quanto rappresentante un punto critico nel software.
-\subsubsection{MP016: Accoppiamento Efferente}
-Indica la dipendenza di classi interne a un package rispetto alle classi esterne ad esso.\\
-Un valore basso indica un forte indipendenza del package rispetto al resto del sistema.
-
-\subsection{MP017: Copertura del codice}
-Indica la percentuale di istruzioni che sono eseguite durante i test.
-Maggiore è la percentuale di istruzioni coperte dai test eseguiti, maggiore sarà la probabilità che le componenti testate abbiano una ridotta quantità di errori.\\
-Il valore di tale indice può essere abbassato da metodi molto semplici che non richiedono testing. Esempi di questi metodi sono: get e set.\\
-Parametri utilizzati:
-
-\subsection{MP018: efficacia dei test}
-Misura la capacità di un test di trovare errori all'interno del codice, essa è calcolata nel seguente modo
+\subsection{MP011:Tempo medio del team di sviluppo per la risoluzione di errori}
+Indica la quantità di tempo medio utilizzato per risolvere un bug dal team di sviluppo, utile per capire l'impatto medio dell'introduzione di un bug sui tempi di sviluppo. Si misura seguendo la seguente formula:
 \begin{center}
 	\vspace{1em}
-	$\frac{\mbox{n bug trovati con il test}}{\mbox{totale dei bug trovati}}$\\
+	$\frac{\mbox{tempo totale speso per la correzione dei difetti}}{\mbox{numero totale di bug trovati}}$
 \end{center}
-\vspace{1em}
-Dove il totale dei bug trovati è risultato dei bug già conosciuti + i nuovi bug scoperti durante le prove di utilizzo del software
 
-\subsection{MP019:Errori risolti tramite test}
-Attesta l'effettiva efficacia di un test misurando il numero di bug risolti, l'obiettivo è quello di minimizzare il numero di bug presenti nel software al momento del rilascio.
-La metrica risulta dal seguente calcolo:
+
+\subsection{MP012: Efficienza della progettazione dei test}
+Indica il tempo medio per la scrittura di un test, un numero troppo elevato potrebbe indicare che si stanno progettando test troppo complessi  o che si sta cercando di testare  parti del codice superflue. Si calcola seconod la seguente regola:
 \begin{center}
-\vspace{1em}
-$\frac{\mbox{n bug risolti}}{\mbox{numero di bug trovati}}$
+	\vspace{1em}
+	$\frac{\mbox{numero totale di test progettati }}{\mbox{tempo per la loro stesura}}$\\
 \end{center}
-\subsection{MP020:Percentuale build superate}
+
+
+\subsection{MP013:Percentuale build superate}
 Ogni build viene controllata tramite script automatici con Travis CI, e la metrica è il risultato del seguente calcolo:
 \begin{center}
 $\frac{\mbox{build superate con esito positivo}}{\mbox{build totali}}$
 \end{center}
 
 
-\subsection{MP021:Media commit per settimana}
+\subsection{MP014:Media commit per settimana}
 \begin{center}
 	$\frac{\mbox{commit totali}}{\mbox{totale settimane di lavoro}}$
 \end{center}
 
 
-\subsection{MP022:Percentuale requisiti obbligatori soddisfatti}
+\subsection{MP015:Percentuale requisiti obbligatori soddisfatti}
  Tale metrica è risultato del seguente calcolo:
  \begin{center}
  	$\frac{\mbox{requisiti obbligatori soddisfatti}}{\mbox{requisiti obbligatori totali}}$
  \end{center}
 
-\subsection{MP023:Percentuale requisiti desiderabili soddisfatti}
+\subsection{MP016:Percentuale requisiti desiderabili soddisfatti}
 Tale metrica è risultato del seguente calcolo:
 \begin{center}
 $\frac{\mbox{requisiti desiderabili soddisfatti}}{\mbox{requisiti desiderabili totali}}$
