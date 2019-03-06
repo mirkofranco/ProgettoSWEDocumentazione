@@ -13,19 +13,16 @@ Verificare che il processo di pianificazione di progetto risulti adeguato è un 
 \subsubsection{Obiettivi}
 \begin{itemize}
 	\item \textbf{Pianificazione temporale}
-		\begin{itemize}
-			\item \textbf{Gestione delle task}: verificare che l'assegnazione e il completamento delle task sia conforme a quanto pianificato e che non si verifichino scostamenti;
-			\item \textbf{Calendario}: la pianificazione delle task da assegnare deve essere adatta alla quantità di lavoro richiesto per il suo completamento.
-		\end{itemize}
+	\begin{itemize}
+		\item \textbf{Gestione delle task}: verificare che l'assegnazione e il completamento delle task sia conforme a quanto pianificato e che non si verifichino scostamenti;
+		\item \textbf{Calendario}: la pianificazione delle task da assegnare deve essere adatta alla quantità di lavoro richiesto per il suo completamento.
+	\end{itemize}
 	\item \textbf{Budget}: accertarsi che i costi attuali derivanti dal lavoro svolto siano il più possibile conformi a quanto preventivato.
 \end{itemize}
 \subsubsection{Metriche utilizzate}
 \begin{itemize}
-	\item \textbf{MP001}: Budgeted Cost of Work Performed;
-	\item \textbf{MP002}: Budgeted Cost of Work Scheduled;
-	\item \textbf{MP003}: Actual Cost of Work Performed;
-	\item \textbf{MP004}: Schedule Variance;
-	\item \textbf{MP024}: Cost Variance.
+	\item \textbf{MP001}: Schedule Variance;
+	\item \textbf{MP002}: Cost Variance.
 \end{itemize}
 
 
@@ -39,8 +36,8 @@ Lo standard SPICE definisce dei livelli di maturità da perseguire per assicurar
 
 \subsubsection{Metriche utilizzate}
 \begin{itemize}
-	\item \textbf{MP005}: SPICE capability level;
-	\item \textbf{MP006}: SPICE process attributes;
+	\item \textbf{MP003}: SPICE capability level;
+	\item \textbf{MP004}: SPICE process attributes;
 \end{itemize}
 
 \subsection{QP003: Analisi e prevenzione dei rischi}
@@ -53,8 +50,8 @@ Il processo intende individuare e prevenire i rischi che potrebbero insorgere du
 
 \subsubsection{Metriche utilizzate}
 \begin{itemize}	
-	\item \textbf{MP007}: Occorrenza rischi non previsti;
-	\item \textbf{MP008}: Indisponibilità dei servizi.
+	\item \textbf{MP005}: Occorrenza rischi non previsti;
+	\item \textbf{MP006}: Indisponibilità dei servizi.
 \end{itemize}
 \subsection{QP004: Verifica del software}
 Il processo si occupa di verificare che il software prodotto sia conforme ai \glossario{requisiti} stabiliti con la proponente e la committente, che sia privo di errori e che il codice scritto risulti chiaro, conciso ed efficiente.
@@ -68,15 +65,11 @@ Il processo si occupa di verificare che il software prodotto sia conforme ai \gl
 \subsubsection{Metriche utilizzate}
 
 \begin{itemize}
-	\item \textbf{MP009}: Complessità ciclomatica;
-	\item \textbf{MP010}: Numero di parametri per metodo;
-	\item \textbf{MP011}: Numero di livelli di annidamento;
-	\item \textbf{MP012}: Attributi per classe;
-	\item \textbf{MP013}: Linee di codice per commento;
-	\item \textbf{MP014}: Flusso di informazioni;
-	\item \textbf{MP015}: Accoppiamento Afferente;
-	\item \textbf{MP016}: Accoppiamento Efferente;
-
+	\item \textbf{MP007}: Complessità ciclomatica;
+	\item \textbf{MP008}: Numero di parametri per metodo;
+	\item \textbf{MP009}: Numero di livelli di annidamento;
+	\item \textbf{MP010}: Attributi per classe;
+	
 	
 \end{itemize}
 
@@ -85,13 +78,12 @@ L'obiettivo di tale processo è misurare l'efficacia del piano di test adottato:
 Si fa riferimento a scopo informativo al libro \textit{Software Testing Fundamentals: Methods and Metrics} scritto da Marnie L. Hutcheson per la definizione delle metriche adottate e per la stesura del piano dei test di unità(vedi sezione \ref{rfinf}).
 \subsubsection{Obiettivi}
 \begin{itemize}
-	\item \textbf{Qualità del piano di test}: 
+	\item \textbf{Qualità del piano di test} 
 \end{itemize}
 \subsubsection{Metriche utilizzate}
 \begin{itemize}
-	\item \textbf{MP017}: Copertura del codice;
-	\item \textbf{MP018}: Efficacia dei test;
-	\item \textbf{MP019}: Errori risolti tramite test.
+	\item \textbf{MP011}:Tempo medio del team di sviluppo per la risoluzione di errori;
+	\item \textbf{MP012}:Efficienza della progettazione dei test;
 \end{itemize}
 
 
@@ -101,12 +93,12 @@ Si fa riferimento a scopo informativo al libro \textit{Software Testing Fundamen
 	\item \textbf{Correttezza dei commit}: Ogni commit deve superare i controlli automatici, nel caso in cui un commit presenti degli errori  essi dovranno essere corretti immediatamente;
 	\item \textbf{Dimensione dei commit}: Le modifiche apportate tramite un commit alla \glossario{repository} dovranno avere una dimensione opportunamente scelta, commit troppo piccoli potrebbero risultare di scarsa utilità, mentre quelli troppo grandi non permettono di fornire sufficienti informazioni sullo stato del ciclo di vita del software;
 	\item  \textbf{Frequenza dei commit}: I commit effettuati dai membri del gruppo devono essere frequenti, poichè essi mantengono aggiornato il software con le modifiche più recenti e favoriscono il dialogo tra i membri del gruppo.
-
+	
 \end{itemize}
 \subsection{Metriche utilizzate}
 \begin{itemize}
-	\item \textbf{MP020: Percentuale build superate}
-	\item \textbf{MP021: Media commit per settimana}
+	\item \textbf{MP013: Percentuale build superate}
+	\item \textbf{MP014: Media commit per settimana}
 \end{itemize}
 
 \subsection{QP007: Conformità dei requisiti}
@@ -114,34 +106,34 @@ Per assicurare la conformità del prodotto finale(e dei requisiti individuati ch
 
 \subsection{Metriche utilizzate}
 \begin{itemize}
-	\item \textbf{MP022: Percentuale requisiti obbligatori soddisfatti}
-	\item \textbf{MP023: Percentuale requisiti desiderabili soddisfatti}
+	\item \textbf{MP015: Percentuale requisiti obbligatori soddisfatti}
+	\item \textbf{MP016: Percentuale requisiti desiderabili soddisfatti}
 \end{itemize}
 
 \section{Tabella dei processi}
 \label{Tab2.1}
 \begin{center}
-\begin{tabularx}{\textwidth}{|c|c|}
-	\hline 
-	\textbf{ID} & \textbf{Nome} \\ 
-	\hline 
-	QP001 &  Pianificazione delle attività di progetto,
-			valutazione e controllo dei processi \\ 
-	\hline 
-	QP002 &  Miglioramento continuo delle attività di processo \\ 
-	\hline 
-	QP003 &  Analisi e prevenzione dei rischi \\ 
-	\hline 
-	QP004 &  Verifica del software \\ 
-	\hline 
-	QP005 &  Gestione dei test \\ 
-	\hline 
-	QP006 &  Conformità dei requisiti \\ 
-	\hline 
-	QP007 &  Versionamento e build \\ 
-	\hline
-	\caption{Tabella dei processi}
-\end{tabularx}
+	\begin{tabularx}{\textwidth}{|c|c|}
+		\hline 
+		\textbf{ID} & \textbf{Nome} \\ 
+		\hline 
+		QP001 &  Pianificazione delle attività di progetto,
+		valutazione e controllo dei processi \\ 
+		\hline 
+		QP002 &  Miglioramento continuo delle attività di processo \\ 
+		\hline 
+		QP003 &  Analisi e prevenzione dei rischi \\ 
+		\hline 
+		QP004 &  Verifica del software \\ 
+		\hline 
+		QP005 &  Gestione dei test \\ 
+		\hline 
+		QP006 &  Conformità dei requisiti \\ 
+		\hline 
+		QP007 &  Versionamento e build \\ 
+		\hline
+		\caption{Tabella dei processi}
+	\end{tabularx}
 \end{center}
 \section{Tabella delle metriche}
 \label{Tab2.2}
@@ -151,46 +143,50 @@ La tabella elenca le metriche per le quali è stato definito un range di accetta
 	\textbf{ID} & \textbf{Nome} & \textbf{Range di accettazione}  & \textbf{Range di ottimalità}  \\ 
 	\hline
 	\multicolumn{4}{|c|}{\textbf{QP001}} \\
-	\hline 
-	MP004 & Schedule Variance & >= -(MP002 x 10\%) & >=0 \\ 
 	\hline
-	MP0024 &Cost Variance& >= -(MP002 x 10\%) & >=0 \\ 
+	MP001 & Schedule Variance & >= -5 giorni & >=0 giorni \\ 
+	\hline
+	MP002 &Cost Variance& >= - 10\% &  0 \\ 
 	\hline
 	\multicolumn{4}{|c|}{\textbf{QP002}} \\
 	\hline
-	MP005 & SPICE capability level & 3 & 4-5 \\ 
+	MP003 & SPICE capability level & 3-5 & 4-5 \\ 
 	\hline 
-	MP006 & SPICE process attributes & L -(>50\% - 85\%)  & F >85\% - 100\% \\ 
+	MP004 & SPICE process attributes & L -(>50\% - 85\%)  & F >85\% - 100\% \\ 
+	\hline
+	\multicolumn{4}{|c|}{\textbf{QP004}} \\
+	\hline 
+	MP005 & Occorenza rischi non previsti &   0-4 &0 \\
+	\hline 
+	MP006 & Indisponibilità dei servizi & 0   & 0 \\
 	\hline
 	\multicolumn{4}{|c|}{\textbf{QP004}} \\
 	\hline
-	MP009 & Complessità ciclomatica & 1-15 & 1-10 \\ 
+	MP007 & Complessità ciclomatica & 1-15 & 1-10 \\ 
 	\hline 
-	MP010 & Numero di parametri per metodo & 0-8 & 0-4 \\ 
+	MP008 & Numero di parametri per metodo & 0-8 & 0-4 \\ 
 	\hline 
-	MP011 & Numero di livelli di annidamento & 1-6 & 1-3 \\ 
+	MP009& Numero di livelli di annidamento & 1-6 & 1-3 \\ 
 	\hline 
-	MP012 & Attributi per classe & 0-16 & 3-8 \\ 
-	\hline 
-	MP013 & Linee di codice per commento & >=0.25 & >=0.30 \\ 
+	MP010 & Attributi per classe & 0-16 & 3-8 \\ 
 	\hline 
 	\multicolumn{4}{|c|}{\textbf{QP005}} \\
 	\hline
-	MP017 & Copertura del codice & 42\%-100\% & 65\%-100\% \\ 
+	MP011 &\makecell{Tempo medio del team di sviluppo \\ per la risoluzione di errori} & 0h-4h & 0h-2h \\ 
 	\hline 
-	MP019 & Errori risolti tramite test & 100\% & 100\% \\  
-	\hline
+	MP012 & Efficienza della progettazione dei test  & 0.5h-3.5h  & 1h-2h \\ 
+	\hline 
 	\multicolumn{4}{|c|}{\textbf{QP006}} \\
 	\hline
-	MP020 & Percentuale build superate& 60\% & 80\%\\
+	MP013 & Percentuale build superate& 60\% & 80\%\\
 	\hline
-	MP021 & Media commit per settimana & >=120 & >=140\\
+	MP014 & Media commit per settimana & >=120 & >=140\\
 	\hline
 	\multicolumn{4}{|c|}{\textbf{QP007}} \\
 	\hline
-	MP022& \makecell{Percentuale requisiti \\ obbligatori soddisfatti}& 100\% & 100\% \\
+	MP015& \makecell{Percentuale requisiti \\ obbligatori soddisfatti}& 100\% & 100\%  \\
 	\hline
-	MP023& \makecell{Percentuale requisiti \\ desiderabili soddisfatti}& >=50\% &>=50\%\\
+	MP016& \makecell{Percentuale requisiti \\ desiderabili soddisfatti}& >=50\% &>=50\% \\
 	\hline
 	\caption{Tabella delle metriche dei processi}
 \end{tabularx}
