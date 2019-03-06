@@ -56,7 +56,6 @@ I miglioramenti principali (tutti descritti nelle \textit{norme di progetto v2.0
 
 \subsubsection{MP004 Schedule variance}
 Schedule variance
-\newpage
 \subsubsection{MP024 Budget variance}
 \begin{figure} [h]
     \centering
@@ -77,15 +76,15 @@ Schedule variance
 \end{figure}
 
 \subsubsection{MP005: SPICE capability level}
-Di seguito vengono riportati i livelli di maturità raggiunti dai processi eseguiti durante lo sviluppo del \glossario{poc};
+Di seguito vengono riportati i livelli di maturità raggiunti dai processi eseguiti durante lo sviluppo del \glossario{poc}.
 \begin{figure} [h]
     \centering
-	\includegraphics[scale=0.5]{./images/15504.PNG}
+	\includegraphics[scale=0.4]{./images/15504.PNG}
     \caption{\textit{MP005 - ISO/IEC 15504 }}\label{}
 \end{figure}
 
 \subsubsection{MP020 Percentuale build superate}
-Viene fatta distinzione tra Android e Skill, in quanto vengono contenute in repository diversi.
+Viene fatta distinzione tra Android e Skill, in quanto vengono contenute in repository diversi.\\
 Le build non superate sono 24 su 134 per la Skill e 29 su 232 per Android.
 \begin{figure} [h]
     \centering
@@ -99,8 +98,11 @@ Le build non superate sono 24 su 134 per la Skill e 29 su 232 per Android.
 \end{figure}
 
 \subsection{MP007:  Occorrenza rischi non previsti}
-\textbf{rischi non previsti: 2}\\
-Un aggiornamento automatico di \glossario{Android Studio} completamente rimosso una libreria utilizzata dall'applicazione mobile, quindi il gruppo ha perso tempo per implementane una alternativa. Questo è successo perché la libreria in questione era deprecata. Per evitare problemi simili, l'utilizzo di librerie deprecate è stato vietato, come descritto nelle \textit{norme di progetto}.\\
+\textbf{rischi non previsti: 2}
+\begin{itemize}
+	\item un aggiornamento automatico di \glossario{Android Studio} completamente rimosso una libreria utilizzata dall'applicazione mobile, quindi il gruppo ha perso tempo per implementane una alternativa. Questo è successo perché la libreria in questione era deprecata. Per evitare problemi simili, l'utilizzo di librerie deprecate è stato vietato, come descritto nelle \textit{norme di progetto};
+	\item è stata pushata una chiave di accesso aws nel repository. Il gruppo è stato avvisato da Amazon, e ha dovuto creare nuove chiavi per tutti i membri.
+\end{itemize}
 \subsection{MP008: Indisponibilità dei servizi}
 \textbf{indisponibilità dei servizi: 0}\\
 Durante il periodo di progettazione della base tecnologica, il gruppo non ha riscontrato problemi riguardanti il downtime di servizi esterni.
@@ -109,12 +111,12 @@ Durante il periodo di progettazione della base tecnologica, il gruppo non ha ris
 Come si può notare dai grafici, il numero di commit è stato abbastanza costante, con un aumento del carico di lavoro durante la fine di febbraio.
 \begin{figure} [h]
     \centering
-	\includegraphics[scale=0.7]{./images/dailycommits_kotlin.PNG}
+	\includegraphics[scale=0.5]{./images/dailycommits_kotlin.PNG}
     \caption{\textit{MP021 - Android- Progettazione della base tecnologica}}\label{}
 \end{figure}
 \begin{figure} [h]
     \centering
-	\includegraphics[scale=0.7]{./images/daycommits_js.PNG}
+	\includegraphics[scale=0.5]{./images/daycommits_js.PNG}
     \caption{\textit{MP021 - Skill - Progettazione della base tecnologica}}\label{}
 \end{figure}
 
