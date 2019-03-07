@@ -1,50 +1,9 @@
-\chapter{Casi d'uso} \label{CasiD'Uso}
-In questa sezione sono elencati i casi d'uso del \textit{progetto$_{G}$}\glossario{MegAlexa}dedotti da un'attenta indagine ed analisi da parte dei membri del gruppo sugli attori principali del sistema, sulle loro caratteristiche e possibilità.
-Ogni caso d'uso presenta i seguenti campi:
-\begin{itemize}
-	\item Codice identificativo;
-	\item Titolo
-	\item Attori primari;
-	\item Attori secondari (se presenti);
-	\item Descrizione;
-	\item Precondizione;
-	\item Postcondizione;
-	\item Flusso principale degli eventi.
-\end{itemize}
-Se un caso d'uso risulta essere particolarmente complesso allora viene corredato da un diagramma dei casi d'uso in linguaggio UML.
-\section{Codice identificativo CU}
-Ogni caso d'uso deve avere la seguente nomenclatura:
-\begin{center}
-	\textbf{UC$\Bigl\{$XX$\Bigr\}$.$\Bigl\{$YY$\Bigr\}$}
-\end{center}
-dove:
-\begin{itemize}
-	\item \textbf{UC:} Use Case;
-	\item \textbf{{XX}:} numero che identifica i casi d'uso;
-	\item \textbf{{YY}:} numero progressivo che identifica i sottocasi, esso può, a sua volta, includere altri sottocasi.
-\end{itemize}
-
-\section{Attori dei casi d'uso}
-\textbf{Attori primari}
-\begin{itemize}
-	\item \textbf{Utente non autenticato}: si riferisce all'utente del sistema che non ha ancora eseguito il login;
-	\item \textbf{Utente autenticato}: si riferisce all'utente del sistema che ha effettuato il login ed è stato autenticato.
-\end{itemize}
-\textbf{Attori secondari}
-\begin{itemize}
-	\item \textbf{Amazon$_{G}$}.
-\end{itemize}
-
+\chapter{Casi d'usp}
+\label{UC}
 \section{UC1: Scenario principale dell'utente non autenticato}
 \label{UC1}
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.4]{Diagram/UC1.png}
-	\caption{Scenario principale}\label{}
-\end{figure}
-
 \begin{itemize}
-	\item \textbf{Attori}: Amazon, utente non autenticato;
+	\item \textbf{Attori}: Amazon, Ut. non autenticato;
 	\item \textbf{Descrizione}: Un utente non autenticato può registrarsi al nostro servizio se non ha ancora un account o effettuare il login, nel caso fosse già registrato
 	\item \textbf{Precondizione}: L'applicazione è avviata e pronta all'uso
 	\item \textbf{Postcondizione}: L'applicazione ha ricevuto tutte le informazioni dell'utente non autenticato sulle operazioni che vuole eseguire
@@ -53,142 +12,30 @@ dove:
 		L'utente ha la possibilità di: Login (UC1.2).\end{enumerate}
 \end{itemize}
 
-\section{UC1.1: Registrazione}
+\section{UC1.1: Registrazione automatica}
 \label{UC1.1}
-\begin{figure} [h]
-	\centering
-	\includegraphics[scale=0.4]{./Diagram/UC1-1.png}
-	\caption{Registrazione}\label{}
-\end{figure}
-
 \begin{itemize}
-	\item \textbf{Attori}: Amazon, utente non autenticato;
+	\item \textbf{Attori}: Amazon, Ut. non autenticato;
 	\item \textbf{Descrizione}: Per accedere al sistema è necessario possedere un account
 	\item \textbf{Precondizione}: L'attore non possiede un account per accedere al sistema
 	\item \textbf{Postcondizione}: E' stato creato un account per accedere al sistema
 	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore inserisce la propria email (UC1.1.1);  \item  L'attore inserisce la propria password (UC1.1.2);  \item 
-		L'attore conferma la registrazione(UC1.1.3).\end{enumerate}
-	\item \textbf{Estensioni}:
-	Visualizzazione errore di registrazione(UC1.1.4)
-	\item \textbf{Scenari alternativi}:
-	L'attore dopo aver confermato le proprie credenziali visualizza un messaggio d'errore (UC1.1.4)
+	\begin{enumerate} \item L'utente preme il pulsante di login con Amazon;  \item  L'utente viene reinderizzato alla pagina web della registrazione con Amazon;  \item 
+		L'utente completa la registrazione attraverso Amazon;  \item  L'utente ritorna nella pagina principale dell'applicazione e i suoi dati vengono salvati nel database.\end{enumerate}
 \end{itemize}
 
-\section{UC1.1.1: Inserimento email}
-\label{UC1.1.1}
-\begin{itemize}
-	\item \textbf{Attori}: utente non autenticato;
-	\item \textbf{Descrizione}: L'attore deve inserire la propria email per effettuare la  registrazione
-	\item \textbf{Precondizione}: Il sistema mostra il campo per l'inserimento della email
-	\item \textbf{Postcondizione}: E' stata inserita l'email dell'attore nel campo opportuno
-	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore inserisce la propria email per effettuare la registrazione.\end{enumerate}
-\end{itemize}
-
-\section{UC1.1.2: Inserimento password}
-\label{UC1.1.2}
-\begin{itemize}
-	\item \textbf{Attori}: utente non autenticato;
-	\item \textbf{Descrizione}: L'attore deve inserire la propria password per effettuare la registrazione.
-	\item \textbf{Precondizione}: Il sistema mostra il campo per l'inserimento della password.
-	\item \textbf{Postcondizione}: È stata inserita la password dell'attore nel campo opportuno.
-	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore inserisce la propria password per effettuare la registrazione.\end{enumerate}
-\end{itemize}
-
-\section{UC1.1.3: Conferma registrazione}
-\label{UC1.1.3}
-\begin{itemize}
-	\item \textbf{Attori}: utente autenticato;
-	\item \textbf{Descrizione}: L'attore dopo aver compilato i campi richiesti decide di confermare la registrazione.
-	\item \textbf{Precondizione}: Il sistema mostra un pulsante per confermare la registrazione.
-	\item \textbf{Postcondizione}: Il sistema registra l'attore poiché questo ha confermato l'operazione.
-	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore decide di confermare la registrazione per completarla.\end{enumerate}
-	\item \textbf{Estensioni}:
-	Visualizzazione dell'errore di registrazione(UC1.1.4).
-\end{itemize}
-
-\section{UC1.1.4: Visualizzazione dell'errore di registrazione}
-\label{UC1.1.4}
-\begin{itemize}
-	\item \textbf{Attori}: utente non autenticato;
-	\item \textbf{Descrizione}: L'attore visualizza un errore nel caso avesse compilato i campi con dati errati.
-	\item \textbf{Precondizione}: Il sistema ha ricevuto campi dati errati: vuoti o non validi.
-	\item \textbf{Postcondizione}: Il sistema mostra un messaggio d'errore per segnalare il tentativo di registrarsi con campi dati errati.
-	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore visualizza il messaggio d'errore relativo al campo dato in E-mail, Password.\end{enumerate}
-\end{itemize}
-
-\section{UC1.2: Login}
+\section{UC1.2: Login con Amazon}
 \label{UC1.2}
-\begin{figure} [h]
-	\centering
-	\includegraphics[scale=0.4]{./Diagram/UC1-2.png}
-	\caption{Login}\label{}
-\end{figure}
-
 \begin{itemize}
 	\item \textbf{Attori}: Amazon, utente autenticato;
 	\item \textbf{Descrizione}: Il sistema è avviato, ma è necessario effettuare il login per accedervi.
 	\item \textbf{Precondizione}: Il sistema non permette l'accesso all'utente non autenticato.
 	\item \textbf{Postcondizione}: Il sistema permette l'accesso all'utente che ora diventa un utente autenticato.
 	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'utente inserisce la propria email (UC1.2.1);  \item  L'utente inserisce la propria password (UC1.2.2);  \item 
-		L'utente invia le credenziali (UC1.2.3).\end{enumerate}
+	\begin{enumerate} \item L'utente preme il pulsante di login con Amazon;  \item  L'utente viene reinderizzato alla pagina web del login con Amazon;  \item 
+		L'utente completa il login attraverso Amazon;  \item  L'utente ritorna nella pagina principale dell'applicazione.\end{enumerate}
 	\item \textbf{Estensioni}:
 	Login automatico (UC1.3).
-	\item \textbf{Scenari alternativi}:
-	L'utente dopo aver inviato le proprie credenziali visualizza un messaggio d'errore (UC1.2.4).
-\end{itemize}
-
-\section{UC1.2.1: Inserimento dell'email}
-\label{UC1.2.1}
-\begin{itemize}
-	\item \textbf{Attori}: utente non autenticato;
-	\item \textbf{Descrizione}: L'utente inserisce la sua email per effettuare il login.
-	\item \textbf{Precondizione}: Il sistema fa visualizzare il campo email.
-	\item \textbf{Postcondizione}: E' stata inserita la mail dell'attore nel campo predisposto.
-	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore inserisce la sua mail per effettuare il login.\end{enumerate}
-\end{itemize}
-
-\section{UC1.2.2: Inserimento della password}
-\label{UC1.2.2}
-\begin{itemize}
-	\item \textbf{Attori}: utente non autenticato;
-	\item \textbf{Descrizione}: L'utente inserisce la sua password per effettuare il login.
-	\item \textbf{Precondizione}: Il sistema fa visualizzare il campo password.
-	\item \textbf{Postcondizione}: E' stata inserita la password dell'attore nel campo predisposto.
-	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore inserisce la sua password per effettuare il login.\end{enumerate}
-\end{itemize}
-
-\section{UC1.2.3: Invio credenziali}
-\label{UC1.2.3}
-\begin{itemize}
-	\item \textbf{Attori}: utente non autenticato;
-	\item \textbf{Descrizione}: Dopo aver inserito tutti i dati l'utente conferma il login.
-	\item \textbf{Precondizione}: Il sistema far visualizzare la pagina di login.
-	\item \textbf{Postcondizione}: L'utente è riconosciuto dal sistema come utente autenticato.
-	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore dopo aver inserito le credenziali può confermare il login.\end{enumerate}
-	\item \textbf{Estensioni}:
-	Visualizzazione errore login (UC1.2.4).
-	\item \textbf{Scenari alternativi}:
-	L'utente inserisce credenziali errate e viene visualizzato un messaggio d'errore.
-\end{itemize}
-
-\section{UC1.2.4: Visualizzazione errore login}
-\label{UC1.2.4}
-\begin{itemize}
-	\item \textbf{Attori}: utente non autenticato;
-	\item \textbf{Descrizione}: L'attore può aver inserito delle credenziali errate.
-	\item \textbf{Precondizione}: Il sistema ha ricevuto campi dati errati.
-	\item \textbf{Postcondizione}: L'utente non è riconosciuto dal sistema.
-	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore visualizza un messaggio d'errore.\end{enumerate}
 \end{itemize}
 
 \section{UC1.3: Login automatico}
@@ -206,12 +53,6 @@ dove:
 
 \section{UC2: Scenario principale dell'utente autenticato}
 \label{UC2}
-\begin{figure} [h]
-	\centering
-	\includegraphics[scale=0.4]{./Diagram/UC2.png}
-	\caption{Scenario principale dell'utente autenticato }\label{}
-\end{figure}
-
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
 	\item \textbf{Descrizione}: L'attore può creare, modificare ed eliminare un workflow, modificare i propri dati personali ed eseguire il logout.
@@ -225,11 +66,6 @@ dove:
 
 \section{UC2.1: Creazione workflow}
 \label{UC2.1}
-\begin{figure} [h]
-	\centering
-	\includegraphics[scale=0.4]{./Diagram/UC2-1.png}
-	\caption{Scenario principale dell'utente autenticato }\label{}
-\end{figure}
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
 	\item \textbf{Descrizione}: L'attore può creare un workflow selezionando e configurando i blocchi disponibili.
@@ -238,6 +74,8 @@ dove:
 	\item \textbf{Scenario principale}:
 	\begin{enumerate} \item L'utente sceglie il nome del workflow (UC2.1.1);  \item  L'utente seleziona quali blocchi vuole usare (UC2.1.2);  \item 
 		L'utente configura i blocchi selezionati (UC2.1.3).\end{enumerate}
+	\item \textbf{Scenari alternativi}:
+	L'utente inserisce il nome del workflow non corretto
 \end{itemize}
 
 Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un diagramma di attività in modo da renderne più facile la comprensione.
@@ -246,6 +84,8 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 	\includegraphics[scale=0.4]{./Diagram/CreazioneWorkflow.png}
 	\caption{Diagramma di attività della creazione di un workflow}\label{}
 \end{figure}
+
+
 
 \section{UC2.1.1: Scelta nome}
 \label{UC2.1.1}
@@ -263,7 +103,7 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
 	\item \textbf{Descrizione}: L'attore sceglie i blocchi che compongono il workflow. Può scegliere tra due categorie di blocchi: blocchi principali e blocchi di supporto.
-	Blocchi principali: Twitter, Sveglia, Email, Telegram, Calendario, Youtube, Radio, Illuminazione, Spotify, Pianificazione, Notizie, Borsa e Crypto, Timer, Lista, Feed RSS, Meteo, Amazon Music.
+	Blocchi principali: Twitter, Sveglia, Email, Telegram, Calendario, Youtube, Radio, Illuminazione, Spotify, Pianificazione, Notizie borsa e cryptovalute, Timer, Lista.
 	Blocchi di supporto: Pin, Pianificazione, Filtro, Blocco di testo.
 	\item \textbf{Precondizione}: Il sistema mette a disposizione un form per l'inserimento dei blocchi e una lista di blocchi disponibili.
 	\item \textbf{Postcondizione}: Il workflow contiene i blocchi desiderati dall'utente.
@@ -276,8 +116,8 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
 	\item \textbf{Descrizione}: L'attore può inserire il blocco "Pin" nel suo workflow. Questo blocco permette all'attore di proteggere il proprio workflow con un pin di 4 cifre. L'attore dovrà dire il pin ad Alexa prima di continuare con i blocchi che seguono.
-	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
-	\item \textbf{Postcondizione}: L'attore ha inserito il blocco Pin nel suo workflow.
+	\item \textbf{Precondizione}: L'attore sta creando il workflow e il sistema gli permette di selezionare i blocchi
+	\item \textbf{Postcondizione}: L'attore ha inserito il blocco Pin nel suo workflow
 	\item \textbf{Scenario principale}:
 	\begin{enumerate} \item L'attore seleziona il blocco Pin;  \item 
 		L'attore inserisce il numero di 4 cifre richiesto dal sistema.\end{enumerate}
@@ -287,9 +127,9 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 \label{UC2.1.2.2}
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
-	\item \textbf{Descrizione}: L'attore può inserire il blocco di supporto Pianificazione. Questo blocco indica quando far partire il prossimo blocco, ovvero pianificare l'esecuzione del blocco.
-	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
-	\item \textbf{Postcondizione}: L'attore ha inserito il blocco Pianificazione nel suo workflow.
+	\item \textbf{Descrizione}: L'attore può inserire il blocco di supporto Pianificazione. Questo blocco indica quando far partire il prossimo blocco
+	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco
+	\item \textbf{Postcondizione}: L'attore ha inserito il blocco Pianificazione nel suo workflow
 	\item \textbf{Scenario principale}:
 	\begin{enumerate} \item L'attore include il blocco Pianificazione nel workflow.\end{enumerate}
 \end{itemize}
@@ -300,7 +140,7 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 	\item \textbf{Attori}: utente autenticato;
 	\item \textbf{Descrizione}: L'attore può inserire un blocco di testo che verrà letto da Alexa.
 	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
-	\item \textbf{Postcondizione}: L'attore ha inserito il blocco di testo nel suo workflow.
+	\item \textbf{Postcondizione}: L'attore ha inserito il blocco di testo nel suo workflow
 	\item \textbf{Scenario principale}:
 	\begin{enumerate} \item L'attore seleziona il blocco;  \item  L'attore inserisce il testo.\end{enumerate}
 \end{itemize}
@@ -309,19 +149,19 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 \label{UC2.1.2.4}
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
-	\item \textbf{Descrizione}: L'attore può inserire un blocco "Twitter" nel proprio workflow, che permette all'utente di pubblicare o rispondere ai tweets.
-	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
+	\item \textbf{Descrizione}: L'attore può inserire un blocco "Twitter" nel proprio workflow, che permette all'utente di pubblicare o rispondere ai tweet.
+	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco
 	\item \textbf{Postcondizione}: L'attore ha inserito le credenziali (del suo account Twitter) e configurato il blocco "Twitter".
 	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore seleziona il blocco Twitter;  \item  L'attore inserisce le credenziali del proprio account;  \item  L'attore seleziona quali tweets vuole visualizzare (ordine cronologico, di importanza, account specifici).\end{enumerate}
+	\begin{enumerate} \item L'attore seleziona il blocco Twitter;  \item  L'attore inserisce le credenziali del proprio account;  \item  L'attore seleziona quali tweet vuole visualizzare (ordine cronologico, di importanza, account specifici).\end{enumerate}
 \end{itemize}
 
 \section{UC2.1.2.5: Inserimento Lista}
 \label{UC2.1.2.5}
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
-	\item \textbf{Descrizione}: L'attore può inserire un blocco "Lista" al suo workflow. Questo blocco permette all'attore di creare una lista personalizzata, modificabile sia dall'applicazione che tramite Alexa.
-	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
+	\item \textbf{Descrizione}: L'attore può inserire un blocco "Lista" al suo workflow. Questo blocco permette all'attore di creare una lista, leggere e aggiungere elementi sia dall'applicazione che tramite Alexa
+	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco
 	\item \textbf{Postcondizione}: L'attore ha inserito il blocco "Lista" nel suo workflow.
 	\item \textbf{Scenario principale}:
 	\begin{enumerate} \item L'attore seleziona il blocco "Lista";  \item  L'attore popola la lista (opzionale).\end{enumerate}
@@ -331,7 +171,7 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 \label{UC2.1.2.6}
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
-	\item \textbf{Descrizione}: L'attore può inserire un blocco "sveglia" nel suo workflow. La sveglia suona all'orario indicato dall'attore. L'attore può posporre o spegnere la sveglia mente questa è attiva, può inoltre spegnere la sveglia o modificare l'orario in un momento diverso dall'accensione della sveglia.
+	\item \textbf{Descrizione}: L'attore può inserire un blocco "sveglia" nel suo workflow. La sveglia suona all'orario indicato dall'attore. L'attore può posporre o spegnere la sveglia (mente questa è attiva)
 	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
 	\item \textbf{Postcondizione}: L'attore ha inserito una sveglia nel suo workflow.
 	\item \textbf{Scenario principale}:
@@ -342,17 +182,17 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 \label{UC2.1.2.7}
 \begin{itemize}
 	\item \textbf{Attori}: Google, utente autenticato;
-	\item \textbf{Descrizione}: L'attore può inserire un blocco "Mail" nel suo workflow. Questo blocco permette all'utente di leggere oppure inviare email tramite Alexa.
+	\item \textbf{Descrizione}: L'attore può inserire un blocco "Mail" nel suo workflow. Questo blocco permette all'utente di leggere email tramite Alexa.
 	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
-	\item \textbf{Postcondizione}: L'attore ha inserito il blocco "Mail" e ha inserito le sue credenziali della mail.
+	\item \textbf{Postcondizione}: L'attore ha inserito il blocco "Mail" e ha inserito le sue credenziali (della mail)
 	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore seleziona il blocco Mail;  \item  L'attore inserisce le credenziali per accedere alla mail;  \item  L'attore seleziona quali tipi di email vuole leggere (tutte, non lette, più recenti, più importanti, personalizzate).\end{enumerate}
+	\begin{enumerate} \item L'attore seleziona il blocco Mail;  \item  L'attore inserisce le credenziali per accedere alla mail;  \item  L'attore seleziona quali tipi di email vuole leggere (tutte, più importanti, personalizzate).\end{enumerate}
 \end{itemize}
 
 \section{UC2.1.2.8: Inserimento Telegram}
 \label{UC2.1.2.8}
 \begin{itemize}
-	\item \textbf{Attori}: Telegram, utente autenticato;
+	\item \textbf{Attori}: Autent.Telegram, utente autenticato;
 	\item \textbf{Descrizione}: L'attore può inserire un blocco "Telegram". Questo blocco permette la lettura e l'invio di messaggi vocali e testuali attraverso Alexa.
 	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
 	\item \textbf{Postcondizione}: L'attore ha inserito il blocco "Telegram" e le credenziali d'accesso nel suo workflow.
@@ -375,11 +215,11 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 \label{UC2.1.2.10}
 \begin{itemize}
 	\item \textbf{Attori}: Google, utente autenticato;
-	\item \textbf{Descrizione}: L'attore può inserire il blocco "Youtube" e collegarlo al proprio account Google. Questo blocco permette all'attore di ascoltare musica attraverso Youtube.
+	\item \textbf{Descrizione}: L'attore può inserire il blocco "Youtube" e collegarlo al proprio account Google.. Questo blocco permette all'attore di ascoltare musica attraverso youtube.
 	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
 	\item \textbf{Postcondizione}: L'attore ha inserito il blocco "Youtube" al proprio workflow.
 	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore seleziona il blocco "Youtube"; \item L'attore inserisce le proprie credenziali Google; \item  L'attore inserisce gli URL dei video che vuole riprodurre (solo audio).\end{enumerate}
+	\begin{enumerate} \item L'attore seleziona il blocco "Youtube";  \item  L'attore inserisce le proprie credenziali Google;  \item  L'attore inserisce gli url dei video che vuole riprodurre (solo audio).\end{enumerate}
 	\item \textbf{Scenari alternativi}:
 	Il video non esiste(UC2.1.2.10.1)
 \end{itemize}
@@ -388,18 +228,18 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 \label{UC2.1.2.10.1}
 \begin{itemize}
 	\item \textbf{Attori}: Google, utente autenticato;
-	\item \textbf{Descrizione}: L'attore ha inserito un URL di un video di Youtube errato.
-	\item \textbf{Precondizione}: L'attore ha provato a inserire un URL di un video di Youtube che non esiste.
-	\item \textbf{Postcondizione}: Il sistema ha avvisato l'utente dell'inesistenza dell'URL e gli permette di modificarlo oppure eliminarlo.
+	\item \textbf{Descrizione}: L'attore ha inserito un url (di youtube) errato.
+	\item \textbf{Precondizione}: L'attore ha provato a inserire un url (di youtube) che non esiste
+	\item \textbf{Postcondizione}: Il sistema ha avvisato l'utente dell'inesistenza dell'url e gli permette di modificarlo oppure eliminarlo
 	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'utente inserisce un URL errato;  \item  Il sistema avvisa l'utente dell'inesistenza dell'URL;  \item  L'utente modifica l'URL o lo elimina.\end{enumerate}
+	\begin{enumerate} \item L'utente inserisce un url errato;  \item  Il sistema avvisa l'utente dell'inesistenza dell'url;  \item  L'utente modifica l'url o lo elimina.\end{enumerate}
 \end{itemize}
 
-\section{UC2.1.2.11: Inserimento Timer}
+\section{UC2.1.2.11: Inserimento timer}
 \label{UC2.1.2.11}
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
-	\item \textbf{Descrizione}: L'attore può inserire un blocco "Timer" nel workflow. Questo blocco permette la riproduzione di un suono dopo un tempo specificato.
+	\item \textbf{Descrizione}: L'attore può inserire un blocco "Timer" nel workflow. Questo blocco permette la riproduzione di un suono dopo un tempo specificato
 	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
 	\item \textbf{Postcondizione}: L'attore ha inserito il blocco "Timer".
 	\item \textbf{Scenario principale}:
@@ -410,7 +250,7 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 \label{UC2.1.2.12}
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
-	\item \textbf{Descrizione}: L'attore può inserire un modulo "Radio" nel workflow, permettendo la riproduzione della stazione radio scelta.
+	\item \textbf{Descrizione}: L'attore può inserire un modulo "Radio" nel workflow.
 	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
 	\item \textbf{Postcondizione}: L'attore ha inserito il blocco "Radio".
 	\item \textbf{Scenario principale}:
@@ -432,20 +272,20 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 \label{UC2.1.2.14}
 \begin{itemize}
 	\item \textbf{Attori}: Spotify, utente autenticato;
-	\item \textbf{Descrizione}: L'attore può inserire il blocco "Spotify" al workflow, immettendo le proprie credenziali, questo permetterà l'accesso al noto servizio di musica digitale.
+	\item \textbf{Descrizione}: L'attore può inserire il blocco "Spotify" al workflow.
 	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
-	\item \textbf{Postcondizione}: L'attore ha inserito il blocco "Spotify".
+	\item \textbf{Postcondizione}: L'attore ha inserito il blocco "Spotify"
 	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore seleziona il blocco "Spotify";  \item  L'attore inserisce le proprie credenziali di Spotify;  \item  L'attore seleziona quale playlist riprodurre di default.\end{enumerate}
+	\begin{enumerate} \item L'attore seleziona il blocco "Spotify";  \item  L'attore inserisce l proprie credenziali di Spotify;  \item  L'attore seleziona quale playlist riprodurre di default.\end{enumerate}
 \end{itemize}
 
 \section{UC2.1.2.15: Inserimento Borsa e Crypto}
 \label{UC2.1.2.15}
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
-	\item \textbf{Descrizione}: L'attore può inserire il blocco "Borsa e Crypto". Questo blocco permette all'attore di conoscere i valori delle monete e criptovalute. 
+	\item \textbf{Descrizione}: L'attore può inserire il blocco "Borsa e Crypto". Questo blocco permette all'attore di conoscere i valori delle monete e cryptovalute. 
 	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
-	\item \textbf{Postcondizione}: L'attore ha inserito il blocco "Borsa e Crypto".
+	\item \textbf{Postcondizione}: L'attore ha inserito il blocco "Borsa e Crypto"
 	\item \textbf{Scenario principale}:
 	\begin{enumerate} \item L'attore seleziona il blocco "Borsa e Crypto";  \item  Il sistema fornisce una lista inerente di monete e criptovalute;  \item  L'attore seleziona le monete e criptovalute che vuole monitorare.\end{enumerate}
 \end{itemize}
@@ -456,19 +296,19 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 	\item \textbf{Attori}: utente autenticato;
 	\item \textbf{Descrizione}: L'attore può inserire un feed RSS personalizzato.
 	\item \textbf{Precondizione}: Il sistema mette a disposizione un form per l'inserimento dei blocchi e una lista di blocchi disponibili.
-	\item \textbf{Postcondizione}: L'attore ha inserito il blocco di ``feed RSS''.
+	\item \textbf{Postcondizione}: L'attore ha inserito il blocco di feed RSS.
 	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore seleziona il blocco ``Feed RSS'';  \item  L'attore inserisce il link del feed RSS.\end{enumerate}
+	\begin{enumerate} \item L'attore seleziona il blocco RSS;  \item  L'attore inserisce il link del feed RSS.\end{enumerate}
 	\item \textbf{Scenari alternativi}:
-	L'attore inserisce un URL sbagliato. (UC2.1.2.16.1)
+	L'attore inserisce un url bagliato. (UC2.1.2.16.1)
 \end{itemize}
 
 \section{UC2.1.2.16.1: Feed RSS inesistente}
 \label{UC2.1.2.16.1}
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
-	\item \textbf{Descrizione}: L'attore ha inserito un feed RSS non corretto.
-	\item \textbf{Precondizione}: L'attore ha inserito un feed RSS non corretto.
+	\item \textbf{Descrizione}: L'attore ha inserito un feed RSS non corretto
+	\item \textbf{Precondizione}: L'attore ha inserito un feed RSS non corretto
 	\item \textbf{Postcondizione}: L'attore ha inserito un feed RSS corretto, oppure ha annullato l'operazione.
 	\item \textbf{Scenario principale}:
 	\begin{enumerate} \item Il sistema chiede nuovamente il feed RSS oppure permette di annullare l'inserimento;  \item  L'attore inserisce un Feed RSS corretto oppure annulla l'operazione.\end{enumerate}
@@ -478,33 +318,33 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 \label{UC2.1.2.17}
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
-	\item \textbf{Descrizione}: L'attore può inserire un blocco ``Filtro''. Questo blocco va collegato ad un altro blocco, per filtrarne i risultati. 
+	\item \textbf{Descrizione}: L'attore può inserire un blocco Filtro. Questo blocco va collegato ad un altro blocco, per filtrarne i risultati. 
 	\item \textbf{Precondizione}: L'attore ha inserito un blocco compatibile con il Filtro e il sistema permette l'inserimento del prossimo blocco.
-	\item \textbf{Postcondizione}: L'attore ha configurato il filtro. 
+	\item \textbf{Postcondizione}: L'attore ha configurato il Filtro. 
 	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore seleziona il filtro;  \item  L'attore seleziona quanti record vuole filtrare.\end{enumerate}
+	\begin{enumerate} \item L'attore seleziona il Filtro;  \item  L'attore seleziona quanti record vuole filtrare.\end{enumerate}
 \end{itemize}
 
 \section{UC2.1.2.18: Inserimento Meteo}
 \label{UC2.1.2.18}
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
-	\item \textbf{Descrizione}: L'attore può inserire il blocco ``Meteo''. Questo blocco permette di conoscere il meteo nella città selezionata dall'attore.
+	\item \textbf{Descrizione}: L'attore può inserire il blocco Meteo. Questo blocco permette di conoscere il meteo nella città selezionata dall'attore.
 	\item \textbf{Precondizione}: Il sistema mette a disposizione un form per l'inserimento dei blocchi e una lista di blocchi disponibili.	
-	\item \textbf{Postcondizione}: L'attore ha inserito il blocco ``Meteo'' e selezionato la città.
+	\item \textbf{Postcondizione}: L'attore ha inserito il blocco meteo e selezionato la città.
 	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore seleziona il blocco ``Meteo'';  \item  L'attore seleziona la città.\end{enumerate}
+	\begin{enumerate} \item L'attore seleziona il blocco Meteo;  \item  L'attore seleziona la città.\end{enumerate}
 \end{itemize}
 
 \section{UC2.1.2.19: Inserimento Amazon Music}
 \label{UC2.1.2.19}
 \begin{itemize}
 	\item \textbf{Attori}: Amazon, utente autenticato;
-	\item \textbf{Descrizione}: L'attore può inserire in blocco ``Amazon Music''. Questo blocco permette di ascoltare la musica attraverso il servizio Amazon Music.
+	\item \textbf{Descrizione}: L'attore può inserire in blocco Amazon Music. Questo blocco permette di ascoltare la musica attraverso Amazon Music
 	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.	
-	\item \textbf{Postcondizione}: L'attore ha inserito il blocco workflow.
+	\item \textbf{Postcondizione}: L'attore ha inserito il blocco workflow
 	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore seleziona il blocco ``Amazon Music'';  \item  L'attore seleziona la playlist di default.\end{enumerate}
+	\begin{enumerate} \item L'attore seleziona il blocco Amazon Music;  \item  L'attore seleziona la playlist di default.\end{enumerate}
 \end{itemize}
 
 \section{UC2.2: Eliminazione workflow}
@@ -520,12 +360,6 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 
 \section{UC2.3: Modifica workflow}
 \label{UC2.3}
-\begin{figure} [h]
-	\centering
-	\includegraphics[scale=0.4]{./Diagram/UC2-3.png}
-	\caption{Modifica workflow }\label{}
-\end{figure}
-
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
 	\item \textbf{Descrizione}: L'attore modifica un workflow.
@@ -614,3 +448,4 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 	\item \textbf{Scenario principale}:
 	\begin{enumerate} \item L'attore si disconnette dal sistema.\end{enumerate}
 \end{itemize}
+
