@@ -1,7 +1,7 @@
 \chapter{Processi di Supporto}
 \section{Gestione della configurazione}
 \subsection{Versionamento}
-Per un progetto di tali dimensioni risulta necessario mantenere uno storico completo di tutte le modifiche apportate a qualunque file o documento non generato automaticamente da IDE o simili. Inoltre è necessario uno strumento che permetta il lavoro collaborativo. Per questo scopo si è scelto l'utilizzo del sistema di versionamento\glossario{Git}, attraverso il servizio\glossario{GitHub}.
+Per un progetto di tali dimensioni risulta necessario mantenere uno storico completo di tutte le modifiche apportate a qualunque file o documento non generato automaticamente da IDE o simili. Inoltre è necessario uno strumento che permetta il lavoro collaborativo. Per questo scopo si è scelto l'utilizzo del sistema di versionamento \textit{Git$_{G}$}, attraverso il servizio \textit{GitHub$_{G}$}.
 \subsubsection{Comandi basilari}
 Si riportano di seguito i comandi fondamentali del software Git per fornire un punto di appoggio a tutti i membri del gruppo. Tutti i comandi, tranne quello per la creazione della copia locale, sono da eseguire all'interno della cartella contenente il repository.
 \subsubsection{Creazione della copia locale}
@@ -17,16 +17,16 @@ La creazione della copia locale viene effettuata attraverso il comando:\\
 	\item \texttt{git pull}: aggiorna sovrascrivendo il repository locale con quello remoto.
 \end{itemize}
 \subsubsection{Git Flow}
-Per facilitare la collaborazione si sceglie usare il git flow \footnote{\url{https://it.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow}}\glossario{workflow}. L'Amministratore si assicurerà che tutte le macchine siano configurate correttamente per il suo utilizzo.
+Per facilitare la collaborazione si sceglie usare il git flow\footnote{\url{https://it.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow}} \textit{workflow$_{G}$}. L'Amministratore si assicurerà che tutte le macchine siano configurate correttamente per il suo utilizzo.
 \subsubsection{Gestione dei rilasci}
-L'amministratore si occuperà di creare i rami di feature necessari per una proficua collaborazione tra i membri nel repository. Ogni documento (o parte di esso) e ogni funzionalità software verrà implementata in un ramo di feature. Quando la funzionalità diventa stabile e corretta verrà rilasciata in un ramo di integrazione chiamato "develop". Prima di ogni revisione verrà effettuato un rilascio nel ramo master a partire dall'ultimo commit. Tale rilascio costituirà\glossario{baseline}e sarà punto di partenza verso la prossima\glossario{milestone}. Tale attività verrà effettuata nei tempi descritti nel \texttt{Piano di Progetto v1.0.0}. 
+L'amministratore si occuperà di creare i rami di feature necessari per una proficua collaborazione tra i membri nel repository. Ogni documento (o parte di esso) e ogni funzionalità software verrà implementata in un ramo di feature. Quando la funzionalità diventa stabile e corretta verrà rilasciata in un ramo di integrazione chiamato "develop". Prima di ogni revisione verrà effettuato un rilascio nel ramo master a partire dall'ultimo commit. Tale rilascio costituirà\glossario{baseline}e sarà punto di partenza verso la prossima \textit{milestone$_{G}$}. Tale attività verrà effettuata nei tempi descritti nel \texttt{Piano di Progetto v1.0.0}. 
 
 \section{Documentazione}
 Il\glossario{processo}di Documentazione stabilisce una serie di norme e convenzioni per la stesura dei documenti così da renderli formali, validi e coerenti.
 Un documento viene definito formale quando viene approvato dal \textit{Responsabile}.
 Ogni documento formale verrà classificato come:
 \begin{itemize}
-	\item \textbf{Interno:} documenti ad uso esclusivo del gruppo\glossario{ZeroSeven}, quali \textit{Norme di progetto} e \textit{Studio di fattibilità};
+	\item \textbf{Interno:} documenti ad uso esclusivo del gruppo \textit{ZeroSeven$_{G}$}, quali \textit{Norme di progetto} e \textit{Studio di fattibilità};
 	\item \textbf{Esterno:} documenti consultabili anche da attori esterni al gruppo ZeroSeven.
 	
 \end{itemize}
@@ -34,7 +34,7 @@ Ogni documento formale verrà classificato come:
 \subsection{Nomenclatura}
 Tutti i documenti formali, esclusi i verbali, seguiranno questo sistema di nomenclatura:
 \begin{itemize}
-	\item \textbf{Nome del documento:} Il nome del documento deve essere scritto in \textit{Upper Camel}\glossario{Case}.
+	\item \textbf{Nome del documento:} Il nome del documento deve essere scritto in \textit{Upper Camel Case$_{G}$}.
 	NormeDiProgetto per il documento corrente;
 	\item \textbf{Versione:} La documentazione prodotta deve essere corredata del numero di versione secondo la seguente codifica:
 	
@@ -47,7 +47,7 @@ Tutti i documenti formali, esclusi i verbali, seguiranno questo sistema di nomen
 		\begin{enumerate}
 			\setcounter{enumi}{-1}
 			\item per la documentazione in fase di sviluppo;
-			\item per la documentazione in fase di\glossario{verifica};
+			\item per la documentazione in fase di \textit{verifica$_{G}$};
 			\item per la documentazione in fase di approvazione;
 			\item per la documentazione approvata e formale.
 		\end{enumerate}
@@ -61,10 +61,10 @@ I verbali sia interni che esterni seguiranno la nomenclatura VerbaleUsoData.
 \subsubsection{Ciclo di vita della documentazione}
 Ogni documento formale deve passare gli stadi di ``Sviluppo”, ``Verifica” e ``Approvato”.
 \begin{itemize}
-	\item \textbf{Sviluppo:} inizia con la creazione del documento e termina con la conclusione	della stesura di tutte le sue parti. In questa fase i Redattori aggiungono le parti assegnate tramite\glossario{ticket};
+	\item \textbf{Sviluppo:} inizia con la creazione del documento e termina con la conclusione	della stesura di tutte le sue parti. In questa fase i Redattori aggiungono le parti assegnate tramite \textit{ticket$_{G}$};
 	
 	\item  \textbf{Verifica:} il documento entra nella fase di verifica dopo l’assegnazione di un ticket a un \textit{Verificatore} da
-	parte del Responsabile. I Verificatori effettueranno le procedure di controllo
+	parte del \textit{Responsabile}. I \textit{Verificatori} effettueranno le procedure di controllo
 	dello stesso.
 	Al termine del controllo in caso positivo il documento entra automaticamente
 	in fase di ``Approvazione”, altrimenti i loro riscontri vengono consegnati
@@ -93,7 +93,7 @@ Ogni documento sarà composto da:
 \subsubsection{Frontespizio}
 La prima pagina di tutti i documenti dovrà essere così composta:
 \begin{itemize}
-	\item Titolo del\glossario{progetto};
+	\item Titolo del \textit{progetto$_{G}$};
 	\item Titolo del documento;
 	\item Logo e nome del gruppo;
 	\item Descrizione in forma tabellare contenente informazioni importanti quali:
@@ -109,7 +109,7 @@ La prima pagina di tutti i documenti dovrà essere così composta:
 	\end{itemize}
 \end{itemize}
 
-\subsubsection{Diario delle modifiche}
+\subsubsection{Registro delle modifiche}
 Successivo al frontespizio deve essere sempre presente un registro riassuntivo delle modifiche del documento in forma tabellare contenente:
 \begin{itemize}
 \item Versione dopo la modifica;
@@ -144,12 +144,10 @@ Le pagine interne dei documenti rispettano i canoni previsti dal template \LaTeX
 Questa sezione racchiude le convenzioni riguardanti tipografia, ortografia e uno stile uniforme e disciplinato per tutti i documenti.
 \subsubsection{Punteggiatura}
 Ogni segno della punteggiatura va sempre unito all'ultima lettera della parola che lo precede e separato con uno spazio dalla lettera iniziale della parola che lo segue.
-Le lettere maiuscole vanno poste solo dopo il punto, il punto di domanda, il punto esclamativo e all’inizio di ogni elemento di un elenco puntato, oltre che dove previsto dalla lingua italiana. È inoltre utilizzata l’iniziale maiuscola nel nome del team, del\glossario{progetto}, dei documenti, dei ruoli di progetto e delle fasi di lavoro.
+Le lettere maiuscole vanno poste solo dopo il punto, il punto di domanda, il punto esclamativo e all’inizio di ogni elemento di un elenco puntato, oltre che dove previsto dalla lingua italiana. È inoltre utilizzata l’iniziale maiuscola nel nome del team, del \glossario{progetto}, dei documenti, dei ruoli di progetto e delle fasi di lavoro.
 \subsubsection{Formati}
 \begin{itemize}
-\item  Date: le date presenti nei documenti devono seguire la notazione definita dallo standard ISO 8601:2004 YYYY-MM-DD
-
-dove:
+\item  Date: le date presenti nei documenti devono seguire la notazione definita dallo standard ISO 8601:2004 YYYY-MM-DD dove:
 \begin{itemize}
 	\item  YYYY: rappresenta l’anno scritto utilizzando quattro cifre;
 	\item MM: rappresenta il mese scritto utilizzando due cifre;
@@ -180,9 +178,9 @@ dove:
 	\item \textbf{\LaTeX:} Ogni riferimento a \LaTeX verrà scritto utilizzando il comando \texttt{\textbackslash LaTeX};
 	\item \textbf{Comandi \LaTeX:} sono stati realizzati dei comandi personalizzati al fine di evitare errori di battitura e unificare tutti i documenti facilitando il lavoro del gruppo.
 	\begin{itemize}
-		\item \textbf{ \textbackslash intestazioni}: inserisce un'intestazione personalizzata con il nome del documento e il logo\glossario{ZeroSeven};
+		\item \textbf{ \textbackslash intestazioni}: inserisce un'intestazione personalizzata con il nome del documento e il logo \textit{ZeroSeven$_{G}$};
 		\item \textbf{ \textbackslash mailzeroseven}: inserisce l'indirizzo email del gruppo per un eventuale contatto;
-		\item \textbf{ \textbackslash progetto}: inserisce il nome del\glossario{progetto};
+		\item \textbf{ \textbackslash progetto}: inserisce il nome del \textit{progetto$_{G}$};
 		\item \textbf{ \textbackslash logo}: inserisce il logo del gruppo ZeroSeven;
 		\item \textbf{ \textbackslash glossario}: indica un termine da inserire nel glossario(marcato da una G maiuscola a pedice).	
 	\end{itemize}
@@ -215,25 +213,25 @@ Per la scrittura della documentazione in modo coerente e uniforme si deve usare 
 \subsubsection{TeXstudio}
 E' utilizzato per la scrittura e il controllo ortografico dei documenti.
 \subsubsection{Script automatici}
-Viene implementato uno script per permettere il calcolo automatico dell'\textit{indice di}\glossario{Gulpease}, esso verrà eseguito ad ogni commit tramite Travis-CI, nel caso in cui la build presenti degli errori grammaticali, essi dovranno essere immediatamente corretti.\\
+Viene implementato uno script per permettere il calcolo automatico dell'\textit{indice di Gulpease$_{G}$}, esso verrà eseguito ad ogni commit tramite \textit{Travis-CI$_{G}$}, nel caso in cui la build presenti degli errori grammaticali, essi dovranno essere immediatamente corretti.\\
 Aggiungere, se necessario, i termini mancanti nel file \texttt{.dictionary}, contenente i termini che lo script deve ignorare.
 
 \section{Garanzia di qualità}
-\subsection{Classificazione metriche e obbiettivi}
-Questa\glossario{processo}definisce norme e struttura delle metriche, obbiettivi di qualità, metodologie e strumenti per perseguire qualità di processo e di prodotto. 
-\subsubsection{Classificazioni degli obbiettivi} 
-Gli obbiettivi di qualità inclusi nel \textit{Piano di Qualifica v1.0.0} devono rispettare la seguente notazione: \\
+\subsection{Classificazione metriche e obiettivi}
+Questa\glossario{processo}definisce norme e struttura delle metriche, obiettivi di qualità, metodologie e strumenti per perseguire qualità di processo e di prodotto. 
+\subsubsection{Classificazioni degli obiettivi} 
+Gli obiettivi di qualità inclusi nel \textit{Piano di Qualifica v1.0.0} devono rispettare la seguente notazione: \\
 \begin{center}
 Q[Tipo][ID] : [Nome].
 \end{center}
 \begin{itemize}
-	\item \textbf{Tipo}: stabilisce se l'obbiettivo si riferisce a\glossario{prodotti}o processi e può assumere i seguenti valori:
+	\item \textbf{Tipo}: stabilisce se l'obiettivo si riferisce a\glossario{prodotti}o processi e può assumere i seguenti valori:
 	\begin{itemize}
 		\item \textbf{P}: per indicare i processi;
 		\item \textbf{PR}: per indicare i prodotti.
 	\end{itemize}
 	\item \textbf{ID}: identifica univocamente l'obbiettivo attraverso un numero progressivo;
-	\item \textbf{Descrizione}: breve descrizione dell'obbiettivo di qualità.
+	\item \textbf{Descrizione}: breve descrizione dell'obiettivo di qualità.
 \end{itemize}
 \subsubsection{Classificazione delle metriche}
 Risulta importante fissare delle metriche per permettere di monitorare costantemente la qualità di prodotto e processo.Tali metriche dovranno rispettare la seguente notazione:
@@ -259,7 +257,7 @@ Ciascun\glossario{processo}verrà costantemente monitorato in tutta la sua esecu
 La verifica della qualità di prodotto si divide in attività e procedure differenti a seconda del\glossario{prodotto}che si sta verificando. Per i prodotto software si procede con analisi statica e dinamica, mentre per i documenti si applica soltanto analisi statica.
 \subsubsection{Verifica dei documenti}
 \paragraph{Analisi statica}
-Al fine di verificare i documenti verranno utilizzati\glossario{inspection}e\glossario{walkthrough}:
+Al fine di verificare i documenti verranno utilizzati\glossario{inspection}e \textit{walkthrough$_{G}$}:
 \begin{itemize}
 	\item \textbf{Walkthrough:} questa metodologia prevede una lettura profonda e attenta del documento. Gli errori riscontrati verranno corretti e aggiunti all'appendice "Lista di controllo" delle \texttt{Norme di Progetto v1.0.0} per permettere di utilizzare inspection le volte successive;
 	\item \textbf{Inspection:} al contrario della metodologia precedente, questa risulta essere molto più veloce perché attraverso una lista di controllo degli errori permette un'analisi più efficace delle criticità, omettendo le parti che non presentano problematiche. 
@@ -270,25 +268,25 @@ Al fine di verificare i documenti verranno utilizzati\glossario{inspection}e\glo
 	\item Vengono controllati gli errori comuni attraverso la lista di controllo;
 	\item Viene controllato il rispetto delle \textit{Norme di Progetto};
 	\item Viene effettuata una lettura profonda e corrette eventuali nuove anomalie;
-	\item Calcolo dell'\textit{indice di}\glossario{Gulpease};
+	\item Calcolo dell'\textit{indice di Gulpease$_{G}$};
 	\item Vengono aggiunte eventuali nuove anomalie alla lista di controllo;
 	\item Viene chiuso il ticket.
 \end{enumerate}
 \subsubsection{Verifica del prodotti software}
 \paragraph{Analisi dinamica}\label{anDinamica}
 \'E compito dei \textit{Progettisti} definire i test nel periodo di progettazione, ad eccezione dei test d'unità(vedi sezione \ref{tunita}); vengono fornite indicazioni specifiche sulla corretta codifica dei test e la loro natura, suddividendo per tecnologie adottate qualora le differenze richiedano un dettaglio maggiore.\\
-L'esecuzione dei test automatici tramite Travis-CI viene avviene unicamente per i test di unità, in quanto il costo computazionale di test di integrazione e di sistema risulta essere troppo elevato.
-Per i test riguardanti il back-end (\textit{AWS Lambda e Api Gateway}), si ricorda che la copertura del codice deve essere totale.
+L'esecuzione dei test automatici tramite \textit{Travis-CI$_{G}$} viene avviene unicamente per i test di unità, in quanto il costo computazionale di test di integrazione e di sistema risulta essere troppo elevato.
+Per i test riguardanti il back-end (\textit{AWS Lambda$_{G}$} e \textit{API Gateway$_{G}$}), si ricorda che la copertura del codice deve essere totale.
 \paragraph{Tecnologie adottate}
-\subparagraph{JUnit} Viene adottato per la codifica dei test su \glossario{Kotlin};
-\subparagraph{Mocha e Chai Assert} Vengono adottati per la codifica dei test su NodeJs: il primo è un \glossario{framework} che fornisce funzioni specifiche e log sul risultato dei test, mentre il secondo ne amplia le funzionalità tramite l'inclusione di una \glossario{assertion-library} che rende la sintassi molto più leggibile e facile da codificare.
+\subparagraph{JUnit} Viene adottato per la codifica dei test su \textit{Kotlin$_{G}$}.
+\subparagraph{Mocha e Chai Assert} Vengono adottati per la codifica dei test su \textit{Node.Js$_{G}$}: il primo è un\glossario{framework}che fornisce funzioni specifiche e log sul risultato dei test, mentre il secondo ne amplia le funzionalità tramite l'inclusione di una \textit{assertion-library$_{G}$} che rende la sintassi molto più leggibile e facile da codificare.
 
 \paragraph{Test di Unità}\label{tunita}
 I test di unità sono del codice prodotto, prodotto dai \textit{Programmatori}, che esercitano un'unità del programma. Per unità si intende una funzionalità atomica che può essere verificata in modo isolato, in modo da assicurare che il risultato del test non sia influenzato da altre unità. 
 Vengono sviluppate del programmatore che sviluppa le unità, per verificare l'assenza di alcuni errori, e documentare il comportamento dell'unità prodotta. 
 Devono essere veloci da eseguire, indipendenti tra loro e nell'ordine di esecuzione. Inoltre dovrebbero essere eseguiti ad ogni modifica del codice sorgente.
 \paragraph{Test di Integrazione}
-I test di integrazione hanno il compito di verificare se sono rispettati i contratti di interfaccia tra più moduli o sottosistemi. I sottosistemi possono essere interni, quindi già verificati singolarmente dai test di unità, oppure esterni, come database, filesystem, ect. 
+I test di integrazione hanno il compito di verificare se sono rispettati i contratti di interfaccia tra più moduli o sottosistemi. I sottosistemi possono essere interni, quindi già verificati singolarmente dai test di unità, oppure esterni, come database, file system, etc. 
 Risultano più lenti da configurare ed eseguire rispetto ai test di unità.  
 \paragraph{Test di Sistema}
 I test di sistema verificano il comportamento del sistema nella sua interezza rispetto alle specifiche. 
@@ -312,7 +310,7 @@ dove
 			\item U: se di unità;
 			\item I: se di integrazione;
 			\item S: se di sistema;
-			\item A: se di accettazione;
+			\item A: se di accettazione.
 		\end{itemize}
 	\item \textbf{Codice}: può essere
 		\begin{itemize}
@@ -326,27 +324,27 @@ dove
 	\item non implementato;
 	\item non eseguito;
 	\item superato;
-	\item non superato;
+	\item non superato.
 \end{itemize}
 \subsection{Procedure di verifica del software}
 \subsubsection{Codifica e esecuzione}
 \paragraph{JUnit:}
-la struttura di un progetto su 	\glossario{Android-studio} prevede una suddivisione dei test a seconda se richiedano o meno l'ambiente di sviluppo Android per essere eseguiti: i primi sono posizionati nel percorso \textit{app/src/androidTest}, mentre i secondi in \textit{app/src/test}.\\
-Alternativamente, è possibile definire un test che utilizzi dei \glossario{Mock} degli oggetti creati dall'ambiente di sviluppo, tuttavia è altamente sconsigliato perché richiederebbe una quantità di lavoro eccessivo e letture successive del codice sarebbero poco intuitive.\\
-I test che richiedono l'ambiente di sviluppo Android sono:
+la struttura di un progetto su \textit{Android-studio$_{G}$} prevede una suddivisione dei test a seconda se richiedano o meno l'ambiente di sviluppo Android per essere eseguiti: i primi sono posizionati nel percorso \textit{app/src/androidTest}, mentre i secondi in \textit{app/src/test}.\\
+Alternativamente, è possibile definire un test che utilizzi dei\glossario{Mock}degli oggetti creati dall'ambiente di sviluppo, tuttavia è altamente sconsigliato perché richiederebbe una quantità di lavoro eccessivo e letture successive del codice sarebbero poco intuitive.\\
+I test che richiedono l'ambiente di sviluppo\glossario{Android}sono:
 \begin{itemize}
-	\item test che fanno riferimento a metodi che utilizzano le librerie android; 
+	\item test che fanno riferimento a metodi che utilizzano le librerie Android; 
 	\item test che richiedono l'utilizzo della rete per essere effettuati; 
 	\item test che fanno riferimento a parti dell'interfaccia grafica.
 \end{itemize}
 I test che non rientrano nelle seguenti categorie (riguardanti, ad esempio, la logica dell'applicazione) possono essere scritti come normali test JUnit nella cartella sopracitata.
-\subparagraph{Esecuzione:} L'esecuzione dei test avviene mediante l'invocazione del test con il comando \textit{gradle} [\textit{myTask}] fornito da gradle. 
+\subparagraph{Esecuzione:} L'esecuzione dei test avviene mediante l'invocazione del test con il comando \textit{gradle} [\textit{myTask}] fornito da \textit{gradle$_{G}$}. 
 
 \paragraph{Mocha e Chai Assert:} Mocha permette l'esecuzione seriale di test asincroni mediante l'invocazione di un singolo comando, e rende la loro codifica semplice ed efficace.\\
-Segue una lista di direttive da perseguire nella codifica dei test con Mocha.
+Segue una lista di direttive da perseguire nella codifica dei test con Mocha:
 \begin{itemize}
 	\item Evitare l'utilizzo dell'operatore lambda (=>) in tutti i casi, poichè esso non permette al compilatore di Mocha di accedere al contesto delle funzioni a cui fa riferimento, se ciò non risulta necessario, una soluzione che prevede delle lambda porta a difficoltà riguardanti la manutenibilità del codice;
-	\item Studiare con cura gli \glossario{Hooks} per la concatenazione dell'esecuzione dei test;
+	\item Studiare con cura gli\glossario{Hooks}per la concatenazione dell'esecuzione dei test;
 	\item Segnare con la dicitura \textit{Pending} i test non ancora implementati, in modo che i \textit{Progettisti} possano immediatamente identificare i test da codificare;
 	\item Evitare di commentare i test da non eseguire, usare invece il comando \textit{skip()}, che da dalla versione 3.0 è supportato anche per i test asincroni;
 	\item Evitare l'utilizzo del comando \textit{retries()} del tutto.
@@ -355,7 +353,7 @@ Segue una lista di direttive da perseguire nella codifica dei test con Mocha.
 \subparagraph{Esecuzione:} L'esecuzione avviene mediante l'invocazione del comando \textit{npm test} da terminale. 
 
 \subsubsection{Test per AWS Lambda e Api Gateway}\label{labmdatest}
-L'esecuzione dei test sul comportamento delle lambda integrate ad API Gateway utilizzate dalla skill e dall' applicazione avviene mediante la console fornita da Amazon\footnote{\url{http://console.aws.amazon.com/}}, che fornisce tutte le informazioni necessarie per verificare il corretto funzionamento delle stesse.
+L'esecuzione dei test sul comportamento delle lambda integrate ad \textit{API Gateway$_{G}$} utilizzate dalla skill e dall'applicazione avviene mediante la console fornita da Amazon\footnote{\url{http://console.aws.amazon.com/}}, che fornisce tutte le informazioni necessarie per verificare il corretto funzionamento delle stesse.
 La console, inoltre, viene utilizzata per testare la lambda comunicante con la skill.
 
 \subsubsection{Test sulla skill MegAlexa}
