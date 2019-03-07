@@ -44,12 +44,12 @@
 \hypertarget{TI1}{TI1} & Viene testata l'applicazione Android ad ogni sua modifica nel repository Github, attraverso Travis-CI. L'applicazione deve compilare e non produrre warning. & \textit{Non Eseguito}\\ \hline
 \hypertarget{TI2}{TI2} & La skill android è soggetta a integrazione continua, attraverso Travis-CI. & \textit{Non Eseguito}\\ \hline
 \hypertarget{TI3}{TI3} & La skill viene pubblicata in automatico (ad ogni modifica nel repository) in Aws Lambda e viene eseguito un test per controllare che funzioni. Questo test non assicura il funzionamento della skill, quindi è necessario un controllo umano (più controlli sono richiesti in caso di un numero alto di commit nel repository). & \textit{Non Eseguito}\\ \hline
-\hypertarget{TI4}{TI4} & Ad ogni commit nel repository, Travis-CI controlla che il collegamento tra la Skill e AWS API-Gateway funzioni. Questo viene fatto attraverso una semplice chiamata post a una funzione MOCK (per ridurre il traffico a dynamoDB e alle lambda). & \textit{Non Implementato}\\ \hline
+\hypertarget{TI4}{TI4} & Ad ogni commit nel repository, Travis-CI controlla che il collegamento tra la Skill e AWS API-Gateway funzioni. Questo viene fatto attraverso una semplice chiamata post a una funzione MOCK (per ridurre il traffico a DynamoDB e alle lambda). & \textit{Non Implementato}\\ \hline
 \hypertarget{TI5}{TI5} & Controllare che il collegamento tra API-gateway, Lambda e DynamoDB funzioni, eseguendo dei test automatici appositi. Questa operazione deve essere eseguita poco frequentemente, in quanto potrebbe aumentare i costi dei servizi AWS. & \textit{Non Implementato}\\ \hline
 \caption[Test di Integrazione]{Test di Integrazione}
 \label{tabella:test2}
 \end{longtable}
 \clearpage
 
-\section{test di Unità}
+\section{Test di Unità}
 Questa sezione verrà compilata durante il periodo di progettazione di dettaglio e codifica, per applicare il test driven developlment (come richiesto dalla proponente).
