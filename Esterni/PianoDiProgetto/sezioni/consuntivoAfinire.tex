@@ -45,7 +45,7 @@
  			\multirow{2}{*}{Nominativo} & \multicolumn{6}{c|}{Ore per ruolo} & \multirow{2}{*}{Ore totali} \\ \cline{2-7}
  			& Re & Am & An & Pt & Ve & Pr &      \\ \hline
  			\endhead
- 			Mirko Franco       &   &    & -4 &    &  & +4 & 0    \\ \hline
+ 			Mirko Franco       &   &    &  &    &  &  & 0    \\ \hline
  			Bianca Ciuche      & -2 &  & +1 &    &  &   & -1       \\ \hline
  			Stefano Zanatta    &   &  &  &  &   &   &    0   \\ \hline
  			Andrea Deidda      &   & +2 &   &   &  &   &  +2  		\\ \hline
@@ -88,21 +88,29 @@ La tabella riporta la differenza delle ore tra preventivo e consuntivo, divise p
 \end{table}
 
 In questa tabella  sono riportate le differenze tra le ore di lavoro previste per ogni membro del gruppo con quelle realmente impiegate.\\
-		\begin{longtable}{|c|cccccc|c|}
-  			\hline
-  			\multirow{2}{*}{Nominativo} & \multicolumn{6}{c|}{Ore per ruolo} & \multirow{2}{*}{Ore totali} \\ \cline{2-7}
-  			& Re & Am & An & Pt & Ve & Pr &      \\ \hline
-  			\endhead
-  			Mirko Franco       &  +2 &    &    &    & -1 &   & +1    \\ \hline
-  			Bianca Ciuche      & -2 &    & +2 &    &  &   & 0        \\ \hline
-  			Stefano Zanatta    &   &  +1 & +3 &  &  -1 &   & +3        \\ \hline
-  			Andrea Deidda      &   &  &   &   &  -2 &   & -2  		\\ \hline
-  			Ludovico Brocca    &   &  & +1 &  & -1 &   & 0        \\ \hline
-  			Matteo Depascale   &   &  &   &   &   &  & 0  		\\ \hline
-  			Gian Marco Bratzu  &   &  &   &   &  &   & 0        \\ \hline
 
-  		\caption{Differenza tra le ore di lavoro previste per ogni membro del gruppo con le ore realmente impiegate }
-	\end{longtable}
+    \begin{table}[!h]
+	\begin{center}
+		\rowcolors{1}{}{lightgray}
+		\begin{tabularx}{\textwidth}{|c|cccccc|c|}
+			
+			\hline
+			\multirow{2}{*}{Nominativo} & \multicolumn{6}{c|}{Ore per ruolo} & \multirow{2}{*}{Ore totali} \\ \cline{2-7}
+			& Re & Am & An & Pt & Ve & Pr &      \\ \hline
+			\endhead
+			Mirko Franco       &  & -2  & &  & +1 &   & -1   \\ \hline
+			Bianca Ciuche      & +2 &    & -2 &    &  &   & 0   \\ \hline
+			Stefano Zanatta    &   & -1 & -3 &  & +1 &  & -3    \\ \hline
+			Andrea Deidda      &   &  &   &   & +1  &   & +1	\\ \hline
+			Ludovico Brocca    &   &  & -1 &   & +1 &   & 0     \\ \hline
+			Matteo Depascale   &   &  &   &   &   &   & 0  		\\ \hline
+			Gian Marco Bratzu  &   &  &   &   &  &   & 0        \\ \hline
+			
+		\end{tabularx}
+		\caption{Differenza tra le ore di lavoro previste per ogni membro del gruppo con le ore realmente impiegate }
+	\end{center}
+\end{table}
+
   \subsection{Conclusioni}
   Le correzioni del \textit{Piano di Qualifica} e del documento \textit{Norme} ha richiesto più lavoro del previsto agli {Analisti}. Il carico di lavoro degli \textit{Verificatori} è stato inferiore di quanto preventivato.\\ Il bilancio totale è negativo, con un deficit di 75\euro.
   Un'attenta analisi sulle tecnologie ha portato alla decisione di redistribuire le ore preventivate per la progettazione della base tecnologica, in quanto il carico di lavoro risultava squilibrato a favore dei Progettisti e stabiliva poche ore di programmazione.
@@ -121,13 +129,13 @@ In questa tabella  sono riportate le differenze tra le ore di lavoro previste pe
 			\hline
 			Responsabile   & 7   		&  210,00  			 	\\ 
 			Amministratore & 5   		&  100,00 			 	\\ 
-			Analista       & 15 	  	&  375,00    	\\ 
-			Progettista    & 101 (+8)	&  2222,00 (+154,00) 	\\ 
+			Analista       & 15 (+4)	  	&  375,00 (+100)   	\\ 
+			Progettista    & 101 (+5)	&  2222,00 (+110,00) 	\\ 
 			Verificatore   & 34 (+5)  	&  510,00 (+75,00) 		\\ 
-			Programmatore  & 15 (-10)   &  225,00 (-150,00) 	\\ \hline
-			\textbf{Totale}& \textbf{175} & \textbf{3563,00}	\\ \hline 
+			Programmatore  & 15 (-14)   &  225,00 (-210,00) 	\\ \hline
+			\textbf{Totale}& \textbf{177} & \textbf{3567,00}	\\ \hline 
 			\textbf{Totale preventivato}& \textbf{177} & \textbf{3642,00}\\ \hline 
-			\textbf{Differenza}& \textbf{+2} & \textbf{+79,00 }	\\ \hline  
+			\textbf{Differenza}& \textbf{0} & \textbf{+75,00 }	\\ \hline  
 		\end{tabular}
 		
 		\caption{Differenza delle ore tra preventivo e consultivo divise per ruolo} 
@@ -160,8 +168,8 @@ In questa tabella  sono riportate le differenze tra le ore di lavoro previste pe
 \end{table}
   
   \subsection{Conclusioni}
-  Durante il periodo di Progettazione della base tecnologica, il numero di ore preventivate si è dimostrato congruo. Tuttavia è stato necessario redistribuire le ore a ruoli diversi, poiché per il periodo non è stato necessario utilizzare tutte le ore preventivate per la progettazione della base tecnologica, ma si sono rese necessarie più ore per la programmazione di essa. 
-  Il risultato complessivo del periodo è di 2 ore lavorative in meno rispetto al previsto e di un risparmio di 79,00 \euro.
+  Durante il periodo di Progettazione della base tecnologica, il numero di ore preventivate si è dimostrato corretto. Tuttavia è stato necessario ridistribuire le ore a ruoli diversi, poiché per il periodo non è stato necessario utilizzare tutte le ore preventivate per la progettazione della base tecnologica, ma si sono rese necessarie più ore per la programmazione di essa. 
+  Il risultato complessivo del periodo è di 0 ore lavorative in meno rispetto al previsto e di un risparmio di 75,00 \euro.
   
   \newpage
 
@@ -188,13 +196,13 @@ In questa tabella  sono riportate le differenze tra le ore di lavoro previste pe
   
 			Revisione analisi   & 715,00	&  790,00  			 	\\ 
   
-			Progettazione della base tecnologica &  3642,00 &  3563,00 \\ 
+			Progettazione della base tecnologica &  3642,00 &  3567,00 \\ 
   
 			Progettazione di dettaglio e codifica    & 6404,00  &  -	\\ 
   
 			Validazione e collaudo    & 3018,00 & - 	\\ \hline
   
-			\textbf{Totale rendicontato}& \textbf{13.779,00} & \textbf{13.775,00}	\\ \hline   
+			\textbf{Totale rendicontato}& \textbf{13.779,00} & \textbf{13.779,00}	\\ \hline   
   
 		\end{tabular}
   
