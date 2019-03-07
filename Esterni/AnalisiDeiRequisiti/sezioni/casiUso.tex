@@ -1,7 +1,48 @@
-\chapter{Casi d'usp}
+\chapter{Casi d'uso}
 \label{UC}
+In questa sezione sono elencati i casi d'uso del \textit{progetto$_{G}$}\glossario{MegAlexa}dedotti da un'attenta indagine ed analisi da parte dei membri del gruppo sugli attori principali del sistema, sulle loro caratteristiche e possibilità.
+Ogni caso d'uso presenta i seguenti campi:
+\begin{itemize}
+	\item Codice identificativo;
+	\item Titolo
+	\item Attori primari;
+	\item Attori secondari (se presenti);
+	\item Descrizione;
+	\item Precondizione;
+	\item Postcondizione;
+	\item Flusso principale degli eventi.
+\end{itemize}
+Se un caso d'uso risulta essere particolarmente complesso allora viene corredato da un diagramma dei casi d'uso in linguaggio UML.
+\section{Codice identificativo CU}
+Ogni caso d'uso deve avere la seguente nomenclatura:
+\begin{center}
+	\textbf{UC$\Bigl\{$XX$\Bigr\}$.$\Bigl\{$YY$\Bigr\}$}
+\end{center}
+dove:
+\begin{itemize}
+	\item \textbf{UC:} Use Case;
+	\item \textbf{{XX}:} numero che identifica i casi d'uso;
+	\item \textbf{{YY}:} numero progressivo che identifica i sottocasi, esso può, a sua volta, includere altri sottocasi.
+\end{itemize}
+
+\section{Attori dei casi d'uso}
+\textbf{Attori primari}
+\begin{itemize}
+	\item \textbf{Utente non autenticato}: si riferisce all'utente del sistema che non ha ancora eseguito il login;
+	\item \textbf{Utente autenticato}: si riferisce all'utente del sistema che ha effettuato il login ed è stato autenticato.
+\end{itemize}
+\textbf{Attori secondari}
+\begin{itemize}
+	\item \textbf{Amazon$_{G}$}.
+\end{itemize}
+
 \section{UC1: Scenario principale dell'utente non autenticato}
 \label{UC1}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.4]{Diagram/UC1.png}
+	\caption{Scenario principale utente non autenticato}\label{}
+\end{figure}
 \begin{itemize}
 	\item \textbf{Attori}: Amazon, Ut. non autenticato;
 	\item \textbf{Descrizione}: Un utente non autenticato può registrarsi al nostro servizio se non ha ancora un account o effettuare il login, nel caso fosse già registrato
@@ -53,6 +94,11 @@
 
 \section{UC2: Scenario principale dell'utente autenticato}
 \label{UC2}
+\begin{figure} [h]
+	\centering
+	\includegraphics[scale=0.4]{./Diagram/UC2.png}
+	\caption{Scenario principale dell'utente autenticato }\label{}
+\end{figure}
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
 	\item \textbf{Descrizione}: L'attore può creare, modificare ed eliminare un workflow, modificare i propri dati personali ed eseguire il logout.
@@ -66,6 +112,11 @@
 
 \section{UC2.1: Creazione workflow}
 \label{UC2.1}
+\begin{figure} [h]
+	\centering
+	\includegraphics[scale=0.4]{./Diagram/UC2-1.png}
+	\caption{Creazione workflow}\label{}
+\end{figure}
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
 	\item \textbf{Descrizione}: L'attore può creare un workflow selezionando e configurando i blocchi disponibili.
@@ -89,6 +140,7 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 
 \section{UC2.1.1: Scelta nome}
 \label{UC2.1.1}
+
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
 	\item \textbf{Descrizione}: L'attore inserisce il nome del workflow.
@@ -360,6 +412,11 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 
 \section{UC2.3: Modifica workflow}
 \label{UC2.3}
+\begin{figure} [h]
+	\centering
+	\includegraphics[scale=0.4]{./Diagram/UC2-3.png}
+	\caption{Modifica workflow}\label{}
+\end{figure}
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
 	\item \textbf{Descrizione}: L'attore modifica un workflow.
