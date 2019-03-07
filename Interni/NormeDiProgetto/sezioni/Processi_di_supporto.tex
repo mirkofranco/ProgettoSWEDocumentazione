@@ -362,56 +362,13 @@ La verifica del corretto funzionamento della skill consiste in un processo compr
 	\item 	\textbf{Test della Lambda:} descritto nella sezione \ref{labmdatest}
 	\item \textbf{Test dell'interazione:} tramite la console per sviluppatori fornita da Amazon\footnote{\url{https://developer.amazon.com/alexa/console/ask?}}, è possibile verificare il comportamento della skill prima della sua distribuzione, e simulare un'interazione fra l'utente e Alexa.
 \end{enumerate}
-
-\paragraph{Strumenti}
+ì
 \section{Validazione}
+Il processo di \glossary{validazione} permette di accertare la conformità del prodotto rispetto a quanto è stato pianificato.\\
 
-%\subsubsection{Analisi dinamica}
-%L'analisi dinamica al contrario dell'analisi statica è applicabile unicamente al software e non ai documenti. Il\glossario{processo}prevede %la realizzazione e l'esecuzione di test sul codice. Ogni test per essere valido deve essere ripetibile, cioè attraverso il medesimo input di %partenza si deve poter risalire a un dato output. A tal fine è necessario che per ogni test vengano segnati i seguenti riferimenti: 
-%\begin{itemize}
-%\item \textbf{Ambiente:} sono i sistemi software e hardware utilizzati nel corso dei test;
-%\item \textbf{Stato iniziale:} lo stato di partenza del prodotto prima del test;
-%\item \textbf{Input};
-%\item \textbf{Output};
-%\item \textbf{Avvisi}: un eventuale insieme di istruzioni riguardanti l'esecuzione del test e i suoi risultati.
-%\end{itemize}
-%\subsubsection{Verifica diagrammi UML}
-%Sarà compito dei verificatori accertarsi che tutti i diagrammi\glossario{UML} prodotti rispettino lo standard UML e che siano corretti %semanticamente.
-%\subsubsection{Strumenti}
-%\paragraph{Verifica ortografica}
-%Per la verifica ortografica verrà utilizzato lo strumento integrato in\glossario{TexStudio}, mentre l'analisi del periodo sarà effettuata dai %Verificatori.
-%\paragraph{Indice di Gulpease}
-%Per il calcolo dell'\textit{indice di}\glossario{Gulpease} il gruppo utilizzerà strumenti automatici disponibili online quali Farfalla Project \footnote{\url{https://farfalla-project.org/readability_static}} e Corrige!it \footnote{\url{http://www.corrige.it}}.
+\subsection{Procedura}
+Viene descritta la procedura per la validazione delle unità di codice che compongono il prodotto:
 
-%\subsubsection{Metriche per il controllo della qualità}
-%Segue una descrizione dettagliata delle metriche stabilite dal gruppo per il controllo della qualità del\glossario{prodotto}, fare %riferimento al \textit{Piano di Qualifica v 1.0.0} per una valutazione precisa degli indici adottati.\\
-%Le linee guida adottate riprendono in parte lo standard di riferimento ISO/IEC 25010.
-
-%\paragraph{Qualità dei documenti}
-%\begin{itemize}
-%	\item \textbf{MD001 - Indice Gulpease:} L'\textit{indice di}\glossario{Gulpease}è un indice di leggibilità di un testo tarato sulla lingua %italiana. Vengono tenute in considerazione due variabili linguistiche:  la lunghezza della parola e la lunghezza della frase rispetto al %numero di lettere.
-%	\[ IG = 89+ \frac{300*nf - 10*nl}{np} \]
-%	Dove:
-%	\begin{itemize}
-%		\item nf è il numero delle frasi;
-%		\item nl è il numero delle lettere;
-%		\item np è il numero delle parole.
-%	\end{itemize}
-%	Il risultato è un numero compreso nel range di valori $0 \le{IG} \le{100}$, dove il valore "100" indica la leggibilità più alta e "0" la %leggibilità più bassa.
-%	
-%	\item \textbf{MD002 - Ortografia:} Indice che rappresenta la percentuale di errori ortografici e lessicali corretti nei vari documenti;
-%	
-%	\item \textbf{MD003 - Formula di Flesch:} La \textit{formula di}\glossario{Flesch} serve a misurare la leggibilità di un testo in inglese.
-%	Il modo di calcolare questo indice è il seguente:
-%	
-%	\[ F = 206,835 - (0,846*S) - (1,015*P) \]
-%	Dove:
-%	\begin{itemize}
-%		\item S è il numero delle sillabe, calcolato su un campione di 100 parole;
-%		\item P è il numero medio di parole per frase.
-%	\end{itemize}
-%Più questo indice è alto e più il testo risulta semplice da leggere. La leggibilità è alta se F è superiore a 60, media se fra 50 e 60, bassa %sotto 50.
-%\end{itemize}
-%
-%\subsection{Validazione}
-%l processo di Validazione verrà svolto nella fase finale del\glossario{progetto}e ha l'obbiettivo di verificare che il\glossario{prodotto}sia %conforme ai\glossario{requisiti}.
+\begin{center}
+		\includegraphics[scale=0.60]{images/uml.png}
+\end{center}
