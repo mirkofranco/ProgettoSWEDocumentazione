@@ -215,14 +215,16 @@ If the user wish to continue listening tweets then Alexa will go forward reading
 \begin{itemize}
 		\item The list is empty.\\
 		\begin{itemize}
-		\item Add an element on the list.\\
-		\texttt{A: Would you like to add any elements into your list? | Your list is empty, is there anything you want to fill it with? | The list is empty, shall we insert anything? | There is nothing on your list, would you like to add any elements into your list? | Your list is blank, is there anything you want to fill it with?}\\
-		\textit{U: Add [element] to my list | I'd like to insert [element] to my list | I want to add [element] to my list | I need to add [element] to my list | Add [element] }\\
-		\texttt{A: Saved, would you like to add other elements? | Alright, would you like to add other elements? | Well done, do you have anything else to add? | Finally something in it, let's add some more}\\
-		\textit{U: [No Intent]}\\
-		\texttt{A: Ok | Alright}
-		
+			\item Add an element on the list.\\
+			\texttt{A: Would you like to add any elements into your list? | Your list is empty, is there anything you want to fill it with? | The list is empty, shall we insert anything? | There is nothing on your list, would you like to add any elements into your list? | Your list is blank, is there anything you want to fill it with?}\\
+			\textit{U: Add [element] to my list | I'd like to insert [element] to my list | I want to add [element] to my list | I need to add [element] to my list | Add [element] }\\
+			\texttt{A: Saved, would you like to add other elements? | Alright, would you like to add other elements? | Well done, do you have anything else to add? | Finally something in it, let's add some more}\\
+			\textit{U: [No Intent]}\\
+			\texttt{A: Ok | Alright}
+		\end{itemize}	
 		\item The list is not empty.\\
+		\begin{itemize}
+			\item Add an element on the list.
 		\texttt{A: You have [x] elements on your list, here are the five most recent: [element]x5, would you like to hear more, modify or delete one of those? | You have [x] elements on your list, the last five elements you added are: [element]x5, would you like to hear more, modify or delete one of those? | Your list has [x] elements, here are the five most recent: [element]x5, would you like to hear more, modify or delete one of those?}\\
 		\textit{U: [Yes Intent], I want to hear more | [Yes Intent], tell me more | [Yes Intent], go on | [Yes Intent] keep reading }\\
 		\texttt{A: [element]x5, would you like to hear more, modify or delete one of those?}\\
@@ -266,6 +268,7 @@ If the user wish to continue listening tweets then Alexa will go forward reading
 		\textit{U: [No Intent]}\\
 		\texttt{A: Ok | Alright}
 	\end{itemize}
+	
 	If there are less then 6 elements, Alex won't ask the user to hear other elements.\\
 	\texttt{A: You have [x] elements on your list: [element] would you like to modify or delete one of those? | You have [x] elements on your list: [element] would you like to modify or delete one of those? | Your list has [x] elements: [element] would you like to modify or delete one of those?}\\
 	\textit{U: [No Intent]}
@@ -366,7 +369,6 @@ Quando l'utente dirà il PIN corretto allora Alexa proseguirà con l'esecuzione 
 \subsubsection{Lista}
 \begin{itemize}
 	\item La lista è vuota.\\
-	\begin{itemize}
 		\item Aggiungere un elemento alla lista.\\
 		\texttt{A: Vuoi aggiungere un elemento alla tua lista vuota? | La lista  è vuota, vuoi aggiungere un elemento? | Aggiungi il primo elemento alla tua lista | La lista è vuota desideri aggiungere qualche elemento? | La lista è vuota, aggiungiamoci qualcosa }\\
 		\textit{U: Aggiungi [elemento] alla mia lista | Aggiungi [elemento] alla lista | Vorrei aggiungere [elemento] | Aggiungi [elemento] | Voglio aggiungere [elemento] | Metti [elemento] dentro la lista | Metti [elemento] nella lista }\\
@@ -375,6 +377,8 @@ Quando l'utente dirà il PIN corretto allora Alexa proseguirà con l'esecuzione 
 		\texttt{A: Va bene | Ok }\\ 
 		
 		\item La lista non è vuota.\\
+		\begin{itemize}
+			\item Aggiungere un elemento alla lista.
 		\texttt{A: Hai [x] elementi nella tua lista, questi sono i più recenti: [elemento]x5, vuoi che te ne legga altri oppure preferisci modificare o eliminare uno di questi? | Hai [x] elementi nella tua lista, gli ultimi che hai aggiunto sono: [elemento]x5, vuoi sentirne altri oppure vuoi modificare o eliminare uno di questi? | La tua lista ha [x] elementi, questi sono i più recenti: [elemento]x5, vuoi sentirne altri oppure modificare o eliminare uno di questi? }\\
 		\textit{U: [Si Intent], voglio sentirne altri | [Si Intent], continua a leggere | [Si Intent], leggine altri | [Si Intent], continua con la lettura }\\
 		\texttt{A: [elemento]x5, vuoi sentirne altri oppure vuoi modificare o eliminare uno di questi? }\\
@@ -384,6 +388,7 @@ Quando l'utente dirà il PIN corretto allora Alexa proseguirà con l'esecuzione 
 		\texttt{A: Salvato con successo, vuoi aggiungere altri elementi? | Va bene, vuoi aggiungere altri elementi? | Salvato, vuoi aggiungerne altri? | Fatto, vuoi aggiungerne altri? }\\
 		\textit{U: [No Intent]}\\
 		\texttt{A: Va bene | Ok}
+		
 		\item Cambio di un elemento della lista.\\
 		\texttt{A: Hai [x] elementi nella tua lista, questi sono i più recenti: [elemento]x5, vuoi che te ne legga altri oppure preferisci modificare o eliminare uno di questi? | Hai [x] elementi nella tua lista, gli ultimi che hai aggiunto sono: [elemento]x5, vuoi sentirne altri oppure vuoi modificare o eliminare uno di questi? | La tua lista ha [x] elementi, questi sono i più recenti: [elemento]x5, vuoi sentirne altri oppure modificare o eliminare uno di questi? }\\
 		\textit{U: [Si Intent], voglio modificare [vecchio elemento] con [elemento] | Modifica [vecchio elemento] con [elemento] | Cambia [vecchio elemento] con [elemento] | Sostituisci [vecchio elemento] con [elemento] }\\
@@ -394,8 +399,25 @@ Quando l'utente dirà il PIN corretto allora Alexa proseguirà con l'esecuzione 
 		\texttt{A: [elemento]x5, vuoi sentirne altri oppure vuoi modificare o eliminare uno di questi? }\\
 		\textit{U: [No Intent]}\\
 		\texttt{A: Va bene | Ok}
+		
+		\item Cancellazione di un elemento dalla lista.
+		\texttt{A: Hai [x] elementi nella tua lista, questi sono i più recenti: [elemento]x5, vuoi che te ne legga altri oppure preferisci modificare o eliminare uno di questi? | Hai [x] elementi nella tua lista, gli ultimi che hai aggiunto sono: [elemento]x5, vuoi sentirne altri oppure vuoi modificare o eliminare uno di questi? | La tua lista ha [x] elementi, questi sono i più recenti: [elemento]x5, vuoi sentirne altri oppure modificare o eliminare uno di questi? }\\
+		\textit{U: [Si Intent], voglio eliminare [elemento] | Elimina [elemento] | Cancella [elemento] | Togli [elemento] dalla lista}\\
+		\texttt{A: La cancellazione è andata a buon fine, vuoi modificare o eliminare un altro elemento? | L'eliminazione è avvenuta con successo, vuoi modificare o eliminare un altro elemento? | L'elemento è stato eliminato con successo, vuoi modificare o eliminare altro?}\\
+		\textit{U: [No Intent]}\\
+		\texttt{A: Ok, vuoi sentirne altri? | Va bene, vuoi che ne legga altri? | Ok, vuoi che legga altri elementi? | Va bene vuoi sentire altri elementi? }\\
+		\textit{U: [Si Intent] }\\
+		\texttt{A: [elemento]x5, vuoi sentirne altri oppure vuoi modificare o eliminare uno di questi? }\\
+		\textit{U: [No Intent]}\\
+		\texttt{A: Va bene | Ok}
+		
+		\item Cancellazione di tutta la lista.
+		\texttt{A: Hai [x] elementi nella tua lista, questi sono i più recenti: [elemento]x5, vuoi che te ne legga altri oppure preferisci modificare o eliminare uno di questi? | Hai [x] elementi nella tua lista, gli ultimi che hai aggiunto sono: [elemento]x5, vuoi sentirne altri oppure vuoi modificare o eliminare uno di questi? | La tua lista ha [x] elementi, questi sono i più recenti: [elemento]x5, vuoi sentirne altri oppure modificare o eliminare uno di questi? }\\
+		\textit{U: [Si Intent], voglio eliminare tutta la lista | Elimina tutta la lista | Cancella tutta la lista | Pulisci l'intera lista }\\
+		\texttt{A: La lista è completamente vuota, vuoi aggiungere qualche elemento? | Lista svuotata con successo, vuoi aggiungere elementi? | La lista è stata cancellata con successo, vuoi aggiungere qualcosa?}\\
+		\textit{U: [No Intent]}\\
+		\texttt{A: Va bene | Ok}
 	\end{itemize}
-	NOTA BENE, BISOGNA SENTIRE L'AZIENDA QUA, MANCA I CASI PER LA CANCELLAZIONE E LA CANCELLAZIONE DI TUTTA LA LISTA
 	
 	Nel caso ci fossero meno di 6 elementi, Alexa non chiederà all'utente se vuole sentirne altri.\\
 	\texttt{A: Hai [x] elementi nella tua lista: [elemento], vuoi modificare o eliminare uno di questi? | Hai [x] elementi nella tua lista: [elemento], vuoi modificare o eliminare uno di questi? | La tua lista ha [x] elementi: [elemento], vuoi modificare o eliminare uno di questi? }\\
