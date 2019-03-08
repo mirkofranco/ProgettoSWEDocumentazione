@@ -19,7 +19,7 @@ La creazione della copia locale viene effettuata attraverso il comando:\\
 \subsubsection{Git Flow}
 Per facilitare la collaborazione si sceglie usare il git flow\footnote{\url{https://it.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow}} \textit{workflow$_{G}$}. L'Amministratore si assicurerà che tutte le macchine siano configurate correttamente per il suo utilizzo.
 \subsubsection{Gestione dei rilasci}
-L'amministratore si occuperà di creare i rami di feature necessari per una proficua collaborazione tra i membri nel repository. Ogni documento (o parte di esso) e ogni funzionalità software verrà implementata in un ramo di feature. Quando la funzionalità diventa stabile e corretta verrà rilasciata in un ramo di integrazione chiamato "develop". Prima di ogni revisione verrà effettuato un rilascio nel ramo master a partire dall'ultimo commit. Tale rilascio costituirà\glossario{baseline}e sarà punto di partenza verso la prossima \textit{milestone$_{G}$}. Tale attività verrà effettuata nei tempi descritti nel \texttt{Piano di Progetto v1.0.0}. 
+L'amministratore si occuperà di creare i rami di feature necessari per una proficua collaborazione tra i membri nel repository. Ogni documento (o parte di esso) e ogni funzionalità software verrà implementata in un ramo di feature. Quando la funzionalità diventa stabile e corretta verrà rilasciata in un ramo di integrazione chiamato "develop". Prima di ogni revisione verrà effettuato un rilascio nel ramo master a partire dall'ultimo commit. Tale rilascio costituirà\glossario{baseline}e sarà punto di partenza verso la prossima \textit{milestone$_{G}$}. Tale attività verrà effettuata nei tempi descritti nel \textit{Piano di Progetto v2.0.0}. 
 
 \section{Documentazione}
 Il\glossario{processo}di Documentazione stabilisce una serie di norme e convenzioni per la stesura dei documenti così da renderli formali, validi e coerenti.
@@ -213,14 +213,14 @@ Per la scrittura della documentazione in modo coerente e uniforme si deve usare 
 \subsubsection{TeXstudio}
 E' utilizzato per la scrittura e il controllo ortografico dei documenti.
 \subsubsection{Script automatici}
-Viene implementato uno script per permettere il calcolo automatico dell'\textit{indice di Gulpease$_{G}$}, esso verrà eseguito ad ogni commit tramite \textit{Travis-CI$_{G}$}, nel caso in cui la build presenti degli errori grammaticali, essi dovranno essere immediatamente corretti.\\
+Viene implementato uno script per permettere il calcolo automatico dell'\textit{indice di Gulpease$_{G}$}, esso verrà eseguito ad ogni commit tramite \textit{Travis CI$_{G}$}, nel caso in cui la build presenti degli errori grammaticali, essi dovranno essere immediatamente corretti.\\
 Aggiungere, se necessario, i termini mancanti nel file \texttt{.dictionary}, contenente i termini che lo script deve ignorare.
 
 \section{Garanzia di qualità}
 \subsection{Classificazione metriche e obiettivi}
 Questa\glossario{processo}definisce norme e struttura delle metriche, obiettivi di qualità, metodologie e strumenti per perseguire qualità di processo e di prodotto. 
 \subsubsection{Classificazioni degli obiettivi} 
-Gli obiettivi di qualità inclusi nel \textit{Piano di Qualifica v1.0.0} devono rispettare la seguente notazione: \\
+Gli obiettivi di qualità inclusi nel \textit{Piano di Qualifica v2.0.0} devono rispettare la seguente notazione: \\
 \begin{center}
 Q[Tipo][ID] : [Nome].
 \end{center}
@@ -251,7 +251,7 @@ La\glossario{verifica}è un processo atto a evidenziare ed eliminare la possibil
 Di seguito verranno descritti gli strumenti e le pratiche utilizzate per la verifica del codice e dei documenti durante la loro realizzazione.
 Durante questa prima fase di progetto la verifica si è focalizzata principalmente su documenti.
 \subsection{Verifica di processi}
-Ciascun\glossario{processo}verrà costantemente monitorato in tutta la sua esecuzione e documentato alla fine di ogni periodo nell'appendice "Resoconto della verifica" nel \texttt{Piano di Qualifica v1.0.0}, secondo le metodologie ISO/IEC 15504.
+Ciascun\glossario{processo}verrà costantemente monitorato in tutta la sua esecuzione e documentato alla fine di ogni periodo nell'appendice "Resoconto della verifica" nel \textit{Piano di Qualifica v2.0.0}, secondo le metodologie ISO/IEC 15504.
 
 \subsection{Verifica dei prodotti}
 La verifica della qualità di prodotto si divide in attività e procedure differenti a seconda del\glossario{prodotto}che si sta verificando. Per i prodotto software si procede con analisi statica e dinamica, mentre per i documenti si applica soltanto analisi statica.
@@ -259,7 +259,7 @@ La verifica della qualità di prodotto si divide in attività e procedure differ
 \paragraph{Analisi statica}
 Al fine di verificare i documenti verranno utilizzati\glossario{inspection}e \textit{walkthrough$_{G}$}:
 \begin{itemize}
-	\item \textbf{Walkthrough:} questa metodologia prevede una lettura profonda e attenta del documento. Gli errori riscontrati verranno corretti e aggiunti all'appendice "Lista di controllo" delle \texttt{Norme di Progetto v1.0.0} per permettere di utilizzare inspection le volte successive;
+	\item \textbf{Walkthrough:} questa metodologia prevede una lettura profonda e attenta del documento. Gli errori riscontrati verranno corretti e aggiunti all'appendice "Lista di controllo" delle \textit{Norme di Progetto v2.0.0} per permettere di utilizzare inspection le volte successive;
 	\item \textbf{Inspection:} al contrario della metodologia precedente, questa risulta essere molto più veloce perché attraverso una lista di controllo degli errori permette un'analisi più efficace delle criticità, omettendo le parti che non presentano problematiche. 
 \end{itemize}
 \paragraph{Procedura di controllo dei documenti}
@@ -275,7 +275,7 @@ Al fine di verificare i documenti verranno utilizzati\glossario{inspection}e \te
 \subsubsection{Verifica del prodotti software}
 \paragraph{Analisi dinamica}\label{anDinamica}
 \'E compito dei \textit{Progettisti} definire i test nel periodo di progettazione, ad eccezione dei test d'unità(vedi sezione \ref{tunita}); vengono fornite indicazioni specifiche sulla corretta codifica dei test e la loro natura, suddividendo per tecnologie adottate qualora le differenze richiedano un dettaglio maggiore.\\
-L'esecuzione dei test automatici tramite \textit{Travis-CI$_{G}$} viene avviene unicamente per i test di unità, in quanto il costo computazionale di test di integrazione e di sistema risulta essere troppo elevato.
+L'esecuzione dei test automatici tramite \textit{Travis CI$_{G}$} viene avviene unicamente per i test di unità, in quanto il costo computazionale di test di integrazione e di sistema risulta essere troppo elevato.
 Per i test riguardanti il back-end (\textit{AWS Lambda$_{G}$} e \textit{API Gateway$_{G}$}), si ricorda che la copertura del codice deve essere totale.
 \paragraph{Tecnologie adottate}
 \subparagraph{JUnit} Viene adottato per la codifica dei test su \textit{Kotlin$_{G}$}.
@@ -344,7 +344,7 @@ I test che non rientrano nelle seguenti categorie (riguardanti, ad esempio, la l
 Segue una lista di direttive da perseguire nella codifica dei test con Mocha:
 \begin{itemize}
 	\item Evitare l'utilizzo dell'operatore lambda (=>) in tutti i casi, poichè esso non permette al compilatore di Mocha di accedere al contesto delle funzioni a cui fa riferimento, se ciò non risulta necessario, una soluzione che prevede delle lambda porta a difficoltà riguardanti la manutenibilità del codice;
-	\item Studiare con cura gli\glossario{Hooks}per la concatenazione dell'esecuzione dei test;
+	\item Studiare con cura gli Hooks per la concatenazione dell'esecuzione dei test;
 	\item Segnare con la dicitura \textit{Pending} i test non ancora implementati, in modo che i \textit{Progettisti} possano immediatamente identificare i test da codificare;
 	\item Evitare di commentare i test da non eseguire, usare invece il comando \textit{skip()}, che da dalla versione 3.0 è supportato anche per i test asincroni;
 	\item Evitare l'utilizzo del comando \textit{retries()} del tutto.
