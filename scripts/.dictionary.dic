@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 ﻿ADR
 ﻿     125
 
 ADR
+=======
+ACWP
+>>>>>>> feature/pdq
 ADR
 Alexa
 Andreea
@@ -14,10 +18,17 @@ AWS
 androidTest
 Bratzu
 BV
+<<<<<<< HEAD
 cccccc
 BCWP
 BCWS
 Chai
+=======
+bcwp
+BCWP
+bcws
+BCWS
+>>>>>>> feature/pdq
 ciclomatica
 Ciuche
 Chai
@@ -47,6 +58,7 @@ gulpease
 Gulpease
 hashtag
 htp
+Hutcheson
 IDE
 IEC
 Instagantt
@@ -70,6 +82,7 @@ Lorem
 Moc
 Mocha
 MacOS
+Marnie
 McCabe
 MegAlexa
 MongoDB
@@ -100,9 +113,14 @@ PNG
 playlist
 poichè
 Postcondizione
+<<<<<<< HEAD
 PragmaDB
+=======
+pre
+>>>>>>> feature/pdq
 prefatti
 py
+QP
 Recuperabilità
 ripianificazione
 RPR
@@ -161,6 +179,7 @@ ProcessoMetriche
 smartphone
 sull
 VerbaleUsoData
+<<<<<<< HEAD
 VER
 Analizzabilità
 App
@@ -186,3 +205,18 @@ JavaDoc
 JDK
 eXtensible
 ViewModel
+=======
+deming
+iso
+pdca
+SoS
+Apprendibilità
+poc
+POC
+Aws
+developlment
+dynamoDB
+Github
+TSFO
+RFO
+>>>>>>> feature/pdq
