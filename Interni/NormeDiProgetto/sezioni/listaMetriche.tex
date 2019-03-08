@@ -3,7 +3,7 @@
 Verranno utilizzate le seguenti metriche per valutare l'efficienza e l'efficacia 
 processi.
 
-\subsection{MP001: Schedule Variance}
+\subsection{MP001 - Schedule Variance}
 Fornisce una misura di quanto lo stato del progetto è in ritardo o in anticipo rispetto alla pianificazione delle attività.
 Essa è il risultato della seguente formula:\\
 \begin{center}
@@ -11,92 +11,92 @@ Essa è il risultato della seguente formula:\\
 \end{center}
 Dove:
 \begin{itemize}
-		\item \textbf{ BCWP ( Budget Cost of Work Performed ) } : E' il valore (in giorni o Euro) delle attività realizzate alla data corrente. Rappresenta il valore prodotto dal progetto ossia la somma di tutte le parti completate e di tutte le porzioni completate delle parti ancora da terminare.
-		\item \textbf{ BCWS ( Budget Cost of Work Scheduled)}: E' il costo pianificato (in giorni o Euro) per realizzare le attività di progetto alla data corrente.
+		\item \textbf{ BCWP ( Budget Cost of Work Performed )}: è il valore (in giorni o euro) delle attività realizzate alla data corrente. Rappresenta il valore prodotto dal progetto ossia la somma di tutte le parti completate e di tutte le porzioni completate delle parti ancora da terminare;
+		\item \textbf{ BCWS ( Budget Cost of Work Scheduled )}: è il costo pianificato (in giorni o Euro) per realizzare le attività di progetto alla data corrente.
 \end{itemize}
 
-\subsection{MP002: Cost  Variance }
+\subsection{MP002 - Cost  Variance }
 Indica se si è speso più o meno di quanto è stato previsto.
-Il Budget Variance è dato dalla seguente formula:
-Essa è il risultato della seguente formula:\\
+Il Cost Variance è dato dalla seguente formula:\\
 \begin{center}
 	$CV = ${ BCWS} $-${ACWP}
 \end{center}
 Dove:
 \begin{itemize}
-	\item \textbf{ BCWS ( Budget Cost of Work Scheduled ) } : E' il costo pianificato (in giorni o Euro) delle attività svolte ad una certa data; 
-	\item \textbf{ ACWS ( Actual Cost of Work Performed )}: E' il costo effettivamente sostenuto (in giorni o Euro) dalle attività svolte a tale data.
+	\item \textbf{ BCWS ( Budget Cost of Work Scheduled )}: è il costo pianificato (in giorni o Euro) delle attività svolte ad una certa data; 
+	\item \textbf{ ACWP ( Actual Cost of Work Performed )}: è il costo effettivamente sostenuto (in giorni o Euro) dalle attività svolte a tale data.
 \end{itemize}
 
-\subsection{MP003: SPICE capability level}
-Per ogni processo, lo standard 15504 definisce 6 livelli di maturità(da 0 a 5) determinati da un processo di  \textit{Process Assessment} che ha lo scopo di determinare l'effettiva qualità dei processi in uso, un processo raggiunge la sua massima efficacia quando raggiunge il livello 5 (raggiunge quindi l'ottimalità).
+\subsection{MP003 - SPICE capability level}
+Per ogni processo, lo standard 15504 definisce 6 livelli di maturità (da 0 a 5) determinati da un processo di \textit{Process Assessment} che ha lo scopo di determinare l'effettiva qualità dei processi in uso, un processo raggiunge la sua massima efficacia quando raggiunge il livello 5 (raggiunge quindi l'ottimalità).
 
-\subsection{MP004: SPICE process attributes}
+\subsection{MP004 - SPICE process attributes}
 Per ogni attributo di processo, lo SPICE definisce 4 livelli (N-P-L-F) di ottimalità riferiti all'attributo stesso, il valore viene dedotto in base ai risultati delle metriche adottate per ciascun processo, un processo raggiunge il livello massimo quando tutte le metriche a lui riferite presentano risultati circoscritti al range di ottimalità definito.
 
-\subsection{MP005: Occorrenza rischi non previsti}
+\subsection{MP005 - Occorrenza rischi non previsti}
 Contatore che viene incrementato all'occorrenza di un rischio non elencato nell'analisi dei rischi del \textit{Piano di Progetto}, un alto valore indica l'eccessiva occorrenza dello stesso e la necessità di un'analisi al fine di mitigare il suo impatto nell'attività di progetto.\\
 Viene resettato ad ogni inizio di una nuova fase del progetto.
 
-\subsection{MP006: Indisponibilità dei servizi}
+\subsection{MP006 - Indisponibilità dei servizi}
 Contatore che viene incrementato ogni qualvolta uno strumento esterno risulta inutilizzabile a causa di errori non gestibili dai membri del gruppo.\\
 Viene resettato ad ogni inizio di una nuova fase del progetto.
 
-\subsection{MP007: Complessità ciclomatica}
+\subsection{MP007 - Complessità ciclomatica}
 Metrica software che indica la complessità di un programma tenendo in considerazione moduli, funzioni, metodi e classi.
 Nello specifico, essa è calcolata tramite il grafo di controllo di flusso del programma, dove i nodi sono gruppi indivisibili di istruzioni e gli archi connettono due nodi se il secondo gruppo di istruzioni può essere eseguito immediatamente dopo il primo, e il suo valore è determinato dal numero di cammini linearmente indipendenti all'interno del codice sorgente.\\
 \'E quindi opportuno definire un valore di complessità ciclomatica preciso: valori alti sono indice di scarsa manutenibilità del codice mentre valori bassi potrebbero indicare scarsa efficienza dei metodi.
 Esso fornisce, inoltre, un indice del carico di lavoro richiesto per la fase di testing (un valore alto richiede più test per una copertura completa).\\
 Il range di ottimalità stabilito varia da 0 a 10, come suggerito dall'ideatore della metrica Thomas J. McCabe.  
 
-\subsection{MP08: Numero di parametri per metodo}
+\subsection{MP08 - Numero di parametri per metodo}
 Definire un range relativo al numero di parametri permette di individuare possibili errori nella progettazione (nel caso in cui un metodo abbia un numero di parametri eccessivo).
 
-\subsection{MP009: Numero di livelli di annidamento}
+\subsection{MP009 - Numero di livelli di annidamento}
 Metrica per indicare il numero di chiamate annidate di procedure controllate all'interno dei metodi.\newline
 Un valore elevato è indice di un basso livello di astrazione del codice e una complessità eccessivamente elevata. 
 
-\subsection{MP010: Attributi per classe}
+\subsection{MP010 - Attributi per classe}
 Un numero elevato di attributi in una classe potrebbe essere indice di un errore di progettazione.
 Viene quindi definita una metrica che identifichi range accettabili e ottimali per questo parametro.
 Nel caso in cui una classe abbia un numero eccessivo di parametri, valutare la possibilità di suddividere la stessa in più classi, suddividendo quindi le funzioni ad essa assegnate.
 
-\subsection{MP011:Tempo medio del team di sviluppo per la risoluzione di errori}
-Indica la quantità di tempo medio utilizzato per risolvere un bug dal team di sviluppo, utile per capire l'impatto medio dell'introduzione di un bug sui tempi di sviluppo. Si misura seguendo la seguente formula:
+\subsection{MP011 - Tempo medio del team di sviluppo per la risoluzione di errori}
+Indica la quantità di tempo medio utilizzato per risolvere un bug dal team di sviluppo, utile per capire l'impatto medio dell'introduzione di un bug sui tempi di sviluppo. Si misura applicando la seguente formula:
 \begin{center}
 	\vspace{1em}
 	$\frac{\mbox{tempo totale speso per la correzione dei difetti}}{\mbox{numero totale di bug trovati}}$
 \end{center}
 
 
-\subsection{MP012: Efficienza della progettazione dei test}
-Indica il tempo medio per la scrittura di un test, un numero troppo elevato potrebbe indicare che si stanno progettando test troppo complessi  o che si sta cercando di testare  parti del codice superflue. Si calcola seconod la seguente regola:
+\subsection{MP012 - Efficienza della progettazione dei test}
+Indica il tempo medio per la scrittura di un test, un numero troppo elevato potrebbe indicare che si stanno progettando test troppo complessi  o che si sta cercando di testare  parti del codice superflue. Si calcola secondo la seguente regola:
 \begin{center}
 	\vspace{1em}
 	$\frac{\mbox{numero totale di test progettati }}{\mbox{tempo per la loro stesura}}$\\
 \end{center}
 
 
-\subsection{MP013:Percentuale build superate}
-Ogni build viene controllata tramite script automatici con Travis-CI, e la metrica è il risultato del seguente calcolo:
+\subsection{MP013 - Percentuale build superate}
+Ogni build viene controllata tramite script automatici con \textit{Travis CI$_{G}$} e la metrica è il risultato del seguente calcolo:
 \begin{center}
 $\frac{\mbox{build superate con esito positivo}}{\mbox{build totali}}$
 \end{center}
 
 
-\subsection{MP014:Media commit per settimana}
+\subsection{MP014 - Media commit giornaliero}
+Tale metrica è risultato del seguente calcolo:
 \begin{center}
 	$\frac{\mbox{commit totali}}{\mbox{totale settimane di lavoro}}$
 \end{center}
 
 
-\subsection{MP015:Percentuale requisiti obbligatori soddisfatti}
+\subsection{MP015 - Percentuale requisiti obbligatori soddisfatti}
  Tale metrica è risultato del seguente calcolo:
  \begin{center}
  	$\frac{\mbox{requisiti obbligatori soddisfatti}}{\mbox{requisiti obbligatori totali}}$
  \end{center}
 
-\subsection{MP016:Percentuale requisiti desiderabili soddisfatti}
+\subsection{MP016 - Percentuale requisiti desiderabili soddisfatti}
 Tale metrica è risultato del seguente calcolo:
 \begin{center}
 $\frac{\mbox{requisiti desiderabili soddisfatti}}{\mbox{requisiti desiderabili totali}}$
@@ -105,61 +105,61 @@ $\frac{\mbox{requisiti desiderabili soddisfatti}}{\mbox{requisiti desiderabili t
 \section{Metriche per la qualità di prodotto}\label{metriche}
 Verranno utilizzate le seguenti metriche per valutare l'efficienza e l'efficacia dei
 prodotti.
-\subsection{MPR001: Errori ortografici}
+\subsection{MPR001 - Errori ortografici}
 Misura il numero di errori ortografici presenti nel documento. La misura viene fatta attraverso script automatici e la verifica da parte dei \textit{verificatori}.
 
-\subsection{MPR002: Indice di Gulpease}
-L’Indice Gulpease è un indice di leggibilità di un testo tarato sulla lingua italiana, per il suo calcolo vengono considerate due variabili linguistiche: la lunghezza delle parole e la lunghezza delle frasi rispetto al numero delle lettere.
+\subsection{MPR002 - Indice di Gulpease}
+L’\textit{indice di Gulpease$_{G}$} è un indice di leggibilità di un testo tarato sulla lingua italiana, per il suo calcolo vengono considerate due variabili linguistiche: la lunghezza delle parole e la lunghezza delle frasi rispetto al numero delle lettere.
 \begin{center}{$G=89+\frac{300\times N_F-10\times N_L}{N_P}$}\end{center}
 $N_F$ indica il numero delle frasi, $N_L$ indica il numero di lettere e $N_P$ indica il numero di parole nel testo.
 
-\subsection{MPR003: errori inerenti alla correttezza dei documenti}
+\subsection{MPR003 - Errori inerenti alla correttezza dei documenti}
 Misura il numero di errori inerenti alla correttezza del documento. I \textit{verificatori} hanno il compito di valutare se un documento rispetta le scelte prese dal gruppo.
 
-\subsection{MPR004: errori inerenti alle Norme di Progetto}
-Misura il numero di errori inerenti alle \textbf{Norme di Progetto}. I \textit{verificatori} hanno il compito di valutare se un documento rispetta le \textbf{Norme di Progetto}.
+\subsection{MPR004 - Errori inerenti alle Norme di Progetto}
+Misura il numero di errori inerenti alle \textit{Norme di Progetto}. I \textit{verificatori} hanno il compito di valutare se un documento rispetta le \textit{Norme di Progetto}.
 
 
-\subsection{MPR005: Completezza dell'implementazione funzionale}
+\subsection{MPR005 - Completezza dell'implementazione funzionale}
 Misura la quantità in percentuale di requisiti funzionali soddisfatti dalla corrente implementazione. Viene utilizzata la seguente formula: 
 \begin{center}{$CO=\frac{N_{RS}}{N_{RT}}\times 100$}\end{center}
 $N_{RS}$  indica il numero di requisiti soddistatti, $N_{RT}$  indica il numero totale di requisiti.
 
-\subsection{MPR006: Correttezza  rispetto alle attese}
+\subsection{MPR006 - Correttezza  rispetto alle attese}
 Misura la percentuale di risultati affini rispetto alle attese. Viene utilizzata la seguente formula:
 \begin{center}{$CRA=(1-\frac{N_{TD}}{N_{TE}})\times 100$}\end{center}
 ${N_{TD}}$ indica il numero di test che producono risultati discordi rispetto alle attese, ${N_{TE}}$ indica il numero totale di test-case eseguiti.
 
-\subsection{MPR007: Totalità di failure}
+\subsection{MPR007 - Totalità di failure}
 Misura la percentuale di test conclusi con una failure. Viene utilizzata la seguente formula:
 \begin{center}{$TF=\frac{N_{FR}}{N_{TE}}\times 100$}\end{center}
 ${N_{FR}}$ indica il numero di failure rilevati durante l'attività di testing,
 ${N_{TE}}$ indica il numero totale di test-case eseguiti.
 
-\subsection{MPR008: Tempo di risposta}
+\subsection{MPR008 - Tempo di risposta}
 Misura la differenza media di tempo trascorsa dall’esecuzione di una funzionalità e la restituzione
 dell’eventuale risultato. Viene utilizzata la seguente formula:
 \begin{center}{$TR=\frac{\sum\limits_{i=1}^n {T_i }}{n}$}\end{center}
-${T_i}$ indica il tempo (in secondi) trascorso dalla richiesta di una funzionalità ed il completamento di questa con un eventuale restituzione del risultato;\\
+${T_i}$ indica il tempo (in secondi) trascorso dalla richiesta di una funzionalità ed il completamento di questa con un eventuale restituzione del risultato.\\
 
-\subsection{MPR009: Comprensibilità  delle funzionalità offerte}
+\subsection{MPR009 - Comprensibilità  delle funzionalità offerte}
 Misura la quantità in percentuale di operazioni comprese dall’utente che non richiedono la
 consultazione del manuale. Viene utilizzata la seguente formula:
 \begin{center}{$C=\frac{N_{FC}}{N_{FO}}\times 100$}\end{center}
-${N_{FC}}$ indica il numero di funzionalità comprese in modo immediato dall'utente, ${N_{FO}}$ indica il numero di funzionalità totali offerte dal sistema;
+${N_{FC}}$ indica il numero di funzionalità comprese in modo immediato dall'utente, ${N_{FO}}$ indica il numero di funzionalità totali offerte dal sistema.
 	
-\subsection{MPR010: Facilità apprendimento}
+\subsection{MPR010 - Facilità apprendimento}
 Misura il tempo medio che occorre ad un utente per imparare ad usare in maniera corretta
 una certa funzionalità. Si misura tramite un indicatore numerico che indica i minuti
 impiegati da un utente per apprendere il funzionamento di una certa funzionalità;
 
-\subsection{MPR011: Capacità di analisi failure}
+\subsection{MPR011 - Capacità di analisi failure}
 Misura la quantità in percentuale di failures incontrate di cui sono state tracciate le cause. Viene
 utilizzata la seguente formula:
 \begin{center}{$CAF=\frac{N_{FI}}{N_{FR}}\times 100 $}\end{center}
 ${N_{FI}}$ indica il numero di failure delle quali sono state individuate le cause, ${N_{FR}}$ indica il numero di failures rilevate.
 
-\subsection{MPR012: Impatto delle modifiche}
+\subsection{MPR012 - Impatto delle modifiche}
 Misura la quantità in percentuale di modifiche introdotte per risolvere failures che hanno introdotto nuove failures nel prodotto. Viene utilizzata la seguente formula:
 \begin{center}{$IM=\frac{N_{FRE}}{N_{FR}}\times 100 $}\end{center}
 ${N_{FRF}}$ indica il numero di failure risolte introducentro nuove failure, ${N_{FR}}$ indica il numero di failures risolte.
