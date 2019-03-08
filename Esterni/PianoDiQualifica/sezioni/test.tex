@@ -17,6 +17,7 @@
 \end{longtable}
 \clearpage
 \subsection{Tracciamento Test di Sistema-Requisiti}
+Ogni test di sistema viene eseguito per validare un requisito, definito nell'\textit{analisi dei requisiti 2.0.0}
 \normalsize
 \begin{longtable}{|>{\centering}m{5cm}|m{5cm}<{\centering}|}
 \hline
@@ -31,8 +32,6 @@
 \caption[Tracciamento Test di Sistema-Requisiti]{Tracciamento Test di Sistema-Requisiti}
 \label{tabella:ts-requi}
 \end{longtable}
-\clearpage
-
 
 \section{Test di Integrazione}
 \normalsize
@@ -49,7 +48,23 @@
 \caption[Test di Integrazione]{Test di Integrazione}
 \label{tabella:test2}
 \end{longtable}
-\clearpage
+
+\subsection{Tracciamento Test di Integrazione-Componenti}
+Nella seguente tabella viene riportato il tracciamento tra test di Integrazione e Package, definiti in \textit{norme di progetto 2.0.0}.
+\normalsize
+\begin{longtable}{|>{\centering}m{3cm}|m{9cm}<{\centering}|}
+\hline
+\textbf{Test} & \textbf{Componente}\\
+\hline
+\endhead
+\hyperlink{TI1}{TI1} & \texttt{megalexa}\\ \hline
+\hyperlink{TI2}{TI2} & {\texttt{MegAlexaSkill}}\\ \hline
+\hyperlink{TI3}{TI3} & {\texttt{MegAlexaSkill::lambda}}\\ \hline
+\hyperlink{TI4}{TI4} & {\texttt{MegAlexaSkill::lambda::connection}}\\ \hline
+\hyperlink{TI5}{TI5} & {\texttt{megalexa::adapters}}\\ \hline
+\caption[Tracciamento Test di Integrazione-Componenti]{Tracciamento Test di Integrazione-Componenti}
+\label{tabella:ts-requi}
+\end{longtable}
 
 \section{Test di Unità}
 Questa sezione verrà compilata durante il periodo di progettazione di dettaglio e codifica, per applicare il test driven developlment (come richiesto dalla proponente).
