@@ -7,11 +7,13 @@ Asana
 Astah
 Autent
 AWS
+androidTest
 Bratzu
 BV
 cccccc
 ciclomatica
 Ciuche
+Chai
 CodeCommit
 CodeDeploy
 CodePipeline
@@ -30,6 +32,7 @@ Franko
 gantt
 Gantt
 GanttProject
+gradle
 Gitflow
 GitHub
 gulpease
@@ -41,10 +44,12 @@ IEC
 Instagantt
 iOS
 Ipsum,
+ì
 javascript
 Javascript
 js
 JSON
+JUnit
 Kafura
 Kotlin
 LaTeX
@@ -61,6 +66,9 @@ monospace
 Monospace
 MPR
 NDP
+npm
+NumeroDecisione
+myTask
 nf
 nl
 NomeDocumento
@@ -93,6 +101,7 @@ sottocasi
 Spotify
 SV
 SVG
+src
 tbph
 Testabilità
 TeXstudio
@@ -134,6 +143,7 @@ ProcessoMetriche
 smartphone
 sull
 VerbaleUsoData
+VER
 Analizzabilità
 App
 ottimalità
