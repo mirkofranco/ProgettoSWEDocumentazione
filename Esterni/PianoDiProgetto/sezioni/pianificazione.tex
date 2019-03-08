@@ -17,7 +17,7 @@ Nel\glossario{Gantt}vengono riportate:
 \end{itemize}
 \section{Analisi}
 \textbf{Periodo:} da 2018-11-16 a 2019-01-14\\L'Analisi inizia in concomitanza con la pubblicazione dei\glossario{capitolati}d’appalto e termina alla prima settimana della  Revisione dei Requisiti (RR).\\
-In questa fase vengono scritti i seguenti documenti:
+In questo periodo vengono scritti i seguenti documenti:
 \begin{itemize}
     \item \textbf{Studio di Fattibilità:} vengono valutati tutti i capitolati d'appalto. La valutazione è basata sull'interesse personale di ogni membro del gruppo, sulla complessità prevista e sui rischi che possono emergere. Viene data anche una descrizione generale del capitolato e una analisi preliminare.\\Viene svolta come prima attività, in quanto ritenuta bloccante per l'\textit{Analisi dei requisiti};
     \item \textbf{Norme di Progetto:} le \textit{Norme di Progetto} contengono le regole che il gruppo dovrà seguire durante l'attuazione di tutte le attività. I verificatori certificheranno il rispetto delle norme;
@@ -37,32 +37,36 @@ I ruoli maggiormente coinvolti sono: \textit{Responsabile}, \textit{Amministrato
 \section{Revisione Analisi}
 \textbf{Periodo:} da 2019-01-21 a 2019-02-07\\
 La Revisione Analisi inizia dopo la Revisione dei Requisiti e termina con l’inizio della Progettazione della base tecnologica. Questo periodo viene utilizzato dal team per consolidare i requisiti richiesti dal sistema e per migliorare i documenti già redatti.\\
-Le attività della fase di Revisione Analisi sono:
+Le attività della periodo di Revisione Analisi sono:
 \begin{itemize}
     \item \textbf{Incremento e Verifica$_{G}$:} tutti i documenti vengono aggiornati in base ai risultati della Revisione dei Requisiti;
-    \item \textbf{Glossario:} questa attività consiste nel miglioramento del \textit{Glossario}.
+    \item \textbf{Glossario:} questa attività consiste nel miglioramento del \textit{Glossario};
+    \item \textbf{Consolidamento Requisiti:} correzione e possibile modifica di alcuni requisiti;
+    \item \textbf{Studio tecnologie per la progettazione:} il gruppo studia quali tecnologie verranno utilizzate durante lo sviluppo del \glossario{Proof of concept}.  
 \end{itemize}
 I ruoli maggiormente coinvolti sono: \textit{Responsabile}, \textit{Verificatore} e \textit{Analista}.
 \begin{figure} [h]
     \centering
-    \includegraphics[scale=0.2]{./images/revisione_analisi.jpg}
+    \includegraphics[scale=0.45]{./images/ZeroSevenGanttRevisioneA.png}
     \caption{\textit{Diagramma di Gantt$_{G}$}: Revisione Analisi }\label{}
 \end{figure}
 \newpage
 \section{Progettazione della base tecnologica}
 \textbf{Periodo:} da 2019-02-07 a 2019-03-08\\
 La Progettazione della base tecnologica inizia al termine della Revisione Analisi e qui dovrà essere creato un prototipo del\glossario{prodotto}finale che verrà presentato al termine di tale periodo nella Revisione di Progettazione.\\
-Le attività della fase di Progettazione della base tecnologica sono:
+Le attività della periodo di Progettazione della base tecnologica sono:
 \begin{itemize}
-	\item \textbf{Incremento Norme di Progetto}: viene redatta la parte delle Norme di Progetto riguardante la progettazione e la codifica, oltre che la verifica. Questa attività risulta bloccante in quando risulta necessario normare ogni attività prima di svolgerla;
-	\item \textbf{Progettazione ad alto livello}: viene effettuata una progettazione ad alto livello del sistema e vengono definiti degli opportuni test di integrazione;
-	\item \textbf{Proof of Concept}: viene sviluppato un prototipo software per dimostrare che le tecnologie scelte sono adeguate per lo sviluppo del prodotto;
-    \item\textbf{Technology baseline}:vengono studiate, selezionate e presentate le tecnologie, i framework e le libreria selezionate per lo sviluppo del prodotto e ne viene dimostrata l'adeguatezza attraverso il Proof Of Concept. Questa attività viene presentata al committente in modalità Agile.
+	\item \textbf{Correzione e incremento documenti};
+	\item \textbf{Sviluppo android }: Vengono studiate, progettate in dettaglio e implementate le componenti che fanno parte del \glossario{Proof of concept} lato Applicazione Android; 
+	\item \textbf{Sviluppo Skill}: Vengono studiate, progettate in dettaglio e implementate le componenti che fanno parte del \glossario{Proof of concept} lato Skill; 
+    \item\textbf{Impostazione ambient AWS}: vengono studiate e integrate per il \glossario{Proof of concept} le componenti \glossario{AWS}: \glossario{Lambda}, \glossario{API Gateway} e \glossario{DynamoDB};
+    \item \textbf{Presentazione technology baseline:} viene presentata in video call (VC) la technology baseline. Questa presentazione è una milestone che richiede il completamento del \glossario{Proof of concept};
+    \item \textbf{Adeguamento \glossario{Proof of concept} in seguito alla VC};
 \end{itemize}
 I ruoli maggiormente coinvolti sono: \textit{Responsabile}, \textit{Amministratore}, \textit{Progettista}, \textit{Programmatore}, \textit{Verificatore} e \textit{Analista}.
 \begin{figure} [h]
     \centering
-    \includegraphics[scale=0.13]{./images/base_tecnologica.jpg}
+    \includegraphics[scale=0.2]{./images/ZeroSevenGanttProgettazione.png}
     \caption{\textit{Diagramma di Gantt$_{G}$}: Base tecnologica }\label{}
 \end{figure}
 \newpage
@@ -70,19 +74,20 @@ I ruoli maggiormente coinvolti sono: \textit{Responsabile}, \textit{Amministrato
 \textbf{Periodo:} da 2019-03-09 a 2019-04-12\\
 Questo periodo inizia dopo la Revisione di Progettazione e termina  alla Revisione di Qualifica.\\
 In questo periodo avviene la codifica vera e propria del prodotto finale.\\
-Le attività della fase di Progettazione di Dettaglio e Codifica sono:
+Le attività della periodo di Progettazione di Dettaglio e Codifica sono:
 \begin{itemize}
-	\item \textbf{Incremento Norme di Progetto}: vengono normate attività non precedentemente normate, in particolare si prevede di approfondire aspetti di Codifica, Verifica e Validazione;
-	\item \textbf{Progettazione di dettaglio}: viene progettato fino a raggiungere un livello atomico l'intero sistema. Inoltre vengono definiti opportuni test di unità per ogni unità atomica del sistema;
-	\item \textbf{Test Driven Development}: vengono codificati opportuni test di unità per la parte server del sistema, come richiesto dalla Proponente;
-	\item \textbf{Codifica:} i programmatori sviluppano secondo quanto indicato nelle fasi di progettazione;
+	\item \textbf{Correzione e incremento documenti}; 
+	\item \textbf{Piano dei Test di unità}: il gruppo progetta i test di unità, che vengono tracciati con i loro metodi; 
+	\item \textbf{Sviluppo applicazione Android}: comprende la progettazione in dettaglio di ogni classe Android e la seguente codifica;
+	\item \textbf{Sviluppo Skill}: comprende la progettazione in dettaglio di ogni classe in nodeJS e la seguente codifica. Lo sviluppo deve avvenire seguendo i principi Test Driven Development, come suggerito dalla proponente. Prima di sviluppare ogni metodo, è necessario fornire il relativo test di unità;
+	\item \textbf{Sicurezza}: il gruppo studia ogni parte del sistema in sviluppo e implementa le best practice per assicurare la sicurezza di queste;
 	\item \textbf{Manuali}: vengono redatti opportuni manuali del prodotto in fase di sviluppo, sia per l'utente che per lo sviluppatore;
 	\item \textbf{Product Baseline}: viene presentata in modalità Agile la progettazione a livello di dettaglio, riportando diagrammi e contestualizzando le principali scelte architetturali adottate.
 \end{itemize}
 I ruoli maggiormente coinvolti sono: \textit{Responsabile}, \textit{Amministratore}, \textit{Progettista}, \textit{Verificatore} e \textit{Programmatore}.
 \begin{figure} [h]
     \centering
-    \includegraphics[scale=0.14]{./images/codifica.jpg}
+    \includegraphics[scale=0.27]{./images/ZeroSevenGanttCodifica.png}
     \caption{\textit{Diagramma di Gantt$_{G}$}: Progettazione di dettaglio e Codifica }\label{}
 \end{figure}
 \newpage
@@ -92,12 +97,14 @@ Questo periodo inizia al termine della Progettazione di Dettaglio e Codifica e s
 Il prodotto è pronto e il team effettua dei test di verifica su di esso che ne precedono la validazione.\\
 Le attività che svolge il gruppo sono:
 \begin{itemize}
-   \item \textbf{Validazione}: l'intero sistema viene validato rispetto ai requisiti coerentemente con i test di sistema individuati in fase di Analisi;
+   \item \textbf{Maturità documenti}: vengono apportate le ultime modifche ai documenti, secondo i risultati della RQ.
+   \item \textbf{Validazione}: l'intero sistema viene validato rispetto ai requisiti coerentemente con i test di sistema individuati nel peirodo di Analisi;
    \item \textbf{Consuntivo finale}: viene calcolato un consuntivo finale dell'intero progetto;
+   \item \textbf{Manuali}: il manuale dell'utente viene completato;
    \item \textbf{Collaudo}: viene collaudo l'intero sistema, in presenza di Committente e Proponente, rispetto al capitolato e ai requisiti individuati. 
 \end{itemize}
 \begin{figure} [h]
     \centering
-    \includegraphics[scale=0.14]{./images/validazione_collaudo.jpg}
+    \includegraphics[scale=0.29]{./images/ZeroSevenGanttVerifica.png}
     \caption{\textit{Diagramma di Gantt$_{G}$}: Validazione e Collaudo }\label{}
 \end{figure}
