@@ -11,6 +11,7 @@ Alexa
 Andreea
 arricchitore
 Asana
+Asser
 Astah
 Autent
 Asser
@@ -30,6 +31,7 @@ bcws
 BCWS
 >>>>>>> feature/pdq
 ciclomatica
+Chai
 Ciuche
 Chai
 CodeCommit
@@ -64,8 +66,7 @@ IEC
 Instagantt
 iOS
 Ipsum,
-ì
-Istambul
+Istanbul
 javascript
 Javascript
 js
@@ -80,7 +81,6 @@ logout
 Logout
 Lorem
 Moc
-Mocha
 MacOS
 Marnie
 McCabe
@@ -90,10 +90,8 @@ monospace
 Monospace
 MPR
 NDP
-npm
-NumeroDecisione
-myTask
-NumeroDecisione
+NodeJs
+NodeJS
 nf
 nl
 NomeDocumento
@@ -177,28 +175,9 @@ nell
 pianif
 ProcessoMetriche
 smartphone
+github
 sull
 VerbaleUsoData
-<<<<<<< HEAD
-VER
-Analizzabilità
-App
-ottimalità
-Recuperabilità
-Skype
-Testabilità
-Analizzabilità
-App
-ottimalità
-Recuperabilità
-Skype
-Testabilità
-vc
-nodeJS
-NodeJS
-listgroup
-Gitflow
-NumeroDecisione
 VER
 
 JavaDoc
