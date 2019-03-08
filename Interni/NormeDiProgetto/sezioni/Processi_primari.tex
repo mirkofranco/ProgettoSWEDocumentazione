@@ -175,18 +175,24 @@ Questa attività segue la Progettazione e consiste nell'implementazione effettiv
 Con riferimento al sito elencato nella sezione \ref{package}, la suddivisione dei file sorgente per package avverrà nel modo seguente:
 
 \begin{itemize}
-	\item  \textbf{com.megalexa.activities:} conterrà tutti file contententi le\glossario{activities}dell'applicazione.
-	\item  \textbf{com.megalexa.adapters} Conterrà tutti i file contenti gli adapters
-			\subitem \textbf{view} conterrà tutti gli\glossario{adapters}che alcuni widget particolari di android richiedono (come le RecyclerView e le ListView);
-			\subitem \textbf{connectors} conterrà tutti i file a supporto dei blocchi contenuti nel model: nello specifico, un connettore si rende necessario se il blocco a cui fa riferimento necessita di controlli aggiuntivi in rete per risultare corretto;
-	\item  \textbf{com.megalexa.fragments} conterranno i file riguardanti i\glossario{fragments}prodotti dalle activities;
-	\item  \textbf{com.megalexa.viewModel}	conterranno tutti i file che compongono il \textit{ViewModel$_{G}$}, che mette in comunicazione la parte grafica con quella logica;	
-	\item  \textbf{com.megalexa.models} conterrà tutti i file riguardanti la 
-	logica dell'applicazione;
-	\item  \textbf{com.megalexa.util} conterrà tutte la classi di utilità definite nel corso dello sviluppo.	
+	\item  \textbf{com.megalexa.activities:} contiene tutti file contenenti le\glossario{activities}dell'applicazione.
+	\item  \textbf{com.megalexa.adapters:} contiene tutti i file contenti gli adapters
+			\subitem \textbf{view:} conterrà tutti gli\glossario{adapters}che alcuni widget particolari di android richiedono (come le RecyclerView e le ListView);
+			\subitem \textbf{connectors:} contiene tutti i file a supporto dei blocchi contenuti nel model: nello specifico, un connettore si rende necessario se il blocco a cui fa riferimento necessita di controlli aggiuntivi in rete per risultare corretto.
+	\item  \textbf{com.megalexa.fragments:} contiene i file riguardanti i\glossario{fragments}prodotti dalle activities;
+	\item  \textbf{com.megalexa.viewModel:}	contiene tutti i file che compongono il \textit{ViewModel$_{G}$}, che mette in comunicazione la parte grafica con quella logica;	
+	\item  \textbf{com.megalexa.models:} contiene tutti i file riguardanti la logica dell'applicazione;
+	\item  \textbf{com.megalexa.util:} contiene tutte la classi di utilità definite nel corso dello sviluppo.	
 
 \end{itemize}
 Sarà permesso definire ulteriori package all'interno di quelli sopra elencati, nel caso in cui ci sia bisogno di un maggiore dettaglio.
+\subsubsection{Suddivisione dei package della skill}
+	\begin{itemize}
+		\item \textbf{MegAlexaSkill::lambda}: contiene il codice della skill MegAlexa che viene eseguito da AWS Lambda;
+		\item \textbf{MegAlexaSkill::lambda::blocks}: contiene la parte di business della skill;
+		\item \textbf{MegAlexaSkill::lambda::connection}: contiene le classi utili alla connessione e interfacciamento con il database;
+		\item \textbf{MegAlexaSkill::node\_modules}: contiene tutte le dipendenze utili alla skill.
+	\end{itemize}
 
 \subsubsection{Stile di codifica: regole generali} 
 Vengono elencate le norme alle quali i \textit{Programmatori} devono attenersi durante l'attività di programmazione e implementazione.
