@@ -1,22 +1,20 @@
 \documentclass[a4paper,12pt]{article}
-\usepackage{multirow}
 \usepackage{ZeroSeven}
-\usepackage{ltablex}
-\usepackage{graphicx}
 \usepackage{verbatim}
-\usepackage{hyperref} 
-\usepackage{glossaries}
 \usepackage{imakeidx} 
 \usepackage{bookmark}
-
-\makeindex[intoc]
 \indexsetup{firstpagestyle=empty}  
-\titlepage{}
+\usepackage[toc,nonumberlist]{glossaries} 
+\input{sezioni/terminiGlossario}
+\makenoidxglossaries
 
 \author{Mirko Franco}
 \date{2018-12-14}
 \intestazioni{\includegraphics[scale=0.3]{images/logo_intestazione}}
 \pagestyle{myfront}
+
+
+
 \begin{document}
 \begin{titlepage}
 	\centering
@@ -29,11 +27,11 @@
 	\logo
 	%devono essere compilati questi campi ogni volta
 		\begin{tabular}{c|c}
-		{\hfill \textbf{Versione}} 			& 1.0.0				\\
+		{\hfill \textbf{Versione}} 			& 2.0.0				\\
 		{\hfill\textbf{Data Redazione}} 	& 2018-12-22		\\ 
 		{\hfill\textbf{Redazione}} 			& Andrea Deidda			\\ 
 		{\hfill\textbf{Verifica}} 				&  	Matteo Depascale				\\ 
-		{\hfill\textbf{Approvazione}} 		&  		Stefano Zanatta			\\ 
+		{\hfill\textbf{Approvazione}} 		&  		Gian Marco Bratzu			\\ 
 		{\hfill\textbf{Uso}} 					& 		Esterno		\\ 
 		{\hfill\textbf{Distribuzione}} 			& 			Prof. Tullio Vardanega \\ & Prof. Riccardo Cardin \\ & Gruppo ZeroSeven		\\ & Zero12 s.r.l. \\
 		{\hfill\textbf{Email di contatto}} & zerosevenswe@gmail.com \\
@@ -43,33 +41,10 @@
 	\label{LastFrontPage}
 	\newpage	
 	\input{tabella_modifiche}
+	\glsaddall
 	\pagestyle{mymain}
-	\tableofcontents
-	\input{sezioni/A_words}	
-	\input{sezioni/B_words}
-	\input{sezioni/C_words}
-	\input{sezioni/D_words}
-%	\input{sezioni/E_words}
-	\input{sezioni/F_words}
-	\input{sezioni/G_words}
-%	\input{sezioni/H_words}
-	\input{sezioni/I_words}
-	\input{sezioni/J_words}
-	\input{sezioni/K_words}
-%	\input{sezioni/L_words}
-	\input{sezioni/M_words}
-	\input{sezioni/N_words}
-%	\input{sezioni/O_words}
-	\input{sezioni/P_words}
-%	\input{sezioni/Q_words}
-	\input{sezioni/R_words}
-	\input{sezioni/S_words}
-	\input{sezioni/T_words}
-	\input{sezioni/U_words}
-	\input{sezioni/V_words}
-	\input{sezioni/W_words}
-	\input{sezioni/Z_words}
-	\printindex
+	\setglossarystyle{listgroup}
+	\printnoidxglossaries
 	\label{LastPage}
 	
 	
