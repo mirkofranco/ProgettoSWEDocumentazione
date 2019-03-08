@@ -1,11 +1,9 @@
-\documentclass[a4paper,12pt,openany]{book}
+\documentclass[a4paper,12pt]{book}
 
 \usepackage{ZeroSeven}
 \usepackage{ltablex}
 \usepackage[official]{eurosym}
 \usepackage[utf8]{inputenc}
-\usepackage{blindtext}
-\usepackage{makecell}
 \usepackage{hyperref}
 \titlepage{}
 
@@ -25,11 +23,11 @@
 	\logo
 	%devono essere compilati questi campi ogni volta
 	\begin{tabular}{c|c}
-		{\hfill \textbf{Versione}} 			& 2.0.0				\\
-		{\hfill\textbf{Data Redazione}} 	& 2018-12-24	\\ 
-		{\hfill\textbf{Redazione}} 			&  Stefano Zanatta \\&Andrea Deidda\\&Bianca Andreea Ciuche\\
-	{\hfill\textbf{Verifica}} 				&  	Matteo Depascale\\ &Mirko Franco\\ &Andrea Deidda\\
-		{\hfill\textbf{Approvazione}} 		&  			Gian Marco Bratzu\\ 
+		{\hfill \textbf{Versione}} 			& 1.0.0				\\
+		{\hfill\textbf{Data Redazione}} 	& 2018-12-24		\\ 
+		{\hfill\textbf{Redazione}} 			&  Ludovico Brocca\\ &		Stefano Zanatta			\\& Matteo Depascale\\
+	{\hfill\textbf{Verifica}} 				&  	Andrea Deidda			\\ 
+		{\hfill\textbf{Approvazione}} 		&  		Stefano Zanatta			\\ 
 	{\hfill\textbf{Uso}} 					& 		Esterno		\\ 
 	{\hfill\textbf{Distribuzione}} 			& 			Prof. Tullio Vardanega \\ & Prof. Riccardo Cardin \\ & Gruppo ZeroSeven		\\ & Zero12 s.r.l. \\
 		{\hfill\textbf{Email di contatto}} & zerosevenswe@gmail.com \\
@@ -45,12 +43,10 @@
 	\tableofcontents
 	\listoftables
 	\input{sezioni/introduzione}
-	\input{sezioni/qualitaDiProcesso}
-	\input{sezioni/qualitaDiProdotto}
-
+	\input{sezioni/VisioneGenerale}
 	\begin{appendices}
-		\input{sezioni/test}
 		\input{sezioni/resoconto}
+		\input{sezioni/appendice_metriche}
 	\end{appendices}
 
 			
