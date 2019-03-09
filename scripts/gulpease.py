@@ -5,7 +5,7 @@ import textract
 
 import re
 def gulpease(pdf_file):
-    testo = textract.process(pdf_file, method='pdftotext')
+    testo = textract.process("scripts/PianoDiQualifica.pdf", method='pdftotext')
     result = ''
     parole  = len(re.findall(r'\w+', testo))
     lettere = len(re.findall(r'\w', testo))
@@ -33,5 +33,5 @@ def gulpease(pdf_file):
     return result
 
 
-pdf_files = ['PianoDiQualifica.pdf']
+pdf_files = ["scripts/PianoDiQualifica.pdf"]
 print(gulpease(pdf_files[0]))

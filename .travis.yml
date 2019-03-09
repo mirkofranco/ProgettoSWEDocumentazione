@@ -1,5 +1,5 @@
 stages:
-  - "grammar"
+  #- "grammar"
   - "gulpease"
 jobs:
   include:
@@ -12,9 +12,8 @@ jobs:
        - bash scripts/grammar.sh
     - stage: "gulpease"
       script:
-        - cd scripts
         - sudo apt-get install python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext tesseract-ocr flac lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig libpulse-dev
         - pip install --user textract 
-        - python gulpease.py
+        - python scripts/gulpease.py
 #notifications:
 #  slack: zerosevengroup:awH2p9uSzEPY9plMSyKBtAHF
