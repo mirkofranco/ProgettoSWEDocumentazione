@@ -1,7 +1,7 @@
 # Calcolare l'indice di Leggibilita' di un PDF
 # aimriccardop & atk23 (aka AnnaP) x TEAM_N0
 import sys
-# import textract
+import textract
 
 import re
 def gulpease(pdf_file):
