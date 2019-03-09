@@ -6,8 +6,6 @@ import textract
 
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
-import pprint
-
 import os
 
 import re
@@ -35,11 +33,6 @@ creds = ServiceAccountCredentials.from_json_keyfile_name('client_secret.json', s
 client = gspread.authorize(creds)
 
 sheet = client.open('ZeroSevenDocuments').sheet1
-
-pp = pprint.PrettyPrinter()
-result = sheet.get_all_records()
-pp.pprint(result)
-
 
 gulpease_arr = []
 for file in pdf_files:
