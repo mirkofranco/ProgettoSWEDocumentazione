@@ -37,9 +37,8 @@ pdf_files = ['../Esterni/PianoDiQualifica/PianoDiQualifica.pdf',
 gulpease_arr = []
 for file in pdf_files:
     if os.path.isfile(file):
-        gulpease_arr.append(gulpease(file))
+        print(file + ":"+ gulpease(file))
     else:
-        gulpease_arr.append(-1)
+        print(file +" not found")
 
-print(gulpease_arr)
 #sheet.insert_row(gulpease_arr, 1)
