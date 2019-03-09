@@ -1,5 +1,6 @@
+dist: trusty
 stages:
-  - "grammar"
+  #- "grammar"
   - "gulpease"
 jobs:
   include:

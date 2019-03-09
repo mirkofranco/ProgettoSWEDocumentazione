@@ -21,6 +21,7 @@ for file in pdf_files:
     else:
         gulpease_arr.append(-1)
 
+print(gulpease_arr)
 sheet.insert_row(gulpease_arr, 2)
 
 records = sheet.get_all_records()
