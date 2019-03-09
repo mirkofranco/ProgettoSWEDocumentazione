@@ -34,5 +34,5 @@ def gulpease(pdf_file):
     return result
 
 
-pdf_files = ['./scripts/PianoDiQualifica.pdf']
+pdf_files = ['../Esterni/PianoDiQualifica/PianoDiQualifica.pdf']
 print(gulpease(pdf_files[0]))
