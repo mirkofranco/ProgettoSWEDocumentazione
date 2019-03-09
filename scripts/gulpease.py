@@ -2,17 +2,13 @@
 # aimriccardop & atk23 (aka AnnaP) x TEAM_N0
 import sys
 
-nomeScript, nomeFile = sys.argv
 files = ['../externi/PianoDiQualifica/PianoDiQualifica.pdf']
 import textract
 
-#nf = raw_input("Digita il nome del PDF di cui vuoi calcolare l'indice di leggibilita': ")
-testo = textract.process(nomeFile, method='pdftotext')
-#print(testo)
-
 import re
 
-def gulpease(testo):
+def gulpease(pdf_file):
+    testo = textract.process(pdf_file, method='pdftotext')
     result = ''
     parole  = len(re.findall(r'\w+', testo))
     lettere = len(re.findall(r'\w', testo))
