@@ -11,7 +11,6 @@ import os
 import re
 def gulpease(pdf_file):
     testo = textract.process(pdf_file, method='pdftotext')
-    result = ''
     parole  = len(re.findall(r'\w+', testo))
     lettere = len(re.findall(r'\w', testo))
     punti = len(re.findall(r'[.]+\s', testo)) + len(re.findall(r'[;]+\s', testo)) - len(re.findall(r'[.]+\s+[.]', testo))
@@ -20,7 +19,7 @@ def gulpease(pdf_file):
         if indiceG>100:
             indiceG=100
 
-    return result
+    return indiceG
 
 
 pdf_files = ['../Esterni/PianoDiQualifica/PianoDiQualifica.pdf',
