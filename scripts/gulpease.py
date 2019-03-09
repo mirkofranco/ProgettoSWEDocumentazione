@@ -1,12 +1,9 @@
 # Calcolare l'indice di Leggibilita' di un PDF
 # aimriccardop & atk23 (aka AnnaP) x TEAM_N0
 import sys
-
-files = ['../Esterni/PianoDiQualifica/PianoDiQualifica.pdf']
-import textract
+# import textract
 
 import re
-
 def gulpease(pdf_file):
     testo = textract.process(pdf_file, method='pdftotext')
     result = ''
@@ -36,4 +33,5 @@ def gulpease(pdf_file):
     return result
 
 
-print(gulpease(files[0]))
+pdf_files = ['PianoDiQualifica.pdf']
+print(gulpease(pdf_files[0]))
