@@ -2,7 +2,7 @@
 # aimriccardop & atk23 (aka AnnaP) x TEAM_N0
 import sys
 
-files = ['../externi/PianoDiQualifica/PianoDiQualifica.pdf']
+files = ['../Esterni/PianoDiQualifica/PianoDiQualifica.pdf']
 import textract
 
 import re
