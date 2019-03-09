@@ -36,7 +36,7 @@ pdf_files = ['../Esterni/PianoDiQualifica/PianoDiQualifica.pdf',
 gulpease_arr = []
 for file in pdf_files:
     if os.path.isfile(file):
-        print(file + ":"+ gulpease(file))
+        print(file + ":"+ str(gulpease(file)))
     else:
         print(file +" not found")
 
