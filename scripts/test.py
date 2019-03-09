@@ -1,4 +1,8 @@
 from tika import parser
 
-raw = parser.from_file('../Esterni/PianoDiQualifica/PianoDiQualifica.pdf')
-print(raw['content'])
+testo = "ciao, sono un tavolo. Sono fatto di legno. ciao, sono un tavolo; Sono fatto di legno. ciao, sono un tavolo. Sono fatto di legno. ciao, sono un tavolo. Sono fatto di legno."
+import re
+
+punti = len(re.findall(r'[.]+\s', testo)) + len(re.findall(r'[;]+\s', testo)) - len(re.findall(r'[.]+\s+[.]', testo))
+
+print(punti)

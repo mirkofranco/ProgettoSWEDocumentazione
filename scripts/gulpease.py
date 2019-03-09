@@ -12,6 +12,7 @@ def gulpease(pdf_file):
     lettere = len(re.findall(r'\w', testo))
     punti = len(re.findall(r'[.]+\s', testo)) + len(re.findall(r'[;]+\s', testo)) - len(re.findall(r'[.]+\s+[.]', testo))
     indiceG=89+((300*punti)-(10*lettere))/parole
+    result += pdf_file
     result += "numero di parole presenti nei doc :   " + str(parole) + '\n'
     result += "numero di lettere presenti nei doc :  " + str(lettere) + '\n'
     result += "numero di frasi presenti nei doc :    " + str(punti) + '\n'
