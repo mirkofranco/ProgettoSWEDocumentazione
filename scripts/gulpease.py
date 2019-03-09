@@ -34,5 +34,10 @@ def gulpease(pdf_file):
     return result
 
 
-pdf_files = ['../Esterni/PianoDiQualifica/PianoDiQualifica.pdf']
-print(gulpease(pdf_files[0]))
+pdf_files = ['../Esterni/PianoDiQualifica/PianoDiQualifica.pdf',
+    '../Esterni/PianoDiProgetto/PianoDiProgetto.pdf',
+    '../Esterni/AnalisiDeiRequisiti/AnalisiDeiRequisiti.pdf',
+    '../Interni/NormeDiProgetto/NormeDiProgetto.pdf']
+
+for file in pdf_files:
+    print(gulpease(file))
