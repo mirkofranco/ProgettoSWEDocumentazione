@@ -1,0 +1,110 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{ZeroSeven}
+
+\titlepage{}
+\author{Bianca Andreea Ciuche}
+\date{2019-02-15}
+\intestazioni{\includegraphics[scale=0.3]{images/logo_intestazione}}
+\pagestyle{myfront}
+\begin{document}
+	\begin{titlepage}
+		\centering
+		{\huge\bfseries MegAlexa\par}
+		Arricchitore di skill di Amazon Alexa
+		\line(1,0){350} \\
+		{\scshape\LARGE Verbale Esterno del 2019-02-15 \par}
+		\vspace{1cm}
+		{\scshape Gruppo ZeroSeven \par}
+		\logo
+		%devono essere compilati questi campi ogni volta
+		\begin{tabular}{c|c}
+			{\hfill \textbf{Versione}} 			& 1.0.0\\
+			{\hfill\textbf{Data Redazione}} 	& 2019-02-17\\ 
+			{\hfill\textbf{Redazione}} 			&  Bianca Andreea Ciuche\\ 
+			{\hfill\textbf{Verifica}} 				&  	Matteo Depascale\\ 
+			{\hfill\textbf{Approvazione}} 		&  	Gian Marco Bratzu\\ 
+			{\hfill\textbf{Uso}} 					& 	Esterno	\\ 
+			{\hfill\textbf{Distribuzione}} 			& 			Prof. Tullio Vardanega \\ & Prof. Riccardo Cardin \\ & Gruppo ZeroSeven \\ & Zero12 s.r.l.	\\ 
+			{\hfill\textbf{Email di contatto}} & zerosevenswe@gmail.com \\
+		\end{tabular}
+	\end{titlepage}
+	
+	
+	
+	\label{LastFrontPage}
+	
+	
+	\newpage
+	\cleardoublepage
+	\begin{table}[tbph]
+		\centering
+		\begin{tabularx}{\textwidth}{|c|c|X|X|c|}
+			\hline
+			\textbf{Versione} & \textbf{Data} & \textbf{Descrizione} & \textbf{Autore} & \textbf{Ruolo} \\
+			\hline
+			1.0.0 & 2019-02-22 & Approvazione documento per il rilascio  & Gian Marco Bratzu & Responsabile \\
+			\hline
+			0.1.0 & 2019-02-20 & Verifica verbale & Matteo Depascale & Verificatore \\
+			\hline
+			0.0.2 & 2019-02-17 & Stesura verbale &Bianca Andreea Ciuche  & Analista \\
+			\hline
+			0.0.1 & 2018-12-08 & Creazione template documento & Ludovico Brocca & Amministratore\\
+			\hline
+		\end{tabularx}
+		\caption{Diario delle modifiche}
+	\end{table}
+	\cleardoublepage
+	\pagestyle{mymain}
+	
+	\tableofcontents
+	\cleardoublepage
+	\section{Informazioni sulla riunione}
+	\subsection{Motivo della riunione}E' stata richiesta questa riunione per aggiornare la Proponente sul lavoro che stiamo svolgendo e per chiarire alcuni dubbi riguardanti le tecnologie che sono sorte lavorando sul prototipo.
+	
+	\begin{itemize}
+		\item \textbf{Luogo e data}: Google Hangout, Venerdì 15 Febbraio 2019;
+		\item \textbf{Ora di inizio}: 17:00;
+		\item \textbf{Ora di fine}: 17:20;
+		\item \textbf{Partecipanti}:  
+		\begin{itemize}
+			\item Gian Marco Bratzu;
+			\item Mirko Franco;
+			\item Ciuche Bianca;
+			\item Ludovico Brocca;
+			\item Matteo Depascale;
+			\item Stefano Zanatta;
+			\item Sig. Stefano Dindo.
+		\end{itemize}
+	\end{itemize}
+	
+	
+	\section{Resoconto}
+	\subsection{Argomenti discussi}
+	Nel corso della riunione effettuata mediante Hangouts, è stato mostrato all'azienda il mock dell'applicazione.  
+	Inoltre, sono state discusse varie problematiche emerse durante la programmazione del prototipo.
+	\begin{itemize}
+		\item {Si è discusso sulla possibilità di integrare il codice delle funzioni lambda con github per avere un codice più controllato senza effettuare ogni volta il caricamento tramite lo zip. Git hub ha  un'area di configurazione che si interfaccia con \glossario{Amazon Web Service}, quindi si può, dopo aver eseguito un commit far partire uno script che si collega al git di una lambda che effettua lo zip e la carica tramite l'\glossario{API} di Amazon. Oppure c'è la possibilità di usare Code Commit, la quale è stata scartata dal gruppo preferendo github}
+		\item {Si è discusso sullo sviluppo del voice dialog flow. Questi devono essere composti da tutte le possibili iterazioni necessarie per il progetto. Bisogna inoltre creare dei scenari in cui si deve chiarire quali workflow l'utente ha a disposizione.}
+		\item {Si è discusso su come avviene in dettaglio il login. E' corretto eseguire la registrazione e il login tramite un \glossario{account} Amazon. Inoltre è possibile interrogare \glossario{Amazon}, usando un token, per avere i dati dell'utente provenienti da Amazon. Dopo aver effettuato il login una prima volta, successivamente è possibile effettuare il login automatico grazie al token. Il token ha un tempo di durata durante il quale rimane attivo.}
+		\item {Si è discusso sull'utilizzo di \glossario{DynamoDB}. E' corretto scaricare le classi che JSON genera in automatico, queste classi rispecchiano la struttura del nostro database.}
+		\item {Per testare il codice in \glossario{NodeJs} è stato consigliato l'utilizzo di due framework: \glossario{Mocha} assieme alla libreria \glossario{Chai} oppure Asser\glossario{ Istanbul}.}
+	\end{itemize}
+	\subsection{Tracciamento decisioni}
+	\begin{table}[tbph]
+		\centering
+		\begin{tabularx}{\textwidth}{|C|C|}
+			\hline
+			\textbf{Codice } & \textbf{Decisione} \\
+			\hline
+			01-VER\_2019-02-15& Sviluppare due blocchi per la consegna del prototipo.\\
+			\hline
+			02-VER\_2019-02-15& Sviluppare il voice dialog flow con una struttura a dialogo.\\
+			\hline
+			03-VER\_2019-02-15& Mocha: framework utilizzato per effettuare i test sul codice in NodeJS.\\
+			
+			\hline
+		\end{tabularx}
+		\caption{Tracciamento decisioni}
+	\end{table}
+	\label{LastPage}
+\end{document}

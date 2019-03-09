@@ -1,0 +1,73 @@
+\documentclass[a4paper,12pt,openany]{book}
+
+\usepackage{ZeroSeven}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{longtable}
+\usepackage{ltablex}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\titlepage{}
+
+\lstset{
+	aboveskip=8mm,
+	belowskip=4mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+
+\author{Bratzu Gian Marco}
+\date{2018-12-08}
+\intestazioni{\includegraphics[scale=0.3]{images/logo_intestazione}}
+\pagestyle{myfront}
+\begin{document}
+\begin{titlepage}
+	\centering
+	{\huge\bfseries MegAlexa\par}
+	Arricchitore di skill di Amazon Alexa
+	\line(1,0){350} \\
+	{\scshape\LARGE Norme di progetto \par}
+	\vspace{1cm}
+	{\scshape Gruppo ZeroSeven \par}
+	\logo
+	%devono essere compilati questi campi ogni volta
+	\begin{tabular}{c|c}
+		{\hfill \textbf{Versione}} 			& 2.0.0				\\
+		{\hfill\textbf{Data Redazione}} 	& 2018-12-08		\\ 
+		{\hfill\textbf{Redazione}} 			&  		Gian Marco Bratzu\\&Ludovico Brocca\\&Matteo Depascale\\&Andrea Deidda\\&Bianca Ciuche\\
+		{\hfill\textbf{Verifica}} 				&  	Mirko Franco\\& Stefano Zanatta	\\ 
+		{\hfill\textbf{Approvazione}} 		&  		Stefano Zanatta			\\ 
+		{\hfill\textbf{Uso}} 					& 		Interno		\\ 
+		{\hfill\textbf{Distribuzione}} 			& 			Prof. Tullio Vardanega \\ & Prof. Riccardo Cardin \\ & Gruppo ZeroSeven \\
+		{\hfill\textbf{Email di contatto}} & zerosevenswe@gmail.com \\
+	\end{tabular}
+\end{titlepage}
+	
+
+	
+	\label{LastFrontPage}
+	\newpage	
+	\input{tabella_modifiche}
+	\pagestyle{mymain}
+	\tableofcontents
+	\input{./sezioni/introduzione.tex}
+	\input{./sezioni/Processi_primari.tex}
+	\input{./sezioni/Processi_di_supporto.tex}
+	\input{./sezioni/Processi_organizzativi.tex}
+	\appendix
+	\input{./sezioni/lista.tex}		
+	\input{./sezioni/listaMetriche.tex}		
+	\label{LastPage}
+
+\end{document}

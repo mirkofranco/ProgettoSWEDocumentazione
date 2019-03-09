@@ -1,0 +1,45 @@
+stages:
+  - "grammar"
+  - name: "CompileAndGulpease"
+    if: (branch = develop) OR (branch = master)
+jobs:
+  include:
+    - stage: "grammar"
+      script:
+       - sudo apt-get update
+       - sudo apt-get install hunspell
+       - sudo apt-get install myspell-en-us
+       - sudo apt-get install myspell-it
+       - bash scripts/grammar.sh
+    - stage: "CompileAndGulpease"
+      script:
+        - sudo apt-get install python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext tesseract-ocr flac lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig libpulse-dev
+        - pip install --user textract 
+        - sudo apt-get install -y --no-install-recommends texlive-full
+        - cd Esterni/PianoDiProgetto
+        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error PianoDiProgetto.tex
+        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error PianoDiProgetto.tex
+        - cd ../../
+        - cd Esterni/PianoDiQualifica 
+        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error PianoDiQualifica.tex
+        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error PianoDiQualifica.tex
+        - cd ../../
+        - cd Esterni/AnalisiDeiRequisiti
+        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error AnalisiDeiRequisiti.tex
+        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error AnalisiDeiRequisiti.tex
+        - cd ../../
+        - cd Esterni/Glossario
+        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error Glossario.tex
+        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error Glossario.tex
+        - cd ../../
+        - cd Interni/NormeDiProgetto
+        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error NormeDiProgetto.tex
+        - pdflatex -synctex=1 -interaction=nonstopmode -halt-on-error NormeDiProgetto.tex
+        - cd ../../
+        - python scripts/gulpease.py Esterni/PianoDiProgetto/PianoDiProgetto.pdf
+        - python scripts/gulpease.py Esterni/PianoDiQualifica/PianoDiQualifica.pdf
+        - python scripts/gulpease.py Esterni/AnalisiDeiRequisiti/AnalisiDeiRequisiti.pdf
+        - python scripts/gulpease.py Esterni/Glossario/Glossario.pdf
+        - python scripts/gulpease.py Interni/NormeDiProgetto/NormeDiProgetto.pdf
+notifications:
+  slack: zerosevengroup:awH2p9uSzEPY9plMSyKBtAHF

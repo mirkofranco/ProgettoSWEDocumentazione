@@ -1,0 +1,1740 @@
+\ifglsentryexists{a}{}%
+{%
+\gls@defglossaryentry{a}%
+{%
+name={Account linking},%
+sort={Account linking},%
+type={main},%
+first={Account linking},%
+firstplural={Account linkings},%
+text={Account linking},%
+plural={Account linkings},%
+description={Collegamento che consente di connettere l’utente con un account utente in un sistema diverso},%
+descriptionplural={Collegamento che consente di connettere l’utente con un account utente in un sistema diverso},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{agile}{}%
+{%
+\gls@defglossaryentry{agile}%
+{%
+name={Agile},%
+sort={Agile},%
+type={main},%
+first={Agile},%
+firstplural={Agiles},%
+text={Agile},%
+plural={Agiles},%
+description={Questo tipo di metodo prevede un approccio poco strutturato e con lo scopo di consegnare al cliente un prodotto funzionante e di qualità in tempi brevi},%
+descriptionplural={Questo tipo di metodo prevede un approccio poco strutturato e con lo scopo di consegnare al cliente un prodotto funzionante e di qualità in tempi brevi},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{alexa}{}%
+{%
+\gls@defglossaryentry{alexa}%
+{%
+name={Alexa},%
+sort={Alexa},%
+type={main},%
+first={Alexa},%
+firstplural={Alexas},%
+text={Alexa},%
+plural={Alexas},%
+description={Assistente personale che anima gli Amazon Echo.},%
+descriptionplural={Assistente personale che anima gli Amazon Echo.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{amazon}{}%
+{%
+\gls@defglossaryentry{amazon}%
+{%
+name={Amazon},%
+sort={Amazon},%
+type={main},%
+first={Amazon},%
+firstplural={Amazons},%
+text={Amazon},%
+plural={Amazons},%
+description={Azienda di commercio elettronico con sede negli USA.},%
+descriptionplural={Azienda di commercio elettronico con sede negli USA.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{amazonwebservices}{}%
+{%
+\gls@defglossaryentry{amazonwebservices}%
+{%
+name={Amazon Web Services},%
+sort={Amazon Web Services},%
+type={main},%
+first={Amazon Web Services},%
+firstplural={Amazon Web Servicess},%
+text={Amazon Web Services},%
+plural={Amazon Web Servicess},%
+description={Insieme di servizi di cloud computing offerti da Amazon. Comprende servizi di calcolo, di rete e di storage di basi di dati.},%
+descriptionplural={Insieme di servizi di cloud computing offerti da Amazon. Comprende servizi di calcolo, di rete e di storage di basi di dati.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{android}{}%
+{%
+\gls@defglossaryentry{android}%
+{%
+name={Android},%
+sort={Android},%
+type={main},%
+first={Android},%
+firstplural={Androids},%
+text={Android},%
+plural={Androids},%
+description={Sistema operativo per dispositivi mobili sviluppato da Google Inc.},%
+descriptionplural={Sistema operativo per dispositivi mobili sviluppato da Google Inc.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{api}{}%
+{%
+\gls@defglossaryentry{api}%
+{%
+name={API},%
+sort={API},%
+type={main},%
+first={API},%
+firstplural={APIs},%
+text={API},%
+plural={APIs},%
+description={(Application Programming Interface) sono degli strumenti di programmazio- ne che le software house mettono a disposizione degli sviluppatori per aiutarli nella creazione di applicazioni.},%
+descriptionplural={(Application Programming Interface) sono degli strumenti di programmazio- ne che le software house mettono a disposizione degli sviluppatori per aiutarli nella creazione di applicazioni.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{apigateway}{}%
+{%
+\gls@defglossaryentry{apigateway}%
+{%
+name={API Gateway},%
+sort={API Gateway},%
+type={main},%
+first={API Gateway},%
+firstplural={API Gateways},%
+text={API Gateway},%
+plural={API Gateways},%
+description={Servizio di AWS per la creazione, manutenzione e protezione di API.},%
+descriptionplural={Servizio di AWS per la creazione, manutenzione e protezione di API.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{asana}{}%
+{%
+\gls@defglossaryentry{asana}%
+{%
+name={Asana},%
+sort={Asana},%
+type={main},%
+first={Asana},%
+firstplural={Asanas},%
+text={Asana},%
+plural={Asanas},%
+description={Asana è un applicativo web pensato per aiutare i team di sviluppo ad organizzare e monitorare le attività da svolgere in un progetto.},%
+descriptionplural={Asana è un applicativo web pensato per aiutare i team di sviluppo ad organizzare e monitorare le attività da svolgere in un progetto.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{astah}{}%
+{%
+\gls@defglossaryentry{astah}%
+{%
+name={Astah UML},%
+sort={Astah UML},%
+type={main},%
+first={Astah UML},%
+firstplural={Astah UMLs},%
+text={Astah UML},%
+plural={Astah UMLs},%
+description={Software gratuito per la creazione dei diagrammi UML.},%
+descriptionplural={Software gratuito per la creazione dei diagrammi UML.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{aurora}{}%
+{%
+\gls@defglossaryentry{aurora}%
+{%
+name={Aurora Serverless},%
+sort={Aurora Serverless},%
+type={main},%
+first={Aurora Serverless},%
+firstplural={Aurora Serverlesss},%
+text={Aurora Serverless},%
+plural={Aurora Serverlesss},%
+description={Configurazione di dimensionamento automatico on demand per Amazon Aurora.},%
+descriptionplural={Configurazione di dimensionamento automatico on demand per Amazon Aurora.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{awss}{}%
+{%
+\gls@defglossaryentry{awss}%
+{%
+name={AWS},%
+sort={AWS},%
+type={main},%
+first={AWS},%
+firstplural={AWSs},%
+text={AWS},%
+plural={AWSs},%
+description={Acronimo, vedi Amazon Web Services.},%
+descriptionplural={Acronimo, vedi Amazon Web Services.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{backup}{}%
+{%
+\gls@defglossaryentry{backup}%
+{%
+name={Backup},%
+sort={Backup},%
+type={main},%
+first={Backup},%
+firstplural={Backups},%
+text={Backup},%
+plural={Backups},%
+description={Atto di ottenere una o più copie dei propri file e salvarli in un supporto esterno al computer.},%
+descriptionplural={Atto di ottenere una o più copie dei propri file e salvarli in un supporto esterno al computer.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{baseline}{}%
+{%
+\gls@defglossaryentry{baseline}%
+{%
+name={Baseline},%
+sort={Baseline},%
+type={main},%
+first={Baseline},%
+firstplural={Baselines},%
+text={Baseline},%
+plural={Baselines},%
+description={Rappresenta un punto di riferimento dal quale calcolare l’avanzamento del lavoro in un progetto.},%
+descriptionplural={Rappresenta un punto di riferimento dal quale calcolare l’avanzamento del lavoro in un progetto.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{capitolato}{}%
+{%
+\gls@defglossaryentry{capitolato}%
+{%
+name={Capitolato},%
+sort={Capitolato},%
+type={main},%
+first={Capitolato},%
+firstplural={Capitolatos},%
+text={Capitolato},%
+plural={Capitolatos},%
+description={Documento che descrive in linea generale le caratteristiche tecniche del prodotto richiesto.},%
+descriptionplural={Documento che descrive in linea generale le caratteristiche tecniche del prodotto richiesto.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{conferencecall}{}%
+{%
+\gls@defglossaryentry{conferencecall}%
+{%
+name={Conference Call},%
+sort={Conference Call},%
+type={main},%
+first={Conference Call},%
+firstplural={Conference Calls},%
+text={Conference Call},%
+plural={Conference Calls},%
+description={Modalità di comunicazione a distanza tramite telefono.},%
+descriptionplural={Modalità di comunicazione a distanza tramite telefono.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{connettore}{}%
+{%
+\gls@defglossaryentry{connettore}%
+{%
+name={Connettore},%
+sort={Connettore},%
+type={main},%
+first={Connettore},%
+firstplural={Connettores},%
+text={Connettore},%
+plural={Connettores},%
+description={Descrive un modulo la cui funzione è quella di favorire la comunicazione e collaborazione fra altri moduli.},%
+descriptionplural={Descrive un modulo la cui funzione è quella di favorire la comunicazione e collaborazione fra altri moduli.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{designpattern}{}%
+{%
+\gls@defglossaryentry{designpattern}%
+{%
+name={Design Pattern},%
+sort={Design Pattern},%
+type={main},%
+first={Design Pattern},%
+firstplural={Design Patterns},%
+text={Design Pattern},%
+plural={Design Patterns},%
+description={Soluzione progettuale generale per la risoluzione di un problema ricorrente.},%
+descriptionplural={Soluzione progettuale generale per la risoluzione di un problema ricorrente.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{diagrammigantt}{}%
+{%
+\gls@defglossaryentry{diagrammigantt}%
+{%
+name={Diagrammi di Gantt},%
+sort={Diagrammi di Gantt},%
+type={main},%
+first={Diagrammi di Gantt},%
+firstplural={Diagrammi di Gantts},%
+text={Diagrammi di Gantt},%
+plural={Diagrammi di Gantts},%
+description={Diagramma che permette la rappresentazione grafica di un calendario di attività.},%
+descriptionplural={Diagramma che permette la rappresentazione grafica di un calendario di attività.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{dynamodb}{}%
+{%
+\gls@defglossaryentry{dynamodb}%
+{%
+name={DynamoDB},%
+sort={DynamoDB},%
+type={main},%
+first={DynamoDB},%
+firstplural={DynamoDBs},%
+text={DynamoDB},%
+plural={DynamoDBs},%
+description={Database messo a disposizione da AWS che può contenere dati di tipo documento e di tipo chiave-valore.},%
+descriptionplural={Database messo a disposizione da AWS che può contenere dati di tipo documento e di tipo chiave-valore.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{formulaflesch}{}%
+{%
+\gls@defglossaryentry{formulaflesch}%
+{%
+name={Formula di Flesch},%
+sort={Formula di Flesch},%
+type={main},%
+first={Formula di Flesch},%
+firstplural={Formula di Fleschs},%
+text={Formula di Flesch},%
+plural={Formula di Fleschs},%
+description={Formula che serve a calcolare la leggibilità di un testo in lingua inglese.},%
+descriptionplural={Formula che serve a calcolare la leggibilità di un testo in lingua inglese.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{framework}{}%
+{%
+\gls@defglossaryentry{framework}%
+{%
+name={Framework},%
+sort={Framework},%
+type={main},%
+first={Framework},%
+firstplural={Frameworks},%
+text={Framework},%
+plural={Frameworks},%
+description={Architettura logica di supporto su cui è possibile realizzare un software, semplificando il lavoro al programmatore.},%
+descriptionplural={Architettura logica di supporto su cui è possibile realizzare un software, semplificando il lavoro al programmatore.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{gantt}{}%
+{%
+\gls@defglossaryentry{gantt}%
+{%
+name={Gantt},%
+sort={Gantt},%
+type={main},%
+first={Gantt},%
+firstplural={Gantts},%
+text={Gantt},%
+plural={Gantts},%
+description={Vedi Diagramma di Gantt.},%
+descriptionplural={Vedi Diagramma di Gantt.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{github}{}%
+{%
+\gls@defglossaryentry{github}%
+{%
+name={GitHub},%
+sort={GitHub},%
+type={main},%
+first={GitHub},%
+firstplural={GitHubs},%
+text={GitHub},%
+plural={GitHubs},%
+description={GitHub è un servizio di hosting per lo sviluppo di progetti software che usa il sistema di controllo di versione Git.},%
+descriptionplural={GitHub è un servizio di hosting per lo sviluppo di progetti software che usa il sistema di controllo di versione Git.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{googlehangouts}{}%
+{%
+\gls@defglossaryentry{googlehangouts}%
+{%
+name={Google Hangouts},%
+sort={Google Hangouts},%
+type={main},%
+first={Google Hangouts},%
+firstplural={Google Hangoutss},%
+text={Google Hangouts},%
+plural={Google Hangoutss},%
+description={Software di messaggistica istantanea e VoIP sviluppato da Google.},%
+descriptionplural={Software di messaggistica istantanea e VoIP sviluppato da Google.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{indicedigulpease}{}%
+{%
+\gls@defglossaryentry{indicedigulpease}%
+{%
+name={Indice di Gulpease},%
+sort={Indice di Gulpease},%
+type={main},%
+first={Indice di Gulpease},%
+firstplural={Indice di Gulpeases},%
+text={Indice di Gulpease},%
+plural={Indice di Gulpeases},%
+description={L’indice di Gulpease è un indice di leggibilità di un testo tarato sulla lingua italiana. Rispetto ad altri ha il vantaggio di utilizzare la lunghezza delle parole in lettere anziché in sillabe, semplificandone il calcolo automatico.L’indice di Gulpease è un indice di leggibilità di un testo tarato sulla lingua italiana. Rispetto ad altri ha il vantaggio di utilizzare la lunghezza delle parole in lettere anziché in sillabe, semplificandone il calcolo automatico.},%
+descriptionplural={L’indice di Gulpease è un indice di leggibilità di un testo tarato sulla lingua italiana. Rispetto ad altri ha il vantaggio di utilizzare la lunghezza delle parole in lettere anziché in sillabe, semplificandone il calcolo automatico.L’indice di Gulpease è un indice di leggibilità di un testo tarato sulla lingua italiana. Rispetto ad altri ha il vantaggio di utilizzare la lunghezza delle parole in lettere anziché in sillabe, semplificandone il calcolo automatico.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{inspection}{}%
+{%
+\gls@defglossaryentry{inspection}%
+{%
+name={Inspection},%
+sort={Inspection},%
+type={main},%
+first={Inspection},%
+firstplural={Inspections},%
+text={Inspection},%
+plural={Inspections},%
+description={Atto di verificare eseguendo una lettura mirata.},%
+descriptionplural={Atto di verificare eseguendo una lettura mirata.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{instagantt}{}%
+{%
+\gls@defglossaryentry{instagantt}%
+{%
+name={Instagantt},%
+sort={Instagantt},%
+type={main},%
+first={Instagantt},%
+firstplural={Instagantts},%
+text={Instagantt},%
+plural={Instagantts},%
+description={Applicativo web che crea diagrammi di Gantt per le attività di Asana.},%
+descriptionplural={Applicativo web che crea diagrammi di Gantt per le attività di Asana.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ios}{}%
+{%
+\gls@defglossaryentry{ios}%
+{%
+name={iOS},%
+sort={iOS},%
+type={main},%
+first={iOS},%
+firstplural={iOSs},%
+text={iOS},%
+plural={iOSs},%
+description={Sistema operativo per smartphone sviluppato da Apple.},%
+descriptionplural={Sistema operativo per smartphone sviluppato da Apple.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{javascript}{}%
+{%
+\gls@defglossaryentry{javascript}%
+{%
+name={Javascript},%
+sort={Javascript},%
+type={main},%
+first={Javascript},%
+firstplural={Javascripts},%
+text={Javascript},%
+plural={Javascripts},%
+description={Javascript è un linguaggio di scripting pensato per la programmazione web lato client.},%
+descriptionplural={Javascript è un linguaggio di scripting pensato per la programmazione web lato client.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{kotlin}{}%
+{%
+\gls@defglossaryentry{kotlin}%
+{%
+name={Kotlin},%
+sort={Kotlin},%
+type={main},%
+first={Kotlin},%
+firstplural={Kotlins},%
+text={Kotlin},%
+plural={Kotlins},%
+description={Linguaggio di programmazione per sistemi Android.},%
+descriptionplural={Linguaggio di programmazione per sistemi Android.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{megalexa}{}%
+{%
+\gls@defglossaryentry{megalexa}%
+{%
+name={MegAlexa},%
+sort={MegAlexa},%
+type={main},%
+first={MegAlexa},%
+firstplural={MegAlexas},%
+text={MegAlexa},%
+plural={MegAlexas},%
+description={Nome del capitolato scelto.},%
+descriptionplural={Nome del capitolato scelto.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{milestone}{}%
+{%
+\gls@defglossaryentry{milestone}%
+{%
+name={Milestone},%
+sort={Milestone},%
+type={main},%
+first={Milestone},%
+firstplural={Milestones},%
+text={Milestone},%
+plural={Milestones},%
+description={Una milestone è una data di calendario associata ad uno specifico insieme di baseline.},%
+descriptionplural={Una milestone è una data di calendario associata ad uno specifico insieme di baseline.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{nodejs}{}%
+{%
+\gls@defglossaryentry{nodejs}%
+{%
+name={Node.js},%
+sort={Node.js},%
+type={main},%
+first={Node.js},%
+firstplural={Node.jss},%
+text={Node.js},%
+plural={Node.jss},%
+description={Piattaforma ad eventi per il motore Javascript V8. L’esecuzione di javascript avviene lato server.},%
+descriptionplural={Piattaforma ad eventi per il motore Javascript V8. L’esecuzione di javascript avviene lato server.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{processo}{}%
+{%
+\gls@defglossaryentry{processo}%
+{%
+name={Processo},%
+sort={Processo},%
+type={main},%
+first={Processo},%
+firstplural={Processos},%
+text={Processo},%
+plural={Processos},%
+description={Insieme di attività correlate e coese che rispondono ad un bisogno e che, consumando risorse, trasformano necessità in prodotti.},%
+descriptionplural={Insieme di attività correlate e coese che rispondono ad un bisogno e che, consumando risorse, trasformano necessità in prodotti.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{prodotto}{}%
+{%
+\gls@defglossaryentry{prodotto}%
+{%
+name={Prodotto},%
+sort={Prodotto},%
+type={main},%
+first={Prodotto},%
+firstplural={Prodottos},%
+text={Prodotto},%
+plural={Prodottos},%
+description={Qualsiasi bene o servizio in grado di soddisfare un bisogno o un’esigenza.},%
+descriptionplural={Qualsiasi bene o servizio in grado di soddisfare un bisogno o un’esigenza.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{progetto}{}%
+{%
+\gls@defglossaryentry{progetto}%
+{%
+name={Progetto},%
+sort={Progetto},%
+type={main},%
+first={Progetto},%
+firstplural={Progettos},%
+text={Progetto},%
+plural={Progettos},%
+description={Insieme di attività e compiti che devono raggiungere un obbiettivo secondo delle specifiche e dei tempi prefissati, utilizzando determinate risorse.},%
+descriptionplural={Insieme di attività e compiti che devono raggiungere un obbiettivo secondo delle specifiche e dei tempi prefissati, utilizzando determinate risorse.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{proponente}{}%
+{%
+\gls@defglossaryentry{proponente}%
+{%
+name={Proponente},%
+sort={Proponente},%
+type={main},%
+first={Proponente},%
+firstplural={Proponentes},%
+text={Proponente},%
+plural={Proponentes},%
+description={Colui che presenta una proposta, in questo caso il capitolato riguardante il progetto.},%
+descriptionplural={Colui che presenta una proposta, in questo caso il capitolato riguardante il progetto.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{requisito}{}%
+{%
+\gls@defglossaryentry{requisito}%
+{%
+name={Requisito},%
+sort={Requisito},%
+type={main},%
+first={Requisito},%
+firstplural={Requisitos},%
+text={Requisito},%
+plural={Requisitos},%
+description={Funzionalità che il prodotto software deve avere.},%
+descriptionplural={Funzionalità che il prodotto software deve avere.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{routine}{}%
+{%
+\gls@defglossaryentry{routine}%
+{%
+name={Routine},%
+sort={Routine},%
+type={main},%
+first={Routine},%
+firstplural={Routines},%
+text={Routine},%
+plural={Routines},%
+description={Insieme di attività che si ripetono nel tempo.},%
+descriptionplural={Insieme di attività che si ripetono nel tempo.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{scrum}{}%
+{%
+\gls@defglossaryentry{scrum}%
+{%
+name={SCRUM},%
+sort={SCRUM},%
+type={main},%
+first={SCRUM},%
+firstplural={SCRUMs},%
+text={SCRUM},%
+plural={SCRUMs},%
+description={Modello di sviluppo Agile per la gestione di un progetto che prevede che l’avanzamento avvenga tramite una serie di sprint. Ad ogni riunione viene pianificato uno sprint.},%
+descriptionplural={Modello di sviluppo Agile per la gestione di un progetto che prevede che l’avanzamento avvenga tramite una serie di sprint. Ad ogni riunione viene pianificato uno sprint.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{skill}{}%
+{%
+\gls@defglossaryentry{skill}%
+{%
+name={Skill},%
+sort={Skill},%
+type={main},%
+first={Skill},%
+firstplural={Skills},%
+text={Skill},%
+plural={Skills},%
+description={Per skill si intende un applicativo sviluppato su Amazon Alexa in grado di eseguire un compito specifico.},%
+descriptionplural={Per skill si intende un applicativo sviluppato su Amazon Alexa in grado di eseguire un compito specifico.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{skype}{}%
+{%
+\gls@defglossaryentry{skype}%
+{%
+name={Skype},%
+sort={Skype},%
+type={main},%
+first={Skype},%
+firstplural={Skypes},%
+text={Skype},%
+plural={Skypes},%
+description={Software che permette di effetturare chiamate e videochiamate utilizzando la rete internet.},%
+descriptionplural={Software che permette di effetturare chiamate e videochiamate utilizzando la rete internet.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{sonarqube}{}%
+{%
+\gls@defglossaryentry{sonarqube}%
+{%
+name={SonarQube},%
+sort={SonarQube},%
+type={main},%
+first={SonarQube},%
+firstplural={SonarQubes},%
+text={SonarQube},%
+plural={SonarQubes},%
+description={Strumento che effettua l’analisi statica del codice di vari linguaggi di programmazione.},%
+descriptionplural={Strumento che effettua l’analisi statica del codice di vari linguaggi di programmazione.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{spice}{}%
+{%
+\gls@defglossaryentry{spice}%
+{%
+name={SPICE},%
+sort={SPICE},%
+type={main},%
+first={SPICE},%
+firstplural={SPICEs},%
+text={SPICE},%
+plural={SPICEs},%
+description={Corrisponde allo standard ISO/IEC 15504 e serve per la valutazione di un processo software.},%
+descriptionplural={Corrisponde allo standard ISO/IEC 15504 e serve per la valutazione di un processo software.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{sprint}{}%
+{%
+\gls@defglossaryentry{sprint}%
+{%
+name={Sprint},%
+sort={Sprint},%
+type={main},%
+first={Sprint},%
+firstplural={Sprints},%
+text={Sprint},%
+plural={Sprints},%
+description={Indica un’unità di base dello sviluppo in SCRUM ed ha una durata fissata. Ogni sprint è preceduto da una riunione di pianificazione in cui vengono stabiliti gli obbiettivi e stimati i tempi.},%
+descriptionplural={Indica un’unità di base dello sviluppo in SCRUM ed ha una durata fissata. Ogni sprint è preceduto da una riunione di pianificazione in cui vengono stabiliti gli obbiettivi e stimati i tempi.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{stakeholders}{}%
+{%
+\gls@defglossaryentry{stakeholders}%
+{%
+name={Stakeholders},%
+sort={Stakeholders},%
+type={main},%
+first={Stakeholders},%
+firstplural={Stakeholderss},%
+text={Stakeholders},%
+plural={Stakeholderss},%
+description={(portatori di interesse) Persone che agiscono in qualità di fornitori,di committenti o di clienti.},%
+descriptionplural={(portatori di interesse) Persone che agiscono in qualità di fornitori,di committenti o di clienti.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{svg}{}%
+{%
+\gls@defglossaryentry{svg}%
+{%
+name={SVG},%
+sort={SVG},%
+type={main},%
+first={SVG},%
+firstplural={SVGs},%
+text={SVG},%
+plural={SVGs},%
+description={(Scalable Vector Graphics) Tipo di formato delle immagini.},%
+descriptionplural={(Scalable Vector Graphics) Tipo di formato delle immagini.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{swift}{}%
+{%
+\gls@defglossaryentry{swift}%
+{%
+name={Swift},%
+sort={Swift},%
+type={main},%
+first={Swift},%
+firstplural={Swifts},%
+text={Swift},%
+plural={Swifts},%
+description={Linguaggio di programmazione per sistemi iOS e MacOS.},%
+descriptionplural={Linguaggio di programmazione per sistemi iOS e MacOS.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{telegram}{}%
+{%
+\gls@defglossaryentry{telegram}%
+{%
+name={Telegram},%
+sort={Telegram},%
+type={main},%
+first={Telegram},%
+firstplural={Telegrams},%
+text={Telegram},%
+plural={Telegrams},%
+description={Servizio di messaggistica istantanea basato su cloud che permette lo scambio di file multimediali.},%
+descriptionplural={Servizio di messaggistica istantanea basato su cloud che permette lo scambio di file multimediali.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{texstudio}{}%
+{%
+\gls@defglossaryentry{texstudio}%
+{%
+name={TeXstudio},%
+sort={TeXstudio},%
+type={main},%
+first={TeXstudio},%
+firstplural={TeXstudios},%
+text={TeXstudio},%
+plural={TeXstudios},%
+description={Editor di testo per il linguaggio di markup \LaTeX ..},%
+descriptionplural={Editor di testo per il linguaggio di markup \LaTeX ..},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ticket}{}%
+{%
+\gls@defglossaryentry{ticket}%
+{%
+name={Ticket},%
+sort={Ticket},%
+type={main},%
+first={Ticket},%
+firstplural={Tickets},%
+text={Ticket},%
+plural={Tickets},%
+description={Notifica per segnalare ai membri del gruppo la presenza di un’attività da svolgere per l’avanzamento del progetto.},%
+descriptionplural={Notifica per segnalare ai membri del gruppo la presenza di un’attività da svolgere per l’avanzamento del progetto.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{uml}{}%
+{%
+\gls@defglossaryentry{uml}%
+{%
+name={UML},%
+sort={UML},%
+type={main},%
+first={UML},%
+firstplural={UMLs},%
+text={UML},%
+plural={UMLs},%
+description={(Unified Modeling Language) Linguaggio di modellazione grafica basato sul paradigma orientato agli oggetti.},%
+descriptionplural={(Unified Modeling Language) Linguaggio di modellazione grafica basato sul paradigma orientato agli oggetti.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{uppercamelcase}{}%
+{%
+\gls@defglossaryentry{uppercamelcase}%
+{%
+name={Upper Camel Case},%
+sort={Upper Camel Case},%
+type={main},%
+first={Upper Camel Case},%
+firstplural={Upper Camel Cases},%
+text={Upper Camel Case},%
+plural={Upper Camel Cases},%
+description={Notazione che indica parole unite insieme la cui lettera iniziale è maiuscola.},%
+descriptionplural={Notazione che indica parole unite insieme la cui lettera iniziale è maiuscola.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{verifica}{}%
+{%
+\gls@defglossaryentry{verifica}%
+{%
+name={Verifica},%
+sort={Verifica},%
+type={main},%
+first={Verifica},%
+firstplural={Verificas},%
+text={Verifica},%
+plural={Verificas},%
+description={Accertare che l’esecuzione di specifiche attività non abbia prodotto errori. Viene fatta più di una volta nel corso di un progetto.},%
+descriptionplural={Accertare che l’esecuzione di specifiche attività non abbia prodotto errori. Viene fatta più di una volta nel corso di un progetto.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{voicedialogflow}{}%
+{%
+\gls@defglossaryentry{voicedialogflow}%
+{%
+name={Voice Dialog Flow},%
+sort={Voice Dialog Flow},%
+type={main},%
+first={Voice Dialog Flow},%
+firstplural={Voice Dialog Flows},%
+text={Voice Dialog Flow},%
+plural={Voice Dialog Flows},%
+description={Documento di testo che descrive l'interazione fra l'utente e il dispositivo Alexa nel corso dell'esecuzione della skill.},%
+descriptionplural={Documento di testo che descrive l'interazione fra l'utente e il dispositivo Alexa nel corso dell'esecuzione della skill.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{wlakthrough}{}%
+{%
+\gls@defglossaryentry{wlakthrough}%
+{%
+name={Walkthrough},%
+sort={Walkthrough},%
+type={main},%
+first={Walkthrough},%
+firstplural={Walkthroughs},%
+text={Walkthrough},%
+plural={Walkthroughs},%
+description={È un metodo di verifica dei requisiti che consiste in un'analisi dettagliata e approfondita di un documento di testo, senza l'utilizzo di strumenti di supporto(come le liste di controllo).},%
+descriptionplural={È un metodo di verifica dei requisiti che consiste in un'analisi dettagliata e approfondita di un documento di testo, senza l'utilizzo di strumenti di supporto(come le liste di controllo).},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{workflow}{}%
+{%
+\gls@defglossaryentry{workflow}%
+{%
+name={Workflow},%
+sort={Workflow},%
+type={main},%
+first={Workflow},%
+firstplural={Workflows},%
+text={Workflow},%
+plural={Workflows},%
+description={Consiste in una serie di connettori eseguiti da Alexa in successione uno dopo l'altro secondo le esigenze dell'utente.},%
+descriptionplural={Consiste in una serie di connettori eseguiti da Alexa in successione uno dopo l'altro secondo le esigenze dell'utente.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
