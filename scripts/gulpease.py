@@ -4,8 +4,8 @@
 #import sys
 import textract
 
-import gspread
-from oauth2client.service_account import ServiceAccountCredentials
+#import gspread
+#from oauth2client.service_account import ServiceAccountCredentials
 import os
 
 import re
@@ -28,11 +28,11 @@ pdf_files = ['../Esterni/PianoDiQualifica/PianoDiQualifica.pdf',
     '../Esterni/AnalisiDeiRequisiti/AnalisiDeiRequisiti.pdf',
     '../Interni/NormeDiProgetto/NormeDiProgetto.pdf']
 
-scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-creds = ServiceAccountCredentials.from_json_keyfile_name('client_secret.json', scope)
-client = gspread.authorize(creds)
+#scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
+#creds = ServiceAccountCredentials.from_json_keyfile_name('client_secret.json', scope)
+#client = gspread.authorize(creds)
 
-sheet = client.open('ZeroSevenDocuments').sheet1
+#sheet = client.open('ZeroSevenDocuments').sheet1
 
 gulpease_arr = []
 for file in pdf_files:
@@ -41,4 +41,5 @@ for file in pdf_files:
     else:
         gulpease_arr.append(-1)
 
-sheet.insert_row(gulpease_arr, 1)
+print(gulpease_arr)
+#sheet.insert_row(gulpease_arr, 1)
