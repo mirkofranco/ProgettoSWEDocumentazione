@@ -2,12 +2,11 @@
 # aimriccardop & atk23 (aka AnnaP) x TEAM_N0
 
 #import sys
-#import textract
+import textract
 
 import re
 def gulpease(pdf_file):
-    #testo = textract.process(pdf_file, method='pdftotext')
-    testo = ''
+    testo = textract.process(pdf_file, method='pdftotext')
     result = ''
     parole  = len(re.findall(r'\w+', testo))
     lettere = len(re.findall(r'\w', testo))
@@ -35,9 +34,5 @@ def gulpease(pdf_file):
     return result
 
 
-import os  
-print(os.path.isfile('./PianoDiQualifica.pdf'))
-print(os.getcwd())
-
-#pdf_files = ['./scripts/PianoDiQualifica.pdf']
-#print(gulpease(pdf_files[0]))
+pdf_files = ['./scripts/PianoDiQualifica.pdf']
+print(gulpease(pdf_files[0]))
