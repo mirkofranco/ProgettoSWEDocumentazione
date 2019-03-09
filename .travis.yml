@@ -1,6 +1,6 @@
 dist: trusty
 stages:
-  #- "grammar"
+  - "grammar"
   - "gulpease"
 jobs:
   include:
@@ -13,10 +13,10 @@ jobs:
        - bash scripts/grammar.sh
     - stage: "gulpease"
       script:
+        #- sudo pip install --upgrade pip
+        #- sudo pip install --upgrade oauth2client gspread
         - sudo apt-get install python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext tesseract-ocr flac lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig libpulse-dev
-        - sudo pip install --upgrade pip
         - pip install --user textract 
-        - sudo pip install --upgrade oauth2client gspread
         - cd scripts
         - python gulpease.py
 #notifications:
