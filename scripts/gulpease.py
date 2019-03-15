@@ -25,7 +25,7 @@ pdf_files = ['../Esterni/PianoDiQualifica/PianoDiQualifica.pdf',
     '../Esterni/AnalisiDeiRequisiti/AnalisiDeiRequisiti.pdf',
     '../Interni/NormeDiProgetto/NormeDiProgetto.pdf']
 
-params = {'date' : NOW.strftime("%Y-%m-%d")}
+params = {'date' : NOW.strftime("%Y-%m-%d %H:%M:%S")}
 
 for file in pdf_files:
     if os.path.isfile(file):
