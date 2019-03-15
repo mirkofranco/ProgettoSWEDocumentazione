@@ -33,5 +33,6 @@ for file in pdf_files:
         params[file] = str(gulpease(file)) 
     else:
         print(file +" not found")
-
+print("Sending request to Zapier...")
 r = requests.get(url = URL, params = params)
+print("Request sent to Zapier.")
