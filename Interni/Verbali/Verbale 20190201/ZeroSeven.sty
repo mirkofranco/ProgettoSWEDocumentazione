@@ -17,7 +17,7 @@
 \RequirePackage{caption}
 \RequirePackage[table]{xcolor}
 \RequirePackage{tabu}
-\usepackage{eurosym}
+
 
 \captionsetup{tableposition=top,figureposition=bottom,font=small}
 \captionsetup{format=hang,labelfont={sf,bf}}
@@ -37,7 +37,7 @@
 		\pagenumbering{Roman}
 		\fancyhf{}
 		\lhead{#1}
-		\rhead{\nouppercase{\leftmark}}
+		\rhead{\nouppercase{\rightmark}}
 		\rfoot{\thepage~di \pageref{LastFrontPage}}
 		\renewcommand{\headrulewidth}{0.4pt}
 		\renewcommand{\footrulewidth}{0.4pt}
@@ -55,7 +55,7 @@
 		\pagenumbering{arabic}
 		\fancyhf{}
 		\lhead{#1}
-		\rhead{\nouppercase{\leftmark}}
+		\rhead{\nouppercase{\rightmark}}
 		\rfoot{
 			\hypersetup{
 				colorlinks=true,
@@ -63,7 +63,7 @@
 			}
 			\thepage~di \pageref{LastPage}
 		}
-		\lfoot{Piano di Qualifica 2.0.0}
+		\lfoot{Verbale esterno 2019-02-01}
 		\renewcommand{\headrulewidth}{0.4pt}
 		\renewcommand{\footrulewidth}{0.4pt}
 	}
@@ -125,9 +125,11 @@
 	%\texttt{zerosevenswe@gmail.com}	 
 }
 
+
 \newcommand{\glossario}[1]{
 	\textit{$#1_{G}$}
 }
+
 %-------------------FINE comandi personalizzati-----------------------------------------
 
 \endinput
