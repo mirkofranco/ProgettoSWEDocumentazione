@@ -1,39 +1,38 @@
-# Calcolare l'indice di Leggibilita' di un PDF
-# aimriccardop & atk23 (aka AnnaP) x TEAM_N0
-import sys
-
-nomeScript, nomeFile = sys.argv
-
 import textract
-
-#nf = raw_input("Digita il nome del PDF di cui vuoi calcolare l'indice di leggibilita': ")
-testo = textract.process(nomeFile, method='pdftotext')
-#print(testo)
-
+import requests
+import os
 import re
-parole  = len(re.findall(r'\w+', testo))
-lettere = len(re.findall(r'\w', testo))
-punti = len(re.findall('[.]+\s', testo))+len(re.findall('[;]+\s', testo)) - len(re.findall('[.]+\s+[.]', testo))
+import datetime
 
-indiceG=89+((300*punti)-(10*lettere))/parole
-print("numero di parole presenti nei doc :   " + str(parole))
-print("numero di lettere presenti nei doc :  " + str(lettere))
-print("numero di frasi presenti nei doc :    " + str(punti))
-print("")
-if parole!=0:
-    if indiceG>100:
-        indiceG=100
+NOW = datetime.datetime.now()
+URL = "https://hooks.zapier.com/hooks/catch/4637877/n9hvza/"
 
-    print("indice di Gulpease restrittivo : " + str(indiceG))
-    punti = len(re.findall('[.]', testo)) + len(re.findall('[;]', testo))
-    indiceG = 89 + ((300 * punti) - (10 * lettere)) / parole
-    if indiceG>100:
-        indiceG=100
+def gulpease(pdf_file):
+    testo = textract.process(pdf_file, method='pdftotext')
+    parole  = len(re.findall(r'\w+', testo))
+    lettere = len(re.findall(r'\w', testo))
+    punti = len(re.findall(r'[.]+\s', testo)) + len(re.findall(r'[;]+\s', testo)) - len(re.findall(r'[.]+\s+[.]', testo))
+    indiceG=89+((300*punti)-(10*lettere))/parole
+    if parole!=0:
+        if indiceG>100:
+            indiceG=100
 
-    print("indice di Gulpease non restrittivo : " + str(indiceG))
-    print("")
-    print("Nel primo indice non viene considerato delimitatore di frase:")
-    print("- la punteggiatura spazio punteggiatura come delimitatore di frasi")
-    print("- la punteggiatura che non e' seguita da un carattere di spaziatura")
-else:
-    print("Errore nel calcolo dell'indice Gulpease")
+    return indiceG
+
+
+pdf_files = ['../Esterni/PianoDiQualifica/PianoDiQualifica.pdf',
+    '../Esterni/PianoDiProgetto/PianoDiProgetto.pdf',
+    '../Esterni/AnalisiDeiRequisiti/AnalisiDeiRequisiti.pdf',
+    '../Interni/NormeDiProgetto/NormeDiProgetto.pdf']
+
+params = {'date' : NOW.strftime("%Y-%m-%d %H:%M:%S")}
+
+for file in pdf_files:
+    if os.path.isfile(file):
+        print(file + ":"+ str(gulpease(file)))
+        params[file] = str(gulpease(file)) 
+    else:
+        print(file +" not found")
+print("Sending request to Zapier...")
+r = requests.get(url = URL, params = params)
+print("Request sent to Zapier.")
