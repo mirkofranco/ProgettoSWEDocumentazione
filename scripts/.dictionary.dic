@@ -1,17 +1,12 @@
-<<<<<<< HEAD
 ﻿ADR
 ﻿     125
 
 ADR
-=======
-ACWP
->>>>>>> feature/pdq
 ADR
 Alexa
 Andreea
 arricchitore
 Asana
-Asser
 Astah
 Autent
 Asser
@@ -19,19 +14,11 @@ AWS
 androidTest
 Bratzu
 BV
-<<<<<<< HEAD
 cccccc
 BCWP
 BCWS
 Chai
-=======
-bcwp
-BCWP
-bcws
-BCWS
->>>>>>> feature/pdq
 ciclomatica
-Chai
 Ciuche
 Chai
 CodeCommit
@@ -60,13 +47,13 @@ gulpease
 Gulpease
 hashtag
 htp
-Hutcheson
 IDE
 IEC
 Instagantt
 iOS
 Ipsum,
-Istanbul
+ì
+Istambul
 javascript
 Javascript
 js
@@ -81,8 +68,8 @@ logout
 Logout
 Lorem
 Moc
+Mocha
 MacOS
-Marnie
 McCabe
 MegAlexa
 MongoDB
@@ -90,8 +77,10 @@ monospace
 Monospace
 MPR
 NDP
-NodeJs
-NodeJS
+npm
+NumeroDecisione
+myTask
+NumeroDecisione
 nf
 nl
 NomeDocumento
@@ -111,14 +100,9 @@ PNG
 playlist
 poichè
 Postcondizione
-<<<<<<< HEAD
 PragmaDB
-=======
-pre
->>>>>>> feature/pdq
 prefatti
 py
-QP
 Recuperabilità
 ripianificazione
 RPR
@@ -175,27 +159,30 @@ nell
 pianif
 ProcessoMetriche
 smartphone
-github
 sull
 VerbaleUsoData
+VER
+Analizzabilità
+App
+ottimalità
+Recuperabilità
+Skype
+Testabilità
+Analizzabilità
+App
+ottimalità
+Recuperabilità
+Skype
+Testabilità
+vc
+nodeJS
+NodeJS
+listgroup
+Gitflow
+NumeroDecisione
 VER
 
 JavaDoc
 JDK
 eXtensible
 ViewModel
-=======
-deming
-iso
-pdca
-SoS
-Apprendibilità
-poc
-POC
-Aws
-developlment
-dynamoDB
-Github
-TSFO
-RFO
->>>>>>> feature/pdq
