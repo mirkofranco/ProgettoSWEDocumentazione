@@ -1,14 +1,12 @@
-# Calcolare l'indice di Leggibilita' di un PDF
-# aimriccardop & atk23 (aka AnnaP) x TEAM_N0
-
-#import sys
 import textract
-
-#import gspread
-#from oauth2client.service_account import ServiceAccountCredentials
+import requests
 import os
-
 import re
+import datetime
+
+NOW = datetime.datetime.now()
+URL = "https://hooks.zapier.com/hooks/catch/4637877/n9hvza/"
+
 def gulpease(pdf_file):
     testo = textract.process(pdf_file, method='pdftotext')
     parole  = len(re.findall(r'\w+', testo))
@@ -27,17 +25,13 @@ pdf_files = ['../Esterni/PianoDiQualifica/PianoDiQualifica.pdf',
     '../Esterni/AnalisiDeiRequisiti/AnalisiDeiRequisiti.pdf',
     '../Interni/NormeDiProgetto/NormeDiProgetto.pdf']
 
-#scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-#creds = ServiceAccountCredentials.from_json_keyfile_name('client_secret.json', scope)
-#client = gspread.authorize(creds)
+params = {'date' : NOW.strftime("%Y-%m-%d")}
 
-#sheet = client.open('ZeroSevenDocuments').sheet1
-
-gulpease_arr = []
 for file in pdf_files:
     if os.path.isfile(file):
         print(file + ":"+ str(gulpease(file)))
+        params[file] = str(gulpease(file)) 
     else:
         print(file +" not found")
 
-#sheet.insert_row(gulpease_arr, 1)
+r = requests.get(url = URL, params = params)
