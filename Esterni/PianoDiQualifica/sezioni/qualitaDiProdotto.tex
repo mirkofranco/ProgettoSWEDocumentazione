@@ -8,17 +8,17 @@ Per riuscire a garantire una buona qualità di prodotto, sono state individuate 
 Il team si impegna a produrre dei documenti di alta qualità, rispettando le seguenti caratteristiche.
 \subsection{Ortografia}
 \subsubsection{Obbiettivi}
-Un documento, per essere privo di errori grammaticali e ortografici, viene controllato su diversi ambienti: durante la redazione, tramite il controllo automatico integrato nell'ambiente di lavoro; nel repository condiviso, tramite il correttore automatico eseguito da Travis-ci (con notifica in caso di errori); durante la verifica, da parte di un\glossario{Verificatore}.\\
-Le metriche utilizzate per la valutazione, definite nelle Norme di Progetto in Appendice B, sono le seguenti:
+Un documento, per essere privo di errori grammaticali e ortografici, viene controllato su diversi ambienti: durante la redazione, tramite il controllo automatico integrato nell'ambiente di lavoro; nel repository condiviso, tramite il correttore automatico eseguito da \textit{Travis}\glossario{CI}(con notifica in caso di errori); durante la verifica, da parte di un \textit{Verificatore}.\\
+Le metriche utilizzate per la valutazione, definite nelle \textit{Norme di Progetto} in Appendice B, sono le seguenti:
 \begin{itemize}
 	\item MPR001 numero di errori ortografici.
 \end{itemize}
 \subsection{Comprensibilità e leggibilità}
 \subsubsection{Obbiettivi}
-Per misurare la leggibilità di un documento il gruppo ha scelto di utilizzare l'indice di\glossario{Gulpease}. Questo viene calcolato automaticamente ogni volta che il documento viene modificato nel repository condiviso.\\
+Per misurare la leggibilità di un documento il gruppo ha scelto di utilizzare l' \textit{Indice di Gulpease$_{G}$}. Questo viene calcolato automaticamente ogni volta che il documento viene modificato nel repository condiviso.\\
 Le metriche utilizzate per la valutazione, definite nelle Norme di Progetto in Appendice B, sono le seguenti:
 \begin{itemize}
-	\item MPR002 indice di Gulpease$_{G}$.
+	\item MPR002 Indice di Gulpease.
 \end{itemize}
 \subsection{Correttezza dei contenuti}
 \subsubsection{Obbiettivi}
@@ -29,24 +29,24 @@ Le metriche utilizzate per la valutazione, definite nelle Norme di Progetto in A
 \end{itemize}
 \subsection{Adesione alla norme interne}
 \subsubsection{Obbiettivi}
-I documenti devono rispettare le Norme di Progetto. I \glossario{Verificatori} hanno il compito di avvisare il \textit{Responsabile} come definito nelle \textit{Norme di Progetto v2.0.0}.\\
-Le metriche utilizzate per la valutazione, definite nelle Norme di Progetto in Appendice B, sono le seguenti:
+I documenti devono rispettare le \textit{Norme di Progetto}. I \textit{Verificatori} hanno il compito di avvisare il \textit{Responsabile} come definito nelle \textit{Norme di Progetto v2.0.0}.\\
+Le metriche utilizzate per la valutazione, definite nelle \textit{Norme di Progetto} in Appendice B, sono le seguenti:
 \begin{itemize}
-	\item MPR004 numero di errori inerenti alle Norme di Progetto.
+	\item MPR004 Numero di errori inerenti alle \textit{Norme di Progetto}.
 \end{itemize}
 
 \section{Qualità del software}
 \label{software}
 
 \subsection{Funzionalità}
-Rappresenta la capacità del prodotto software di provvedere le funzionalità necessarie a soddisfare i requisiti individuati nel documento Analisi dei Requisiti v2.0.0. 
+Rappresenta la capacità del prodotto software di provvedere le funzionalità necessarie a soddisfare i requisiti individuati nel documento \textit{Analisi dei Requisiti v2.0.0}. 
 \subsubsection{Obbiettivi }Il prodotto dovrà possedere le seguenti caratteristiche:
 \begin{itemize}
 	\item \textbf{Efficacia funzionale:} Indice che determina il grado di copertura dei requisiti;
 	\item \textbf{Correttezza:} Indice che determina la correttezza dei risultati forniti dal software.
 \end{itemize}
 
-Le metriche utilizzate per la valutazione, definite nelle Norme di Progetto in Appendice B, sono le seguenti:
+Le metriche utilizzate per la valutazione, definite nelle \textit{Norme di Progetto} in Appendice B, sono le seguenti:
 \begin{itemize}
 	\item MPR005 Completezza dell'implementazione funzionale;
 	\item MPR006 Correttezza rispetto alle attese.
@@ -57,7 +57,7 @@ Rappresenta la capacità del prodotto software di svolgere correttamente le sue 
 
 \subsubsection{Obbiettivi} Il prodotto dovrà possedere le seguenti caratteristiche :
 \begin{itemize}
-	\item \textbf{Tolleranza agli errori:} Il\glossario{prodotto}software continua a lavorare correttamente in presenza di errori dovuti a uno scorretto uso dell'applicativo;
+	\item \textbf{Tolleranza agli errori}: Il\glossario{prodotto}software continua a lavorare correttamente in presenza di errori dovuti a uno scorretto uso dell'applicativo;
 	\item \textbf{Recuperabilità:} Nel caso in cui si presenta un'anomalia, l'applicativo è in grado di recuperare i dati e ripristinare lo stato interrotto.
 \end{itemize}
 
@@ -69,7 +69,7 @@ Le metriche utilizzate per la valutazione, definite nelle Norme di Progetto in A
 
 \subsection{Efficienza}
 Rappresenta la capacità di un prodotto software di realizzare le funzioni richieste nel minor tempo possibile e con l'uso del minimo numero di risorse necessarie. 
-\subsubsection{Obbiettivi } Il prodotto dovrà possedere le seguenti caratteristiche :
+\subsubsection{Obbiettivi } Il prodotto dovrà possedere le seguenti caratteristiche:
 \begin{itemize}
 	\item \textbf{Comportamento rispetto al tempo:} per svolgere le  funzioni richieste il prodotto software deve fornire adeguati tempi di risposta ed elaborazione;
 	\item \textbf{Utilizzo delle risorse:} il software nello svolgimento delle funzionalità deve utilizzare un appropriato numero e tipo di risorse.
@@ -90,7 +90,7 @@ L'usabilità rappresenta il grado di facilità e soddisfazione con cui si compie
 	\item \textbf{Accessibilità:} Si intende la possibilità di fornire i servizi anche a coloro che sono affetti da disabilità temporanee e non, che quindi utilizzano tecnologie ausiliarie.
 	Nel caso dell'echo alcune disabilità sono per ora vincolanti in quanto presuppongono necessariamente l'utilizzo della voce.
 \end{itemize}
-Le metriche utilizzate per la valutazione, definite nelle Norme di Progetto in Appendice B, sono le seguenti:
+Le metriche utilizzate per la valutazione, definite nelle \textit{Norme di Progetto} in Appendice B, sono le seguenti:
 \begin{itemize}
 	\item MPR009 Comprensibilità delle funzioni offerte;
 	\item MPR010 Facilità di apprendimento.
@@ -98,7 +98,7 @@ Le metriche utilizzate per la valutazione, definite nelle Norme di Progetto in A
 
 \subsection{Manutenibilità}
 Rappresenta la capacità del\glossario{prodotto}di essere modificato tramite correzioni, miglioramenti e adattamenti.
-\subsubsection{Obbiettivi } Il prodotto dovrà possedere le seguenti caratteristiche :
+\subsubsection{Obbiettivi } Il prodotto dovrà possedere le seguenti caratteristiche:
 \begin{itemize}
 	\item \textbf{Analizzabilità:} Il software deve poter essere analizzato per poter trovare gli errori;
 	\item \textbf{Modificabilità:} Il prodotto deve permettere la modifica delle sue parti;
@@ -110,7 +110,7 @@ Rappresenta la capacità del\glossario{prodotto}di essere modificato tramite cor
 	\item MPR011 Capacità di analisi failure;
 	\item MPR012 Impatto delle modifiche.
 \end{itemize}
-
+\newpage
 \section{Tabella delle metriche}
 \label{Tab3.1}
 \begin{center}
