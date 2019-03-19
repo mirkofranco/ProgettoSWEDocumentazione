@@ -7,7 +7,7 @@ Viene applicato inoltre il ciclo di Deming (PDCA), al fine di assicurare un migl
 \section{Processi}\label{processi}
 Vengono elencati gli obiettivi perseguiti dal gruppo per assicurare la qualità di processo, insieme alle metriche adottate per misurare ciascuno di essi.
 \subsection{QP001: Pianificazione delle attività di progetto, valutazione e controllo dei processi}
-Verificare che il processo di pianificazione di progetto risulti adeguato è un obiettivo di primaria importanza: è opportuno quindi assicurarsi che la pianificazione temporale (comprendente l'assegnazione di\glossario{task}in conformità agli incrementi previsti nel calendario) e i costi sostenuti siano supportati da metriche in grado di verificare che lo stato del progetto sia conforme alle pianificazioni precedentemente prodotte.
+Verificare che il processo di pianificazione di progetto risulti adeguato è un obiettivo di primaria importanza: è opportuno quindi assicurarsi che la pianificazione temporale (comprendente l'assegnazione di task in conformità agli incrementi previsti nel calendario) e i costi sostenuti siano supportati da metriche in grado di verificare che lo stato del progetto sia conforme alle pianificazioni precedentemente prodotte.
 
 
 \subsubsection{Obiettivi}
@@ -24,12 +24,12 @@ Verificare che il processo di pianificazione di progetto risulti adeguato è un 
 	\item \textbf{MP001}: Schedule Variance
 	\begin{itemize}
 		\item \textbf{Range di accettazione}: >= -3 giorni;
-		\item \textbf{Range di ottimalita'}: >= 0 giorni.
+		\item \textbf{Range di ottimalità}: >= 0 giorni.
 	\end{itemize}
 	\item \textbf{MP002}: Cost Variance
 	\begin{itemize}
 		\item \textbf{Range di accettazione}: >= -4;
-		\item \textbf{Range di ottimalita'}: >= 0.
+		\item \textbf{Range di ottimalità}: >= 0.
 	\end{itemize}
 \end{itemize}
 
@@ -47,12 +47,12 @@ Lo standard SPICE definisce dei livelli di maturità da perseguire per assicurar
 	\item \textbf{MP003}: SPICE capability level
 	\begin{itemize}
 		\item \textbf{Range di accettazione}: 3-5;
-		\item \textbf{Range di ottimalita'}: 4-5.
+		\item \textbf{Range di ottimalità}: 4-5.
 	\end{itemize}
 	\item \textbf{MP004}: SPICE process attributes
 	\begin{itemize}
 		\item \textbf{Range di accettazione}: L-(>50\%-85\%);
-		\item \textbf{Range di ottimalita'}: F >85\%-100\%.
+		\item \textbf{Range di ottimalità}: F >85\%-100\%.
 	\end{itemize}
 \end{itemize}
 
@@ -69,12 +69,12 @@ Il processo intende individuare e prevenire i rischi che potrebbero insorgere du
 	\item \textbf{MP005}: Occorrenza rischi non previsti
 	\begin{itemize}
 		\item \textbf{Range di accettazione}: 0-4;
-		\item \textbf{Range di ottimalita'}: 0.
+		\item \textbf{Range di ottimalità}: 0.
 	\end{itemize}
 	\item \textbf{MP006}: Indisponibilità dei servizi
 	\begin{itemize}
 		\item \textbf{Range di accettazione}: 0;
-		\item \textbf{Range di ottimalita'}: 0.
+		\item \textbf{Range di ottimalità}: 0.
 	\end{itemize}
 \end{itemize}
 \subsection{QP004: Verifica del software}
@@ -83,7 +83,7 @@ Il processo si occupa di verificare che il software prodotto sia conforme ai\glo
 \begin{itemize}
 	\item \textbf{Chiarezza del codice}: il codice prodotto deve risultare il più possibile chiaro, devono essere seguite le norme descritte nelle \textit{Norme di Progetto} ed esso deve essere supportato da commenti che chiariscano il funzionamento delle unità di codice a cui fanno riferimento;
 	\item \textbf{Prevenzione degli errori}: ogni unità di codice deve risultare il più possibile privo di errori e di\glossario{bug}prima del suo utilizzo;
-	\item \textbf{Passaggio dei Test}: ogni unità di codice fa riferimento a un test di unità a lui assegnato, è obbligatorio che tutti i test siano definiti pre-sviluppo e che ogni unità di codice passi il test ad essa riferita.\\
+	\item \textbf{Passaggio dei test}: ogni unità di codice fa riferimento a un test di unità a lui assegnato, è obbligatorio che tutti i test siano definiti pre-sviluppo e che ogni unità di codice passi il test ad essa riferita.\\
 	Per ulteriori informazioni si rimanda alla sezione \ref{test}.
 \end{itemize}
 \subsubsection{Metriche utilizzate}
@@ -92,29 +92,29 @@ Il processo si occupa di verificare che il software prodotto sia conforme ai\glo
 	\item \textbf{MP007}: Complessità ciclomatica
 	\begin{itemize}
 		\item \textbf{Range di accettazione}: 1-15;
-		\item \textbf{Range di ottimalita'}: 1-10.
+		\item \textbf{Range di ottimalità}: 1-10.
 	\end{itemize}
 	\item \textbf{MP008}: Numero di parametri per metodo
 	\begin{itemize}
 		\item \textbf{Range di accettazione}: 0-8;
-		\item \textbf{Range di ottimalita'}: 0-4.
+		\item \textbf{Range di ottimalità}: 0-4.
 	\end{itemize}
 	\item \textbf{MP009}: Numero di livelli di annidamento
 	\begin{itemize}
 		\item \textbf{Range di accettazione}: 1-6;
-		\item \textbf{Range di ottimalita'}: 1-3.
+		\item \textbf{Range di ottimalità}: 1-3.
 	\end{itemize}
 	\item \textbf{MP010}: Attributi per classe
 	\begin{itemize}
 		\item \textbf{Range di accettazione}: 0-16;
-		\item \textbf{Range di ottimalita'}: 3-8.
+		\item \textbf{Range di ottimalità}: 3-8.
 	\end{itemize}
 		
 \end{itemize}
 
-\subsection{QP005: Gestione dei Test}\label{test}
+\subsection{QP005: Gestione dei test}\label{test}
 L'obiettivo di tale processo è misurare l'efficacia del piano di test adottato: esso deve fornire risultati quantificabili sulla qualità del codice prodotto e permettere azioni correttive mirate.\\
-Si fa riferimento a scopo informativo al libro \textit{Software Testing Fundamentals: Methods and Metrics} scritto da Marnie L. Hutcheson per la definizione delle metriche adottate e per la stesura del piano dei test di unità (vedi sezione \ref{rfinf}).
+Si fa riferimento, a scopo informativo, al libro \textit{Software Testing Fundamentals: Methods and Metrics} scritto da Marnie L. Hutcheson per la definizione delle metriche adottate e per la stesura del piano dei test di unità (vedi sezione \ref{rfinf}).
 \subsubsection{Obiettivi}
 \begin{itemize}
 	\item \textbf{Qualità del piano di test.} 
@@ -124,12 +124,12 @@ Si fa riferimento a scopo informativo al libro \textit{Software Testing Fundamen
 	\item \textbf{MP011}: Tempo medio del team di sviluppo per la risoluzione di errori
 	\begin{itemize}
 		\item \textbf{Range di accettazione}: 0h-4h;
-		\item \textbf{Range di ottimalita'}: 0h-2h.
+		\item \textbf{Range di ottimalità}: 0h-2h.
 	\end{itemize}
 	\item \textbf{MP012}: Efficienza della progettazione dei test
 	\begin{itemize}
 		\item \textbf{Range di accettazione}: 0.5h-3.5h;
-		\item \textbf{Range di ottimalita'}: 1h-2h.
+		\item \textbf{Range di ottimalità}: 1h-2h.
 	\end{itemize}
 \end{itemize}
 
@@ -147,12 +147,12 @@ Si fa riferimento a scopo informativo al libro \textit{Software Testing Fundamen
 	\item \textbf{MP013:} Percentuale build superate
 	\begin{itemize}
 		\item \textbf{Range di accettazione}: 60\%;
-		\item \textbf{Range di ottimalita'}: 80\%.
+		\item \textbf{Range di ottimalità}: 80\%.
 	\end{itemize}
 	\item \textbf{MP014:} Media commit giornaliera
 	\begin{itemize}
 		\item \textbf{Range di accettazione}: >=25;
-		\item \textbf{Range di ottimalita'}: >=35.
+		\item \textbf{Range di ottimalità}: >=35.
 	\end{itemize}
 \end{itemize}
 
@@ -164,12 +164,12 @@ Per assicurare la conformità del prodotto finale(e dei requisiti individuati ch
 	\item \textbf{MP015:} Percentuale requisiti obbligatori soddisfatti
 	\begin{itemize}
 		\item \textbf{Range di accettazione}: 100\%;
-		\item \textbf{Range di ottimalita'}: 100\%.
+		\item \textbf{Range di ottimalità}: 100\%.
 	\end{itemize}
 	\item \textbf{MP016:} Percentuale requisiti desiderabili soddisfatti
 	\begin{itemize}
 		\item \textbf{Range di accettazione}: >=50\%;
-		\item \textbf{Range di ottimalita'}: >=50\%.
+		\item \textbf{Range di ottimalità}: >=50\%.
 	\end{itemize}
 \end{itemize}
 
