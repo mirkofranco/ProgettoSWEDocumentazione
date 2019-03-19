@@ -5,7 +5,10 @@
 \usepackage{bookmark}
 \indexsetup{firstpagestyle=empty}  
 \usepackage[toc,nonumberlist]{glossaries} 
+\setglossarystyle{listgroup}
+\glsgroupskip
 \input{sezioni/terminiGlossario}
+\renewcommand{\glossarysection}[2][]{}
 \makenoidxglossaries
 
 \author{Mirko Franco}
@@ -43,8 +46,7 @@
 	\input{tabella_modifiche}
 	\glsaddall
 	\pagestyle{mymain}
-	\setglossarystyle{listgroup}
-	\printnoidxglossaries
+	\printnoidxglossary[title={}]
 	\label{LastPage}
 	
 	
