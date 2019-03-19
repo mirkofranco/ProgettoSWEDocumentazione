@@ -24,110 +24,114 @@ dove:
 	\item \textbf{{YY}:} numero progressivo che identifica i sottocasi, esso può, a sua volta, includere altri sottocasi.
 \end{itemize}
 \pagebreak
+
+
+\newcolumntype{X}{>{\centering\arraybackslash}m{7cm}}
+
 \section{Requisiti Funzionali}
 \normalsize
-\begin{longtable}{|c|>{\centering}m{7cm}|c|}
+\begin{longtable}{|c|X|}
 	\hline
-	\textbf{Id Requisito} & \textbf{Descrizione} & \textbf{Stato}\\
+	\textbf{Id Requisito} & \textbf{Descrizione}\\
 	\hline
 	\endhead
-	\hypertarget{RFO1}{RFO1} & L'applicazione deve permettere all'utente non autenticato di registrarsi con un account Amazon & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFO1}{RFO1} & L'applicazione deve permettere all'utente non autenticato di registrarsi con un account Amazon\\ \hline
 	
-	\hypertarget{RFO2}{RFO2} & L'applicazione deve permettere all'utente non autenticato di effettuare il login automatico con l'account Amazon & {\textit{Soddisfatto}}\\ \hline
+	\hypertarget{RFO2}{RFO2} & L'applicazione deve permettere all'utente non autenticato di effettuare il login automatico con l'account Amazon\\ \hline
 	
-	\hypertarget{RFD2}{RFD2} & L'utente tramite Alexa può ascoltare le notizie riguardanti la borsa e le cryptovalute & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFD2}{RFD2} & L'utente tramite Alexa può ascoltare le notizie riguardanti la borsa e le cryptovalute \\ \hline
 	
-	\hypertarget{RFO3}{RFO3} & L'applicazione deve permettere all'utente non autenticato di effettuare il login manuale con l'account Amazon & {\textit{ Soddisfatto}}\\ \hline
+	\hypertarget{RFO3}{RFO3} & L'applicazione deve permettere all'utente non autenticato di effettuare il login manuale con l'account Amazon \\ \hline
 	
-	\hypertarget{RFO4}{RFO4} & L'applicazione deve permettere all'utente autenticato di effettuare il logout & {\textit{Soddisfatto}}\\ \hline
+	\hypertarget{RFO4}{RFO4} & L'applicazione deve permettere all'utente autenticato di effettuare il logout \\ \hline
 	
-	\hypertarget{RFO5}{RFO5} & L'applicazione deve permettere all'utente autenticato di modificare l'account Amazon & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFO5}{RFO5} & L'applicazione deve permettere all'utente autenticato di modificare l'account Amazon \\ \hline
 	
-	\hypertarget{RFO6}{RFO6} & L'utente tramite Alexa deve poter impostare una sveglia & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFO6}{RFO6} & L'utente tramite Alexa deve poter impostare una sveglia \\ \hline
 	
-	\hypertarget{RFO6.1}{RFO6.1} & L'utente tramite Alexa deve poter creare una nuova sveglia & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFO6.1}{RFO6.1} & L'utente tramite Alexa deve poter creare una nuova sveglia\\ \hline
 	
-	\hypertarget{RFO6.2}{RFO6.2} & L'utente tramite Alexa deve poter modificare l'orario di una sveglia & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFO6.2}{RFO6.2} & L'utente tramite Alexa deve poter modificare l'orario di una sveglia\\ \hline
 	
-	\hypertarget{RFO6.3}{RFO6.3} & L'utente tramite Alexa deve poter posporre una sveglia mentre questa sta suonando & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFO6.3}{RFO6.3} & L'utente tramite Alexa deve poter posporre una sveglia mentre questa sta suonando \\ \hline
 	
-	\hypertarget{RFO6.4}{RFO6.4} & L'utente tramite Alexa deve poter interrompere una sveglia mentre questa sta suonando & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFO6.4}{RFO6.4} & L'utente tramite Alexa deve poter interrompere una sveglia mentre questa sta suonando\\ \hline
 	
-	\hypertarget{RFO7}{RFO7} & L'utente tramite Alexa deve poter inserire un Pin per proteggere il workflow & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFO7}{RFO7} & L'utente tramite Alexa deve poter inserire un Pin per proteggere il workflow \\ \hline
 	
-	\hypertarget{RFO8}{RFO8} & L'utente tramite Alexa deve poter leggere gli elementi di una lista e inserirne di nuovi & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFO8}{RFO8} & L'utente tramite Alexa deve poter leggere gli elementi di una lista e inserirne di nuovi \\ \hline
 	
-	\hypertarget{RFO9}{RFO9} & L'utente tramite Alexa deve poter ascoltare i tweet & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFO9}{RFO9} & L'utente tramite Alexa deve poter ascoltare i tweet \\ \hline
 	
-	\hypertarget{RFO11}{RFO11} & L'utente tramite Alexa deve poter leggere le proprie mail & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFO11}{RFO11} & L'utente tramite Alexa deve poter leggere le proprie mail \\ \hline
 	
-	\hypertarget{RFO12}{RFO12} & Alexa deve essere in grado di riprodurre un blocco di testo personalizzato & {\textit{Soddisfatto}}\\ \hline
+	\hypertarget{RFO12}{RFO12} & Alexa deve essere in grado di riprodurre un blocco di testo personalizzato\\ \hline
 	
-	\hypertarget{RFO13}{RFO13} & L'utente potrà ascoltare gli eventi presenti nel proprio calendario personale tramite Alexa & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFO13}{RFO13} & L'utente potrà ascoltare gli eventi presenti nel proprio calendario personale tramite Alexa\\ \hline
 	
-	\hypertarget{RFO14}{RFO14} & L'utente potrà inserire eventi in programma nel proprio calendario personale tramite Alexa & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFO14}{RFO14} & L'utente potrà inserire eventi in programma nel proprio calendario personale tramite Alexa\\ \hline
 	
-	\hypertarget{RFO15}{RFO15} & L'applicazione deve permettere all'utente autenticato la creazione di un workflow & {\textit{Soddisfatto}}\\ \hline
+	\hypertarget{RFO15}{RFO15} & L'applicazione deve permettere all'utente autenticato la creazione di un workflow\\ \hline
 	
-	\hypertarget{RFO15.1}{RFO15.1} & L'applicazione deve permettere all'utente autenticato di inserire il nome del workflow & {\textit{Soddisfatto}}\\ \hline
+	\hypertarget{RFO15.1}{RFO15.1} & L'applicazione deve permettere all'utente autenticato di inserire il nome del workflow\\ \hline
 	
-	\hypertarget{RFO15.2}{RFO15.2} & L'applicazione deve permettere all'utente autenticato di aggiungere un blocco & {\textit{Soddisfatto}}\\ \hline
+	\hypertarget{RFO15.2}{RFO15.2} & L'applicazione deve permettere all'utente autenticato di aggiungere un blocco\\ \hline
 	
-	\hypertarget{RFO16}{RFO16} & L'applicazione deve permettere all'utente autenticato di eliminare un workflow & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFO16}{RFO16} & L'applicazione deve permettere all'utente autenticato di eliminare un workflow\\ \hline
 	
-	\hypertarget{RFO17}{RFO17} & L'applicazione deve permettere all'utente autenticato di modificare un workflow & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFO17}{RFO17} & L'applicazione deve permettere all'utente autenticato di modificare un workflow \\ \hline
 	
-	\hypertarget{RFO17.1}{RFO17.1} & L'applicazione deve permettere all'utente autenticato di cambiare il nome di un workflow & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFO17.1}{RFO17.1} & L'applicazione deve permettere all'utente autenticato di cambiare il nome di un workflow \\ \hline
 	
-	\hypertarget{RFO17.2}{RFO17.2} & L'applicazione deve permettere all'utente autenticato di modificare i blocchi contenuti in un workflow & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFO17.2}{RFO17.2} & L'applicazione deve permettere all'utente autenticato di modificare i blocchi contenuti in un workflow\\ \hline
 	
-	\hypertarget{RFO18}{RFO18} & L'utente tramite Alexa deve poter ascoltare il risultato prodotto dal feed RSS & {\textit{Soddisfatto}}\\ \hline
+	\hypertarget{RFO18}{RFO18} & L'utente tramite Alexa deve poter ascoltare il risultato prodotto dal feed RSS\\ \hline
 	
-	\hypertarget{RFO19}{RFO19} & L'utente potrà ascoltare news da un sito di notizie tramite Alexa & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFO19}{RFO19} & L'utente potrà ascoltare news da un sito di notizie tramite Alexa\\ \hline
 	
-	\hypertarget{RFO20}{RFO20} & L'utente potrà ascoltare notizie sportive tramite Alexa & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFO20}{RFO20} & L'utente potrà ascoltare notizie sportive tramite Alexa \\ \hline
 	
-	\hypertarget{RFO21}{RFO21} & L'utente potrà applicare un filtro sul numero di risultati ricevuti in output da Alexa & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFO21}{RFO21} & L'utente potrà applicare un filtro sul numero di risultati ricevuti in output da Alexa \\ \hline
 	
-	\hypertarget{RFO22}{RFO22} & L'utente potrà ricevere informazioni sul meteo tramite Alexa & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFO22}{RFO22} & L'utente potrà ricevere informazioni sul meteo tramite Alexa \\ \hline
 	
-	\hypertarget{RFO23}{RFO23} & L'utente potrà predisporre il suo workflow personalizzato per la riproduzione di musica con Amazon Music tramite Alexa & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFO23}{RFO23} & L'utente potrà predisporre il suo workflow personalizzato per la riproduzione di musica con Amazon Music tramite Alexa \\ \hline
 	
-	\hypertarget{RFO24}{RFO24} & L'utente tramite Alexa deve poter mettere in pausa un workflow & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFO24}{RFO24} & L'utente tramite Alexa deve poter mettere in pausa un workflow \\ \hline
 	
-	\hypertarget{RFO25}{RFO25} & Alexa deve fornire un sistema di aiuto che dice all'utente in qualsiasi istante in quale punto dell'esecuzione si trova & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFO25}{RFO25} & Alexa deve fornire un sistema di aiuto che dice all'utente in qualsiasi istante in quale punto dell'esecuzione si trova \\ \hline
 	
-	\hypertarget{RFF26}{RFF26} & I dati utente verranno automaticamente sincronizzati con il proprio account Amazon & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFF26}{RFF26} & I dati utente verranno automaticamente sincronizzati con il proprio account Amazon \\ \hline
 	
-	\hypertarget{RFF27}{RFF27} & L'utente deve poter rispondere ad un tweet dopo che Alexa l'ha letto & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFF27}{RFF27} & L'utente deve poter rispondere ad un tweet dopo che Alexa l'ha letto \\ \hline
 	
-	\hypertarget{RFF28}{RFF28} & L'utente deve poter rispondere ad una mail dopo che Alexa l'ha letta & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFF28}{RFF28} & L'utente deve poter rispondere ad una mail dopo che Alexa l'ha letta \\ \hline
 	
-	\hypertarget{RFF29}{RFF29} & L'utente deve poter inviare messaggi di testo su Telegram tramite Alexa a una persona o ad un gruppo & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFF29}{RFF29} & L'utente deve poter inviare messaggi di testo su Telegram tramite Alexa a una persona o ad un gruppo\\ \hline
 	
-	\hypertarget{RFF30}{RFF30} &  L'utente deve poter leggere tramite Alexa i nuovi messaggi testuali ricevuti da una persona o un gruppo su Telegram & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFF30}{RFF30} &  L'utente deve poter leggere tramite Alexa i nuovi messaggi testuali ricevuti da una persona o un gruppo su Telegram \\ \hline
 	
-	\hypertarget{RFF31}{RFF31} & L'utente deve poter inviare messaggi audio su Telegram tramite Alexa a una persona o un gruppo & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFF31}{RFF31} & L'utente deve poter inviare messaggi audio su Telegram tramite Alexa a una persona o un gruppo \\ \hline
 	
-	\hypertarget{RFF32}{RFF32} & L'utente deve poter modificare un evento nel calendario tramite Alexa & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFF32}{RFF32} & L'utente deve poter modificare un evento nel calendario tramite Alexa \\ \hline
 	
-	\hypertarget{RFF33}{RFF33} & L'utente potrà predisporre il suo workflow personalizzato per la riproduzione di musica tramite Youtube & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFF33}{RFF33} & L'utente potrà predisporre il suo workflow personalizzato per la riproduzione di musica tramite Youtube \\ \hline
 	
-	\hypertarget{RFF34}{RFF34} & L'utente tramite Alexa può impostare un timer & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFF34}{RFF34} & L'utente tramite Alexa può impostare un timer \\ \hline
 	
-	\hypertarget{RFF35}{RFF35} & L'utente tramite Alexa può in grado di ascoltare la radio & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFF35}{RFF35} & L'utente tramite Alexa può in grado di ascoltare la radio \\ \hline
 	
-	\hypertarget{RFF36}{RFF36} & L'utente tramite Alexa potrebbe controllare l'illuminazione & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFF36}{RFF36} & L'utente tramite Alexa potrebbe controllare l'illuminazione \\ \hline
 	
-	\hypertarget{RFF36.1}{RFF36.1} & L'utente tramite Alexa può accendere le luci & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFF36.1}{RFF36.1} & L'utente tramite Alexa può accendere le luci \\ \hline
 	
-	\hypertarget{RFF36.2}{RFF36.2} & L'utente tramite Alexa può spegnere le luci & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFF36.2}{RFF36.2} & L'utente tramite Alexa può spegnere le luci \\ \hline
 	
-	\hypertarget{RFD37}{RFD37} & L'utente tramite Alexa può pubblicare un tweet all'interno di Twitter & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFD37}{RFD37} & L'utente tramite Alexa può pubblicare un tweet all'interno di Twitter \\ \hline
 	
-	\hypertarget{RFD38}{RFD38} & L'utente tramite Alexa può ascoltare la musica tramite il servizio di Spotify & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFD38}{RFD38} & L'utente tramite Alexa può ascoltare la musica tramite il servizio di Spotify \\ \hline
 	
-	\hypertarget{RFD39}{RFD39} & L'utente tramite Alexa può utilizzare un blocco per la pianificazione dell'apertura di un altro blocco in automatico & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RFD39}{RFD39} & L'utente tramite Alexa può utilizzare un blocco per la pianificazione dell'apertura di un altro blocco in automatico \\ \hline
 	
 	\caption[Requisiti Funzionali]{Requisiti Funzionali}
 	\label{tabella:req0}
@@ -135,12 +139,11 @@ dove:
 \clearpage
 \section{Requisiti Prestazionali}
 \normalsize
-\begin{longtable}{|c|>{\centering}m{7cm}|c|}
+\begin{longtable}{|c|X|}
 	\hline
-	\textbf{Id Requisito} & \textbf{Descrizione} & \textbf{Stato}\\
+	\textbf{Id Requisito} & \textbf{Descrizione} \\
 	\hline
 	\endhead
-	\hypertarget{RPO1}{RPO1} & L'applicazione Android deve essere compatibile dalla versione 4.4 & {\textit{Non Soddisfatto}}\\ \hline
 	
 	\caption[Requisiti Prestazionali]{Requisiti Prestazionali}
 	\label{tabella:req1}
@@ -148,28 +151,28 @@ dove:
 \clearpage
 \section{Requisiti di Qualità}
 \normalsize
-\begin{longtable}{|c|>{\centering}m{7cm}|c|}
+\begin{longtable}{|c|X|}
 	\hline
-	\textbf{Id Requisito} & \textbf{Descrizione} & \textbf{Stato}\\
+	\textbf{Id Requisito} & \textbf{Descrizione}\\
 	\hline
 	\endhead
-	\hypertarget{RQO1}{RQO1} & Deve essere fornita la documentazione dettagliata di tutte le API & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RQO1}{RQO1} & Deve essere fornita la documentazione dettagliata di tutte le API\\ \hline
 	
-	\hypertarget{RQO2}{RQO2} & Devono essere forniti i diagrammi UML relativi agli Use Cases di progetto & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RQO2}{RQO2} & Devono essere forniti i diagrammi UML relativi agli Use Cases di progetto \\ \hline
 	
-	\hypertarget{RQO3}{RQO3} & Devono essere forniti i Voice Dialog Flow & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RQO3}{RQO3} & Devono essere forniti i Voice Dialog Flow \\ \hline
 	
-	\hypertarget{RQO4}{RQO4} & Deve essere fornito lo Schema Design relativo alla base dati & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RQO4}{RQO4} & Deve essere fornito lo Schema Design relativo alla base dati \\ \hline
 	
-	\hypertarget{RQO5}{RQO5} & Deve essere fornito il \textit{Piano di test di unità} & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RQO5}{RQO5} & Deve essere fornito il \textit{Piano di test di unità}\\ \hline
 	
-	\hypertarget{RQO6}{RQO6} & Deve essere consegnato il Bug Reporting per il tracciamento di tutte le problematiche o anomalie del sistema & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RQO6}{RQO6} & Deve essere consegnato il Bug Reporting per il tracciamento di tutte le problematiche o anomalie del sistema \\ \hline
 	
-	\hypertarget{RQO7}{RQO7} & Tutta la documentazione prodotta in italiano dal team deve avere un indice di Gulpease compreso tra 60 e 100 & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RQO7}{RQO7} & Tutta la documentazione prodotta in italiano dal team deve avere un indice di Gulpease compreso tra 60 e 100  \\ \hline
 	
-	\hypertarget{RQO8}{RQO8} & Tutta la documentazione rispetta le \textit{Norme di Progetto v2.0.0} e le metriche del \textit{Piano di Qualifica v2.0.0} & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RQO8}{RQO8} & Tutta la documentazione rispetta le \textit{Norme di Progetto v2.0.0} e le metriche del \textit{Piano di Qualifica v2.0.0} \\ \hline
 	
-	\hypertarget{RQO9}{RQO9} & Il codice prodotto rispetta le \textit{Norme di Progetto v2.0.0} e le metriche del \textit{Piano di Qualifica v2.0.0} & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RQO9}{RQO9} & Il codice prodotto rispetta le \textit{Norme di Progetto v2.0.0} e le metriche del \textit{Piano di Qualifica v2.0.0} \\ \hline
 	
 	\caption[Requisiti di Qualità]{Requisiti di Qualità}
 	\label{tabella:req2}
@@ -177,33 +180,34 @@ dove:
 \clearpage
 \section{Requisiti di Vincolo}
 \normalsize
-\begin{longtable}{|c|>{\centering}m{7cm}|c|}
+\begin{longtable}{|c|X|}
 	\hline
-	\textbf{Id Requisito} & \textbf{Descrizione} & \textbf{Stato}\\
+	\textbf{Id Requisito} & \textbf{Descrizione} \\
 	\hline
 	\endhead
-	\hypertarget{RVO1}{RVO1} & L'applicazione sarà utilizzabile da versioni Android & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RVO1}{RVO1} & L'applicazione sarà utilizzabile da versioni Android \\ \hline
 	
-	\hypertarget{RVO2}{RVO2} & L'applicazione deve essere sviluppata utilizzando il linguaggio di programmazione Kotlin & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RVO2}{RVO2} & L'applicazione deve essere sviluppata utilizzando il linguaggio di programmazione Kotlin \\ \hline
 	
-	\hypertarget{RVO3}{RVO3} & Per lo sviluppo in back-end si utilizza NodeJS versione 8.10 & {\textit{Soddisfatto}}\\ \hline
+	\hypertarget{RVO3}{RVO3} & Per lo sviluppo in back-end si utilizza NodeJS versione 8.10 \\ \hline
 	
-	\hypertarget{RVD4}{RVD4} & L'editor di riferimento è Visual Studio Code & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RVD4}{RVD4} & L'editor di riferimento è Visual Studio Code  \\ \hline
 	
-	\hypertarget{RVD5}{RVD5} & L'IDE di riferimento è Android Studio & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RVD5}{RVD5} & L'IDE di riferimento è Android Studio \\ \hline
 	
-	\hypertarget{RVO6}{RVO6} & Viene utilizzato \glossario{DynamoDB} come database NoSQL offerto dai servizi Amazon & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RVO6}{RVO6} & Viene utilizzato \glossario{DynamoDB} come database NoSQL offerto dai servizi Amazon\\ \hline
 	
-	\hypertarget{RVO7}{RVO7} & Si utilizza \glossario{AWS} Lambda per l'esecuzione del codice nel server & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RVO7}{RVO7} & Si utilizza \glossario{AWS} Lambda per l'esecuzione del codice nel server \\ \hline
 	
-	\hypertarget{RVO8}{RVO8} & Viene utilizzato \glossario{NPM} per la gestione della build del codice prodotto & {\textit{Soddisfatto}}\\ \hline
+	\hypertarget{RVO8}{RVO8} & Viene utilizzato \glossario{NPM} per la gestione della build del codice prodotto \\ \hline
 	
-	\hypertarget{RVO9}{RVO9} & Deve essere utilizzato \glossario{API Gateway}, offerto da Amazon, come REST API & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RVO9}{RVO9} & Deve essere utilizzato \glossario{API Gateway}, offerto da Amazon, come REST API \\ \hline
 	
-	\hypertarget{RVO10}{RVO10} & Per l'esecuzione dei test si utilizza \glossario{Mocha} 6.0.2 con l'integrazione di \glossario{Chai} 4.2.0 & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RVO10}{RVO10} & Per l'esecuzione dei test si utilizza \glossario{Mocha} 6.0.2 con l'integrazione di \glossario{Chai} 4.2.0 \\ \hline
 	
-	\hypertarget{RVO11}{RVO11} & Viene utilizzato \glossario{PragmaDB} per la scrittura di UC, Requisiti, Tracciamento automatico, Glossario, Classi e Package & {\textit{Non Soddisfatto}}\\ \hline
+	\hypertarget{RVO11}{RVO11} & Viene utilizzato \glossario{PragmaDB} per la scrittura di UC, Requisiti, Tracciamento automatico, Glossario, Classi e Package \\ \hline
 	
+	\hypertarget{RVO12}{RVO12} & L'applicazione Android deve essere compatibile dalla versione 4.4\\ \hline
 	\caption[Requisiti di Vincolo]{Requisiti di Vincolo}
 	\label{tabella:req3}
 \end{longtable}
@@ -313,9 +317,7 @@ dove:
 	\hyperlink{RFD39}{RFD39} & \hyperref[UC2.1.2.2]{UC2.1.2.2}\\ \hline
 	
 	\hyperlink{RFD40}{RFD40} & \hyperref[UC2.1.2.15]{UC2.1.2.15}\\ \hline
-	
-	\hyperlink{RPO1}{RPO1} & \hyperref[Verbale Esterno 2018-12-05]{Verbale Esterno 2018-12-05}\\ \hline
-	
+		
 	\hyperlink{RQO1}{RQO1} & \hyperref[Capitolato]{Capitolato}\\ \hline
 	
 	\hyperlink{RQO2}{RQO2} & \hyperref[Capitolato]{Capitolato}\\ \hline
@@ -356,6 +358,7 @@ dove:
 	
 	\hyperlink{RVO11}{RVO11} & \hyperref[01-VER_2019-02-01]{01-VER\textunderscore2019-02-01}\\ \hline
 	
+	\hyperlink{RVO12}{RPO12} & \hyperref[Verbale Esterno 2018-12-05]{Verbale Esterno 2018-12-05}\\ \hline
 	\caption[Tracciamento Requisiti-Fonti]{Tracciamento Requisiti-Fonti}
 	\label{tabella:requi-fonti}
 \end{longtable}
@@ -484,7 +487,7 @@ dove:
 	\hyperref[UC2.4]{UC2.4} & \hyperlink{RFO5}{RFO5}\\ \hline
 	\hyperref[UC2.5]{UC2.5} & \hyperlink{RFO4}{RFO4}\\ \hline
 	\hyperlink{Verbale Esterno 2018-12-05}{Verbale Esterno 2018-12-05} &
-	\hyperlink{RPO1}{RPO1}\\ & \hyperlink{RVO1}{RVO1}\\ & \hyperlink{RFO9}{RFO9}\\ & \hyperlink{RFO10}{RFO10}\\ & \hyperlink{RFO11}{RFO11}\\ & \hyperlink{RFO12}{RFO12}\\ & \hyperlink{RFO13}{RFO13}\\ & \hyperlink{RFO14}{RFO14}\\ & \hyperlink{RFO15}{RFO15}\\ & \hyperlink{RFO15.1}{RFO15.1}\\ & \hyperlink{RFO15.2}{RFO15.2}\\ & \hyperlink{RFO16}{RFO16}\\ & \hyperlink{RFO17}{RFO17}\\ & \hyperlink{RFO17.1}{RFO17.1}\\ & 
+      \hyperlink{RVO1}{RVO1}\\ &\hyperlink{RVO12}{RVO12}\\ &\hyperlink{RFO9}{RFO9}\\ & \hyperlink{RFO10}{RFO10}\\ & \hyperlink{RFO11}{RFO11}\\ & \hyperlink{RFO12}{RFO12}\\ & \hyperlink{RFO13}{RFO13}\\ & \hyperlink{RFO14}{RFO14}\\ & \hyperlink{RFO15}{RFO15}\\ & \hyperlink{RFO15.1}{RFO15.1}\\ & \hyperlink{RFO15.2}{RFO15.2}\\ & \hyperlink{RFO16}{RFO16}\\ & \hyperlink{RFO17}{RFO17}\\ & \hyperlink{RFO17.1}{RFO17.1}\\ & 
 	\hyperlink{RFO17.2}{RFO17.2}\\ & \hyperlink{RFO18}{RFO18}\\ & \hyperlink{RFO19}{RFO19}\\ & \hyperlink{RFO20}{RFO20}\\ & \hyperlink{RFO21}{RFO21}\\ & \hyperlink{RFO22}{RFO22}\\ & \hyperlink{RFO23}{RFO23}\\ \hline
 	\caption[Tracciamento Fonti-Requisiti]{Tracciamento Fonti-Requisiti}
 	\label{tabella:fonti-requi}
