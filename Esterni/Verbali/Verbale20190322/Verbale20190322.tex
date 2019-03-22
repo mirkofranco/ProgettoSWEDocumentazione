@@ -1,0 +1,99 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{ZeroSeven}
+
+\titlepage{}
+\author{Andrea Deidda}
+\date{2019-03-22}
+\intestazioni{\includegraphics[scale=0.3]{images/logo_intestazione}}
+\pagestyle{myfront}
+\begin{document}
+	\begin{titlepage}
+		\centering
+		{\huge\bfseries MegAlexa\par}
+		Arricchitore di skill di Amazon Alexa
+		\line(1,0){350} \\
+		{\scshape\LARGE Verbale Esterno del 2019-03-22 \par}
+		\vspace{1cm}
+		{\scshape Gruppo ZeroSeven \par}
+		\logo
+		%devono essere compilati questi campi ogni volta
+		\begin{tabular}{c|c}
+			{\hfill \textbf{Versione}} 			& 1.0.0\\
+			{\hfill\textbf{Data Redazione}} 	& 2019-03-22\\ 
+			{\hfill\textbf{Redazione}} 			&  Andrea Deidda\\ 
+			{\hfill\textbf{Verifica}} 			&  	???? \\ 
+			{\hfill\textbf{Approvazione}} 		&  	???? \\ 
+			{\hfill\textbf{Uso}} 					& 	Esterno	\\ 
+			{\hfill\textbf{Distribuzione}} 			& 			Prof. Tullio Vardanega \\ & Prof. Riccardo Cardin \\ & Gruppo ZeroSeven \\ & Zero12 s.r.l.	\\ 
+			{\hfill\textbf{Email di contatto}} & zerosevenswe@gmail.com \\
+		\end{tabular}
+	\end{titlepage}
+
+	\label{LastFrontPage}
+	
+	\newpage
+	\cleardoublepage
+	\begin{table}[tbph]
+		\centering
+		\begin{tabularx}{\textwidth}{|c|c|X|X|c|}
+			\hline
+			\textbf{Versione} & \textbf{Data} & \textbf{Descrizione} & \textbf{Autore} & \textbf{Ruolo} \\
+			\hline
+			0.0.2 & 2019-03-22 & Stesura verbale & Andrea Deidda  & Analista \\
+			\hline
+			0.0.1 & 2018-12-08 & Creazione template documento & Ludovico Brocca & Amministratore\\
+			\hline
+		\end{tabularx}
+		\caption{Registro delle modifiche}
+	\end{table}
+	\cleardoublepage
+	\pagestyle{mymain}
+	
+	\tableofcontents
+	\cleardoublepage
+	\section{Informazioni sulla riunione}
+	\subsection{Motivo della riunione}E' stata richiesta questa riunione per aggiornare la\glossario{proponente}sul lavoro che stiamo svolgendo e per chiarire alcuni dubbi sorti durante implementazione del\glossario{prodotto}software.
+	
+	\begin{itemize}
+		\item \textbf{Luogo e data}: \textit{Google Meet$_{G}$}, Venerdì 22 Marzo 2019;
+		\item \textbf{Ora di inizio}: 9:30;
+		\item \textbf{Ora di fine}: 10:30;
+		\item \textbf{Partecipanti}:  
+		\begin{itemize}
+			\item Gian Marco Bratzu;
+			\item Ciuche Bianca;
+			\item Ludovico Brocca;
+			\item Andrea Deidda;
+			\item Matteo Depascale;
+			\item Stefano Zanatta;
+			\item Sig. Stefano Dindo.
+		\end{itemize}
+	\end{itemize}
+	
+	\section{Resoconto}
+	\subsection{Argomenti discussi}
+	Nel corso della riunione effettuata mediante Google Meet sono state discusse varie problematiche emerse durante la progettazione e l'implementazione dei blocchi dell'app.
+	\begin{itemize}
+		\item {Si è discusso di una possibile soluzione al problema di come attivare\glossario{Alexa}una volta che l'utente ha creato un blocco sveglia all'interno del suo \textit{workflow$_{G}$}. Dopo un'analisi approfondita del problema si è ritenuto che il blocco Sveglia possa essere trascurato dall'implementazione;}
+		\item {Si è discusso con la proponente se i manuali utente e sviluppatore dovessero essere scritti in italiano, in inglese o in entrambe le lingue. La decisione viene lasciata al gruppo;}
+		\item {Data l'inesperienza del gruppo, si è chiesto alla\glossario{proponente}se fosse disponibile a fare incontri di formazione riguardanti i test di unità eseguiti con\glossario{Mocha}e \textit{Chai$_{G}$}. La proponente ha espresso la sua disponibilità nel fare questi incontri in futuro, presso l'azienda o tramite Conference call;}
+		\item {Si è discusso infine di un problema riscontrato durante l'implementazione del blocco Lista: se l'utente chiede, tramite comando vocale, ad Alexa di rimuovere o aggiungere un elemento alla lista, potrebbero verificarsi problemi di comprensione tra il dispositivo e l'utente e così apportare modifiche sbagliate alla lista. Il team propone di permettere solo tramite app, all'utente, l'aggiunta e la rimozione degli elementi nella lista. La proponente consiglia di far chiedere ad Alexa, all'utente, la conferma delle modifiche che si vogliono apportare alla lista.}
+	\end{itemize}
+	\subsection{Tracciamento decisioni}
+	\begin{table}[tbph]
+		\centering
+		\begin{tabularx}{\textwidth}{|C|C|}
+			\hline
+			\textbf{Codice } & \textbf{Decisione} \\
+			\hline
+			01-VER\_2019-03-22& Rimozione del blocco Sveglia.\\
+			\hline
+			02-VER\_2019-03-22& Il gruppo può decidere liberamente se scrivere i manuali in italiano e/o inglese.\\
+			\hline
+			03-VER\_2019-03-22& In futuro, se necessario, il gruppo chiederà degli incontri di formazione alla proponente.\\
+			\hline
+		\end{tabularx}
+		\caption{Tracciamento decisioni}
+	\end{table}
+	\label{LastPage}
+\end{document}
