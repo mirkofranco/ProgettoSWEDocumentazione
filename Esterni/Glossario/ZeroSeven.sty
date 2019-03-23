@@ -1,30 +1,5 @@
 %-------------------INIZIO pacchetti utilizzati -----------------------------------------
-\RequirePackage[T1]{fontenc}	% codifica dei font in uscita
-\RequirePackage[utf8]{inputenc} % codifica dei font in uscita
-\RequirePackage[italian]{babel} % lingua del documento
-\RequirePackage{graphicx}		% pacchetto per la grafica
-\RequirePackage{url}			% per scrivere gli indirizzi Internet
-\RequirePackage{enumerate} % liste  lettere
-\RequirePackage{subfiles}
-\RequirePackage[bookmarks=true,hyperfootnotes=false,colorlinks=true]{hyperref}
-\RequirePackage{fancyhdr}
-
-\RequirePackage{longtable}
-\RequirePackage{tabularx}
-\RequirePackage{booktabs}
-\RequirePackage{appendix}
-\RequirePackage[official]{eurosym} % per riprodurre il simbolo €
-\RequirePackage{caption}
-\RequirePackage[table]{xcolor}
-\RequirePackage{tabu}
-
-
-\captionsetup{tableposition=top,figureposition=bottom,font=small}
-\captionsetup{format=hang,labelfont={sf,bf}}
-\captionsetup[table]{position=bottom}
-\newcolumntype{C}{>{\centering\arraybackslash}X} % nell'ambiente tabularx è possibile usare C invece di X per centrare
-\renewcommand{\arraystretch}{1.27}  % Aumenta il padding delle tabelle
-
+\usepackage{../../Configurazione}
 %-------------------FINE pacchetti utilizzati --------------------------------------------
 
 %-------------------INIZIO stile intestazioni e piè di pagina -----------------------------------------
@@ -37,7 +12,7 @@
 		\pagenumbering{Roman}
 		\fancyhf{}
 		\lhead{#1}
-		\rhead{\nouppercase{\rightmark}}
+		\rhead{\nouppercase{\leftmark}}
 		\rfoot{\thepage~di \pageref{LastFrontPage}}
 		\renewcommand{\headrulewidth}{0.4pt}
 		\renewcommand{\footrulewidth}{0.4pt}
@@ -55,7 +30,7 @@
 		\pagenumbering{arabic}
 		\fancyhf{}
 		\lhead{#1}
-		\rhead{\nouppercase{\rightmark}}
+		\rhead{\nouppercase{\leftmark}}
 		\rfoot{
 			\hypersetup{
 				colorlinks=true,
@@ -63,7 +38,7 @@
 			}
 			\thepage~di \pageref{LastPage}
 		}
-		\lfoot{Glossario 2.0.0}
+		\lfoot{\glossariodocumento}
 		\renewcommand{\headrulewidth}{0.4pt}
 		\renewcommand{\footrulewidth}{0.4pt}
 	}
@@ -115,15 +90,8 @@
 \makeatother
 %-------------------FINE creazione subsubparagraph--------------------------------------
 
-\newcommand{\logo}{ 
-	\vspace{1.5cm}
-	{\includegraphics[scale=0.5]{images/logo_home} \DeclareGraphicsExtensions{.png}\par}
-	\vspace{2cm}
-	%{\includegraphics[scale=0.7]{images/logo_home} \DeclareGraphicsExtensions{.png}\par}
-	%\vspace{2cm}
-	%\vfill \vfill
-	%\texttt{zerosevenswe@gmail.com}	 
-}
+
+
 
 
 %-------------------FINE comandi personalizzati-----------------------------------------

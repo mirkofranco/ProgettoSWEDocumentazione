@@ -1,0 +1,57 @@
+\RequirePackage[T1]{fontenc}	% codifica dei font in uscita
+\RequirePackage[utf8]{inputenc} % codifica dei font in uscita
+\RequirePackage[italian]{babel} % lingua del documento
+\RequirePackage{graphicx}		% pacchetto per la grafica
+\RequirePackage{url}			% per scrivere gli indirizzi Internet
+\RequirePackage{enumerate} % liste  lettere
+\RequirePackage{subfiles}
+\RequirePackage[bookmarks=true,hyperfootnotes=false,colorlinks=true]{hyperref}
+\RequirePackage{fancyhdr}
+
+\RequirePackage{longtable}
+\RequirePackage{tabularx}
+\RequirePackage{booktabs}
+\RequirePackage{appendix}
+\RequirePackage[official]{eurosym} % per riprodurre il simbolo €
+\RequirePackage{caption}
+\RequirePackage[table]{xcolor}
+\RequirePackage{tabu}
+\usepackage{eurosym}
+
+\captionsetup{tableposition=top,figureposition=bottom,font=small}
+\captionsetup{format=hang,labelfont={sf,bf}}
+\captionsetup[table]{position=bottom}
+\newcolumntype{C}{>{\centering\arraybackslash}X} % nell'ambiente tabularx è possibile usare C invece di X per centrare
+\renewcommand{\arraystretch}{1.27}  % Aumenta il padding delle tabelle
+
+\newcommand{\logo}{ 
+	\vspace{1.5cm}
+	{\includegraphics[scale=0.5]{images/logo_home} \DeclareGraphicsExtensions{.png}\par}
+	\vspace{2cm}
+}
+
+
+\newcommand{\intent}[1]{
+	\item \textit{"#1"}
+}
+
+\newcommand{\glossario}[1]{
+	\textit{$#1_{G}$}
+}
+
+
+\newcommand{\pianodiprogetto}{
+	\textit{Piano di Progetto v3.0.0}
+}
+
+\newcommand{\analisideirequisiti}{
+	\textit{Analisi dei Requisiti v3.0.0}
+}
+
+\newcommand{\pianodiqualifica}{
+	\textit{Piano di Qualifica v3.0.0}
+}
+
+\newcommand{\glossariodocumento}{
+		\textit{Glossario v3.0.0}
+}
