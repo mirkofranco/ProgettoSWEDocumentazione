@@ -7,7 +7,6 @@
 \RequirePackage{subfiles}
 \RequirePackage[bookmarks=true,hyperfootnotes=false,colorlinks=true]{hyperref}
 \RequirePackage{fancyhdr}
-
 \RequirePackage{longtable}
 \RequirePackage{tabularx}
 \RequirePackage{booktabs}
@@ -17,12 +16,22 @@
 \RequirePackage[table]{xcolor}
 \RequirePackage{tabu}
 \usepackage{eurosym}
+\usepackage{cleveref}
 
 \captionsetup{tableposition=top,figureposition=bottom,font=small}
 \captionsetup{format=hang,labelfont={sf,bf}}
 \captionsetup[table]{position=bottom}
 \newcolumntype{C}{>{\centering\arraybackslash}X} % nell'ambiente tabularx è possibile usare C invece di X per centrare
 \renewcommand{\arraystretch}{1.27}  % Aumenta il padding delle tabelle
+
+
+\crefname{chapter}{§}{§§}
+\crefname{section}{§}{§§}
+\crefname{subsection}{§}{§§}
+\crefname{subsubsection}{§}{§§}
+\crefname{paragraph}{§}{§§}
+\crefname{subparagraph}{§}{§§}
+
 
 \newcommand{\logo}{ 
 	\vspace{1.5cm}
@@ -55,3 +64,5 @@
 \newcommand{\glossariodocumento}{
 		\textit{Glossario v3.0.0}
 }
+
+
