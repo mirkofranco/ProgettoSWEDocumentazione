@@ -17,5 +17,5 @@ jobs:
         - pip install --user textract 
         - cd scripts
         - python gulpease.py
-#notifications:
-#  slack: zerosevengroup:awH2p9uSzEPY9plMSyKBtAHF
+notifications:
+  slack: zerosevengroup:awH2p9uSzEPY9plMSyKBtAHF
