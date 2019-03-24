@@ -1,6 +1,5 @@
-\chapter{Resoconto delle attività di verifica}
-\label{resoconto}
-\section{Analisi}
+\chapter{Resoconto delle attività di verifica}\label{resoconto}
+\section{Analisi}\label{Analisi}
 Nel periodo antecedente la Revisione dei Requisiti sono stati verificati i documenti ed i processi applicando quanto descritto nelle \textit{Norme di Progetto v2.0.0}.\\
 L'analisi statica è stata effettuata secondo i criteri e le modalità indicate nelle \textit{Norme di Progetto}.\\ 
 Per gli errori riscontrati effettuando \textit{walkthrough$_{G}$}, si è provveduto a correggere le anomalie riscontrate e sono stati riportati nella lista di controllo nelle \textit{Norme di Progetto v2.0.0} per permettere di effettuare inspection successivamente.\\
@@ -49,12 +48,13 @@ Durante il breve periodo di Revisione Analisi, il gruppo si è preparato allo sv
 \subsection{Verifica dei processi}
 I miglioramenti principali (tutti descritti nelle \textit{Norme di Progetto v2.0.0}) sono stati:
 \begin{itemize}
-	\item Automatizzato il calcolo delle ore di lavoro integrando \glossario{Harvest} ad \glossario{Asana};
-	\item Automatizzato il calcolo dell'indice di Gulpease, tramite script;
+	\item Automatizzato il calcolo delle ore di lavoro integrando\glossario{Harvest}ad \textit{Asana$_{G}$};
+	\item Automatizzato il calcolo dell'\textit{Indice di Gulpease$_{G}$}, tramite script;
 	\item Se dei documenti contenenti degli errori grammaticali raggiungono la repository, un bot avvisa per email chi ha commesso l'errore e invia una notifica al gruppo.
 \end{itemize}
 
 \subsubsection{MP001 Schedule variance}
+Durante il periodo di Revisione Analisi si è verificato un aumento del ritardo dello stato del progetto, che dopo un certo punto si è stabilizzato, superando di molto la soglia di ottimalità prestabilita.
 \begin{figure} [h]
     \centering
 	\includegraphics[scale=0.5]{./images/svRa.png}
@@ -62,22 +62,24 @@ I miglioramenti principali (tutti descritti nelle \textit{Norme di Progetto v2.0
 \end{figure}
 \pagebreak
 \subsubsection{MP002 Budget variance}
+Con l'aumento dello schedule variance di conseguenza anche il budget variance ha superato di molto le nostre aspettative.
 \begin{figure} [h]
     \centering
 	\includegraphics[scale=0.5]{./images/bvra.png}
 	\caption{\textit{MP002 - Revisione Analisi}}\label{}
 \end{figure}
-
 \section{Progettazione della base tecnologica}
 \label{progettazione}
 \subsection{MP001: Schedule variance}
+A causa di un imprevisto successo all'interno del gruppo con la tecnologia \textit{API}\glossario{Gateway}c'è stato un notevole innalzamento dello schedule variance che ha raggiunto il picco massimo ai primi di marzo.
 \begin{figure} [h]
     \centering
-	\includegraphics[scale=0.5]{./images/svP.png}
+	\includegraphics[scale=0.6]{./images/svP.png}
 	\caption{\textit{MP001 - Progettazione della base tecnologica}}\label{}
 \end{figure}
 \pagebreak
 \subsection{MP002: Budget variance}
+In questo periodo il budget variance è stato più o meno sempre stabile ma comunque di molto al di sopra della soglia ottimale.
 \begin{figure} [h]
     \centering
 	\includegraphics[scale=0.5]{./images/bvP.png}
@@ -85,7 +87,7 @@ I miglioramenti principali (tutti descritti nelle \textit{Norme di Progetto v2.0
 \end{figure}
 
 \subsection{MP003: SPICE capability level}
-Di seguito vengono riportati i livelli di maturità raggiunti dai processi eseguiti durante lo sviluppo del \glossario{poc}. Data l'inesperienza, non viene raggiunto il livello di accettazione richiesto (3) per la maggior parte dei processi, ma il gruppo sta lavorando per migliorare.
+Di seguito vengono riportati i livelli di maturità raggiunti dai processi eseguiti durante lo sviluppo del \textit{Proof of Concept$_{G}$}. Data l'inesperienza, non viene raggiunto il livello di accettazione richiesto (3) per la maggior parte dei processi, ma il gruppo sta lavorando per migliorare.
 \begin{figure} [h]
     \centering
 	\includegraphics[scale=0.5]{./images/15504.png}
@@ -93,19 +95,19 @@ Di seguito vengono riportati i livelli di maturità raggiunti dai processi esegu
 \end{figure}
 
 \subsection{MP005:  Occorrenza rischi non previsti}
-\textbf{rischi non previsti: 2}
+\textbf{Rischi non previsti: 2}
 \begin{itemize}
-	\item Un aggiornamento automatico di \glossario{Android Studio} ha completamente rimosso una libreria utilizzata dall'applicazione mobile, quindi il gruppo ha perso tempo per implementane una alternativa. Questo è successo perché la libreria in questione era deprecata. Per evitare problemi simili, l'utilizzo di librerie deprecate è stato vietato, come descritto nelle \textit{Norme di Progetto};
-	\item E' stata inserita una chiave di accesso Amazon nel repository. Il gruppo è stato avvisato da Amazon, e ha dovuto creare nuove chiavi per tutti i membri.
+	\item Un aggiornamento automatico di\glossario{Android Studio}ha completamente rimosso una libreria utilizzata dall'applicazione mobile, quindi il gruppo ha perso tempo per implementane una alternativa. Questo è successo perché la libreria in questione era deprecata. Per evitare problemi simili, l'utilizzo di librerie deprecate è stato vietato, come descritto nelle \textit{Norme di Progetto};
+	\item É stata inserita una chiave di accesso Amazon nel repository. Il gruppo è stato avvisato da Amazon, e ha dovuto creare nuove chiavi per tutti i membri.
 \end{itemize}
 
 \subsection{MP006: Indisponibilità dei servizi}
-\textbf{indisponibilità dei servizi: 0}\\
+\textbf{Indisponibilità dei servizi: 0}\\
 Durante il periodo di progettazione della base tecnologica, il gruppo non ha riscontrato problemi riguardanti il downtime di servizi esterni.
 
 \subsection{MP013: Percentuale build superate}
 Viene fatta distinzione tra Android e Skill, in quanto vengono contenute in repository diversi.\\
-Le build non superate sono 24 su 134 per la Skill e 29 su 232 per Android. Entrambe superano il range di ottimalità (80\%);
+Le build non superate sono 24 su 134 per la Skill e 29 su 232 per Android. Entrambe superano il range di ottimalità (80\%).
 \begin{figure} [h]
     \centering
 	\includegraphics[scale=0.5]{./images/StatobuildTravis-ciandroid.png}
@@ -123,7 +125,7 @@ Come si può vedere dai grafici, il numero di commit è stato abbastanza costant
 \begin{figure} [h]
     \centering
 	\includegraphics[scale=0.5]{./images/dailycommits_kotlin.PNG}
-    \caption{\textit{MP014 - Android- Progettazione della base tecnologica}}
+    \caption{\textit{MP014 - Android - Progettazione della base tecnologica}}
 \end{figure}
 \begin{figure} [h]
     \centering
@@ -140,15 +142,15 @@ Come si può vedere dai grafici, il numero di commit è stato abbastanza costant
 \begin{figure} [h]
     \centering
 	\includegraphics[scale=0.5]{./images/RequisitiSoddisfatti.png}
-    \caption{\textit{MP015 - MP015 Differenza soddisfatti e non soddisfatti}}
+    \caption{\textit{MP015 - MP016 Differenza soddisfatti e non soddisfatti}}
 \end{figure}
 \subsection{MPR001 Ortografia}
 Grazie allo script per la segnalazione automatica degli errori, questi vengono corretti a ogni push nel develop. Durante la verifica, comunque, sono stati trovati da zero a due errori per documento passati allo script. 
-\subsection{MPR002 \textbf{Indice di Gulpease$_{G}$}}
+\subsection{MPR002 Indice di Gulpease}
 \begin{figure} [h]
     \centering
 	\includegraphics[scale=0.5]{./images/gulpeaseP.png}
-    \caption{\textit{MPR002 \glossario{Indice di Gulpease}}}
+    \caption{\textit{MPR002 \textit{Indice di Gulpease$_{G}$}}}
 \end{figure}
 \newpage
 \section{Progettazione di dettaglio e codifica}

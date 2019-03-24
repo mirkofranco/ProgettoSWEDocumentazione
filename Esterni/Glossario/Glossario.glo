@@ -1,3 +1,83 @@
+\glossaryentry{Account linking?\glossentry{Account }|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Activity?\glossentry{Activity}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Adapter?\glossentry{Adapter}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Agile?\glossentry{Agile}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Alexa?\glossentry{Alexa}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Amazon?\glossentry{Amazon}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Android?\glossentry{Android}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{API?\glossentry{API}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{API Gateway?\glossentry{API Gateway}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Asana?\glossentry{Asana}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Assertion library?\glossentry{Assertion library}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Astah UML?\glossentry{Astah}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Aurora Serverless?\glossentry{Aurora}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Amazon Web Services?\glossentry{AWS}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{AWS Lambda?\glossentry{AWS Lambda}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Backup?\glossentry{Backup}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Baseline?\glossentry{Baseline}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Bug?\glossentry{Bug}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Capitolato?\glossentry{Capitolato}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Chai?\glossentry{Chai }|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Conference Call?\glossentry{Conference Call}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Connettore?\glossentry{Connettore}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Design Pattern?\glossentry{Design Pattern}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Diagrammi di Gantt?\glossentry{Diagrammi di Gantt}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{DynamoDB?\glossentry{DynamoDB}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Express?\glossentry{Express}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Fragment?\glossentry{Fragment}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Framework?\glossentry{Framework}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{GanttProject?\glossentry{ganttProject}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{GitHub?\glossentry{GitHub}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Google Hangouts?\glossentry{Google Hangouts}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Gradle?\glossentry{gradle}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Harvest?\glossentry{harvest}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Indice di Gulpease?\glossentry{Indice di Gulpease}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Inspection?\glossentry{Inspection}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Instagantt?\glossentry{Instagantt}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{iOS?\glossentry{iOS}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Istanbul?\glossentry{Istanbul}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Jasmine?\glossentry{Jasmine}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{JavaDoc?\glossentry{JavaDoc}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Javascript?\glossentry{Javascript}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Kotlin?\glossentry{Kotlin}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{MegAlexa?\glossentry{MegAlexa}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Milestone?\glossentry{Milestone}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Mocha?\glossentry{Mocha}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Mock?\glossentry{Mock}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Node.js?\glossentry{NodeJS}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{npm?\glossentry{npm}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{PragmaDB?\glossentry{pragmaDB}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Processo?\glossentry{Processo}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Prodotto?\glossentry{Prodotto}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Progetto?\glossentry{Progetto}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Proof Of Concept?\glossentry{Proof Of Concept}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Proponente?\glossentry{Proponente}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Requisito?\glossentry{Requisito}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{REST API?\glossentry{REST API}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Routine?\glossentry{Routine}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Scrum?\glossentry{Scrum}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Skill?\glossentry{Skill}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Skype?\glossentry{Skype}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{SonarQube?\glossentry{SonarQube}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{SPICE?\glossentry{SPICE}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Sprint?\glossentry{Sprint}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Stakeholders?\glossentry{Stakeholders}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{SVG?\glossentry{SVG}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Swift?\glossentry{Swift}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Telegram?\glossentry{Telegram}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Test Driven Development?\glossentry{test Driven Development}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{TeXstudio?\glossentry{TeXstudio}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Ticket?\glossentry{Ticket}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Travis CI?\glossentry{travis CI}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{UML?\glossentry{UML}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Upper Camel Case?\glossentry{Upper Camel Case}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Verifica?\glossentry{Verifica}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{ViewModel?\glossentry{viewModel}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Voice Dialog Flow?\glossentry{Voice Dialog Flow}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Walkthrough?\glossentry{Walkthrough}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{Workflow?\glossentry{Workflow}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{XML (eXtensible Markup Language)?\glossentry{xML}|setentrycounter[]{page}\glsnumberformat}{I}
+\glossaryentry{XML Schema?\glossentry{xML Schema}|setentrycounter[]{page}\glsnumberformat}{I}
 \glossaryentry{Account linking?\glossentry{a}|setentrycounter[]{page}\glsnumberformat}{I}
 \glossaryentry{Agile?\glossentry{agile}|setentrycounter[]{page}\glsnumberformat}{I}
 \glossaryentry{Alexa?\glossentry{alexa}|setentrycounter[]{page}\glsnumberformat}{I}
