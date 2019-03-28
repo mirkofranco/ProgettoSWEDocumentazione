@@ -353,8 +353,8 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 	L'attore inserisce un url sbagliato. (UC2.1.2.16.1)
 \end{itemize}
 
-\section{UC2.1.2.16.1: Feed RSS inesistente}
-\label{UC2.1.2.16.1}
+\section{UC2.1.2.21: Feed RSS inesistente}
+\label{UC2.1.2.21}
 \begin{itemize}
 	\item \textbf{Attori}: Utente autenticato;
 	\item \textbf{Descrizione}: L'attore ha inserito un feed RSS non corretto
@@ -406,6 +406,17 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 	\item \textbf{Postcondizione}: Il sistema ha avvisato l'utente dell'inesistenza dell'url e gli permette di modificarlo oppure eliminarlo
 	\item \textbf{Scenario principale}:
 	\begin{enumerate}  \item  Il sistema avvisa l'utente dell'inesistenza dell'url;  \item  L'utente modifica l'url o lo elimina.\end{enumerate}
+\end{itemize}
+
+\section{UC2.1.2.21: Feed RSS inesistente}
+\label{UC2.1.2.21}
+\begin{itemize}
+	\item \textbf{Attori}: Utente autenticato;
+	\item \textbf{Descrizione}: L'attore ha inserito un feed RSS non corretto
+	\item \textbf{Precondizione}: L'attore ha inserito un feed RSS non corretto
+	\item \textbf{Postcondizione}: L'attore ha inserito un feed RSS corretto, oppure ha annullato l'operazione.
+	\item \textbf{Scenario principale}:
+	\begin{enumerate} \item Il sistema chiede nuovamente il feed RSS oppure permette di annullare l'inserimento;  \item  L'attore inserisce un Feed RSS corretto oppure annulla l'operazione.\end{enumerate}
 \end{itemize}
 
 \section{UC2.2: Eliminazione workflow}
