@@ -207,14 +207,24 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 
 \section{UC2.1.2.4: Inserimento Twitter}
 \label{UC2.1.2.4}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.4]{Diagram/UC2-1-2-4.png}
+	\caption{Inserimento Twetter}\label{}
+\end{figure}
 \begin{itemize}
 	\item \textbf{Attori}: utente autenticato;
 	\item \textbf{Descrizione}: L'attore può inserire un blocco "Twitter" nel proprio workflow, che permette all'utente di pubblicare o rispondere ai tweet.
 	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco
 	\item \textbf{Postcondizione}: L'attore ha inserito le credenziali (del suo account Twitter) e configurato il blocco "Twitter".
 	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore seleziona il blocco Twitter;  \item  L'attore inserisce le credenziali del proprio account;  \item  L'attore seleziona quali tweet vuole visualizzare (ordine cronologico, di importanza, account specifici).\end{enumerate}
+	\begin{enumerate} 
+		\item  L'attore inserisce le credenziali del proprio account (UC2.1.2.4.1);  
+		\item  L'attore seleziona quali tweet vuole visualizzare (ordine cronologico, di importanza, account specifici) (UC2.1.2.4.2).
+	\end{enumerate}
 \end{itemize}
+
+
 
 \section{UC2.1.2.5: Inserimento Lista}
 \label{UC2.1.2.5}
@@ -352,7 +362,6 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 	\item \textbf{Scenari alternativi}:
 	L'attore inserisce un url sbagliato. (UC2.1.2.16.1)
 \end{itemize}
-
 
 
 \section{UC2.1.2.17: Inserimento Filtro}
