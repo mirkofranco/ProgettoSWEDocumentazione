@@ -1,0 +1,99 @@
+%-------------------INIZIO pacchetti utilizzati -----------------------------------------
+\usepackage{../../Configurazione}
+%-------------------FINE pacchetti utilizzati --------------------------------------------
+
+%-------------------INIZIO stile intestazioni e piè di pagina -----------------------------------------
+\newcommand{\intestazioni}[1]{
+	\fancypagestyle{myfront}{
+		\hypersetup{
+			colorlinks=true,
+			linkcolor=black,
+		}
+		\pagenumbering{Roman}
+		\fancyhf{}
+		\lhead{#1}
+		\rhead{\nouppercase{\leftmark}}
+		\rfoot{\thepage~di \pageref{LastFrontPage}}
+		\renewcommand{\headrulewidth}{0.4pt}
+		\renewcommand{\footrulewidth}{0.4pt}
+	}
+	
+	
+	\fancypagestyle{mymain}{
+		\hypersetup{
+			colorlinks=true,
+			linkcolor=black,
+			anchorcolor=black,
+			citecolor=black,
+			urlcolor=blue,
+		}
+		\pagenumbering{arabic}
+		\fancyhf{}
+		\lhead{#1}
+		\rhead{\nouppercase{\leftmark}}
+		\rfoot{
+			\hypersetup{
+				colorlinks=true,
+				linkcolor=black,
+			}
+			\thepage~di \pageref{LastPage}
+		}
+		\lfoot{\manualeutente}
+		\renewcommand{\headrulewidth}{0.4pt}
+		\renewcommand{\footrulewidth}{0.4pt}
+	}
+	
+}
+%-------------------FINE stile intestazioni e piè di pagina -----------------------------------------
+
+
+%-------------------INIZIO comandi personalizzati-----------------------------------------
+
+\newcommand{\mail}[1]{\href{mailto:#1}{\texttt{#1}}}
+\newcommand{\mailleaf}{\mail{zerosevenswe@gmail.com}}
+
+
+
+
+
+
+
+\newcommand{\frmdate}[3]{#3-#2-#1}
+\newcommand{\frmtime}[2]{#1:#2}
+\newcommand{\frmURI}[1]{{\color{blue}\url{#1}}}
+\newcommand{\frmspath}[1]{\texttt{#1}}
+\newcommand{\frmrole}[1]{\textit{#1}}
+\newcommand{\frmdoc}[1]{\textit{“#1”}}
+\newcommand{\frmfile}[1]{\texttt{“#1”}}
+\newcommand{\frmrev}[1]{\textbf{#1}}
+\newcommand{\frmphase}[1]{\textbf{#1}}
+
+\newcommand{\progetto}{\textit{MegAlexa}}
+
+%-------------------INIZIO creazione subsubparagraph--------------------------------------
+\makeatletter
+\newcounter{subsubparagraph}[subparagraph]
+\def\toclevel@subsubparagraph{6}
+\renewcommand\thesubsubparagraph{%
+	\thesubparagraph.\@arabic\c@subsubparagraph}
+\newcommand\subsubparagraph{%
+	\@startsection{subsubparagraph}    % counter
+	{6}                              % level
+	{\parindent}                     % indent
+	{3.25ex \@plus 1ex \@minus .2ex} % beforeskip
+	{-1em}                           % afterskip
+	{\normalfont\normalsize\bfseries}}
+\newcommand\l@subsubparagraph{\@dottedtocline{6}{13.5em}{5em}}
+\newcommand{\subsubparagraphmark}[1]{}
+\setcounter{tocdepth}{6}
+\setcounter{secnumdepth}{6} % aggiunge contatore ai paragrafi
+\makeatother
+%-------------------FINE creazione subsubparagraph--------------------------------------
+
+
+
+
+
+%-------------------FINE comandi personalizzati-----------------------------------------
+
+\endinput

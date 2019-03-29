@@ -1,0 +1,44 @@
+\documentclass[a4paper,12pt,openany]{book}
+
+\usepackage{ZeroSeven}
+\usepackage{ltablex}
+\usepackage{hyperref}
+\titlepage{}
+
+\author{Ludovico Brocca}
+\date{2018-12-19}
+\intestazioni{\includegraphics[scale=0.3]{images/logo_intestazione}}
+\pagestyle{myfront}
+\begin{document}
+\begin{titlepage}
+	\centering
+	{\huge\bfseries MegAlexa \par}
+	Arricchitore di skill di Amazon Alexa
+	\line(1,0){350} \\
+	{\scshape\LARGE Manuale Utente \par}
+	\vspace{1cm}
+	{\scshape Gruppo ZeroSeven \par}
+	\logo
+	%devono essere compilati questi campi ogni volta
+	\begin{tabular}{c|c}
+		{\hfill \textbf{Versione}} 			& 0.0.1		\\
+		{\hfill\textbf{Data Redazione}} 	& 2019-03-29	\\ 
+		{\hfill\textbf{Redazione}} 			&  		Mirko Franco \\
+		{\hfill\textbf{Verifica}} 				&  	?? \\
+		{\hfill\textbf{Approvazione}} 		&  	?? \\
+		{\hfill\textbf{Uso}} 					& 		Esterno		\\ 
+		{\hfill\textbf{Distribuzione}} 			& 			Prof. Tullio Vardanega \\ & Prof. Riccardo Cardin \\ & Gruppo ZeroSeven	\\ & Zero12 s.r.l. \\
+		{\hfill\textbf{Email di contatto}} & zerosevenswe@gmail.com \\
+	\end{tabular}
+\end{titlepage}
+	
+	\label{LastFrontPage}
+	\newpage	
+	\input{tabella_modifiche}
+	\pagestyle{mymain}
+	\tableofcontents
+	\listoffigures
+	\listoftables
+	\input{sezioni/introduzione}
+	\label{LastPage}
+\end{document}
