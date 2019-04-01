@@ -242,8 +242,17 @@ I diagrammi delle classi sono collegati fra loro da frecce che esplicitano le di
 	\end{figure}
 \end{itemize}
 
-\subsubsection{Integrazione}
-L'integrazione continua avviene mediante l'azione congiunta di\glossario{Travis-CI}e \textit{SonarQube$_{G}$}:ad ogni modifica vengono eseguiti script automatici per il controllo della qualità del codice, il risultato di ogni build viene notificata ai membri del gruppo tramite il canale\glossario{Slack}dedicato.
+
+\subsection{Diagrammi dei package}
+Ogni package viene rappresentato attraverso un rettangolo con un'etichetta per il nome, che può contenere eventuali sotto-package. Le dipendenze tra i vari package vengono segnalate attraverso una freccia tratteggiata. Tale freccia, disegnata dal package A al package B, indica una dipendenza di A nei confronti di B.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{images/DiagrammaPackage.png}
+	\caption{Esempio di diagramma di package con dipendenza}\label{}
+\end{figure}
+
+%\subsection{Integrazione}
+%L'integrazione continua avviene mediante l'azione congiunta di\glossario{Travis-CI}e \textit{SonarQube$_{G}$}:ad ogni modifica %vengono eseguiti script automatici per il controllo della qualità del codice, il risultato di ogni build viene notificata ai membri del %gruppo tramite il canale\glossario{Slack}dedicato.
 
 \subsection{Codifica}
 Questa attività segue la Progettazione e consiste nell'implementazione effettiva di quanto precedentemente progettato. Per lo sviluppo dell'applicazione Android è stato deciso di utilizzare il software \textit{Android Studio$_{G}$}.
