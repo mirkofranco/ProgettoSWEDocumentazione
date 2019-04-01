@@ -251,6 +251,16 @@ Ogni package viene rappresentato attraverso un rettangolo con un'etichetta per i
 	\caption{Esempio di diagramma di package con dipendenza}\label{}
 \end{figure}
 
+\subsection{Diagrammi di sequenza}
+I diagrammi di sequenza descrivono la collaborazione di un gruppo di oggetti che devono implementare collettivamente un comportamento. Ogni diagramma di sequenza avrà un senso di lettura verticale dall'alto al basso, verso che indica lo scorrere del tempo. I partecipanti vengono rappresentati tramite un rettangolo, al cui interno si trova un nome per identificarli rispettando la sintassi \texttt{name : Class}. Al di sotto di ogni istanza si trova la linea della vita. In ogni linea della vita ci sarò una barra di attivazione che indica in quale momento un partecipante è attivo. Da una barra di attivazione partono delle frecce, che rappresentano un messaggio, verso la linea della vita di oggetti già istanziati o, in alternativa, verso un nuovo partecipante per crearlo. 
+In particolare , vengono utilizzati i seguenti tipi di frecce:
+\begin{itemize}
+	\item Freccia piena, per rappresentare un messaggio sincrono: corrisponde alla classica chiamata di un metodo, dove il chiamante rimane in attesa di una risposta. Sopra questa freccia si deve specificare il metodo chiamato rispettando la sintassi \texttt{method(param)};
+	\item  Freccia, per indicare un messaggio asincrono: il chiamante non resta in attesa di risposta;
+	\item Freccia tratteggiata, per indicare il messaggio di ritorno. Sopra questa freccia va indicato il tipo che viene ritornato;
+	\item Freccia tratteggiata sormontata da << create >>: indica la creazione di un nuovo oggetto e termina sempre in un partecipante (rettangolo);
+	\item Freccia piena sormontata da << destroy >>: indica la distruzione di un oggetto e termina sempre in una X, nella quale termina anche la linea della vita di un oggetto.
+\end{itemize}
 %\subsection{Integrazione}
 %L'integrazione continua avviene mediante l'azione congiunta di\glossario{Travis-CI}e \textit{SonarQube$_{G}$}:ad ogni modifica %vengono eseguiti script automatici per il controllo della qualità del codice, il risultato di ogni build viene notificata ai membri del %gruppo tramite il canale\glossario{Slack}dedicato.
 
