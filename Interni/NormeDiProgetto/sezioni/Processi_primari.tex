@@ -244,6 +244,7 @@ I diagrammi delle classi sono collegati fra loro da frecce che esplicitano le di
 
 
 \subsection{Diagrammi dei package}
+\label{DiagrammiPackage}
 Ogni package viene rappresentato attraverso un rettangolo con un'etichetta per il nome, che può contenere eventuali sotto-package. Le dipendenze tra i vari package vengono segnalate attraverso una freccia tratteggiata. Tale freccia, disegnata dal package A al package B, indica una dipendenza di A nei confronti di B.
 \begin{figure}[h]
 	\centering
@@ -252,6 +253,7 @@ Ogni package viene rappresentato attraverso un rettangolo con un'etichetta per i
 \end{figure}
 
 \subsection{Diagrammi di sequenza}
+\label{DiagrammiSequenza}
 I diagrammi di sequenza descrivono la collaborazione di un gruppo di oggetti che devono implementare collettivamente un comportamento. Ogni diagramma di sequenza avrà un senso di lettura verticale dall'alto al basso, verso che indica lo scorrere del tempo. I partecipanti vengono rappresentati tramite un rettangolo, al cui interno si trova un nome per identificarli rispettando la sintassi \texttt{name : Class}. Al di sotto di ogni istanza si trova la linea della vita. In ogni linea della vita ci sarò una barra di attivazione che indica in quale momento un partecipante è attivo. Da una barra di attivazione partono delle frecce, che rappresentano un messaggio, verso la linea della vita di oggetti già istanziati o, in alternativa, verso un nuovo partecipante per crearlo. 
 In particolare , vengono utilizzati i seguenti tipi di frecce:
 \begin{itemize}
@@ -263,6 +265,7 @@ In particolare , vengono utilizzati i seguenti tipi di frecce:
 \end{itemize}
 
 \subsection{Diagrammi di attività}
+\label{DiagrammiAttivita}
 I diagrammi di attività descrivono la logica procedurale decomponendo un'attività in un insieme di azioni. Essi contengono i seguenti elementi collegati sempre da frecce, che vengono indicati come mostrato di seguito:
 \begin{itemize}
 	\item Nodo iniziale: rappresentato da un pallino pieno. Indica il punto da cui inizia l'attività;
