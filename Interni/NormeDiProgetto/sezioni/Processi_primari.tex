@@ -222,6 +222,24 @@ I diagrammi delle classi sono collegati fra loro da frecce che esplicitano le di
 		\includegraphics[scale=0.5]{images/Primitiva.png}
 		\caption{Relazione di dipendenza debole in un diagramma delle classi}\label{}
 	\end{figure}
+	\item Freccia a diamante vuota, da classe A a classe B: indica un'aggregazione, una relazione non forte ovvero una relazione nella quale le classi che che ne prendono parte hanno entrambe significato anche prese in modo singolo;
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.5]{images/Aggregazione.png}
+		\caption{Relazione di aggregazione in un diagramma delle classi}\label{}
+	\end{figure}
+	\item Freccia a diamante piena, da classe A a classe B: indica la composizione, una relazione forte dove un'istanza della classe contenuta ha senso solo se esiste un'istanza della classe che contiene;
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.5]{images/Composizione.png}
+		\caption{Relazione di composizione in un diagramma delle classi}\label{}
+	\end{figure}
+	\item Freccia vuota, da classe A a classe B: indica ereditarietà ed è il grado massimo di dipendenza fra classi. Indica che un oggetto A è anche un oggetto di tipo B.
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.5]{images/Ereditarieta.png}
+		\caption{Relazione di ereditarietà in un diagramma delle classi}\label{}
+	\end{figure}
 \end{itemize}
 
 \subsubsection{Integrazione}
