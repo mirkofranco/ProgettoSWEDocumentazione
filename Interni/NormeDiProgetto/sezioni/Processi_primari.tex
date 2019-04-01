@@ -190,12 +190,39 @@ Ogni classe viene rappresentato come un rettangolo diviso in tre sezioni:
 	\end{itemize}
 	\item \textbf{Operazioni}: elenco dei costruttori, modificatori e metodi di quel tipo, utilizzando la sintassi \texttt{visibility operationName(value: type) : type }.
 \end{itemize}
+Nel caso in cui una classe non dovesse contenere campi dati e/o metodi, apparirà nel diagramma comunque, seppur vuota, la sezione ad essi dedicata. 
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.5]{images/SchemaClasse.png}
 	\caption{Esempio diagramma di una classe}\label{}
 \end{figure}
-
+Nel caso di classi astratte il nome della stessa sarà scritto in corsivo.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{images/ClasseAstratta.png}
+	\caption{Esempio diagramma di una classe astratta}\label{}
+\end{figure}
+Aderendo alla sintassi UML2.x un'interfaccia viene rappresentata con cerchio vuoto con al di sotto il nome dell'interfaccia e l'elenco di operazioni.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{images/Interfaccia.png}
+	\caption{Esempio diagramma di un'interfaccia}\label{}
+\end{figure}
+I diagrammi delle classi sono collegati fra loro da frecce che esplicitano le dipendenze. In particolare, verranno considerati i seguenti tipi di freccia:
+\begin{itemize}
+	\item Freccia semplice: da classe A a classe B: indica che la classe A ha fra i propri campi dati una o più istanze della classe B;
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.5]{images/Dipendenza.png}
+		\caption{Relazione di dipendenza forte in un diagramma delle classi}\label{}
+	\end{figure}
+	\item Freccia tratteggiata, da classe A a classe B: indica una dipendenza, significa che A dipende da B secondo una primitiva che viene indicata al di sopra della freccia;
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.5]{images/Primitiva.png}
+		\caption{Relazione di dipendenza debole in un diagramma delle classi}\label{}
+	\end{figure}
+\end{itemize}
 
 \subsubsection{Integrazione}
 L'integrazione continua avviene mediante l'azione congiunta di\glossario{Travis-CI}e \textit{SonarQube$_{G}$}:ad ogni modifica vengono eseguiti script automatici per il controllo della qualità del codice, il risultato di ogni build viene notificata ai membri del gruppo tramite il canale\glossario{Slack}dedicato.
