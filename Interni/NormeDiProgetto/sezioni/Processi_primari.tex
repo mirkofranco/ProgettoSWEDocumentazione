@@ -140,7 +140,7 @@ La progettazione permette di:
 	\item facilitare la codifica da parte dei \textit{Programmatori}, riducendo la complessità del problema originale, permettendo di organizzare i compiti e possibilmente facilitando la parallelizzazione;
 	\item perseguire la correttezza per costruzione.
 \end{itemize}
-Come da \textit{Piano di Progetto v2.0.0} la Progettazione si svolgerà nell'arco di due periodi distinti. 
+Come da \pianodiprogetto la Progettazione si svolgerà nell'arco di due periodi distinti. 
 Nel primo di questi due periodi viene identificata una prima decomposizione logica dell'architettura, dopo aver opportunamente studiato i vari design patterns. Nel secondo la progettazione avviene in modo atomico e dettagliato, in modo che i \textit{Programmatori} possano implementare l'intero sistema nel modo più parallelo possibile. 
 L'architettura dovrà soddisfare le seguenti qualità: 
 \begin{itemize}
@@ -166,9 +166,142 @@ Al fine di rendere chiare e comprensibili le scelte progettuali effettuate e rid
 	\item \textbf{Diagrammi di sequenza}: descrivono la collaborazione di un gruppo di oggetti che devono implementare collettivamente un comportamento;
 	\item \textbf{Diagrammi di attività}: descrivono il flusso di operazioni di un'attività attraverso la sua logica procedurale;
 	\item \textbf{Diagrammi dei package}: descrivono un raggruppamento di un numero arbitrario di elementi (ad esempio classi) in un'unica unità ad alto livello.
+	
 \end{itemize}
-\subsubsection{Integrazione}
-L'integrazione continua avviene mediante l'azione congiunta di\glossario{Travis-CI}e \textit{SonarQube$_{G}$}:ad ogni modifica vengono eseguiti script automatici per il controllo della qualità del codice, il risultato di ogni build viene notificata ai membri del gruppo tramite il canale\glossario{Slack}dedicato.
+
+
+\subsection{Diagrammi delle classi}
+\label{DiagrammiDelleClassi}
+Lo scopo del diagrammi delle classi può essere riassunto in:
+\begin{itemize}
+	\item Descrizione e definizione del tipo degli oggetti che fanno parte di un sistema;
+	\item Descrizione e definizione delle relazioni statiche fra i tipi degli oggetti.
+\end{itemize}
+Le norme di seguito riportare valgono sia per \textit{Kotlin}, sia per \textit{NodeJS}.
+\\
+Ogni classe viene rappresentato come un rettangolo diviso in tre sezioni:
+\begin{itemize}
+	\item \textbf{Nome classe}: deve essere univoco, in notazione \glossario{CamelCase}, in inglese;
+	\item \textbf{Attributi}: elenco campi dati della classe, secondo la notazione \texttt{visibility name : type}. Il modificatore di accesso deve essere inserito obbligatoriamente e deve essere uno dei seguenti:
+	\begin{itemize}
+		\item \textbf{+}: visibilità pubblica;
+		\item \textbf{-}: visibilità privata;
+		\item \textbf{\#}: visibilità protetta.
+	\end{itemize}
+	\item \textbf{Operazioni}: elenco dei costruttori, modificatori e metodi di quel tipo, utilizzando la sintassi \texttt{visibility operationName(value: type) : type }.
+\end{itemize}
+Nel caso in cui una classe non dovesse contenere campi dati e/o metodi, apparirà nel diagramma comunque, seppur vuota, la sezione ad essi dedicata. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{images/SchemaClasse.png}
+	\caption{Esempio diagramma di una classe}\label{}
+\end{figure}
+Nel caso di classi astratte il nome della stessa sarà scritto in corsivo.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{images/ClasseAstratta.png}
+	\caption{Esempio diagramma di una classe astratta}\label{}
+\end{figure}
+Aderendo alla sintassi UML2.x un'interfaccia viene rappresentata con cerchio vuoto con al di sotto il nome dell'interfaccia e l'elenco di operazioni.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{images/Interfaccia.png}
+	\caption{Esempio diagramma di un'interfaccia}\label{}
+\end{figure}
+I diagrammi delle classi sono collegati fra loro da frecce che esplicitano le dipendenze. In particolare, verranno considerati i seguenti tipi di freccia:
+\begin{itemize}
+	\item Freccia semplice: da classe A a classe B: indica che la classe A ha fra i propri campi dati una o più istanze della classe B;
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.5]{images/Dipendenza.png}
+		\caption{Relazione di dipendenza forte in un diagramma delle classi}\label{}
+	\end{figure}
+	\item Freccia tratteggiata, da classe A a classe B: indica una dipendenza, significa che A dipende da B secondo una primitiva che viene indicata al di sopra della freccia;
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.5]{images/Primitiva.png}
+		\caption{Relazione di dipendenza debole in un diagramma delle classi}\label{}
+	\end{figure}
+	\item Freccia a diamante vuota, da classe A a classe B: indica un'aggregazione, una relazione non forte ovvero una relazione nella quale le classi che che ne prendono parte hanno entrambe significato anche prese in modo singolo;
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.5]{images/Aggregazione.png}
+		\caption{Relazione di aggregazione in un diagramma delle classi}\label{}
+	\end{figure}
+	\item Freccia a diamante piena, da classe A a classe B: indica la composizione, una relazione forte dove un'istanza della classe contenuta ha senso solo se esiste un'istanza della classe che contiene;
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.5]{images/Composizione.png}
+		\caption{Relazione di composizione in un diagramma delle classi}\label{}
+	\end{figure}
+	\item Freccia vuota, da classe A a classe B: indica ereditarietà ed è il grado massimo di dipendenza fra classi. Indica che un oggetto A è anche un oggetto di tipo B.
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.5]{images/Ereditarieta.png}
+		\caption{Relazione di ereditarietà in un diagramma delle classi}\label{}
+	\end{figure}
+\end{itemize}
+
+
+
+\subsection{Diagrammi di sequenza}
+\label{DiagrammiSequenza}
+I diagrammi di sequenza descrivono la collaborazione di un gruppo di oggetti che devono implementare collettivamente un comportamento. Ogni diagramma di sequenza avrà un senso di lettura verticale dall'alto al basso, verso che indica lo scorrere del tempo. I partecipanti vengono rappresentati tramite un rettangolo, al cui interno si trova un nome per identificarli rispettando la sintassi \texttt{name : Class}. Al di sotto di ogni istanza si trova la linea della vita. In ogni linea della vita ci sarò una barra di attivazione che indica in quale momento un partecipante è attivo. Da una barra di attivazione partono delle frecce, che rappresentano un messaggio, verso la linea della vita di oggetti già istanziati o, in alternativa, verso un nuovo partecipante per crearlo. 
+In particolare , vengono utilizzati i seguenti tipi di frecce:
+\begin{itemize}
+	\item Freccia piena, per rappresentare un messaggio sincrono: corrisponde alla classica chiamata di un metodo, dove il chiamante rimane in attesa di una risposta. Sopra questa freccia si deve specificare il metodo chiamato rispettando la sintassi \texttt{method(param)};
+	\item  Freccia, per indicare un messaggio asincrono: il chiamante non resta in attesa di risposta;
+	\item Freccia tratteggiata, per indicare il messaggio di ritorno. Sopra questa freccia va indicato il tipo che viene ritornato;
+	\item Freccia tratteggiata sormontata da << create >>: indica la creazione di un nuovo oggetto e termina sempre in un partecipante (rettangolo);
+	\item Freccia piena sormontata da << destroy >>: indica la distruzione di un oggetto e termina sempre in una X, nella quale termina anche la linea della vita di un oggetto.
+\end{itemize}
+
+\subsection{Diagrammi di attività}
+\label{DiagrammiAttivita}
+I diagrammi di attività descrivono la logica procedurale decomponendo un'attività in un insieme di azioni. Essi contengono i seguenti elementi collegati sempre da frecce, che vengono indicati come mostrato di seguito:
+\begin{itemize}
+	\item Nodo iniziale: rappresentato da un pallino pieno. Indica il punto da cui inizia l'attività;
+	\item Activity: raffigurata come un rettangolo che ne contiene una breve descrizione;
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.5]{images/PrimaActivity.png}
+		\caption{Rappresentazione di un nodo iniziale e attività in un diagramma}\label{}
+	\end{figure}
+	\item Fork: rappresentato da una linea lunga verticale od orizzontale, indica un punto in cui l'esecuzione si parallelizza senza alcun vincolo temporale fra attività di processi differenti;
+	\item Join: rappresentato da una linea lunga verticale od orizzontale, indica un punto in cui avviene la sincronizzazione fra processi paralleli;
+		\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.5]{images/ForkJoin.png}
+		\caption{Esempio di Fork e Join in un diagramma di attività}\label{}
+	\end{figure}
+	\item Branch: rappresentato da un rombo con una freccia in ingresso. Indica un punto in cui si può prendere una decisione e seguire solo uno dei rami, ognuno dei quali deve avere la guardia nel formato \texttt{[guardia]};
+	\item Merge: rappresentato da un rombo con una freccia in uscita. Indica il punto in cui i rami generati da un Branch si uniscono;
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.5]{images/BranchMerge.png}
+		\caption{Esempio di Branch e Merge in un diagramma di attività}\label{}
+	\end{figure}
+	\item Pin: rappresentato da un quadrato piccolo dove entrano o escono frecce dalle Activity. Indica il passaggio di un parametro, il cui tipo va indicato a fianco con la sintassi \texttt{type};
+	\item Segnali: rappresentati da due figure ad incastro, la prima per l'emissione del segnale, la seconda per la ricezione dello stesso e bloccante;
+	\item  Timeout: rappresentato da una clessidra, serve per indicare timeout o eventi ripetuti. I timeout hanno frecce entranti e frecce uscenti, mentre gli eventi ripetuti hanno solo frecce uscenti;
+	\item Partizioni: rappresentate da dei grandi rettangolo che dividono il diagramma, forniscono una responsabilità all'esecuzione delle azioni;
+	\item Regioni di espansione: rappresentate da un rettangolo con i bordi tratteggiati, con degli argomenti in entrata e in uscita,  indica la ripetizione delle attività su una collezione di elementi;
+	\item  Nodo di fine flusso: rappresentato da un cerchio vuoto con una X al centro, indica un punto in cui uno dei rami di esecuzione muore, ma l'esecuzione prosegue negli altri rami;
+	\item Nodo finale: rappresentato da due cerchi concentrici di cui il più esterno vuoto, indica il punto in cui l'esecuzione termina.
+	
+	\subsection{Diagrammi dei package}
+	\label{DiagrammiPackage}
+	Ogni package viene rappresentato attraverso un rettangolo con un'etichetta per il nome, che può contenere eventuali sotto-package. Le dipendenze tra i vari package vengono segnalate attraverso una freccia tratteggiata. Tale freccia, disegnata dal package A al package B, indica una dipendenza di A nei confronti di B.
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.5]{images/DiagrammaPackage.png}
+		\caption{Esempio di diagramma di package con dipendenza}\label{}
+	\end{figure}
+	
+	
+\end{itemize}
+%\subsection{Integrazione}
+%L'integrazione continua avviene mediante l'azione congiunta di\glossario{Travis-CI}e \textit{SonarQube$_{G}$}:ad ogni modifica %vengono eseguiti script automatici per il controllo della qualità del codice, il risultato di ogni build viene notificata ai membri del %gruppo tramite il canale\glossario{Slack}dedicato.
 
 \subsection{Codifica}
 Questa attività segue la Progettazione e consiste nell'implementazione effettiva di quanto precedentemente progettato. Per lo sviluppo dell'applicazione Android è stato deciso di utilizzare il software \textit{Android Studio$_{G}$}.
