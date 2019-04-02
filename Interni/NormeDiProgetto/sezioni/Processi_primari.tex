@@ -243,14 +243,6 @@ I diagrammi delle classi sono collegati fra loro da frecce che esplicitano le di
 \end{itemize}
 
 
-\subsection{Diagrammi dei package}
-\label{DiagrammiPackage}
-Ogni package viene rappresentato attraverso un rettangolo con un'etichetta per il nome, che può contenere eventuali sotto-package. Le dipendenze tra i vari package vengono segnalate attraverso una freccia tratteggiata. Tale freccia, disegnata dal package A al package B, indica una dipendenza di A nei confronti di B.
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.5]{images/DiagrammaPackage.png}
-	\caption{Esempio di diagramma di package con dipendenza}\label{}
-\end{figure}
 
 \subsection{Diagrammi di sequenza}
 \label{DiagrammiSequenza}
@@ -275,6 +267,37 @@ I diagrammi di attività descrivono la logica procedurale decomponendo un'attivi
 		\includegraphics[scale=0.5]{images/PrimaActivity.png}
 		\caption{Rappresentazione di un nodo iniziale e attività in un diagramma}\label{}
 	\end{figure}
+	\item Fork: rappresentato da una linea lunga verticale od orizzontale, indica un punto in cui l'esecuzione si parallelizza senza alcun vincolo temporale fra attività di processi differenti;
+	\item Join: rappresentato da una linea lunga verticale od orizzontale, indica un punto in cui avviene la sincronizzazione fra processi paralleli;
+		\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.5]{images/ForkJoin.png}
+		\caption{Esempio di Fork e Join in un diagramma di attività}\label{}
+	\end{figure}
+	\item Branch: rappresentato da un rombo con una freccia in ingresso. Indica un punto in cui si può prendere una decisione e seguire solo uno dei rami, ognuno dei quali deve avere la guardia nel formato \texttt{[guardia]};
+	\item Merge: rappresentato da un rombo con una freccia in uscita. Indica il punto in cui i rami generati da un Branch si uniscono;
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.5]{images/BranchMerge.png}
+		\caption{Esempio di Branch e Merge in un diagramma di attività}\label{}
+	\end{figure}
+	\item Pin: rappresentato da un quadrato piccolo dove entrano o escono frecce dalle Activity. Indica il passaggio di un parametro, il cui tipo va indicato a fianco con la sintassi \texttt{type};
+	\item Segnali: rappresentati da due figure ad incastro, la prima per l'emissione del segnale, la seconda per la ricezione dello stesso e bloccante;
+	\item  Timeout: rappresentato da una clessidra, serve per indicare timeout o eventi ripetuti. I timeout hanno frecce entranti e frecce uscenti, mentre gli eventi ripetuti hanno solo frecce uscenti;
+	\item Partizioni: rappresentate da dei grandi rettangolo che dividono il diagramma, forniscono una responsabilità all'esecuzione delle azioni;
+	\item Regioni di espansione: rappresentate da un rettangolo con i bordi tratteggiati, con degli argomenti in entrata e in uscita,  indica la ripetizione delle attività su una collezione di elementi;
+	\item  Nodo di fine flusso: rappresentato da un cerchio vuoto con una X al centro, indica un punto in cui uno dei rami di esecuzione muore, ma l'esecuzione prosegue negli altri rami;
+	\item Nodo finale: rappresentato da due cerchi concentrici di cui il più esterno vuoto, indica il punto in cui l'esecuzione termina.
+	
+	\subsection{Diagrammi dei package}
+	\label{DiagrammiPackage}
+	Ogni package viene rappresentato attraverso un rettangolo con un'etichetta per il nome, che può contenere eventuali sotto-package. Le dipendenze tra i vari package vengono segnalate attraverso una freccia tratteggiata. Tale freccia, disegnata dal package A al package B, indica una dipendenza di A nei confronti di B.
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.5]{images/DiagrammaPackage.png}
+		\caption{Esempio di diagramma di package con dipendenza}\label{}
+	\end{figure}
+	
 	
 \end{itemize}
 %\subsection{Integrazione}
