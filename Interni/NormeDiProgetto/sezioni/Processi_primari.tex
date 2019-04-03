@@ -260,34 +260,34 @@ In particolare , vengono utilizzati i seguenti tipi di frecce:
 \label{DiagrammiAttivita}
 I diagrammi di attività descrivono la logica procedurale decomponendo un'attività in un insieme di azioni. Essi contengono i seguenti elementi collegati sempre da frecce, che vengono indicati come mostrato di seguito:
 \begin{itemize}
-	\item Nodo iniziale: rappresentato da un pallino pieno. Indica il punto da cui inizia l'attività;
-	\item Activity: raffigurata come un rettangolo che ne contiene una breve descrizione;
+	\item \textbf{Nodo iniziale:} rappresentato da un pallino pieno. Indica il punto da cui inizia l'attività;
+	\item \textbf{Activity:} raffigurata come un rettangolo che ne contiene una breve descrizione;
 	\begin{figure}[h]
 		\centering
 		\includegraphics[scale=0.5]{images/PrimaActivity.png}
 		\caption{Rappresentazione di un nodo iniziale e attività in un diagramma}\label{}
 	\end{figure}
-	\item Fork: rappresentato da una linea lunga verticale od orizzontale, indica un punto in cui l'esecuzione si parallelizza senza alcun vincolo temporale fra attività di processi differenti;
-	\item Join: rappresentato da una linea lunga verticale od orizzontale, indica un punto in cui avviene la sincronizzazione fra processi paralleli;
+	\item \textbf{Fork:} rappresentato da una linea lunga verticale od orizzontale, indica un punto in cui l'esecuzione si parallelizza senza alcun vincolo temporale fra attività di processi differenti;
+	\item \textbf{Join:} rappresentato da una linea lunga verticale od orizzontale, indica un punto in cui avviene la sincronizzazione fra processi paralleli;
 		\begin{figure}[h]
 		\centering
 		\includegraphics[scale=0.5]{images/ForkJoin.png}
 		\caption{Esempio di Fork e Join in un diagramma di attività}\label{}
 	\end{figure}
-	\item Branch: rappresentato da un rombo con una freccia in ingresso. Indica un punto in cui si può prendere una decisione e seguire solo uno dei rami, ognuno dei quali deve avere la guardia nel formato \texttt{[guardia]};
-	\item Merge: rappresentato da un rombo con una freccia in uscita. Indica il punto in cui i rami generati da un Branch si uniscono;
+	\item \textbf{Branch:} rappresentato da un rombo con una freccia in ingresso. Indica un punto in cui si può prendere una decisione e seguire solo uno dei rami, ognuno dei quali deve avere la guardia nel formato \texttt{[guardia]};
+	\item \textbf{Merge:} rappresentato da un rombo con una freccia in uscita. Indica il punto in cui i rami generati da un Branch si uniscono;
 	\begin{figure}[h]
 		\centering
 		\includegraphics[scale=0.5]{images/BranchMerge.png}
 		\caption{Esempio di Branch e Merge in un diagramma di attività}\label{}
 	\end{figure}
-	\item Pin: rappresentato da un quadrato piccolo dove entrano o escono frecce dalle Activity. Indica il passaggio di un parametro, il cui tipo va indicato a fianco con la sintassi \texttt{type};
-	\item Segnali: rappresentati da due figure ad incastro, la prima per l'emissione del segnale, la seconda per la ricezione dello stesso e bloccante;
-	\item  Timeout: rappresentato da una clessidra, serve per indicare timeout o eventi ripetuti. I timeout hanno frecce entranti e frecce uscenti, mentre gli eventi ripetuti hanno solo frecce uscenti;
-	\item Partizioni: rappresentate da dei grandi rettangolo che dividono il diagramma, forniscono una responsabilità all'esecuzione delle azioni;
-	\item Regioni di espansione: rappresentate da un rettangolo con i bordi tratteggiati, con degli argomenti in entrata e in uscita,  indica la ripetizione delle attività su una collezione di elementi;
-	\item  Nodo di fine flusso: rappresentato da un cerchio vuoto con una X al centro, indica un punto in cui uno dei rami di esecuzione muore, ma l'esecuzione prosegue negli altri rami;
-	\item Nodo finale: rappresentato da due cerchi concentrici di cui il più esterno vuoto, indica il punto in cui l'esecuzione termina.
+	\item \textbf{Pin:} rappresentato da un quadrato piccolo dove entrano o escono frecce dalle Activity. Indica il passaggio di un parametro, il cui tipo va indicato a fianco con la sintassi \texttt{type};
+	\item \textbf{Segnali:} rappresentati da due figure ad incastro, la prima per l'emissione del segnale, la seconda per la ricezione dello stesso e bloccante;
+	\item  \textbf{Timeout:} rappresentato da una clessidra, serve per indicare timeout o eventi ripetuti. I timeout hanno frecce entranti e frecce uscenti, mentre gli eventi ripetuti hanno solo frecce uscenti;
+	\item \textbf{Partizioni:} rappresentate da dei grandi rettangolo che dividono il diagramma, forniscono una responsabilità all'esecuzione delle azioni;
+	\item \textbf{Regioni di espansione:} rappresentate da un rettangolo con i bordi tratteggiati, con degli argomenti in entrata e in uscita,  indica la ripetizione delle attività su una collezione di elementi;
+	\item \textbf{Nodo di fine flusso:} rappresentato da un cerchio vuoto con una X al centro, indica un punto in cui uno dei rami di esecuzione muore, ma l'esecuzione prosegue negli altri rami;
+	\item \textbf{Nodo finale:} rappresentato da due cerchi concentrici di cui il più esterno vuoto, indica il punto in cui l'esecuzione termina.
 	
 	\subsection{Diagrammi dei package}
 	\label{DiagrammiPackage}
@@ -309,14 +309,20 @@ Questa attività segue la Progettazione e consiste nell'implementazione effettiv
 Con riferimento al sito elencato nella sezione \ref{package}, la suddivisione dei file sorgente per package avverrà nel modo seguente:
 
 \begin{itemize}
-	\item  \textbf{com.megalexa.activities:} contiene tutti file contenenti le\glossario{activities}dell'applicazione.
-	\item  \textbf{com.megalexa.adapters:} contiene tutti i file contenti gli adapters
-			\subitem \textbf{view:} conterrà tutti gli\glossario{adapters}che alcuni widget particolari di android richiedono (come le RecyclerView e le ListView);
-			\subitem \textbf{connectors:} contiene tutti i file a supporto dei blocchi contenuti nel model: nello specifico, un connettore si rende necessario se il blocco a cui fa riferimento necessita di controlli aggiuntivi in rete per risultare corretto.
-	\item  \textbf{com.megalexa.fragments:} contiene i file riguardanti i\glossario{fragments}prodotti dalle activities;
+	\item	\textbf{com.megalexa:} rappresenta il package contenente tutti i file relativi all'applicazione;
+	\item	\textbf{ui:} contiene tutti i package relativi all'interfaccia grafica;
+		\subitem  \textbf{activities:} contiene tutti file contenenti le\glossario{activities}dell'applicazione.
+		\subitem  \textbf{adapters:} conterrà tutti gli\glossario{adapters}che alcuni widget particolari di android richiedono (come le RecyclerView e le ListView);
+		\subitem  \textbf{fragments:} contiene i file riguardanti i\glossario{fragments}prodotti dalle activities;
 	\item  \textbf{com.megalexa.viewModel:}	contiene tutti i file che compongono il \textit{ViewModel$_{G}$}, che mette in comunicazione la parte grafica con quella logica;	
 	\item  \textbf{com.megalexa.models:} contiene tutti i file riguardanti la logica dell'applicazione;
-	\item  \textbf{com.megalexa.util:} contiene tutte la classi di utilità definite nel corso dello sviluppo.	
+		\subitem \textbf{connectors:} contiene tutti i file a supporto dei blocchi contenuti nel model: nello specifico, un connettore si rende necessario se il blocco a cui fa riferimento necessita di controlli aggiuntivi in rete per risultare corretto;
+		\subitem \textbf{blocks:} contiene tutti i file riguardanti la logica dei blocchi che vanno a formare i workflow;
+		\subitem \textbf{workflow:} contiene tutti i file riguardanti i workflow scelti dall'utente.
+	
+	\item  \textbf{com.megalexa.util:} contiene tutte la classi di utilità definite nel corso dello sviluppo.
+		\subitem	\textbf{service:} contiene i file che realizzano l'integrazione ad \textit{API Gateway$_{G}$} effetuando le chiamate necessarie;
+		\subitem	\textbf{view:} contiene interfacce utili per la realizzazione di interazioni particolari tra l'utente e l'interfaccia grafica.	
 
 \end{itemize}
 Sarà permesso definire ulteriori package all'interno di quelli sopra elencati, nel caso in cui ci sia bisogno di un maggiore dettaglio.
