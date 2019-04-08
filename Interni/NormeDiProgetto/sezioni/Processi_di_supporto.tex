@@ -227,7 +227,7 @@ Aggiungere, se necessario, i termini mancanti nel file \texttt{.dictionary}, con
 \subsection{Classificazione metriche e obiettivi}
 Questa\glossario{processo}definisce norme e struttura delle metriche, obiettivi di qualità, metodologie e strumenti per perseguire qualità di processo e di prodotto. 
 \subsubsection{Classificazioni degli obiettivi} 
-Gli obiettivi di qualità inclusi nel \textit{Piano di Qualifica v2.0.0} devono rispettare la seguente notazione: \\
+Gli obiettivi di qualità inclusi nel \pianodiqualifica devono rispettare la seguente notazione: \\
 \begin{center}
 Q[Tipo][ID] : [Nome].
 \end{center}
@@ -262,6 +262,9 @@ Ciascun\glossario{processo}verrà costantemente monitorato in tutta la sua esecu
 
 \subsection{Verifica dei prodotti}
 La verifica della qualità di prodotto si divide in attività e procedure differenti a seconda del\glossario{prodotto}che si sta verificando. Per i prodotto software si procede con analisi statica e dinamica, mentre per i documenti si applica soltanto analisi statica.
+
+\subsubsection{Verifica Diagrammi UML}
+I \textit{ìVerificatori} devono controllare tutti i diagrammi UML prodotti rispettino lo standard UML e che siano corretti semanticamente.
 \subsubsection{Verifica dei documenti}
 \paragraph{Analisi statica}
 Al fine di verificare i documenti verranno utilizzati\glossario{inspection}e \textit{walkthrough$_{G}$}:
@@ -269,6 +272,7 @@ Al fine di verificare i documenti verranno utilizzati\glossario{inspection}e \te
 	\item \textbf{Walkthrough:} questa metodologia prevede una lettura profonda e attenta del documento. Gli errori riscontrati verranno corretti e aggiunti all'appendice "Lista di controllo" delle \textit{Norme di Progetto v2.0.0} per permettere di utilizzare inspection le volte successive;
 	\item \textbf{Inspection:} al contrario della metodologia precedente, questa risulta essere molto più veloce perché attraverso una lista di controllo degli errori permette un'analisi più efficace delle criticità, omettendo le parti che non presentano problematiche. 
 \end{itemize}
+Per il controllo dei documenti utilizziamo le funzionalità di TeXStudio assieme a script bash eseguiti da \textit{Travis} per controllare che non ci siano errori nel file \LaTeX e verificare l'assenza di errori ortografici. 
 \paragraph{Procedura di controllo dei documenti}
 \begin{enumerate}
 	\item Viene assegnato un\glossario{ticket}a un \textit{Verificatore};
