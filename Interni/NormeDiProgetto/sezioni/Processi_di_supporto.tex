@@ -170,7 +170,7 @@ Le lettere maiuscole vanno poste solo dopo il punto, il punto di domanda, il pun
 	\item  \textbf{Sottolineato:} Non è previsto l'uso del testo sottolineato.
 	\end{itemize}
 \subsubsection{Norme redazionali} 
-
+\label{NormeRedazionali}
 \begin{itemize}
 	\item \textbf{Elenchi:} Al termine di ogni punto di un elenco verrà utilizzato il carattere (;) eccetto per l'ultimo punto per il quale verrà utilizzato il carattere (.);
 	\item \textbf{Riferimenti informativi:} Ogni riferimento a\glossario{prodotti}, guide, software,
@@ -182,7 +182,14 @@ Le lettere maiuscole vanno poste solo dopo il punto, il punto di domanda, il pun
 		\item \textbf{ \textbackslash mailzeroseven}: inserisce l'indirizzo email del gruppo per un eventuale contatto;
 		\item \textbf{ \textbackslash progetto}: inserisce il nome del \textit{progetto$_{G}$};
 		\item \textbf{ \textbackslash logo}: inserisce il logo del gruppo ZeroSeven;
-		\item \textbf{ \textbackslash glossario}: indica un termine da inserire nel glossario(marcato da una G maiuscola a pedice).	
+		\item \textbf{ \textbackslash glossario}: indica un termine da inserire nel glossario(marcato da una G maiuscola a pedice);
+		\item \textbf{\textbackslash analisideirequisiti}: indica il documento \textit{Analisi dei Requisiti} con numero di versione attuale;
+		\item \textbf{\textbackslash pianodiqualifica}: indica il documento \textit{Piano di Qualifica} con numero di versione attuale;
+		\item \textbf{\textbackslash pianodiprogetto}: indica il documento \textit{Piano di Progetto} con numero di versione attuale;
+		\item \textbf{\textbackslash glossariodocumento}: indica il documento \textit{Glossario} con numero di versione attuale;
+		\item \textbf{\textbackslash normediprogetto}: indica il documento \textit{Norme di Progetto} con numero di versione attuale;
+		\item \textbf{\textbackslash manualesviluppatore}: indica il documento \textit{Manuale dello Sviluppatore} con numero di versione attuale;
+		\item \textbf{\textbackslash manualeutente}: indica il documento \textit{Manuale Utente} con numero di versione attuale;
 	\end{itemize}
 	
 	\item \textbf{Sigle:} Nonostante sarà preferito l'utilizzo delle parole per intero potranno essere utilizzate le seguenti sigle:
@@ -220,7 +227,7 @@ Aggiungere, se necessario, i termini mancanti nel file \texttt{.dictionary}, con
 \subsection{Classificazione metriche e obiettivi}
 Questa\glossario{processo}definisce norme e struttura delle metriche, obiettivi di qualità, metodologie e strumenti per perseguire qualità di processo e di prodotto. 
 \subsubsection{Classificazioni degli obiettivi} 
-Gli obiettivi di qualità inclusi nel \textit{Piano di Qualifica v2.0.0} devono rispettare la seguente notazione: \\
+Gli obiettivi di qualità inclusi nel \pianodiqualifica devono rispettare la seguente notazione: \\
 \begin{center}
 Q[Tipo][ID] : [Nome].
 \end{center}
@@ -247,6 +254,7 @@ M[Tipo][ID] : [Nome].\\
 \end{itemize}
 
 \section{Verifica}
+\label{Verifica}
 La\glossario{verifica}è un processo atto a evidenziare ed eliminare la possibile presenza di errori.
 Di seguito verranno descritti gli strumenti e le pratiche utilizzate per la verifica del codice e dei documenti durante la loro realizzazione.
 Durante questa prima fase di progetto la verifica si è focalizzata principalmente su documenti.
@@ -255,6 +263,9 @@ Ciascun\glossario{processo}verrà costantemente monitorato in tutta la sua esecu
 
 \subsection{Verifica dei prodotti}
 La verifica della qualità di prodotto si divide in attività e procedure differenti a seconda del\glossario{prodotto}che si sta verificando. Per i prodotto software si procede con analisi statica e dinamica, mentre per i documenti si applica soltanto analisi statica.
+
+\subsubsection{Verifica Diagrammi UML}
+I \textit{ìVerificatori} devono controllare tutti i diagrammi UML prodotti rispettino lo standard UML e che siano corretti semanticamente.
 \subsubsection{Verifica dei documenti}
 \paragraph{Analisi statica}
 Al fine di verificare i documenti verranno utilizzati\glossario{inspection}e \textit{walkthrough$_{G}$}:
@@ -262,6 +273,7 @@ Al fine di verificare i documenti verranno utilizzati\glossario{inspection}e \te
 	\item \textbf{Walkthrough:} questa metodologia prevede una lettura profonda e attenta del documento. Gli errori riscontrati verranno corretti e aggiunti all'appendice "Lista di controllo" delle \textit{Norme di Progetto v2.0.0} per permettere di utilizzare inspection le volte successive;
 	\item \textbf{Inspection:} al contrario della metodologia precedente, questa risulta essere molto più veloce perché attraverso una lista di controllo degli errori permette un'analisi più efficace delle criticità, omettendo le parti che non presentano problematiche. 
 \end{itemize}
+Per il controllo dei documenti utilizziamo le funzionalità di TeXStudio assieme a script bash eseguiti da \textit{Travis} per controllare che non ci siano errori nel file \LaTeX\  e verificare l'assenza di errori ortografici. 
 \paragraph{Procedura di controllo dei documenti}
 \begin{enumerate}
 	\item Viene assegnato un\glossario{ticket}a un \textit{Verificatore};
@@ -286,12 +298,9 @@ I test di unità sono del codice prodotto, prodotto dai \textit{Programmatori}, 
 Vengono sviluppate del programmatore che sviluppa le unità, per verificare l'assenza di alcuni errori, e documentare il comportamento dell'unità prodotta. 
 Devono essere veloci da eseguire, indipendenti tra loro e nell'ordine di esecuzione. Inoltre dovrebbero essere eseguiti ad ogni modifica del codice sorgente.
 \paragraph{Test di Integrazione}
-I test di integrazione hanno il compito di verificare se sono rispettati i contratti di interfaccia tra più moduli o sottosistemi. I sottosistemi possono essere interni, quindi già verificati singolarmente dai test di unità, oppure esterni, come database, file system, etc. 
-Risultano più lenti da configurare ed eseguire rispetto ai test di unità.  
+Il test di integrazione rappresenta l'estensione logica del test di unità. La forma più semplice di questo test prevede la combinazione di due unità già sottoposte a test in un unico componente e il test dell'interfaccia presente fra le due. Il concetto alla base di questo approccio consiste nell'esecuzione di test per la combinazione di più parti, espandendo progressivamente il processo la test di moduli di un gruppo con quelli di altri gruppi. L'obbiettivo finale è di sottoporre al test tutti i moduli che compongono un processo contemporaneamente. 
 \paragraph{Test di Sistema}
-I test di sistema verificano il comportamento del sistema nella sua interezza rispetto alle specifiche. 
-\paragraph{Test di accettazione}
-I test di accettazione vengono eseguiti su tutto il sistema e verificano la conformità rispetto agli use cases e ai requisiti concordati con il committente.
+Il test di sistema sancisce la validazione del prodotto software finale, giunto ad una versione definitiva, e verifica dunque che esso soddisfi in modo completo i requisiti. 
 \paragraph{Tracciamento dei test}
 Ogni test è strutturato come segue:
 \begin{itemize}
@@ -363,7 +372,9 @@ La verifica del corretto funzionamento della skill consiste in un processo compr
 	\item \textbf{Test dell'interazione:} tramite la console per sviluppatori fornita da Amazon\footnote{\url{https://developer.amazon.com/alexa/console/ask?}}, è possibile verificare il comportamento della skill prima della sua distribuzione, e simulare un'interazione fra l'utente e Alexa.
 \end{enumerate}
 \section{Validazione}
-Il processo di validazione permette di accertare la conformità del prodotto rispetto a quanto è stato pianificato.\\
+\label{Validazione}
+Il processo di \glossario{validazione} ha l'obbiettivo di verificare che il prodotto sia conforme a quanto pianificato e sia abile nel gestire e minimizzare gli effetti degli errori.
+I passi 
 
 \subsection{Procedura}
 Viene descritta la procedura per la validazione delle unità di codice che compongono il prodotto:
