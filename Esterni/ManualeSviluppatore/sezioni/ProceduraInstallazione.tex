@@ -1,1 +1,24 @@
 \chapter{Procedura di installazione}
+
+\section{Installazione Skill}
+\label{installazioneSkill}
+Per ognuno dei sequenti comandi è richiesta l'installazione del package manager \textbf{npm}.
+Installazione della skill e delle sue dipendenze:
+\begin{itemize}
+    \item clonare la repository attraverso il comando \textit{git clone\\https://github.com/mirkofranco/ProgettoSWEDocumentazione.git};
+    \item eseguire il comando \textit{npm install} per installare automaticamente le dipendenze.
+\end{itemize}
+Pubblicare la skill in AWS Lambda:
+\begin{itemize}
+    \item installare il programma 7z e inserire il suo eseguibile tra le variabili di sistema;
+    \item installare e configurare aws-cli\footnote{\url{https://aws.amazon.com/it/cli/}};
+    \item da terminal, eseguire il comando \textit{npm run publish-lambda}.
+\end{itemize}
+Eseguire i test di unità:
+\begin{itemize}
+    \item da terminal, eseguire il comando \textit{npm run unitTest}.
+\end{itemize}
+Eseguire i test di integrazione:
+\begin{itemize}
+    \item da terminal, eseguire il comando \textit{npm integrationTest}.
+\end{itemize}

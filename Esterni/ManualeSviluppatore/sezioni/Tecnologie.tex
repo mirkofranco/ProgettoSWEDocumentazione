@@ -11,5 +11,34 @@ Con Lambda, è possibile eseguire codice per qualunque tipo di applicazione o di
 AWS API Gateway è un servizio completamente gestito che semplifica la creazione, la pubblicazione, la manutenzione e la protezione delle API su larga scala. Con semplicità è possibile creare e configurare API REST che fungano da "porta di ingresso" per le applicazioni, per consentire l'accesso ai dati, alla logica di business o alle funzionalità dai propri servizi back-end. API Gateway gestisce tutte le attività di accettazione ed elaborazione relative a centinaia di migliaia di chiamate ad API simultanee, inclusi gestione del traffico, controllo di accessi e autorizzazioni, monitoraggio e gestione delle versione delle API. Gateway non prevede alcuna tariffa minima né investimenti iniziali. Vengono addebitati solo i costi di chiamate API ricevute e i volumi di dati trasferiti in uscita e con il modello tariffario a scaglioni di API Gateway potrai ridurre i costi al variare dell'utilizzo delle API.
 \subsection{AWS CloudWatch}
 AWS CloudWatch è un servizio di monitoraggio e gestione creato per gli sviluppatori, operatori di sistema, ingegneri responsabili del sito e manager IT. CloudWatch fornisce dati e analisi concrete per monitorare le applicazioni, capire e rispondere ai cambiamenti di prestazioni a livello di sistema, ottimizzare l'utilizzo delle risorse e ottenere una visualizzazione unificata dello stato di integrità operativa. 
+\subsection{Node.js}
+La skill è sviluppata attraverso un progetto Node js. Tutte le classi (apparte index.js) sono scritte in Typescript, ma vengono compilate in Javascript prima di essere trasferite in AWS Lambda.
+\subsection{Npm}
+Gestore di package per node.js. Permette l'esecuzione di comandi personalizzati (come descritto in \S\ref{installazioneSkill}).
+\subsection{7z}
+Permette di comprimere i file da linea di comando. E' richiesto dalla procedura di build della skill.
 
 \section{Dipendenze esterne}
+
+\subsection{Alexa Skill}\label{ATecnologie}
+Tutte le dipendenze principali si trovano nel file \textit{package.json}, mentre quelle secondarie (cioè le dipendenze delle dipendenze) stanno nel file package-lock.json.\\
+Dipendenze principali:
+\begin{itemize}
+    \item \textbf{ask-sdk:} (Alexa Skill Kit) permette di comunicare direttamente con i servizi Amazon Alexa;
+    \item \textbf{axios:} chiamate HTTP. Utilizzato principalmente in WorkflowService per le chiamate REST e nei connettori;
+    \item \textbf{openweather-apis:} informazioni riguardanti il tempo atmosferico;
+    \item \textbf{rss-parser:} trasformazione di un file RSS in un testo più leggibile;
+    \item \textbf{twitter:} comunicazione con i servizi Twitter.
+\end{itemize}
+Dipendenze utili solo allo sviluppatore (test e compilazione):
+\begin{itemize}
+    \item \textbf{mocha:} framework per i test in Javascript;
+    \item \textbf{chai:} funzionalità aggiuntive mocha;
+    \item \textbf{@types/node:} definizioni dei tipi di Node.js per Typescript;
+    \item \textbf{@types/mocha:} adattatore mocha per Typescript; 
+    \item \textbf{@types/chai:} adattatore chai per Typescript;
+    \item \textbf{@types/chai-as-promised:} dipendenza aggiuntiva di chai per valutare le \textit{promise};
+    \item \textbf{typescript:} permette la compilazione da Typescript a Javascript.
+\end{itemize}
+
+\subsection{App Android}
