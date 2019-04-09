@@ -605,12 +605,14 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 \section{UC2.3.1: Modifica nome workflow}
 \label{UC2.3.1}
 \begin{itemize}
-	\item \textbf{Attori}: Utente autenticato.
+	\item \textbf{Attori}: utente autenticato;
 	\item \textbf{Descrizione}: L'attore modifica il nome del workflow.
 	\item \textbf{Precondizione}: Il sistema mette a disposizione un campo per l'inserimento del nuovo nome.
 	\item \textbf{Postcondizione}: Il form di creazione del workflow contiene il nuovo nome del workflow.
 	\item \textbf{Scenario principale}:
 	\begin{enumerate} \item L'attore inserisce il nuovo nome del workflow.\end{enumerate}
+	\item \textbf{Estensioni}:
+	Errore nome workflow (UC2.6)
 \end{itemize}
 
 \section{UC2.3.2: Eliminazione blocco}
@@ -680,4 +682,16 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 	\item \textbf{Scenario principale}:
 	\begin{enumerate} \item L'attore si disconnette dal sistema.\end{enumerate}
 \end{itemize}
+
+\section{UC2.6: Errore nome workflow}
+\label{UC2.6}
+\begin{itemize}
+	\item \textbf{Attori}: ;
+	\item \textbf{Descrizione}: L'utente inserisce un nome workflow errato perchè già esistente.
+	\item \textbf{Precondizione}: L'utente inserisce un nome workflow errato perchè già esistente.
+	\item \textbf{Postcondizione}: L'utente inserisce un nome di workflow non esistente o annulla l'operazione.
+	\item \textbf{Scenario principale}:
+	\begin{enumerate} \item Il sistema avvisa l'utente;  \item  L'utente modifica il nome inserito o annulla l'operazione.\end{enumerate}
+\end{itemize}
+
 
