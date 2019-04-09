@@ -206,7 +206,7 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 \label{UC2.1.2.4}
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.4]{Diagram/UC2-1-2-4.png}
+	\includegraphics[scale=0.4]{Diagram/Twitter.png}
 	\caption{Inserimento Twitter}\label{}
 \end{figure}
 \begin{itemize}
@@ -220,6 +220,76 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 		\item  L'attore seleziona quali tweet vuole visualizzare (ordine cronologico, di importanza, account specifici) (UC2.1.2.4.2).
 	\end{enumerate}
 \end{itemize}
+
+
+\section{UC2.1.2.4.1: Autenticazione}
+\label{UC2.1.2.4.1}
+\begin{itemize}
+	\item \textbf{Attori}: Twitter, utente autenticato;
+	\item \textbf{Descrizione}: L'utente autenticato all'applicazione vuole usarne una funzionalità che si interfaccia con Twitter e quindi deve autenticarsi. 
+	\item \textbf{Precondizione}: L'utente è autenticato e vuole utilizzare una funzionalità che si interfaccia con Twitter.
+	\item \textbf{Postcondizione}: L'utente è riconosciuto da Twitter e può utilizzare funzionalità che si interfacciano con esso.
+	\item \textbf{Scenario principale}:
+	\begin{enumerate} \item L'utente preme il pulsante Login with Twitter;  \item  L'utente viene reindirizzato alla pagina web di Twitter;  \item  L'utente completa il login con Twitter;  \item  L'utente ritorna nella pagina dell'applicazione.\end{enumerate}
+\end{itemize}
+
+\section{UC2.1.2.4.2: Lettura home timeline}
+\label{UC2.1.2.4.2}
+\begin{itemize}
+	\item \textbf{Attori}: ;
+	\item \textbf{Descrizione}: L'utente vuole leggere la propria timeline di Twitter.
+	\item \textbf{Precondizione}: L'utente è riconosciuto da Twitter.
+	\item \textbf{Postcondizione}: L'utente ha inserito il blocco desiderato al workflow.
+	\item \textbf{Scenario principale}:
+	\begin{enumerate} \item L'utente inserisce il blocco al workflow.\end{enumerate}
+\end{itemize}
+
+\section{UC2.1.2.4.3: Lettura user timeline}
+\label{UC2.1.2.4.3}
+\begin{itemize}
+	\item \textbf{Attori}: ;
+	\item \textbf{Descrizione}: L'utente desidera poter leggere la timeline di un utente di Twitter.
+	\item \textbf{Precondizione}: L'utente è riconosciuto da Twitter.
+	\item \textbf{Postcondizione}: L'utente ha inserito il blocco desiderato al workflow.
+	\item \textbf{Scenario principale}:
+	\begin{enumerate} \item L'utente inserisce il nome dell'utente di cui vuole leggere la timeline;  \item  Il nome dell'utente viene validato attraverso Twitter;  \item  Il blocco viene aggiunto al workflow.\end{enumerate}
+	\item \textbf{Estensioni}:
+	Il nome utente inserito è sbagliato (UC2.1.2.4.6)
+\end{itemize}
+
+\section{UC2.1.2.4.4: Lettura tweets con hashtag}
+\label{UC2.1.2.4.4}
+\begin{itemize}
+	\item \textbf{Attori}: ;
+	\item \textbf{Descrizione}: L'utente vuole leggere i tweets che sono marcati da un determinato hashtag.
+	\item \textbf{Precondizione}: L'utente è riconosciuto da Twitter.
+	\item \textbf{Postcondizione}: L'utente ha inserito il blocco desiderato nel workflow.
+	\item \textbf{Scenario principale}:
+	\begin{enumerate} \item L'utente inserisce l'hashtag desiderato;  \item  Il blocco viene aggiunto al workflow\end{enumerate}
+\end{itemize}
+
+\section{UC2.1.2.4.5: Scrittura tweet}
+\label{UC2.1.2.4.5}
+\begin{itemize}
+	\item \textbf{Attori}: ;
+	\item \textbf{Descrizione}: L'utente desidera scrivere un tweet nel proprio profilo.
+	\item \textbf{Precondizione}: L'utente è riconosciuto da Twitter.
+	\item \textbf{Postcondizione}: L'utente ha inserito il blocco desiderato nel workflow.
+	\item \textbf{Scenario principale}:
+	\begin{enumerate} \item L'utente inserisce il testo del Twitter che vuole pubblicare;  \item  Il blocco viene inserito nel workflow.\end{enumerate}
+\end{itemize}
+
+\section{UC2.1.2.4.6: Errore inserimento user}
+\label{UC2.1.2.4.6}
+\begin{itemize}
+	\item \textbf{Attori}: ;
+	\item \textbf{Descrizione}: L'utente ha inserito un nome utente errato.
+	\item \textbf{Precondizione}: L'utente ha provato a inserire un nome utente sbagliato che non esiste.
+	\item \textbf{Postcondizione}: Il sistema ha avvisato l'utente dell'inesistenza del nome utente e gli permette di modificarlo oppure eliminarlo.
+	\item \textbf{Scenario principale}:
+	\begin{enumerate} \item Il sistema avvisa l'utente dell'inesistenza del nome utente inserito;  \item  L'utente modifica oppure elimina l'operazione.\end{enumerate}
+\end{itemize}
+
 
 \section{UC2.1.2.5: Inserimento Lista}
 \label{UC2.1.2.5}
