@@ -1,1 +1,503 @@
 \chapter{Utilizzo di MegAlexa}
+\section{Utlizzo dell'applicazione}
+\section{Utilizzo di Alexa}
+Alexa è un assistente personale intelligente sviluppato dall'azienda statunitense Amazon, utilizzato per la prima volta nei dispositivi Amazon Echo e Amazon Echo Dot.
+Alexa  consente all'utente di fare delle domande e delle richieste usando semplicemente la voce.\\
+Le skill sono abilità di Alexa attivate tramite comando vocale. Le skill permettono di attivare nuove funzionalità e contentenuti che arrichiscono l'esperienza con i dispositivi Echo e con integrazione Alexa. \\
+Attraverso la skill MegAlexa, Alexa è in grado di avviare i workflow creati dall'utente attraverso l'applicazione.\\
+Il seguente Voice Dialog Flow  presenta degli esempi di interazione con Alexa.
+
+\section{Voice Dialog Flow}
+\label{VDF}
+Le interazioni sono strutturate come segue:
+\begin{itemize}
+	\item \textbf{U:} rappresenta l'utente;
+	\item \textbf{A:} rappresenta Alexa;
+	\item \textbf{[Data]:} rappresenta un dato il cui contenuto è determinato da risorse non presenti nel dispositivo al momento dell'interazione.
+\end{itemize}
+
+
+\subsection{Intents}
+Per intent si intende la richiesta da parte dell'utente di effettuare una particolare operazione al fine di gestire l'esecuzione della\glossario{skill}. 
+Questa sezione si occupa di elencare i principali intents a disposizione dell'utente, insieme agli output previsti una volta ricevuta la richiesta.
+Si fa riferimento alla documentazione fornita da\glossario{Amazon}\footnote{\url{https://developer.amazon.com/it/documentation}} per lo sviluppo di una skill e la sua implementazione ottimale.
+
+\subsubsection{Help Intent}\label{help}
+Permette all'utente di ottenere ulteriori informazioni, come il numero di\glossario{workflow}disponibili e il loro contenuto.
+\subsubsection{English}
+\begin{itemize}
+	\intent{help};
+	\intent{help me};
+	\intent{can you help me};
+	\intent{tell me my workflows};
+	\intent{i'd like a list of my workflows}.	
+\end{itemize}
+\subsubsection{Italiano}
+\begin{itemize}
+	\intent{aiuto};
+	\intent{aiutami};
+	\intent{aiuto per favore};
+	\intent{dimmi i miei workflow};
+	\intent{vorrei una lista dei miei workflow};
+	\intent{quali sono i workflow disponibili?}.
+\end{itemize}
+
+\subsection{Cancel Intent}
+Permette all'utente di cancellare un'azione in esecuzione (come l'avvio di un \textit{workflow$_{G}$}).
+\subsubsection{English}
+\begin{itemize}
+	\intent{cancel};
+	\intent{never mind};
+	\intent{forget it}.
+\end{itemize}
+
+\subsubsection{Italiano}
+\begin{itemize}
+	\intent{annulla};
+	\intent{non importa};
+	\intent{lascia stare}.
+\end{itemize}
+
+\subsection{Stop Intent}
+Permette all'utente di uscire dalla \textit{skill$_{G}$}.
+\subsubsection{English}
+\begin{itemize}	
+	\intent{stop};
+	\intent{off};
+	\intent{shut up}.
+\end{itemize}
+
+\subsubsection{Italiano}
+
+\begin{itemize}
+	\intent{ferma};
+	\intent{smettila};
+	\intent{basta};
+	\intent{stop};
+	\intent{spegni}.
+\end{itemize}
+
+
+\subsection{Next Intent}
+Consente di passare a un blocco successivo di un \textit{workflow$_{G}$}, sia nel caso in cui esso sia ancora in esecuzione oppure abbia terminato le proprie operazioni. 
+\subsubsection{English}
+\begin{itemize}
+	\intent{next};
+	\intent{skip};
+	\intent{skip forward}.	
+\end{itemize}
+
+\subsubsection{Italiano}
+
+\begin{itemize}
+	
+	\intent{prossimo};
+	\intent{prossima};
+	\intent{successivo};
+	\intent{prosegui}.
+	
+\end{itemize}
+
+
+\subsection{No Intent}
+Consente all'utente di fornire una risposta negativa in seguito a una domanda di \textit{Alexa$_{G}$}.
+\subsubsection{English}
+\begin{itemize}
+	
+	\intent{no};
+	\intent{no thanks};
+	\intent{i'm good, thanks}.
+	
+\end{itemize}
+
+\subsubsection{Italiano}
+\begin{itemize}	
+	\intent{no};
+	\intent{no grazie};
+	\intent{no basta così}.
+	
+\end{itemize}
+
+
+
+\subsection{Pause Intent}
+Permette di fermare temporaneamente l'esecuzione di un blocco all'interno di un \textit{workflow$_{G}$}.
+\subsubsection{English}
+\begin{itemize}
+	
+	\intent {pause};
+	\intent {pause that}.
+	
+\end{itemize}
+
+\subsubsection{Italiano}
+\begin{itemize}
+	
+	\intent{metti in pausa};
+	\intent{mettila in pausa}.
+	
+\end{itemize}
+
+
+\subsection{Resume Intent}
+Premette di riprendere l'esecuzione di un blocco all'interno di un\glossario{workflow}precedentemente fermato.
+\subsubsection{English}
+\begin{itemize}
+	
+	\intent{resume};
+	\intent{continue};
+	\intent{keep going}.
+	
+\end{itemize}
+
+\subsubsection{Italiano}
+\begin{itemize}
+	\intent{riprendi};
+	\intent{continua};
+	\intent{riprendilo}.
+	
+\end{itemize}
+
+
+
+\subsection{Yes Intent}
+Consente all'utente di fornire una risposta positiva in seguito a una domanda di \textit{Alexa$_{G}$}.
+\subsubsection{English}
+\begin{itemize}
+	
+	\intent{yes};
+	\intent{yes please};
+	\intent{sure}.
+	
+\end{itemize}
+
+\subsubsection{Italiano}
+\begin{itemize}
+	\intent{sì};
+	\intent{sì per favore};
+	\intent{certo};
+	\intent{ok, va bene}.		
+\end{itemize}
+
+\section{English}
+\subsection{Skill start} \label{SkillStart}
+\textit{U: Open MegAlexa | Launch MegAlexa | Initiate MegAlexa | Start MegAlexa | Use MegAlexa | Begin MegAlexa}\\
+\textbf{A: Welcome to MegAlexa, how can I help you? | Which workflow would you like to open?}
+
+\subsection{Workflow start}
+\textit{U: Open [workflow] | Initiate [workflow] | Start [workflow] | Use [workflow]}\\
+With this interaction Alexa will start the workflow. \\
+\textit{U: Show me my workflows | Tell me my workflows | Say my workflows}\\
+\texttt{A: Your workflows are [workflow]x3, do you want to hear more?}\\
+\textit{U: [Yes Intent]}\\
+\texttt{A: [workflow]x3, do you want to hear more?}\\
+\textit{U: [No Intent], launch [workflow] | [No Intent], open [workflow] | [No Intent], initiate [workflow] | [No Intent], start [workflow] | [No Intent], use [workflow]}\\
+If there are 3 or less workflows available, then Alexa won't ask to hear more workflows.\\
+\texttt{A: Your workflows are [workflow]x2, which one would you like to start? }\\
+\textit{U: Open [workflow] | Initiate [workflow] | Start [workflow] | Use [workflow]}
+
+\subsection{Workflow execution}
+\subsubsection{Alarm clock}
+\texttt{A: [ring]}\\
+\textit{U: [Stop Intent] | snooze | give me [x] minutes | [x] more minutes}
+
+\subsubsection{Text to speech}
+\texttt{A: [Text]}
+
+\subsubsection{PIN}
+\texttt{A: Say your pin to continue | What's your PIN? | Tell me your secret code | Let me know your PIN to continue | Confess me your secret code | Whisper your four digits number}\\
+\textit{U: [PIN] }\\
+If the user says the wrong PIN:
+\texttt{A: Incorrect,please repeat | Wrong, try again | Wrong, retry }\\
+\textit{U: [PIN]}\\\\
+If the user says the correct PIN:
+\texttt{A: PIN is correct.}\\
+
+\subsubsection{Read Twitter}
+\texttt{A: [Read tweets], do you want to hear more? | [Read tweets], should I keep reading? | [Read tweets], should I go on?}\\
+\textit{U: [Yes Intent]}\\
+\texttt{A: [Read tweets], do you want to hear more? | [Read tweets], should I keep reading? | [Read tweets], should I go on?}\\
+\textit{U: [No Intent]}\\
+\texttt{A: Ok | Alright}\\\\
+If the user wish to continue listening tweets then Alexa will go forward reading the same amount of tweets set in the filterable block, otherwise Alexa will proceed with the next block.
+
+\subsubsection{List}
+\begin{itemize}
+	\item The list is empty.\\
+	\begin{itemize}
+		\item Add an element on the list.\\
+		\texttt{A: Would you like to add any elements into your list? | Your list is empty, is there anything you want to fill it with? | The list is empty, shall we insert anything? | There is nothing on your list, would you like to add any elements into your list? | Your list is blank, is there anything you want to fill it with?}\\
+		\textit{U: Add [element] to my list | I'd like to insert [element] to my list | I want to add [element] to my list | I need to add [element] to my list | Add [element] }\\
+		\texttt{A: Saved, would you like to add other elements? | Alright, would you like to add other elements? | Well done, do you have anything else to add? | Finally something in it, let's add some more}\\
+		\textit{U: [No Intent]}\\
+		\texttt{A: Ok | Alright}
+	\end{itemize}	
+	\item The list is not empty.\\
+	\begin{itemize}
+		\item Add an element on the list.
+		\texttt{A: You have [x] elements on your list, here are the five most recent: [element]x5, would you like to hear more, modify or delete one of those? | You have [x] elements on your list, the last five elements you added are: [element]x5, would you like to hear more, modify or delete one of those? | Your list has [x] elements, here are the five most recent: [element]x5, would you like to hear more, modify or delete one of those?}\\
+		\textit{U: [Yes Intent], I want to hear more | [Yes Intent], tell me more | [Yes Intent], go on | [Yes Intent] keep reading }\\
+		\texttt{A: [element]x5, would you like to hear more, modify or delete one of those?}\\
+		\textit{U: [No Intent]}\\
+		\texttt{A: Ok, would you like to add any elements into your list? | Alright, would you like to add any elements into your list? | Ok, shall we insert anything?}\\
+		\textit{U: Add [element] to my list | I'd like to insert [element] to my list | I want to add [element] to my list | I need to add [element] to my list | Add [element] }\\
+		\texttt{A: Saved, would you like to add other elements? | Alright, would you like to add other elements? | Well done, do you have anything else to add? | Ok, let's add some more}\\
+		\textit{U: [No Intent]}\\
+		\texttt{A: Ok | Alright}
+		
+		\item Change an element on the list.\\
+		\texttt{A: You have [x] elements on your list, here are the five most recent: [element]x5, would you like to hear more, modify or delete one of those? | You have [x] elements on your list, the last five elements you added are: [element]x5, would you like to hear more, modify or delete one of those? | Your list has [x] elements, here are the five most recent: [element]x5, would you like to hear more, modify or delete one of those?}\\
+		\textit{U: Change [old element] with [new element] | Edit [old element] with [new element]}\\
+		\texttt{A: The change has been successfully applied, would you like to change or delete anything else? | The edit has been successfully applied, would you like to change or delete anything else?}\\
+		\textit{U: [Yes Intent], change [old element] with [new element] | edit [old element] with [new element]}\\
+		\texttt{A: The change has been successfully applied, would you like to change or delete anything else? | The edit has been successfully applied, would you like to change or delete anything else?}\\
+		\textit{U: [No Intent]}\\
+		\texttt{A: Ok, would you like to hear others elements? | Alright, would you like to hear others elements? }\\
+		\textit{U: [Yes Intent] }\\
+		\texttt{A: [element]x5, would you like to hear more, modify or delete one of those?}\\
+		\textit{U: [No Intent] }\\
+		\texttt{A: Ok | Alright}
+		\item Delete an element on the list.\\	
+		\texttt{A: You have [x] elements on your list, here are the five most recent: [element]x5, would you like to hear more, modify or delete one of those? | You have [x] elements on your list, the last five elements you added are: [element]x5, would you like to hear more, modify or delete one of those? | Your list has [x] elements, here are the five most recent: [element]x5, would you like to hear more, modify or delete one of those?}\\
+		\textit{U: Delete [element] | Drop [element]}\\
+		\texttt{A: The element has been successfully deleted, would you like to change or delete anything else? | The element has been successfully dropped, would you like to change or delete anything else?}\\
+		\textit{U: [Yes Intent], delete [element] | [Yes Intent], drop [element]}\\
+		\texttt{A: The element has been successfully deleted, would you like to change or delete anything else? | The element has been successfully dropped, would you like to change or delete anything else?}\\
+		\textit{U: [No Intent]}\\
+		\texttt{A: Ok, would you like to hear the other elements? | Alright, would you like to hear the other elements? }\\
+		\textit{U: [Yes Intent] }\\
+		\texttt{A: [element]x5, would you like to hear more, modify or delete one of those?}\\
+		\textit{U: [No Intent]}\\
+		\texttt{A: Ok | Alright}
+		\item Clear list.\\
+		\texttt{A: You have [x] elements on your list, here are the five most recent: [element]x5, would you like to hear more, modify or delete one of those? | You have [x] elements on your list, the last five elements you added are: [element]x5, would you like to hear more, modify or delete one of those? | Your list has [x] elements, here are the five most recent: [element]x5, would you like to hear more, modify or delete one of those?}\\
+		\textit{U: Clear my list}\\
+		\texttt{A: Would you like to add any elements into your list? | Your list is empty, is there anything you want to fill it with? | The list is empty, shall we insert anything? | There is nothing on your list, would you like to add any elements into your list? | Your list is blank, is there anything you want to fill it with?}\\
+		\textit{U: Add [element], and [element] to my list | I'd like to insert [element] to my list | I want to add [element] to my list | I need to add [element] to my list | Add [element], and [element] | Add [element]}\\
+		\texttt{A: Saved, would you like to add other elements? | Alright, would you like to add other elements? | Well done, do you have anything else to add? | Ok, let's add some more}\\
+		\textit{U: [No Intent]}\\
+		\texttt{A: Ok | Alright}
+	\end{itemize}
+	
+	If there are less then 6 elements, Alex won't ask the user to hear other elements.\\
+	\texttt{A: You have [x] elements on your list: [element] would you like to modify or delete one of those? | You have [x] elements on your list: [element] would you like to modify or delete one of those? | Your list has [x] elements: [element] would you like to modify or delete one of those?}\\
+	\textit{U: [No Intent]}
+\end{itemize}
+
+\subsubsection{Read email}
+\begin{itemize}
+	\item User has no unread emails\\
+	\texttt{A: You haven't new emails | Wonderful, you already have read all your emails | Relax, you haven't receive new emails | Awesome, you haven't new emails}\\
+	\textit{U: Ok | Alright}
+	\item User has new emails to read\\
+	\texttt{A: You have [x] new emails, would you like to read them? | There are [x] new emails, would you like to read them? }\\
+	\textit{U: [Yes Intent]}\\
+	\texttt{A: [emails], there are [x] emails left, would you like to continue reading? | [emails], would you like to continue reading [x] remaining emails? | [emails], there are [x] remaining emails, would you like to continue reading? | [emails], there are [x] emails left, should I keep reading? | [emails], should I keep reading [x] remaining emails?}\\
+	\textit{U: [No Intent] }\\
+	\texttt{A: Ok | Alright}
+	
+	If the user has new emails, Alexa will proceed to read them all. Also the user can choose a filter block which can allow him to read a selected amount of emails.
+\end{itemize}
+
+\subsubsection{Calendar}
+\begin{itemize}
+	\item Read events
+	\begin{itemize}
+		\item There are no events to read.\\
+		\texttt{A: You have no events today | Wonderful, there are no events today}\\
+		\textit{U: Ok | Alright}
+		\item There are events to read.\\
+		\texttt{A: You have [x] events today, [events] | There are [x] scheduled for today, [events]}
+	\end{itemize}
+	\item Create events\\
+	\texttt{A: When will be the event? | When would you like the event to be scheduled?}\\
+	\textit{U: It will be for [time] | Set it for [time] | Create an event for [time]}\\
+	\texttt{A: Which name the event has? | What is the event's name? | Tell me the name of the event | Which name should I set?}\\
+	\textit{U: Set [name] | The name is [name] | Save event as [name]}\\
+	\texttt{A: Alright, events is been successfully saved, would you like to add another event? | Event has been saved, would you like to add other events?}\\
+	\textit{U: [No Intent]}
+\end{itemize}
+
+\subsubsection{Feed RSS}
+\texttt{A: Here is your feed, [FeedRSS]}
+
+\subsubsection{Weather}
+\texttt{A: Currently in [Location] is [$^\circ$C],with [Weather] you can expect an hight of [$^\circ$C] and a low of [$^\circ$C]}
+
+\subsubsection{Amazon Music}
+\texttt{A: Let's listen to some good music, [playlist] | Let's play some music [playlist]}
+
+\subsubsection{News}
+\texttt{A: Here is your flash briefing [news] | Here are the news [news]}
+
+\subsubsection{Sport}
+\texttt{A: Here is your sport flash briefing [sport]}
+
+\subsection{Workflow is done}
+\texttt{A: Your workflow is completed, would you like to start a new one?}\\
+At this point Alexa will wait the user's response and proceed with the Start Skill interaction described at \ref{SkillStart}.
+
+\section{Italiano}
+\subsection{Inizializzazione skill} \label{InizializzazioneSkill}
+\textit{U: Apri MegAlexa | Lancia MegAlexa | Inizia MegAlexa | Usa MegAlexa | Esegui MegAlexa | Fai partire MegAlexa}\\
+\textbf{A: Benvenuto in MegAlexa, come posso aiutarti? | Quale workflow desideri aprire? | Con quale workflow vuoi iniziare? | Da quale workflow partiamo?}
+
+\subsection{Inizializzazione workflow}
+\textit{U: Apri [workflow] | Inizia [workflow] | Usa [workflow] | Fai partire [workflow] | Esegui [workflow]}\\
+Con questa interazione Alexa inizierà l'esecuzione del workflow.\\
+\textit{U: Quali workflows ho a disposizione? | Quali sono i miei workflows? | Non mi ricordo i workflows, elencameli | Quali workflows posso eseguire? | Elencami i miei workflows | Quali workflows posso usare?}\\
+\texttt{A: I tuoi workflows sono, [workflow]x3, vuoi sentirne altri? | Puoi usare [workflow]x3, vuoi sentire i rimanenti?}\\
+\textit{U: [Sì Intent]}\\
+\texttt{A: I tuoi workflows sono, [workflow]x3, vuoi sentirne altri? | Puoi usare [workflow]x3, vuoi sentire i rimanenti?}\\
+\textit{U: [No Intent], apri [workflow] | [No Intent], inizia [workflow] | [No Intent], usa [workflow] | [No Intent], fai partire [workflow] | [No Intent], esegui [workflow]}\\
+Nel caso in cui ci fossero meno di 4 workflows allora Alexa non chiederà più di sentire i rimanenti workflows.\\
+\texttt{A: I tuoi workflows sono [workflow]x2, quale vuoi scegliere?}\\
+\textit{U: Apri [workflow] | Inizia [workflow] | Usa [workflow] | Fai partire [workflow] | Esegui [workflow]}\\
+
+\subsection{Esecuzione del workflow}
+\subsubsection{Sveglia}
+\texttt{A: [Suona]}\\
+\textit{U: Spegni | Posponi | Altri [x] minuti | Rimanda | Dammi altri [x] minuti | Rimanda di [x] minuti | Fermati}
+
+\subsubsection{Testo personalizzato}
+\texttt{A: [Testo]}
+
+\subsubsection{PIN}
+\texttt{A: Qual è il tuo codice? | Dimmi il tuo codice segreto | Confessami il tuo codice per continuare | Qual è il tuo PIN? | Dimmi le quattro cifre segrete}\\
+\textit{U: [PIN]}\\
+\texttt{A: Sbagliato, riprova | Codice non corretto, riprova}\\
+\textit{U: [PIN]}\\
+Quando l'utente dirà il PIN corretto allora Alexa proseguirà con l'esecuzione del workflow.
+
+\subsubsection{Lettore Twitter}
+\texttt{A: [Legge tweets], vuoi ascoltarne altri? | [Legge tweets], vuoi sentirne altri? | [Legge tweets], ne leggo altri? | [Legge tweets], continuo a leggerne?}\\
+\textit{U: [Sì Intent]}\\
+\texttt{A: [Legge tweets], vuoi ascoltarne altri? | [Legge tweets], vuoi sentirne altri? | [Legge tweets], ne leggo altri? | [Legge tweets], continuo a leggerne?}\\
+\textit{U: [No Intent]}\\
+\texttt{A: Ok | Va bene}
+
+\subsubsection{Lista}
+\begin{itemize}
+	\item La lista è vuota.\\
+	\item Aggiungere un elemento alla lista.\\
+	\texttt{A: Vuoi aggiungere un elemento alla tua lista vuota? | La lista  è vuota, vuoi aggiungere un elemento? | Aggiungi il primo elemento alla tua lista | La lista è vuota desideri aggiungere qualche elemento? | La lista è vuota, aggiungiamoci qualcosa }\\
+	\textit{U: Aggiungi [elemento] alla mia lista | Aggiungi [elemento] alla lista | Vorrei aggiungere [elemento] | Aggiungi [elemento] | Voglio aggiungere [elemento] | Metti [elemento] dentro la lista | Metti [elemento] nella lista }\\
+	\texttt{A: Elemento salvato, vuoi aggiungerne altri? | Elemento salvato con successo, vuoi aggiungere altro? | Elemento aggiunto alla lista, aggiungiamo altro? | Fatto, aggiungiamo altri elementi? | Aggiungiamo altri elementi? }\\
+	\textit{U:[No Intent]}\\
+	\texttt{A: Va bene | Ok }\\ 
+	
+	\item La lista non è vuota.\\
+	\begin{itemize}
+		\item Aggiungere un elemento alla lista.
+		\texttt{A: Hai [x] elementi nella tua lista, questi sono i più recenti: [elemento]x5, vuoi che te ne legga altri oppure preferisci modificare o eliminare uno di questi? | Hai [x] elementi nella tua lista, gli ultimi che hai aggiunto sono: [elemento]x5, vuoi sentirne altri oppure vuoi modificare o eliminare uno di questi? | La tua lista ha [x] elementi, questi sono i più recenti: [elemento]x5, vuoi sentirne altri oppure modificare o eliminare uno di questi? }\\
+		\textit{U: [Si Intent], voglio sentirne altri | [Si Intent], continua a leggere | [Si Intent], leggine altri | [Si Intent], continua con la lettura }\\
+		\texttt{A: [elemento]x5, vuoi sentirne altri oppure vuoi modificare o eliminare uno di questi? }\\
+		\textit{U: [No Intent]}\\
+		\texttt{A: Va bene, vuoi aggiungere un elemento alla tua lista? | Ok, vuoi aggiungere qualche elemento alla tua lista? | Ok, aggiungiamo qualche elemento? | Va bene, vuoi inserire qualcosa nella tua lista? }\\
+		\textit{U: Aggiungi [elemento] alla mia lista | Vorrei aggiungere [elemento] alla mia lista | Aggiungi [elemento] | Inserisci [elemento] nella mia lista | Inserisci [elemento] nella lista  | Inserisci [elemento]}\\
+		\texttt{A: Salvato con successo, vuoi aggiungere altri elementi? | Va bene, vuoi aggiungere altri elementi? | Salvato, vuoi aggiungerne altri? | Fatto, vuoi aggiungerne altri? }\\
+		\textit{U: [No Intent]}\\
+		\texttt{A: Va bene | Ok}
+		
+		\item Cambio di un elemento della lista.\\
+		\texttt{A: Hai [x] elementi nella tua lista, questi sono i più recenti: [elemento]x5, vuoi che te ne legga altri oppure preferisci modificare o eliminare uno di questi? | Hai [x] elementi nella tua lista, gli ultimi che hai aggiunto sono: [elemento]x5, vuoi sentirne altri oppure vuoi modificare o eliminare uno di questi? | La tua lista ha [x] elementi, questi sono i più recenti: [elemento]x5, vuoi sentirne altri oppure modificare o eliminare uno di questi? }\\
+		\textit{U: [Si Intent], voglio modificare [vecchio elemento] con [elemento] | Modifica [vecchio elemento] con [elemento] | Cambia [vecchio elemento] con [elemento] | Sostituisci [vecchio elemento] con [elemento] }\\
+		\texttt{A: La modifica è andata a buon fine, vuoi modificare o eliminare un altro elemento? | La modifica è avvenuta con successo, vuoi modificare o eliminare un altro elemento? | La lista è stata modificata con successo, vuoi modificare o eliminare altro?}\\
+		\textit{U: [No Intent]}\\
+		\texttt{A: Ok, vuoi sentirne altri? | Va bene, vuoi che ne legga altri? | Ok, vuoi che legga altri elementi? | Va bene vuoi sentire altri elementi? }\\
+		\textit{U: [Si Intent] }\\
+		\texttt{A: [elemento]x5, vuoi sentirne altri oppure vuoi modificare o eliminare uno di questi? }\\
+		\textit{U: [No Intent]}\\
+		\texttt{A: Va bene | Ok}
+		
+		\item Cancellazione di un elemento dalla lista.
+		\texttt{A: Hai [x] elementi nella tua lista, questi sono i più recenti: [elemento]x5, vuoi che te ne legga altri oppure preferisci modificare o eliminare uno di questi? | Hai [x] elementi nella tua lista, gli ultimi che hai aggiunto sono: [elemento]x5, vuoi sentirne altri oppure vuoi modificare o eliminare uno di questi? | La tua lista ha [x] elementi, questi sono i più recenti: [elemento]x5, vuoi sentirne altri oppure modificare o eliminare uno di questi? }\\
+		\textit{U: [Si Intent], voglio eliminare [elemento] | Elimina [elemento] | Cancella [elemento] | Togli [elemento] dalla lista}\\
+		\texttt{A: La cancellazione è andata a buon fine, vuoi modificare o eliminare un altro elemento? | L'eliminazione è avvenuta con successo, vuoi modificare o eliminare un altro elemento? | L'elemento è stato eliminato con successo, vuoi modificare o eliminare altro?}\\
+		\textit{U: [No Intent]}\\
+		\texttt{A: Ok, vuoi sentirne altri? | Va bene, vuoi che ne legga altri? | Ok, vuoi che legga altri elementi? | Va bene vuoi sentire altri elementi? }\\
+		\textit{U: [Si Intent] }\\
+		\texttt{A: [elemento]x5, vuoi sentirne altri oppure vuoi modificare o eliminare uno di questi? }\\
+		\textit{U: [No Intent]}\\
+		\texttt{A: Va bene | Ok}
+		
+		\item Cancellazione di tutta la lista.
+		\texttt{A: Hai [x] elementi nella tua lista, questi sono i più recenti: [elemento]x5, vuoi che te ne legga altri oppure preferisci modificare o eliminare uno di questi? | Hai [x] elementi nella tua lista, gli ultimi che hai aggiunto sono: [elemento]x5, vuoi sentirne altri oppure vuoi modificare o eliminare uno di questi? | La tua lista ha [x] elementi, questi sono i più recenti: [elemento]x5, vuoi sentirne altri oppure modificare o eliminare uno di questi? }\\
+		\textit{U: [Si Intent], voglio eliminare tutta la lista | Elimina tutta la lista | Cancella tutta la lista | Pulisci l'intera lista }\\
+		\texttt{A: La lista è completamente vuota, vuoi aggiungere qualche elemento? | Lista svuotata con successo, vuoi aggiungere elementi? | La lista è stata cancellata con successo, vuoi aggiungere qualcosa?}\\
+		\textit{U: [No Intent]}\\
+		\texttt{A: Va bene | Ok}
+	\end{itemize}
+	
+	Nel caso ci fossero meno di 6 elementi, Alexa non chiederà all'utente se vuole sentirne altri.\\
+	\texttt{A: Hai [x] elementi nella tua lista: [elemento], vuoi modificare o eliminare uno di questi? | Hai [x] elementi nella tua lista: [elemento], vuoi modificare o eliminare uno di questi? | La tua lista ha [x] elementi: [elemento], vuoi modificare o eliminare uno di questi? }\\
+	\textit{U: [No Intent]}
+\end{itemize}
+
+\subsubsection{Lettore email}
+\begin{itemize}
+	\item Non ci sono nuove emails da leggere. \\
+	\texttt{A: Non hai nuove emails | Evviva, non ci sono emails da leggere | Rilassati, non ci sono nuove emails}\\
+	\textit{U: Va bene | Ok}
+	\item L'utente ha delle emails da leggere. \\
+	\texttt{A: Hai [x] nuove emails, [emails], ci sono ancora [x-1] emails, continuo a leggerle? | Ci sono [x] emails da leggere, [emails], restano altre [x-1] emails, vuoi che continuo a leggerle?}\\
+	\textit{U: [Yes Intent]}\\
+	\texttt{A: [emails], ci sono ancora [x] emails, continuo a leggerle? | [emails], restano [x] emails da leggere, proseguo con la lettura?}\\
+	\textit{U: [No Intent]}\\
+\end{itemize}
+Il numero di emails che Alexa leggerà verrà scelto dall'utente nell'apposito filtro, se l'utente non sceglie nessun filtro a riguardo allora Alexa leggerà tutte le nuove emails.
+
+\subsubsection{Calendario}
+\begin{itemize}
+	\item Lettura eventi.
+	\begin{itemize}
+		\item L'utente non ha eventi in programma per oggi.\\
+		\texttt{A: Non ci sono eventi in programma per oggi | Evviva, non ci sono impegni oggi}\\
+		\textit{U: Ok | Alright}
+		\item L'utente ha eventi in programma per oggi.\\
+		\texttt{A: Ci sono [x] eventi in programma per oggi, [events] | Oggi hai in programma [x] eventi, ovvero: [events]}\\
+		\textit{U: Va bene | Ok}
+	\end{itemize}
+	\item Creazione eventi.\\
+	\texttt{A: Quando vuoi impostare l'evento?}\\
+	\textit{U: Imposta alle [time] | Inserisci alle [time]}\\
+	\texttt{A: Che nome vuoi dare all'evento?}\\
+	\textit{U: Imposta [name] | Inserisci [name] | Si chiama [name] | Il titolo è [name]}\\
+	\texttt{A: L'evento è stato salvato con successo, vuoi aggiungerne un altro? | Evento salvato, vorresti inserirne un altro?}\\
+	\textit{U: [No Intent]}
+\end{itemize}
+\subsubsection{Feed RSS}
+\texttt{A: Questi sono gli aggiornamenti dei siti che segui, [FeedRSS]}
+
+\subsubsection{Meteo}
+\texttt{A: Attualmente in [Località] ci sono [$^\circ$C], oggi ci sarà [Tempo] con una minima di [$^\circ$C] e una massima di [$^\circ$C]}
+
+\subsubsection{Amazon Music}
+\texttt{A: Eccoti un po' di buona musica, [playlist] | Rilassati ascoltando la tua playlist [playlist]} 
+
+\subsubsection{Notizie}
+\texttt{A: Questo è il tuo sommario quotidiano [notizie] | Eccoti le notizie quotidiane [notizie]}
+
+\subsubsection{Sport}
+\texttt{A: Questo è il tuo sommario quotidiano sportivo [sport]}
+
+\begin{comment}
+\item da qua in poi desiderabili
+\subsubsection{Stock and Crypto}
+\subsubsection{Spotify}
+\subsubsection{Send tweet}
+\item da qua in poi facoltativi
+\subsubsection{Timer}
+\subsubsection{Radio}
+\subsubsection{Modify calendar}
+\subsubsection{Youtube}
+\subsubsection{Read Telegram}
+\subsubsection{Send voice note Telegram}
+\subsubsection{Send text Telegram}
+\subsubsection{Reply mail}
+\subsubsection{Reply tweet}
+\end{comment}
+
+\subsection{Completamento del workflow}
+\texttt{A: Il tuo workflow è completo, desideri iniziarne un altro?}\\
+Alexa attenderà la risposta e procederà con interazione di Inizio Skill descritta nel capitolo \ref{InizializzazioneSkill}.
