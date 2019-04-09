@@ -519,12 +519,14 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 \section{UC2.1.2.18: Inserimento Meteo}
 \label{UC2.1.2.18}
 \begin{itemize}
-	\item \textbf{Attori}: Utente autenticato.
+	\item \textbf{Attori}: utente autenticato;
 	\item \textbf{Descrizione}: L'attore può inserire il blocco Meteo. Questo blocco permette di conoscere il meteo nella città selezionata dall'attore.
 	\item \textbf{Precondizione}: Il sistema mette a disposizione un form per l'inserimento dei blocchi e una lista di blocchi disponibili.	
 	\item \textbf{Postcondizione}: L'attore ha inserito il blocco meteo e selezionato la città.
 	\item \textbf{Scenario principale}:
-	\begin{enumerate} \item L'attore seleziona il blocco Meteo; \item L'attore visualizza i dettagli di configurazione del blocco; \item  L'attore seleziona la città; \item L'attore conferma il blocco salvandolo.\end{enumerate}
+	\begin{enumerate} \item L'attore seleziona il blocco Meteo;  \item  L'attore seleziona la città.\end{enumerate}
+	\item \textbf{Estensioni}:
+	Errore città (UC2.1.2.22)
 \end{itemize}
 
 \section{UC2.1.2.19: Inserimento Amazon Music}
@@ -559,6 +561,18 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 	\item \textbf{Scenario principale}:
 	\begin{enumerate} \item Il sistema chiede nuovamente il feed RSS oppure permette di annullare l'inserimento;  \item  L'attore inserisce un Feed RSS corretto oppure annulla l'operazione.\end{enumerate}
 \end{itemize}
+
+\section{UC2.1.2.22: Errore città }
+\label{UC2.1.2.22}
+\begin{itemize}
+	\item \textbf{Attori}: ;
+	\item \textbf{Descrizione}: L'utente ha inserito una città inesistente. 
+	\item \textbf{Precondizione}: L'utente ha inserito una città inesistente.
+	\item \textbf{Postcondizione}: L'utente ha inserito una città esistente o ha annullato l'operazione.
+	\item \textbf{Scenario principale}:
+	\begin{enumerate} \item Il sistema avvisa l'utente dell'errore;  \item  L'utente modifica la città oppure annulla l'operazione.\end{enumerate}
+\end{itemize}
+
 
 \section{UC2.2: Eliminazione workflow}
 \label{UC2.2}
