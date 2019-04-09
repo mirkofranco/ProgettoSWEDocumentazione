@@ -209,7 +209,7 @@ In questa tabella  sono riportate le differenze tra le ore di lavoro previste pe
 \end{table}
 \newpage
 \section{Bilancio Progettazione di dettaglio e codifica}\label{BilProgDC}
-	%DESCRIZIONE%
+La tabella riporta la differenza delle ore tra preventivo e consuntivo suddivise per ruolo. Il segno negativo indica una spesa superiore rispetto a quanto preventivato.\\
 		\begin{table}[!h]
 		\begin{center}
 			\rowcolors{1}{}{lightgray}
@@ -218,15 +218,15 @@ In questa tabella  sono riportate le differenze tra le ore di lavoro previste pe
 				\hline
 				\textcolor{white}{Ruolo} & \textcolor{white}{Ore} & \textcolor{white}{Costo in \euro}\\
 				\hline
-				Responsabile   & 	&  	 	\\ 
-				Amministratore & 	&  	 	\\ 
-				Analista       &   	&     	\\ 
-				Progettista    & 	&   	\\ 
-				Verificatore   &   	&  		\\ 
-				Programmatore  &    &   	\\ \hline
-				\textbf{Totale}& \textbf{TOT} & \textbf{TOT}	\\ \hline 
-				\textbf{Totale preventivato}& \textbf{TOT} & \textbf{TOT}\\ \hline 
-				\textbf{Differenza}& \textbf{TOT} & \textbf{TOT}	\\ \hline  
+				Responsabile   & 7(-1)	&  	210 	\\ 
+				Amministratore & 15(+3)	&  	300 	\\ 
+				Analista       & 11 &   275\\ 
+				Progettista    & 115(-2)&   2530	\\ 
+				Verificatore   & 69	(-2)&  	1035	\\ 
+				Programmatore  & 140(+6)&   2100	\\ \hline
+				\textbf{Totale}& \textbf{357} & \textbf{6450}	\\ \hline 
+				\textbf{Totale preventivato}& \textbf{353} & \textbf{6404}\\ \hline 
+				\textbf{Differenza}& \textbf{-4} & \textbf{-46}	\\ \hline  
 			\end{tabular}
 			
 			\caption{Differenza delle ore tra preventivo e consultivo divise per ruolo} 
@@ -245,13 +245,13 @@ In questa tabella  sono riportate le differenze tra le ore di lavoro previste pe
 				\multirow{2}{*}{Nominativo} & \multicolumn{6}{c|}{Ore per ruolo} & \multirow{2}{*}{Ore totali} \\ \cline{2-7}
 				& Re & Am & An & Pt & Ve & Pr &      \\ \hline
 				\endhead
-				Mirko Franco       &   &  &   &   &  &   & 0        \\ \hline
-				Bianca Ciuche      &   &  &   &   &  &   & 0        \\ \hline
-				Stefano Zanatta    &   &  &   &	  &  &   & 0        \\ \hline
-				Andrea Deidda      &   &  &   &   &  &   & 0  		\\ \hline
-				Ludovico Brocca    &   &  &   &   &  &   & 0        \\ \hline
-				Matteo Depascale   &   &  &   &   &  &	 & 0  		\\ \hline
-				Gian Marco Bratzu  &   &  &   &   &  &   & 0        \\ \hline
+				Mirko Franco       &   &  &   & +2  & -6 & +2  & -2        \\ \hline
+				Bianca Ciuche      &   & +2  &   &   &  & -3  & -1        \\ \hline
+				Stefano Zanatta    &   &  &   &	 -2 &  &  +3 & +1        \\ \hline
+				Andrea Deidda      &   &  &   &   & +2 & -2  & 0  		\\ \hline
+				Ludovico Brocca    &  -1 &  &   &   &  & +2  & +1        \\ \hline
+				Matteo Depascale   &   & +1&  & -2&  &	+6 & +5  		\\ \hline
+				Gian Marco Bratzu  & &  &   &   & +2 & -2  & 0        \\ \hline
 				
 			\end{tabularx}
 			\caption{Differenza tra le ore di lavoro previste per ogni membro del gruppo con le ore realmente impiegate }
@@ -259,10 +259,12 @@ In questa tabella  sono riportate le differenze tra le ore di lavoro previste pe
 	\end{table}
 
 	\subsection{Conclusioni}
-	%DESCRIZIONE%
+	I guadagni riscontrati nei consuntivi dell'ultimo periodo sono stati allocati per la codifica del prodotto, sono sate inoltre redistribuite alcune ore, con una diminuzione di quelle per la progettazione (dovuta a una maggiore semplicità della \glossario{Skill} non considerata in precedenza) e un aumento di quelle da \textit{Amministratore} per la conversione e l'adattamento degli strumenti utilizzati a \glossario{TypeScript}, in sostituzione a JavaScript.\\
 	
 \section{Preventivo a finire}
-	%DESCRIZIONE
+	La seguente tabella presenta l’attuale preventivo a finire. Nel caso in cui il
+	valore del consuntivo di un determinato periodo non è ancora presente, per
+	il conteggio totale verrà utilizzato il valore del preventivo.
 	
 		\begin{table}[!h]
 		\begin{center}
@@ -277,17 +279,14 @@ In questa tabella  sono riportate le differenze tra le ore di lavoro previste pe
 				\hline
 				Revisione analisi& 715,00 & 765,00 \\ 	
 				Progettazione della base tecnologica& 3642,00 & 3567,00\\ 
-				Progettazione di dettaglio e codifica& 6404,00   &\\ 
+				Progettazione di dettaglio e codifica& 6404,00   & 6450,00\\ 
 				Validazione e collaudo & 3018,00 & - \\ \hline
-				\textbf{Totale rendicontato}& \textbf{13779,00} & \textbf{tot}	\\ \hline   
+				\textbf{Totale rendicontato}& \textbf{13719,00} & \textbf{13740,00}	\\ \hline   
 				
 			\end{tabular}
 			\caption{Preventivo a finire} 
 		\end{center}		
 	\end{table}
-
-
-
 
 
 \end{flushleft}
