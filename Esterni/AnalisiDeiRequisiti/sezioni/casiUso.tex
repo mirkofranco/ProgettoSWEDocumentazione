@@ -329,7 +329,7 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 \begin{figure} [h]
 	\centering
 	\includegraphics[scale=0.4]{./Diagram/Telegram.png}
-	\caption{Inserimento di un blocco Telegramu}\label{}
+	\caption{Inserimento di un blocco T}\label{}
 \end{figure}
 \begin{itemize}
 	\item \textbf{Attori}: Autent.Telegram, utente autenticato.
@@ -338,6 +338,52 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 	\item \textbf{Postcondizione}: L'attore ha inserito il blocco "Telegram" e le credenziali d'accesso nel suo workflow.
 	\item \textbf{Scenario principale}:
 	\begin{enumerate} \item L'attore seleziona il blocco "Telegram"; \item L'attore visualizza i dettagli di configurazione del blocco; \item  L'attore inserisce le credenziali d'accesso; \item L'attore conferma il blocco salvandolo.\end{enumerate}
+\end{itemize}
+
+\section{UC2.1.2.8.1: Autenticazione Telegram}
+\label{UC2.1.2.8.1}
+\begin{itemize}
+	\item \textbf{Attori}: ;
+	\item \textbf{Descrizione}: L'utente autenticato all'applicazione vuole usare una funzionalità che si interfaccia con Telegram e quindi deve autenticarsi. 
+	\item \textbf{Precondizione}: L'utente è autenticato e vuole utilizzare una funzionalità che si interfaccia con Telegram. 
+	\item \textbf{Postcondizione}: L'utente è riconosciuto da Telegram e può utilizzare una funzionalità che si interfaccia con esso. 
+	\item \textbf{Scenario principale}:
+	\begin{enumerate} \item L'utente preme il pulsare per autenticarsi a Telegram;  \item  L'utente viene reindirizzato a Telegram;  \item  L'utente completa il login con Telegram;  \item  L'utente ritorna all'applicazione.\end{enumerate}
+\end{itemize}
+
+\section{UC2.1.2.8.2: Invio messaggio}
+\label{UC2.1.2.8.2}
+\begin{itemize}
+	\item \textbf{Attori}: ;
+	\item \textbf{Descrizione}: L'utente vuole inviare un messaggio tramite Telegram. Vuole quindi inserire il blocco "Telegram - Invio messaggio".
+	\item \textbf{Precondizione}: L'attore è riconosciuto da Telegram.
+	\item \textbf{Postcondizione}: L'utente ha inserito il blocco al workflow.
+	\item \textbf{Scenario principale}:
+	\begin{enumerate} \item L'utente seleziona il blocco "Telegram - Invio messaggio";  \item  L'utente inserisce il nome utente del destinatario;  \item  Il sistema valida il nome utente inserito tramite Telegram;  \item  L'utente seleziona la tipologia di messaggio: testuale o vocale;  \item  Il blocco viene inserito nel workflow.\end{enumerate}
+	\item \textbf{Estensioni}:
+	Errore inserimento username (UC2.1.2.8.4)
+\end{itemize}
+
+\section{UC2.1.2.8.3: Lettura messaggi }
+\label{UC2.1.2.8.3}
+\begin{itemize}
+	\item \textbf{Attori}: ;
+	\item \textbf{Descrizione}: L'attore vuole essere aggiornato con i messaggi non letti ricevuti su Telegram. Aggiunge quindi il blocco "Telegram - Lettura messaggi".
+	\item \textbf{Precondizione}: L'utente è riconosciuto da Telegram.
+	\item \textbf{Postcondizione}: L'utente ha aggiunto il blocco "Telegram - Lettura messaggi" nel workflow.
+	\item \textbf{Scenario principale}:
+	\begin{enumerate} \item L'utente seleziona il blocco "Telegram - Invio messaggi";  \item  Il blocco è aggiunto al workflow.\end{enumerate}
+\end{itemize}
+
+\section{UC2.1.2.8.4: Errore inserimento username}
+\label{UC2.1.2.8.4}
+\begin{itemize}
+	\item \textbf{Attori}: ;
+	\item \textbf{Descrizione}: L'attore ha inserito un nome utente non esistente in Telegram.
+	\item \textbf{Precondizione}: L'attore ha inserito un nome utente non esistente in Telegram.
+	\item \textbf{Postcondizione}: L'attore ha inserito un nome utente esistente o ha annullato l'operazione.
+	\item \textbf{Scenario principale}:
+	\begin{enumerate} \item Il sistema avvisa l'utente dell'errore;  \item  L'utente modifica il nome utente oppure annulla l'operazione.\end{enumerate}
 \end{itemize}
 
 \section{UC2.1.2.9: Inserimento Calendario}
@@ -412,12 +458,37 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 \section{UC2.1.2.15: Inserimento Borsa e Crypto}
 \label{UC2.1.2.15}
 \begin{itemize}
-	\item \textbf{Attori}: Utente autenticato.
+	\item \textbf{Attori}: utente autenticato;
 	\item \textbf{Descrizione}: L'attore può inserire il blocco "Borsa e Crypto". Questo blocco permette all'attore di conoscere i valori delle monete e cryptovalute. 
 	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
-	\item \textbf{Postcondizione}: L'attore ha inserito il blocco "Borsa e Crypto".
+	\item \textbf{Postcondizione}: L'attore ha inserito il blocco "Borsa e Crypto"
 	\item \textbf{Scenario principale}:
 	\begin{enumerate} \item L'attore seleziona il blocco "Borsa e Crypto";  \item  Il sistema fornisce una lista inerente di monete e criptovalute;  \item  L'attore seleziona le monete e criptovalute che vuole monitorare.\end{enumerate}
+\end{itemize}
+
+
+
+
+\section{UC2.1.2.15.1: Inserimento Borsa}
+\label{UC2.1.2.15.1}
+\begin{itemize}
+	\item \textbf{Attori}: ;
+	\item \textbf{Descrizione}: L'attore inserisce il blocco "Borsa". Questo blocco permette di conoscere i valori in borsa di vari titoli. 
+	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
+	\item \textbf{Postcondizione}: L'attore inserisce il blocco "Borsa£
+	\item \textbf{Scenario principale}:
+	\begin{enumerate} \item L'attore seleziona il blocco "Borsa";  \item  Il sistema fornisce una lista inerente di titoli;  \item  L'attore seleziona i titoli che vuole monitorare.\end{enumerate}
+\end{itemize}
+
+\section{UC2.1.2.15.2: Inserimento "Crypto"}
+\label{UC2.1.2.15.2}
+\begin{itemize}
+	\item \textbf{Attori}: ;
+	\item \textbf{Descrizione}: L'attore può inserire un blocco "Crypto". Questo blocco permette all'attore di conoscere i valori delle monete e cryptovalute.
+	\item \textbf{Precondizione}: L'attore sta creando un workflow e il sistema permette di selezionare un blocco.
+	\item \textbf{Postcondizione}: L'attore ha inserito il blocco "Crypto" nel workflow.
+	\item \textbf{Scenario principale}:
+	\begin{enumerate} \item L'attore inserisce un blocco "Crypto";  \item  Il sistema fornisce una lista inerente di monete e cryptovalute;  \item  L'attore seleziona le monete e cryptovalute che desidera monitorare.\end{enumerate}
 \end{itemize}
 
 \section{UC2.1.2.16: Inserimento Feed RSS}
