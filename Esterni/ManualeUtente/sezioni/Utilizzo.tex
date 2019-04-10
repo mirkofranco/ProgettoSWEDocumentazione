@@ -1,16 +1,19 @@
 \chapter{Utilizzo di MegAlexa}
 \label{utilizzo}
-
-\section{Creazione Workflow}
+\section{Utlizzo dell'applicazione}
+\subsection{Creazione Workflow}
 Al primo avvio dell'applicazione apparirà una schermata vuota, priva di \textit{workflow$_{G}$}.
+
 \begin{enumerate}
 \item Cliccare sul tasto "+" per aggiungere un nuovo workflow.
-	\begin{figure}[h]
+
+	\begin{figure}[!ht]
 		\centering
 		\includegraphics[scale=0.2]{images/HomeWorkflowEmpty.jpg}
 		\caption{Elenco workflow vuoto}
 	\end{figure}
-	\newpage
+
+\newpage
 \item Inserire il nome del nuovo workflow nell'apposito campo di testo ed infine premere l'icona in alto a destra per salvare.\\
 \textbf{NOTA BENE:} all'utente non è permesso creare due o più workflow con lo stesso nome.
 
@@ -19,6 +22,7 @@ Al primo avvio dell'applicazione apparirà una schermata vuota, priva di \textit
 	\includegraphics[scale=0.2]{images/AddWorkflow.jpg}
 	\caption{Schermata aggiunta workflow}
 \end{figure}
+
 \newpage
 \item Nell'elenco dei workflow, a questo punto, si potrà vedere il nuovo workflow appena creato.
 
@@ -27,7 +31,9 @@ Al primo avvio dell'applicazione apparirà una schermata vuota, priva di \textit
 	\includegraphics[scale=0.2]{images/HomeWorkflow.jpg}
 	\caption{Elenco workflow con il nuovo workflow creato}
 \end{figure}
+
 \end{enumerate}
+
 \newpage
 \subsection{Aggiunta blocchi}
 Una volta creato il workflow apparirà vuoto, senza blocchi.
@@ -86,7 +92,7 @@ Lo scopo di questo blocco è quello di effettuare una sorta di autenticazione de
 
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[scale=0.4]{images/BlockPIN.jpg}
+	\includegraphics[scale=0.8]{images/BlockPIN.jpg}
 	\caption{Blocco PIN}
 \end{figure}
 
@@ -123,16 +129,63 @@ Tale blocco consente all'utente di inserire nel proprio workflow un blocco conte
 \subsubsection{Blocco Weather}
 Il blocco Weather consente all'utente di sapere che meteo c'è in una determinata città.
 
-\section{Utlizzo dell'applicazione}
-\section{Utilizzo di Alexa}
-Alexa è un assistente personale intelligente sviluppato dall'azienda statunitense Amazon, utilizzato per la prima volta nei dispositivi Amazon Echo e Amazon Echo Dot.
-Alexa  consente all'utente di fare delle domande e delle richieste usando semplicemente la voce.\\
+\newpage
+\section{Utilizzo della skill MegAlexa}
+
+\begin{enumerate}
+\item  \textbf{Effettuare login con account Amazon nell'applicazione MegAlexa ed Alexa}\\
+Il primo passo per poter utilizzare la skill MegAlexa attraverso iterazione vocale è effettuature il login con il proprio account Amazon sull'applicazione MegAlexa e sull'applicazione Alexa??.\\
+\item  \textbf{Configurazione account attraverso l'applicazione Alexa}\\
+Successivamente per poter utilizzare la skill MegAlexa attraverso l'Echo Dot, quindi attraverso  interazione vocale occorre effettuare la configurazione del proprio Amazon account attraverso l'applicazione Alexa.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.5\textwidth]{images/RichiestaAutenticazione.png}
+	\caption{Richiesta autenticazione}
+\end{figure}
+
+Nell'applicazione Alexa verrà chiesto se si vuole configurare il proprio account alla skill MegAlexa:
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=0.7\textwidth]{images/ConfigurazioneAlexa.png}
+	\caption{Configurazione account}
+\end{figure}
+
+\item  \textbf{Configurazione Completata}\\
+Dopo aver dato il consenso la skill MegAlexa sarà collegata al proprio account
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{images/CollegamentoRiuscito.png}
+	\caption{Collegamento skill con successo}
+\end{figure}
+
+\item  \textbf{Avvio della Skill MegAlexa}\\
+Successivamente sarà possibile far avviare la propria skill col comando vocale "Alexa, open MegAlexa" utilizzando l'echo Dot
+
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{images/OpenMegAlexa.png}
+	\caption{Avvio della skill MegAlexa}
+\end{figure}
+
+
+
+\end{enumerate}
+
 Le skill sono abilità di Alexa attivate tramite comando vocale. Le skill permettono di attivare nuove funzionalità e contentenuti che arrichiscono l'esperienza con i dispositivi Echo e con integrazione Alexa. \\
 Attraverso la skill MegAlexa, Alexa è in grado di avviare i workflow creati dall'utente attraverso l'applicazione.\\
+
+
+
 Il seguente Voice Dialog Flow  presenta degli esempi di interazione con Alexa.
 
 \section{Voice Dialog Flow}
 \label{VDF}
+Per riuscire a comprendere meglio come avviene l'interazione vocale con Alexa sono riportati dei voice dialog Flow, cioè degli esempi di conversazione.\\
+
 Le interazioni sono strutturate come segue:
 \begin{itemize}
 	\item \textbf{U:} rappresenta l'utente;
@@ -513,8 +566,15 @@ Quando l'utente dirà il PIN corretto allora Alexa proseguirà con l'esecuzione 
 	\item La lista non è vuota.\\
 	\begin{itemize}
 		\item Aggiungere un elemento alla lista.
+		\begin{comment}
 		\texttt{A: Hai [x] elementi nella tua lista, questi sono i più recenti: [elemento]x5, vuoi che te ne legga altri oppure preferisci modificare o eliminare uno di questi? | Hai [x] elementi nella tua lista, gli ultimi che hai aggiunto sono: [elemento]x5, vuoi sentirne altri oppure vuoi modificare o eliminare uno di questi? | La tua lista ha [x] elementi, questi sono i più recenti: [elemento]x5, vuoi sentirne altri oppure modificare o eliminare uno di questi? }\\
 		\textit{U: [Si Intent], voglio sentirne altri | [Si Intent], continua a leggere | [Si Intent], leggine altri | [Si Intent], continua con la lettura }\\
+		\end{comment}
+		\texttt{A: Aggiungi un elemento alla lista}
+		\textit{U: [elemnti ]}\\
+		
+		
+		\begin{comment}
 		\texttt{A: [elemento]x5, vuoi sentirne altri oppure vuoi modificare o eliminare uno di questi? }\\
 		\textit{U: [No Intent]}\\
 		\texttt{A: Va bene, vuoi aggiungere un elemento alla tua lista? | Ok, vuoi aggiungere qualche elemento alla tua lista? | Ok, aggiungiamo qualche elemento? | Va bene, vuoi inserire qualcosa nella tua lista? }\\
@@ -522,6 +582,7 @@ Quando l'utente dirà il PIN corretto allora Alexa proseguirà con l'esecuzione 
 		\texttt{A: Salvato con successo, vuoi aggiungere altri elementi? | Va bene, vuoi aggiungere altri elementi? | Salvato, vuoi aggiungerne altri? | Fatto, vuoi aggiungerne altri? }\\
 		\textit{U: [No Intent]}\\
 		\texttt{A: Va bene | Ok}
+		\end{comment}
 		
 		\item Cambio di un elemento della lista.\\
 		\texttt{A: Hai [x] elementi nella tua lista, questi sono i più recenti: [elemento]x5, vuoi che te ne legga altri oppure preferisci modificare o eliminare uno di questi? | Hai [x] elementi nella tua lista, gli ultimi che hai aggiunto sono: [elemento]x5, vuoi sentirne altri oppure vuoi modificare o eliminare uno di questi? | La tua lista ha [x] elementi, questi sono i più recenti: [elemento]x5, vuoi sentirne altri oppure modificare o eliminare uno di questi? }\\
@@ -598,7 +659,7 @@ Il numero di emails che Alexa leggerà verrà scelto dall'utente nell'apposito f
 
 \subsubsection{Amazon Music}
 \texttt{A: Eccoti un po' di buona musica, [playlist] | Rilassati ascoltando la tua playlist [playlist]} 
-
+Eccoti un po' di buona musica è un blocco di testo
 \subsubsection{Notizie}
 \texttt{A: Questo è il tuo sommario quotidiano [notizie] | Eccoti le notizie quotidiane [notizie]}
 
