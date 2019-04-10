@@ -188,44 +188,35 @@ Per poter utilizzare la skill MegAlexa è necessario configurare il proprio acco
     attraverso l'iterazione vocale utilizzando l'Echo Dot.
     
 \end{enumerate}
-
+\newpage
 \item  \textbf{Esecuzione skill MegAlex}\\
+\\
+ Per avviare la skill MegAlexa attraverso l'Echo Dot occorre pronunciare uno dei comandi vocali di avvio come ad esempio: "Alexa, open MegAlexa", oppurre "Alexa, start MegAlexa".
+      
+Se Alexa risponde con una richiesta della configurazione dell'account Amazon con la skill MegALexa allora  bisogna seguire le istruzioni indicate nella sezione precedente "configurazione Skill MegAlexa". 
 
-Per avviare la skill MegAlexa attraverso l'Echo Dot occorre pronunciare uno dei comandi vocali di avvio come ad esempio: "Alexa, open MegAlexa", oppurre "Alexa, start MegAlexa".
-
-Se Alexa dice di dover effettuare la configurazione con l'account Amazon bisogna seguire le instruzioni indicate nella  sezione precedente "configurazione Skill MegAlexa". Altrimenti  si può procedere con esecuzione dei workflow a disposizione 
-
-\begin{figure}[ht]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.5\textwidth]{images/RichiestaAutenticazione.png}
-	\caption{Richiesta autenticazione}
+	\caption{Richiesta Autenticazione}
 \end{figure}
-Altrimenti si può procedere con l'esecuzione della skill attraverso l'iterazione vocale con  Alexa attraverso l'echo
 
+Altrimenti si può procedere al successivo passaggio con l'esecuzione della skill MegAlexa attraverso l'iterazione vocale con Alexa. \\
 
-
-
-
-\begin{figure}[!h]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.5\textwidth]{images/OpenMegAlexa.png}
 	\caption{Avvio della skill MegAlexa}
 \end{figure}
 
-
-
 \end{itemize}
 
-Le skill sono abilità di Alexa attivate tramite comando vocale. Le skill permettono di attivare nuove funzionalità e contentenuti che arrichiscono l'esperienza con i dispositivi Echo e con integrazione Alexa. \\
-Attraverso la skill MegAlexa, Alexa è in grado di avviare i workflow creati dall'utente attraverso l'applicazione.\\
+A questo punto attraverso la skill MegAlexa, l'utente può avviare i workflow creati nell'applicazione.\\
 
-
-
-Il seguente Voice Dialog Flow  presenta degli esempi di interazione con Alexa.
-
+\newpage
 \section{Voice Dialog Flow}
 \label{VDF}
-Per riuscire a comprendere meglio come avviene l'interazione vocale con Alexa sono riportati dei voice dialog Flow, cioè degli esempi di conversazione.\\
+Per riuscire a comprendere meglio come avviene l'interazione vocale con Alexa sono riportati dei Voice Dialog Flow, cioè degli esempi di conversazione.\\
 
 Le interazioni sono strutturate come segue:
 \begin{itemize}
@@ -396,6 +387,10 @@ Consente all'utente di fornire una risposta positiva in seguito a una domanda di
 	\intent{ok, va bene}.		
 \end{itemize}
 
+\section{Utilizzo blocco testo }
+Al fine di creare workflow con blocchi che si collegano meglio tra di loro o per renderli più personalizzati,
+nelle conversazioni che presentiamo molte delle frasi che Alexa andrà a dire constituiscono un blocco di testo,cioè un pezzo di testo che l'utente andrà a inserire prima di un blocco.
+
 \section{English}
 \subsection{Skill start} \label{SkillStart}
 \textit{U: Open MegAlexa | Launch MegAlexa | Initiate MegAlexa | Start MegAlexa | Use MegAlexa | Begin MegAlexa}\\
@@ -432,6 +427,13 @@ If the user says the wrong PIN:
 If the user says the correct PIN:
 \texttt{A: PIN is correct.}\\
 
+
+\subsubsection{Read Twitter}
+\texttt{A: This are you tweets: [Read tweets]}\\
+
+
+\begin{comment}
+QUESTA PARTE VA A DINDO
 \subsubsection{Read Twitter}
 \texttt{A: [Read tweets], do you want to hear more? | [Read tweets], should I keep reading? | [Read tweets], should I go on?}\\
 \textit{U: [Yes Intent]}\\
@@ -439,28 +441,35 @@ If the user says the correct PIN:
 \textit{U: [No Intent]}\\
 \texttt{A: Ok | Alright}\\\\
 If the user wish to continue listening tweets then Alexa will go forward reading the same amount of tweets set in the filterable block, otherwise Alexa will proceed with the next block.
+\end{comment}
 
-\subsubsection{List}
+\subsubsection{ Read List}
+\texttt{A: Here are the element that you have in your list: [elements] | The items on your list are these: [elements] |  the list consists of these elements: [elements]}\\
+
+\begin{comment}
+
 \begin{itemize}
 	\item The list is empty.\\
 	\begin{itemize}
+		//QUESTA PARTE VA A DINDO 
 		\item Add an element on the list.\\
 		\texttt{A: Your list is empty,add an element on the list | What element do you want to add?| Your list is blank, is there anything you want to fill it with?}\\
 		\textit{U: Add [element] to my list | I'd like to insert [element] to my list | I want to add [element] to my list | I need to add [element] to my list | Add [element] }\\
 		\texttt{A: Saved, would you like to add other elements? | Alright, would you like to add other elements? | Well done, do you have anything else to add? | Finally something in it, let's add some more}\\
 		\textit{U: [No Intent]}\\
 		\texttt{A: Ok | Alright}
-		\begin{comment}
+		
+		// PARTE VECCHIA
 		\texttt{A: Would you like to add any elements into your list? | Your list is empty, is there anything you want to fill it with? | The list is empty, shall we insert anything? | There is nothing on your list, would you like to add any elements into your list? | Your list is blank, is there anything you want to fill it with?}\\
 		\textit{U: Add [element] to my list | I'd like to insert [element] to my list | I want to add [element] to my list | I need to add [element] to my list | Add [element] }\\
 		\texttt{A: Saved, would you like to add other elements? | Alright, would you like to add other elements? | Well done, do you have anything else to add? | Finally something in it, let's add some more}\\
 		\textit{U: [No Intent]}\\
 		\texttt{A: Ok | Alright}
-		\end{comment}
 		
 
 		
-	\end{itemize}	
+	\end{itemize}
+    QUESTA PARTE VA A DINDO 
 	\item The list is not empty.\\
 	\begin{itemize}
 		\item Add an element on the list.
@@ -469,7 +478,8 @@ If the user wish to continue listening tweets then Alexa will go forward reading
 		\texttt{A: Saved, would you like to add other elements? | Alright, would you like to add other elements? | Well done, do you have anything else to add?}\\
 		\textit{U: [No Intent]}\\
 		\texttt{A: Ok | Alright}
-	   \begin{comment}
+		
+       PARTE VECCHIA
 		\texttt{A: You have [x] elements on your list, here are the five most recent: [element]x5, would you like to hear more, modify or delete one of those? | You have [x] elements on your list, the last five elements you added are: [element]x5, would you like to hear more, modify or delete one of those? | Your list has [x] elements, here are the five most recent: [element]x5, would you like to hear more, modify or delete one of those?}\\
 		\textit{U: [Yes Intent], I want to hear more | [Yes Intent], tell me more | [Yes Intent], go on | [Yes Intent] keep reading }\\
 		\texttt{A: [element]x5, would you like to hear more, modify or delete one of those?}\\
@@ -479,18 +489,20 @@ If the user wish to continue listening tweets then Alexa will go forward reading
 		\texttt{A: Saved, would you like to add other elements? | Alright, would you like to add other elements? | Well done, do you have anything else to add? | Ok, let's add some more}\\
 		\textit{U: [No Intent]}\\
 		\texttt{A: Ok | Alright}
-		 \end{comment}
 		
+		
+		QUESTA PARTE VA A DINDO
 		\item Change an element on the list.\\
 		\texttt{A:Which element do you want to change?}
 	    \textit{U: Change [old element]  | Edit [old element]]}\\
-	    \texttt{A:What do you want to insert instead of the old element?}
+	    \texttt{A: What do you want to insert instead of the old element?}
 	     \textit{U: [new element]}\\
-	    \texttt{A: Ok, would you like to change others elements?}\\
+	    \texttt{A: Ok, the change has been successfully applied, would you like to change others elements?| The edit has been successfully applied,would you like to change others elements?}\\
 	     \textit{U: [No Intent] }\\
 	    \texttt{A: Ok | Alright}
-		
-		 \begin{comment}
+	    
+	    
+		PARTE VECCHIA
 		\texttt{A: You have [x] elements on your list, here are the five most recent: [element]x5, would you like to hear more, modify or delete one of those? | You have [x] elements on your list, the last five elements you added are: [element]x5, would you like to hear more, modify or delete one of those? | Your list has [x] elements, here are the five most recent: [element]x5, would you like to hear more, modify or delete one of those?}\\
 		\textit{U: Change [old element] with [new element] | Edit [old element] with [new element]}\\
 		\texttt{A: The change has been successfully applied, would you like to change or delete anything else? | The edit has been successfully applied, would you like to change or delete anything else?}\\
@@ -502,17 +514,17 @@ If the user wish to continue listening tweets then Alexa will go forward reading
 		\texttt{A: [element]x5, would you like to hear more, modify or delete one of those?}\\
 		\textit{U: [No Intent] }\\
 		\texttt{A: Ok | Alright}
-		\end{comment}
+
 		
-		
+		QUESTA PARTE VA A DINDO
 		\item Delete an element on the list.\\
 		\texttt{A:Which element do you want to delete?}
 		\textit{U: [element]}\\
-		\texttt{A: Ok, would you like to delete others elements? | Alright, would you like to delete anything else?}\\
-		\textit{U: [No Intent] }\\
+		\texttt{A: Ok, The element has been successfully deleted, would you like to delete others elements? | Alright, would you like to delete anything else? | The element has been successfully dropped, would you like to delete others elements?}\\
+		\textit{U: [No Intent]}\\
 		\texttt{A: Ok}
-			
-		\begin{comment}
+		
+		PARTE VECCHIA
 		\texttt{A: You have [x] elements on your list, here are the five most recent: [element]x5, would you like to hear more, modify or delete one of those? | You have [x] elements on your list, the last five elements you added are: [element]x5, would you like to hear more, modify or delete one of those? | Your list has [x] elements, here are the five most recent: [element]x5, would you like to hear more, modify or delete one of those?}\\
 		\textit{U: Delete [element] | Drop [element]}\\
 		\texttt{A: The element has been successfully deleted, would you like to change or delete anything else? | The element has been successfully dropped, would you like to change or delete anything else?}\\
@@ -524,16 +536,14 @@ If the user wish to continue listening tweets then Alexa will go forward reading
 		\texttt{A: [element]x5, would you like to hear more, modify or delete one of those?}\\
 		\textit{U: [No Intent]}\\
 		\texttt{A: Ok | Alright}
-	     \end{comment}
 		
-	
+     	QUESTA PARTE VA A DINDO
 		\item Clear list.\\
 	    \texttt{A: would you like to delete all the list? |  would you like to delete all the  elements?}
 		\textit{U: Yes}\\
 		\texttt{A: Ok, list deleted.}
 		
-		
-	    \begin{comment}
+		PARTE VECCHIA
 		\texttt{A: You have [x] elements on your list, here are the five most recent: [element]x5, would you like to hear more, modify or delete one of those? | You have [x] elements on your list, the last five elements you added are: [element]x5, would you like to hear more, modify or delete one of those? | Your list has [x] elements, here are the five most recent: [element]x5, would you like to hear more, modify or delete one of those?}\\
 		\textit{U: Clear my list}\\
 		\texttt{A: Would you like to add any elements into your list? | Your list is empty, is there anything you want to fill it with? | The list is empty, shall we insert anything? | There is nothing on your list, would you like to add any elements into your list? | Your list is blank, is there anything you want to fill it with?}\\
@@ -546,12 +556,14 @@ If the user wish to continue listening tweets then Alexa will go forward reading
 	
 	If there are less then 6 elements, Alex won't ask the user to hear other elements.\\
 	\texttt{A: You have [x] elements on your list: [element] would you like to modify or delete one of those? | You have [x] elements on your list: [element] would you like to modify or delete one of those? | Your list has [x] elements: [element] would you like to modify or delete one of those?}\\
-	\textit{U: [No Intent]}
-		 \end{comment}
-		 	\end{itemize}
-	 
-\end{itemize}
+	\textit{U: [No Intent]}	
+		 \end{itemize}
+		 
+\end{comment}
 
+	 
+
+\begin{comment}
 \subsubsection{Read email}
 \begin{itemize}
 	\item User has no unread emails\\
@@ -567,7 +579,7 @@ If the user wish to continue listening tweets then Alexa will go forward reading
 	If the user has new emails, Alexa will proceed to read them all. Also the user can choose a filter block which can allow him to read a selected amount of emails.
 \end{itemize}
 
-\subsubsection{Calendar}
+\subsubsection{Calendar}//NO
 \begin{itemize}
 	\item Read events
 	\begin{itemize}
@@ -585,21 +597,29 @@ If the user wish to continue listening tweets then Alexa will go forward reading
 	\texttt{A: Alright, events is been successfully saved, would you like to add another event? | Event has been saved, would you like to add other events?}\\
 	\textit{U: [No Intent]}
 \end{itemize}
+\end{comment}
 
 \subsubsection{Feed RSS}
 \texttt{A: Here is your feed, [FeedRSS]}
 
 \subsubsection{Weather}
 \texttt{A: Currently in [Location] is [$^\circ$C],with [Weather] you can expect an hight of [$^\circ$C] and a low of [$^\circ$C]}
-
-\subsubsection{Amazon Music}
+\begin{comment}
+\subsubsection{Amazon Music}//NO
 \texttt{A: Let's listen to some good music, [playlist] | Let's play some music [playlist]}
+\end{comment}
 
 \subsubsection{News}
 \texttt{A: Here is your flash briefing [news] | Here are the news [news]}
 
 \subsubsection{Sport}
 \texttt{A: Here is your sport flash briefing [sport]}
+
+\subsubsection{Stock}  
+\texttt{A: Here are your stock-market news [stock]}
+
+\subsubsection{Crypto}   
+\texttt{A: Here are your cryptocurrency related news [stock]}
 
 \subsection{Workflow is done}
 \texttt{A: Your workflow is completed, would you like to start a new one?}\\
@@ -623,9 +643,6 @@ Nel caso in cui ci fossero meno di 4 workflows allora Alexa non chiederà più d
 \textit{U: Apri [workflow] | Inizia [workflow] | Usa [workflow] | Fai partire [workflow] | Esegui [workflow]}\\
 
 \subsection{Esecuzione del workflow}
-\subsubsection{Sveglia}
-\texttt{A: [Suona]}\\
-\textit{U: Spegni | Posponi | Altri [x] minuti | Rimanda | Dammi altri [x] minuti | Rimanda di [x] minuti | Fermati}
 
 \subsubsection{Testo personalizzato}
 \texttt{A: [Testo]}
@@ -638,13 +655,24 @@ Nel caso in cui ci fossero meno di 4 workflows allora Alexa non chiederà più d
 Quando l'utente dirà il PIN corretto allora Alexa proseguirà con l'esecuzione del workflow.
 
 \subsubsection{Lettore Twitter}
+\texttt{A: Questi sono i tweet:[Legge tweets] | Ecoo i tweet:[Legge tweets]}\\
+
+
+\begin{comment}
+\subsubsection{Lettore Twitter}
 \texttt{A: [Legge tweets], vuoi ascoltarne altri? | [Legge tweets], vuoi sentirne altri? | [Legge tweets], ne leggo altri? | [Legge tweets], continuo a leggerne?}\\
 \textit{U: [Sì Intent]}\\
 \texttt{A: [Legge tweets], vuoi ascoltarne altri? | [Legge tweets], vuoi sentirne altri? | [Legge tweets], ne leggo altri? | [Legge tweets], continuo a leggerne?}\\
 \textit{U: [No Intent]}\\
 \texttt{A: Ok | Va bene}
+\end{comment}
 
-\subsubsection{Lista}
+\subsubsection{Lettore Lista}
+\texttt{A: Questi sono gli elementi nella lista:[elementi] | Ec o gli elementi nella lista:[elementi] | La tua lista contiene questi elementi: [elementi] }\\
+
+
+
+\begin{comment}
 \begin{itemize}
 	\item La lista è vuota.\\
 	\item Aggiungere un elemento alla lista.\\
@@ -654,13 +682,15 @@ Quando l'utente dirà il PIN corretto allora Alexa proseguirà con l'esecuzione 
 	\textit{U:[No Intent]}\\
 	\texttt{A: Va bene | Ok }\\ 
 	
+
 	\item La lista non è vuota.\\
 	\begin{itemize}
+		PARTE VECCHIA
 		\item Aggiungere un elemento alla lista.
-		\begin{comment}
 		\texttt{A: Hai [x] elementi nella tua lista, questi sono i più recenti: [elemento]x5, vuoi che te ne legga altri oppure preferisci modificare o eliminare uno di questi? | Hai [x] elementi nella tua lista, gli ultimi che hai aggiunto sono: [elemento]x5, vuoi sentirne altri oppure vuoi modificare o eliminare uno di questi? | La tua lista ha [x] elementi, questi sono i più recenti: [elemento]x5, vuoi sentirne altri oppure modificare o eliminare uno di questi? }\\
 		\textit{U: [Si Intent], voglio sentirne altri | [Si Intent], continua a leggere | [Si Intent], leggine altri | [Si Intent], continua con la lettura }\\
-		\end{comment}
+		
+		NUOVA PARTE PER DINDO
 		\texttt{A: Aggiungi un elemento alla lista}
 		\textit{U: [elemento]}\\
        \texttt{A: Vuoi aggiungere un altro elemento?}
@@ -674,10 +704,11 @@ Quando l'utente dirà il PIN corretto allora Alexa proseguirà con l'esecuzione 
 		\texttt{A: Salvato con successo, vuoi aggiungere altri elementi? | Va bene, vuoi aggiungere altri elementi? | Salvato, vuoi aggiungerne altri? | Fatto, vuoi aggiungerne altri? }\\
 		\textit{U: [No Intent]}\\
 		\texttt{A: Va bene | Ok}
-		\end{comment}
 		
-		\item Cambio di un elemento della lista.\\
-		 \begin{comment}\texttt{A: Hai [x] elementi nella tua lista, questi sono i più recenti: [elemento]x5, vuoi che te ne legga altri oppure preferisci modificare o eliminare uno di questi? | Hai [x] elementi nella tua lista, gli ultimi che hai aggiunto sono: [elemento]x5, vuoi sentirne altri oppure vuoi modificare o eliminare uno di questi? | La tua lista ha [x] elementi, questi sono i più recenti: [elemento]x5, vuoi sentirne altri oppure modificare o eliminare uno di questi? }\\
+		PARTE VECCHIA
+		\item Modifica di un elemento nella lista.\\
+		 \begin{comment}
+		 \texttt{A: Hai [x] elementi nella tua lista, questi sono i più recenti: [elemento]x5, vuoi che te ne legga altri oppure preferisci modificare o eliminare uno di questi? | Hai [x] elementi nella tua lista, gli ultimi che hai aggiunto sono: [elemento]x5, vuoi sentirne altri oppure vuoi modificare o eliminare uno di questi? | La tua lista ha [x] elementi, questi sono i più recenti: [elemento]x5, vuoi sentirne altri oppure modificare o eliminare uno di questi? }\\
 		\textit{U: [Si Intent], voglio modificare [vecchio elemento] con [elemento] | Modifica [vecchio elemento] con [elemento] | Cambia [vecchio elemento] con [elemento] | Sostituisci [vecchio elemento] con [elemento] }\\
 		\texttt{A: La modifica è andata a buon fine, vuoi modificare o eliminare un altro elemento? | La modifica è avvenuta con successo, vuoi modificare o eliminare un altro elemento? | La lista è stata modificata con successo, vuoi modificare o eliminare altro?}\\
 		\textit{U: [No Intent]}\\
@@ -685,13 +716,18 @@ Quando l'utente dirà il PIN corretto allora Alexa proseguirà con l'esecuzione 
 		\textit{U: [Si Intent] }\\
 		\texttt{A: [elemento]x5, vuoi sentirne altri oppure vuoi modificare o eliminare uno di questi? }\\
 		\textit{U: [No Intent]}\\
-		\texttt{A: Va bene | Ok}\end{comment}
+		\texttt{A: Va bene | Ok}
 		
+		
+		NUOVA PARTE PER DINDO
 		\texttt{A: Modifica un elemento nella lista}
 		\textit{U: [elemento]}\\
-		\texttt{A: Vuoi aggiungere un altro elemento?}
-		\textit{U: No]}\\
+		\texttt{A: Con quale elemento vuoi modificare l'elemento?}
+		\textit{U: [elemento]}\\
+		\texttt{A: Vuoi modificare un altro elemento?}
+		\textit{U: [No Intent ]}\\
 		
+		PARTE VECCHIA
 		\item Cancellazione di un elemento dalla lista.
 		\begin{comment}
 		\texttt{A: Hai [x] elementi nella tua lista, questi sono i più recenti: [elemento]x5, vuoi che te ne legga altri oppure preferisci modificare o eliminare uno di questi? | Hai [x] elementi nella tua lista, gli ultimi che hai aggiunto sono: [elemento]x5, vuoi sentirne altri oppure vuoi modificare o eliminare uno di questi? | La tua lista ha [x] elementi, questi sono i più recenti: [elemento]x5, vuoi sentirne altri oppure modificare o eliminare uno di questi? }\\
@@ -703,32 +739,38 @@ Quando l'utente dirà il PIN corretto allora Alexa proseguirà con l'esecuzione 
 		\texttt{A: [elemento]x5, vuoi sentirne altri oppure vuoi modificare o eliminare uno di questi? }\\
 		\textit{U: [No Intent]}\\
 		\texttt{A: Va bene | Ok}
-		\end{comment}
 		
+		NUOVA PARTE PER DINDO
 	    \texttt{A: Elimina un elemento alla lista}
 		\textit{U: [elemento]}\\
 		\texttt{A: Vuoi eliminare un altro elemento?}
-		\textit{U: No]}\\
+		\textit{U: [No Intent ]}\\
 		
-		\item Cancellazione di tutta la lista.
+		PARTE VECCHIA
+		\item Cancellazione di tutta la lista.\\
 	    \begin{comment}
 		\texttt{A: Hai [x] elementi nella tua lista, questi sono i più recenti: [elemento]x5, vuoi che te ne legga altri oppure preferisci modificare o eliminare uno di questi? | Hai [x] elementi nella tua lista, gli ultimi che hai aggiunto sono: [elemento]x5, vuoi sentirne altri oppure vuoi modificare o eliminare uno di questi? | La tua lista ha [x] elementi, questi sono i più recenti: [elemento]x5, vuoi sentirne altri oppure modificare o eliminare uno di questi? }\\
 		\textit{U: [Si Intent], voglio eliminare tutta la lista | Elimina tutta la lista | Cancella tutta la lista | Pulisci l'intera lista }\\
 		\texttt{A: La lista è completamente vuota, vuoi aggiungere qualche elemento? | Lista svuotata con successo, vuoi aggiungere elementi? | La lista è stata cancellata con successo, vuoi aggiungere qualcosa?}\\
 		\textit{U: [No Intent]}\\
 		\texttt{A: Va bene | Ok}
-	     \end{comment}
+	     
+	     NUOVA PARTE PER DINDO
 	     \texttt{A:Vuoi eliminare tutta la lista?}
 	     \textit{U:Si ]}\\
 	     \texttt{A: Lista eliminata}
-
-	\end{itemize}
-	
-	Nel caso ci fossero meno di 6 elementi, Alexa non chiederà all'utente se vuole sentirne altri.\\
+	     
+	     	\end{itemize}
+  	Nel caso ci fossero meno di 6 elementi, Alexa non chiederà all'utente se vuole sentirne altri.\\
 	\texttt{A: Hai [x] elementi nella tua lista: [elemento], vuoi modificare o eliminare uno di questi? | Hai [x] elementi nella tua lista: [elemento], vuoi modificare o eliminare uno di questi? | La tua lista ha [x] elementi: [elemento], vuoi modificare o eliminare uno di questi? }\\
 	\textit{U: [No Intent]}
-\end{itemize}
+	
+	   \end{comment}
+	   
 
+
+\begin{comment}
+DA CONSEGNARE A DINDO
 \subsubsection{Lettore email}
 \begin{itemize}
 	\item Non ci sono nuove emails da leggere. \\
@@ -761,26 +803,36 @@ Il numero di emails che Alexa leggerà verrà scelto dall'utente nell'apposito f
 	\texttt{A: L'evento è stato salvato con successo, vuoi aggiungerne un altro? | Evento salvato, vorresti inserirne un altro?}\\
 	\textit{U: [No Intent]}
 \end{itemize}
+\end{comment}
+
 \subsubsection{Feed RSS}
 \texttt{A: Questi sono gli aggiornamenti dei siti che segui, [FeedRSS]}
 
 \subsubsection{Meteo}
 \texttt{A: Attualmente in [Località] ci sono [$^\circ$C], oggi ci sarà [Tempo] con una minima di [$^\circ$C] e una massima di [$^\circ$C]}
 
-\subsubsection{Amazon Music}
+\begin{comment}\subsubsection{Amazon Music}
 \texttt{A: Eccoti un po' di buona musica, [playlist] | Rilassati ascoltando la tua playlist [playlist]} 
 Eccoti un po' di buona musica è un blocco di testo
+\end{comment}
+
 \subsubsection{Notizie}
 \texttt{A: Questo è il tuo sommario quotidiano [notizie] | Eccoti le notizie quotidiane [notizie]}
 
 \subsubsection{Sport}
 \texttt{A: Questo è il tuo sommario quotidiano sportivo [sport]}
 
+
+\subsubsection{Stock}  
+\texttt{A: Ecco le notizie sul mercato azionario [stock]}
+
+\subsubsection{Crypto}  
+\texttt{A: Ecco le notizie relative alla criptovaluta [crypto]}
+
 \begin{comment}
 \item da qua in poi desiderabili
-\subsubsection{Stock and Crypto}
-\subsubsection{Spotify}
-\subsubsection{Send tweet}
+crypto e borsa divisa
+\subsubsection{Send tweet} 
 \item da qua in poi facoltativi
 \subsubsection{Timer}
 \subsubsection{Radio}
