@@ -397,6 +397,40 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 	\begin{enumerate} \item L'attore seleziona il blocco "Calendario"; \item L'attore visualizza i dettagli di configurazione del blocco; \item  L'attore inserisce le proprie credenziali Google; \item L'attore conferma il blocco salvandolo.\end{enumerate}
 \end{itemize}
 
+\section{UC2.1.2.9.1: Autenticazione Google}
+\label{UC2.1.2.9.1}
+\begin{itemize}
+	\item \textbf{Attori}: ;
+	\item \textbf{Descrizione}: L'attore vuole inserire un blocco che si interfaccia con Google Calendario e quindi è necessario autenticarsi come utenti Google.
+	\item \textbf{Precondizione}: L'utente è autenticato e ha inserito un blocco che richiede di interfacciarsi con Google Calendario.
+	\item \textbf{Postcondizione}: L'utente ha inserito "Autenticazione Google" nel workflow.
+	\item \textbf{Scenario principale}:
+	\begin{enumerate} \item L'utente preme un tasto per autenticarsi con Google;  \item  L'utente viene reindirizzato a Google;  \item  L'utente completa il login con Google;  \item  L'utente ritorna all'applicazione;  \item \end{enumerate}
+\end{itemize}
+
+\section{UC2.1.2.9.2: Lettura eventi}
+\label{UC2.1.2.9.2}
+\begin{itemize}
+	\item \textbf{Attori}: ;
+	\item \textbf{Descrizione}: L'attore vuole poter leggere gli eventi sul calendario. Inserisce quindi il blocco "Calendario - Lettura eventi".
+	\item \textbf{Precondizione}: L'utente è riconosciuto da Google.
+	\item \textbf{Postcondizione}: L'utente ha inserito "Calendario - Lettura eventi" nel workflow.
+	\item \textbf{Scenario principale}:
+	\begin{enumerate} \item 1- L'utente selezione "Calendario - Lettura eventi";  \item  Il blocco è aggiunto al workflow.\end{enumerate}
+\end{itemize}
+
+\section{UC2.1.2.9.3: Scrittura eventi}
+\label{UC2.1.2.9.3}
+\begin{itemize}
+	\item \textbf{Attori}: ;
+	\item \textbf{Descrizione}: L'utente desidera poter inserire eventi nel calendario. Inserisce quindi il blocco "Calendario - Scrittura eventi".
+	\item \textbf{Precondizione}: L'utente è riconosciuto da Google.
+	\item \textbf{Postcondizione}: Il blocco "Calendario - Scrittura eventi" è aggiunto al workflow.
+	\item \textbf{Scenario principale}:
+	\begin{enumerate} \item L'utente seleziona "Calendario - Scrittura eventi";  \item  Il blocco è inserito nel workflow.\end{enumerate}
+\end{itemize}
+
+
 \section{UC2.1.2.10: Inserimento Youtube}
 \label{UC2.1.2.10}
 \begin{itemize}
@@ -688,7 +722,7 @@ Essendo questo caso d'uso particolarmente articolato, riportiamo di seguito un d
 \begin{itemize}
 	\item \textbf{Attori}: ;
 	\item \textbf{Descrizione}: L'utente inserisce un nome workflow errato perché già esistente.
-	\item \textbf{Precondizione}: L'utente inserisce un nome workflow errato perché già esistente.
+	\item \textbf{Precondizione}: L'utente inserisce un nome workflow errato perchéL  già esistente.
 	\item \textbf{Postcondizione}: L'utente inserisce un nome di workflow non esistente o annulla l'operazione.
 	\item \textbf{Scenario principale}:
 	\begin{enumerate} \item Il sistema avvisa l'utente;  \item  L'utente modifica il nome inserito o annulla l'operazione.\end{enumerate}
