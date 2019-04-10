@@ -314,15 +314,17 @@ Con riferimento al sito elencato nella sezione \ref{package}, la suddivisione de
 		\subitem  \textbf{activities:} contiene tutti file contenenti le\glossario{activities}dell'applicazione.
 		\subitem  \textbf{adapters:} conterrà tutti gli\glossario{adapters}che alcuni widget particolari di android richiedono (come le RecyclerView e le ListView);
 		\subitem  \textbf{fragments:} contiene i file riguardanti i\glossario{fragments}prodotti dalle activities;
-	\item  \textbf{com.megalexa.viewModel:}	contiene tutti i file che compongono il \textit{ViewModel$_{G}$}, che mette in comunicazione la parte grafica con quella logica;	
-	\item  \textbf{com.megalexa.models:} contiene tutti i file riguardanti la logica dell'applicazione;
+		\subitem	\textbf{util:} contiene interfacce utili per la realizzazione di interazioni particolari tra l'utente e l'interfaccia grafica;
+	\item  \textbf{viewModel:}	contiene tutti i file che compongono il \textit{ViewModel$_{G}$}, che mette in comunicazione la parte grafica con quella logica;	
+	\item  \textbf{models:} contiene tutti i file riguardanti la logica dell'applicazione;
 		\subitem \textbf{connectors:} contiene tutti i file a supporto dei blocchi contenuti nel model: nello specifico, un connettore si rende necessario se il blocco a cui fa riferimento necessita di controlli aggiuntivi in rete per risultare corretto;
 		\subitem \textbf{blocks:} contiene tutti i file riguardanti la logica dei blocchi che vanno a formare i workflow;
 		\subitem \textbf{workflow:} contiene tutti i file riguardanti i workflow scelti dall'utente.
 	
-	\item  \textbf{com.megalexa.util:} contiene tutte la classi di utilità definite nel corso dello sviluppo.
-		\subitem	\textbf{service:} contiene i file che realizzano l'integrazione ad \textit{API Gateway$_{G}$} effetuando le chiamate necessarie;
-		\subitem	\textbf{view:} contiene interfacce utili per la realizzazione di interazioni particolari tra l'utente e l'interfaccia grafica.	
+	\item  \textbf{util:} contiene tutte la classi di utilità definite nel corso dello sviluppo.
+		\subitem\textbf{network:} contiene file che effettuano chiamate ad API esterne.
+		\subsubitem\textbf{service:} contiene i file che realizzano l'integrazione ad \textit{API Gateway$_{G}$} effetuando le chiamate necessarie.
+	
 
 \end{itemize}
 Sarà permesso definire ulteriori package all'interno di quelli sopra elencati, nel caso in cui ci sia bisogno di un maggiore dettaglio.
