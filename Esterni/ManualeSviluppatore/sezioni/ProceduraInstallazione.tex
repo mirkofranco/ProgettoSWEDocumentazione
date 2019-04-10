@@ -27,7 +27,14 @@ Per installare la app è obbligatorio seguire i seguenti passi:
 	\item \textbf{Registrare il dispositivo:} accedere alla console di sviluppo offerta da amazon con le credenziali inviate dai membri del gruppo e registrare una key univoca per la applicazione denominata \textit{MegAlexa}\footnote{\url{https://developer.amazon.com/loginwithamazon/console/site/lwa/overview.html}};
 	\item \textbf{Posizionamento della key:} una volta aperto Android Studio, creare una cartella nel percorso \texttt{/MegAlexa/app/src/main}, nominarla \texttt{assets}, creare un file di testo nominato \texttt{api\_key.txt} e posizionarlo nella cartella appena creata.
 	\item \textbf{Gradle Sync:} a questo punto, se la procedura è stata eseguita correttamente, Gradle dovrebbe scaricare in automatico le dipendenze per l'avvio della app, nel caso in cui ciò non avvenga, eseguire il comando \texttt{./gradlew build} nella cartella di root del progetto.
+	\item\textbf{Compilazione ed esecuzione:} la compilazione può avvenire mediante il comando \texttt{./gradlew build} oppure mediante la pressione dell'icona a forma di martello presente in alto su Android Studio (vedi figura \ref{martello}), l'esecuzione avviene alla pressione del tasto run presente nell'IDE(vedi figura \ref{martello}).\\
+	Alla prima esecuzione verrà richiesta l'installazione di una versione Android per l'emulatore: scegliere l'opzione più gradita e continuare.\\
+	In alternativa, è possibile eseguire l'applicazione su un dispositivo Android predisposto correttamente(per maggiori dettagli visitare \url{https://developer.android.com/training/basics/firstapp/running-app}). 
+
+	
 \end{enumerate}
+\label{martello}
+%\includegraphics[scale=0.5]{}
 
 
 
