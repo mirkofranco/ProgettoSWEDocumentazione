@@ -1,6 +1,7 @@
 \chapter{Utilizzo}
-\label{utilizzo}
+\label{Utilizzo}
 \section{Utilizzo di MegAlexa}
+\label{UtilizzoApp}
 \subsection{Creazione Workflow}
 Al primo avvio dell'applicazione apparirà una schermata vuota, priva di \textit{workflow$_{G}$}.
 \begin{enumerate}
@@ -11,56 +12,35 @@ Al primo avvio dell'applicazione apparirà una schermata vuota, priva di \textit
 		\caption{Elenco workflow vuoto}
 	\end{figure}
 	\newpage
-\item Ora bisogna dare un nome al workflow.\\
+\item Inserire il nome del nuovo workflow nell'apposito campo di testo;\\
 \textbf{NOTA BENE:} all'utente non è permesso creare due o più workflow con lo stesso nome.
-\begin{enumerate}
-	\item Inserire il nome del nuovo workflow nell'apposito campo di testo;
-	\item Premere l'icona in alto a destra per confermare e salvare.\\
 
 	\begin{figure}[!ht]
+		\centering
 		\fbox{\includegraphics[scale=0.2]{images/AddWorkflow.jpg}}
-		\qquad\qquad
-		\fbox{\includegraphics[scale=0.2]{images/InsertName.jpg}}
 		\caption{Schermata aggiunta workflow}
 	\end{figure}
 
-\end{enumerate}
-\end{enumerate}
 \newpage
-Nell'elenco dei workflow, a questo punto, si potrà vedere il nuovo workflow appena creato.
+\item Cliccando sulla freccia in basso a destra è possibile aggiungere dei blocchi al workflow;
 
 \begin{figure}[!ht]
 	\centering
-	\fbox{\includegraphics[scale=0.2]{images/HomeWorkflow.jpg}}
-	\caption{Elenco workflow}
+	\fbox{\includegraphics[scale=0.2]{images/Freccia.jpg}}
+	\caption{Schermata aggiunta workflow}
 \end{figure}
 \newpage
-\subsection{Aggiunta blocchi}
-Una volta creato il workflow apparirà vuoto, senza blocchi.
-I seguenti punti spiegheranno dettagliatamente come aggiungere i vari tipi di blocchi al \textit{workflow$_{G}$}.
-Cliccando sul workflow creato nel punto precedente verrà mostrata la lista di tutti i blocchi disponibili.\\
-\textbf{NOTA BENE:} all'interno di un workflow non è consentito inserire due o più blocchi dello stesso tipo.
-
+\item A questo punto nella schermata apparirà l'elenco dei blocchi che possono essere aggiunti.
 \begin{figure}[!ht]
 	\centering
 	\fbox{\includegraphics[scale=0.2]{images/ListBlocks.jpg}}
 	\caption{Lista dei blocchi}
 \end{figure}
+\end{enumerate}
+\newpage
+\subsection{Aggiunta blocchi}
+I seguenti punti spiegheranno dettagliatamente come configurare e aggiungere i vari tipi di blocchi al \textit{workflow$_{G}$}.\\
 
-\subsubsection{Blocco Amazon Music}
-Questo blocco consente all'utente di ascoltare un brano, un'album o una playlist da Amazon Music tramite il proprio dispositivo Alexa.
-
-\subsubsection{Blocco Borsa}
-
-\subsubsection{Blocco Calendar}
-Il blocco calendario permette all'utente di ascoltare o aggiungere i suoi appuntamenti di Google calendar tramite l'Amazon echo.
-
-\subsubsection{Blocco Crypto}
-\begin{figure}[!ht]
-	\centering
-	\fbox{\includegraphics[scale=0.2]{images/BlockCrypto.jpg}}
-	\caption{Blocco crypto}
-\end{figure}
 \subsubsection{Blocco FeedRSS}
 Questo blocco permette all'utente di inserire un qualsiasi feedRSS e successivamente far riprodurre al dispositivo Alexa il suo contenuto.
 \begin{enumerate}
@@ -72,14 +52,36 @@ Questo blocco permette all'utente di inserire un qualsiasi feedRSS e successivam
 	\caption{Blocco FeedRSS}
 \end{figure}
 \end{enumerate}
+\newpage
+
+\subsubsection{Blocco di testo}
+Tale blocco consente all'utente di inserire nel proprio workflow un blocco contenente del testo.
+\begin{enumerate}
+	\item Inserire nell'apposito campo di input un testo a piacere;
+	\item Confermare e salvare cliccando sul pulsante "ADD".
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.2]{images/BlockTextToSpeech.jpg}}
+		\caption{Blocco di testo}
+	\end{figure}
+\end{enumerate}
 
 \subsubsection{Blocco Filter}
 Consente di impostare il numero limite di elementi che un determinato blocco deve considerare. \\
-\textbf{NOTA BENE:} il blocco filtro è applicabile solo ai seguenti blocchi: Borsa, Crypto, FeedRSS, News, Readmail e Sport.
+\textbf{NOTA BENE:} il blocco filtro è applicabile solo ai seguenti blocchi: Stock, Crypto, FeedRSS, News, Readmail e Sport.
 
-\subsubsection{Blocco List}
-Questo blocco permette all'utente di creare, aggiungere e modificare degli elementi di testo ad una lista.
-È possibile modificare la lista tramite app oppure tramite interazione con l'Amazon Echo.
+\subsubsection{Blocco PIN}
+Lo scopo di questo blocco è quello di effettuare una sorta di autenticazione dell'utente per l'esecuzione di alcuni blocchi, ovvero: calendar, ReadMail, SendEmail e Twitter in modo da avere un minimo di privacy per l'utente.
+\begin{enumerate}
+	\item Inserire nel campo di testo il proprio PIN segreto;
+	\item Cliccare sul tasto "SAVE" per confermare e salvare.
+
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.3]{images/BlockPIN.jpg}}
+		\caption{Blocco PIN}
+	\end{figure}
+\end{enumerate}
 
 \subsubsection{Blocco News}
 Tale blocco consente all'utente di ascoltare le ultime news prese da un sito a scelta tra i seguenti: Sky, Google News, Ansa, BBC, CNBC e Wall Street.
@@ -92,25 +94,6 @@ Tale blocco consente all'utente di ascoltare le ultime news prese da un sito a s
 	\end{figure}
 \end{enumerate}
 \newpage
-\subsubsection{Blocco PIN}
-Lo scopo di questo blocco è quello di effettuare una sorta di autenticazione dell'utente per l'esecuzione di alcuni blocchi, ovvero: calendar, ReadMail, SendEmail e Twitter in modo da avere un minimo di privacy per l'utente.
-\begin{enumerate}
-	\item Inserire nel campo di testo il proprio PIN segreto;
-	\item Cliccare sul tasto "SAVE" per confermare e salvare.
-	\begin{comment}
-	\begin{figure}[!ht]
-		\centering
-		\fbox{\includegraphics[scale=0.4]{images/BlockPIN.jpg}}
-		\caption{Blocco PIN}
-	\end{figure}
-	\end{comment}
-\end{enumerate}
-\subsubsection{Blocco ReadEmail}
-Con questo blocco l'utente può ascoltare tramite Alexa le sue email, di Gmail, non ancora lette.
-
-\subsubsection{Blocco SendEmail}
-
-Con questo blocco l'utente avrà la possibilità di inviare le email con Gmail tramite app.
 
 \subsubsection{Blocco Sport}
 Con l'aggiunta di questo blocco l'utente potrà ascoltarsi le ultime news riguardanti uno sport sua scelta tra i seguenti: tennis, calcio, basket americano, formula1, football americano e motogp.
@@ -122,37 +105,67 @@ Con l'aggiunta di questo blocco l'utente potrà ascoltarsi le ultime news riguar
 		\caption{Blocco sport}
 	\end{figure}
 \end{enumerate}
-
-\subsubsection{Blocco Telegram}
-Il blocco Telegram consente all'utente iscritto al servizio di messaggistica Telegram di inviare messaggi e file audio ad un'altra persona o gruppo di persone.
-
-\subsubsection{Blocco TextBox}
-Tale blocco consente all'utente di inserire nel proprio workflow un blocco contenente del testo.
+\newpage
+\subsubsection{Blocco Crypto}
+Con questo blocco l'utente può scegliere da quale FeedRSS ascoltare le ultime news sulle cryptovalute.
 \begin{enumerate}
-	\item Inserire nell'apposito campo di input un testo a piacere;
-	\item Confermare e salvare cliccando sul pulsante "ADD".
-	\begin{figure}[!ht]
-		\centering
-		\fbox{\includegraphics[scale=0.2]{images/BlockTextToSpeech.jpg}}
-		\caption{Blocco di testo}
-	\end{figure}
+	\item Cliccare su un tasto a piacere tra quelli proposti per scegliere da quale FeedRSS ricevere news sulle cryptovalute.
+\begin{figure}[!ht]
+	\centering
+	\fbox{\includegraphics[scale=0.2]{images/BlockCrypto.jpg}}
+	\caption{Blocco crypto}
+\end{figure}
 \end{enumerate}
+\newpage
+\subsubsection{Blocco Stock}
+Con questo blocco l'utente può scegliere da quale FeedRSS ascoltare le ultime news sull'andamento della borsa economica.
+\begin{enumerate}
+	\item Cliccare su un FeedRSS a scelta per scegliere da quale borsa ricevere news.
+\begin{figure}[!ht]
+	\centering
+	\fbox{\includegraphics[scale=0.3]{images/BlockStock.jpg}}
+	\caption{Blocco stock}
+\end{figure}
+\end{enumerate}
+\newpage
+\subsubsection{Blocco List}
+Questo blocco permette all'utente di creare, aggiungere e modificare degli elementi di testo ad una lista.
+È possibile modificare la lista tramite app oppure tramite interazione con l'Amazon Echo.
 
-\subsubsection{Blocco Twitter}
-
+\subsubsection{Blocco TwitterHashtag}
+L'utente con l'aggiunta di questo blocco può effettuare una ricerca su Twitter tramite hashtag.
+\subsubsection{Blocco TwitterUserTimeline}
+L'utente inserendo questo blocco nel suo workflow potra 
 \subsubsection{Blocco Weather}
-Il blocco Weather consente all'utente di sapere che meteo c'è in una determinata città.
+Il blocco Weather consente all'utente di sapere che meteo c'è in questo momento o nei prossimi giorni di una determinata città.
 \newpage
 \subsection{Blocchi nel workflow}
-Per sapere quali blocchi contiene il nostro workflow, andare nella schermata che mostra l'elenco di tutti i workflow disponibili e cliccare sul nome di quello che ci interessa.
+Per sapere quali blocchi contiene un workflow, andare nella schermata che mostra l'elenco di tutti i workflow disponibili e cliccare sul nome di quello che ci interessa.
 In questo modo verrà visualizzato l'elenco dei blocchi al suo interno come mostrato in figura:
 \begin{figure}[!ht]
-	\fbox{\includegraphics[scale=0.2]{images/HomeWorkflow2.jpg}}
-	\qquad
+	\centering
 	\fbox{\includegraphics[scale=0.2]{images/BlocksWorkflow.jpg}}
 	\caption{Blocchi del workflow}
 \end{figure}
 \newpage
+\subsection{Modifica blocchi}
+\subsection{Eliminazione blocchi}
+\subsection{Eliminazione workflow}
+\begin{comment}
+\subsubsection{Blocco Amazon Music}
+Questo blocco consente all'utente di ascoltare un brano, un'album o una playlist da Amazon Music tramite il proprio dispositivo Alexa.
+
+\subsubsection{Blocco Telegram}
+Il blocco Telegram consente all'utente iscritto al servizio di messaggistica Telegram di inviare messaggi e file audio ad un'altra persona o gruppo di persone.
+
+\subsubsection{Blocco ReadEmail}
+Con questo blocco l'utente può ascoltare tramite Alexa le sue email, di Gmail, non ancora lette.
+
+
+\subsubsection{Blocco Calendar}
+Il blocco calendario permette all'utente di ascoltare o aggiungere i suoi appuntamenti di Google calendar tramite l'Amazon echo.
+
+\end{comment}
 \section{Utilizzo di Alexa}
 Alexa è un assistente personale intelligente sviluppato dall'azienda statunitense Amazon, utilizzato per la prima volta nei dispositivi Amazon Echo e Amazon Echo Dot.
 Alexa  consente all'utente di fare delle domande e delle richieste usando semplicemente la voce.\\
