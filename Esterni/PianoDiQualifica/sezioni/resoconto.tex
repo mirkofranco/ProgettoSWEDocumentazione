@@ -68,6 +68,8 @@ Con l'aumento dello schedule variance di conseguenza anche il budget variance ha
 	\includegraphics[scale=0.5]{./images/bvra.png}
 	\caption{\textit{MP002 - Revisione Analisi}}\label{}
 \end{figure}
+
+
 \section{Progettazione della base tecnologica}
 \label{progettazione}
 \subsection{MP001: Schedule variance}
@@ -152,8 +154,102 @@ Grazie allo script per la segnalazione automatica degli errori, questi vengono c
 	\includegraphics[scale=0.5]{./images/gulpeaseP.png}
     \caption{\textit{MPR002 \textit{Indice di Gulpease$_{G}$}}}
 \end{figure}
-\newpage
+\clearpage
+
 \section{Progettazione di dettaglio e codifica}
-Questa sezione verrà compilata alla fine del periodo di Progettazione della base tecnologica.
+\label{resocontoProg}
+
+\subsection{MP001: Schedule variance}
+\textbf{Passato}
+\begin{figure} [h]
+    \centering
+	\includegraphics[scale=0.4]{./images/svPDC.png}
+	\caption{\textit{MP001 - schedule variance - Progettazione di dettaglio e codifica}}\label{}
+\end{figure}
+\subsection{MP002: Budget variance}
+\textbf{Passato}
+\begin{figure} [h]
+    \centering
+	\includegraphics[scale=0.5]{./images/bvPDC.png}
+	\caption{\textit{MP002 - budget variance - Progettazione di dettaglio e codifica}}\label{}
+\end{figure}
+\clearpage
+\subsection{MP003: SPICE capability level}
+\textbf{Non passato}
+\begin{figure} [h]
+    \centering
+	\includegraphics[scale=0.5]{./images/spicePDC.png}
+    \caption{\textit{MP003 - ISO/IEC 15504 - Progettazione di dettaglio e codifica }}\label{}
+\end{figure}
+
+\subsection{MP005:  Occorrenza rischi non previsti}
+\textbf{Passato}
+\textbf{Rischi non previsti: 1}
+\begin{itemize}
+	\item \textbf{JavaScript:} grazie allo sviluppo del POC, il gruppo si è accorto di come JavaScript fosse un ostacolo nella produzione della Skill, data la mancanza delle caratteristiche base dei linguaggi di programmazione (principalmente interfacce e tipi di ritorno). Per questo motivo è stato fatto il passaggio a TypeScript. 
+\end{itemize}
+
+\subsection{MP006: Indisponibilità dei servizi}
+\textbf{Passato}
+\textbf{Indisponibilità dei servizi: 0}\\
+Durante il periodo di progettazione di dettaglio, il gruppo non ha riscontrato problemi riguardanti il downtime di servizi esterni.
+
+\subsection{MP012: Efficienza della progettazione dei test}
+\textbf{Passato}\\ 
+\textbf{tempo medio per la scrittura di un test: 45 minuti.}\\
+La progettazione di ogni test velocizza la seguente, in quanto sono simili. Questo ha permesso al gruppo di stare sotto la soglia accettazione di 1 ora.
+
+\subsection{MP013: Percentuale build superate}
+\textbf{Passato}
+Viene fatta distinzione tra Android e Skill, in quanto vengono contenute in repository diversi.\\
+Le build dell'applicazione Android sono state molto positive. 
+\begin{figure} [h]
+    \centering
+	\includegraphics[scale=0.5]{./images/buildandroidPDC.png}
+    \caption{\textit{MP013 - Android - Progettazione di dettaglio e codifica}}\label{}
+\end{figure}
+Le build della Skill (progetto node.js) risultano con molti errori. Questo è dovuto al fatto che sono stati sviluppati test di unità e integrazione prima di produrre il codice. Per questo motivo questa metrica è considerata come passata.
+\begin{figure} [h]
+    \centering
+	\includegraphics[scale=0.5]{./images/buildPDC.png}
+    \caption{\textit{MP013 - Skill - Progettazione di dettaglio e codifica}}\label{}
+\end{figure}
+
+\subsection{MP014: Media commit giornaliera}
+\textbf{Passato}
+Il seguente grafico contiene il numero totale di commit giornalieri. Questi risultano poco omogenei, in quanto questo periodo è stato caratterizzato da cicli formati da progettazione di dettaglio (giornate con pochi commit) e codifica (molti commit).
+\begin{figure} [h]
+    \centering
+	\includegraphics[scale=0.5]{./images/buildsPDC.png}
+    \caption{\textit{MP014 numero commit giornalieri - Progettazione di dettaglio e codifica}}
+\end{figure}
+
+\subsection{MP015, MP016: Percentuale requisiti soddisfatti}
+\textbf{Passato}
+\begin{figure} [h]
+    \centering
+	\includegraphics[scale=0.5]{./images/}
+    \caption{\textit{MP015 - MP016 Tipologia di requisiti - Progettazione di dettaglio e codifica}}
+\end{figure}
+\begin{figure} [h]
+    \centering
+	\includegraphics[scale=0.5]{./images/}
+    \caption{\textit{MP015 - MP016 soddisfatti meno non soddisfatti - Progettazione di dettaglio e codifica}}
+\end{figure}
+
+\subsection{MPR001 Ortografia}
+\textbf{Passato}
+Gli errori grammaticali trovati durante una ispezione finale sono stati meno di 2 per documento.\\
+\subsection{MPR002 Indice di Gulpease}
+\textbf{Passato}
+Il seguente grafico è stato generato attraverso un bot che calcola giornalmente l'indice di gulpease dei documenti.\\
+Si può notare come l'indice di gulpease è sempre stato nel sopra il limite di accettazione e ottimalità.
+\begin{figure} [h]
+    \centering
+	\includegraphics[scale=0.5]{./images/gulpeasePDC.png}
+    \caption{\textit{MPR002 \textit{Indice di Gulpease$_{G}$} - Progettazione di dettaglio e codifica}}
+\end{figure}
+
+
 \section{Verifica e collaudo}
 Questa sezione verrà compilata alla fine del periodo di Verifica e collaudo.
