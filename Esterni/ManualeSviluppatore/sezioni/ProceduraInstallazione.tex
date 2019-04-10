@@ -1,5 +1,36 @@
 \chapter{Procedura di installazione}
 
+\section{Requisiti di Sistema}
+\label{RequisitSistema}
+\textit{MegAlexa} è composta da un'applicazione compatibile con la maggior parte dei dispositivi Android e da una skill Alexa.
+\subsection{Applicazione}
+L'applicazione è compatibile con tutti i dispositivi Android con versione 4.4 o superiore.
+Per poter modificare e ampliare la app i seguenti requisiti devono essere soddisfatti:
+\begin{itemize}
+
+	\item \textbf{IDE Android Studio:} necessaria per eseguire e testare la app nel corso del suo sviluppo;
+	\item \textbf{Git:} necessario per effettuare il \texttt{clone} della repository e il versionamento successivo del codice;
+	\item \textbf{Gradle:} per il download automatico delle dipendenze e la compilazione del codice (consigliata versione 4.10.0 o superiore);
+
+\end{itemize}
+
+
+\subsection{Skill}
+La skill è compatibile con tutti i dispositivi Amazon Echo.
+%COMPLETARE?%
+
+\section{Installazione App} \label{installazioneApp}
+Per installare la app è obbligatorio seguire i seguenti passi:
+
+\begin{enumerate}
+	\item \textbf{Acquisire la repository:} eseguire il comando \texttt{git clone} seguito da questo URL \textit{https://github.com/sgt390/ProgettoSweCodice.git}
+	\item \textbf{Registrare il dispositivo:} accedere alla console di sviluppo offerta da amazon con le credenziali inviate dai membri del gruppo e registrare una key univoca per la applicazione denominata \textit{MegAlexa}\footnote{\url{https://developer.amazon.com/loginwithamazon/console/site/lwa/overview.html}};
+	\item \textbf{Posizionamento della key:} una volta aperto Android Studio, creare una cartella nel percorso \texttt{/MegAlexa/app/src/main}, nominarla \texttt{assets}, creare un file di testo nominato \texttt{api\_key.txt} e posizionarlo nella cartella appena creata.
+	\item \textbf{Gradle Sync:} a questo punto, se la procedura è stata eseguita correttamente, Gradle dovrebbe scaricare in automatico le dipendenze per l'avvio della app, nel caso in cui ciò non avvenga, eseguire il comando \texttt{./gradlew build} nella cartella di root del progetto.
+\end{enumerate}
+
+
+
 \section{Installazione Skill}
 \label{installazioneSkill}
 Per ognuno dei sequenti comandi è richiesta l'installazione del package manager \textbf{npm}.
