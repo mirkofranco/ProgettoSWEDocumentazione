@@ -112,12 +112,12 @@ Viene fatta distinzione tra Android e Skill, in quanto vengono contenute in repo
 Le build non superate sono 24 su 134 per la Skill e 29 su 232 per Android. Entrambe superano il range di ottimalità (80\%).
 \begin{figure} [h]
     \centering
-	\includegraphics[scale=0.5]{./images/StatobuildTravis-ciandroid.png}
+	\includegraphics[scale=0.5]{./images/StatobuildTravis-CIandroid.png}
     \caption{\textit{MP013 - Android - Progettazione della base tecnologica}}\label{}
 \end{figure}\\
 \begin{figure} [h]
     \centering
-	\includegraphics[scale=0.5]{./images/StatobuildTravis-ciSkill.png}
+	\includegraphics[scale=0.5]{./images/StatobuildTravis-CISkill.png}
     \caption{\textit{MP013 - Skill - Progettazione della base tecnologica}}\label{}
 \end{figure}
 \clearpage
@@ -167,22 +167,45 @@ La schedule variance è stata abbastanza pertinente con quanto preventivato, que
 	\includegraphics[scale=0.4]{./images/svPDC.png}
 	\caption{\textit{MP001 - schedule variance - Progettazione di dettaglio e codifica}}\label{}
 \end{figure}
+\clearpage
 \subsection{MP002: Budget variance}
 \textbf{Passato}\\
+L'andamento della budget variance rispetta quello della schedule variance.\\
 \begin{figure} [h]
     \centering
 	\includegraphics[scale=0.5]{./images/bvPDC.png}
 	\caption{\textit{MP002 - budget variance - Progettazione di dettaglio e codifica}}\label{}
 \end{figure}
 
-\clearpage
-
 \subsection{MP003: SPICE capability level}
-\textbf{Non passato}
-\begin{figure} [h]
+\textbf{Passato 4/6}
+\begin{itemize}
+	\item \textbf{QP001:} Il gruppo è migliorato sulla Pianificazione dall'inizio del progetto. Dato che tutti hanno svolto almeno una volta ogni ruolo, onguno riesce a svolgere il suo compito. Se questo risulta più difficile di quanto pinificato, la persona in difficoltà crea un ticket su Asana o su Slack così gli altri membri del gruppo possono aiutarlo. Il responsabile riesce a controllare l'andamento del lavoro guardando Asana e le build su travis, senza dover aspettare una risposta da un collega;
+	\item \textbf{QP002:} Il miglioramento delle attività di processo risulta ancora qualcosa di complesso da gestire. Questo richiede, nella maggior parte dei casi, una riunione con tutti i membri del gruppo, per prendere una decisione. Questo porta, spesso, alla modifica di un documento e comporta l'apprendimento del nuovo metodo. Detto questo, sono stati fatti alcuni miglioramenti preventivi avvenuti con successo, come per esempio il passaggio a typescript:
+		\begin{itemize}
+			\item il team si è accorto che la produzione di codice per la backend risultava ostica usando javascript;
+			\item il responsabile ha programmato una riunione, nella quale sono stati discussi vantaggi del nuovo linguaggio, facilità per la traduzione (js -> ts), compatibilità con il codice già prodotto;
+			\item il team ha deciso di utilizzare TypeScript; 
+			\item La traduzione è avvenuta in un paio d'ore e la velocità di produzione delle classi per la Skill è aumentata;
+		\end{itemize} 
+	\item \textbf{QP003:} I rischi sono mitigati dal fatto che il gruppo è composto da 7 membri, quindi, se qualcuno ha delle difficoltà a svolgere il proprio lavoro, è facile che un altro membro del gruppo sia disposto ad aiutarlo;
+	\item \textbf{QP004:} La verifica del software risulta abbastanza semplice, dato che più membri del gruppo hanno esperienza (scolastica) nella produzione di test di unità e integrazione. Questo è supportato dal tool Travis-CI e dalla abbondante documentazione per i test su Node.js. Risulta però ancora ostico lavorare usando il Test Driven Development;
+	\item \textbf{QP005:} I test di sistema, integrazione (lato API Gateway - database) risultano difficili da automatizzare, dato che molti dei tool automatici sono a pagamento. Il compito viene quindi svolto a mano, anche se il gruppo ha deciso di produrre uno script per eseguire test funzionali, entro il periodo di Verifica e Collaudo;
+	\item \textbf{QP006:} Il versionamento è completamente automatizzato tramite Travis-CI. Per l' applicazione Android è stato semplice, grazie a Gradle; la Skill, essendo scritta in typescript, ha bisogno di essere compilata in javascript, prima di essere pubblicata su AWS Lambda. \\Questo genera molti file .js che sporcano l'ambiente di lavoro. Per risolvere il problema, il gruppo ha prodotto degli script che si occupano di fare pulizia prima di trasferire i file su Github, e per fare il deploy automatico su AWS Lambda.
+\end{itemize}
+Di seguito viene riportata la tabella con il nome di ogni processo associato al suo codice per facilitare la lettura del grafico:
+\begin{itemize}
+	\item QP001: Pianificazione delle attività di progetto, valutazione e controllo dei processi \S\ref{pro1};
+	\item QP002: Miglioramento continuo delle attività di processo \S\ref{pro2};
+	\item QP003: Analisi e prevenzione dei rischi \S\ref{pro3};
+	\item QP004: Verifica del software \S\ref{pro4};
+	\item QP005: Gestione dei test \S\ref{pro5};
+	\item QP006: Versionamento e build \S\ref{pro6}.
+\end{itemize}
+\begin{figure}[h]
     \centering
-	\includegraphics[scale=0.5]{./images/spicePDC.png}
-    \caption{\textit{MP003 - ISO/IEC 15504 - Progettazione di dettaglio e codifica }}\label{}
+	\includegraphics[scale=0.7]{./images/spicePDC.png}
+    \caption{\textit{MP003 - ISO/IEC 15504 - Progettazione di dettaglio e codifica}}
 \end{figure}
 
 \subsection{MP005:  Occorrenza rischi non previsti}
@@ -197,21 +220,42 @@ La schedule variance è stata abbastanza pertinente con quanto preventivato, que
 \textbf{Indisponibilità dei servizi: 0}\\
 Durante il periodo di progettazione di dettaglio e codifica, PragmaDB ha avuto qualche giorno di downtime per non sforare con il piano gratuito di Amazon AWS. Questo non ha creato problemi, perché avevamo pieno controllo sul server su cui è hostato. 
 
+\subsection{MP007 MP008 MP009 MP010 MP011 }
+\textbf{Passato}\\
+Queste metriche sono state usate per calcolare la manuntenibilità del codice, grazie alla piattaforma di test statici SonarCloud. Questo permette di visualizzare la qualità del software in un solo grafico ricco di informazioni.\\
+Il seguente grafico presenta nelle ascisse le linee di codice, nelle ordinate il tempo previsto di risoluzione del problema, la grandezza del cerchio indica la quantità di linee di codice e il colore del cerchio corrisponde alla gravità del problema.\\
+Tutti i problemi non in verde sono stati risolti, in quanto indicano un possibile errore grave durante l'esecuzione del codice. Quelli in verde verranno risolti durante il periodo di Verifica e Collaudo.
+\begin{figure} [h]
+    \centering
+	\includegraphics[scale=0.5]{./images/manPDC.png}
+    \caption{\textit{MP007 MP008 MP009 MP010 MP011 - manuntenibilità del codice app Android - Progettazione di dettaglio e codifica}}\label{}
+\end{figure}
+\begin{figure} [h]
+    \centering
+	\includegraphics[scale=0.5]{./images/manSPDC.png}
+    \caption{\textit{MP007 MP008 MP009 MP010 MP011 - manuntenibilità del codice Skill - Progettazione di dettaglio e codifica}}\label{}
+\end{figure}
+
+\subsection{MP011}
+\textbf{Passato}\\
+\textbf{tempo medio per risolvere un errore: 33.16 minuti.}\\
+La risoluzione degli errori nella Skill risulta molto lunga, in quanto bisogna fare ogni volta il deploy su AWS Lambda per testare le funzioni della skill (richiede da 40 secondi a 2 minuti). Per questo motivo, il team pone molta cura nella redazione dei test di unità e integrazione (che possono essere eseguiti senza deploy).
+
 \subsection{MP012: Efficienza della progettazione dei test}
 \textbf{Passato}\\
-\textbf{tempo medio per la scrittura di un test: 45 minuti.}\\
-La progettazione di ogni test velocizza la seguente, in quanto sono simili. Questo ha permesso al gruppo di stare sotto la soglia accettazione di 1 ora.
+\textbf{tempo medio per risolvere un errore: 35 minuti.}\\
+La progettazione di ogni test velocizza la seguente, in quanto hanno molti punti in comune tra di loro. Questo permette di velocizzare complessivamente la stesura dei test.
 
 \subsection{MP013: Percentuale build superate}
 \textbf{Passato}\\
 Viene fatta distinzione tra Android e Skill, in quanto vengono contenute in repository diversi.\\
-Le build dell'applicazione Android sono state per la maggior parte positive. 
+Le build dell'applicazione Android sono state per la maggior parte positive. \\
 \begin{figure} [h]
     \centering
 	\includegraphics[scale=0.5]{./images/buildandroidPDC.png}
     \caption{\textit{MP013 - Android - Progettazione di dettaglio e codifica}}\label{}
 \end{figure}
-Le build della Skill (progetto node.js) risultano con molti errori. Questo è dovuto al fatto che sono stati sviluppati test di unità e integrazione prima di produrre il codice. Per questo motivo questa metrica è considerata come passata.
+Le build della Skill (progetto node.js) risultano con molti errori. Questo è dovuto al fatto che sono stati sviluppati test di unità e integrazione prima di produrre il codice. Per questo motivo questa metrica è considerata come passata.\\
 \begin{figure} [h]
     \centering
 	\includegraphics[scale=0.5]{./images/buildPDC.png}
@@ -220,7 +264,7 @@ Le build della Skill (progetto node.js) risultano con molti errori. Questo è do
 
 \subsection{MP014: Media commit giornaliera}
 \textbf{Passato}\\
-Il seguente grafico contiene il numero totale di commit giornalieri. Questi risultano poco omogenei, in quanto questo periodo è stato caratterizzato da cicli formati da progettazione di dettaglio (giornate con pochi commit) e codifica (molti commit).
+Il seguente grafico contiene il numero totale di commit giornalieri. Questi risultano poco omogenei, in quanto questo periodo è stato caratterizzato da cicli formati da progettazione di dettaglio (giornate con pochi commit) e codifica (molti commit).\\
 \begin{figure} [h]
     \centering
 	\includegraphics[scale=0.5]{./images/buildsPDC.png}
@@ -228,26 +272,27 @@ Il seguente grafico contiene il numero totale di commit giornalieri. Questi risu
 \end{figure}
 
 \subsection{MP015, MP016: Percentuale requisiti soddisfatti}
-TODO
 \textbf{Passato}\\
+Sono stati soddisfatti tutti i requisiti che il gruppo aveva preventivato, con l'eccezione del requisito riguardante la sveglia, che attualmente non era possibile implementare con le API fornite da Alexa Skill Kit (dopo una riunione con la proponente, e con la sua approvazione,  questo requisito è stato rimosso).
+Il gruppo ha stimato che i requisiti obbligatori non soddisfatti richiederanno poco lavoro, in quanto presentano aspetti simili ad altri requisiti (sotto il punto di vista della progettazione in dettaglio e codifica). I requisiti desiderabili e facoltativi sono per la maggior parte riguardanti aspetti secondari del prodotto (invece che blocchi), quindi compresi nelle attività di verifica e collaudo.\\
 \begin{figure} [h]
     \centering
-	\includegraphics[scale=0.5]{./images/buildsPDC.png}
+	\includegraphics[scale=0.5]{./images/torsodPDC.png}
     \caption{\textit{MP015 - MP016 Tipologia di requisiti - Progettazione di dettaglio e codifica}}
 \end{figure}
 \begin{figure} [h]
     \centering
-	\includegraphics[scale=0.5]{./images/buildsPDC.png}
-    \caption{\textit{MP015 - MP016 soddisfatti meno non soddisfatti - Progettazione di dettaglio e codifica}}
+	\includegraphics[scale=0.5]{./images/barsodPDC.png}
+    \caption{\textit{MP015 - MP016 soddisfatti / non soddisfatti - Progettazione di dettaglio e codifica}}
 \end{figure}
-
+\clearpage
 \subsection{MPR001 Ortografia}
 \textbf{Passato}\\
-Gli errori grammaticali trovati durante una ispezione finale sono stati meno di 2 per documento.\\
+Gli errori grammaticali trovati durante una ispezione finale sono stati meno di 2 per documento.
 \subsection{MPR002 Indice di Gulpease}
 \textbf{Passato}\\
 Il seguente grafico è stato generato attraverso un bot che calcola giornalmente l'indice di gulpease dei documenti.\\
-Si può notare come l'indice di gulpease è sempre stato sopra il limite di accettazione e ottimalità.
+Si può notare come l'indice di gulpease è sempre stato sopra il limite di accettazione e ottimalità.\\
 \begin{figure} [h]
     \centering
 	\includegraphics[scale=0.5]{./images/gulpeasePDC.png}
