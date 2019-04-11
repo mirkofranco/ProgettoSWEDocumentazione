@@ -236,16 +236,27 @@ Tutti i problemi non in verde sono stati risolti, in quanto indicano un possibil
     \caption{\textit{MP007 MP008 MP009 MP010 MP011 - manuntenibilità del codice Skill - Progettazione di dettaglio e codifica}}\label{}
 \end{figure}
 
-\subsection{MP011}
+\clearpage
+\subsection{MP011: Tempo medio per risolvere un errore} 
 \textbf{Passato}\\
 \textbf{tempo medio per risolvere un errore: 33.16 minuti.}\\
 La risoluzione degli errori nella Skill risulta molto lunga, in quanto bisogna fare ogni volta il deploy su AWS Lambda per testare le funzioni della skill (richiede da 40 secondi a 2 minuti). Per questo motivo, il team pone molta cura nella redazione dei test di unità e integrazione (che possono essere eseguiti senza deploy).
+\begin{figure} [h]
+    \centering
+	\includegraphics[scale=0.5]{./images/risPDC.png}
+    \caption{\textit{MP013 - Skill - Progettazione di dettaglio e codifica}}\label{}
+\end{figure}
 
 \subsection{MP012: Efficienza della progettazione dei test}
 \textbf{Passato}\\
-\textbf{tempo medio per risolvere un errore: 35 minuti.}\\
+\textbf{tempo medio per sviluppare un test: 35 minuti.}\\
 La progettazione di ogni test velocizza la seguente, in quanto hanno molti punti in comune tra di loro. Questo permette di velocizzare complessivamente la stesura dei test.
-
+\begin{figure} [h]
+    \centering
+	\includegraphics[scale=0.5]{./images/mediatestPDC.png}
+    \caption{\textit{MP013 - media minuti per test - Progettazione di dettaglio e codifica}}\label{}
+\end{figure}
+\clearpage
 \subsection{MP013: Percentuale build superate}
 \textbf{Passato}\\
 Viene fatta distinzione tra Android e Skill, in quanto vengono contenute in repository diversi.\\
@@ -273,8 +284,10 @@ Il seguente grafico contiene il numero totale di commit giornalieri. Questi risu
 
 \subsection{MP015, MP016: Percentuale requisiti soddisfatti}
 \textbf{Passato}\\
-Sono stati soddisfatti tutti i requisiti che il gruppo aveva preventivato, con l'eccezione del requisito riguardante la sveglia, che attualmente non era possibile implementare con le API fornite da Alexa Skill Kit (dopo una riunione con la proponente, e con la sua approvazione,  questo requisito è stato rimosso).
+Sono stati soddisfatti tutti i requisiti che il gruppo aveva preventivato per il periodo di progettazione di dettaglio e codifica, con l'eccezione del requisito riguardante la sveglia, che attualmente non è possibile implementare usando le API fornite da Alexa Skill Kit (dopo una riunione con la proponente, e con la sua approvazione,  questo requisito è stato spostato in "facoltativo - non accettato").
 Il gruppo ha stimato che i requisiti obbligatori non soddisfatti richiederanno poco lavoro, in quanto presentano aspetti simili ad altri requisiti (sotto il punto di vista della progettazione in dettaglio e codifica). I requisiti desiderabili e facoltativi sono per la maggior parte riguardanti aspetti secondari del prodotto (invece che blocchi), quindi compresi nelle attività di verifica e collaudo.\\
+Come richiesto dal committente, molti dei requisiti sono stati scomposti in requisiti più specifici.\\
+requisiti facoltativi sono stati non accettati, dato che il team li ha trovati difficili.\\
 \begin{figure} [h]
     \centering
 	\includegraphics[scale=0.5]{./images/torsodPDC.png}
