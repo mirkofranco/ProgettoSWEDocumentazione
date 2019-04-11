@@ -11,7 +11,7 @@ Dopo la presentazione dei \textit{capitolati$_{G}$}, è compito del \textit{Resp
 	\item \textbf{Conclusione}.
 \end{itemize}
 \subsection{Rapporti di fornitura con la Proponente}
-Durante l'intero progetto si intende instaurare un costante rapporto collaborativo con la Proponente, nella persona del Sig. Stefano Dindo, con il fine di:
+Durante l'intero progetto si intende instaurare un costante rapporto collaborativo con la Proponente, nella persona del Sig. Stefano Dindo, con l'obiettivo:
 \begin{itemize}
 	\item determinare bisogni in modo più accurato possibile;
 	\item scegliere in modo collaborativo i requisiti del prodotto;
@@ -52,12 +52,12 @@ Il\glossario{processo}di sviluppo comprende tutte le attività e i compiti svolt
 Gli \textit{Analisti} si occupano di analizzare nel dettaglio i\glossario{requisiti}che il prodotto finale dovrà soddisfare, il risultato viene poi documentato nell' \textit{Analisi dei Requisiti}. Vengono utilizzati i casi d'uso per l'analisi e la ricerca dei requisiti.
 Il documento redatto dovrà rispettare le specifiche di seguito riportate.
 \subsubsection{Fonti dei requisiti}
-Compito di analisti è quello di redigere una lista di \textit{requisiti$_{G}$}. Tali requisiti possono essere ricavati da varie fonti, le quali sono:
+Compito di analisti è la redazione di una lista di \textit{requisiti$_{G}$}. Tali requisiti possono essere ricavati da varie fonti, le quali sono:
 \begin{itemize}
-	\item \textbf{Capitolato}: i requisiti emersi dall'analisi del documento fornito dalla \textit{Proponente$_{G}$};
-	\item \textbf{Verbali Esterni}: i requisiti emersi durante incontri con la Proponente;
-	\item \textbf{Interni}: i requisiti emersi tramiti analisi e discussione interna del gruppo \textit{ZeroSeven$_{G}$};
-	\item \textbf{Casi d'uso}: i requisiti emersi dall'analisi di uno o più casi d'uso.
+	\item \textbf{Capitolato}: I requisiti emersi dall'analisi del documento fornito dalla \textit{Proponente$_{G}$};
+	\item \textbf{Verbali Esterni}: I requisiti emersi durante incontri con la Proponente;
+	\item \textbf{Interni}: I requisiti emersi tramiti analisi e discussione interna del gruppo \textit{ZeroSeven$_{G}$};
+	\item \textbf{Casi d'uso}: I requisiti emersi dall'analisi di uno o più casi d'uso.
 \end{itemize}
 \subsubsection{Classificazione dei requisiti}
 Ogni\glossario{requisito}deve avere la seguente nomenclatura:
@@ -104,8 +104,8 @@ Ogni caso d'uso deve avere la seguente nomenclatura:
 dove:
 \begin{itemize}
 	\item \textbf{UC:} Use Case;
-	\item \textbf{{XX}:} numero che identifica i casi d'uso;
-	\item \textbf{{YY}:} numero progressivo che identifica i sottocasi, esso può, a sua volta, includere altri sottocasi.
+	\item \textbf{{XX}:} Numero che identifica i casi d'uso;
+	\item \textbf{{YY}:} Numero progressivo che identifica i sottocasi, esso può, a sua volta, includere altri sottocasi.
 \end{itemize}
 
 
@@ -136,36 +136,36 @@ dove:
 L'attività di Progettazione precede obbligatoriamente la produzione del software e consiste nel descrivere e fornire una soluzione al problema che sia soddisfacente per tutti gli \textit{stakeholders$_{G}$}. Essa serve a garantire che il prodotto sviluppato sia adeguato rispetto ai bisogni emersi nell'attività di Analisi. 
 La progettazione permette di:
 \begin{itemize}
-	\item costruire l'architettura logica del prodotto;
-	\item facilitare la codifica da parte dei \textit{Programmatori}, riducendo la complessità del problema originale, permettendo di organizzare i compiti e possibilmente facilitando la parallelizzazione;
-	\item perseguire la correttezza per costruzione.
+	\item Costruire l'architettura logica del prodotto;
+	\item Facilitare la codifica da parte dei \textit{Programmatori}, riducendo la complessità del problema originale, permettendo di organizzare i compiti e possibilmente facilitando la parallelizzazione;
+	\item Perseguire la correttezza per costruzione.
 \end{itemize}
 Come da \pianodiprogetto la Progettazione si svolgerà nell'arco di due periodi distinti. 
 Nel primo di questi due periodi viene identificata una prima decomposizione logica dell'architettura, dopo aver opportunamente studiato i vari design patterns. Nel secondo la progettazione avviene in modo atomico e dettagliato, in modo che i \textit{Programmatori} possano implementare l'intero sistema nel modo più parallelo possibile. 
 L'architettura dovrà soddisfare le seguenti qualità: 
 \begin{itemize}
-	\item \textbf{Sufficienza}: deve soddisfare i requisiti descritti nell'\textit{Analisi dei Requisiti v2.0.0};
-	\item \textbf{Comprensibilità}: può essere compresa facilmente da tutti gli \textit{stakeholder$_{G}$};
-	\item \textbf{Modularità}: deve essere suddivisa in parti chiare e ben distinte, ognuna con una singola responsabilità, perseguendo information hiding;
-	\item \textbf{Robustezza}: è in grado di sopportare ingressi di tipi diversi, sia da parte dell'utente che dall'ambiente;
-	\item \textbf{Flessibilità}: deve permettere modifiche a costi contenuti in caso di variazione dei requisiti;
-	\item \textbf{Riusabilità}: deve permettere il riuso delle sue parti in altre applicazioni;
-	\item \textbf{Efficienza}: deve utilizzare il minor numero di risorse possibili, in termini di tempo e spazio;
-	\item \textbf{Affidabilità}: deve garantire di rispettare le sue specifiche di funzionamento nel tempo;
-	\item \textbf{Disponibilità}: deve essere possibile effettuare manutenzione in tempi ridotti, possibilmente senza rendere indisponibile l'intero sistema;
-	\item \textbf{Sicurezza}: deve essere esente da gravi malfunzionamenti e non deve essere vulnerabile a intrusioni;
-	\item \textbf{Semplicità}: ogni parte contiene solo il necessario;
-	\item \textbf{Incapsulazione}: le componente devono essere progettate in modo da nascondere dettagli implementativi;
-	\item \textbf{Coesione}: le parti con un obiettivo comune devono stare insieme;
-	\item \textbf{Basso accopiamento}: parti distinte devono dipendere poco o niente tra di loro.
+	\item \textbf{Sufficienza}: Deve soddisfare i requisiti descritti nell'\textit{Analisi dei Requisiti v2.0.0};
+	\item \textbf{Comprensibilità}: Può essere compresa facilmente da tutti gli \textit{stakeholder$_{G}$};
+	\item \textbf{Modularità}: Deve essere suddivisa in parti chiare e ben distinte, ognuna con una singola responsabilità, perseguendo information hiding;
+	\item \textbf{Robustezza}: \'{E} in grado di sopportare ingressi di tipi diversi, sia da parte dell'utente che dall'ambiente;
+	\item \textbf{Flessibilità}: Deve permettere modifiche a costi contenuti in caso di variazione dei requisiti;
+	\item \textbf{Riusabilità}: Deve permettere il riuso delle sue parti in altre applicazioni;
+	\item \textbf{Efficienza}: Deve utilizzare il minor numero di risorse possibili, in termini di tempo e spazio;
+	\item \textbf{Affidabilità}: Deve garantire di rispettare le sue specifiche di funzionamento nel tempo;
+	\item \textbf{Disponibilità}: Deve essere possibile effettuare manutenzione in tempi ridotti, possibilmente senza rendere indisponibile l'intero sistema;
+	\item \textbf{Sicurezza}: Deve essere esente da gravi malfunzionamenti e non deve essere vulnerabile a intrusioni;
+	\item \textbf{Semplicità}: Ogni parte contiene solo il necessario;
+	\item \textbf{Incapsulazione}: Le componente devono essere progettate in modo da nascondere dettagli implementativi;
+	\item \textbf{Coesione}: Le parti con un obiettivo comune devono stare insieme;
+	\item \textbf{Basso accopiamento}: Parti distinte devono dipendere poco o niente tra di loro.
 \end{itemize}
 \subsubsection{Diagrammi}
 Al fine di rendere chiare e comprensibili le scelte progettuali effettuate e ridurre le possibili ambiguità, sarà necessario fare largo uso di vari tipi di diagrammi\glossario{UML}2.0, quali:
 \begin{itemize}
-	\item \textbf{Diagrammi delle classi}: descrivono i tipi di oggetti che fanno parte di un sistema mettendone in evidenza le relazioni statiche;
-	\item \textbf{Diagrammi di sequenza}: descrivono la collaborazione di un gruppo di oggetti che devono implementare collettivamente un comportamento;
-	\item \textbf{Diagrammi di attività}: descrivono il flusso di operazioni di un'attività attraverso la sua logica procedurale;
-	\item \textbf{Diagrammi dei package}: descrivono un raggruppamento di un numero arbitrario di elementi (ad esempio classi) in un'unica unità ad alto livello.
+	\item \textbf{Diagrammi delle classi}: Descrivono i tipi di oggetti che fanno parte di un sistema mettendone in evidenza le relazioni statiche;
+	\item \textbf{Diagrammi di sequenza}: Descrivono la collaborazione di un gruppo di oggetti che devono implementare collettivamente un comportamento;
+	\item \textbf{Diagrammi di attività}: Descrivono il flusso di operazioni di un'attività attraverso la sua logica procedurale;
+	\item \textbf{Diagrammi dei package}: Descrivono un raggruppamento di un numero arbitrario di elementi (ad esempio classi) in un'unica unità ad alto livello.
 	
 \end{itemize}
 
@@ -184,9 +184,9 @@ Ogni classe viene rappresentato come un rettangolo diviso in tre sezioni:
 	\item \textbf{Nome classe}: deve essere univoco, in notazione \glossario{CamelCase}, in inglese;
 	\item \textbf{Attributi}: elenco campi dati della classe, secondo la notazione \texttt{visibility name : type}. Il modificatore di accesso deve essere inserito obbligatoriamente e deve essere uno dei seguenti:
 	\begin{itemize}
-		\item \textbf{+}: visibilità pubblica;
-		\item \textbf{-}: visibilità privata;
-		\item \textbf{\#}: visibilità protetta.
+		\item \textbf{+}: Visibilità pubblica;
+		\item \textbf{-}: Visibilità privata;
+		\item \textbf{\#}: Visibilità protetta.
 	\end{itemize}
 	\item \textbf{Operazioni}: elenco dei costruttori, modificatori e metodi di quel tipo, utilizzando la sintassi \texttt{visibility operationName(value: type) : type }.
 \end{itemize}
