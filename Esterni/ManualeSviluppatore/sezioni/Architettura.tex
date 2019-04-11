@@ -1,14 +1,14 @@
 \chapter{Architettura}
 \section{Skill}\label{architetturaSkill}
 La skill è hostata nel sito https://developer.amazon.com/alexa/ (è necessario un account developer Amazon per accedervi). La skill è rappresentata da un JSON, configurabile attraverso l'UI fornito dalla piattaforma Alexa developer.
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.2]{./images/SkillPage.PNG}
 	\caption{\textit{Alexa developer platform}}\label{classlambda}
 \end{figure}
 
 
-La logica della skill è hostata in una AWS Lambda, quindi è serverless. Questo significa che viene creata una nuova istanza della Skill ogni volta che arriva una richiesta da Alexa (ogni utente genere una istanza diversa). L'architettura della Skill si basa sul concetto di avere una skill leggera, che esegue poche operazioni ogni volta che questa viene invocata.\\
+La logica della skill è hostata in una AWS Lambda, quindi è serverless. Questo significa che viene creata una nuova istanza della Skill ogni volta che arriva una richiesta da Alexa (ogni utente genera una istanza diversa). L'architettura della Skill si basa sul concetto di avere una skill leggera, che esegue poche operazioni ogni volta che questa viene invocata.\\
 Una richiesta da parte di Alexa viene catturata dall'index, che la elabora e ritorna un risultato. Una richiesta è definita da un JSON contenente molteplici informazioni sullo stato del dialogo, l'utente, errori e molto altro. Una dettagliata descrizione si trova sulla documentazione di Amazon AWS\footnote{\url{https://developer.amazon.com/docs/custom-skills/request-and-response-json-reference.html}}.\\
 Le informazioni più importanti contenute nel file JSON sono:\label{paramsSkill}
 \begin{itemize}
@@ -19,7 +19,7 @@ Le informazioni più importanti contenute nel file JSON sono:\label{paramsSkill}
 \end{itemize}
 
 Il seguente diagramma dei package descrive le dipendenze ad alto livello della Skill.\\
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.35]{./images/ZeroSevenPackageLambda.png}
 	\caption{\textit{Skill class diagram}}\label{classlambda}
@@ -40,7 +40,7 @@ In \textit{User} sono presenti i seguenti metodi:
     \item \textbf{credentialsByAccessToken:} prende come parametro un access token (fornito da Amazon Alexa) e ritorna una Promise contenente un JSON, il quale contiene username, email e userID. Lo userID è lo stesso di quello ottenuto attraverso il collegamento dell'applicazione all'applicazione Android, permettendo di autenticare l'utente nel database;
     \item \textbf{Workflow:} usa WorkflowService per creare un Workflow a partire dalla sua rappresentazione in formato JSON.
 \end{itemize}
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.8]{./images/user.PNG}
 	\caption{\textit{Skill class diagram - User}}\label{classlambda}
@@ -52,14 +52,14 @@ In \textit{Workflow} sono presenti i seguenti metodi:
     \item \textbf{alexaResponse:} crea la risposta sotto forma di Promise<string> a partire dalle risposte di ogni blocco;
     \item \textbf{filter:} rimuove tutti i \textit{Filter} dalla lista di blocchi, e filtra i \textit{Block} (chiamando l'apposito metodo nel \textit{Block}) che seguono direttamente ogni Filter. Questo metodo non genera side effect.
 \end{itemize}
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.8]{./images/workflow.PNG}
 	\caption{\textit{Skill class diagram - Workflow}}\label{classlambda}
 \end{figure}
 \subsection{Package services}
 Il package services contiene la classe WorkflowService, che si occupa di creare un \textit{Workflow}, dopo aver ottenuto la sua rappresentazione JSON dal database (con una chiamata REST).
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.7]{./images/WorkflowService.PNG}
 	\caption{\textit{Skill class diagram - WorkflowService}}\label{classlambda}
@@ -70,7 +70,7 @@ Il package blocks contiene tutti i blocchi della skill e il package utils.\\
 I blocchi implementano tutti l'interfaccia \textit{Block}, alcuni implementano anche \textit{Filterable} e \textit{ElicitBlock}.\\
 Un blocco Filterable può essere rappresentato come una lista, quindi deve permettere di ritornare una versione di se stesso con meno elementi.\\
 Un blocco ElicitBlock richiede all'utente dei parametri aggiuntivi per poter eseguire.
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.24]{./images/ZeroSevenClassBlocks.png}
 	\caption{\textit{Skill class diagram - blocks package}}\label{classlambda}
@@ -81,8 +81,72 @@ Il package \textit{blocks.utils} contiene le interfacce utili ai \textit{Block} 
 Il package connectors contiene i connettori utilizzati dai blocchi.\\
 Un Connector permette al blocco di ottenere le informazioni che gli servono da internet. Per esempio, BlockWeather (un blocco che rappresenta il meteo) chiamerà una liberia per conoscere il meteo di una certa zona.\\
 Ogni Connector deve processare il risultato e trasformarlo nel testo che Alexa dovrà ripetere.
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.3]{./images/ZeroSevenClassConnectors.png}
 	\caption{\textit{Skill class diagram - blocks package}}\label{classlambda}
+\end{figure}
+
+
+
+
+\section{App}\label{architetturaApp}
+
+L'app è hostata nella repository github https://github.com/sgt390/ProgettoSweCodice.
+I pattern che abbiamo utilizzato sono:
+\begin{itemize}
+	\item \textbf{ModelViewViewModel} utilizzato per la gestione e scambio dati tra Model e View;
+	\item \textbf{Builder} utilizzato per il Model (Workflow);
+	\item \textbf{Singleton} utilizzato per il Model (Workflow);
+	\item \textbf{Facade} utilizzato per le connessioni ad API esterne;
+	\item \textbf{Strategy} utilizzato per il service;
+	\item \textbf{Template Method} utilizzato per il service;
+	
+	
+\end{itemize}
+
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[scale=0.3]{./images/MVVM.png}
+	\caption{\textit{App class diagram - MVVM}}\label{MVVM}
+\end{figure}
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[scale=0.3]{./images/Blocks.png}
+	\caption{\textit{App class diagram - Blocks}}\label{Blocks}
+\end{figure}
+\begin{figure} [H]
+	\centering
+	\includegraphics[scale=0.3]{./images/Package.png}
+	\caption{\textit{App class diagram - blocks package}}\label{Package}
+\end{figure}
+\begin{figure} [H]
+	\centering
+	\includegraphics[scale=0.3]{./images/Service.png}
+	\caption{\textit{App class diagram - blocks package}}\label{Service}
+\end{figure}
+\begin{figure} [H]
+	\centering
+	\includegraphics[scale=0.3]{./images/UI.png}
+	\caption{\textit{App class diagram - blocks package}}\label{UI}
+\end{figure}
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[scale=0.3]{./images/ViewModel.png}
+	\caption{\textit{App class diagram - blocks package}}\label{ViewModel}
+\end{figure}
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[scale=0.3]{./images/BlockConnection.png}
+	\caption{\textit{App class diagram - blocks package}}\label{BlockConnection}
+\end{figure}
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[scale=0.3]{./images/Model.png}
+	\caption{\textit{App class diagram - blocks package}}\label{Model}
 \end{figure}
