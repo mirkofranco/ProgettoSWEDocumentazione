@@ -87,7 +87,7 @@ dove:
 Ogni caso d'uso deve presentare i seguenti campi:
 \begin{itemize}
 	\item Codice identificativo;
-	\item Titolo
+	\item Titolo;
 	\item Attori primari;
 	\item Attori secondari (se presenti);
 	\item Descrizione;
@@ -144,7 +144,7 @@ Come da \pianodiprogetto la Progettazione si svolgerà nell'arco di due periodi 
 Nel primo di questi due periodi viene identificata una prima decomposizione logica dell'architettura, dopo aver opportunamente studiato i vari design patterns. Nel secondo la progettazione avviene in modo atomico e dettagliato, in modo che i \textit{Programmatori} possano implementare l'intero sistema nel modo più parallelo possibile. 
 L'architettura dovrà soddisfare le seguenti qualità: 
 \begin{itemize}
-	\item \textbf{Sufficienza}: Deve soddisfare i requisiti descritti nell'\textit{Analisi dei Requisiti v2.0.0};
+	\item \textbf{Sufficienza}: Deve soddisfare i requisiti descritti nell'\textit{Analisi dei Requisiti v3.0.0};
 	\item \textbf{Comprensibilità}: Può essere compresa facilmente da tutti gli \textit{stakeholder$_{G}$};
 	\item \textbf{Modularità}: Deve essere suddivisa in parti chiare e ben distinte, ognuna con una singola responsabilità, perseguendo information hiding;
 	\item \textbf{Robustezza}: \'{E} in grado di sopportare ingressi di tipi diversi, sia da parte dell'utente che dall'ambiente;
@@ -181,7 +181,7 @@ Le norme di seguito riportare valgono sia per \textit{Kotlin}, sia per \textit{N
 \\
 Ogni classe viene rappresentato come un rettangolo diviso in tre sezioni:
 \begin{itemize}
-	\item \textbf{Nome classe}: deve essere univoco, in notazione \glossario{CamelCase}, in inglese;
+	\item \textbf{Nome classe}: deve essere univoco, in notazione\glossario{CamelCase}, in inglese;
 	\item \textbf{Attributi}: elenco campi dati della classe, secondo la notazione \texttt{visibility name : type}. Il modificatore di accesso deve essere inserito obbligatoriamente e deve essere uno dei seguenti:
 	\begin{itemize}
 		\item \textbf{+}: Visibilità pubblica;
@@ -191,19 +191,19 @@ Ogni classe viene rappresentato come un rettangolo diviso in tre sezioni:
 	\item \textbf{Operazioni}: elenco dei costruttori, modificatori e metodi di quel tipo, utilizzando la sintassi \texttt{visibility operationName(value: type) : type }.
 \end{itemize}
 Nel caso in cui una classe non dovesse contenere campi dati e/o metodi, apparirà nel diagramma comunque, seppur vuota, la sezione ad essi dedicata. 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{images/SchemaClasse.png}
 	\caption{Esempio diagramma di una classe}\label{}
 \end{figure}
 Nel caso di classi astratte il nome della stessa sarà scritto in corsivo.
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{images/ClasseAstratta.png}
 	\caption{Esempio diagramma di una classe astratta}\label{}
 \end{figure}
 Aderendo alla sintassi UML2.x un'interfaccia viene rappresentata con cerchio vuoto con al di sotto il nome dell'interfaccia e l'elenco di operazioni.
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{images/Interfaccia.png}
 	\caption{Esempio diagramma di un'interfaccia}\label{}
@@ -211,31 +211,31 @@ Aderendo alla sintassi UML2.x un'interfaccia viene rappresentata con cerchio vuo
 I diagrammi delle classi sono collegati fra loro da frecce che esplicitano le dipendenze. In particolare, verranno considerati i seguenti tipi di freccia:
 \begin{itemize}
 	\item Freccia semplice: da classe A a classe B: indica che la classe A ha fra i propri campi dati una o più istanze della classe B;
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.5]{images/Dipendenza.png}
 		\caption{Relazione di dipendenza forte in un diagramma delle classi}\label{}
 	\end{figure}
 	\item Freccia tratteggiata, da classe A a classe B: indica una dipendenza, significa che A dipende da B secondo una primitiva che viene indicata al di sopra della freccia;
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.5]{images/Primitiva.png}
 		\caption{Relazione di dipendenza debole in un diagramma delle classi}\label{}
 	\end{figure}
 	\item Freccia a diamante vuota, da classe A a classe B: indica un'aggregazione, una relazione non forte ovvero una relazione nella quale le classi che che ne prendono parte hanno entrambe significato anche prese in modo singolo;
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.5]{images/Aggregazione.png}
 		\caption{Relazione di aggregazione in un diagramma delle classi}\label{}
 	\end{figure}
 	\item Freccia a diamante piena, da classe A a classe B: indica la composizione, una relazione forte dove un'istanza della classe contenuta ha senso solo se esiste un'istanza della classe che contiene;
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.5]{images/Composizione.png}
 		\caption{Relazione di composizione in un diagramma delle classi}\label{}
 	\end{figure}
 	\item Freccia vuota, da classe A a classe B: indica ereditarietà ed è il grado massimo di dipendenza fra classi. Indica che un oggetto A è anche un oggetto di tipo B.
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.5]{images/Ereditarieta.png}
 		\caption{Relazione di ereditarietà in un diagramma delle classi}\label{}
@@ -262,21 +262,21 @@ I diagrammi di attività descrivono la logica procedurale decomponendo un'attivi
 \begin{itemize}
 	\item \textbf{Nodo iniziale:} rappresentato da un pallino pieno. Indica il punto da cui inizia l'attività;
 	\item \textbf{Activity:} raffigurata come un rettangolo che ne contiene una breve descrizione;
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.5]{images/PrimaActivity.png}
 		\caption{Rappresentazione di un nodo iniziale e attività in un diagramma}\label{}
 	\end{figure}
 	\item \textbf{Fork:} rappresentato da una linea lunga verticale od orizzontale, indica un punto in cui l'esecuzione si parallelizza senza alcun vincolo temporale fra attività di processi differenti;
 	\item \textbf{Join:} rappresentato da una linea lunga verticale od orizzontale, indica un punto in cui avviene la sincronizzazione fra processi paralleli;
-		\begin{figure}[h]
+		\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.5]{images/ForkJoin.png}
 		\caption{Esempio di Fork e Join in un diagramma di attività}\label{}
 	\end{figure}
 	\item \textbf{Branch:} rappresentato da un rombo con una freccia in ingresso. Indica un punto in cui si può prendere una decisione e seguire solo uno dei rami, ognuno dei quali deve avere la guardia nel formato \texttt{[guardia]};
 	\item \textbf{Merge:} rappresentato da un rombo con una freccia in uscita. Indica il punto in cui i rami generati da un Branch si uniscono;
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.5]{images/BranchMerge.png}
 		\caption{Esempio di Branch e Merge in un diagramma di attività}\label{}
@@ -292,7 +292,7 @@ I diagrammi di attività descrivono la logica procedurale decomponendo un'attivi
 	\subsection{Diagrammi dei package}
 	\label{DiagrammiPackage}
 	Ogni package viene rappresentato attraverso un rettangolo con un'etichetta per il nome, che può contenere eventuali sotto-package. Le dipendenze tra i vari package vengono segnalate attraverso una freccia tratteggiata. Tale freccia, disegnata dal package A al package B, indica una dipendenza di A nei confronti di B.
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.5]{images/DiagrammaPackage.png}
 		\caption{Esempio di diagramma di package con dipendenza}\label{}
@@ -341,7 +341,7 @@ Vengono elencate le norme alle quali i \textit{Programmatori} devono attenersi d
 \begin{itemize}
 	\item \textbf{Parentesi:} devono essere aperte utilizzando il metodo \textit{inline}, ovvero iniziano nella stessa riga del costrutto saltando uno spazio, inoltre blocchi di codice vanno racchiusi tra parentesi graffe;
 	\item \textbf{Univocità dei nomi:} il nome delle classi, dei metodi e delle variabili deve essere il più esplicativo possibile al fine di garantire una maggior comprensione;
-	\item \textbf{Nomi delle costanti:} la definizione delle costanti deve essere fatta utilizzando solo lettere maiuscole.
+	\item \textbf{Nomi delle costanti:} la definizione delle costanti deve essere fatta utilizzando solo lettere maiuscole;
 	\item \textbf{Nomi delle classi:} il nome delle classi deve iniziare con la lettera maiuscola;
 	\item \textbf{Nomi dei metodi:} il nome dei metodi deve iniziare con la lettera minuscola, se sono composti da più parole allora le parole successive iniziano con la lettera maiuscola;
 	\item \textbf{Lingua:} la lingua utilizzata è l'inglese, sia per i nomi delle classi, dei metodi e delle variabili, sia per i commenti del codice scritto.
