@@ -87,47 +87,47 @@ RVO1 & \hyperlink{TVVO1}{TVVO1}\\ \hline
 \section{Test di unità}
 
 \normalsize
-\begin{longtable}{|c|m{12em}|>{}m{13em}|c|}
+\begin{longtable}{|c|m{12em}|c|}
 \hline 
-\textbf{Id Test} & \textbf{Descrizione} & \textbf{Funzione} & \textbf{Stato}\\
+\textbf{Id Test} & \textbf{Descrizione} & \textbf{Stato}\\
 \hline
 \endhead
 TUS1 & Viene controllato che ritorni un testo & \textit{Implementato}\\ \hline
-TUS2 & Viene controllato che venga lanciata un'eccezione sul tipo di parametro passato & Lambda::blocks::TextToSpeechBlock::text() & \textit{Implementato}\\ \hline
-TUS3 & Viene controllato che venga lanciata un'eccezione sul valore di ritorno (check sui falsi positivi)  & Lambda::blocks::TextToSpeechBlock::text() & \textit{Implementato}\\ \hline
-TUS4 & Viene controllato che ritorni una lista & Lambda::blocks::BlockList::text() & \textit{Implementato}\\ \hline
-TUS5 & Viene controllato che venga lanciata un'eccezione sul tipo di parametro passato & Lambda::blocks::BlockList::text() & \textit{non Implementato}\\ \hline
-TUS6 & Viene controllato che venga lanciata un'eccezione sul valore di ritorno & Lambda::blocks::BlockList::text() & \textit{Implementato}\\ \hline
-TUS7 & Viene controllato che ritorni una richiesta di inserimento pin & Lambda::blocks::BlockPIN::text() & \textit{Implementato}\\ \hline
-TUS8 & Viene controllato che ritorni una risposta di pin corretto & Lambda::blocks::BlockPIN::text() & \textit{Implementato}\\ \hline
-TUS9 & Viene controllato che ritorni una risposta di pin errato & Lambda::blocks::BlockPIN::text() & \textit{Implementato}\\ \hline
-TUS10 & Viene controllato che ritorni un workflow corretto & Lambda::workflow::alexaResponse() & \textit{Implementato}\\ \hline
-TUS11 & Viene controllato che ritorni un workflow non corretto & Lambda::workflow::alexaResponse() & \textit{Implementato}\\ \hline
-TUS12 & Viene controllato che ritorni una eccezione sul parametro durante la creazione del workflow & Lambda::services::WorkflowService::create() & \textit{non Implementato}\\ \hline
-TUS13 & Viene controllato che ritorni un workflow corretto & Lambda::user::workflow() & \textit{Implementato}\\ \hline
-TUS13 & Viene controllato che ritorni una eccezione sulla costruzione dell'utente & Lambda::user::workflow() & \textit{Implementato}\\ \hline
-TUS14 & Viene controllato che ritorni un FeedRSS corretto & Lambda::blocks::BlockFeedRSS::text() & \textit{Implementato}\\ \hline
-TUS15 & Viene controllato che venga lanciata un'eccezione sul tipo di parametro URL & Lambda::blocks::BlockFeedRSS::text() & \textit{Implementato}\\ \hline
-TUS16 & Viene controllato che venga lanciata un'eccezione di Timeout sulla chiamata internet & Lambda::connectors::BlockFeedRSS::connect() & \textit{non Implementato}\\ \hline
-TUS17 & Viene controllato che ritorni una previsione corretta & Lambda::blocks::BlockWeather::text() & \textit{Implementato}\\ \hline
-TUS18 & Viene controllato che venga lanciata un'eccezione sul parametro position & Lambda::blocks::BlockWeather::text() & \textit{Implementato}\\ \hline
-TUS19 & Viene controllato che ritorni un testo vuoto & Lambda::blocks::BlockWeather::text() & \textit{Implementato}\\ \hline
-TUS20 & Viene controllato che venga lanciata un'eccezione sul parametro position & Lambda::connectors::ConnectorWeather::connect() & \textit{Implementato}\\ \hline
-TUS21 & Viene controllato che venga lanciata un'eccezione di Timeout sulla chiamata internet alle API & Lambda::connectors::ConnectorWeather::connect() & \textit{non Implementato}\\ \hline
-TUS22 & Viene controllato che ritorni una Tweet corretto & Lambda::blocks::BlockTwitterRead::text() & \textit{Implementato}\\ \hline
-TUS23 & Viene controllato che ritorni un Tweet vuoto & Lambda::blocks::BlockTwitterRead::text() & \textit{Implementato}\\ \hline
-TUS24 & Viene controllato che venga lanciata un'eccezione sul parametro userID & Lambda::connectors::ConnectorTwitterRead::connect() & \textit{Implementato}\\ \hline
-TUS25 & Viene controllato che venga lanciata un'eccezione di Timeout sulla chiamata internet alle API di Twitter & Lambda::connectors::ConnectorTwitterRead::connect() & \textit{non Implementato}\\ \hline
-TUS26 & Viene controllato che ritorni un workflow vuoto & Lambda::user::workflow() & \textit{non Implementato}\\ \hline
-TUS27 & Viene controllato che venga lanciata un'eccezione sulla mancanza di un blocco filtrabile dopo un filtro & Lambda::user::filter() & \textit{Implementato}\\ \hline
-TUS28 & Viene controllato che ritorni un workflow correttamente filtrato & Lambda::user::filter() & \textit{Implementato}\\ \hline
-TUS29 & Viene controllato che ritorni una lista correttamente filtrata & Lambda::blocks::BlockList::filterBlocks() & \textit{Implementato}\\ \hline
-TUS30 & Viene controllato che ritorni un Feed RSS correttamente filtrato & Lambda::blocks::BlockList::filterBlocks() & \textit{Implementato}\\ \hline
-TUS31 & Viene controllato che ritorni una lista di email correttamente filtrate & Lambda::blocks::BlockList::filterBlocks() & \textit{non Implementato}\\ \hline
-TUS32 & Viene controllato che ritorni una lista di email corrette & Lambda::blocks::BlockEmailRead::text() & \textit{non Implementato}\\ \hline
-TUS33 & Viene controllato che ritorni una lista di email vuota & Lambda::blocks::BlockEmailRead::text() & \textit{non Implementato}\\ \hline
-TUS34 & Viene controllato che venga lanciata un'eccezione sull'email non corretta & Lambda::connectors::ConnectorEmailRead::connect() & \textit{non Implementato}\\ \hline
-TUS35 & Viene controllato che ritorni una lista di Email corrette& Lambda::connectors::ConnectorEmailRead::connect() & \textit{non Implementato}\\ \hline
+TUS2 & Viene controllato che venga lanciata un'eccezione sul tipo di parametro passato & \textit{Implementato}\\ \hline
+TUS3 & Viene controllato che venga lanciata un'eccezione sul valore di ritorno (check sui falsi positivi)  & \textit{Implementato}\\ \hline
+TUS4 & Viene controllato che ritorni una lista & \textit{Implementato}\\ \hline
+TUS5 & Viene controllato che venga lanciata un'eccezione sul tipo di parametro passato & \textit{non Implementato}\\ \hline
+TUS6 & Viene controllato che venga lanciata un'eccezione sul valore di ritorno & \textit{Implementato}\\ \hline
+TUS7 & Viene controllato che ritorni una richiesta di inserimento pin & \textit{Implementato}\\ \hline
+TUS8 & Viene controllato che ritorni una risposta di pin corretto & \textit{Implementato}\\ \hline
+TUS9 & Viene controllato che ritorni una risposta di pin errato & \textit{Implementato}\\ \hline
+TUS10 & Viene controllato che ritorni un workflow corretto & \textit{Implementato}\\ \hline
+TUS11 & Viene controllato che ritorni un workflow non corretto & \textit{Implementato}\\ \hline
+TUS12 & Viene controllato che ritorni una eccezione sul parametro durante la creazione del workflow & \textit{non Implementato}\\ \hline
+TUS13 & Viene controllato che ritorni un workflow corretto & \textit{Implementato}\\ \hline
+TUS13 & Viene controllato che ritorni una eccezione sulla costruzione dell'utente & \textit{Implementato}\\ \hline
+TUS14 & Viene controllato che ritorni un FeedRSS corretto & \textit{Implementato}\\ \hline
+TUS15 & Viene controllato che venga lanciata un'eccezione sul tipo di parametro URL & \textit{Implementato}\\ \hline
+TUS16 & Viene controllato che venga lanciata un'eccezione di Timeout sulla chiamata internet & \textit{non Implementato}\\ \hline
+TUS17 & Viene controllato che ritorni una previsione corretta & \textit{Implementato}\\ \hline
+TUS18 & Viene controllato che venga lanciata un'eccezione sul parametro position & \textit{Implementato}\\ \hline
+TUS19 & Viene controllato che ritorni un testo vuoto & \textit{Implementato}\\ \hline
+TUS20 & Viene controllato che venga lanciata un'eccezione sul parametro position & \textit{Implementato}\\ \hline
+TUS21 & Viene controllato che venga lanciata un'eccezione di Timeout sulla chiamata internet alle API & \textit{non Implementato}\\ \hline
+TUS22 & Viene controllato che ritorni una Tweet corretto & \textit{Implementato}\\ \hline
+TUS23 & Viene controllato che ritorni un Tweet vuoto & \textit{Implementato}\\ \hline
+TUS24 & Viene controllato che venga lanciata un'eccezione sul parametro userID & \textit{Implementato}\\ \hline
+TUS25 & Viene controllato che venga lanciata un'eccezione di Timeout sulla chiamata internet alle API di Twitter & \textit{non Implementato}\\ \hline
+TUS26 & Viene controllato che ritorni un workflow vuoto & \textit{non Implementato}\\ \hline
+TUS27 & Viene controllato che venga lanciata un'eccezione sulla mancanza di un blocco filtrabile dopo un filtro & \textit{Implementato}\\ \hline
+TUS28 & Viene controllato che ritorni un workflow correttamente filtrato & \textit{Implementato}\\ \hline
+TUS29 & Viene controllato che ritorni una lista correttamente filtrata & \textit{Implementato}\\ \hline
+TUS30 & Viene controllato che ritorni un Feed RSS correttamente filtrato & \textit{Implementato}\\ \hline
+TUS31 & Viene controllato che ritorni una lista di email correttamente filtrate & \textit{non Implementato}\\ \hline
+TUS32 & Viene controllato che ritorni una lista di email corrette & \textit{non Implementato}\\ \hline
+TUS33 & Viene controllato che ritorni una lista di email vuota & \textit{non Implementato}\\ \hline
+TUS34 & Viene controllato che venga lanciata un'eccezione sull'email non corretta & \textit{non Implementato}\\ \hline
+TUS35 & Viene controllato che ritorni una lista di Email corrette & \textit{non Implementato}\\ \hline
 \caption[Test di Unità]{Test di Unità}
 \label{tabella:test2}
 \end{longtable}
@@ -167,13 +167,60 @@ TUA11 &  &  & \textit{Non implementato}\\ \hline
 \clearpage
 
 \normalsize
-\begin{longtable}{|c|m{22em}|}
+\begin{longtable}{|c|m{24em}|}
 \hline 
 \textbf{Id Test} & \textbf{Funzione}\\
 \hline
 \endhead
 TUS1 & Lambda::blocks::TextToSpeechBlock::text()\\ \hline
+TUS2 & Lambda::blocks::TextToSpeechBlock::text()\\ \hline
+TUS3 & Lambda::blocks::TextToSpeechBlock::text()\\ \hline
+TUS4 & Lambda::blocks::BlockList::text()\\ \hline
+TUS5 & Lambda::blocks::BlockList::text()\\ \hline
+TUS6 & Lambda::blocks::BlockList::text()\\ \hline
+TUS7 & Lambda::blocks::BlockPIN::text()\\ \hline
+TUS8 & Lambda::blocks::BlockPIN::text()\\ \hline
+TUS9 & Lambda::blocks::BlockPIN::text()\\ \hline
+TUS10 & Lambda::workflow::alexaResponse()\\ \hline
+TUS11 & Lambda::workflow::alexaResponse()\\ \hline
+TUS12 & Lambda::services::WorkflowService::create()\\ \hline
+TUS13 & Lambda::user::workflow()\\ \hline
+TUS13 & Lambda::user::workflow()\\ \hline
+TUS14 & Lambda::blocks::BlockFeedRSS::text()\\ \hline
+TUS15 & Lambda::blocks::BlockFeedRSS::text()\\ \hline
+TUS16 & Lambda::connectors::BlockFeedRSS::connect()\\ \hline
+TUS17 & Lambda::blocks::BlockWeather::text()\\ \hline
+TUS18 & Lambda::blocks::BlockWeather::text()\\ \hline
+TUS19 & Lambda::blocks::BlockWeather::text()\\ \hline
+TUS20 & Lambda::connectors::ConnectorWeather::connect()\\ \hline
+TUS21 & Lambda::connectors::ConnectorWeather::connect()\\ \hline
+TUS22 & Lambda::blocks::BlockTwitterRead::text()\\ \hline
+TUS23 & Lambda::blocks::BlockTwitterRead::text()\\ \hline
+TUS24 & Lambda::connectors::ConnectorTwitterRead::connect()\\ \hline
+TUS25 & Lambda::connectors::ConnectorTwitterRead::connect()\\ \hline
+TUS26 & Lambda::user::workflow()\\ \hline
+TUS27 & Lambda::user::filter()\\ \hline
+TUS28 & Lambda::user::filter()\\ \hline
+TUS29 & Lambda::blocks::BlockList::filterBlocks()\\ \hline
+TUS30 & Lambda::blocks::BlockList::filterBlocks()\\ \hline
+TUS31 & Lambda::blocks::BlockList::filterBlocks()\\ \hline
+TUS32 & Lambda::blocks::BlockEmailRead::text()\\ \hline
+TUS33 & Lambda::blocks::BlockEmailRead::text()\\ \hline
+TUS34 & Lambda::connectors::ConnectorEmailRead::connect()\\ \hline
+TUS35 & Lambda::connectors::ConnectorEmailRead::connect()\\ \hline
 \caption[Test di Unità]{Test di Unità}
 \label{tabella:test2}
+\end{longtable}
+\clearpage
+
+\normalsize
+\begin{longtable}{|c|m{24em}|}
+	\hline 
+	\textbf{Id Test} & \textbf{Funzione}\\
+	\hline
+	\endhead
+	TUA1 & package com.megalexa::ConnectorFeedTest ::valid() \\ \hline
+	\caption[Test di Unità]{Test di Unità}
+	\label{tabella:test2}
 \end{longtable}
 \clearpage
