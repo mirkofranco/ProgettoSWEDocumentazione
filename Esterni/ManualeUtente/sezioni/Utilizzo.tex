@@ -1,54 +1,59 @@
 \chapter{Utilizzo}
 \label{Utilizzo}
-\section{Utilizzo di MegAlexa}
+\section{Utilizzo dell'applicazione MegAlexa}
 \label{UtilizzoApp}
 \subsection{Creazione Workflow}
-Al primo avvio dell'applicazione apparirà una schermata vuota, priva di \textit{workflow$_{G}$}. I seguenti passaggi spiegheranno come aggiungere un workflow alla nostra app da far eseguire ad Alexa.
+Per la creazione di un workflow seguire le seguenti istruzioni.\\
+Al primo avvio dell'applicazione apparirà una schermata vuota, priva di \textit{workflow$_{G}$} come nella seguente immagine.
 \begin{enumerate}
-\item Cliccare sul tasto "+" per aggiungere un nuovo workflow.
+\item Cliccare sul tasto "+" per aggiungere un nuovo workflow;
 
-	\begin{figure}[!ht]
+
+	\begin{figure}[H]
 		\centering
-		\fbox{\includegraphics[scale=0.2]{images/HomeWorkflowEmpty.jpg}}
+			\fbox{\includegraphics[width=0.35\textwidth]{images/HomeWorkflowEmpty.jpg}}
 		\caption{Elenco workflow vuoto}
 	\end{figure}
-	\newpage
-\item Inserire il nome del nuovo workflow nell'apposito campo di testo;\\
-\textbf{NOTA BENE:} all'utente non è permesso creare due o più workflow con lo stesso nome.
 
-	\begin{figure}[!ht]
+
+\item Inserire il nome del nuovo workflow nell'apposito campo di testo;\\
+\textbf{NOTA BENE:} all'utente non è permesso creare due o più workflow con lo stesso nome;
+
+	\begin{figure}[H]
 		\centering
-		\fbox{\includegraphics[scale=0.2]{images/AddWorkflow.jpg}}
+			\fbox{\includegraphics[width=0.5\textwidth]{images/AddWorkflow.jpg}}
 		\caption{Schermata aggiunta workflow}
 	\end{figure}
 
 \newpage
-\item Cliccando sulla freccia in basso a destra è possibile aggiungere dei blocchi al workflow;
+\item Per aggiungere blocchi al workflow cliccare sulla freccia in basso a destra;
 
-\begin{figure}[!ht]
+\begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[scale=0.2]{images/Freccia.jpg}}
+	\fbox{\includegraphics[width=0.5\textwidth]{images/Freccia.jpg}}
 	\caption{Schermata aggiunta workflow}
 \end{figure}
 
 \newpage
-\item A questo punto nella schermata apparirà l'elenco dei blocchi che possono essere aggiunti.
+\item Apparirà sulla schermata l'elenco dei blocchi che possono essere aggiunti.
+Per aggiungere i blocchi che si desiderano seguire le istruzioni nel paragrafo successivo.
 \begin{figure}[!ht]
 	\centering
-	\fbox{\includegraphics[scale=0.2]{images/ListBlocks.jpg}}
+	\fbox{\includegraphics[width=0.35\textwidth]{images/ListBlocks.jpg}}
 	\caption{Lista dei blocchi}
 \end{figure}
+
 \end{enumerate}
 
 \newpage
 \subsection{Aggiunta blocchi}
-I seguenti punti spiegheranno dettagliatamente come configurare e aggiungere i vari tipi di blocchi al \textit{workflow$_{G}$}.\\
+Segue una spiegazione dettagliata sulla configurazione e aggiunta di ogni blocco al \textit{workflow$_{G}$}.\\
 
 \subsubsection{Blocco FeedRSS}
-Questo blocco permette all'utente di inserire un qualsiasi feedRSS e successivamente far riprodurre al dispositivo\glossario{Alexa}il suo contenuto.
+Questo blocco permette all'utente di inserire un qualsiasi feedRSS e successivamente far riprodurre al dispositivo Alexa il suo contenuto.
 \begin{enumerate}
 	\item Inserire nell'apposito campo di testo l'URL del feedRSS;
-	\item Confermare e salvare cliccando sul pulsante "ADD".
+	\item Confermare e salvare cliccando sul pulsante "ADD" per aggiungere il blocco al workflow.
 \begin{figure}[!ht]
 	\centering
 	\fbox{\includegraphics[scale=0.2]{images/BlockFeedRSS.jpg}}
@@ -61,7 +66,7 @@ Questo blocco permette all'utente di inserire un qualsiasi feedRSS e successivam
 Tale blocco consente all'utente di inserire nel proprio workflow un blocco contenente del testo.
 \begin{enumerate}
 	\item Inserire nell'apposito campo di input un testo a piacere;
-	\item Confermare e salvare cliccando sul pulsante "ADD".
+	\item Confermare e salvare cliccando sul pulsante "ADD" per aggiungere il blocco al workflow.
 	\begin{figure}[!ht]
 		\centering
 		\fbox{\includegraphics[scale=0.2]{images/BlockTextToSpeech.jpg}}
@@ -71,10 +76,10 @@ Tale blocco consente all'utente di inserire nel proprio workflow un blocco conte
 
 \subsubsection{Blocco Filter}
 Consente di impostare il numero limite di elementi che un determinato blocco deve considerare. \\
-\textbf{NOTA BENE:} il blocco filtro è applicabile solo ai seguenti blocchi: Stock, Crypto, FeedRSS, News, Readmail, TwitterHashtag, TwitterUserTimeline e Sport.
+\textbf{NOTA BENE:} il blocco filtro è applicabile solo ai seguenti blocchi: Stock, Crypto, FeedRSS, News, Read Email, TwitterUserTimeline, TwitterHashtag, List e Sport.
 
 \subsubsection{Blocco PIN}
-Lo scopo di questo blocco è di effettuare una sorta di autenticazione dell'utente per l'esecuzione di alcuni blocchi, ovvero: ReadMail, SendEmail e TwitterHashtag e TwitterUserTimeline.
+Lo scopo di questo blocco è quello di effettuare una sorta di autenticazione dell'utente per l'esecuzione di alcuni blocchi, come ad esempio ReadEmail e Twitter in modo da avere un minimo di privacy per l'utente.
 \begin{enumerate}
 	\item Inserire nel campo di testo il proprio PIN segreto;
 	\item Cliccare sul tasto "SAVE" per confermare e salvare.
@@ -85,73 +90,66 @@ Lo scopo di questo blocco è di effettuare una sorta di autenticazione dell'uten
 		\caption{Blocco PIN}
 	\end{figure}
 \end{enumerate}
-
+\newpage
 \subsubsection{Blocco News}
-Tale blocco consente all'utente di ascoltare le ultime news prese da un sito a scelta tra i seguenti: Sky, Google News, Ansa, BBC, CNBC e Wall Street. Cliccare su un tasto a piacere tra quelli elencati per scegliere il sito da cui ricevere news.
+Tale blocco consente all'utente di ascoltare le ultime news prese da un sito a scelta tra i seguenti: Sky, Google News, Ansa, BBC, CNBC e Wall Street.
+\begin{enumerate}
+	\item Cliccare su un tasto a piacere tra quelli elencati per scegliere il sito da cui ricevere news.
 	\begin{figure}[!ht]
 		\centering
 		\fbox{\includegraphics[scale=0.2]{images/BlockNews.jpg}}
 		\caption{Blocco News}
 	\end{figure}
+\end{enumerate}
 \newpage
 
 \subsubsection{Blocco Sport}
-Con l'aggiunta di questo blocco l'utente potrà ricevere le ultime news riguardanti uno sport sua scelta tra i seguenti: tennis, calcio, basket americano, formula1, football americano e motogp.
-Cliccare su un tasto a piacere tra quelli proposti per scegliere il sito da cui ricevere news sullo sport.
+Con l'aggiunta di questo blocco l'utente potrà ascoltare le ultime news riguardanti uno sport a sua scelta tra i seguenti: tennis, calcio, basket americano, formula1, football americano e motogp.
+\begin{enumerate}
+	\item Cliccare su un tasto a piacere tra quelli proposti per scegliere il sito da cui ricevere news sullo sport.
 	\begin{figure}[!ht]
 		\centering
 		\fbox{\includegraphics[scale=0.2]{images/BlockSport.jpg}}
 		\caption{Blocco sport}
 	\end{figure}
+\end{enumerate}
 \newpage
 \subsubsection{Blocco Crypto}
 Con questo blocco l'utente può scegliere da quale FeedRSS ascoltare le ultime news sulle cryptovalute.
-Cliccare su un tasto a piacere tra quelli proposti per scegliere da quale FeedRSS ricevere news sulle cryptovalute.
+\begin{enumerate}
+	\item Cliccare su un tasto a piacere tra quelli proposti per scegliere da quale FeedRSS ricevere news sulle cryptovalute.
 \begin{figure}[!ht]
 	\centering
 	\fbox{\includegraphics[scale=0.2]{images/BlockCrypto.jpg}}
 	\caption{Blocco crypto}
 \end{figure}
+\end{enumerate}
 \newpage
 \subsubsection{Blocco Stock}
 Con questo blocco l'utente può scegliere da quale FeedRSS ascoltare le ultime news sull'andamento della borsa economica.
-Cliccare su un FeedRSS a scelta per scegliere da quale borsa ricevere news.
+\begin{enumerate}
+	\item Cliccare su un FeedRSS a scelta per scegliere da quale borsa ricevere news.
 \begin{figure}[!ht]
 	\centering
 	\fbox{\includegraphics[scale=0.3]{images/BlockStock.jpg}}
 	\caption{Blocco stock}
 \end{figure}
+\end{enumerate}
 \newpage
 \subsubsection{Blocco List}
 Questo blocco permette all'utente di creare, aggiungere e modificare degli elementi di testo ad una lista.
 È possibile modificare la lista tramite app oppure tramite interazione con l'Amazon Echo.
 
 \subsubsection{Blocco TwitterHashtag}
-L'utente con l'aggiunta di questo blocco può effettuare una ricerca dei post su Twitter tramite hashtag è ascoltarli tramite Alexa.
-
+L'utente con l'aggiunta di questo blocco può effettuare una ricerca su Twitter tramite hashtag.
 \subsubsection{Blocco TwitterUserTimeline}
-L'utente inserendo questo blocco nel suo\glossario{workflow}potrà ascoltare gli ultimi post pubblicati da un utente che segue su Twitter.
-
+L'utente inserendo questo blocco nel suo workflow potrà sapere suoi i tweet.
 \subsubsection{Blocco Weather}
 Il blocco Weather consente all'utente di sapere che meteo c'è in questo momento o nei prossimi giorni di una determinata città.
 \newpage
-\subsection{Salvataggio e creazione workflow}
-Una volta creati i blocchi per il workflow, cliccare sul tasto in alto a destra per confermare e salvare.
-\begin{figure}[!ht]
-	\centering
-	\fbox{\includegraphics[scale=0.2]{images/BlocksCreated.jpg}}
-	\caption{Blocchi creati}
-\end{figure}
-\newpage
-Alla fine nella home comparirà il nuovo workflow creato con i blocchi inseriti.
-\begin{figure}[!ht]
-	\centering
-	\fbox{\includegraphics[scale=0.2]{images/HomeWorkflow.jpg}}
-	\caption{Workflow creato}\label{workflow}
-\end{figure}
-\subsection{Visualizzare blocchi nel workflow}\label{visualizzazione}
-Per sapere quali blocchi contiene un workflow, andare nella schermata che mostra l'elenco di tutti i workflow (Figura \ref{workflow}) disponibili e cliccare sul nome di quello che ci interessa.
-In questo modo verrà visualizzato l'elenco dei blocchi al suo interno come mostrato in figura:
+\subsection{Blocchi nel workflow}
+Per avere informazioni sui blocchi contenuti in un workflow, andare sulla schermata che mostra l'elenco di tutti i workflow disponibili  e cliccare sul nome del workflow che ci interessa.
+In questo modo verrà visualizzato l'elenco dei blocchi al suo interno come mostrato nella seguente figura:
 \begin{figure}[!ht]
 	\centering
 	\fbox{\includegraphics[scale=0.2]{images/BlocksWorkflow.jpg}}
@@ -159,71 +157,72 @@ In questo modo verrà visualizzato l'elenco dei blocchi al suo interno come most
 \end{figure}
 \newpage
 \subsection{Modifica blocchi}
-Andando nella schermata di visualizzazione dei blocchi (\ref{visualizzazione}) è possibile modificare un blocco creato in precedenza cliccando su tale blocco ed effettuando la modifica.
 \subsection{Eliminazione blocchi}
-Per eliminare un blocco da un workflow bisogna andare nella schermata di visualizzazione dei blocchi (\ref{visualizzazione}), tenere premuto sul blocco da eliminare e cliccare il tasto elimina che appare.
 \subsection{Eliminazione workflow}
-Per eliminare un workflow creato è sufficiente andare nella schermata di visualizzazione dei blocchi (\ref{visualizzazione}) e cliccare la "X" in alto a sinistra.
 \begin{comment}
 \subsubsection{Blocco Amazon Music}
 Questo blocco consente all'utente di ascoltare un brano, un'album o una playlist da Amazon Music tramite il proprio dispositivo Alexa.
+
 \subsubsection{Blocco Telegram}
 Il blocco Telegram consente all'utente iscritto al servizio di messaggistica Telegram di inviare messaggi e file audio ad un'altra persona o gruppo di persone.
+
 \subsubsection{Blocco ReadEmail}
 Con questo blocco l'utente può ascoltare tramite Alexa le sue email, di Gmail, non ancora lette.
-\subsubsection{Blocco TwitterHomeTimeline}
+
+
 \subsubsection{Blocco Calendar}
 Il blocco calendario permette all'utente di ascoltare o aggiungere i suoi appuntamenti di Google calendar tramite l'Amazon echo.
 \end{comment}
 \newpage
 \section{Utilizzo della skill MegAlexa}
-
+\label{Utilizzo skill}
 \begin{itemize}
 \item  \textbf{Configurazione skill MegAlexa}\\
-Per poter utilizzare la skill MegAlexa è necessario configurare il proprio account Amazon con la skill  attraverso l'applicazione Amazon Alexa installata sul dispositivo mobile, seguendo i seguenti passi:
+\label{Configurazione MegAlexa}
+Per poter utilizzare la skill MegAlexa è necessario configurare il proprio account Amazon con la skill  attraverso l'applicazione Amazon Alexa installata sul dispositivo mobile. Per fare ciò seguire i seguenti passi:
 \begin{enumerate}
-	\item  Andare nella sezione Skill e giochi dell'applicazione Amazon Alexa 
+	\item  Cliccare sulla voce "Skill e giochi"  presente nella barra laterale nell'applicazione Amazon Alexa ;
 	
 	\begin{figure}[!ht]
 		\centering
 		\includegraphics[width=0.5\textwidth]{images/SkillGiochi.png}
-		\caption{Sezione skill e giochi}
+		\caption{Sezione skill e giochi di Amazon Alexa}
 	\end{figure}
 \newpage
 	
-	\item Andare sul simbolo di cerca
-	\begin{figure}[!ht]
+	\item Andare sul simbolo delle lente di ingrandimento che indica la funzione di ricerca;
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.5\textwidth]{images/SimboloCerca.png}
-		\caption{Cerca}
+		\caption{Cerca di Amazon Alexa}
 	\end{figure}
-	\item Inserire il nome della skill
+	\item Inserire il nome della skill che si sta cercando;
 	\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.5\textwidth]{images/CercaSkill.png}
-	\caption{Cerca la Skill}
+	\caption{Inserimento nome Skill}
    \end{figure}
 \newpage
-    \item Abilitare la skill 
+    \item Abilitare la skill premendo il pulsante "Abilita all'uso";
     
-    \begin{figure}[!ht]
+    \begin{figure}[H]
     	\centering
     	\includegraphics[width=0.5\textwidth]{images/AbilitaSkill.png}
-    	\caption{Abilitazione Skill}
+    	\caption{Abilitazione Skill nell'applicazione Amazon Alexa}
     \end{figure}
     \newpage
-    \item Collegare l'account Amazan con la Skill: durante questo passaggio si verrà reindirizzati a una pagina di login di Amazon nella quale si dovranno inserire i dati relativi all'account Amazon che è in uso \\
+    \item Collegare l'account Amazon con la Skill: dopo aver eseguito il punto numero 4, si verrà reindirizzati a una pagina di login di Amazon nella quale si dovranno inserire i dati relativi all'account Amazon che è in uso; \\
     
-        \begin{figure}[!ht]
+        \begin{figure}[H]
     	\centering
     	\includegraphics[width=0.5\textwidth]{images/AutenticazioneAccount.png}
     	\caption{Autenticazione Account Amazon}
     \end{figure}
 
     \newpage
-     \item Skill collegata
+     \item Skill collegata con successo;
      
-       \begin{figure}[!ht]
+       \begin{figure}[H]
      	\centering
      	\includegraphics[width=0.5\textwidth]{images/AutenticazioneEseguita.png}
      	\caption{Collegamento Skill con successo}
@@ -235,11 +234,12 @@ Per poter utilizzare la skill MegAlexa è necessario configurare il proprio acco
     
 \end{enumerate}
 \newpage
-\item  \textbf{Esecuzione skill MegAlex}\\
-\\
- Per avviare la skill MegAlexa attraverso l'Echo Dot occorre pronunciare uno dei comandi vocali di avvio come ad esempio: "Alexa, open MegAlexa", oppurre "Alexa, start MegAlexa".
+\item  \textbf{Esecuzione skill MegAlexa}\label{Esecuzione skill}
+
+Per avviare la skill MegAlexa attraverso l'Echo Dot occorre pronunciare uno dei comandi vocali di avvio come ad esempio: "Alexa, open MegAlexa", oppure "Alexa, start MegAlexa".
       
-Se Alexa risponde con una richiesta della configurazione dell'account Amazon con la skill MegALexa allora  bisogna seguire le istruzioni indicate nella sezione precedente "configurazione Skill MegAlexa". 
+Se Alexa risponde con una richiesta dei configurazione dell'account Amazon con la skill MegAlexa allora  bisogna seguire le istruzioni indicate nella sezione precedente
+\S\ref{Configurazione MegAlexa} "Configurazione Skill MegAlexa". 
 
 \begin{figure}[!ht]
 	\centering
@@ -257,7 +257,7 @@ Altrimenti si può procedere al successivo passaggio con l'esecuzione della skil
 
 \end{itemize}
 
-A questo punto attraverso la skill MegAlexa, l'utente può avviare i workflow creati nell'applicazione.\\
+A questo punto l'utente può avviare i workflow creati nell'applicazione.\\
 
 \newpage
 \section{Voice Dialog Flow}
@@ -276,7 +276,7 @@ Per intent si intende la richiesta da parte dell'utente di effettuare una partic
 Questa sezione si occupa di elencare i principali intents a disposizione dell'utente, insieme agli output previsti una volta ricevuta la richiesta.
 Si fa riferimento alla documentazione fornita da\glossario{Amazon}\footnote{\url{https://developer.amazon.com/it/documentation}} per lo sviluppo di una skill e la sua implementazione ottimale.
 
-\subsubsection{Help Intent}\label{help}
+\subsection{Help Intent}\label{help}
 Permette all'utente di ottenere ulteriori informazioni, come il numero di\glossario{workflow}disponibili e il loro contenuto.
 \subsubsection{English}
 \begin{itemize}
@@ -433,16 +433,16 @@ Consente all'utente di fornire una risposta positiva in seguito a una domanda di
 	\intent{ok, va bene}.		
 \end{itemize}
 
-\section{Utilizzo blocco testo }
+\subsection{Utilizzo blocco testo}
 Al fine di creare workflow con blocchi che si collegano meglio tra di loro o per renderli più personalizzati,
-nelle conversazioni che presentiamo molte delle frasi che Alexa andrà a dire constituiscono un blocco di testo,cioè un pezzo di testo che l'utente andrà a inserire prima di un blocco.
+nelle conversazioni che presentiamo molte delle frasi che Alexa andrà a dire costituiranno un blocco di testo, cioè un pezzo di testo che l'utente andrà a inserire prima dell'esecuzione di un blocco.
 
-\section{English}
-\subsection{Skill start} \label{SkillStart}
+\subsection{English}
+\subsubsection{Skill start} \label{SkillStart}
 \textit{U: Open MegAlexa | Launch MegAlexa | Initiate MegAlexa | Start MegAlexa | Use MegAlexa | Begin MegAlexa}\\
 \textbf{A: Welcome to MegAlexa, how can I help you? | Which workflow would you like to open?}
 
-\subsection{Workflow start}
+\subsubsection{Workflow start}
 \textit{U: Open [workflow] | Initiate [workflow] | Start [workflow] | Use [workflow]}\\
 With this interaction Alexa will start the workflow. \\
 \textit{U: Show me my workflows | Tell me my workflows | Say my workflows}\\
@@ -459,7 +459,7 @@ If there are 3 or less workflows available, then Alexa won't ask to hear more wo
 \textit{U: Open [workflow] | Initiate [workflow] | Start [workflow] | Use [workflow]}
 \end{comment}
 
-\subsection{Workflow execution}
+\subsubsection{Workflow execution}
 
 \subsubsection{Text to speech}
 \texttt{A: [Text]}
@@ -467,15 +467,15 @@ If there are 3 or less workflows available, then Alexa won't ask to hear more wo
 \subsubsection{PIN}
 \texttt{A: Say your pin to continue | What's your PIN? | Tell me your secret code | Let me know your PIN to continue | Confess me your secret code | Whisper your four digits number}\\
 \textit{U: [PIN] }\\
-If the user says the wrong PIN:
+If the user says the wrong PIN:\\
 \texttt{A: Incorrect,please repeat | Wrong, try again | Wrong, retry }\\
 \textit{U: [PIN]}\\\\
-If the user says the correct PIN:
+If the user says the correct PIN:\\
 \texttt{A: PIN is correct.}\\
 
 
 \subsubsection{Read Twitter}
-\texttt{A: This are you tweets: [Read tweets]}\\
+\texttt{A: Those are your tweets: [Read tweets]}\\
 
 
 \begin{comment}
@@ -489,8 +489,8 @@ QUESTA PARTE VA A DINDO
 If the user wish to continue listening tweets then Alexa will go forward reading the same amount of tweets set in the filterable block, otherwise Alexa will proceed with the next block.
 \end{comment}
 
-\subsubsection{ Read List}
-\texttt{A: Here are the element that you have in your list: [elements] | The items on your list are these: [elements] |  the list consists of these elements: [elements]}\\
+\subsubsection{Read List}
+\texttt{A: Here are the element that you have in your list: [elements] | The items on your list are these: [elements] | Your list has these elements: [elements]}\\
 
 \begin{comment}
 
@@ -649,7 +649,7 @@ If the user wish to continue listening tweets then Alexa will go forward reading
 \texttt{A: Here is your feed, [FeedRSS]}
 
 \subsubsection{Weather}
-\texttt{A: Currently in [Location] is [$^\circ$C],with [Weather] you can expect an hight of [$^\circ$C] and a low of [$^\circ$C]}
+\texttt{A: Currently in [Location] is [$^\circ$C], with [Weather] you can expect an hight of [$^\circ$C] and a low of [$^\circ$C]}
 \begin{comment}
 \subsubsection{Amazon Music}//NO
 \texttt{A: Let's listen to some good music, [playlist] | Let's play some music [playlist]}
@@ -667,28 +667,31 @@ If the user wish to continue listening tweets then Alexa will go forward reading
 \subsubsection{Crypto}   
 \texttt{A: Here are your cryptocurrency related news [stock]}
 
-\subsection{Workflow is done}
+\subsubsection{Workflow is done}
 \texttt{A: Your workflow is completed, would you like to start a new one?}\\
 At this point Alexa will wait the user's response and proceed with the Start Skill interaction described at \ref{SkillStart}.
 
-\section{Italiano}
-\subsection{Inizializzazione skill} \label{InizializzazioneSkill}
+\subsection{Italiano}
+\subsubsection{Inizializzazione skill} \label{InizializzazioneSkill}
 \textit{U: Apri MegAlexa | Lancia MegAlexa | Inizia MegAlexa | Usa MegAlexa | Esegui MegAlexa | Fai partire MegAlexa}\\
 \textbf{A: Benvenuto in MegAlexa, come posso aiutarti? | Quale workflow desideri aprire? | Con quale workflow vuoi iniziare? | Da quale workflow partiamo?}
 
-\subsection{Inizializzazione workflow}
+\subsubsection{Inizializzazione workflow}
 \textit{U: Apri [workflow] | Inizia [workflow] | Usa [workflow] | Fai partire [workflow] | Esegui [workflow]}\\
 Con questa interazione Alexa inizierà l'esecuzione del workflow.\\
 \textit{U: Quali workflows ho a disposizione? | Quali sono i miei workflows? | Non mi ricordo i workflows, elencameli | Quali workflows posso eseguire? | Elencami i miei workflows | Quali workflows posso usare?}\\
-\texttt{A: I tuoi workflows sono, [workflow]x3, vuoi sentirne altri? | Puoi usare [workflow]x3, vuoi sentire i rimanenti?}\\
+\texttt{A: I tuoi workflows sono i seguenti [workflow]| Hai a disposizione i seguenti [workflow]}\\
+\begin{comment}
+\texttt{A: I tuoi workflows sono[workflow]x3, vuoi sentirne altri? | Puoi usare [workflow]x3, vuoi sentire i rimanenti?}\\
 \textit{U: [Sì Intent]}\\
 \texttt{A: I tuoi workflows sono, [workflow]x3, vuoi sentirne altri? | Puoi usare [workflow]x3, vuoi sentire i rimanenti?}\\
 \textit{U: [No Intent], apri [workflow] | [No Intent], inizia [workflow] | [No Intent], usa [workflow] | [No Intent], fai partire [workflow] | [No Intent], esegui [workflow]}\\
 Nel caso in cui ci fossero meno di 4 workflows allora Alexa non chiederà più di sentire i rimanenti workflows.\\
 \texttt{A: I tuoi workflows sono [workflow]x2, quale vuoi scegliere?}\\
 \textit{U: Apri [workflow] | Inizia [workflow] | Usa [workflow] | Fai partire [workflow] | Esegui [workflow]}\\
+\end{comment}
 
-\subsection{Esecuzione del workflow}
+\subsubsection{Esecuzione del workflow}
 
 \subsubsection{Testo personalizzato}
 \texttt{A: [Testo]}
@@ -701,7 +704,7 @@ Nel caso in cui ci fossero meno di 4 workflows allora Alexa non chiederà più d
 Quando l'utente dirà il PIN corretto allora Alexa proseguirà con l'esecuzione del workflow.
 
 \subsubsection{Lettore Twitter}
-\texttt{A: Questi sono i tweet:[Legge tweets] | Ecoo i tweet:[Legge tweets]}\\
+\texttt{A: Questi sono i tweet:[Legge tweets] | Ecco i tweet:[Legge tweets]}\\
 
 
 \begin{comment}
@@ -714,7 +717,7 @@ Quando l'utente dirà il PIN corretto allora Alexa proseguirà con l'esecuzione 
 \end{comment}
 
 \subsubsection{Lettore Lista}
-\texttt{A: Questi sono gli elementi nella lista:[elementi] | Ec o gli elementi nella lista:[elementi] | La tua lista contiene questi elementi: [elementi] }\\
+\texttt{A: Questi sono gli elementi nella lista:[elementi] | Ecco gli elementi nella lista:[elementi] | La tua lista contiene questi elementi: [elementi] }\\
 
 
 
@@ -852,7 +855,7 @@ Il numero di emails che Alexa leggerà verrà scelto dall'utente nell'apposito f
 \end{comment}
 
 \subsubsection{Feed RSS}
-\texttt{A: Questi sono gli aggiornamenti dei siti che segui, [FeedRSS]}
+\texttt{A: Questi sono gli aggiornamenti dei siti che segui: [FeedRSS]}
 
 \subsubsection{Meteo}
 \texttt{A: Attualmente in [Località] ci sono [$^\circ$C], oggi ci sarà [Tempo] con una minima di [$^\circ$C] e una massima di [$^\circ$C]}
@@ -870,7 +873,7 @@ Eccoti un po' di buona musica è un blocco di testo
 
 
 \subsubsection{Stock}  
-\texttt{A: Ecco le notizie sul mercato azionario [stock]}
+\texttt{A: Ecco le notizie sul mercato finanziario [stock]}
 
 \subsubsection{Crypto}  
 \texttt{A: Ecco le notizie relative alla criptovaluta [crypto]}
@@ -891,6 +894,6 @@ crypto e borsa divisa
 \subsubsection{Reply tweet}
 \end{comment}
 
-\subsection{Completamento del workflow}
+\subsubsection{Completamento del workflow}
 \texttt{A: Il tuo workflow è completo, desideri iniziarne un altro?}\\
 Alexa attenderà la risposta e procederà con interazione di Inizio Skill descritta nel capitolo \ref{InizializzazioneSkill}.

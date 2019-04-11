@@ -1,6 +1,6 @@
 \chapter{Specifica test}
 \label{test}
-\subsection{Test di Sistema}
+\section{Test di Sistema}
 \normalsize
 \begin{longtable}{|c|>{}m{8cm}|c|}
 \hline 
@@ -20,7 +20,7 @@
 \end{longtable}
 \clearpage
 
-\subsection{Tracciamento Requisiti-Test di Sistema}
+\section{Tracciamento Requisiti-Test di Sistema}
 \normalsize
 \begin{longtable}{|>{\centering}m{5cm}|m{5cm}<{\centering}|}
 \hline
@@ -41,7 +41,7 @@ RVO1 & \hyperlink{TVVO1}{TVVO1}\\ \hline
 \clearpage
 
 
-\subsection{Test di Integrazione}
+\section{Test di Integrazione}
 \normalsize
 \begin{longtable}{|c|>{}m{8cm}|c|}
 \hline 
@@ -62,7 +62,7 @@ RVO1 & \hyperlink{TVVO1}{TVVO1}\\ \hline
 \end{longtable}
 \clearpage
 
-\subsection{Tracciamento Test di Integrazione-Componenti}
+\section{Tracciamento Test di Integrazione-Componenti}
 \normalsize
 \begin{longtable}{|>{\centering}m{3cm}|m{9cm}<{\centering}|}
 \hline
@@ -124,43 +124,40 @@ TUS28 & Viene controllato che ritorni un workflow correttamente filtrato & \text
 TUS29 & Viene controllato che ritorni una lista correttamente filtrata & \textit{Implementato}\\ \hline
 TUS30 & Viene controllato che ritorni un Feed RSS correttamente filtrato & \textit{Implementato}\\ \hline
 TUS31 & Viene controllato che ritorni una lista di email correttamente filtrate & \textit{non Implementato}\\ \hline
-TUS32 & Viene controllato che ritorni una lista di email corrette & \textit{non Implementato}\\ \hline
-TUS33 & Viene controllato che ritorni una lista di email vuota & \textit{non Implementato}\\ \hline
-TUS34 & Viene controllato che venga lanciata un'eccezione sull'email non corretta & \textit{non Implementato}\\ \hline
-TUS35 & Viene controllato che ritorni una lista di Email corrette & \textit{non Implementato}\\ \hline
+TUS32 & Viene controllato che ritorni una lista di email corrette & \textit{Non implementato}\\ \hline
+TUS33 & Viene controllato che ritorni una lista di email vuota & \textit{Non implementato}\\ \hline
+TUS34 & Viene controllato che venga lanciata un'eccezione sull'email non corretta & \textit{Non implementato}\\ \hline
+TUS35 & Viene controllato che ritorni una lista di Email corrette & \textit{Non implementato}\\ \hline
 \caption[Test di Unità]{Test di Unità}
 \label{tabella:test2}
 \end{longtable}
 \clearpage
 
 \normalsize
-\begin{longtable}{|c|m{12em}|>{}m{13em}|c|}
+\begin{longtable}{|c|m{12em}|c|}
 \hline 
-\textbf{Id Test} & \textbf{Descrizione} & \textbf{Funzione} & \textbf{Stato}\\
+\textbf{Id Test} & \textbf{Descrizione}  & \textbf{Stato}\\
 \hline
 \endhead
 
-TUA1 & Viene controllato che l'uri sia un feedRSS  & package com.megalexa::ConnectorFeedTest ::valid() & \textit{Implementato}\\ \hline
-
-TUA2 & Viene controllato che un blocco filtrabile restituisca il numero filtrato di elementi & package com.megalexa::BlockFilterTest::withFilterableBlock() & \textit{Implementato}\\ \hline
-
-TUA3 & Viene controllato che un blocco non filtrabile non restituisca un numero filtrato di elementi & package com.megalexa::BlockFilterTest::withNonFilterableBlock() & \textit{Implementato}\\ \hline
-
-TUA4 & Viene controllato che venga aggiunto il giusto numero di blocchi ad un workflow & package com.megalexa::AppBuilderTest::valid() & \textit{Implementato}\\ \hline
-
-TUA5 & Viene controllato che il Database restituisca correttamente i dati di un utente & package com.megalexa::GetUserTest::valid() & \textit{Implementato}\\ \hline
-
-TUA6 & Viene controllato che ci sia un'unica instanza del model & package com.megalexa::ModelSingletonTest::valid() & \textit{Implementato}\\ \hline
-
-TUA7 & Viene controllato che una città sia presente nella lista delle città gestite dalla API di Openweather & package com.megalexa::ConnectorWeatherTest::valid() & \textit{Implementato}\\ \hline
-TUA8 & Viene controllato che un utente sia presente tra gli utenti di Twitter & package com.megalexa::ConnectorTwitterTest::AccountValid() & \textit{Implementato}\\ \hline
-
-TUA9 & Viene controllato che un hashtag sia un'espressione regolare valida & package com.megalexa::ConnectorTwitterTest::HashtagValid() & \textit{Implementato}\\ \hline
-
-TUA10 &  &  & \textit{Non implementato}\\ \hline
-
-TUA11 &  &  & \textit{Non implementato}\\ \hline
-
+TUA1 & Viene controllato che l'uri sia un feedRSS  & \textit{Implementato}\\ \hline
+TUA2 & Viene controllato che un blocco filtrabile restituisca il numero filtrato di elementi & \textit{Implementato}\\ \hline
+TUA3 & Viene controllato che un blocco non filtrabile non restituisca un numero filtrato di elementi & \textit{Implementato}\\ \hline
+TUA4 & Viene controllato che venga aggiunto il giusto numero di blocchi ad un workflow & \textit{Implementato}\\ \hline
+TUA5 & Viene controllato che il Database restituisca correttamente i dati di un utente & \textit{Implementato}\\ \hline
+TUA6 & Viene controllato che ci sia un'unica istanza del model & \textit{Implementato}\\ \hline
+TUA7 & Viene controllato che una città sia presente nella lista delle città gestite dalla API di Openweather & \textit{Implementato}\\ \hline
+TUA8 & Viene controllato che un utente sia presente tra gli utenti di Twitter & \textit{Implementato}\\ \hline
+TUA9 & Viene controllato che un hashtag sia un'espressione regolare valida & \textit{Implementato}\\ \hline
+TUA10 & Viene controllato che l'account di Amazon Music sia valido & \textit{Non implementato}\\ \hline
+TUA11 & Viene controllato che l'account di Google sia valido per il Calendar & \textit{Non implementato}\\ \hline
+TUA12 & Viene controllato che l'account di Google Mail sia valido per la lettura delle email & \textit{Non implementato}\\ \hline
+TUA13 & Viene controllato che il numero di telefono sia associato ad un account Telegram & \textit{Non implementato}\\ \hline
+TUA14 & Viene controllato che l'account Twitter dell'utente sai valido & \textit{Non implementato}\\ \hline
+TUA15 & Viene controllato che il brano cercato su Amazon Music esista & \textit{Non implementato}\\ \hline
+TUA16 & Viene controllato che la playlist cercata su Amazon Music esista & \textit{Non implementato}\\ \hline
+TUA17 & Viene controllato che l'utente abbia inserito qualcosa nel testo del messaggio da inviare con Telegram & \textit{Non implementato}\\ \hline
+TUA18 & Viene controllato che il destinatario del messaggio Telegram esista & \textit{Non implementato}\\ \hline
 \caption[Test di Unità]{Test di Unità}
 \label{tabella:test2}
 \end{longtable}
@@ -214,12 +211,29 @@ TUS35 & Lambda::connectors::ConnectorEmailRead::connect()\\ \hline
 \clearpage
 
 \normalsize
-\begin{longtable}{|c|m{24em}|}
+\begin{longtable}{|c|m{28em}|}
 	\hline 
 	\textbf{Id Test} & \textbf{Funzione}\\
 	\hline
 	\endhead
-	TUA1 & package com.megalexa::ConnectorFeedTest ::valid() \\ \hline
+	TUA1 & package com.megalexa::ConnectorFeedTest::valid() \\ \hline
+	TUA2 & package com.megalexa::BlockFilterTest::withFilterableBlock() \\ \hline
+	TUA3 & package com.megalexa::BlockFilterTest::withNonFilterableBlock() \\ \hline
+	TUA4 & package com.megalexa::AppBuilderTest::valid() \\ \hline
+	TUA5 & package com.megalexa::GetUserTest::valid() \\ \hline
+	TUA6 & package com.megalexa::ModelSingletonTest::valid() \\ \hline
+	TUA7 & package com.megalexa::ConnectorWeatherTest::valid()\\ \hline
+	TUA8 & package com.megalexa::ConnectorTwitterTest::AccountValid() \\ \hline
+	TUA9 & package com.megalexa::ConnectorTwitterTest::HashtagValid()\\ \hline
+	TUA10 & package com.megalexa::ConnectorAmazonMusicTest::Valid()\\ \hline
+	TUA11 & package com.megalexa::ConnectorCalendarTest::Valid() \\ \hline
+	TUA12 & package com.megalexa::ConnectorReadMailTest::Valid() \\ \hline
+	TUA13 & package com.megalexa::ConnectorTelegramTest::Valid()\\ \hline
+	TUA14 & package com.megalexa::ConnectorTwitterTest::AccountValid() \\ \hline
+	TUA15 & package com.megalexa::ConnectorAmazonMusicTest::Exist()\\ \hline
+	TUA16 & package com.megalexa::ConnectorAmazonMusicTest::Exist()\\ \hline
+	TUA17 & package com.megalexa::ConnectorTelegramTest::isEmpty()\\ \hline
+	TUA18 & package com.megalexa::ConnectorTelegramTest::Valid()\\ \hline
 	\caption[Test di Unità]{Test di Unità}
 	\label{tabella:test2}
 \end{longtable}

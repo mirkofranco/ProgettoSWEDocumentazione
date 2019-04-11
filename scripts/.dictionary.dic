@@ -1,11 +1,9 @@
-<<<<<<< HEAD
+﻿
 ﻿ADR
 ﻿     125
-
+cryptovaluta
 ADR
-=======
 ACWP
->>>>>>> feature/pdq
 ADR
 Alexa
 Andreea
@@ -19,17 +17,14 @@ AWS
 androidTest
 Bratzu
 BV
-<<<<<<< HEAD
 cccccc
 BCWP
 BCWS
 Chai
-=======
 bcwp
 BCWP
 bcws
 BCWS
->>>>>>> feature/pdq
 ciclomatica
 Chai
 Ciuche
@@ -41,6 +36,7 @@ Consuntivare
 Crypto
 cryptovalute
 criptovalute
+criptovaluta
 Deidda
 Depascale
 Dindo
@@ -198,4 +194,5 @@ dynamoDB
 Github
 TSFO
 RFO
->>>>>>> feature/pdq
+timeline
+username

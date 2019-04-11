@@ -1,4 +1,5 @@
-\chapter{Resoconto delle attività di verifica}\label{resoconto}
+\chapter{Resoconto delle attività di verifica}
+\label{resoconto}
 \section{Analisi}\label{Analisi}
 Nel periodo antecedente la Revisione dei Requisiti sono stati verificati i documenti ed i processi applicando quanto descritto nelle \normediprogetto.\\
 L'analisi statica è stata effettuata secondo i criteri e le modalità indicate nelle \textit{Norme di Progetto}.\\ 
@@ -25,7 +26,7 @@ Lo Schedule Variance totale è di -1 ore e il Budget Variance totale equivale a 
 	\caption{Esito verifica processi}
 \end{tabularx}
 \end{comment}
-\\
+
 \subsection{Verifica dei documenti}
 \begin{tabularx}{\textwidth}{|C|c|C|}
 	\hline
@@ -55,15 +56,15 @@ I miglioramenti principali (tutti descritti nelle \normediprogetto) sono stati:
 
 \subsubsection{MP001 Schedule variance}
 Durante il periodo di Revisione Analisi si è verificato un aumento del ritardo dello stato del progetto, che dopo un certo punto si è stabilizzato, superando di molto la soglia di ottimalità prestabilita.
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.5]{./images/svRa.png}
 	\caption{\textit{MP001 - Revisione Analisi}}\label{}
 \end{figure}
-\pagebreak
+
 \subsubsection{MP002 Budget variance}
 Con l'aumento dello schedule variance di conseguenza anche il budget variance ha superato di molto le nostre aspettative.
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.5]{./images/bvra.png}
 	\caption{\textit{MP002 - Revisione Analisi}}\label{}
@@ -74,15 +75,15 @@ Con l'aumento dello schedule variance di conseguenza anche il budget variance ha
 \label{progettazione}
 \subsection{MP001: Schedule variance}
 A causa di un imprevisto successo all'interno del gruppo con la tecnologia \textit{API}\glossario{Gateway}c'è stato un notevole innalzamento dello schedule variance che ha raggiunto il picco massimo ai primi di marzo.
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.6]{./images/svP.png}
 	\caption{\textit{MP001 - Progettazione della base tecnologica}}\label{}
 \end{figure}
-\pagebreak
+
 \subsection{MP002: Budget variance}
 In questo periodo il budget variance è stato più o meno sempre stabile ma comunque di molto al di sopra della soglia ottimale.
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.5]{./images/bvP.png}
 	\caption{\textit{MP002 - Progettazione della base tecnologica}}\label{}
@@ -90,7 +91,7 @@ In questo periodo il budget variance è stato più o meno sempre stabile ma comu
 
 \subsection{MP003: SPICE capability level}
 Di seguito vengono riportati i livelli di maturità raggiunti dai processi eseguiti durante lo sviluppo del \textit{Proof of Concept$_{G}$}. Data l'inesperienza, non viene raggiunto il livello di accettazione richiesto (3) per la maggior parte dei processi, ma il gruppo sta lavorando per migliorare.
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.5]{./images/15504.png}
     \caption{\textit{MP003 - ISO/IEC 15504 }}\label{}
@@ -109,39 +110,39 @@ Durante il periodo di progettazione della base tecnologica, il gruppo non ha ris
 
 \subsection{MP013: Percentuale build superate}
 Viene fatta distinzione tra Android e Skill, in quanto vengono contenute in repository diversi.\\
-Le build non superate sono 24 su 134 per la Skill e 29 su 232 per Android. Entrambe superano il range di ottimalità (80\%).
-\begin{figure} [h]
+Le build non superate sono 24 su 134 per la Skill e 29 su 232 per Android. Entrambe superano il range di ottimalità (80\%).\\
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.5]{./images/StatobuildTravis-CIandroid.png}
     \caption{\textit{MP013 - Android - Progettazione della base tecnologica}}\label{}
-\end{figure}\\
-\begin{figure} [h]
+\end{figure}
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.5]{./images/StatobuildTravis-CISkill.png}
     \caption{\textit{MP013 - Skill - Progettazione della base tecnologica}}\label{}
 \end{figure}
-\clearpage
 
 \subsection{MP014: Media commit giornaliera}
 Come si può vedere dai grafici, il numero di commit è stato abbastanza costante, con un aumento del carico di lavoro durante la fine di febbraio.
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.5]{./images/dailycommits_kotlin.PNG}
     \caption{\textit{MP014 - Android - Progettazione della base tecnologica}}
 \end{figure}
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.5]{./images/daycommits_js.PNG}
     \caption{\textit{MP014 - Skill - Progettazione della base tecnologica}}
 \end{figure}
 
+
 \subsection{MP015, MP016: Percentuale requisiti soddisfatti}
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.5]{./images/req.PNG}
     \caption{\textit{MP015 - MP016 Tipologia di requisiti}}
 \end{figure}
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.5]{./images/RequisitiSoddisfatti.png}
     \caption{\textit{MP015 - MP016 Differenza soddisfatti e non soddisfatti}}
@@ -149,34 +150,35 @@ Come si può vedere dai grafici, il numero di commit è stato abbastanza costant
 \subsection{MPR001 Ortografia}
 Grazie allo script per la segnalazione automatica degli errori, questi vengono corretti a ogni push nel develop. Durante la verifica, comunque, sono stati trovati da zero a due errori per documento passati allo script. 
 \subsection{MPR002 Indice di Gulpease}
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.5]{./images/gulpeaseP.png}
     \caption{\textit{MPR002 \textit{Indice di Gulpease$_{G}$}}}
 \end{figure}
-\clearpage
 
 \section{Progettazione di dettaglio e codifica}
 \label{resocontoProg}
 
+\subsection{Revisione complessiva}
+Durante il periodo di progettazione di dettaglio e codifica, il gruppo non ha trovato molte difficoltà a svolgere i compiti pianificati. Molte delle attività di codifica sono state supportate da script automatici e tool online attivati nel periodo precedente. C'è stata una buona collaborazione tra i membri del team. Il problema principale si è verificato per l'inesperienza del gruppo sul test driven development, che inizialmente ha rallentato la codifica, ma col tempo questo problema si è ridotto. 
+
 \subsection{MP001: Schedule variance}
 \textbf{Passato}\\
 La schedule variance è stata abbastanza pertinente con quanto preventivato, questo è dato dal fatto che non ci sono stati seri problemi durante il periodo di Progettazione di dettaglio e codifica.\\
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.4]{./images/svPDC.png}
 	\caption{\textit{MP001 - schedule variance - Progettazione di dettaglio e codifica}}\label{}
 \end{figure}
-\clearpage
+
 \subsection{MP002: Budget variance}
 \textbf{Passato}\\
 L'andamento della budget variance rispetta quello della schedule variance.\\
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.5]{./images/bvPDC.png}
 	\caption{\textit{MP002 - budget variance - Progettazione di dettaglio e codifica}}\label{}
 \end{figure}
-
 \subsection{MP003: SPICE capability level}
 \textbf{Passato 4/6}
 \begin{itemize}
@@ -202,7 +204,7 @@ Di seguito viene riportata la tabella con il nome di ogni processo associato al 
 	\item QP005: Gestione dei test \S\ref{pro5};
 	\item QP006: Versionamento e build \S\ref{pro6}.
 \end{itemize}
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
 	\includegraphics[scale=0.7]{./images/spicePDC.png}
     \caption{\textit{MP003 - ISO/IEC 15504 - Progettazione di dettaglio e codifica}}
@@ -218,30 +220,29 @@ Di seguito viene riportata la tabella con il nome di ogni processo associato al 
 \subsection{MP006: Indisponibilità dei servizi}
 \textbf{Passato}\\
 \textbf{Indisponibilità dei servizi: 0}\\
-Durante il periodo di progettazione di dettaglio e codifica, PragmaDB ha avuto qualche giorno di downtime per non sforare con il piano gratuito di Amazon AWS. Questo non ha creato problemi, perché avevamo pieno controllo sul server su cui è hostato. 
+Durante il periodo di progettazione di dettaglio e codifica, PragmaDB ha avuto qualche giorno di downtime per non sforare con il piano gratuito di Amazon AWS. Questo non ha creato problemi, perché avevamo pieno controllo sul server su cui è hostato. \\
 
 \subsection{MP007 MP008 MP009 MP010 MP011 }
 \textbf{Passato}\\
 Queste metriche sono state usate per calcolare la manuntenibilità del codice, grazie alla piattaforma di test statici SonarCloud. Questo permette di visualizzare la qualità del software in un solo grafico ricco di informazioni.\\
 Il seguente grafico presenta nelle ascisse le linee di codice, nelle ordinate il tempo previsto di risoluzione del problema, la grandezza del cerchio indica la quantità di linee di codice e il colore del cerchio corrisponde alla gravità del problema.\\
-Tutti i problemi non in verde sono stati risolti, in quanto indicano un possibile errore grave durante l'esecuzione del codice. Quelli in verde verranno risolti durante il periodo di Verifica e Collaudo.
-\begin{figure} [h]
+Tutti i problemi non in verde sono stati risolti, in quanto indicano un possibile errore grave durante l'esecuzione del codice. Quelli in verde verranno risolti durante il periodo di Verifica e Collaudo.\\
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.5]{./images/manPDC.png}
     \caption{\textit{MP007 MP008 MP009 MP010 MP011 - manuntenibilità del codice app Android - Progettazione di dettaglio e codifica}}\label{}
 \end{figure}
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.5]{./images/manSPDC.png}
     \caption{\textit{MP007 MP008 MP009 MP010 MP011 - manuntenibilità del codice Skill - Progettazione di dettaglio e codifica}}\label{}
 \end{figure}
 
-\clearpage
 \subsection{MP011: Tempo medio per risolvere un errore} 
 \textbf{Passato}\\
 \textbf{tempo medio per risolvere un errore: 33.16 minuti.}\\
 La risoluzione degli errori nella Skill risulta molto lunga, in quanto bisogna fare ogni volta il deploy su AWS Lambda per testare le funzioni della skill (richiede da 40 secondi a 2 minuti). Per questo motivo, il team pone molta cura nella redazione dei test di unità e integrazione (che possono essere eseguiti senza deploy).
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.5]{./images/risPDC.png}
     \caption{\textit{MP013 - Skill - Progettazione di dettaglio e codifica}}\label{}
@@ -251,34 +252,34 @@ La risoluzione degli errori nella Skill risulta molto lunga, in quanto bisogna f
 \textbf{Passato}\\
 \textbf{tempo medio per sviluppare un test: 35 minuti.}\\
 La progettazione di ogni test velocizza la seguente, in quanto hanno molti punti in comune tra di loro. Questo permette di velocizzare complessivamente la stesura dei test.
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
-	\includegraphics[scale=0.5]{./images/mediatestPDC.png}
+	\includegraphics[scale=0.4]{./images/mediatestPDC.png}
     \caption{\textit{MP013 - media minuti per test - Progettazione di dettaglio e codifica}}\label{}
 \end{figure}
-\clearpage
+
 \subsection{MP013: Percentuale build superate}
 \textbf{Passato}\\
 Viene fatta distinzione tra Android e Skill, in quanto vengono contenute in repository diversi.\\
 Le build dell'applicazione Android sono state per la maggior parte positive. \\
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
-	\includegraphics[scale=0.5]{./images/buildandroidPDC.png}
+	\includegraphics[scale=0.4]{./images/buildandroidPDC.png}
     \caption{\textit{MP013 - Android - Progettazione di dettaglio e codifica}}\label{}
 \end{figure}
 Le build della Skill (progetto node.js) risultano con molti errori. Questo è dovuto al fatto che sono stati sviluppati test di unità e integrazione prima di produrre il codice. Per questo motivo questa metrica è considerata come passata.\\
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
-	\includegraphics[scale=0.5]{./images/buildPDC.png}
+	\includegraphics[scale=0.4]{./images/buildPDC.png}
     \caption{\textit{MP013 - Skill - Progettazione di dettaglio e codifica}}\label{}
 \end{figure}
 
 \subsection{MP014: Media commit giornaliera}
 \textbf{Passato}\\
 Il seguente grafico contiene il numero totale di commit giornalieri. Questi risultano poco omogenei, in quanto questo periodo è stato caratterizzato da cicli formati da progettazione di dettaglio (giornate con pochi commit) e codifica (molti commit).\\
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
-	\includegraphics[scale=0.5]{./images/buildsPDC.png}
+	\includegraphics[scale=0.4]{./images/buildsPDC.png}
     \caption{\textit{MP014 numero commit giornalieri - Progettazione di dettaglio e codifica}}
 \end{figure}
 
@@ -288,17 +289,17 @@ Sono stati soddisfatti tutti i requisiti che il gruppo aveva preventivato per il
 Il gruppo ha stimato che i requisiti obbligatori non soddisfatti richiederanno poco lavoro, in quanto presentano aspetti simili ad altri requisiti (sotto il punto di vista della progettazione in dettaglio e codifica). I requisiti desiderabili e facoltativi sono per la maggior parte riguardanti aspetti secondari del prodotto (invece che blocchi), quindi compresi nelle attività di verifica e collaudo.\\
 Come richiesto dal committente, molti dei requisiti sono stati scomposti in requisiti più specifici.\\
 requisiti facoltativi sono stati non accettati, dato che il team li ha trovati difficili.\\
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.5]{./images/torsodPDC.png}
     \caption{\textit{MP015 - MP016 Tipologia di requisiti - Progettazione di dettaglio e codifica}}
 \end{figure}
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.5]{./images/barsodPDC.png}
     \caption{\textit{MP015 - MP016 soddisfatti / non soddisfatti - Progettazione di dettaglio e codifica}}
 \end{figure}
-\clearpage
+
 \subsection{MPR001 Ortografia}
 \textbf{Passato}\\
 Gli errori grammaticali trovati durante una ispezione finale sono stati meno di 2 per documento.
@@ -306,7 +307,7 @@ Gli errori grammaticali trovati durante una ispezione finale sono stati meno di 
 \textbf{Passato}\\
 Il seguente grafico è stato generato attraverso un bot che calcola giornalmente l'indice di gulpease dei documenti.\\
 Si può notare come l'indice di gulpease è sempre stato sopra il limite di accettazione e ottimalità.\\
-\begin{figure} [h]
+\begin{figure} [H]
     \centering
 	\includegraphics[scale=0.5]{./images/gulpeasePDC.png}
     \caption{\textit{MPR002 \textit{Indice di Gulpease$_{G}$} - Progettazione di dettaglio e codifica}}

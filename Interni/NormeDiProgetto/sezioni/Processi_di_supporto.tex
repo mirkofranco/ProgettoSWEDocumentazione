@@ -19,7 +19,7 @@ La creazione della copia locale viene effettuata attraverso il comando:\\
 \subsubsection{Git Flow}
 Per facilitare la collaborazione si sceglie usare il git flow\footnote{\url{https://it.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow}} \textit{workflow$_{G}$}. L'Amministratore si assicurerà che tutte le macchine siano configurate correttamente per il suo utilizzo.
 \subsubsection{Gestione dei rilasci}
-L'amministratore si occuperà di creare i rami di feature necessari per una proficua collaborazione tra i membri nel repository. Ogni documento (o parte di esso) e ogni funzionalità software verrà implementata in un ramo di feature. Quando la funzionalità diventa stabile e corretta verrà rilasciata in un ramo di integrazione chiamato "develop". Prima di ogni revisione verrà effettuato un rilascio nel ramo master a partire dall'ultimo commit. Tale rilascio costituirà\glossario{baseline}e sarà punto di partenza verso la prossima \textit{milestone$_{G}$}. Tale attività verrà effettuata nei tempi descritti nel \textit{Piano di Progetto v2.0.0}. 
+L'amministratore si occuperà di creare i rami di feature necessari per una proficua collaborazione tra i membri nel repository. Ogni documento (o parte di esso) e ogni funzionalità software verrà implementata in un ramo di feature. Quando la funzionalità diventa stabile e corretta verrà rilasciata in un ramo di integrazione chiamato "develop". Prima di ogni revisione verrà effettuato un rilascio nel ramo master a partire dall'ultimo commit. Tale rilascio costituirà\glossario{baseline}e sarà punto di partenza verso la prossima \textit{milestone$_{G}$}. Tale attività verrà effettuata nei tempi descritti nel \textit{Piano di Progetto v3.0.0}. 
 
 \section{Documentazione}
 Il\glossario{processo}di Documentazione stabilisce una serie di norme e convenzioni per la stesura dei documenti così da renderli formali, validi e coerenti.
@@ -58,7 +58,7 @@ Tutti i documenti formali, esclusi i verbali, seguiranno questo sistema di nomen
 I documenti verranno citati secondo il formato NomeDocumento v.X.Y.Z mentre i file saranno rinominati \texttt{NomeDocumento\_v.X.Y.Z.pdf} \\
 I verbali sia interni che esterni seguiranno la nomenclatura VerbaleUsoData.
 
-\subsubsection{Ciclo di vita della documentazione}
+\subsection{Ciclo di vita della documentazione}
 Ogni documento formale deve passare gli stadi di ``Sviluppo”, ``Verifica” e ``Approvato”.
 \begin{itemize}
 	\item \textbf{Sviluppo:} inizia con la creazione del documento e termina con la conclusione	della stesura di tutte le sue parti. In questa fase i Redattori aggiungono le parti assegnate tramite \textit{ticket$_{G}$};
@@ -155,7 +155,7 @@ Le lettere maiuscole vanno poste solo dopo il punto, il punto di domanda, il pun
 \end{itemize}
   \item  Monospace: sarà utilizzato il carattere monospace per formattare il testo contenente parti di codice, comandi, nomi di classi;
   \item  Percorsi: per gli indirizzi email e web  deve essere utilizzato il comando
-  \LaTeX \url, mentre per gli indirizzi relativi va usato il formato monospace;
+  \LaTeX \textbackslash url, mentre per gli indirizzi relativi va usato il formato monospace;
   \item Maiuscolo: l'utilizzo del carattere maiuscolo per l'intera parola è riservato esclusivamente agli acronimi.
 \end{itemize}
 \subsubsection{Stile del testo}
@@ -261,7 +261,7 @@ La\glossario{verifica}è un processo atto a evidenziare ed eliminare la possibil
 Di seguito verranno descritti gli strumenti e le pratiche utilizzate per la verifica del codice e dei documenti durante la loro realizzazione.
 Durante questa prima fase di progetto la verifica si è focalizzata principalmente su documenti.
 \subsection{Verifica di processi}
-Ciascun\glossario{processo}verrà costantemente monitorato in tutta la sua esecuzione e documentato alla fine di ogni periodo nell'appendice "Resoconto della verifica" nel \textit{Piano di Qualifica v2.0.0}, secondo le metodologie ISO/IEC 15504.
+Ciascun\glossario{processo}verrà costantemente monitorato in tutta la sua esecuzione e documentato alla fine di ogni periodo nell'appendice "Resoconto della verifica" nel \textit{Piano di Qualifica v3.0.0}, secondo le metodologie ISO/IEC 15504.
 
 \subsection{Verifica dei prodotti}
 La verifica della qualità di prodotto si divide in attività e procedure differenti a seconda del\glossario{prodotto}che si sta verificando. Per i prodotto software si procede con analisi statica e dinamica, mentre per i documenti si applica soltanto analisi statica.
@@ -272,7 +272,7 @@ I \textit{ìVerificatori} devono controllare tutti i diagrammi UML prodotti risp
 \paragraph{Analisi statica}
 Al fine di verificare i documenti verranno utilizzati\glossario{inspection}e \textit{walkthrough$_{G}$}:
 \begin{itemize}
-	\item \textbf{Walkthrough:} questa metodologia prevede una lettura profonda e attenta del documento. Gli errori riscontrati verranno corretti e aggiunti all'appendice "Lista di controllo" delle \textit{Norme di Progetto v2.0.0} per permettere di utilizzare inspection le volte successive;
+	\item \textbf{Walkthrough:} questa metodologia prevede una lettura profonda e attenta del documento. Gli errori riscontrati verranno corretti e aggiunti all'appendice "Lista di controllo" delle \textit{Norme di Progetto v3.0.0} per permettere di utilizzare inspection le volte successive;
 	\item \textbf{Inspection:} al contrario della metodologia precedente, questa risulta essere molto più veloce perché attraverso una lista di controllo degli errori permette un'analisi più efficace delle criticità, omettendo le parti che non presentano problematiche. 
 \end{itemize}
 Per il controllo dei documenti utilizziamo le funzionalità di TeXStudio assieme a script bash eseguiti da \textit{Travis} per controllare che non ci siano errori nel file \LaTeX\  e verificare l'assenza di errori ortografici. 
@@ -326,7 +326,7 @@ dove
 	\item \textbf{Codice}: può essere
 		\begin{itemize}
 			\item \textbf{Numerico}: incrementale a partire da 1, associato a test di unità o di integrazione;
-			\item \textbf{Di Requisito}: riportando il numero del requisito che testa secondo il tracciamento dei requisiti requisiti presente in \texttt{Analisi dei Requisiti v2.0.0}.
+			\item \textbf{Di Requisito}: riportando il numero del requisito che testa secondo il tracciamento dei requisiti requisiti presente in \texttt{Analisi dei Requisiti v3.0.0}.
 		\end{itemize}
 \end{itemize}
 	Lo stato di un test può essere:
