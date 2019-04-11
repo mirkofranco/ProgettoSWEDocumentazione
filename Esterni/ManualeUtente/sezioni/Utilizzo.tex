@@ -76,10 +76,10 @@ Tale blocco consente all'utente di inserire nel proprio workflow un blocco conte
 
 \subsubsection{Blocco Filter}
 Consente di impostare il numero limite di elementi che un determinato blocco deve considerare. \\
-\textbf{NOTA BENE:} il blocco filtro è applicabile solo ai seguenti blocchi: Stock, Crypto, FeedRSS, News, Readmail e Sport.
+\textbf{NOTA BENE:} il blocco filtro è applicabile solo ai seguenti blocchi: Stock, Crypto, FeedRSS, News, Read Email, TwitterUserTimeline, TwitterHashtag, List e Sport.
 
 \subsubsection{Blocco PIN}
-Lo scopo di questo blocco è quello di effettuare una sorta di autenticazione dell'utente per l'esecuzione di alcuni blocchi, ovvero: calendar, ReadMail, SendEmail e Twitter in modo da avere un minimo di privacy per l'utente.
+Lo scopo di questo blocco è quello di effettuare una sorta di autenticazione dell'utente per l'esecuzione di alcuni blocchi, come ad esempio ReadEmail e Twitter in modo da avere un minimo di privacy per l'utente.
 \begin{enumerate}
 	\item Inserire nel campo di testo il proprio PIN segreto;
 	\item Cliccare sul tasto "SAVE" per confermare e salvare.
@@ -234,9 +234,9 @@ Per poter utilizzare la skill MegAlexa è necessario configurare il proprio acco
     
 \end{enumerate}
 \newpage
-\item  \textbf{Esecuzione skill MegAlexa}\\
-\label{Esecuzione skill}
- Per avviare la skill MegAlexa attraverso l'Echo Dot occorre pronunciare uno dei comandi vocali di avvio come ad esempio: "Alexa, open MegAlexa", oppure "Alexa, start MegAlexa".
+\item  \textbf{Esecuzione skill MegAlexa}\label{Esecuzione skill}
+
+Per avviare la skill MegAlexa attraverso l'Echo Dot occorre pronunciare uno dei comandi vocali di avvio come ad esempio: "Alexa, open MegAlexa", oppure "Alexa, start MegAlexa".
       
 Se Alexa risponde con una richiesta dei configurazione dell'account Amazon con la skill MegAlexa allora  bisogna seguire le istruzioni indicate nella sezione precedente
 \S\ref{Configurazione MegAlexa} "Configurazione Skill MegAlexa". 
@@ -433,9 +433,9 @@ Consente all'utente di fornire una risposta positiva in seguito a una domanda di
 	\intent{ok, va bene}.		
 \end{itemize}
 
-\subsection{Utilizzo blocco testo }
+\subsection{Utilizzo blocco testo}
 Al fine di creare workflow con blocchi che si collegano meglio tra di loro o per renderli più personalizzati,
-nelle conversazioni che presentiamo molte delle frasi che Alexa andrà a dire costituiranno un blocco di testo,cioè un pezzo di testo che l'utente andrà a inserire prima dell'esecuzione un blocco.
+nelle conversazioni che presentiamo molte delle frasi che Alexa andrà a dire costituiranno un blocco di testo, cioè un pezzo di testo che l'utente andrà a inserire prima dell'esecuzione di un blocco.
 
 \subsection{English}
 \subsubsection{Skill start} \label{SkillStart}
@@ -475,7 +475,7 @@ If the user says the correct PIN:\\
 
 
 \subsubsection{Read Twitter}
-\texttt{A: This are you tweets: [Read tweets]}\\
+\texttt{A: Those are your tweets: [Read tweets]}\\
 
 
 \begin{comment}
@@ -489,8 +489,8 @@ QUESTA PARTE VA A DINDO
 If the user wish to continue listening tweets then Alexa will go forward reading the same amount of tweets set in the filterable block, otherwise Alexa will proceed with the next block.
 \end{comment}
 
-\subsubsection{ Read List}
-\texttt{A: Here are the element that you have in your list: [elements] | The items on your list are these: [elements] |  the list consists of these elements: [elements]}\\
+\subsubsection{Read List}
+\texttt{A: Here are the element that you have in your list: [elements] | The items on your list are these: [elements] | Your list has these elements: [elements]}\\
 
 \begin{comment}
 
@@ -649,7 +649,7 @@ If the user wish to continue listening tweets then Alexa will go forward reading
 \texttt{A: Here is your feed, [FeedRSS]}
 
 \subsubsection{Weather}
-\texttt{A: Currently in [Location] is [$^\circ$C],with [Weather] you can expect an hight of [$^\circ$C] and a low of [$^\circ$C]}
+\texttt{A: Currently in [Location] is [$^\circ$C], with [Weather] you can expect an hight of [$^\circ$C] and a low of [$^\circ$C]}
 \begin{comment}
 \subsubsection{Amazon Music}//NO
 \texttt{A: Let's listen to some good music, [playlist] | Let's play some music [playlist]}
@@ -855,7 +855,7 @@ Il numero di emails che Alexa leggerà verrà scelto dall'utente nell'apposito f
 \end{comment}
 
 \subsubsection{Feed RSS}
-\texttt{A: Questi sono gli aggiornamenti dei siti che segui, [FeedRSS]}
+\texttt{A: Questi sono gli aggiornamenti dei siti che segui: [FeedRSS]}
 
 \subsubsection{Meteo}
 \texttt{A: Attualmente in [Località] ci sono [$^\circ$C], oggi ci sarà [Tempo] con una minima di [$^\circ$C] e una massima di [$^\circ$C]}
@@ -873,7 +873,7 @@ Eccoti un po' di buona musica è un blocco di testo
 
 
 \subsubsection{Stock}  
-\texttt{A: Ecco le notizie sul mercato azionario [stock]}
+\texttt{A: Ecco le notizie sul mercato finanziario [stock]}
 
 \subsubsection{Crypto}  
 \texttt{A: Ecco le notizie relative alla criptovaluta [crypto]}
