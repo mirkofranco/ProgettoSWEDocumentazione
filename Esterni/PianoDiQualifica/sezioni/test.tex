@@ -134,12 +134,33 @@ TUS35 & Viene controllato che ritorni una lista di Email corrette& Lambda::conne
 \clearpage
 
 \normalsize
-\begin{longtable}{|c|m{9em}|>{}m{9em}|c|}
+\begin{longtable}{|c|m{12em}|>{}m{13em}|c|}
 \hline 
 \textbf{Id Test} & \textbf{Descrizione} & \textbf{Funzione} & \textbf{Stato}\\
 \hline
 \endhead
-{TU1} & qui va messa la descrizione del test & \textit{Implementato}\\ \hline
+
+TUA1 & Viene controllato che l'uri sia un feedRSS  & package com.megalexa ::ConnectorFeedTest ::valid() & \textit{Implementato}\\ \hline
+
+TUA2 & Viene controllato che un blocco filtrabile restituisca il numero filtrato di elementi & package com.megalexa ::BlockFilterTest ::withFilterableBlock() & \textit{Implementato}\\ \hline
+
+TUA3 & Viene controllato che un blocco non filtrabile non restituisca un numero filtrato di elementi & package com.megalexa ::BlockFilterTest ::withNonFilterableBlock() & \textit{Implementato}\\ \hline
+
+TUA4 & Viene controllato che venga aggiunto il giusto numero di blocchi ad un workflow & package com.megalexa ::AppBuilderTest ::valid() & \textit{Implementato}\\ \hline
+
+TUA5 & Viene controllato che il Database restituisca correttamente i dati di un utente & package com.megalexa ::GetUserTest ::valid() & \textit{Implementato}\\ \hline
+
+TUA6 & Viene controllato che ci sia un'unica instanza del model & package com.megalexa ::ModelSingletonTest ::valid() & \textit{Implementato}\\ \hline
+
+TUA7 & Viene controllato che una città sia presente nella lista delle città gestite dalla API di Openweather & package com.megalexa ::ConnectorWeatherTest ::valid() & \textit{Implementato}\\ \hline
+TUA8 & Viene controllato che un utente sia presente tra gli utenti di Twitter & package com.megalexa ::ConnectorTwitterTest ::AccountValid() & \textit{Implementato}\\ \hline
+
+TUA9 & Viene controllato che un hashtag sia un'espressione regolare valida & package com.megalexa ::ConnectorTwitterTest ::HashtagValid() & \textit{Implementato}\\ \hline
+
+TUA10 &  &  & \textit{Non implementato}\\ \hline
+
+TUA11 &  &  & \textit{Non implementato}\\ \hline
+
 \caption[Test di Unità]{Test di Unità}
 \label{tabella:test2}
 \end{longtable}
