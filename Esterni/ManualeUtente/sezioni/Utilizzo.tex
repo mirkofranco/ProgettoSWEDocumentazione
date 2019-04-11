@@ -3,7 +3,7 @@
 \section{Utilizzo di MegAlexa}
 \label{UtilizzoApp}
 \subsection{Creazione Workflow}
-Al primo avvio dell'applicazione apparirà una schermata vuota, priva di \textit{workflow$_{G}$}.
+Al primo avvio dell'applicazione apparirà una schermata vuota, priva di \textit{workflow$_{G}$}. I seguenti passaggi spiegheranno come aggiungere un workflow alla nostra app da far eseguire ad Alexa.
 \begin{enumerate}
 \item Cliccare sul tasto "+" per aggiungere un nuovo workflow.
 
@@ -38,7 +38,6 @@ Al primo avvio dell'applicazione apparirà una schermata vuota, priva di \textit
 	\fbox{\includegraphics[scale=0.2]{images/ListBlocks.jpg}}
 	\caption{Lista dei blocchi}
 \end{figure}
-
 \end{enumerate}
 
 \newpage
@@ -46,7 +45,7 @@ Al primo avvio dell'applicazione apparirà una schermata vuota, priva di \textit
 I seguenti punti spiegheranno dettagliatamente come configurare e aggiungere i vari tipi di blocchi al \textit{workflow$_{G}$}.\\
 
 \subsubsection{Blocco FeedRSS}
-Questo blocco permette all'utente di inserire un qualsiasi feedRSS e successivamente far riprodurre al dispositivo Alexa il suo contenuto.
+Questo blocco permette all'utente di inserire un qualsiasi feedRSS e successivamente far riprodurre al dispositivo\glossario{Alexa}il suo contenuto.
 \begin{enumerate}
 	\item Inserire nell'apposito campo di testo l'URL del feedRSS;
 	\item Confermare e salvare cliccando sul pulsante "ADD".
@@ -72,10 +71,10 @@ Tale blocco consente all'utente di inserire nel proprio workflow un blocco conte
 
 \subsubsection{Blocco Filter}
 Consente di impostare il numero limite di elementi che un determinato blocco deve considerare. \\
-\textbf{NOTA BENE:} il blocco filtro è applicabile solo ai seguenti blocchi: Stock, Crypto, FeedRSS, News, Readmail e Sport.
+\textbf{NOTA BENE:} il blocco filtro è applicabile solo ai seguenti blocchi: Stock, Crypto, FeedRSS, News, Readmail, TwitterHashtag, TwitterUserTimeline e Sport.
 
 \subsubsection{Blocco PIN}
-Lo scopo di questo blocco è quello di effettuare una sorta di autenticazione dell'utente per l'esecuzione di alcuni blocchi, ovvero: calendar, ReadMail, SendEmail e Twitter in modo da avere un minimo di privacy per l'utente.
+Lo scopo di questo blocco è quello di effettuare una sorta di autenticazione dell'utente per l'esecuzione di alcuni blocchi, ovvero: ReadMail, SendEmail e TwitterHashtag e TwitterUserTimeline.
 \begin{enumerate}
 	\item Inserire nel campo di testo il proprio PIN segreto;
 	\item Cliccare sul tasto "SAVE" per confermare e salvare.
@@ -88,63 +87,70 @@ Lo scopo di questo blocco è quello di effettuare una sorta di autenticazione de
 \end{enumerate}
 
 \subsubsection{Blocco News}
-Tale blocco consente all'utente di ascoltare le ultime news prese da un sito a scelta tra i seguenti: Sky, Google News, Ansa, BBC, CNBC e Wall Street.
-\begin{enumerate}
-	\item Cliccare su un tasto a piacere tra quelli elencati per scegliere il sito da cui ricevere news.
+Tale blocco consente all'utente di ascoltare le ultime news prese da un sito a scelta tra i seguenti: Sky, Google News, Ansa, BBC, CNBC e Wall Street. Cliccare su un tasto a piacere tra quelli elencati per scegliere il sito da cui ricevere news.
 	\begin{figure}[!ht]
 		\centering
 		\fbox{\includegraphics[scale=0.2]{images/BlockNews.jpg}}
 		\caption{Blocco News}
 	\end{figure}
-\end{enumerate}
 \newpage
 
 \subsubsection{Blocco Sport}
-Con l'aggiunta di questo blocco l'utente potrà ascoltarsi le ultime news riguardanti uno sport sua scelta tra i seguenti: tennis, calcio, basket americano, formula1, football americano e motogp.
-\begin{enumerate}
-	\item Cliccare su un tasto a piacere tra quelli proposti per scegliere il sito da cui ricevere news sullo sport.
+Con l'aggiunta di questo blocco l'utente potrà ricevere le ultime news riguardanti uno sport sua scelta tra i seguenti: tennis, calcio, basket americano, formula1, football americano e motogp.
+Cliccare su un tasto a piacere tra quelli proposti per scegliere il sito da cui ricevere news sullo sport.
 	\begin{figure}[!ht]
 		\centering
 		\fbox{\includegraphics[scale=0.2]{images/BlockSport.jpg}}
 		\caption{Blocco sport}
 	\end{figure}
-\end{enumerate}
 \newpage
 \subsubsection{Blocco Crypto}
 Con questo blocco l'utente può scegliere da quale FeedRSS ascoltare le ultime news sulle cryptovalute.
-\begin{enumerate}
-	\item Cliccare su un tasto a piacere tra quelli proposti per scegliere da quale FeedRSS ricevere news sulle cryptovalute.
+Cliccare su un tasto a piacere tra quelli proposti per scegliere da quale FeedRSS ricevere news sulle cryptovalute.
 \begin{figure}[!ht]
 	\centering
 	\fbox{\includegraphics[scale=0.2]{images/BlockCrypto.jpg}}
 	\caption{Blocco crypto}
 \end{figure}
-\end{enumerate}
 \newpage
 \subsubsection{Blocco Stock}
 Con questo blocco l'utente può scegliere da quale FeedRSS ascoltare le ultime news sull'andamento della borsa economica.
-\begin{enumerate}
-	\item Cliccare su un FeedRSS a scelta per scegliere da quale borsa ricevere news.
+Cliccare su un FeedRSS a scelta per scegliere da quale borsa ricevere news.
 \begin{figure}[!ht]
 	\centering
 	\fbox{\includegraphics[scale=0.3]{images/BlockStock.jpg}}
 	\caption{Blocco stock}
 \end{figure}
-\end{enumerate}
 \newpage
 \subsubsection{Blocco List}
 Questo blocco permette all'utente di creare, aggiungere e modificare degli elementi di testo ad una lista.
 È possibile modificare la lista tramite app oppure tramite interazione con l'Amazon Echo.
 
 \subsubsection{Blocco TwitterHashtag}
-L'utente con l'aggiunta di questo blocco può effettuare una ricerca su Twitter tramite hashtag.
+L'utente con l'aggiunta di questo blocco può effettuare una ricerca dei post su Twitter tramite hashtag è ascoltarli tramite Alexa.
+
 \subsubsection{Blocco TwitterUserTimeline}
-L'utente inserendo questo blocco nel suo workflow potra 
+L'utente inserendo questo blocco nel suo\glossario{workflow}potrà ascoltare gli ultimi post pubblicati da un utente che segue su Twitter.
+
 \subsubsection{Blocco Weather}
 Il blocco Weather consente all'utente di sapere che meteo c'è in questo momento o nei prossimi giorni di una determinata città.
 \newpage
-\subsection{Blocchi nel workflow}
-Per sapere quali blocchi contiene un workflow, andare nella schermata che mostra l'elenco di tutti i workflow disponibili e cliccare sul nome di quello che ci interessa.
+\subsection{Salvataggio e creazione workflow}
+Una volta creati i blocchi per il workflow, cliccare sul tasto in alto a destra per confermare e salvare.
+\begin{figure}[!ht]
+	\centering
+	\fbox{\includegraphics[scale=0.2]{images/BlocksCreated.jpg}}
+	\caption{Blocchi creati}
+\end{figure}
+\newpage
+Alla fine nella home comparirà il nuovo workflow creato con i blocchi inseriti.
+\begin{figure}[!ht]
+	\centering
+	\fbox{\includegraphics[scale=0.2]{images/HomeWorkflow.jpg}}
+	\caption{Workflow creato}\label{workflow}
+\end{figure}
+\subsection{Visualizzare blocchi nel workflow}\label{visualizzazione}
+Per sapere quali blocchi contiene un workflow, andare nella schermata che mostra l'elenco di tutti i workflow (Figura \ref{workflow}) disponibili e cliccare sul nome di quello che ci interessa.
 In questo modo verrà visualizzato l'elenco dei blocchi al suo interno come mostrato in figura:
 \begin{figure}[!ht]
 	\centering
@@ -153,22 +159,22 @@ In questo modo verrà visualizzato l'elenco dei blocchi al suo interno come most
 \end{figure}
 \newpage
 \subsection{Modifica blocchi}
+Andando nella schermata di visualizzazione dei blocchi (\ref{visualizzazione}) è possibile modificare un blocco creato in precedenza cliccando su tale blocco ed effettuando la modifica.
 \subsection{Eliminazione blocchi}
+Per eliminare un blocco da un workflow bisogna andare nella schermata di visualizzazione dei blocchi (\ref{visualizzazione}), tenere premuto sul blocco da eliminare e cliccare il tasto elimina che appare.
 \subsection{Eliminazione workflow}
+Per eliminare un workflow creato è sufficiente andare nella schermata di visualizzazione dei blocchi (\ref{visualizzazione}) e cliccare la "X" in alto a sinistra.
 \begin{comment}
 \subsubsection{Blocco Amazon Music}
 Questo blocco consente all'utente di ascoltare un brano, un'album o una playlist da Amazon Music tramite il proprio dispositivo Alexa.
-
 \subsubsection{Blocco Telegram}
 Il blocco Telegram consente all'utente iscritto al servizio di messaggistica Telegram di inviare messaggi e file audio ad un'altra persona o gruppo di persone.
-
 \subsubsection{Blocco ReadEmail}
 Con questo blocco l'utente può ascoltare tramite Alexa le sue email, di Gmail, non ancora lette.
-
-
+\subsubsection{Blocco TwitterHomeTimeline}
 \subsubsection{Blocco Calendar}
 Il blocco calendario permette all'utente di ascoltare o aggiungere i suoi appuntamenti di Google calendar tramite l'Amazon echo.
-
+\end{comment}
 \newpage
 \section{Utilizzo della skill MegAlexa}
 
