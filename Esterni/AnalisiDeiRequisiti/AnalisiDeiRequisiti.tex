@@ -3,6 +3,7 @@
 \usepackage{ZeroSeven}
 \usepackage{ltablex}
 \usepackage{hyperref}
+\usepackage{lastpage}
 \titlepage{}
 
 \author{Ludovico Brocca}
@@ -32,9 +33,9 @@
 	\end{tabular}
 \end{titlepage}
 	
-	\label{LastFrontPage}
-	\newpage	
+	\newpage
 	\input{tabella_modifiche}
+	\label{LastFrontPage}
 	\pagestyle{mymain}
 	\tableofcontents
 	\listoffigures
@@ -43,7 +44,6 @@
 	\input{sezioni/descrizioneGenerale}
 	\input{sezioni/casiUso}
 	\input{sezioni/requisiti}
-	%\input{sezioni/voiceDialogFlow}
 	\label{LastPage}
 
 \end{document}
