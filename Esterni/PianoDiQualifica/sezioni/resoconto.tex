@@ -1,7 +1,7 @@
 \chapter{Resoconto delle attività di verifica}
 \label{resoconto}
 \section{Analisi}\label{Analisi}
-Nel periodo antecedente la Revisione dei Requisiti sono stati verificati i documenti ed i processi applicando quanto descritto nelle \normediprogetto.\\
+Nel periodo antecedente la Revisione dei Requisiti sono stati verificati i documenti ed i processi applicando quanto descritto nelle\normediprogetto.\\
 L'analisi statica è stata effettuata secondo i criteri e le modalità indicate nelle \textit{Norme di Progetto}.\\ 
 Per gli errori riscontrati effettuando \textit{walkthrough$_{G}$}, si è provveduto a correggere le anomalie riscontrate e sono stati riportati nella lista di controllo nelle \normediprogetto per permettere di effettuare inspection successivamente.\\
 L'\textit{inspection$_{G}$} viene effettuata utilizzando la lista di controllo precedentemente stilata. \\
@@ -182,18 +182,18 @@ L'andamento della budget variance rispetta quello della schedule variance.\\
 \subsection{MP003: SPICE capability level}
 \textbf{Passato 4/6}
 \begin{itemize}
-	\item \textbf{QP001:} Il gruppo è migliorato sulla Pianificazione dall'inizio del progetto. Dato che tutti hanno svolto almeno una volta ogni ruolo, onguno riesce a svolgere il suo compito. Se questo risulta più difficile di quanto pinificato, la persona in difficoltà crea un ticket su Asana o su Slack così gli altri membri del gruppo possono aiutarlo. Il responsabile riesce a controllare l'andamento del lavoro guardando Asana e le build su travis, senza dover aspettare una risposta da un collega;
+	\item \textbf{QP001:} Il gruppo è migliorato sulla Pianificazione dall'inizio del progetto. Dato che tutti hanno svolto almeno una volta ogni ruolo, ognuno riesce a svolgere il suo compito. Se questo risulta più difficile di quanto pianificato, la persona in difficoltà crea un ticket su Asana o su Slack così gli altri membri del gruppo possono aiutarlo. Il responsabile riesce a controllare l'andamento del lavoro guardando Asana e le build su travis, senza dover aspettare una risposta da un collega;
 	\item \textbf{QP002:} Il miglioramento delle attività di processo risulta ancora qualcosa di complesso da gestire. Questo richiede, nella maggior parte dei casi, una riunione con tutti i membri del gruppo, per prendere una decisione. Questo porta, spesso, alla modifica di un documento e comporta l'apprendimento del nuovo metodo. Detto questo, sono stati fatti alcuni miglioramenti preventivi avvenuti con successo, come per esempio il passaggio a typescript:
 		\begin{itemize}
 			\item il team si è accorto che la produzione di codice per la backend risultava ostica usando javascript;
 			\item il responsabile ha programmato una riunione, nella quale sono stati discussi vantaggi del nuovo linguaggio, facilità per la traduzione (js -> ts), compatibilità con il codice già prodotto;
-			\item il team ha deciso di utilizzare TypeScript; 
+			\item il team ha deciso di utilizzare \glossario{TypeScript}; 
 			\item La traduzione è avvenuta in un paio d'ore e la velocità di produzione delle classi per la Skill è aumentata;
 		\end{itemize} 
 	\item \textbf{QP003:} I rischi sono mitigati dal fatto che il gruppo è composto da 7 membri, quindi, se qualcuno ha delle difficoltà a svolgere il proprio lavoro, è facile che un altro membro del gruppo sia disposto ad aiutarlo;
 	\item \textbf{QP004:} La verifica del software risulta abbastanza semplice, dato che più membri del gruppo hanno esperienza (scolastica) nella produzione di test di unità e integrazione. Questo è supportato dal tool Travis-CI e dalla abbondante documentazione per i test su Node.js. Risulta però ancora ostico lavorare usando il Test Driven Development;
 	\item \textbf{QP005:} I test di sistema, integrazione (lato API Gateway - database) risultano difficili da automatizzare, dato che molti dei tool automatici sono a pagamento. Il compito viene quindi svolto a mano, anche se il gruppo ha deciso di produrre uno script per eseguire test funzionali, entro il periodo di Verifica e Collaudo;
-	\item \textbf{QP006:} Il versionamento è completamente automatizzato tramite Travis-CI. Per l' applicazione Android è stato semplice, grazie a Gradle; la Skill, essendo scritta in typescript, ha bisogno di essere compilata in javascript, prima di essere pubblicata su AWS Lambda. \\Questo genera molti file .js che sporcano l'ambiente di lavoro. Per risolvere il problema, il gruppo ha prodotto degli script che si occupano di fare pulizia prima di trasferire i file su Github, e per fare il deploy automatico su AWS Lambda.
+	\item \textbf{QP006:} Il versionamento è completamente automatizzato tramite Travis-CI. Per l' applicazione Android è stato semplice, grazie a Gradle; la Skill, essendo scritta in \glossario{TypeScript}, ha bisogno di essere compilata in javascript, prima di essere pubblicata su AWS Lambda. \\Questo genera molti file .js che sporcano l'ambiente di lavoro. Per risolvere il problema, il gruppo ha prodotto degli script che si occupano di fare pulizia prima di trasferire i file su Github, e per fare il deploy automatico su AWS Lambda.
 \end{itemize}
 Di seguito viene riportata la tabella con il nome di ogni processo associato al suo codice per facilitare la lettura del grafico:
 \begin{itemize}
@@ -267,10 +267,10 @@ Le build dell'applicazione Android sono state per la maggior parte positive. \\
 	\includegraphics[scale=0.4]{./images/buildandroidPDC.png}
     \caption{\textit{MP013 - Android - Progettazione di dettaglio e codifica}}\label{}
 \end{figure}
-Le build della Skill (progetto node.js) risultano con molti errori. Questo è dovuto al fatto che sono stati sviluppati test di unità e integrazione prima di produrre il codice. Per questo motivo questa metrica è considerata come passata.\\
+Le build della Skill (progetto Node.js) risultano con molti errori. Questo è dovuto al fatto che sono stati sviluppati test di unità e integrazione prima di produrre il codice. Per questo motivo questa metrica è considerata come passata.\\
 \begin{figure} [H]
     \centering
-	\includegraphics[scale=0.4]{./images/buildPDC.png}
+	\includegraphics[scale=0.4]{./images/buildskillPDC.png}
     \caption{\textit{MP013 - Skill - Progettazione di dettaglio e codifica}}\label{}
 \end{figure}
 
@@ -288,7 +288,8 @@ Il seguente grafico contiene il numero totale di commit giornalieri. Questi risu
 Sono stati soddisfatti tutti i requisiti che il gruppo aveva preventivato per il periodo di progettazione di dettaglio e codifica, con l'eccezione del requisito riguardante la sveglia, che attualmente non è possibile implementare usando le API fornite da Alexa Skill Kit (dopo una riunione con la proponente, e con la sua approvazione,  questo requisito è stato spostato in "facoltativo - non accettato").
 Il gruppo ha stimato che i requisiti obbligatori non soddisfatti richiederanno poco lavoro, in quanto presentano aspetti simili ad altri requisiti (sotto il punto di vista della progettazione in dettaglio e codifica). I requisiti desiderabili e facoltativi sono per la maggior parte riguardanti aspetti secondari del prodotto (invece che blocchi), quindi compresi nelle attività di verifica e collaudo.\\
 Come richiesto dal committente, molti dei requisiti sono stati scomposti in requisiti più specifici.\\
-requisiti facoltativi sono stati non accettati, dato che il team li ha trovati difficili.\\
+Su una totalità di 41 requisiti funzionali, 15 di questi, dopo un'attenta discussione interna e successivamente con la proponente, sono stati identificati come "facoltativo - non accettato".
+
 \begin{figure} [H]
     \centering
 	\includegraphics[scale=0.5]{./images/torsodPDC.png}
@@ -304,9 +305,14 @@ requisiti facoltativi sono stati non accettati, dato che il team li ha trovati d
 \textbf{Passato}\\
 Gli errori grammaticali trovati durante una ispezione finale sono stati meno di 2 per documento.
 \subsection{MPR002 Indice di Gulpease}
-\textbf{Passato}\\
+\textbf{Passato 6/6}\\
 Il seguente grafico è stato generato attraverso un bot che calcola giornalmente l'indice di gulpease dei documenti.\\
 Si può notare come l'indice di gulpease è sempre stato sopra il limite di accettazione e ottimalità.\\
+Il gruppo si impegna ad aggiungere anche il manuale svulippatore e manuale utente tra i documenti controllati dallo script automatico di Gulpease per il periodo di Verifica e Collaudo.\\I valori calcolati alla fine del periodo di Progettazione di dettaglio e codifica per manuale Sviluppatore e Utente è di:
+\begin{itemize}
+	\item \textbf{Manuale sviluppatore: 74};
+	\item \textbf{Manuale utente: 79}.
+\end{itemize}
 \begin{figure} [H]
     \centering
 	\includegraphics[scale=0.5]{./images/gulpeasePDC.png}

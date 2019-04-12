@@ -9,12 +9,12 @@
 \endhead
 \hypertarget{TSFO1}{TSFO1} & Viene verificato che la connessione della skill al suo account Amazon possa avvenire correttamente & \textit{Implementato}\\ \hline
 \hypertarget{TSFO2}{TSFO2} & Il gruppo esegue l'applicazione e controlla che il login funzioni correttamente & \textit{Implementato}\\ \hline
-\hypertarget{TSFO15}{TSFO15} & Eseguire l'applicazione, creare un nuovo workflow, aggiunge dei blocchi a piacere e salva il workflow. Bisogna verificare che il workflow sia presente nel database & \textit{Non Implementato}\\ \hline
-\hypertarget{TSFO16}{TSFO16} & Avviare l'applicazione ed eliminare un workflow & \textit{Non Implementato}\\ \hline
-\hypertarget{TSFO17.1}{TSFO17.1} & avviare l'applicazione e modificare il nome di un workflow, poi verificare che sia stato effettivamente modificato nel database & \textit{Non Implementato}\\ \hline
-\hypertarget{TSFO17.2}{TSFO17.2} & Il test consiste nell' eseguire l'applicazione e modificare un workflow aggiungendo un blocco, modificandone un altro ed eliminandone un terzo. In seguito verificare che il database sia stato effettivamente modificato. & \textit{Non Implementato}\\ \hline
-\hypertarget{TSFO45}{TSFO45} & Viene verificato che il collegamento della skill all' account dell'utente Amazon avvenga correttamente & \textit{Implementato}\\ \hline
-\hypertarget{TSVO1}{TSVO1} & Viene verificato che l'applicazione Android funzioni correttamente in un dispositivo Android & \textit{Non Implementato}\\ \hline
+\hypertarget{TSFO15}{TSFO15} & Eseguire l'applicazione, creare un nuovo workflow, aggiungere dei blocchi a piacere e salvare il workflow. Bisogna verificare che il workflow sia presente nel database & \textit{Implementato}\\ \hline
+\hypertarget{TSFO16}{TSFO16} & Avviare l'applicazione ed eliminare un workflow & \textit{Implementato}\\ \hline
+\hypertarget{TSFO17.1}{TSFO17.1} & Avviare l'applicazione e modificare il nome di un workflow, poi verificare che sia stato effettivamente modificato nel database & \textit{Implementato}\\ \hline
+\hypertarget{TSFO17.2}{TSFO17.2} & Il test consiste nell'eseguire l'applicazione e modificare un workflow aggiungendo un blocco, modificandone un altro ed eliminandone un terzo. In seguito verificare che il database sia stato effettivamente modificato. & \textit{Implementato}\\ \hline
+\hypertarget{TSFO45}{TSFO45} & Viene verificato che il collegamento della skill all'account dell'utente Amazon avvenga correttamente & \textit{Implementato}\\ \hline
+\hypertarget{TSVO1}{TSVO1} & Viene verificato che l'applicazione Android funzioni correttamente in un dispositivo Android & \textit{Implementato}\\ \hline
 \caption[Test di Sistema]{Test di Sistema}
 \label{tabella:test1}
 \end{longtable}
@@ -49,13 +49,13 @@ RVO1 & \hyperlink{TVVO1}{TVVO1}\\ \hline
 \hline
 \endhead
 \hypertarget{TI1}{TI1} & Viene testata l'applicazione Android ad ogni sua modifica nel repository Github, attraverso Travis-CI. L'applicazione deve compilare e non produrre warning. & \textit{Implementato}\\ \hline
-\hypertarget{TI2}{TI2} & La skill android è soggetta a integrazione continua, attraverso Travis-CI. & \textit{Non Eseguito}\\ \hline
-\hypertarget{TI3}{TI3} & La skill viene pubblicata in automatico (ad ogni modifica nel repository) in Aws Lambda e viene eseguito un test per controllare che funzioni. Questo test non assicura il funzionamento della skill, quindi è necessario un controllo umano (più controlli sono richiesti in caso di un numero alto di commit nel repository). & \textit{Implementato}\\ \hline
+\hypertarget{TI2}{TI2} & La skill Android è soggetta a integrazione continua, attraverso Travis-CI. & \textit{Implementato}\\ \hline
+\hypertarget{TI3}{TI3} & La skill viene pubblicata in automatico (ad ogni modifica nel repository) in AWS Lambda e viene eseguito un test per controllare che funzioni. Questo test non assicura il funzionamento della skill, quindi è necessario un controllo umano (più controlli sono richiesti in caso di un numero alto di commit nel repository). & \textit{Implementato}\\ \hline
 \hypertarget{TI4}{TI4} & Ad ogni commit nel repository, Travis-CI controlla che il collegamento tra la Skill e AWS API-Gateway funzioni. Questo viene fatto attraverso una semplice chiamata post a una funzione MOCK (per ridurre il traffico a dynamoDB e alle lambda). & \textit{Implementato}\\ \hline
 \hypertarget{TI5}{TI5} & Controllare che il collegamento tra API-gateway, Lambda e DynamoDB funzioni, eseguendo dei test automatici appositi. Questa operazione deve essere eseguita poco frequentemente, in quanto potrebbe aumentare i costi dei servizi AWS. & \textit{Implementato}\\ \hline
 \hypertarget{TI6}{TI6} & Viene creato un workflow contenente solamente blocchi con connettori e vengono valutati i risultati. I valori ritornati cambiano costantemente, quindi viene fatto un controllo solamente sul tipo dei dati ritornati. & \textit{Implementato}\\ \hline
 \hypertarget{TI7}{TI7} & Viene eseguita l'applicazione e viene controllato se le activities vengono rappresentate correttamente a schermo. Questo test è molto pesante, in quanto richiede l'esecuzione del simulatore Android, inoltre richiede supervisione di un membro del gruppo. & \textit{Implementato}\\ \hline
-\hypertarget{TI8}{TI8} & Vengono create delle istanze di ogni blocco e vengono chiamati i loro metodi pubblici. & \textit{Non Implementato}\\ \hline
+\hypertarget{TI8}{TI8} & Vengono create delle istanze dei blocchi disponibili e vengono chiamati i loro metodi pubblici. & \textit{Implementato}\\ \hline
 \hypertarget{TI9}{TI9} & Viene creato un workflow contenente tutti i blocchi, poi viene chiamato il metodo "response()" di workflow. & \textit{Non Implementato}\\ \hline
 \caption[Test di Integrazione]{Test di Integrazione}
 \label{tabella:test2}
@@ -104,27 +104,27 @@ TUS8 & Viene controllato che ritorni una risposta di pin corretto & \textit{Impl
 TUS9 & Viene controllato che ritorni una risposta di pin errato & \textit{Implementato}\\ \hline
 TUS10 & Viene controllato che ritorni un workflow corretto & \textit{Implementato}\\ \hline
 TUS11 & Viene controllato che ritorni un workflow non corretto & \textit{Implementato}\\ \hline
-TUS12 & Viene controllato che ritorni una eccezione sul parametro durante la creazione del workflow & \textit{non Implementato}\\ \hline
+TUS12 & Viene controllato che ritorni una eccezione sul parametro durante la creazione del workflow & \textit{Non Implementato}\\ \hline
 TUS13 & Viene controllato che ritorni un workflow corretto & \textit{Implementato}\\ \hline
 TUS13 & Viene controllato che ritorni una eccezione sulla costruzione dell'utente & \textit{Implementato}\\ \hline
 TUS14 & Viene controllato che ritorni un FeedRSS corretto & \textit{Implementato}\\ \hline
 TUS15 & Viene controllato che venga lanciata un'eccezione sul tipo di parametro URL & \textit{Implementato}\\ \hline
-TUS16 & Viene controllato che venga lanciata un'eccezione di Timeout sulla chiamata internet & \textit{non Implementato}\\ \hline
+TUS16 & Viene controllato che venga lanciata un'eccezione di Timeout sulla chiamata internet & \textit{Non Implementato}\\ \hline
 TUS17 & Viene controllato che ritorni una previsione corretta & \textit{Implementato}\\ \hline
 TUS18 & Viene controllato che venga lanciata un'eccezione sul parametro position & \textit{Implementato}\\ \hline
 TUS19 & Viene controllato che ritorni un testo vuoto & \textit{Implementato}\\ \hline
 TUS20 & Viene controllato che venga lanciata un'eccezione sul parametro position & \textit{Implementato}\\ \hline
-TUS21 & Viene controllato che venga lanciata un'eccezione di Timeout sulla chiamata internet alle API & \textit{non Implementato}\\ \hline
-TUS22 & Viene controllato che ritorni una Tweet corretto & \textit{Implementato}\\ \hline
-TUS23 & Viene controllato che ritorni un Tweet vuoto & \textit{Implementato}\\ \hline
+TUS21 & Viene controllato che venga lanciata un'eccezione di Timeout sulla chiamata internet alle API & \textit{Non Implementato}\\ \hline
+TUS22 & Viene controllato che ritorni un tweet corretto & \textit{Implementato}\\ \hline
+TUS23 & Viene controllato che ritorni un tweet vuoto & \textit{Implementato}\\ \hline
 TUS24 & Viene controllato che venga lanciata un'eccezione sul parametro userID & \textit{Implementato}\\ \hline
-TUS25 & Viene controllato che venga lanciata un'eccezione di Timeout sulla chiamata internet alle API di Twitter & \textit{non Implementato}\\ \hline
-TUS26 & Viene controllato che ritorni un workflow vuoto & \textit{non Implementato}\\ \hline
-TUS27 & Viene controllato che venga lanciata un'eccezione sulla mancanza di un blocco filtrabile dopo un filtro & \textit{Implementato}\\ \hline
+TUS25 & Viene controllato che venga lanciata un'eccezione di Timeout sulla chiamata internet alle API di Twitter & \textit{Non Implementato}\\ \hline
+TUS26 & Viene controllato che ritorni un workflow vuoto & \textit{Non Implementato}\\ \hline
+TUS27 & Viene controllato che venga lanciata un'eccezione sulla mancanza di un blocco filterable dopo un filtro & \textit{Implementato}\\ \hline
 TUS28 & Viene controllato che ritorni un workflow correttamente filtrato & \textit{Implementato}\\ \hline
 TUS29 & Viene controllato che ritorni una lista correttamente filtrata & \textit{Implementato}\\ \hline
 TUS30 & Viene controllato che ritorni un Feed RSS correttamente filtrato & \textit{Implementato}\\ \hline
-TUS31 & Viene controllato che ritorni una lista di email correttamente filtrate & \textit{non Implementato}\\ \hline
+TUS31 & Viene controllato che ritorni una lista di email correttamente filtrate & \textit{Non Implementato}\\ \hline
 TUS32 & Viene controllato che ritorni una lista di email corrette & \textit{Non implementato}\\ \hline
 TUS33 & Viene controllato che ritorni una lista di email vuota & \textit{Non implementato}\\ \hline
 TUS34 & Viene controllato che venga lanciata un'eccezione sull'email non corretta & \textit{Non implementato}\\ \hline
