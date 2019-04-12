@@ -1,5 +1,5 @@
 \chapter{Estensione delle funzionalità}\label{estensione}
-In questo capitolo vengono descritti i passaggi per l'estensione del prodotto \textit{MegAlexa}
+In questo capitolo vengono descritti i passaggi per l'estensione del prodotto \textit{MegAlexa}.
 
 \section{Estensione App}
 L'estensione della app avviene mediante l'aggiunta di nuovi blocchi.\\
@@ -9,10 +9,10 @@ Segue una lista di attività da attuare che descrive i passi da eseguire per un'
 	\item Definire un blocco che derivi dall'interfaccia \texttt{Block} posta nel package \textbf{blocks};
 	\item Se il blocco richiede una validazione tramite chiamata esterna, definire un connettore che estenda \texttt{Connector} nel package \textbf{connectors};
 	\item Se la chiamata esterna prevede l'utilizzo di una API particolare, definire tali interazioni incapsulandole in una nuova classe da posizionare nel package \textbf{network};
-	\item Definire le conversioni da JSON e a JSON dichiarando una nuova classe che derivi da \texttt{BlockService} nel package \textbf{service}, per la comunicazione con API Gateway;
+	\item Definire le conversioni da JSON e a JSON dichiarando una nuova classe che derivi da \texttt{BlockService} nel package \textbf{service}, per la comunicazione con \textit{API Gateway$_{G}$};
 	\item Ampliare la lista presente in \texttt{CreateBlockActivity} (package \textbf{activities}) in modo che presenti un elemento cliccabile in più;
 	\item Definire un widget a scelta (activity o fragment) che rappresenti l'inserimento dei dati da parte dell'utente;
-	\item Attaccare il listener dell'elemento aggiunto alla lista al widget appena creato.
+	\item Inserire il listener dell'elemento aggiunto alla lista nel widget appena creato;
 	\item Nel caso in cui sia stato creato un fragment ampliare la funzione \textit{onFragmentClick(sender)} in modo che registri e notifichi alle activity interessate le informazioni per l'aggiunta del blocco, in alternativa, se è stata creata una nuova activity, gestire l'interazione con essa mediante le funzioni \textit{startActivityForResult(intent,context)} e \textit{onActivityResult(requestCode,resultCode,data)};
 	\item Nella \texttt{CreateWorkflowActivity} e \texttt{ViewBlockActivity}, nelle funzioni \textit{onActivityResult(requestCode,resultCode,data)} 	prelevare i dati passati dalle altre activity e chiamare il viewModel di conseguenza;
 	\item Aggiornare il viewModel in modo che supporti l'aggiunta del blocco appena creato.
@@ -23,16 +23,16 @@ Segue una lista di attività da attuare che descrive i passi da eseguire per un'
 \section{Estensione Skill (lambda)}
 La Skill può essere estesa in questi modi:
 \begin{itemize}
-    \item aggiunta di un nuovo blocco\S\ref{newBlock};
-    \item aggiunta di nuove frasi per Alexa\S\ref{newFrasi};
-    \item aggiunta di un nuovo metodo d'accesso al database\S\ref{newAccesso};
-    \item aggiunta di un nuovo sistema di autenticazione\S\ref{newAuth};
+    \item aggiunta di un nuovo blocco \S\ref{newBlock};
+    \item aggiunta di nuove frasi per Alexa \S\ref{newFrasi};
+    \item aggiunta di un nuovo metodo d'accesso al database \S\ref{newAccesso};
+    \item aggiunta di un nuovo sistema di autenticazione \S\ref{newAuth}.
 \end{itemize}
 \subsection{Nuovo blocco}\label{newBlock}
 Questa sezione verrà redatta quando il prodotto sarà completo.
 \subsection{Nuove frasi per Alexa}\label{newFrasi}
 Questa sezione verrà redatta quando il prodotto sarà completo.
-\subsection{Nuovo metodo d'accesso al database}\label{newAccesso}
+\subsection{Nuovo metodo d'accesso al database} \label{newAccesso}
 Questa sezione verrà redatta quando il prodotto sarà completo.
 \subsection{Nuovo sistema di autenticazione}\label{newAuth}
 Questa sezione verrà redatta quando il prodotto sarà completo.

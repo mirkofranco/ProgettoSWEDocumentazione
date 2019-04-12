@@ -1,18 +1,18 @@
 \chapter{Tecnologie utilizzate}
 \label{Tecnologie}
 \section{Amazon Web Service}
-Amazon Web Service è una piattaforma di cloud computing sicura che offre servizi di calcolo, memorizzazione, distribuzione di contenuti e altre funzionalità per aiutare il businesses ad essere scalabile e crescere con facilità. AWS fornisce infatti prodotti e servizi per costruire applicazioni, anche sofisticate, in modo flessibile, scalabile, economico e  con un'ottima resistenza ai guasti. 
+Amazon Web Service è una piattaforma di cloud computing sicura che offre servizi di calcolo, memorizzazione, distribuzione di contenuti e altre funzionalità per aiutare il business ad essere scalabile e crescere con facilità.\\ \glossario{AWS}fornisce infatti prodotti e servizi per costruire applicazioni, anche sofisticate, in modo flessibile, scalabile, economico e  con un'ottima resistenza ai guasti. 
 \subsection{AWS DynamoDB}
-Amazon DynamoDB è un database che supporta i modelli di dati di tipo documento e di tipo chiave-valore che offre prestazioni di pochi millisecondi a qualsiasi livello. Si tratta di un database multi master, multi regione e completamente gestito che offre sicurezza integrata, backup, ripristino e cache in memoria per applicazioni Internet. DynamoDB può gestire oltre 10 trilioni di richieste al giorno e supporta picchi di oltre 20 milioni di richieste al secondo. 
+Amazon\glossario{DynamoDB}è un database che supporta i modelli di dati di tipo documento e di tipo chiave-valore che offre prestazioni di pochi millisecondi a qualsiasi livello. Si tratta di un database multi master, multi regione e completamente gestito che offre sicurezza integrata, backup, ripristino e cache in memoria per applicazioni Internet. DynamoDB può gestire oltre 10 trilioni di richieste al giorno e supporta picchi di oltre 20 milioni di richieste al secondo. 
 \subsection{AWS Lambda}
-AWS Lambda consente di eseguire codice senza dover effettuare il provisioning né gestire il server. Le tariffe sono calcolate in base ai tempi di elaborazione.\\ 
+\textit{AWS Lambda$_{G}$} consente di eseguire codice senza dover effettuare il provisioning né gestire il server. Le tariffe sono calcolate in base ai tempi di elaborazione.\\ 
 Con Lambda, è possibile eseguire codice per qualunque tipo di applicazione o di servizio back-end, senza alcuna amministrazione. Una volta caricato il codice Lambda si prende carico delle azioni necessarie per eseguirlo e ricalibrarne le risorse con la massima disponibilità. \'E possibile configurare il codice in modo che venga attivato automaticamente da altri servizi AWS oppure che venga richiamato direttamente da qualsiasi app Web o mobile.
 \subsection{AWS API Gateway}
-AWS API Gateway è un servizio completamente gestito che semplifica la creazione, la pubblicazione, la manutenzione e la protezione delle API su larga scala. Con semplicità è possibile creare e configurare API REST che fungano da "porta di ingresso" per le applicazioni, per consentire l'accesso ai dati, alla logica di business o alle funzionalità dai propri servizi back-end. API Gateway gestisce tutte le attività di accettazione ed elaborazione relative a centinaia di migliaia di chiamate ad API simultanee, inclusi gestione del traffico, controllo di accessi e autorizzazioni, monitoraggio e gestione delle versione delle API. Gateway non prevede alcuna tariffa minima né investimenti iniziali. Vengono addebitati solo i costi di chiamate API ricevute e i volumi di dati trasferiti in uscita e con il modello tariffario a scaglioni di API Gateway potrai ridurre i costi al variare dell'utilizzo delle API.
+AWS \textit{API}\glossario{Gateway}è un servizio completamente gestito che semplifica la creazione, la pubblicazione, la manutenzione e la protezione delle API su larga scala. Con semplicità è possibile creare e configurare API REST che fungano da "porta di ingresso" per le applicazioni, per consentire l'accesso ai dati, alla logica di business o alle funzionalità dai propri servizi back-end. API Gateway gestisce tutte le attività di accettazione ed elaborazione relative a centinaia di migliaia di chiamate ad API simultanee, inclusi gestione del traffico, controllo di accessi e autorizzazioni, monitoraggio e gestione delle versione delle API. Gateway non prevede alcuna tariffa minima né investimenti iniziali. Vengono addebitati solo i costi di chiamate API ricevute e i volumi di dati trasferiti in uscita e con il modello tariffario a scaglioni di API Gateway potrai ridurre i costi al variare dell'utilizzo delle API.
 \subsection{AWS CloudWatch}
-AWS CloudWatch è un servizio di monitoraggio e gestione creato per gli sviluppatori, operatori di sistema, ingegneri responsabili del sito e manager IT. CloudWatch fornisce dati e analisi concrete per monitorare le applicazioni, capire e rispondere ai cambiamenti di prestazioni a livello di sistema, ottimizzare l'utilizzo delle risorse e ottenere una visualizzazione unificata dello stato di integrità operativa. 
+\textit{AWS CloudWatch$_{G}$} è un servizio di monitoraggio e gestione creato per gli sviluppatori, operatori di sistema, ingegneri responsabili del sito e manager IT. CloudWatch fornisce dati e analisi concrete per monitorare le applicazioni, capire e rispondere ai cambiamenti di prestazioni a livello di sistema, ottimizzare l'utilizzo delle risorse e ottenere una visualizzazione unificata dello stato di integrità operativa. 
 \subsection{Kotlin}
-Kotlin è un linguaggio di programmazione general purpose, multi-paradigma, open source sviluppato dall'azienda di software JetBrains.\\
+\textit{Kotlin$_{G}$} è un linguaggio di programmazione general purpose, multi-paradigma, open source sviluppato dall'azienda di software JetBrains.\\
 Kotlin si basa sulla JVM (Java Virtual Machine) ed è ispirato ad altri linguaggi di programmazione tra i quali Scala e lo stesso Java, mentre ulteriori spunti sintattici sono stati presi da linguaggi classici, come il Pascal e moderni come Go o F\#.\\
 Il vantaggio maggiore rispetto a Java risulta essere la sintassi più leggibile, insieme alla possibilità di eseguire file Java all'interno di progetti Kotlin (visto che entrambi utilizzano la JVM per produrre il bytecode).
 
@@ -21,7 +21,7 @@ XML è un metalinguaggio per la definizione di linguaggi di markup, ovvero un li
 Android fornisce gli schema necessari per comporre widget e posizionarli sullo schermo, separando ulteriormente la parte logica da quella grafica. 
 
 \subsection{Node.js}
-La skill è sviluppata attraverso un progetto Node js. Tutte le classi (apparte index.js) sono scritte in Typescript, ma vengono compilate in Javascript prima di essere trasferite in AWS Lambda.
+La skill è sviluppata attraverso un progetto \textit{Node.js$_{G}$}. Tutte le classi (apparte index.js) sono scritte in \textit{TypeScript$_{G}$}, ma vengono compilate in Javascript prima di essere trasferite in AWS Lambda.
 \subsection{Npm}
 Gestore di package per node.js. Permette l'esecuzione di comandi personalizzati (come descritto in \S\ref{installazioneSkill}).
 \subsection{7z}
@@ -45,11 +45,11 @@ Dipendenze utili solo allo sviluppatore (test e compilazione):
 \begin{itemize}
     \item \textbf{mocha:} framework per i test in Javascript;
     \item \textbf{chai:} funzionalità aggiuntive mocha;
-    \item \textbf{@types/node:} definizioni dei tipi di Node.js per Typescript;
-    \item \textbf{@types/mocha:} adattatore mocha per Typescript; 
-    \item \textbf{@types/chai:} adattatore chai per Typescript;
+    \item \textbf{@types/node:} definizioni dei tipi di Node.js per \textit{TypeScript$_{G}$};
+    \item \textbf{@types/mocha:} adattatore mocha per TypeScript; 
+    \item \textbf{@types/chai:} adattatore chai per TypeScript;
     \item \textbf{@types/chai-as-promised:} dipendenza aggiuntiva di chai per valutare le \textit{promise};
-    \item \textbf{typescript:} permette la compilazione da Typescript a Javascript.
+    \item \textbf{typescript:} permette la compilazione da TypeScript a JavaScript.
 \end{itemize}
 
 \subsection{App Android}
@@ -58,13 +58,13 @@ Tutte le dipendenze si trovano nel file \textit{build.gradle(Module:app)}.\\
 
 Dipendenze principali:
 \begin{itemize}
-	\item \textbf {kotlin-stdlib-jdk7} Libreria standard di Kotlin che si appoggia automaticamente alla versione più aggiornata;
+	\item \textbf {kotlin-stdlib-jdk7} Libreria standard di\glossario{Kotlin}che si appoggia automaticamente alla versione più aggiornata;
 	\item \textbf {Anko} Libreria utilizzata per le chiamate asincrone;
 	\item \textbf{openweather-apis:} informazioni riguardanti il tempo atmosferico;
 	\item \textbf{rss-parser:} trasformazione di un file RSS in un testo più leggibile;
-	\item \textbf{twitter:} comunicazione con i servizi Twitter.
-	\item \textbf{Lifecycle:} permettono un'implementazione semplice al pattern observer.
-	\item \textbf{AppCompactActivity:} Libreria più stabile per le interfacce grafiche su Kotlin.
+	\item \textbf{twitter:} comunicazione con i servizi Twitter;
+	\item \textbf{Lifecycle:} permettono un'implementazione semplice al pattern observer;
+	\item \textbf{AppCompactActivity:} Libreria più stabile per le interfacce grafiche su Kotlin;
 	\item \textbf{JUnit} framework per i test in Kotlin;
-	\item \textbf{login-with-amazon-sdk.jar} Utilizzato per i servizi di login forniti da Amazon;
+	\item \textbf{login-with-amazon-sdk.jar} Utilizzato per i servizi di login forniti da Amazon.
 \end{itemize}
