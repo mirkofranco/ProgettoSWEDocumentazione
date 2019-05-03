@@ -76,10 +76,10 @@ Tale blocco consente all'utente di inserire nel proprio workflow un blocco conte
 
 \subsubsection{Blocco Filter}
 Consente di impostare il numero limite di elementi che un determinato blocco deve considerare. \\
-\textbf{NOTA BENE:} il blocco filtro è applicabile solo ai seguenti blocchi: Stock, Crypto, FeedRSS, News, Read Email, TwitterUserTimeline, TwitterHashtag, List e Sport.
+\textbf{NOTA BENE:} il blocco filtro è applicabile solo ai seguenti blocchi: Stock, Crypto, FeedRSS, News, Read Email, Calendar, TwitterUserTimeline, TwitterHomeTimeline, TwitterHashtag, List e Sport.
 
 \subsubsection{Blocco PIN}
-Lo scopo di questo blocco è quello di effettuare una sorta di autenticazione dell'utente per l'esecuzione di alcuni blocchi, come ad esempio ReadEmail e Twitter in modo da avere un minimo di privacy per l'utente.
+Lo scopo di questo blocco è quello di effettuare una sorta di autenticazione dell'utente prima dell'esecuzione dei blocchi ReadEmail, Calendar, TwitterWrite e TwitterHomeTimeline in modo da avere un minimo di privacy per l'utente.
 \begin{enumerate}
 	\item Inserire nel campo di testo il proprio PIN segreto;
 	\item Cliccare sul tasto "SAVE" per confermare e salvare.
@@ -129,23 +129,39 @@ Con questo blocco l'utente può scegliere da quale FeedRSS ascoltare le ultime n
 Con questo blocco l'utente può scegliere da quale FeedRSS ascoltare le ultime news sull'andamento della borsa economica.
 \begin{enumerate}
 	\item Cliccare su un FeedRSS a scelta per scegliere da quale borsa ricevere news.
-\begin{figure}[!ht]
-	\centering
-	\fbox{\includegraphics[scale=0.3]{images/BlockStock.jpg}}
-	\caption{Blocco stock}
-\end{figure}
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.3]{images/BlockStock.jpg}}
+		\caption{Blocco stock}
+	\end{figure}
 \end{enumerate}
 \newpage
 \subsubsection{Blocco List}
 Questo blocco permette all'utente di creare, aggiungere e modificare degli elementi di testo ad una lista.
 È possibile modificare la lista tramite app oppure tramite interazione con l'Amazon Echo.
 
-\subsubsection{Blocco TwitterHashtag}
-L'utente con l'aggiunta di questo blocco può effettuare una ricerca su Twitter tramite hashtag.
+\subsubsection{Blocco TwitterHashtag} \label{twitter}
+L'utente con l'aggiunta di questo blocco può effettuare una ricerca dei tweets su Twitter tramite hashtag.
+\begin{enumerate}
+	\item Nella schermata di elenco dei blocchi cliccare su "Twitter";
+	\item Cliccare il blocco "TwitterHashtag" come mostrato in figura;
+	\item Inserire la parola chiave di ricerca preceduta dal simbolo "#" (hashtag) e successivamente cliccare sul tasto conferma;
+\end{enumerate}
 \subsubsection{Blocco TwitterUserTimeline}
-L'utente inserendo questo blocco nel suo workflow potrà sapere suoi i tweet.
+L'utente inserendo questo blocco nel suo workflow potrà ascoltare i tweets di un altro utente a sua scelta tramite Alexa.
+\subsubsection{Blocco TwitterHomeTimeline}
+L'utente inserendo questo blocco nel suo workflow potrà ascoltare i tweets presenti sulla sua home.
+\subsubsection{Blocco TwitterWrite}
+Questo blocco consente all'utente di pubblicare dei tweets tramite Alexa sul suo profilo Twitter.
+
 \subsubsection{Blocco Weather}
 Il blocco Weather consente all'utente di sapere che meteo c'è in questo momento o nei prossimi giorni di una determinata città.
+
+\subsubsection{Blocco ReadEmail}
+Con questo blocco l'utente può ascoltare tramite Alexa le sue email, di Gmail, non ancora lette.
+
+\subsubsection{Blocco Calendar}
+Il blocco calendario permette all'utente di ascoltare o aggiungere i suoi appuntamenti di Google calendar tramite l'Amazon echo.
 \newpage
 \subsection{Blocchi nel workflow}
 Per avere informazioni sui blocchi contenuti in un workflow, andare sulla schermata che mostra l'elenco di tutti i workflow disponibili  e cliccare sul nome del workflow che ci interessa.
@@ -159,20 +175,7 @@ In questo modo verrà visualizzato l'elenco dei blocchi al suo interno come most
 \subsection{Modifica blocchi}
 \subsection{Eliminazione blocchi}
 \subsection{Eliminazione workflow}
-\begin{comment}
-\subsubsection{Blocco Amazon Music}
-Questo blocco consente all'utente di ascoltare un brano, un'album o una playlist da Amazon Music tramite il proprio dispositivo Alexa.
 
-\subsubsection{Blocco Telegram}
-Il blocco Telegram consente all'utente iscritto al servizio di messaggistica Telegram di inviare messaggi e file audio ad un'altra persona o gruppo di persone.
-
-\subsubsection{Blocco ReadEmail}
-Con questo blocco l'utente può ascoltare tramite Alexa le sue email, di Gmail, non ancora lette.
-
-
-\subsubsection{Blocco Calendar}
-Il blocco calendario permette all'utente di ascoltare o aggiungere i suoi appuntamenti di Google calendar tramite l'Amazon echo.
-\end{comment}
 \newpage
 \section{Utilizzo della skill MegAlexa}
 \label{Utilizzo skill}
