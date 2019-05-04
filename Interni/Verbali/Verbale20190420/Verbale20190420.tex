@@ -1,0 +1,109 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{ZeroSeven}
+
+\titlepage{}
+\author{Mirko Franco}
+\date{2019-04-20}
+\intestazioni{\includegraphics[scale=0.3]{images/logo_intestazione}}
+\pagestyle{myfront}
+\begin{document}
+	\begin{titlepage}
+		\centering
+		{\huge\bfseries MegAlexa\par}
+		Arricchitore di skill di Amazon Alexa
+		\line(1,0){350} \\
+		{\scshape\LARGE Verbale Interno del 2019-04-20 \par}
+		\vspace{1cm}
+		{\scshape Gruppo ZeroSeven \par}
+		\logo
+		%devono essere compilati questi campi ogni volta
+		\begin{tabular}{c|c}
+			{\hfill \textbf{Versione}} 			& 1.0.0				\\
+			{\hfill\textbf{Data redazione}} 	& 2019-04-20		\\ 
+			{\hfill\textbf{Redazione}} 			&  	Mirko Franco	\\ 
+			{\hfill\textbf{Verifica}} 				&  	  	Bianca Andreea Ciuche\\ 
+			{\hfill\textbf{Approvazione}} 		&  	Matteo Depascale \\ 
+			{\hfill\textbf{Uso}} 					& 	Interno	\\ 
+			{\hfill\textbf{Distribuzione}} 			& 			Prof. Tullio Vardanega \\ & Prof. Riccardo Cardin \\ & Gruppo ZeroSeven \\ 
+			{\hfill\textbf{Email di contatto}} & zerosevenswe@gmail.com \\
+		\end{tabular}
+	\end{titlepage}
+	
+	
+	
+	\label{LastFrontPage}
+	
+	
+	\newpage
+	\cleardoublepage
+	\begin{table}[tbph]
+		\centering
+		\begin{tabularx}{\textwidth}{|c|c|X|X|c|}
+			\hline
+			\textbf{Versione} & \textbf{Data} & \textbf{Descrizione} & \textbf{Autore} & \textbf{Ruolo} \\
+			\hline
+			1.0.0 & 2019-04-24 & Approvazione per il rilascio &Matteo Depascale & Responsabile \\
+			\hline
+			0.1.0 & 2019-04-23 & Verifica documento & Bianca Andreea Ciuche & Verificatore \\
+			\hline
+			0.0.2 & 2019-04-20 & Stesura verbale &Mirko Franco & Analista \\
+			\hline
+			0.0.1 & 2018-12-08 & Creazione template documento & Ludovico Brocca & Amministratore\\
+			\hline
+		\end{tabularx}
+		\caption{Registro delle modifiche}
+	\end{table}
+	\cleardoublepage
+	\pagestyle{mymain}
+	
+	\tableofcontents
+	\cleardoublepage
+	\section{Informazioni sulla riunione}
+	\subsection{Motivo della riunione} \`{E} stata svolta una chiamata tramite Hangouts per organizzare il lavoro futuro.
+	\begin{itemize}
+		\item \textbf{Luogo e data}: Padova, Sabato 20 Aprile 2019;
+		\item \textbf{Ora di inizio}: 11:00;
+		\item \textbf{Ora di fine}: 12:45;
+		\item \textbf{Partecipanti}:  
+		\begin{itemize}
+			\item Gian Marco Bratzu;
+			\item Mirko Franco;
+			\item Bianca Andreea Ciuche;
+			\item Ludovico Brocca;
+			\item Matteo Depascale;
+			\item Andrea Deidda;
+			\item Stefano Zanatta.
+		\end{itemize}
+	\end{itemize}
+	
+	
+		\section{Resoconto}
+	\subsection{Argomenti discussi}
+	La riunione prevede i seguenti punti:
+	\begin{itemize}		
+		\item Sono stati assegnati gli ultimi test da svolgere tra i membri del gruppo;
+		\item Si è discusso sulla creazione di un disco contenente codice e documentazione di progetto per poi poterlo consegnare al committente.
+      	\item Il gruppo ha deciso di organizzare un incontro definitivo il 6 Maggio 2019 per validare il prodotto da presentare in ingresso alla Revisione di Accettazione.
+      	\item Si è deciso di chiedere alla proponente  alcuni chiarimenti sull'implementzione del blocco\glossario{Amazon}Music.
+	\end{itemize}
+	
+	\newpage
+	\subsection{Tracciamento decisioni}
+	\begin{table}[tbph]
+		\centering
+		\begin{tabularx}{\textwidth}{|C|C|}
+			\hline
+			\textbf{Codice } & \textbf{Decisione} \\
+			\hline
+			01-VER\_2019-04-20& Divisione e assegnazione del lavoro\\
+			\hline
+			02-VER\_2019-04-20& Creazione disco contenente codice e documentazione di progetto\\
+			\hline
+			03-VER\_2019-04-20& Incontro definitivo a Padova il 06 Maggio 2019 per la validazione del prodotto\\
+			\hline
+			04-VER\_2019-04-20& Invio email alla\glossario{proponente} pr alcuni chiarimenti\\
+			\hline
+		\end{tabularx}
+		\caption{Tracciamento decisioni}
+	\end{table}
+\end{document}
