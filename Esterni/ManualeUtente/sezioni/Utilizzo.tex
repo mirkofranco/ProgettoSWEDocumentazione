@@ -14,8 +14,8 @@ Al primo avvio dell'applicazione apparirà una schermata vuota, priva di \textit
 		\caption{Elenco workflow vuoto}
 	\end{figure}
 
-\item Inserire il nome del nuovo workflow nell'apposito campo di testo;\\
-\textbf{NOTA BENE:} all'utente non è permesso creare due o più workflow con lo stesso nome. É fortemente consigliato l'utilizzo delle lettere minuscole per la scrittura del nome (es. workflowTwitter). Inoltre si sconsiglia l'utilizzo di parole chiave all'interno del nome del workflow (es. english, Alexa,..);
+\item Inserire il nome del nuovo\glossario{workflow}nell'apposito campo di testo;\\
+\textbf{NOTA BENE:} all'utente non è permesso creare due o più workflow con lo stesso nome. É fortemente consigliato l'utilizzo delle sole lettere minuscole per la scrittura del nome (es. "myworkflow" e non "myWorkflow"). Inoltre si sconsiglia l'utilizzo di parole chiave scritte come nome del workflow (es. english, Alexa,..);
 
 	\begin{figure}[H]
 		\centering
@@ -135,27 +135,28 @@ Con questo blocco l'utente può scegliere da quale FeedRSS ascoltare le ultime n
 \end{enumerate}
 \newpage
 \subsubsection{Blocco List}
-Questo blocco permette all'utente di creare, aggiungere e modificare degli elementi di testo ad una lista.
+Questo blocco permette all'utente di creare, aggiungere e modificare degli elementi di testo di una lista.
 È possibile modificare la lista tramite app oppure tramite interazione con l'Amazon Echo.
 
-\subsubsection{Blocco TwitterHashtag}
-L'utente con l'aggiunta di questo blocco può effettuare una ricerca dei tweets su Twitter tramite hashtag.
-\textbf{NOTA BENE:} la ricerca restituisce i primi 10 risultati che trova se non viene impostato alcun limite sul numero di tweets da cercare.
+\subsubsection{Blocco TwitterHashtag} \label{twitterHa}
+L'utente con l'aggiunta di questo blocco può effettuare una ricerca dei tweets su Twitter tramite hashtag. \\
+\textbf{NOTA BENE:} per default, la ricerca restituisce i primi 10 risultati trovati se non viene impostato alcun limite sul numero di tweets da cercare.
 \begin{enumerate}
 	\item Nella schermata di elenco dei blocchi cliccare su "Twitter";
 	\item Cliccare il blocco "TwitterHashtag" come mostrato in figura;
 	\item Inserire la parola chiave di ricerca preceduta dal simbolo "\#";
-	\item (Facoltativo) impostare filtro ricerca:
+	\item (Facoltativo) impostazione filtro di ricerca:
 	\begin{enumerate}
 		\item Premere l'icona a forma di imbuto;
-		\item Impostare il numero massimo di tweet da cercare (1-10) e poi cliccare su "Confirm".
+		\item Impostare il numero massimo di tweets da cercare (1-10);
+		\item Cliccare su "Confirm".
 	\end{enumerate}
 	\item Cliccare su "Fatto".
 \end{enumerate}
 
-\subsubsection{Blocco TwitterUserTimeline}
-L'utente inserendo questo blocco nel suo workflow potrà ascoltare i tweets di un altro utente a sua scelta tramite Alexa. \\
-\textbf{NOTA BENE:} la ricerca restituisce i primi 10 risultati che trova se non viene impostato alcun limite sul numero di tweets da cercare.
+\subsubsection{Blocco TwitterUserTimeline} \label{twitterU}
+L'utente inserendo questo blocco nel suo\glossario{workflow}potrà ascoltare i tweets di un altro utente a sua scelta tramite \textit{Alexa$_{G}$}. \\
+\textbf{NOTA BENE:} per default, la ricerca restituisce i primi 10 risultati trovati se non viene impostato alcun limite sul numero di tweets da cercare.
 \begin{enumerate}
 	\item Nella schermata di elenco dei blocchi cliccare su "Twitter";
 	\item Cliccare il blocco "TwitterUser" come mostrato in figura;
@@ -163,14 +164,15 @@ L'utente inserendo questo blocco nel suo workflow potrà ascoltare i tweets di u
 	\item (Facoltativo) impostare filtro ricerca:
 	\begin{enumerate}
 		\item Premere l'icona a forma di imbuto;
-		\item Impostare il numero massimo di tweet da cercare (1-10) e poi cliccare su "Confirm".
+		\item Impostare il numero massimo di tweets da cercare (1-10);
+		\item Cliccare su "Confirm".
 	\end{enumerate}
 	\item Cliccare "Conferma";
 \end{enumerate}
 
-\subsubsection{Blocco TwitterHomeTimeline}
+\subsubsection{Blocco TwitterHomeTimeline} \label{twitterHo}
 L'utente inserendo questo blocco nel suo workflow potrà ascoltare i tweets presenti sulla sua home. \\
-\textbf{NOTA BENE:} la ricerca restituisce i primi 10 risultati che trova se non viene impostato alcun limite sul numero di tweets da cercare.
+\textbf{NOTA BENE:} per default, la ricerca restituisce i primi 10 risultati trovati se non viene impostato alcun limite sul numero di tweets da cercare.
 \begin{enumerate}
 	\item Nella schermata di elenco dei blocchi cliccare su "Twitter";
 	\item Cliccare il blocco "TwitterHome" come mostrato in figura;
@@ -179,12 +181,13 @@ L'utente inserendo questo blocco nel suo workflow potrà ascoltare i tweets pres
 	\item Inserire username e password;
 	\begin{enumerate}
 		\item Premere l'icona a forma di imbuto;
-		\item Impostare il numero massimo di tweet da cercare (1-10) e poi cliccare su "Confirm".
+		\item Impostare il numero massimo di tweets da cercare (1-10);
+		\item Cliccare su "Confirm".
 	\end{enumerate}
 	\item Infine cliccare "Fatto" per aggiungere tale blocco al workflow.
 \end{enumerate}
 
-\subsubsection{Blocco TwitterWrite}
+\subsubsection{Blocco TwitterWrite} \label{twitterW}
 Questo blocco consente all'utente di pubblicare dei tweets tramite Alexa sul suo profilo Twitter. \\
 \textbf{NOTA BENE:} il testo del tweet da pubblicare bisogna dettarlo durante 	l'esecuzione del workflow ad Alexa.
 \begin{enumerate}
