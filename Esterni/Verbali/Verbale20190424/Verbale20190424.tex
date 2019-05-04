@@ -1,0 +1,101 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{ZeroSeven}
+
+\titlepage{}
+\author{Stefano Zanatta}
+\date{2019-04-24}
+\intestazioni{\includegraphics[scale=0.3]{images/logo_intestazione}}
+\pagestyle{myfront}
+\begin{document}
+	\begin{titlepage}
+		\centering
+		{\huge\bfseries MegAlexa\par}
+		Arricchitore di skill di Amazon Alexa
+		\line(1,0){350} \\
+		{\scshape\LARGE Verbale Esterno del 2019-04-24 \par}
+		\vspace{1cm}
+		{\scshape Gruppo ZeroSeven \par}
+		\logo
+		%devono essere compilati questi campi ogni volta
+		\begin{tabular}{c|c}
+			{\hfill \textbf{Versione}} 			& 1.0.0			\\
+			{\hfill\textbf{Data redazione}} 	& 2019-04-24\\ 
+			{\hfill\textbf{Redazione}} 			&  Stefano Zanatta	\\ 
+			{\hfill\textbf{Verifica}} 				&  	  Ludovico Brocca\\ 
+			{\hfill\textbf{Approvazione}} 		&  	Matteo Depascale \\ 
+			{\hfill\textbf{Uso}} 					& 	Esterno	\\ 
+			{\hfill\textbf{Distribuzione}} 			& 			Prof. Tullio Vardanega \\ & Prof. Riccardo Cardin \\ & Gruppo ZeroSeven \\ & Zero12 s.r.l.	\\ 
+			{\hfill\textbf{Email di contatto}} & zerosevenswe@gmail.com \\
+		\end{tabular}
+	\end{titlepage}
+	
+	
+	
+	\label{LastFrontPage}
+	
+	
+	\newpage
+	\cleardoublepage
+	\begin{table}[tbph]
+		\centering
+		\begin{tabularx}{\textwidth}{|c|c|X|X|c|}
+			\hline
+			\textbf{Versione} & \textbf{Data} & \textbf{Descrizione} & \textbf{Autore} & \textbf{Ruolo} \\
+			\hline
+			1.0.0 & 2019-04-27 & Approvazione per il rilascio &Matteo Depascale & Responsabile \\
+			\hline
+			0.1.0 & 2019-04-25 & Verifica documento & Ludovico Brocca & Verificatore \\
+			\hline
+			0.0.2 & 2019-04-24 & Stesura verbale &Stefano Zanatta & Analista \\
+			\hline
+			0.0.1 & 2018-12-08 & Creazione template documento & Ludovico Brocca & Amministratore\\
+			\hline
+		\end{tabularx}
+		\caption{Registro delle modifiche}
+	\end{table}
+	\cleardoublepage
+	\pagestyle{mymain}
+	
+	\tableofcontents
+	\cleardoublepage
+	\section{Informazioni sulla riunione}
+\subsection{Motivo della riunione}\ Questo verbale è il risultato di una comunicazione con la \glossario{proponente} tramite email, nelle quali si sono comunicati gli avanzamenti nello sviluppo del progetto e si sono discussi alcuni problemi riguardanti l'implemtentazione del\glossario{prodotto}software.
+
+\begin{itemize}
+	\item \textbf{Luogo e data}: Inizio comunicazione tramite email il giorno Mercoledì 24 Marzo 2019;
+	\item \textbf{Partecipanti}:  
+	\begin{itemize}
+		\item Gian Marco Bratzu;
+		\item Bianca Ciuche;
+		\item Ludovico Brocca;
+		\item Andrea Deidda;
+		\item Matteo Depascale;
+		\item Stefano Zanatta;
+		\item Sig. Stefano Dindo.
+	\end{itemize}
+\end{itemize}
+	
+	
+	\section{Resoconto}
+	\subsection{Argomenti discussi}
+	\begin{itemize}		
+		\item Si è discusso di un problema riscontrato nell'implementazione del blocco\glossario{Amazon}Music, infine si è deciso di interrompere lo sviluppo del blocco;
+		\item E' stato inviato il materiale richiesto nel\glossario{capitolato}tra cui il documento \emph{Analisi dei Requisiti}, la documentazione relativa il Voice Dialog Flow, lo schema del database relativo a\glossario{DynamoDB}, i test di unità e di integrazione implementati.
+	\end{itemize}
+	
+	\newpage
+	\subsection{Tracciamento decisioni}
+	\begin{table}[tbph]
+		\centering
+		\begin{tabularx}{\textwidth}{|C|C|}
+			\hline
+			\textbf{Codice } & \textbf{Decisione} \\
+			\hline
+			01-VER\_2019-04-24 &Viene interrotta l'implementazione del blocco Amazon Music;\\
+			\hline
+			02-VER\_2019-04-24&Invio materiale richiesto nel \glossario{capitolato}alla proponente;\\
+			\hline
+		\end{tabularx}
+		\caption{Tracciamento decisioni}
+	\end{table}
+\end{document}
