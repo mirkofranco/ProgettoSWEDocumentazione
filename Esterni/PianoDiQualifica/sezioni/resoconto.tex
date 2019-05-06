@@ -192,7 +192,7 @@ L'andamento della budget variance rispetta quello della schedule variance.\\
 		\end{itemize} 
 	\item \textbf{QP003:} I rischi sono mitigati dal fatto che il gruppo è composto da 7 membri, quindi, se qualcuno ha delle difficoltà a svolgere il proprio lavoro, è facile che un altro membro del gruppo sia disposto ad aiutarlo;
 	\item \textbf{QP004:} La verifica del software risulta abbastanza semplice, dato che più membri del gruppo hanno esperienza (scolastica) nella produzione di test di unità e integrazione. Questo è supportato dal tool Travis-CI e dalla abbondante documentazione per i test su Node.js. Risulta però ancora ostico lavorare usando il Test Driven Development;
-	\item \textbf{QP005:} I test di sistema, integrazione (lato API Gateway - database) risultano difficili da automatizzare, dato che molti dei tool automatici sono a pagamento. Il compito viene quindi svolto a mano, anche se il gruppo ha deciso di produrre uno script per eseguire test funzionali, entro il periodo di Verifica e Collaudo;
+	\item \textbf{QP005:} I test di sistema, integrazione (lato API Gateway - database) risultano difficili da automatizzare, dato che molti dei tool automatici sono a pagamento. Il compito viene quindi svolto a mano, anche se il gruppo ha deciso di produrre uno script per eseguire test funzionali, entro il periodo di Valudazione e Collaudo;
 	\item \textbf{QP006:} Il versionamento è completamente automatizzato tramite Travis-CI. Per l' applicazione Android è stato semplice, grazie a Gradle; la Skill, essendo scritta in \glossario{TypeScript}, ha bisogno di essere compilata in javascript, prima di essere pubblicata su AWS Lambda. \\Questo genera molti file .js che sporcano l'ambiente di lavoro. Per risolvere il problema, il gruppo ha prodotto degli script che si occupano di fare pulizia prima di trasferire i file su Github, e per fare il deploy automatico su AWS Lambda.
 \end{itemize}
 Di seguito viene riportata la tabella con il nome di ogni processo associato al suo codice per facilitare la lettura del grafico:
@@ -226,7 +226,7 @@ Durante il periodo di progettazione di dettaglio e codifica, PragmaDB ha avuto q
 \textbf{Passato}\\
 Queste metriche sono state usate per calcolare la manuntenibilità del codice, grazie alla piattaforma di test statici SonarCloud. Questo permette di visualizzare la qualità del software in un solo grafico ricco di informazioni.\\
 Il seguente grafico presenta nelle ascisse le linee di codice, nelle ordinate il tempo previsto di risoluzione del problema, la grandezza del cerchio indica la quantità di linee di codice e il colore del cerchio corrisponde alla gravità del problema.\\
-Tutti i problemi non in verde sono stati risolti, in quanto indicano un possibile errore grave durante l'esecuzione del codice. Quelli in verde verranno risolti durante il periodo di Verifica e Collaudo.\\
+Tutti i problemi non in verde sono stati risolti, in quanto indicano un possibile errore grave durante l'esecuzione del codice. Quelli in verde verranno risolti durante il periodo di Valudazione e Collaudo.\\
 \begin{figure} [H]
     \centering
 	\includegraphics[scale=0.5]{./images/manPDC.png}
@@ -286,7 +286,7 @@ Il seguente grafico contiene il numero totale di commit giornalieri. Questi risu
 \subsection{MP015, MP016: Percentuale requisiti soddisfatti}
 \textbf{Passato}\\
 Sono stati soddisfatti tutti i requisiti che il gruppo aveva preventivato per il periodo di progettazione di dettaglio e codifica, con l'eccezione del requisito riguardante la sveglia, che attualmente non è possibile implementare usando le API fornite da Alexa Skill Kit (dopo una riunione con la proponente, e con la sua approvazione,  questo requisito è stato spostato in "facoltativo - non accettato").
-Il gruppo ha stimato che i requisiti obbligatori non soddisfatti richiederanno poco lavoro, in quanto presentano aspetti simili ad altri requisiti (sotto il punto di vista della progettazione in dettaglio e codifica). I requisiti desiderabili e facoltativi sono per la maggior parte riguardanti aspetti secondari del prodotto (invece che blocchi), quindi compresi nelle attività di verifica e collaudo.\\
+Il gruppo ha stimato che i requisiti obbligatori non soddisfatti richiederanno poco lavoro, in quanto presentano aspetti simili ad altri requisiti (sotto il punto di vista della progettazione in dettaglio e codifica). I requisiti desiderabili e facoltativi sono per la maggior parte riguardanti aspetti secondari del prodotto (invece che blocchi), quindi compresi nelle attività di Valudazione e Collaudo.\\
 Come richiesto dal committente, molti dei requisiti sono stati scomposti in requisiti più specifici.\\
 Su una totalità di 41 requisiti funzionali, 15 di questi, dopo un'attenta discussione interna e successivamente con la proponente, sono stati identificati come "facoltativo - non accettato".
 
@@ -308,7 +308,7 @@ Gli errori grammaticali trovati durante una ispezione finale sono stati meno di 
 \textbf{Passato 6/6}\\
 Il seguente grafico è stato generato attraverso un bot che calcola giornalmente l'indice di gulpease dei documenti.\\
 Si può notare come l'indice di gulpease è sempre stato sopra il limite di accettazione e ottimalità.\\
-Il gruppo si impegna ad aggiungere anche il manuale svulippatore e manuale utente tra i documenti controllati dallo script automatico di Gulpease per il periodo di Verifica e Collaudo.\\I valori calcolati alla fine del periodo di Progettazione di dettaglio e codifica per manuale Sviluppatore e Utente è di:
+Il gruppo si impegna ad aggiungere anche il manuale svulippatore e manuale utente tra i documenti controllati dallo script automatico di Gulpease per il periodo di Valudazione e Collaudo.\\I valori calcolati alla fine del periodo di Progettazione di dettaglio e codifica per manuale Sviluppatore e Utente è di:
 \begin{itemize}
 	\item \textbf{Manuale sviluppatore: 74};
 	\item \textbf{Manuale utente: 79}.
@@ -320,5 +320,153 @@ Il gruppo si impegna ad aggiungere anche il manuale svulippatore e manuale utent
 \end{figure}
 
 
-\section{Verifica e collaudo}
-Questa sezione verrà compilata alla fine del periodo di Verifica e collaudo.
+
+
+
+
+\section{Validazione e collaudo}
+Durante il periodo di validazione e collaudo il gruppo ha finito lo sviluppo della skill e della applicazione, completato i test e cercato la maturità dei documenti. L'esperienza accumulata da ogni membro del gruppo ha consento di attuare queste attività in modo efficiente ed efficace.\\
+\subsection{MP001: Schedule variance}
+\textbf{Passato}\\
+La schedule variance rispetta quanto pianificato. Ognuno ha eseguito il suo lavoro senza ritardi notevoli.
+\begin{figure} [H]
+    \centering
+	\includegraphics[scale=0.4]{./images/RA_schedule.png}
+	\caption{\textit{MP001 - schedule variance - Validazione e collaudo}}\label{}
+\end{figure}
+
+\subsection{MP002: Budget variance}
+\textbf{Passato}\\
+L'andamento della budget variance rispetta quello della schedule variance.\\
+\begin{figure} [H]
+    \centering
+	\includegraphics[scale=0.5]{./images/RA_budget.png}
+	\caption{\textit{MP002 - budget variance - Validazione e collaudo}}\label{}
+\end{figure}
+\subsection{MP003: SPICE capability level}
+\textbf{Passato 4/6}
+\begin{itemize}
+	\item \textbf{QP001:} Tutti eseguono quel che gli viene assegnato su Asana, senza che il responsabile gli scriva direttamente;
+	\item \textbf{QP002:} Il miglioramento dei processi è da migliorare, in quanto richiede esperienza su più di un progetto;
+	\item \textbf{QP003:} Ogni problema è stato attivimente gestito tramite ticket su Asana e pianificazione di soluzioni preventive per i rischi individuati;
+	\item \textbf{QP004:} La scrittura dei test di integrazione e sistema si è rilevata efficiente ed efficace. I test di unità si sono dimostrati troppo ostici per essere prodotti efficacemente, ma alla fine si sono rivelati buoni per i test di regressione;
+	\item \textbf{QP005:} Travis esegue test di unità e integrazione automaticamente, inviando un'email a colui che causa una build non funzionante. I test di sistema sono stati effettuati attraverso la piattaforma Amazon Lambda, figendo delle interazioni dell'utente con la Skill in modo automatico;
+	\item \textbf{QP006:} Il versionamento è rimasto invariato dal periodo di \textit{Progettazione di dettaglio e codifica}, in quanto abbiamo cercato di migliorare i test.
+\end{itemize}
+Di seguito viene riportata la tabella con il nome di ogni processo associato al suo codice per facilitare la lettura del grafico:
+\begin{itemize}
+	\item QP001: Pianificazione delle attività di progetto, valutazione e controllo dei processi \S\ref{pro1};
+	\item QP002: Miglioramento continuo delle attività di processo \S\ref{pro2};
+	\item QP003: Analisi e prevenzione dei rischi \S\ref{pro3};
+	\item QP004: Verifica del software \S\ref{pro4};
+	\item QP005: Gestione dei test \S\ref{pro5};
+	\item QP006: Versionamento e build \S\ref{pro6}.
+\end{itemize}
+\begin{figure}[H]
+    \centering
+	\includegraphics[scale=0.7]{./images/RA_spice.png}
+    \caption{\textit{MP003 - ISO/IEC 15504 - }}
+\end{figure}
+
+\subsection{MP005:  Occorrenza rischi non previsti}
+\textbf{Passato}\\
+Questo periodo è stato 
+\textbf{Rischi non previsti: 0}
+
+\subsection{MP006: Indisponibilità dei servizi}
+\textbf{Passato}\\
+\textbf{Indisponibilità dei servizi: 0}\\
+Non ci sono stati problemi riguardati l'indisponibilità dei servizi.
+
+\subsection{MP007 MP008 MP009 MP010 MP011 }
+\textbf{Passato}\\
+Queste metriche sono state usate per calcolare la manuntenibilità del codice, grazie alla piattaforma di test statici SonarCloud. Questo permette di visualizzare la qualità del software in un solo grafico ricco di informazioni.\\
+Il seguente grafico presenta nelle ascisse le linee di codice, nelle ordinate il tempo previsto di risoluzione del problema, la grandezza del cerchio indica la quantità di linee di codice e il colore del cerchio corrisponde alla gravità del problema.\\
+Tutti i problemi non in verde sono stati risolti, in quanto indicano un possibile errore grave durante l'esecuzione del codice. Quelli in verde verranno risolti durante il periodo di Valudazione e Collaudo.\\
+\begin{figure} [H]
+    \centering
+	\iffalse \includegraphics[scale=0.5]{./images/#todo}\fi
+    \caption{\textit{MP007 MP008 MP009 MP010 MP011 - manuntenibilità del codice app Android - }}\label{}
+\end{figure}
+\begin{figure} [H]
+    \centering
+	\iffalse\includegraphics[scale=0.5]{./images/#todo}\fi
+    \caption{\textit{MP007 MP008 MP009 MP010 MP011 - manuntenibilità del codice Skill - Validazione e Collaudo}}\label{}
+\end{figure}
+
+\subsection{MP011: Tempo medio per risolvere un errore} 
+\textbf{Passato}\\
+\textbf{tempo medio per risolvere un errore: 31.21 minuti.}\\
+Vale quando detto nel periodo precedente, cioè la risuluzione dei problemi nella skill rimane qualcosa di lungo da fare (significa correggere degli errori non individuati dai test di unità, che richiedono il rilascio nella piattaforma Alexa).
+\begin{figure} [H]
+    \centering
+	\includegraphics[scale=0.5]{./images/RA_errori.png}
+    \caption{\textit{MP013 - Skill - Validazione e Collaudo}}\label{}
+\end{figure}
+
+\subsection{MP012: Efficienza della progettazione dei test}
+\textbf{Passato}\\
+\textbf{tempo medio per sviluppare un test: 25 minuti.}\\
+La progettazione di ogni test velocizza la seguente, in quanto hanno molti punti in comune tra di loro. Questo permette di velocizzare complessivamente la stesura dei test.
+\begin{figure} [H]
+    \centering
+	\includegraphics[scale=0.4]{./images/RA_test.png}
+    \caption{\textit{MP013 - media minuti per test - Validazione e Collaudo}}\label{}
+\end{figure}
+
+\subsection{MP013: Percentuale build superate}
+\textbf{Passato}\\
+Viene fatta distinzione tra Android e Skill, in quanto vengono contenute in repository diversi.\\
+Le build dell'applicazione Android sono state per la maggior parte positive. \\
+\begin{figure} [H]
+    \centering
+	\includegraphics[scale=0.4]{./images/RA_buildapp.png}
+    \caption{\textit{MP013 - Android - Validazione e Collaudo}}\label{}
+\end{figure}
+Le build della Skill (progetto Node.js) risultano con molti errori. Questo è dovuto al fatto che sono stati sviluppati test di unità e integrazione prima di produrre il codice. Per questo motivo questa metrica è considerata come passata.\\
+\begin{figure} [H]
+    \centering
+	\includegraphics[scale=0.4]{./images/RA_buildskill.png}
+    \caption{\textit{MP013 - Skill - Validazione e Collaudo}}\label{}
+\end{figure}
+
+\subsection{MP014: Media commit giornaliera}
+\textbf{Passato}\\
+Il seguente grafico contiene il numero totale di commit giornalieri. Questi risultano poco omogenei, in quanto questo periodo è stato caratterizzato da cicli formati da progettazione di dettaglio (giornate con pochi commit) e codifica (molti commit).\\
+\begin{figure} [H]
+    \centering
+	\includegraphics[scale=0.4]{./images/RA_builds.png}
+    \caption{\textit{MP014 numero commit giornalieri - Validazione e Collaudo}}
+\end{figure}
+
+\subsection{MP015, MP016: Percentuale requisiti soddisfatti}
+\textbf{Passato}\\
+Come già avvenuto nel periodo precedente, alcuni requisiti si sono rivelati non realizzabili: Amazon music e la gestione delle luci di casa. Come concordato con la proponente, abbiamo messo quei requisiti come non soddisfatti.
+Nel totale, i requisiti totali soddisfatti superano l'80\%. I requisiti funzionali obbligatori, di vincolo e di qualità sono stati soddisfatti al 100\%. 
+\begin{figure} [H]
+    \centering
+	\includegraphics[scale=0.5]{./images/RA_reqg.png}
+    \caption{\textit{MP015 - MP016 Tipologia di requisiti - Validazione e Collaudo}}
+\end{figure}
+\begin{figure} [H]
+    \centering
+	\includegraphics[scale=0.5]{./images/RA_totsod.png}
+    \caption{\textit{MP015 - MP016  requisiti soddisfatti / non soddisfatti - Validazione e Collaudo}}
+\end{figure}
+\begin{figure} [H]
+    \centering
+	\includegraphics[scale=0.5]{./images/RA_obsod.png}
+    \caption{\textit{MP015 - MP016  requisiti obbligatori soddisfatti / non soddisfatti - Validazione e Collaudo}}
+\end{figure}
+
+\subsection{MPR001 Ortografia}
+\textbf{Passato}\\
+Gli errori grammaticali trovati durante una ispezione finale sono stati meno di 2 per documento.
+\subsection{MPR002 Indice di Gulpease}
+\textbf{Passato 6/6}\\
+Come negli altri periodi, i test sui documenti sono stati eseguiti in maniera automatica.
+\begin{figure} [H]
+    \centering
+	\includegraphics[scale=0.5]{./images/RA_gul.png}
+    \caption{\textit{MPR002 \textit{Indice di Gulpease$_{G}$} - Validazione e Collaudo}}
+\end{figure}
