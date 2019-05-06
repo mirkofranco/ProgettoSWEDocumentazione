@@ -10,6 +10,7 @@ La skill è ospitata nel sito \url{https://developer.amazon.com/alexa/} (è nece
 
 La logica della skill si trova in una \textit{AWS Lambda$_{G}$}, quindi è serverless. Questo significa che viene creata una nuova istanza della Skill ogni volta che arriva una richiesta da Alexa (ogni utente genera una istanza diversa). L'architettura della Skill si basa sul concetto di avere una skill leggera, che esegue poche operazioni ogni volta che questa viene invocata.\\
 Una richiesta da parte di Alexa viene catturata dall'index, che la elabora e ritorna un risultato. Una richiesta è definita da un JSON contenente molteplici informazioni sullo stato del dialogo, l'utente, errori e molto altro. Una dettagliata descrizione si trova sulla documentazione di Amazon AWS\footnote{\url{https://developer.amazon.com/docs/custom-skills/request-and-response-json-reference.html}}.\\
+La lingua della skill viene impostata automaticamente a seconda della richiesta. Le frasi che Alexa può dire si trovano nei file di configurazione phrases-EN.json e phrases-IT.json.\\
 Le informazioni più importanti contenute nel file JSON sono:\label{paramsSkill}
 \begin{itemize}
     \item \textbf{handlerInput.requestEnvelope.request.type:} rappresenta il tipo di richiesta: IntentRequest o LaunchRequest. LaunchRequest rappresenta la prima iterazione con la skill ("Alexa, apri MegAlexa"), IntentRequest rappresenta tutte le altre richieste;
