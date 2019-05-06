@@ -31,8 +31,36 @@ La Skill può essere estesa in questi modi:
 \subsection{Nuovo blocco}\label{newBlock}
 Questa sezione verrà redatta quando il prodotto sarà completo.
 \subsection{Nuove frasi per Alexa}\label{newFrasi}
-Questa sezione verrà redatta quando il prodotto sarà completo.
+Il file phrases-EN.json e phrases-IT.json contengono tutte le frasi personalizzate che Alexa può dire. A ogni parola chiave (uguale per tutte le lingue) sono associate delle frasi (tradotte nella lingua relativa al file).\\
+Per inserire una nuova frase, è necessario inserirla nel relativo oggetto associato alla parola chiave. E' importante inserire la frase tradotta per tutti i file phrases-LINGUA.json.\\
+Per inserire una nuova parola chiave:
+\begin{itemize}
+	\item inserire un oggetto contenente come chiave la \textbf{parola chiave} e come contenuto una lista di stringhe, contenenti le frasi;
+	\item ripetere l'operazione precedente per ogni lingua;
+	\item inserire un nuovo metodo nella classe \textit{PhrasesGenerator.ts}, che ritorna la frase che Alexa deve dire;
+	\item l'attributo statico \textbf{jsonPhrases} contiene il file \textit{phrases-LINGUA.json} (la selezione della lingua viene fatta in automatico);
+	\item chiamare questo metodo in modo statico dove è necessario.
+\end{itemize}
+Per inserire una nuova lingua:
+\begin{itemize}
+	\item inserire un nuovo file \textit{phrases-LINGUA.json}, contenente tutte le parole chiavi presenti negli altri file di configurazione e le relative frasi tradotte;
+	\item nel metodo setLanguage aggiungere un case con la nuova lingua.
+\end{itemize} 
 \subsection{Nuovo metodo d'accesso al database} \label{newAccesso}
-Questa sezione verrà redatta quando il prodotto sarà completo.
+Tutti gli accessi al database, per quanto riguarda il download dei workflow, avvengono attraverso la classe \textbf{WorkflowService}, nel metodo \textit{workflowFromDatabase}.\\
+\'{E} possibile aggiungere una nuova funzione in \textbf{WorkflowService}, contenente un nuovo metodo d'accesso a un diverso database. Per esempio, può essere fatto attraverso una chiamata HTTP a un servizio REST, oppure usando un web socket. \'{E} necessario che il valore ritornato sia una lista di blocchi.\\
+Lo schema del blocco si può trovare nella cartella \textit{JSONconfigurations}, nel file \textit{JSONconfiguration.ts}, con la chiave (\textbf{BlockJSON}).
+
 \subsection{Nuovo sistema di autenticazione}\label{newAuth}
-Questa sezione verrà redatta quando il prodotto sarà completo.
+L'autenticazione, nella versione 1.0.0 della skill, avviene solo attraverso Amazon.\\
+Il file contenente la richiesta dell'utente (dal Alexa) contiene anche un \textbf{accessToken}. Questo viene utilizzato dalla classe \textbf{User}, dal metodo \textit{credentialsByAccessToken}, per estrarre l'\textbf{AmazonID} dell'utente (lo stesso salvato nel database).\\
+Questo sistema è basato su oauth, anche se tutta la parte a basso livello è gestita da Amazon.\\
+Per aggiungere un altro sistema di autenticazione basato su oauth:
+\begin{itemize}
+	\item creare una nuova configurazione Oauth e ottenere i dati d'accesso (URI, clientID, secret...);
+	\item aprire il pannello di controllo di Alexa \footnote{\url{https://developer.amazon.com/alexa/console/ask}};
+	\item accedere alla skill MegAlexa;
+	\item aprire la sezione "account linking";
+	\item inserire i dati richiesti, generati da oauth;
+	\item nella skill MegAlexa, modificare la funzione \textit{credentialsByAccessToken}, nella classe \textbf{User}, così che sia compatibile con il nuovo servizio (ciò che cambia sarà l'ID e la chiamata GET per ottenerlo).
+\end{itemize}
