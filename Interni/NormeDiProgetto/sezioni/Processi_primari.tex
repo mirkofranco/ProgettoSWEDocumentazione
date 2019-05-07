@@ -47,6 +47,7 @@ Di seguito viene indicata la documentazione che verrà fornita alla\glossario{Pr
 %Vengono verbalizzati tutti gli incontri avvenuti con l'azienda Zero12 s.r.l., la redazione del verbale esterno è compito degli %\textit{Analisti}. I verbali esterni verranno inclusi nella documentazione fornita, inoltre si cercherà, ove possibile, di inviare una copia %del suddetto verbale all'azienda cliente.
 
 \section{Sviluppo}
+\label{Sviluppo}
 Il\glossario{processo}di sviluppo comprende tutte le attività e i compiti svolti dal gruppo per produrre il software richiesto dal \textit{proponente$_{G}$}.\\ Dallo sviluppo del\glossario{prodotto}ci si aspetta che questo soddisfi i test di verifica e di validazioni, gli obiettivi imposti e i bisogni della Proponente. Il processo di sviluppo si svolge secondo lo standard \textit{ISO/IEC 12207}.
 \subsection{Analisi dei requisiti}
 Gli \textit{Analisti} si occupano di analizzare nel dettaglio i\glossario{requisiti}che il prodotto finale dovrà soddisfare, il risultato viene poi documentato nell' \textit{Analisi dei Requisiti}. Vengono utilizzati i casi d'uso per l'analisi e la ricerca dei requisiti.
@@ -170,7 +171,7 @@ Al fine di rendere chiare e comprensibili le scelte progettuali effettuate e rid
 \end{itemize}
 
 
-\subsection{Diagrammi delle classi}
+\subsubsection{Diagrammi delle classi}
 \label{DiagrammiDelleClassi}
 Lo scopo del diagrammi delle classi può essere riassunto in:
 \begin{itemize}
@@ -244,7 +245,7 @@ I diagrammi delle classi sono collegati fra loro da frecce che esplicitano le di
 
 
 
-\subsection{Diagrammi di sequenza}
+\subsubsection{Diagrammi di sequenza}
 \label{DiagrammiSequenza}
 I diagrammi di sequenza descrivono la collaborazione di un gruppo di oggetti che devono implementare collettivamente un comportamento. Ogni diagramma di sequenza avrà un senso di lettura verticale dall'alto al basso, verso che indica lo scorrere del tempo. I partecipanti vengono rappresentati tramite un rettangolo, al cui interno si trova un nome per identificarli rispettando la sintassi \texttt{name : Class}. Al di sotto di ogni istanza si trova la linea della vita. In ogni linea della vita ci sarò una barra di attivazione che indica in quale momento un partecipante è attivo. Da una barra di attivazione partono delle frecce, che rappresentano un messaggio, verso la linea della vita di oggetti già istanziati o, in alternativa, verso un nuovo partecipante per crearlo. 
 In particolare , vengono utilizzati i seguenti tipi di frecce:
@@ -256,7 +257,7 @@ In particolare , vengono utilizzati i seguenti tipi di frecce:
 	\item Freccia piena sormontata da << destroy >>: indica la distruzione di un oggetto e termina sempre in una X, nella quale termina anche la linea della vita di un oggetto.
 \end{itemize}
 
-\subsection{Diagrammi di attività}
+\subsubsection{Diagrammi di attività}
 \label{DiagrammiAttivita}
 I diagrammi di attività descrivono la logica procedurale decomponendo un'attività in un insieme di azioni. Essi contengono i seguenti elementi collegati sempre da frecce, che vengono indicati come mostrato di seguito:
 \begin{itemize}
@@ -289,7 +290,7 @@ I diagrammi di attività descrivono la logica procedurale decomponendo un'attivi
 	\item \textbf{Nodo di fine flusso:} rappresentato da un cerchio vuoto con una X al centro, indica un punto in cui uno dei rami di esecuzione muore, ma l'esecuzione prosegue negli altri rami;
 	\item \textbf{Nodo finale:} rappresentato da due cerchi concentrici di cui il più esterno vuoto, indica il punto in cui l'esecuzione termina.
 	
-	\subsection{Diagrammi dei package}
+	\subsubsection{Diagrammi dei package}
 	\label{DiagrammiPackage}
 	Ogni package viene rappresentato attraverso un rettangolo con un'etichetta per il nome, che può contenere eventuali sotto-package. Le dipendenze tra i vari package vengono segnalate attraverso una freccia tratteggiata. Tale freccia, disegnata dal package A al package B, indica una dipendenza di A nei confronti di B.
 	\begin{figure}[H]
