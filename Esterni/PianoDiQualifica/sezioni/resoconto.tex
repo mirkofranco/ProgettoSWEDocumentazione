@@ -380,24 +380,30 @@ Non ci sono stati problemi riguardati l'indisponibilità dei servizi.
 
 \subsection{MP007 MP008 MP009 MP010 MP011 }
 \textbf{Passato}\\
-Queste metriche sono state usate per calcolare la manuntenibilità del codice, grazie alla piattaforma di test statici SonarCloud. Questo permette di visualizzare la qualità del software in un solo grafico ricco di informazioni.\\
-Il seguente grafico presenta nelle ascisse le linee di codice, nelle ordinate il tempo previsto di risoluzione del problema, la grandezza del cerchio indica la quantità di linee di codice e il colore del cerchio corrisponde alla gravità del problema.\\
-Tutti i problemi non in verde sono stati risolti, in quanto indicano un possibile errore grave durante l'esecuzione del codice. Quelli in verde verranno risolti durante il periodo di Valudazione e Collaudo.\\
+I seguenti grafici descrivono la manuntenibilità del codice, calcolata da SonarCloud usando le metriche riportate nel titolo.\\
+\begin{itemize}
+	\item \textbf{Ascisse:} linee di codice;
+	\item \textbf{Ordinate:} tempo previsto di risoluzione del problema;
+	\item \textbf{Grandezza del cerchio:} quantità di linee di codice;
+	\item \textbf{Colore del cerchio:} gravità del problema.
+\end{itemize}
+Sono rimasti alcuni problemi, che il gruppo ha ritenuto irrilevanti, come alcune ripetizioni di codice, difficilmente e costosamente risolvibili. 
 \begin{figure} [H]
     \centering
-	\iffalse \includegraphics[scale=0.5]{./images/#todo}\fi
-    \caption{\textit{MP007 MP008 MP009 MP010 MP011 - manuntenibilità del codice app Android - }}\label{}
+	\includegraphics[scale=0.5]{./images/RA_app_sonar.png}
+    \caption{\textit{MP007 MP008 MP009 MP010 MP011 - manuntenibilità del codice app Android - Validazione e Collaudo}}\label{}
 \end{figure}
 \begin{figure} [H]
     \centering
-	\iffalse\includegraphics[scale=0.5]{./images/#todo}\fi
+	\includegraphics[scale=0.5]{./images/RA_skill_sonar.png}
     \caption{\textit{MP007 MP008 MP009 MP010 MP011 - manuntenibilità del codice Skill - Validazione e Collaudo}}\label{}
 \end{figure}
 
 \subsection{MP011: Tempo medio per risolvere un errore} 
 \textbf{Passato}\\
 \textbf{tempo medio per risolvere un errore: 31.21 minuti.}\\
-Vale quando detto nel periodo precedente, cioè la risuluzione dei problemi nella skill rimane qualcosa di lungo da fare (significa correggere degli errori non individuati dai test di unità, che richiedono il rilascio nella piattaforma Alexa).
+Vale quando detto nel periodo precedente, cioè la risuluzione dei problemi nella skill rimane qualcosa di costoso e poco efficente da eseguire. Questo perché, per risolvere i problemi che non vengono segnalati dai test di integrazione e unità, è necessario il rilascio della skill in AWS Lambda.\\
+Per quanto riguarda l'App Android, invece, la risoluzione dei problemi risulta più veloce, in quanto tutto il sistema è concentrato nella stessa macchina.
 \begin{figure} [H]
     \centering
 	\includegraphics[scale=0.5]{./images/RA_errori.png}
