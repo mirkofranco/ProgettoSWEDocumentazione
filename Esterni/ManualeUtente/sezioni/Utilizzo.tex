@@ -67,7 +67,7 @@ Lo scopo di questo blocco è quello di effettuare una sorta di autenticazione de
 	
 	\begin{figure}[!ht]
 		\centering
-		\fbox{\includegraphics[scale=0.3]{images/BlockPIN.jpg}}
+		\fbox{\includegraphics[scale=0.2]{images/BlockPIN.jpg}}
 		\caption{Blocco PIN}
 	\end{figure}
 \end{enumerate}
@@ -79,12 +79,26 @@ Il seguente procedimento, uguale per tutti i blocchi, spiegherà come aggiungere
 \textbf{NOTA BENE:} il blocco filtro è applicabile solo ai seguenti blocchi: Stock, Crypto, FeedRSS, News, ReadEmail, Calendar, TwitterUserTimeline, TwitterHomeTimeline, TwitterHashtag, List e Sport. Il filtro viene aggiunto in automatico a tutti i questi blocchi e viene impostato per default a 10 elementi (5 per Read Mail).
 \begin{enumerate}
 	\item Cliccare sul simbolo a forma di imbuto;
+	\begin{comment}
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.2]{images/BlockFilter.jpg}}
+		\caption{Blocco filtro}
+	\end{figure}
+	\end{comment}
 	\item Nella finestra che appare:
 	\begin{enumerate}
 		\item Nella finestra che appare scegliamo il numero di elementi che ci interessa ascoltare;
 		\item Premere "Cancel" per annullare l'operazione di inserimento del filtro;
 		\item Oppure per confermare cliccare "Confirm".
 	\end{enumerate}
+	\begin{comment}
+	\begin{figure}[!ht]
+	\centering
+	\fbox{\includegraphics[scale=0.2]{images/BlockFilter2.jpg}}
+	\caption{Impostazione blocco filtro}
+	\end{figure}
+	\end{comment}
 \end{enumerate}
 
 \subsubsection{Blocco FeedRSS}
@@ -154,7 +168,13 @@ Con questo blocco l'utente può scegliere da quale feedRSS ascoltare le ultime n
 Questo blocco permette all'utente di creare, aggiungere e modificare degli elementi di testo di una lista.
 È possibile modificare la lista tramite app oppure tramite interazione con l'Amazon Echo. \\ 
 Cliccare sul tasto "Fatto" per aggiungere al proprio workflow una lista vuota.
-
+\begin{comment}
+\begin{figure}[!ht]
+	\centering
+	\fbox{\includegraphics[scale=0.2]{images/BlockList.jpg}}
+	\caption{Blocco lista}
+\end{figure}
+\end{comment}
 \textbf{NOTA BENE:} le operazioni di rimozione e modifica dell'ordine, descritte nei prossimi punti, sono permesse solo dopo l'aggiunta di elementi alla lista tramite Alexa.
 \begin{itemize}
 	\item \textbf{Rimozione elementi dalla lista}
@@ -165,10 +185,24 @@ Cliccare sul tasto "Fatto" per aggiungere al proprio workflow una lista vuota.
 			\item Cliccare sul tasto "Delete" per eliminare l'elemento;
 			\item Oppure cliccare "Cancel" per annullare l'operazione.
 		\end{enumerate}
+	\begin{comment}
+	\begin{figure}[!ht]
+	\centering
+	\fbox{\includegraphics[scale=0.2]{images/DeleteItem.jpg}}
+	\caption{Rimozione elemento della lista}
+	\end{figure}
+	\end{comment}
 	\end{enumerate}
 	\item \textbf{Modifica posizione elementi}
 	\begin{enumerate}
 		\item Tenere premuto per un paio di secondi sull'elemento interessato e trascinarlo nella posizione desiderata. 
+		\begin{comment}
+		\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.2]{images/ShiftItem.jpg}}
+		\caption{Modifica ordine elementi nella lista}
+		\end{figure}
+		\end{comment}
 	\end{enumerate}
 \end{itemize}
 
@@ -178,9 +212,19 @@ L'utente con l'aggiunta di questo blocco può effettuare una ricerca dei tweets 
 \begin{enumerate}
 	\item Nella schermata di elenco dei blocchi cliccare su "Twitter";
 	\item Cliccare il blocco "TwitterHashtag" come mostrato in figura;
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.2]{images/BlockTwitter1.jpg}}
+		\caption{Blocchi Twitter disponibili}
+	\end{figure}
 	\item Inserire la parola chiave di ricerca preceduta dal simbolo "\#";
 	\item (Facoltativo) Inserire un filtro per la ricerca (punto \ref{filter});
 	\item Cliccare su "Fatto".
+	\begin{figure}[!ht]
+	\centering
+	\fbox{\includegraphics[scale=0.2]{images/BlockTwitterHashtag.jpg}}
+	\caption{Blocco ricerca tweets per hashtag}
+	\end{figure}
 \end{enumerate}
 
 \subsubsection{Blocco TwitterUserTimeline} \label{twitterU}
@@ -189,27 +233,56 @@ L'utente inserendo questo blocco nel suo\glossario{workflow}potrà ascoltare i t
 \begin{enumerate}
 	\item Nella schermata di elenco dei blocchi cliccare su "Twitter";
 	\item Cliccare il blocco "TwitterUser" come mostrato in figura;
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.2]{images/BlockTwitter2.jpg}}
+		\caption{Blocchi Twitter disponibili}
+	\end{figure}
 	\item Inserire l'username di un utente preceduto dal simbolo "@";
 	\item (Facoltativo) Inserire un filtro per la ricerca (punto \ref{filter});
 	\item Cliccare "Conferma".
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.2]{images/BlockTwitterUser.jpg}}
+		\caption{Blocco ascolto tweets di un altro user}
+	\end{figure}
 \end{enumerate}
-
 \subsubsection{Blocco TwitterHomeTimeline} \label{twitterHo}
 L'utente inserendo questo blocco nel suo workflow potrà ascoltare i tweets presenti sulla sua home. \\
 \textbf{NOTA BENE:} per default, la ricerca restituisce i primi 10 risultati trovati se non viene impostato alcun limite sul numero di tweets da cercare.
 \begin{enumerate}
 	\item Nella schermata di elenco dei blocchi cliccare su "Twitter";
 	\item Cliccare il blocco "TwitterHome" come mostrato in figura;
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.2]{images/BlockTwitter3.jpg}}
+		\caption{Blocchi Twitter disponibili}
+	\end{figure}
 	\item Accedere con il proprio account Twitter cliccando sul tasto
-		"Login con Twitter" che appare;
+		"Accedi con Twitter" che appare;
+		\begin{figure}[!ht]
+			\centering
+			\fbox{\includegraphics[scale=0.2]{images/BlockTwitterHome.jpg}}
+			\caption{Blocco ascolto tweets del proprio profilo}
+		\end{figure}
 	\item Nella pagina web che comparirà:
 		\begin{enumerate}
 			\item Inserire username e password del proprio account Twitter
 			negli appositi campi;
 			\item Cliccare sul tasto "Authorize app".
 		\end{enumerate}
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.2]{images/AuthorizationTwitter.jpg}}
+		\caption{Inserimento account Twitter}
+	\end{figure}
 	\item (Facoltativo) Inserire un filtro per la ricerca (punto \ref{filter});
 	\item Infine cliccare "Fatto" per aggiungere tale blocco al workflow.
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.2]{images/BlockTwitterHome2.jpg}}
+		\caption{Blocco ascolto tweets del proprio profilo}
+	\end{figure}
 \end{enumerate}
 
 \subsubsection{Blocco TwitterWrite} \label{twitterW}
@@ -218,15 +291,35 @@ Questo blocco consente all'utente di pubblicare dei tweets tramite Alexa sul suo
 \begin{enumerate}
 	\item Nella schermata di elenco dei blocchi cliccare su "Twitter";
 	\item Cliccare il blocco "TwitterWrite" come mostrato in figura;
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.2]{images/BlockTwitter4.jpg}}
+		\caption{Blocchi Twitter disponibili}
+	\end{figure}
 	\item Accedere con il proprio account Twitter cliccando sul tasto
-		"Login con Twitter" che appare;
+		"Accedi con Twitter" che appare;
+		\begin{figure}[!ht]
+			\centering
+			\fbox{\includegraphics[scale=0.2]{images/BlockTwitterWrite.jpg}}
+			\caption{Blocco scrittura tweet su Twitter}
+		\end{figure}
 	\item Nella pagina web che comparirà:
 	\begin{enumerate}
 		\item Inserire username e password del proprio account Twitter
 		negli appositi campi;
 		\item Cliccare sul tasto "Authorize app".
 	\end{enumerate}
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.2]{images/AuthorizationTwitter.jpg}}
+		\caption{Inserimento account Twitter}
+	\end{figure}
 	\item Cliccare sul tasto "conferma".
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.2]{images/BlockTwitterWrite2.jpg}}
+		\caption{Blocco scrittura tweet su Twitter}
+	\end{figure}
 \end{enumerate}
 
 \subsubsection{Blocco Weather}
@@ -234,6 +327,13 @@ Il blocco Weather consente all'utente di sapere che meteo c'è in questo momento
 \begin{enumerate}
 	\item Inserire il nome della città nel campo di testo;
 	\item Premere "Aggiungi" per confermare.
+	\begin{comment}
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.2]{images/BlockWeather.jpg}}
+		\caption{Blocco weather}
+	\end{figure}
+	\end{comment}
 \end{enumerate}
 
 \subsubsection{Blocco ReadEmail}
@@ -242,8 +342,12 @@ Con questo blocco l'utente può ascoltare tramite Alexa le sue email, di Gmail, 
 \subsubsection{Blocco Calendar}
 Il blocco calendario permette all'utente di ascoltare o aggiungere i suoi appuntamenti di Google calendar tramite l'Amazon echo.
 \newpage
-\subsection{Blocchi nel workflow}
-Per avere informazioni sui blocchi contenuti in un workflow, andare sulla schermata che mostra l'elenco di tutti i workflow disponibili  e cliccare sul nome del workflow che ci interessa.
+\subsection{Salvataggio workflow creato}
+\begin{enumerate}
+	\item Una volta creato il workflow con i blocchi, clicchiamo sul pulsante in alto a destra della schermata per salvare il tutto;
+\end{enumerate}
+\subsection{Visualizzare blocchi creati nel workflow}
+Per avere informazioni sui blocchi contenuti in un workflow, andare nella schermata che mostra l'elenco di tutti i workflow disponibili  e cliccare sul nome del workflow che ci interessa.
 In questo modo verrà visualizzato l'elenco dei blocchi al suo interno come mostrato nella seguente figura:
 \begin{figure}[!ht]
 	\centering
@@ -252,25 +356,108 @@ In questo modo verrà visualizzato l'elenco dei blocchi al suo interno come most
 \end{figure}
 \newpage
 
-\subsection{Modifica ordine blocchi}
+\subsection{Modificare l'ordine dei blocchi}
 \begin{enumerate}
 	\item Andare nella schermata di elenco blocchi del workflow;
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.2]{images/ShiftBlock1.jpg}}
+		\caption{Schermata blocchi del workflow}
+	\end{figure}
 	\item Tenere premuto per un paio di secondi sul blocco interessato e trascinarlo nella posizione desiderata.
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.2]{images/ShiftBlock2.jpg}}
+		\caption{Modifica ordine blocchi del workflow}
+	\end{figure}
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.2]{images/ShiftBlockResult.jpg}}
+		\caption{Risultato finale modifica ordine}
+	\end{figure}
 \end{enumerate}
 
-\subsection{Eliminazione blocchi}
-\begin{comment}
+\subsection{Eliminare un blocco nel workflow}
 \begin{enumerate}
 	\item Andare nella schermata che mostra l'elenco dei blocchi del workflow;
-	\item Premere sul Delete
-	\item Cliccare sul tasto "Delete".
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.2]{images/BlocksWorkflow.jpg}}
+		\caption{Schermata blocchi del workflow}
+	\end{figure}
+	\item Trascinare il blocco verso destra della schermata;
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.2]{images/DeleteBlock.jpg}}
+		\caption{Trascinamento blocco da eliminare}
+	\end{figure}
+	\item Nella finestra che appare:
+	\begin{enumerate}
+		\item Cliccare sul tasto "Delete".
+		\item Oppure premere "Cancel" per annullare l'operazione.
+	\end{enumerate}
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.2]{images/DeleteBlockWindow.jpg}}
+		\caption{Finestra di conferma cancellazione}
+	\end{figure}
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.2]{images/DeleteBlockResult.jpg}}
+		\caption{Risultato finale eliminazione blocco}
+	\end{figure}
 \end{enumerate}
-\end{comment}
-\subsection{Eliminazione workflow}
+
+\subsection{Cambiare nome al workflow}
+\begin{enumerate}
+	\item Andare nella schermata che mostra l'elenco dei blocchi del workflow;
+	\item Cliccare sul nome del workflow scritto in alto nella schermata;
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.2]{images/ShiftBlock1.jpg}}
+		\caption{Schermata elenco blocchi}
+	\end{figure}
+	\item Nella finestra che appare:
+	\begin{enumerate}
+		\item Inserire il nuovo nome nell'apposito campo di testo;
+		\item Premere "Conferma" per rinominare il workflow;
+		\item Altrimenti "Cancel" per annullare l'operazione.
+		\begin{figure}[!ht]
+			\centering
+			\fbox{\includegraphics[scale=0.2]{images/ChangeName.jpg}}
+			\caption{Finestra inserimento nuovo nome}
+		\end{figure}
+	\end{enumerate}
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.2]{images/ChangeNameResult.jpg}}
+		\caption{Workflow con nuovo nome}
+	\end{figure}
+\end{enumerate}
+
+\subsection{Eliminare un workflow}
 \begin{enumerate}
 	\item Andare nella schermata di elenco workflow;
-	\item Tenere premuto per qualche secondo sul nome del workflow da eliminare finché non appare un popup;
-	\item Cliccare sul tasto "Delete".
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.2]{images/HomeWorkflow.jpg}}
+		\caption{Schermata elenco workflow}
+	\end{figure}
+	\item Tenere premuto per qualche secondo sul nome del workflow da eliminare finché non appare una finestra:
+	\begin{enumerate}
+		\item Premere il tasto "CONFIRM" per eliminare il workflow;
+		\item Oppure premere "CANCEL" per annullare l'operazione.
+		\begin{figure}[!ht]
+			\centering
+			\fbox{\includegraphics[scale=0.2]{images/DeleteWorkflowWindow.jpg}}
+			\caption{Finestra conferma eliminazione}
+		\end{figure}
+	\end{enumerate}
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.2]{images/HomeWorkflowEmpty.jpg}}
+		\caption{Schermata senza workflow eliminato}
+	\end{figure}
 \end{enumerate}
 
 \newpage
