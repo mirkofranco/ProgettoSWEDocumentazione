@@ -47,19 +47,6 @@ Per aggiungere i blocchi che si desiderano seguire le istruzioni nel paragrafo s
 \subsection{Aggiunta blocchi}
 Segue una spiegazione dettagliata sulla configurazione e aggiunta di ogni blocco al \textit{workflow$_{G}$}.\\
 
-\subsubsection{Blocco FeedRSS}
-Questo blocco permette all'utente di inserire un qualsiasi feedRSS e successivamente far riprodurre al dispositivo Alexa il suo contenuto.
-\begin{enumerate}
-	\item Inserire nell'apposito campo di testo l'URL del feedRSS;
-	\item Confermare e salvare cliccando sul pulsante "ADD" per aggiungere il blocco al workflow.
-\begin{figure}[!ht]
-	\centering
-	\fbox{\includegraphics[scale=0.2]{images/BlockFeedRSS.jpg}}
-	\caption{Blocco FeedRSS}
-\end{figure}
-\end{enumerate}
-\newpage
-
 \subsubsection{Blocco di testo}
 Tale blocco consente all'utente di inserire nel proprio workflow un blocco contenente del testo.
 \begin{enumerate}
@@ -72,16 +59,12 @@ Tale blocco consente all'utente di inserire nel proprio workflow un blocco conte
 	\end{figure}
 \end{enumerate}
 
-\subsubsection{Blocco Filter}
-Consente di impostare il numero limite di elementi che un determinato blocco deve considerare. \\
-\textbf{NOTA BENE:} il blocco filtro è applicabile solo ai seguenti blocchi: Stock, Crypto, FeedRSS, News, Read Email, Calendar, TwitterUserTimeline, TwitterHomeTimeline, TwitterHashtag, List e Sport.
-
 \subsubsection{Blocco PIN}
-Lo scopo di questo blocco è quello di effettuare una sorta di autenticazione dell'utente prima dell'esecuzione dei blocchi ReadEmail, Calendar, TwitterWrite e TwitterHomeTimeline in modo da avere un minimo di privacy per l'utente.
+Lo scopo di questo blocco è quello di effettuare una sorta di autenticazione dell'utente prima dell'esecuzione dei blocchi ReadEmail, Calendar, TwitterWrite, TwitterHomeTimeline in modo da avere un minimo di privacy per l'utente.
 \begin{enumerate}
 	\item Inserire nel campo di testo il proprio PIN segreto;
 	\item Cliccare sul tasto "SAVE" per confermare e salvare.
-
+	
 	\begin{figure}[!ht]
 		\centering
 		\fbox{\includegraphics[scale=0.3]{images/BlockPIN.jpg}}
@@ -89,9 +72,39 @@ Lo scopo di questo blocco è quello di effettuare una sorta di autenticazione de
 	\end{figure}
 \end{enumerate}
 \newpage
+
+\subsubsection{Blocco Filter} \label{filter}
+Consente di impostare il numero limite di elementi che un determinato blocco deve considerare. \\
+Il seguente procedimento, uguale per tutti i blocchi, spiegherà come aggiungere il blocco filtro. Come esempio illustrativo andremo ad aggiungere un filtro al blocco News. \\
+\textbf{NOTA BENE:} il blocco filtro è applicabile solo ai seguenti blocchi: Stock, Crypto, FeedRSS, News, ReadEmail, Calendar, TwitterUserTimeline, TwitterHomeTimeline, TwitterHashtag, List e Sport. Il filtro viene aggiunto in automatico a tutti i questi blocchi e viene impostato per default a 10 elementi (5 per Read Mail).
+\begin{enumerate}
+	\item Cliccare sul simbolo a forma di imbuto;
+	\item Nella finestra che appare:
+	\begin{enumerate}
+		\item Nella finestra che appare scegliamo il numero di elementi che ci interessa ascoltare;
+		\item Premere "Cancel" per annullare l'operazione di inserimento del filtro;
+		\item Oppure per confermare cliccare "Confirm".
+	\end{enumerate}
+\end{enumerate}
+
+\subsubsection{Blocco FeedRSS}
+Questo blocco permette all'utente di inserire un qualsiasi feedRSS e successivamente far riprodurre al dispositivo Alexa il suo contenuto.
+\begin{enumerate}
+	\item Inserire nell'apposito campo di testo l'URL del feedRSS;
+	\item (Facoltativo) Inserire un filtro (punto \ref{filter});
+	\item Confermare e salvare cliccando sul pulsante "ADD" per aggiungere il blocco al workflow.
+	\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.2]{images/BlockFeedRSS.jpg}}
+		\caption{Blocco FeedRSS}
+	\end{figure}
+\end{enumerate}
+\newpage
+
 \subsubsection{Blocco News}
 Tale blocco consente all'utente di ascoltare le ultime news prese da un sito a scelta tra i seguenti: Sky, Google News, Ansa, BBC, CNBC e Wall Street.
 \begin{enumerate}
+	\item (Facoltativo) Inserire un filtro (punto \ref{filter});
 	\item Cliccare su un tasto a piacere tra quelli elencati per scegliere il sito da cui ricevere news.
 	\begin{figure}[!ht]
 		\centering
@@ -104,6 +117,7 @@ Tale blocco consente all'utente di ascoltare le ultime news prese da un sito a s
 \subsubsection{Blocco Sport}
 Con l'aggiunta di questo blocco l'utente potrà ascoltare le ultime news riguardanti uno sport a sua scelta tra i seguenti: tennis, calcio, basket americano, formula1, football americano e motogp.
 \begin{enumerate}
+	\item (Facoltativo) Inserire un filtro (punto \ref{filter});
 	\item Cliccare su un tasto a piacere tra quelli proposti per scegliere il sito da cui ricevere news sullo sport.
 	\begin{figure}[!ht]
 		\centering
@@ -113,8 +127,9 @@ Con l'aggiunta di questo blocco l'utente potrà ascoltare le ultime news riguard
 \end{enumerate}
 \newpage
 \subsubsection{Blocco Crypto}
-Con questo blocco l'utente può scegliere da quale FeedRSS ascoltare le ultime news sulle cryptovalute.
+Con questo blocco l'utente può scegliere da quale feedRSS ascoltare le ultime news sulle cryptovalute.
 \begin{enumerate}
+	\item (Facoltativo) Inserire un filtro (punto \ref{filter});
 	\item Cliccare su un tasto a piacere tra quelli proposti per scegliere da quale FeedRSS ricevere news sulle cryptovalute.
 \begin{figure}[!ht]
 	\centering
@@ -124,9 +139,10 @@ Con questo blocco l'utente può scegliere da quale FeedRSS ascoltare le ultime n
 \end{enumerate}
 \newpage
 \subsubsection{Blocco Stock}
-Con questo blocco l'utente può scegliere da quale FeedRSS ascoltare le ultime news sull'andamento della borsa economica.
+Con questo blocco l'utente può scegliere da quale feedRSS ascoltare le ultime news sull'andamento della borsa economica.
 \begin{enumerate}
-	\item Cliccare su un FeedRSS a scelta per scegliere da quale borsa ricevere news.
+	\item (Facoltativo) Inserire un filtro (punto \ref{filter});
+	\item Cliccare su un feedRSS a scelta per scegliere da quale borsa ricevere news.
 	\begin{figure}[!ht]
 		\centering
 		\fbox{\includegraphics[scale=0.3]{images/BlockStock.jpg}}
@@ -136,7 +152,25 @@ Con questo blocco l'utente può scegliere da quale FeedRSS ascoltare le ultime n
 \newpage
 \subsubsection{Blocco List}
 Questo blocco permette all'utente di creare, aggiungere e modificare degli elementi di testo di una lista.
-È possibile modificare la lista tramite app oppure tramite interazione con l'Amazon Echo.
+È possibile modificare la lista tramite app oppure tramite interazione con l'Amazon Echo. \\ 
+Cliccare sul tasto "Fatto" per aggiungere al proprio workflow una lista vuota.
+
+\textbf{NOTA BENE:} le operazioni di rimozione e modifica dell'ordine, descritte nei prossimi punti, sono permesse solo dopo l'aggiunta di elementi alla lista tramite Alexa.
+\begin{itemize}
+	\item \textbf{Rimozione elementi dalla lista}
+	\begin{enumerate}
+		\item Tenere premuto per qualche secondo sull'elemento da eliminare;
+		\item Nella finestra che appare:
+		\begin{enumerate}
+			\item Cliccare sul tasto "Delete" per eliminare l'elemento;
+			\item Oppure cliccare "Cancel" per annullare l'operazione.
+		\end{enumerate}
+	\end{enumerate}
+	\item \textbf{Modifica posizione elementi}
+	\begin{enumerate}
+		\item Tenere premuto per un paio di secondi sull'elemento interessato e trascinarlo nella posizione desiderata. 
+	\end{enumerate}
+\end{itemize}
 
 \subsubsection{Blocco TwitterHashtag} \label{twitterHa}
 L'utente con l'aggiunta di questo blocco può effettuare una ricerca dei tweets su Twitter tramite hashtag. \\
@@ -145,12 +179,7 @@ L'utente con l'aggiunta di questo blocco può effettuare una ricerca dei tweets 
 	\item Nella schermata di elenco dei blocchi cliccare su "Twitter";
 	\item Cliccare il blocco "TwitterHashtag" come mostrato in figura;
 	\item Inserire la parola chiave di ricerca preceduta dal simbolo "\#";
-	\item (Facoltativo) impostazione filtro di ricerca:
-	\begin{enumerate}
-		\item Premere l'icona a forma di imbuto;
-		\item Impostare il numero massimo di tweets da cercare (1-10);
-		\item Cliccare su "Confirm".
-	\end{enumerate}
+	\item (Facoltativo) Inserire un filtro per la ricerca (punto \ref{filter});
 	\item Cliccare su "Fatto".
 \end{enumerate}
 
@@ -161,13 +190,8 @@ L'utente inserendo questo blocco nel suo\glossario{workflow}potrà ascoltare i t
 	\item Nella schermata di elenco dei blocchi cliccare su "Twitter";
 	\item Cliccare il blocco "TwitterUser" come mostrato in figura;
 	\item Inserire l'username di un utente preceduto dal simbolo "@";
-	\item (Facoltativo) impostare filtro ricerca:
-	\begin{enumerate}
-		\item Premere l'icona a forma di imbuto;
-		\item Impostare il numero massimo di tweets da cercare (1-10);
-		\item Cliccare su "Confirm".
-	\end{enumerate}
-	\item Cliccare "Conferma";
+	\item (Facoltativo) Inserire un filtro per la ricerca (punto \ref{filter});
+	\item Cliccare "Conferma".
 \end{enumerate}
 
 \subsubsection{Blocco TwitterHomeTimeline} \label{twitterHo}
@@ -178,12 +202,13 @@ L'utente inserendo questo blocco nel suo workflow potrà ascoltare i tweets pres
 	\item Cliccare il blocco "TwitterHome" come mostrato in figura;
 	\item Accedere con il proprio account Twitter cliccando sul tasto
 		"Login con Twitter" che appare;
-	\item Inserire username e password;
-	\begin{enumerate}
-		\item Premere l'icona a forma di imbuto;
-		\item Impostare il numero massimo di tweets da cercare (1-10);
-		\item Cliccare su "Confirm".
-	\end{enumerate}
+	\item Nella pagina web che comparirà:
+		\begin{enumerate}
+			\item Inserire username e password del proprio account Twitter
+			negli appositi campi;
+			\item Cliccare sul tasto "Authorize app".
+		\end{enumerate}
+	\item (Facoltativo) Inserire un filtro per la ricerca (punto \ref{filter});
 	\item Infine cliccare "Fatto" per aggiungere tale blocco al workflow.
 \end{enumerate}
 
@@ -195,12 +220,21 @@ Questo blocco consente all'utente di pubblicare dei tweets tramite Alexa sul suo
 	\item Cliccare il blocco "TwitterWrite" come mostrato in figura;
 	\item Accedere con il proprio account Twitter cliccando sul tasto
 		"Login con Twitter" che appare;
-	\item Inserire username e password;
+	\item Nella pagina web che comparirà:
+	\begin{enumerate}
+		\item Inserire username e password del proprio account Twitter
+		negli appositi campi;
+		\item Cliccare sul tasto "Authorize app".
+	\end{enumerate}
 	\item Cliccare sul tasto "conferma".
 \end{enumerate}
 
 \subsubsection{Blocco Weather}
 Il blocco Weather consente all'utente di sapere che meteo c'è in questo momento o nei prossimi giorni di una determinata città.
+\begin{enumerate}
+	\item Inserire il nome della città nel campo di testo;
+	\item Premere "Aggiungi" per confermare.
+\end{enumerate}
 
 \subsubsection{Blocco ReadEmail}
 Con questo blocco l'utente può ascoltare tramite Alexa le sue email, di Gmail, non ancora lette.
@@ -217,11 +251,6 @@ In questo modo verrà visualizzato l'elenco dei blocchi al suo interno come most
 	\caption{Blocchi del workflow}
 \end{figure}
 \newpage
-\subsection{Modifica blocchi}
-\begin{enumerate}
-	\item Aprire la schermata di elenco blocchi del workflow;
-	\item Dopo aver cliccato sul blocco da modificare, apparirà la schermata di creazione del blocco stesso da cui sarà possibile effettuare la modifica.
-\end{enumerate}
 
 \subsection{Modifica ordine blocchi}
 \begin{enumerate}
@@ -230,7 +259,13 @@ In questo modo verrà visualizzato l'elenco dei blocchi al suo interno come most
 \end{enumerate}
 
 \subsection{Eliminazione blocchi}
-
+\begin{comment}
+\begin{enumerate}
+	\item Andare nella schermata che mostra l'elenco dei blocchi del workflow;
+	\item Premere sul Delete
+	\item Cliccare sul tasto "Delete".
+\end{enumerate}
+\end{comment}
 \subsection{Eliminazione workflow}
 \begin{enumerate}
 	\item Andare nella schermata di elenco workflow;
