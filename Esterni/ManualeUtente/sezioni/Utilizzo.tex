@@ -36,10 +36,16 @@ Al primo avvio dell'applicazione apparirà una schermata vuota, priva di \textit
 Per aggiungere i blocchi che si desiderano seguire le istruzioni nel paragrafo successivo.
 \begin{figure}[!ht]
 	\centering
-	\fbox{\includegraphics[width=0.35\textwidth]{images/ListBlocks.jpg}}
+	\fbox{\includegraphics[width=0.35\textwidth]{images/ListBlocks1.jpg}}
 	\caption{Lista dei blocchi}
 \end{figure}
-
+\begin{comment}
+\begin{figure}[!ht]
+\centering
+\fbox{\includegraphics[width=0.35\textwidth]{images/ListBlocks2.jpg}}
+\caption{Lista dei blocchi}
+\end{figure}
+\end{comment}
 \end{enumerate}
 
 \newpage
@@ -59,9 +65,9 @@ Tale blocco consente all'utente di inserire nel proprio workflow un blocco conte
 \end{enumerate}
 
 \subsubsection{Blocco PIN}
-Lo scopo di questo blocco è quello di effettuare una sorta di autenticazione dell'utente prima dell'esecuzione dei blocchi ReadEmail, Calendar, TwitterWrite, TwitterHomeTimeline in modo da avere un minimo di privacy per l'utente.
+Lo scopo di questo blocco è quello di effettuare una sorta di autenticazione dell'utente prima dell'esecuzione dei blocchi Read Email, Calendar, TwitterWrite, TwitterHomeTimeline in modo da avere un minimo di privacy per l'utente.
 \begin{enumerate}
-	\item Inserire nel campo di testo il proprio PIN segreto;
+	\item Inserire nel campo di testo il proprio PIN segreto di 4 cifre;
 	\item Cliccare sul tasto "SALVA" per confermare e salvare.
 	
 	\begin{figure}[!ht]
@@ -74,8 +80,9 @@ Lo scopo di questo blocco è quello di effettuare una sorta di autenticazione de
 
 \subsubsection{Blocco Filter} \label{filter}
 Consente di impostare il numero limite di elementi che un determinato blocco deve considerare. \\
-Il seguente procedimento, uguale per tutti i blocchi, spiegherà come aggiungere il blocco filtro. Come esempio illustrativo andremo ad aggiungere un filtro al blocco News. \\
-\textbf{NOTA BENE:} il blocco filtro è applicabile solo ai seguenti blocchi: Stock, Crypto, FeedRSS, News, ReadEmail, Calendar, TwitterUserTimeline, TwitterHomeTimeline, TwitterHashtag e Sport. Il filtro viene aggiunto in automatico a tutti i questi blocchi e viene impostato per default a 10 elementi (5 per Read Mail).
+Il seguente procedimento, uguale per tutti i blocchi con filtro, spiegherà come aggiungere il blocco filtro. \\
+Come esempio illustrativo andremo ad aggiungere un filtro al blocco News. \\
+\textbf{NOTA BENE:} il blocco filtro è applicabile solo ai seguenti blocchi: Stock, Crypto, FeedRSS, News, Read Email, Calendar, TwitterUserTimeline, TwitterHomeTimeline, TwitterHashtag e Sport. Il filtro viene aggiunto in automatico a tutti i questi blocchi e viene impostato per default a 10 elementi (5 per Read Mail).
 \newpage
 \begin{enumerate}
 	\item Cliccare sul simbolo a forma di imbuto;
@@ -108,7 +115,7 @@ Il seguente procedimento, uguale per tutti i blocchi, spiegherà come aggiungere
 Questo blocco permette all'utente di inserire un qualsiasi feedRSS e successivamente far riprodurre al dispositivo Alexa il suo contenuto.
 \begin{enumerate}
 	\item Inserire nell'apposito campo di testo l'URL del feedRSS;
-	\item (Facoltativo) Inserire un filtro (punto \ref{filter});
+	\item (Facoltativo) Inserire un filtro (vedi \ref{filter});
 	\newpage
 	\item Confermare e salvare cliccando sul pulsante "AGGIUNGI" per aggiungere il blocco al workflow.
 	\begin{figure}[!ht]
@@ -121,7 +128,7 @@ Questo blocco permette all'utente di inserire un qualsiasi feedRSS e successivam
 \subsubsection{Blocco News}
 Tale blocco consente all'utente di ascoltare le ultime news prese da un sito a scelta tra i seguenti: Sky, Google News, Ansa, BBC, CNBC e Wall Street.
 \begin{enumerate}
-	\item (Facoltativo) Inserire un filtro (punto \ref{filter});
+	\item (Facoltativo) Inserire un filtro (vedi \ref{filter});
 	\item Cliccare su un tasto a piacere tra quelli elencati per scegliere il sito da cui ricevere news.
 	\begin{figure}[!ht]
 		\centering
@@ -134,7 +141,7 @@ Tale blocco consente all'utente di ascoltare le ultime news prese da un sito a s
 \subsubsection{Blocco Sport}
 Con l'aggiunta di questo blocco l'utente potrà ascoltare le ultime news riguardanti uno sport a sua scelta tra i seguenti: tennis, calcio, basket americano, formula1, football americano e motogp.
 \begin{enumerate}
-	\item (Facoltativo) Inserire un filtro (punto \ref{filter});
+	\item (Facoltativo) Inserire un filtro (vedi \ref{filter});
 	\item Cliccare su un tasto a piacere tra quelli proposti per scegliere il sito da cui ricevere news sullo sport.
 	\begin{figure}[!ht]
 		\centering
@@ -146,7 +153,7 @@ Con l'aggiunta di questo blocco l'utente potrà ascoltare le ultime news riguard
 \subsubsection{Blocco Crypto}
 Con questo blocco l'utente può scegliere da quale feedRSS ascoltare le ultime news sulle cryptovalute.
 \begin{enumerate}
-	\item (Facoltativo) Inserire un filtro (punto \ref{filter});
+	\item (Facoltativo) Inserire un filtro (vedi \ref{filter});
 	\newpage
 	\item Cliccare su un tasto a piacere tra quelli proposti per scegliere da quale FeedRSS ricevere news sulle cryptovalute.
 \begin{figure}[!ht]
@@ -159,7 +166,7 @@ Con questo blocco l'utente può scegliere da quale feedRSS ascoltare le ultime n
 \subsubsection{Blocco Stock}
 Con questo blocco l'utente può scegliere da quale feedRSS ascoltare le ultime news sull'andamento della borsa economica.
 \begin{enumerate}
-	\item (Facoltativo) Inserire un filtro (punto \ref{filter});
+	\item (Facoltativo) Inserire un filtro (vedi \ref{filter});
 	\item Cliccare su un feedRSS a scelta per scegliere da quale borsa ricevere news.
 	\begin{figure}[!ht]
 		\centering
@@ -171,45 +178,47 @@ Con questo blocco l'utente può scegliere da quale feedRSS ascoltare le ultime n
 \subsubsection{Blocco List}
 Questo blocco permette all'utente di creare, aggiungere e modificare degli elementi di testo di una lista.
 È possibile modificare la lista tramite app oppure tramite interazione con l'\textit{Amazon Echo$_{G}$}. \\ 
-Cliccare sul tasto "Fatto" per aggiungere al proprio workflow una lista vuota.
-\begin{comment}
+Cliccare sul tasto "CONFERMA" per aggiungere al proprio workflow una lista vuota.
 \begin{figure}[!ht]
 	\centering
 	\fbox{\includegraphics[scale=0.2]{images/BlockList.jpg}}
 	\caption{Blocco lista}
 \end{figure}
-\end{comment}
-\textbf{NOTA BENE:} le operazioni di rimozione e modifica dell'ordine, descritte nei prossimi punti, sono permesse solo dopo l'aggiunta di elementi alla lista tramite Alexa.
 \begin{itemize}
-	\item \textbf{Rimozione elementi dalla lista}
+	\item \textbf{Rimozione elementi dalla lista} \\
+	\textbf{NOTA BENE:} la rimozione di un elemento dalla lista è permessa solo dopo l'aggiunta di elementi alla lista tramite Alexa.
 	\begin{enumerate}
-		\item Tenere premuto per qualche secondo sull'elemento da eliminare;
+		\item Andare nella schermata di elenco di blocchi del workflow e cliccare sul blocco lista da modificare;
+		\begin{figure}[!ht]
+			\centering
+			\fbox{\includegraphics[scale=0.2]{images/DeleteItem1.jpg}}
+			\caption{Schermata elenco blocchi workflow}
+		\end{figure}
+		\newpage
+		\item Tenere premuto per qualche secondo sull'elemento da eliminare (es. "five");
+		\begin{figure}[!ht]
+			\centering
+			\fbox{\includegraphics[scale=0.2]{images/DeleteItem2.jpg}}
+			\caption{Elenco elementi della lista}
+		\end{figure}
 		\item Nella finestra che appare:
 		\begin{enumerate}
-			\item Cliccare sul tasto "Delete" per eliminare l'elemento;
-			\item Oppure cliccare "Cancel" per annullare l'operazione.
+			\item Cliccare sul tasto "CONFIRM" per eliminare l'elemento;
+			\item Oppure cliccare "CANCEL" per annullare l'operazione.
 		\end{enumerate}
-	\begin{comment}
-	\begin{figure}[!ht]
-	\centering
-	\fbox{\includegraphics[scale=0.2]{images/DeleteItem.jpg}}
-	\caption{Rimozione elemento della lista}
-	\end{figure}
-	\end{comment}
-	\end{enumerate}
-	\item \textbf{Modifica posizione elementi}
-	\begin{enumerate}
-		\item Tenere premuto per un paio di secondi sull'elemento interessato e trascinarlo nella posizione desiderata. 
-		\begin{comment}
 		\begin{figure}[!ht]
 		\centering
-		\fbox{\includegraphics[scale=0.2]{images/ShiftItem.jpg}}
-		\caption{Modifica ordine elementi nella lista}
+			\fbox{\includegraphics[scale=0.2]{images/DeleteItemWindow.jpg}}
+			\caption{Rimozione elemento della lista}
 		\end{figure}
-		\end{comment}
+		\begin{figure}[!ht]
+		\centering
+		\fbox{\includegraphics[scale=0.2]{images/DeleteItemResult.jpg}}
+		\caption{Elemento rimosso dalla lista}
+		\end{figure}
 	\end{enumerate}
 \end{itemize}
-
+\newpage
 \subsubsection{Blocco TwitterHashtag} \label{twitterHa}
 L'utente con l'aggiunta di questo blocco può effettuare una ricerca dei tweets su Twitter tramite hashtag.
 
@@ -223,7 +232,7 @@ L'utente con l'aggiunta di questo blocco può effettuare una ricerca dei tweets 
 	\end{figure}
 	\newpage
 	\item Inserire la parola chiave di ricerca preceduta dal simbolo "\#";
-	\item (Facoltativo) Inserire un filtro per la ricerca (punto \ref{filter});
+	\item (Facoltativo) Inserire un filtro per la ricerca (vedi \ref{filter});
 	\item Cliccare su "CONFIRM".
 	\begin{figure}[!ht]
 		\centering
@@ -246,7 +255,7 @@ L'utente inserendo questo blocco nel suo\glossario{workflow}potrà ascoltare i t
 	\end{figure}
 	\newpage
 	\item Inserire l'username di un utente preceduto dal simbolo "@";
-	\item (Facoltativo) Inserire un filtro per la ricerca (punto \ref{filter});
+	\item (Facoltativo) Inserire un filtro per la ricerca (vedi \ref{filter});
 	\item Cliccare "CONFIRM".
 	\begin{figure}[!ht]
 		\centering
@@ -287,7 +296,7 @@ L'utente inserendo questo blocco nel suo workflow potrà ascoltare i tweets pres
 		\caption{Inserimento account Twitter}
 	\end{figure}
 	\newpage
-	\item (Facoltativo) Inserire un filtro per la ricerca (punto \ref{filter});
+	\item (Facoltativo) Inserire un filtro per la ricerca (vedi \ref{filter});
 	\item Infine cliccare "CONFIRM" per aggiungere tale blocco al workflow.
 	\begin{figure}[!ht]
 		\centering
@@ -336,26 +345,37 @@ Questo blocco consente all'utente di pubblicare dei tweets tramite Alexa sul suo
 		\caption{Blocco scrittura tweet su Twitter}
 	\end{figure}
 \end{enumerate}
-
+\newpage
 \subsubsection{Blocco Weather}
 Il blocco Weather consente all'utente di sapere che meteo c'è in questo momento o nei prossimi giorni di una determinata città.
 \begin{enumerate}
 	\item Inserire il nome della città nel campo di testo;
-	\item Premere "Aggiungi" per confermare.
-	\begin{comment}
+	\item Premere "AGGIUNGI" per confermare.
 	\begin{figure}[!ht]
 		\centering
 		\fbox{\includegraphics[scale=0.2]{images/BlockWeather.jpg}}
-		\caption{Blocco weather}
+		\caption{Blocco meteo}
 	\end{figure}
-	\end{comment}
 \end{enumerate}
 
 \subsubsection{Blocco ReadEmail}
 Con questo blocco l'utente può ascoltare tramite Alexa le sue email, di Gmail, non ancora lette.
-
+\begin{comment}
+\begin{figure}[!ht]
+	\centering
+	\fbox{\includegraphics[scale=0.2]{images/BlocReadEmail.jpg}}
+	\caption{Blocco lettura emails}
+\end{figure}
+\end{comment}
 \subsubsection{Blocco Calendar}
-Il blocco calendario permette all'utente di ascoltare o aggiungere i suoi appuntamenti di Google calendar tramite l'Amazon echo.
+Il blocco calendario permette all'utente di ascoltare o aggiungere i suoi appuntamenti di Google calendar tramite l'Amazon \textit{echo$_{G}$}.
+\begin{comment}
+\begin{figure}[!ht]
+	\centering
+	\fbox{\includegraphics[scale=0.2]{images/BlockCalendar.jpg}}
+	\caption{Blocco lettura calendario}
+\end{figure}
+\end{comment}
 \newpage
 \subsection{Salvataggio workflow creato} \label{saveWorkflow}
 Una volta inseriti tutti i blocchi, cliccare sul pulsante in alto a destra della schermata per salvare e creare il workflow. \\
@@ -389,12 +409,13 @@ In questo modo verrà visualizzato l'elenco dei blocchi al suo interno come most
 		\caption{Schermata blocchi del workflow}
 	\end{figure}
 	\newpage
-	\item Tenere premuto per un paio di secondi sul blocco interessato e trascinarlo nella posizione desiderata.
+	\item Tenere premuto per un paio di secondi sul blocco interessato e trascinarlo nella posizione desiderata;
 	\begin{figure}[!ht]
 		\centering
 		\fbox{\includegraphics[scale=0.27]{images/ShiftBlock2.jpg}}
 		\caption{Modifica ordine blocchi del workflow}
 	\end{figure}
+	\item Infine clicchiamo sul tasto salva per confermare le modifiche.
 	\begin{figure}[!ht]
 		\centering
 		\fbox{\includegraphics[scale=0.2]{images/ShiftBlockResult.jpg}}
@@ -428,6 +449,7 @@ In questo modo verrà visualizzato l'elenco dei blocchi al suo interno come most
 		\fbox{\includegraphics[scale=0.23]{images/DeleteBlockWindow.jpg}}
 		\caption{Finestra di conferma cancellazione}
 	\end{figure}
+	\item Infine clicchiamo sul tasto salva per confermare le modifiche.
 	\begin{figure}[!ht]
 		\centering
 		\fbox{\includegraphics[scale=0.18]{images/DeleteBlockResult.jpg}}
