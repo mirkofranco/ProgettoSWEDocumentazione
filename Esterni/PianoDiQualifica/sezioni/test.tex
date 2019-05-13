@@ -1,4 +1,4 @@
-\chapter{Specifica test}
+\chapter{Specifica dei test}
 \label{test}
 \section{Test di Sistema}
 \normalsize
@@ -56,7 +56,7 @@ RVO1 & \hyperlink{TVVO1}{TVVO1}\\ \hline
 \hypertarget{TI6}{TI6} & Viene creato un workflow contenente solamente blocchi con connettori e vengono valutati i risultati. I valori ritornati cambiano costantemente, quindi viene fatto un controllo solamente sul tipo dei dati ritornati. & \textit{Implementato}\\ \hline
 \hypertarget{TI7}{TI7} & Viene eseguita l'applicazione e viene controllato se le activities vengono rappresentate correttamente a schermo. Questo test è molto pesante, in quanto richiede l'esecuzione del simulatore Android, inoltre richiede supervisione di un membro del gruppo. & \textit{Implementato}\\ \hline
 \hypertarget{TI8}{TI8} & Vengono create delle istanze dei blocchi disponibili e vengono chiamati i loro metodi pubblici. & \textit{Implementato}\\ \hline
-\hypertarget{TI9}{TI9} & Viene creato un workflow contenente tutti i blocchi, poi viene chiamato il metodo "response()" di workflow. & \textit{Non Implementato}\\ \hline
+\hypertarget{TI9}{TI9} & Viene creato un workflow contenente tutti i blocchi, poi viene chiamato il metodo "response()" di workflow. & \textit{Implementato}\\ \hline
 \caption[Test di Integrazione]{Test di Integrazione}
 \label{tabella:test2}
 \end{longtable}
@@ -84,7 +84,7 @@ RVO1 & \hyperlink{TVVO1}{TVVO1}\\ \hline
 \clearpage
 
 
-\section{Test di unità}
+\section{Test di Unità}
 \label{TU}
 La parte della skill è stata sviluppata utilizzando l'approccio Test Driven Development, mentre per l'app Android non era un vincolo. Alcuni test più ostici da sviluppare sono stati rimandati al periodo di verifica e collaudo. 
 \normalsize
@@ -97,38 +97,38 @@ TUS1 & Viene controllato che ritorni un testo & \textit{Implementato}\\ \hline
 TUS2 & Viene controllato che venga lanciata un'eccezione sul tipo di parametro passato & \textit{Implementato}\\ \hline
 TUS3 & Viene controllato che venga lanciata un'eccezione sul valore di ritorno (check sui falsi positivi)  & \textit{Implementato}\\ \hline
 TUS4 & Viene controllato che ritorni una lista & \textit{Implementato}\\ \hline
-TUS5 & Viene controllato che venga lanciata un'eccezione sul tipo di parametro passato & \textit{non Implementato}\\ \hline
+TUS5 & Viene controllato che venga lanciata un'eccezione sul tipo di parametro passato & \textit{Implementato}\\ \hline
 TUS6 & Viene controllato che venga lanciata un'eccezione sul valore di ritorno & \textit{Implementato}\\ \hline
 TUS7 & Viene controllato che ritorni una richiesta di inserimento pin & \textit{Implementato}\\ \hline
 TUS8 & Viene controllato che ritorni una risposta di pin corretto & \textit{Implementato}\\ \hline
 TUS9 & Viene controllato che ritorni una risposta di pin errato & \textit{Implementato}\\ \hline
 TUS10 & Viene controllato che ritorni un workflow corretto & \textit{Implementato}\\ \hline
 TUS11 & Viene controllato che ritorni un workflow non corretto & \textit{Implementato}\\ \hline
-TUS12 & Viene controllato che ritorni una eccezione sul parametro durante la creazione del workflow & \textit{Non Implementato}\\ \hline
+TUS12 & Viene controllato che ritorni una eccezione sul parametro durante la creazione del workflow & \textit{Implementato}\\ \hline
 TUS13 & Viene controllato che ritorni un workflow corretto & \textit{Implementato}\\ \hline
 TUS13 & Viene controllato che ritorni una eccezione sulla costruzione dell'utente & \textit{Implementato}\\ \hline
 TUS14 & Viene controllato che ritorni un FeedRSS corretto & \textit{Implementato}\\ \hline
 TUS15 & Viene controllato che venga lanciata un'eccezione sul tipo di parametro URL & \textit{Implementato}\\ \hline
-TUS16 & Viene controllato che venga lanciata un'eccezione di Timeout sulla chiamata internet & \textit{Non Implementato}\\ \hline
+TUS16 & Viene controllato che venga lanciata un'eccezione di Timeout sulla chiamata internet & \textit{Implementato}\\ \hline
 TUS17 & Viene controllato che ritorni una previsione corretta & \textit{Implementato}\\ \hline
 TUS18 & Viene controllato che venga lanciata un'eccezione sul parametro position & \textit{Implementato}\\ \hline
 TUS19 & Viene controllato che ritorni un testo vuoto & \textit{Implementato}\\ \hline
 TUS20 & Viene controllato che venga lanciata un'eccezione sul parametro position & \textit{Implementato}\\ \hline
-TUS21 & Viene controllato che venga lanciata un'eccezione di Timeout sulla chiamata internet alle API & \textit{Non Implementato}\\ \hline
+TUS21 & Viene controllato che venga lanciata un'eccezione di Timeout sulla chiamata internet alle API & \textit{Implementato}\\ \hline
 TUS22 & Viene controllato che ritorni un tweet corretto & \textit{Implementato}\\ \hline
 TUS23 & Viene controllato che ritorni un tweet vuoto & \textit{Implementato}\\ \hline
 TUS24 & Viene controllato che venga lanciata un'eccezione sul parametro userID & \textit{Implementato}\\ \hline
-TUS25 & Viene controllato che venga lanciata un'eccezione di Timeout sulla chiamata internet alle API di Twitter & \textit{Non Implementato}\\ \hline
-TUS26 & Viene controllato che ritorni un workflow vuoto & \textit{Non Implementato}\\ \hline
+TUS25 & Viene controllato che venga lanciata un'eccezione di Timeout sulla chiamata internet alle API di Twitter & \textit{Implementato}\\ \hline
+TUS26 & Viene controllato che ritorni un workflow vuoto & \textit{Implementato}\\ \hline
 TUS27 & Viene controllato che venga lanciata un'eccezione sulla mancanza di un blocco filterable dopo un filtro & \textit{Implementato}\\ \hline
 TUS28 & Viene controllato che ritorni un workflow correttamente filtrato & \textit{Implementato}\\ \hline
 TUS29 & Viene controllato che ritorni una lista correttamente filtrata & \textit{Implementato}\\ \hline
 TUS30 & Viene controllato che ritorni un Feed RSS correttamente filtrato & \textit{Implementato}\\ \hline
-TUS31 & Viene controllato che ritorni una lista di email correttamente filtrate & \textit{Non Implementato}\\ \hline
-TUS32 & Viene controllato che ritorni una lista di email corrette & \textit{Non implementato}\\ \hline
-TUS33 & Viene controllato che ritorni una lista di email vuota & \textit{Non implementato}\\ \hline
-TUS34 & Viene controllato che venga lanciata un'eccezione sull'email non corretta & \textit{Non implementato}\\ \hline
-TUS35 & Viene controllato che ritorni una lista di Email corrette & \textit{Non implementato}\\ \hline
+TUS31 & Viene controllato che ritorni una lista di email correttamente filtrate & \textit{Implementato}\\ \hline
+TUS32 & Viene controllato che ritorni una lista di email corrette & \textit{Implementato}\\ \hline
+TUS33 & Viene controllato che ritorni una lista di email vuota & \textit{Implementato}\\ \hline
+TUS34 & Viene controllato che venga lanciata un'eccezione sull'email non corretta & \textit{Implementato}\\ \hline
+TUS35 & Viene controllato che ritorni una lista di Email corrette & \textit{Implementato}\\ \hline
 \caption[Test di Unità]{Test di Unità}
 \label{tabella:test2}
 \end{longtable}
@@ -151,10 +151,10 @@ TUA7 & Viene controllato che una città sia presente nella lista delle città ge
 TUA8 & Viene controllato che un utente sia presente tra gli utenti di Twitter & \textit{Implementato}\\ \hline
 TUA9 & Viene controllato che un hashtag sia un'espressione regolare valida & \textit{Implementato}\\ \hline
 TUA10 & Viene controllato che l'account di Amazon Music sia valido & \textit{Non implementato}\\ \hline
-TUA11 & Viene controllato che l'account di Google sia valido per il Calendar & \textit{Non implementato}\\ \hline
-TUA12 & Viene controllato che l'account di Google Mail sia valido per la lettura delle email & \textit{Non implementato}\\ \hline
+TUA11 & Viene controllato che l'account di Google sia valido per il Calendar & \textit{Implementato}\\ \hline
+TUA12 & Viene controllato che l'account di Google Mail sia valido per la lettura delle email & \textit{Implementato}\\ \hline
 TUA13 & Viene controllato che il numero di telefono sia associato ad un account Telegram & \textit{Non implementato}\\ \hline
-TUA14 & Viene controllato che l'account Twitter dell'utente sai valido & \textit{Non implementato}\\ \hline
+TUA14 & Viene controllato che l'account Twitter dell'utente sai valido & \textit{Implementato}\\ \hline
 TUA15 & Viene controllato che il brano cercato su Amazon Music esista & \textit{Non implementato}\\ \hline
 TUA16 & Viene controllato che la playlist cercata su Amazon Music esista & \textit{Non implementato}\\ \hline
 TUA17 & Viene controllato che l'utente abbia inserito qualcosa nel testo del messaggio da inviare con Telegram & \textit{Non implementato}\\ \hline
