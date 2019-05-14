@@ -33,7 +33,7 @@ Permette di comprimere i file da linea di comando. \`{E} richiesto dalla procedu
 
 \section{Dipendenze esterne}
 
-\subsection{Alexa Skill}\label{ATecnologie}
+\subsection{Alexa skill}\label{ATecnologie}
 Tutte le dipendenze principali si trovano nel file \textit{package.json}, mentre quelle secondarie (cioè le dipendenze delle dipendenze) stanno nel file package-lock.json.\\
 Dipendenze principali:
 \begin{itemize}
@@ -54,19 +54,20 @@ Dipendenze utili solo allo sviluppatore (test e compilazione):
     \item \textbf{typescript:} permette la compilazione da TypeScript a JavaScript.
 \end{itemize}
 
-\subsection{App Android}
+\subsection{App android}
 
 Tutte le dipendenze si trovano nel file \textit{build.gradle(Module:app)}.\\
 
 Dipendenze principali:
 \begin{itemize}
-	\item \textbf {kotlin-stdlib-jdk7} Libreria standard di\glossario{Kotlin}che si appoggia automaticamente alla versione più aggiornata;
-	\item \textbf {Anko} Libreria utilizzata per le chiamate asincrone;
+	\item \textbf {kotlin-stdlib-jdk7:} Libreria standard di\glossario{Kotlin}che si appoggia automaticamente alla versione più aggiornata;
+	\item \textbf {Anko:} libreria utilizzata per le chiamate asincrone;
 	\item \textbf{openweather-apis:} informazioni riguardanti il tempo atmosferico;
 	\item \textbf{rss-parser:} trasformazione di un file RSS in un testo più leggibile;
-	\item \textbf{twitter:} comunicazione con i servizi Twitter;
+	\item \textbf{TwitterCore:} comunicazione con i servizi Twitter;
 	\item \textbf{Lifecycle:} permettono un'implementazione semplice al pattern observer;
-	\item \textbf{AppCompactActivity:} Libreria più stabile per le interfacce grafiche su \textit{Kotlin$_{G}$};
+	\item \textbf{AppCompactActivity:} libreria più stabile per le interfacce grafiche su \textit{Kotlin$_{G}$};
 	\item \textbf{JUnit} framework per i test in Kotlin;
-	\item \textbf{login-with-amazon-sdk.jar} Utilizzato per i servizi di login forniti da Amazon.
+	\item \textbf{login-with-amazon-sdk.jar:} utilizzato per i servizi di login forniti da Amazon;
+	\item \textbf{Google API:} libreria per Gmail e Calendar.
 \end{itemize}

@@ -127,7 +127,7 @@ Il ViewModel ha lo scopo di utilizzare l'istanza di Megalexa per fornire i conte
 \newpage
 La seguente immagine descrive la progettazione dei blocchi. \\
 Tutti i blocchi implementano l'interfaccia Block che ha come unico metodo getInformation() per ricavare informazioni aggiuntive sul blocco. \\
-I blocchi per i quali è necessario filtrare la quantità di risultati possono estendere la classe BlockFilter.
+I blocchi per i quali è necessario filtrare la quantità di risultati devono estendere l'interfaccia \textit{Filtrable} contenuta nella cartella stessa.
 \begin{figure} [H]
 	\centering
 	\includegraphics[scale=0.3]{./images/Blocks.png}
