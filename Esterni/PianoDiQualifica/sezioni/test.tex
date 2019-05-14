@@ -141,24 +141,51 @@ TUS35 & Viene controllato che ritorni una lista di Email corrette & \textit{Impl
 \hline
 \endhead
 
-TUA1 & Viene controllato che l'uri sia un feedRSS  & \textit{Implementato}\\ \hline
-TUA2 & Viene controllato che un blocco filtrabile restituisca il numero filtrato di elementi & \textit{Implementato}\\ \hline
-TUA3 & Viene controllato che un blocco non filtrabile non restituisca un numero filtrato di elementi & \textit{Implementato}\\ \hline
-TUA4 & Viene controllato che venga aggiunto il giusto numero di blocchi ad un workflow & \textit{Implementato}\\ \hline
-TUA5 & Viene controllato che il Database restituisca correttamente i dati di un utente & \textit{Implementato}\\ \hline
-TUA6 & Viene controllato che ci sia un'unica istanza del model & \textit{Implementato}\\ \hline
-TUA7 & Viene controllato che una città sia presente nella lista delle città gestite dalla API di Openweather & \textit{Implementato}\\ \hline
-TUA8 & Viene controllato che un utente sia presente tra gli utenti di Twitter & \textit{Implementato}\\ \hline
-TUA9 & Viene controllato che un hashtag sia un'espressione regolare valida & \textit{Implementato}\\ \hline
-TUA10 & Viene controllato che l'account di Amazon Music sia valido & \textit{Non implementato}\\ \hline
-TUA11 & Viene controllato che l'account di Google sia valido per il Calendar & \textit{Implementato}\\ \hline
-TUA12 & Viene controllato che l'account di Google Mail sia valido per la lettura delle email & \textit{Implementato}\\ \hline
-TUA13 & Viene controllato che il numero di telefono sia associato ad un account Telegram & \textit{Non implementato}\\ \hline
-TUA14 & Viene controllato che l'account Twitter dell'utente sai valido & \textit{Implementato}\\ \hline
-TUA15 & Viene controllato che il brano cercato su Amazon Music esista & \textit{Non implementato}\\ \hline
-TUA16 & Viene controllato che la playlist cercata su Amazon Music esista & \textit{Non implementato}\\ \hline
-TUA17 & Viene controllato che l'utente abbia inserito qualcosa nel testo del messaggio da inviare con Telegram & \textit{Non implementato}\\ \hline
-TUA18 & Viene controllato che il destinatario del messaggio Telegram esista & \textit{Non implementato}\\ \hline
+TUA1 & Viene controllato che un blocco borsa risulti non valido con un URL non valido & \textit{Implementato}\\ \hline
+TUA2 & Viene controllato che un blocco borsa risulti valido con un URL idoneo & \textit{Implementato}\\ \hline
+TUA3 & Viene controllato che un blocco calendario risulti non valido a fronte di input non previsti& \textit{Implementato}\\ \hline
+TUA4 & Viene controllato che un blocco calendario risulti valido a fronte di un input corretto & \textit{Implementato}\\ \hline
+TUA5 & Viene controllato che un blocco crypto risulti non valido con un URL non valido & \textit{Implementato}\\ \hline
+TUA6 & Viene controllato che un blocco crypto risulti valido con un URL idoneo & \textit{Implementato}\\ \hline
+TUA7 & Viene controllato che un blocco feedRSS risulti non valido con un URL non valido & \textit{Implementato}\\ \hline
+TUA8 & Viene controllato che un blocco feedRSS risulti valido con un URL idoneo & \textit{Implementato}\\ \hline
+TUA9 & Viene controllata la validità di un blocco filtro attaccato a un blocco valido & \textit{Implementato}\\ \hline
+TUA10 & Viene controllata la non validità di un blocco filtro se attaccato a un blocco non idoneo& \textit{Implementato}\\ \hline
+TUA11 & Viene controllata la non validità  di un blocco lista rispetto a un input non corretto & \textit{Implementato}\\ \hline
+TUA12 & Viene controllata la validità di un blocco lista rispetto a un input corretto & \textit{Implementato}\\ \hline
+TUA13 & Viene controllato che un blocco news risulti non valido con un URL non valido  & \textit{Implementato}\\ \hline
+TUA14 & Viene controllato che un blocco news risulti valido con un URL idoneo& \textit{Implementato}\\ \hline
+TUA15 & Viene controllata la non validità di un blocco pin rispetto a un input non corretto & \textit{Implementato}\\ \hline
+TUA16 & Viene controllata la validità di un blocco pin rispetto a un pin corretto & \textit{Implementato}\\ \hline
+TUA17 & Viene controllata la non validità di un blocco mail rispetto a un input non corretto& \textit{Implementato}\\ \hline
+TUA18 & Viene controllata la valdità di un blocco mail rispetto a un input corretto & \textit{Implementato}\\ \hline
+TUA19 & Viene controllato che un blocco sport risulti non valido con un URL non valido& \textit{Implementato}\\ \hline
+TUA20 & Viene controllato che un blocco sport risulti valido con un URL idoneo& \textit{Implementato}\\ \hline
+TUA21 & Viene controllato che un blocco di testo risulti non valido con un input maggiore di 256 caratteri& \textit{Implementato}\\ \hline
+TUA22 & Viene controllato che un blocco di testo risulti valido rispetto a un input corretto& \textit{Implementato}\\ \hline
+TUA23 & Viene controllato che un blocco Twitter-hashtag risulti non valido con un input non corretto& \textit{Implementato}\\ \hline
+TUA24 & Viene controllato che un blocco Twitter-hashtag risulti valido con un input corretto& \textit{Implementato}\\ \hline
+TUA25 & Viene controllato che un blocco Twitter-HomeTL risulti non valido con un input non corretto& \textit{Implementato}\\ \hline
+TUA26 & Viene controllato che un blocco Twitter-HomeTL risulti valido con un input corretto & \textit{Implementato}\\ \hline
+TUA27 & Viene controllato che un blocco Twitter risulti non valido con un input non corretto& \textit{Implementato}\\ \hline
+TUA28 & Viene controllato che un blocco Twitter risulti valido con un input corretto& \textit{Implementato}\\ \hline
+TUA29 & Viene controllato che un blocco Twitter-Write risulti non valido con un input non corretto& \textit{Implementato}\\ \hline
+TUA30 & Viene controllato che un blocco Twitter-Write risulti valido con un input corretto& \textit{Implementato}\\ \hline
+TUA31 & & \textit{Implementato}\\ \hline
+TUA32 & & \textit{Implementato}\\ \hline
+TUA33 & & \textit{Implementato}\\ \hline
+TUA34 & & \textit{Implementato}\\ \hline
+TUA35 & & \textit{Implementato}\\ \hline
+TUA36 & & \textit{Implementato}\\ \hline
+
+
+
+
+
+
+
+
+
 \caption[Test di Unità]{Test di Unità}
 \label{tabella:test2}
 \end{longtable}
