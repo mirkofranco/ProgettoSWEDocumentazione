@@ -1,6 +1,6 @@
 \chapter{Architettura}
 \section{Skill}\label{architetturaSkill}
-La skill è ospitata nel sito \url{https://developer.amazon.com/alexa/} (è necessario un account developer Amazon per accedervi). La skill è rappresentata da un JSON, configurabile attraverso l'UI fornito dalla piattaforma Alexa developer.
+La\glossario{skill}è reperibile al seguente link: \url{https://developer.amazon.com/alexa/} (è necessario un account developer Amazon per accedervi). La skill è rappresentata da un JSON, configurabile attraverso l'UI fornito dalla piattaforma Alexa developer.
 \begin{figure} [H]
     \centering
 	\includegraphics[scale=0.2]{./images/SkillPage.PNG}
@@ -11,7 +11,7 @@ La skill è ospitata nel sito \url{https://developer.amazon.com/alexa/} (è nece
 La logica della skill si trova in una \textit{AWS Lambda$_{G}$}, quindi è serverless. Questo significa che viene creata una nuova istanza della Skill ogni volta che arriva una richiesta da Alexa (ogni utente genera una istanza diversa). L'architettura della Skill si basa sul concetto di avere una skill leggera, che esegue poche operazioni ogni volta che questa viene invocata.\\
 Una richiesta da parte di Alexa viene catturata dall'index, che la elabora e ritorna un risultato. Una richiesta è definita da un JSON contenente molteplici informazioni sullo stato del dialogo, l'utente, errori e molto altro. Una dettagliata descrizione si trova sulla documentazione di Amazon AWS\footnote{\url{https://developer.amazon.com/docs/custom-skills/request-and-response-json-reference.html}}.\\
 La lingua della skill viene impostata automaticamente a seconda della richiesta. Le frasi che Alexa può dire si trovano nei file di configurazione phrases-EN.json e phrases-IT.json.\\
-Le informazioni più importanti contenute nel file JSON sono:\label{paramsSkill}
+Le informazioni più importanti contenute nel file\glossario{JSON}sono:\label{paramsSkill}
 \begin{itemize}
     \item \textbf{handlerInput.requestEnvelope.request.type:} rappresenta il tipo di richiesta: IntentRequest o LaunchRequest. LaunchRequest rappresenta la prima iterazione con la skill ("Alexa, apri MegAlexa"), IntentRequest rappresenta tutte le altre richieste;
     \item \textbf{handlerInput.requestEnvelope.request.intent.name:} contiene il nome della richiesta, definiti dove la skill si trova. I casi più comuni sono "WorkflowIntent", "StopIntent" e "HelpIntent";
@@ -28,7 +28,7 @@ Il seguente diagramma dei package descrive le dipendenze ad alto livello della S
 \clearpage
 La classe \textit{User} rappresenta un singolo utente che sta utilizzando la skill. L'utente usa la classe \textit{WorkflowService} per creare un \textit{Workflow}. \textit{Workflow} crea una lista di \textit{Block}. Alcuni \textit{Block} creano un \textit{connector} per fare chiamate HTTP.\\
 I blocchi che devono fare chiamate HTTP, vengono rappresentati come delle Promise, per questo motivo anche \textit{Workflow} viene rappresentato in una promise in \textit{User}.\\
-Tutte le classi sono scritte in \textit{TypeScript$_{G}$}. L'index è scritto in Javascript (per compatibilità con ask-sdk). Prima di fare il deploy in AWS Lambda, i file TypeScript vengono compilati in JavaScript.
+Tutte le classi sono scritte in \textit{TypeScript$_{G}$}. L'index è scritto in Javascript (per compatibilità con ask-sdk). Prima di fare il deploy in \textit{AWS Lambda$_{g}$}, i file TypeScript vengono compilati in JavaScript.
 \subsection{Index}
 Index contiene gli handler, funzioni che catturano le richieste da parte di Alexa. Tutti gli handler sono definiti nella funzione "handler" e vengono eseguiti nell'ordine di dichiarazione.\\Ogni singolo handler è formato da due parti:
 \begin{itemize}
@@ -39,7 +39,7 @@ Index contiene gli handler, funzioni che catturano le richieste da parte di Alex
 In \textit{User} sono presenti i seguenti metodi:
 \begin{itemize}
     \item \textbf{credentialsByAccessToken:} prende come parametro un access token (fornito da Amazon Alexa) e ritorna una Promise contenente un JSON, il quale contiene username, email e userID. Lo userID è lo stesso di quello ottenuto attraverso il collegamento dell'applicazione all'applicazione \textit{Android$_{G}$}, permettendo di autenticare l'utente nel database;
-    \item \textbf{workflow:} usa WorkflowService per creare un Workflow a partire dalla sua rappresentazione in formato JSON.
+    \item \textbf{workflow:} usa WorkflowService per creare un Workflow a partire dalla sua rappresentazione in formato \textit{JSON$_{G}$}.
 \end{itemize}
 \begin{figure} [H]
     \centering
@@ -59,7 +59,7 @@ In \textit{Workflow} sono presenti i seguenti metodi:
 	\caption{\textit{Skill class diagram - Workflow}}\label{classlambda}
 \end{figure}
 \subsection{Package services}
-Il package services contiene la classe WorkflowService, che si occupa di creare un \textit{Workflow}, dopo aver ottenuto la sua rappresentazione JSON dal database (con una chiamata REST).
+Il package services contiene la classe WorkflowService, che si occupa di creare un \textit{Workflow}, dopo aver ottenuto la sua rappresentazione\glossario{JSON}dal database (con una chiamata REST).
 \begin{figure} [H]
     \centering
 	\includegraphics[scale=0.7]{./images/WorkflowService.PNG}
@@ -67,7 +67,7 @@ Il package services contiene la classe WorkflowService, che si occupa di creare 
 \end{figure}
 \clearpage
 \subsection{Package blocks}
-Il package blocks contiene tutti i blocchi della skill e il package utils.\\
+Il package blocks contiene tutti i blocchi della\glossario{skill}e il package utils.\\
 I blocchi implementano tutti l'interfaccia \textit{Block}, alcuni implementano anche \textit{Filterable} e \textit{ElicitBlock}.\\
 Un blocco Filterable può essere rappresentato come una lista, quindi deve permettere di ritornare una versione di se stesso con meno elementi.\\
 Un blocco ElicitBlock richiede all'utente dei parametri aggiuntivi per poter essere eseguito.
@@ -80,7 +80,7 @@ Un blocco ElicitBlock richiede all'utente dei parametri aggiuntivi per poter ess
 Il package \textit{blocks.utils} contiene le interfacce utili ai \textit{Block} (ElicitBlock e Filterable).
 \subsection{Package connectors}
 Il package \textit{connectors} contiene i connettori utilizzati dai blocchi.\\
-Un\glossario{Connector}permette al blocco di ottenere le informazioni che gli servono da internet. Per esempio, BlockWeather (un blocco che rappresenta il meteo) chiamerà una libreria per conoscere il meteo di una certa zona.\\
+Un Connector permette al blocco di ottenere le informazioni che gli servono da internet. Per esempio, BlockWeather (un blocco che rappresenta il meteo) chiamerà una libreria per conoscere il meteo di una certa zona.\\
 Ogni \textit{Connector} deve processare il risultato e trasformarlo nel testo che Alexa dovrà ripetere.
 \begin{figure} [H]
     \centering
@@ -91,13 +91,13 @@ Ogni \textit{Connector} deve processare il risultato e trasformarlo nel testo ch
 \newpage
 \section{App}\label{architetturaApp}
 
-L'app si trova nella repository GitHub \url{https://github.com/sgt390/ProgettoSweCodice}.
+L'app si trova nella repository GitHub: \url{https://github.com/sgt390/ProgettoSweCodice}.
 I pattern che abbiamo utilizzato sono:
 \begin{itemize}
 	\item \textbf{ModelViewViewModel} utilizzato per la gestione e scambio dati tra Model e View;
 	\item \textbf{Builder} utilizzato per il Model (Workflow);
 	\item \textbf{Singleton} utilizzato per il Model (Workflow);
-	\item \textbf{Facade} utilizzato per le connessioni ad API esterne;
+	\item \textbf{Facade} utilizzato per le connessioni ad\glossario{API}esterne;
 	\item \textbf{Strategy} utilizzato per il service;
 	\item \textbf{Template Method} utilizzato per il service.
 \end{itemize}
@@ -106,9 +106,9 @@ I pattern che abbiamo utilizzato sono:
 Nella seguente immagine viene descritta l'architettura dell'app.
 La struttura è definita da tre cartelle:
 \begin{itemize}
-	\item \textbf{model} contiene il modello delle delle classi sviluppate;
-	\item \textbf{ui} definisce la user interface in cui sono contenute le classi grafiche dell'applicazione;
-	\item \textbf{util} in cui sono contenute le funzionalità utilizzate per le chiamate esterne all'applicazione e il design pattern per lo scambio di informazioni tra modello e interfaccia grafica.
+	\item \textbf{model:} contiene il modello delle classi sviluppate;
+	\item \textbf{ui:} definisce la user interface in cui sono contenute le classi grafiche dell'applicazione;
+	\item \textbf{util:} in cui sono contenute le funzionalità utilizzate per le chiamate esterne all'applicazione e il design pattern per lo scambio di informazioni tra modello e interfaccia grafica.
 
 \end{itemize}
 \begin{figure} [H]
@@ -117,7 +117,7 @@ La struttura è definita da tre cartelle:
 	\caption{\textit{App class diagram - blocks package}}\label{Package}
 \end{figure}
 \newpage
-La seguente immagine descrive la progettazione del pattern MVVM.
+La seguente immagine descrive la progettazione del pattern \textit{MVVM$_{G}$}.
 Il ViewModel ha lo scopo di utilizzare l'istanza di Megalexa per fornire i contenuti personali dell'utente all'interfaccia grafica.
 \begin{figure} [H]
 	\centering
@@ -125,8 +125,8 @@ Il ViewModel ha lo scopo di utilizzare l'istanza di Megalexa per fornire i conte
 	\caption{\textit{App class diagram - MVVM}}\label{MVVM}
 \end{figure}
 \newpage
-La seguente immagine descrive la progettazione dei blocchi.
-Tutti i blocchi implementano dall'interfaccia Block che ha come unico metodo getInformation().
+La seguente immagine descrive la progettazione dei blocchi. \\
+Tutti i blocchi implementano l'interfaccia Block che ha come unico metodo getInformation() per ricavare informazioni aggiuntive sul blocco. \\
 I blocchi per i quali è necessario filtrare la quantità di risultati possono estendere la classe BlockFilter.
 \begin{figure} [H]
 	\centering
@@ -134,11 +134,11 @@ I blocchi per i quali è necessario filtrare la quantità di risultati possono e
 	\caption{\textit{App class diagram - Blocks}}\label{Blocks}
 \end{figure}
 \newpage
-La seguente immagine descrive la progettazione dei service.
+La seguente immagine descrive la progettazione dei service. \\
 I service sono utilizzati per le chiamate REST e per la conversione dei blocchi tramite i metodi:
 \begin{itemize}
-	\item \textbf{convertToJSON(t:T)} utilizzato per la conversione delle informazioni ottenute dall'utente in JSON e successivamente salvate in database;
-	\item \textbf{convertFromJSON(J:JSONObject)} utilizzato per la conversione delle informazioni ottenute dal database e successivamente mostrate all'utente. 
+	\item \textbf{convertToJSON(t: T):} utilizzato per la conversione delle informazioni ottenute in\glossario{JSON}e successivamente salvate in database;
+	\item \textbf{convertFromJSON(J: JSONObject):} utilizzato per la conversione delle informazioni ottenute dal database in blocchi dati e successivamente mostrati all'utente. 
 \end{itemize}
 \begin{figure} [H]
 	\centering
@@ -146,18 +146,17 @@ I service sono utilizzati per le chiamate REST e per la conversione dei blocchi 
 	\caption{\textit{App class diagram - Service}}\label{Service}
 \end{figure}
 \newpage
-La seguente immagine rappresenta la progettazione dell'UI.
-Un'activity è un’interfaccia utente mediante la quale si consultano dati o si immettono input.
-L'applicazione utilizza le seguenti activities:
+La seguente immagine rappresenta la progettazione dell'UI. \\
+L'applicazione utilizza le seguenti \textit{activities$_{G}$}:
 \begin{itemize}
 	\item \textbf{MainActivity:} permette all'utente di autenticarsi;  
-	\item \textbf{GeneralLoggedActivity: } permette all'utente di visualizzare i propri workflow; 
-	\item \textbf{CreateWorkflowActivity: } permette all'utente di creare un nuovo workflow; 
-	\item \textbf{ViewBlockActivity: } permette all'utente di visualizzare e modificare i blocchi presenti in un singolo workflow;
-	\item \textbf{CreateBlockActivity: } permette all'utente di aggiungere nuovi blocchi.
+	\item \textbf{GeneralLoggedActivity:} permette all'utente di visualizzare i propri \textit{workflow$_{G}$}; 
+	\item \textbf{CreateWorkflowActivity:} permette all'utente di creare un nuovo workflow; 
+	\item \textbf{ViewBlockActivity:} permette all'utente di visualizzare e modificare i blocchi presenti all'interno di un workflow;
+	\item \textbf{CreateBlockActivity:} permette all'utente di aggiungere nuovi blocchi.
 
 \end{itemize}
-Gli adapters sono componenti che si occupano della rappresentazione grafica dei dati e dell'interazione con essi, per ogni elemento di una lista.
+
 \clearpage
 \begin{figure} [H]
 	\centering
@@ -167,8 +166,8 @@ Gli adapters sono componenti che si occupano della rappresentazione grafica dei 
 \newpage
 La seguente immagine descrive la progettazione del ViewModel.
 \begin{itemize}
-	\item \textbf{MegAlexaViewModel:} si occupa di gestire le informazioni tra interfaccia e modello relativo ai workflow;  
-	\item \textbf{WorkflowViewModel: } si occupa di gestire le informazioni tra interfaccia e modello relativo ai blocchi;
+	\item \textbf{MegAlexaViewModel:} si occupa di gestire le informazioni tra interfaccia e modello relativo ai \textit{workflow$_{G}$};  
+	\item \textbf{WorkflowViewModel:} si occupa di gestire le informazioni tra interfaccia e modello relativo ai blocchi.
 \end{itemize}
 \begin{figure} [H]
 	\centering
@@ -176,7 +175,7 @@ La seguente immagine descrive la progettazione del ViewModel.
 	\caption{\textit{App class diagram - ViewModel}}\label{ViewModel}
 \end{figure}
 \newpage
-La seguente immagine descrive la progettazione dei blocchi che implementano i connettori.
+La seguente immagine descrive la progettazione dei blocchi che implementano i \textit{connettori$_{G}$}.
 I connettori sono utilizzati per la gestione e validazione dei dati ottenuti da chiamate esterne all'applicazione.
 \begin{figure} [H]
 	\centering
@@ -184,7 +183,7 @@ I connettori sono utilizzati per la gestione e validazione dei dati ottenuti da 
 	\caption{\textit{App class diagram - BlockConnection}}\label{BlockConnection}
 \end{figure}
 \newpage
-La seguente immagine descrive la progettazione del Model.
+La seguente immagine descrive la progettazione del Model che contiene tutti i dati inseriti dall'utente.
 \begin{figure} [H]
 	\centering
 	\includegraphics[scale=0.3]{./images/Model.png}

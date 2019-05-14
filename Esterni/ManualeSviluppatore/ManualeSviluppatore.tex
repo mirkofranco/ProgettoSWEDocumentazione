@@ -4,6 +4,21 @@
 \usepackage{ltablex}
 \usepackage{hyperref}
 \usepackage{float}
+\newcommand{\numero}[1]{
+	\section*{{\Huge #1}}
+	%\vspace{0.2cm}
+}
+\newcommand{\lettera}[1]{
+	\section*{{\Huge #1}}
+	%\vspace{0.2cm}
+}
+\newcommand{\parola}[2]{
+	\subsection*{\large #1}
+	\vspace*{-0.3cm}
+	\indent #2 
+	\vspace{-0.1cm}
+}
+
 \titlepage{}
 
 \author{Ludovico Brocca}
@@ -22,11 +37,11 @@
 	\logo
 	%devono essere compilati questi campi ogni volta
 	\begin{tabular}{c|c}
-		{\hfill \textbf{Versione}} 			& 0.2.0	\\
+		{\hfill \textbf{Versione}} 			& 1.0.0	\\
 		{\hfill\textbf{Data Redazione}} 	& 2019-03-29	\\ 
-		{\hfill\textbf{Redazione}} 			&  		Mirko Franco \\ & Stefano Zanatta \\
-		{\hfill\textbf{Verifica}} 				&  	Matteo Depascale \\
-		{\hfill\textbf{Approvazione}} 		&  	Ludovico Brocca \\
+		{\hfill\textbf{Redazione}} 	& Mirko Franco \\ & Stefano Zanatta \\
+		{\hfill\textbf{Verifica}} 				&  	Gian Marco Bratzu \\
+		{\hfill\textbf{Approvazione}} 		&  	Andrea Deidda \\
 		{\hfill\textbf{Uso}} 					& 		Esterno		\\ 
 		{\hfill\textbf{Distribuzione}} 			& 			Prof. Tullio Vardanega \\ & Prof. Riccardo Cardin \\ & Gruppo ZeroSeven	\\ & Zero12 s.r.l. \\
 		{\hfill\textbf{Email di contatto}} & zerosevenswe@gmail.com \\
@@ -45,5 +60,7 @@
 	\input{sezioni/Tecnologie}
 	\input{sezioni/Architettura}
 	\input{sezioni/Estensioni}
+	\appendix
+	\input{sezioni/Glossario}
 	\label{LastPage}
 \end{document}
