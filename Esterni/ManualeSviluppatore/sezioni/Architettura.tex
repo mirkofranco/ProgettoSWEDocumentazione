@@ -104,6 +104,13 @@ I pattern che abbiamo utilizzato sono:
 \clearpage
 
 Nella seguente immagine viene descritta l'architettura dell'app.
+La struttura è definita da tre cartelle:
+\begin{itemize}
+	\item \textbf{model} contiene il modello delle delle classi sviluppate;
+	\item \textbf{ui} definisce la user interface in cui sono contenute le classi grafiche dell'applicazione;
+	\item \textbf{util} in cui sono contenute le funzionalità utilizzate per le chiamate esterne all'applicazione e il design pattern per lo scambio di informazioni tra modello e interfaccia grafica.
+
+\end{itemize}
 \begin{figure} [H]
 	\centering
 	\includegraphics[scale=0.3]{./images/Package.png}
@@ -111,6 +118,7 @@ Nella seguente immagine viene descritta l'architettura dell'app.
 \end{figure}
 \newpage
 La seguente immagine descrive la progettazione del pattern MVVM.
+Il ViewModel ha lo scopo di utilizzare l'istanza di Megalexa per fornire i contenuti personali dell'utente all'interfaccia grafica.
 \begin{figure} [H]
 	\centering
 	\includegraphics[scale=0.27]{./images/MVVM.png}
@@ -118,20 +126,39 @@ La seguente immagine descrive la progettazione del pattern MVVM.
 \end{figure}
 \newpage
 La seguente immagine descrive la progettazione dei blocchi.
+Tutti i blocchi implementano dall'interfaccia Block che ha come unico metodo getInformation().
+I blocchi per i quali è necessario filtrare la quantità di risultati possono estendere la classe BlockFilter.
 \begin{figure} [H]
 	\centering
 	\includegraphics[scale=0.3]{./images/Blocks.png}
 	\caption{\textit{App class diagram - Blocks}}\label{Blocks}
 \end{figure}
-
+\newpage
 La seguente immagine descrive la progettazione dei service.
+I service sono utilizzati per le chiamate REST e per la conversione dei blocchi tramite i metodi:
+\begin{itemize}
+	\item \textbf{convertToJSON(t:T)} utilizzato per la conversione delle informazioni ottenute dall'utente in JSON e successivamente salvate in database;
+	\item \textbf{convertFromJSON(J:JSONObject)} utilizzato per la conversione delle informazioni ottenute dal database e successivamente mostrate all'utente. 
+\end{itemize}
 \begin{figure} [H]
 	\centering
 	\includegraphics[scale=0.3]{./images/Service.png}
 	\caption{\textit{App class diagram - Service}}\label{Service}
 \end{figure}
-
+\newpage
 La seguente immagine rappresenta la progettazione dell'UI.
+Un'activity è un’interfaccia utente mediante la quale si consultano dati o si immettono input.
+L'applicazione utilizza le seguenti activities:
+\begin{itemize}
+	\item \textbf{MainActivity:} permette all'utente di autenticarsi;  
+	\item \textbf{GeneralLoggedActivity: } permette all'utente di visualizzare i propri workflow; 
+	\item \textbf{CreateWorkflowActivity: } permette all'utente di creare un nuovo workflow; 
+	\item \textbf{ViewBlockActivity: } permette all'utente di visualizzare e modificare i blocchi presenti in un singolo workflow;
+	\item \textbf{CreateBlockActivity: } permette all'utente di aggiungere nuovi blocchi.
+
+\end{itemize}
+Gli adapters sono componenti che si occupano della rappresentazione grafica dei dati e dell'interazione con essi, per ogni elemento di una lista.
+\clearpage
 \begin{figure} [H]
 	\centering
 	\includegraphics[scale=0.3]{./images/UI.png}
@@ -139,6 +166,10 @@ La seguente immagine rappresenta la progettazione dell'UI.
 \end{figure}
 \newpage
 La seguente immagine descrive la progettazione del ViewModel.
+\begin{itemize}
+	\item \textbf{MegAlexaViewModel:} si occupa di gestire le informazioni tra interfaccia e modello relativo ai workflow;  
+	\item \textbf{WorkflowViewModel: } si occupa di gestire le informazioni tra interfaccia e modello relativo ai blocchi;
+\end{itemize}
 \begin{figure} [H]
 	\centering
 	\includegraphics[scale=0.3]{./images/ViewModel.png}
@@ -146,6 +177,7 @@ La seguente immagine descrive la progettazione del ViewModel.
 \end{figure}
 \newpage
 La seguente immagine descrive la progettazione dei blocchi che implementano i connettori.
+I connettori sono utilizzati per la gestione e validazione dei dati ottenuti da chiamate esterne all'applicazione.
 \begin{figure} [H]
 	\centering
 	\includegraphics[scale=0.3]{./images/BlockConnection.png}
