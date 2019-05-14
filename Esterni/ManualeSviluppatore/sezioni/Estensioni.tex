@@ -23,13 +23,20 @@ Segue una lista di attività da attuare che descrive i passi da eseguire per un'
 \section{Estensione Skill (lambda)}
 La Skill può essere estesa in questi modi:
 \begin{itemize}
-    \item aggiunta di un nuovo blocco \S\ref{newBlock};
-    \item aggiunta di nuove frasi per Alexa \S\ref{newFrasi};
-    \item aggiunta di un nuovo metodo d'accesso al database \S\ref{newAccesso};
-    \item aggiunta di un nuovo sistema di autenticazione \S\ref{newAuth}.
+    \item Aggiunta di un nuovo blocco \S\ref{newBlock};
+    \item Aggiunta di nuove frasi per Alexa \S\ref{newFrasi};
+    \item Aggiunta di un nuovo metodo d'accesso al database \S\ref{newAccesso};
+    \item Aggiunta di un nuovo sistema di autenticazione \S\ref{newAuth}.
 \end{itemize}
 \subsection{Nuovo blocco}\label{newBlock}
-Questa sezione verrà redatta quando il prodotto sarà completo.
+Un nuovo blocco può essere \textbf{semplice}, \textbf{filtrabile}, \textbf{filtrabile + elicit}, \textbf{elicit}.
+Per creare un nuovo blocco, bisogna seguire i seguenti passaggi:
+\begin{itemize}
+  \item Creare una classe che rappresenta il blocco ed implementa \textit{Block} (oppure implementa \textit{Filterable} se il blocco è \textbf{filtrabile} o \textbf{filtrabile + elicit}), implementando i metodi rispettando le loro firme;
+  \item Nella classe workflow, all'attributo \textit{createBlockCommands}, aggiungere una coppia chiave - funzione. La chiave è una stringa contenente il nome del blocco, la funzione è \textit{Promise<Block> => Promise.resolve(new BlockClassName(config))}, dove BlockClassName è il nome della nuova classe;
+  \item \textbf{Solo se il blocco è elicit oppure filterabile + elicit:} Creare la classe che rappresenta il connettore del blocco, implementando Connector. Questa classe deve occuparsi di tutte le connessioni con servizi esterni alla skill.
+\end{itemize}
+
 \subsection{Nuove frasi per Alexa}\label{newFrasi}
 Il file phrases-EN.json e phrases-IT.json contengono tutte le frasi personalizzate che Alexa può dire. A ogni parola chiave (uguale per tutte le lingue) sono associate delle frasi (tradotte nella lingua relativa al file).\\
 Per inserire una nuova frase, è necessario inserirla nel relativo oggetto associato alla parola chiave. E' importante inserire la frase tradotta per tutti i file phrases-LINGUA.json.\\
