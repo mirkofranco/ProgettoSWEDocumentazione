@@ -1,29 +1,28 @@
 \chapter{Utilizzo}
 \label{Utilizzo}
 \section{Utilizzo dell'applicazione MegAlexa} \label{UtilizzoApp}
+Attraverso l'applicazione MegAlexa è possibile creare dei\glossario{workflow} che verranno successivamente eseguiti da \glossario{Alexa} attraverso l'interazione vocale. Ogni workflow è composto da uno o più blocchi.
+\newpage
 \subsection{Creazione Workflow}
-Per la creazione di un workflow seguire le seguenti istruzioni.\\
-Al primo avvio dell'applicazione apparirà una schermata vuota, priva di \textit{workflow$_{G}$} come nella seguente immagine.
+Per la creazione di un\glossario{workflow} seguire le seguenti istruzioni.\\
+Al primo avvio dell'applicazione apparirà una schermata vuota, priva di workflow come nella seguente immagine:
 \begin{enumerate}
 \item Cliccare sul tasto "+" per aggiungere un nuovo workflow;
 
 	\begin{figure}[H]
 		\centering
-			\fbox{\includegraphics[width=0.35\textwidth]{images/HomeWorkflowEmpty.jpg}}
-		\caption{Elenco workflow vuoto}
+			\fbox{\includegraphics[width=0.45\textwidth]{images/HomeWorkflowEmpty.jpg}}
+		\caption{Elenco workflow vuoto.}
 	\end{figure}
-
-\item Inserire il nome del nuovo\glossario{workflow}nell'apposito campo di testo;\\
-\textbf{NOTA BENE:} all'utente non è permesso creare due o più workflow con lo stesso nome. É fortemente consigliato l'utilizzo delle sole lettere minuscole per la scrittura del nome (es. "myworkflow" e non "myWorkflow"). Inoltre si sconsiglia l'utilizzo di parole chiave scritte come nome del workflow (es. english, Alexa,..);
-
+\item Inserire il nome del nuovo\glossario{workflow}nell'apposito campo di testo mostrato nella seguente figura;\\
+\textbf{NOTA BENE:} all'utente non è permesso creare due o più workflow con lo stesso nome. E' fortemente consigliato l'utilizzo delle sole lettere minuscole per la scrittura del nome (es. "myworkflow" e non "myWorkflow"). Inoltre si sconsiglia l'utilizzo di parole chiave per il nome del workflow (es. english, Alexa,..);
 	\begin{figure}[H]
 		\centering
 			\fbox{\includegraphics[width=0.5\textwidth]{images/AddWorkflow.jpg}}
-		\caption{Schermata aggiunta workflow}
+		\caption{Schermata inserimento nome workflow.}
 	\end{figure}
-
 \newpage
-\item Per aggiungere blocchi al workflow cliccare sulla freccia in basso a destra;
+\item Per aggiungere\glossario{blocchi} al workflow cliccare sulla freccia in basso a destra;
 
 \begin{figure}[H]
 	\centering
@@ -32,7 +31,7 @@ Al primo avvio dell'applicazione apparirà una schermata vuota, priva di \textit
 \end{figure}
 
 \newpage
-\item Apparirà sulla schermata l'elenco dei blocchi che possono essere aggiunti.
+\item Apparirà nella successiva schermata l'elenco dei \glossario{blocchi} che possono essere aggiunti al workflow.
 Per aggiungere i blocchi che si desiderano seguire le istruzioni nel paragrafo successivo.
 \begin{figure}[!ht]
 	\centering
@@ -51,10 +50,10 @@ Per aggiungere i blocchi che si desiderano seguire le istruzioni nel paragrafo s
 
 \newpage
 \subsection{Aggiunta blocchi}
-Segue una spiegazione dettagliata sulla configurazione e aggiunta di ogni blocco al \textit{workflow$_{G}$}.\\
-
+Segue una spiegazione dettagliata sulla configurazione e aggiunta di ogni\glossario{blocco} ad un \textit{workflow$_{G}$}.
+I blocchi che verranno aggiungi al workflow saranno eseguiti da\glossario{Alexa} attraverso l'iterazione vocale.
 \subsubsection{Blocco di testo}
-Tale blocco consente all'utente di inserire nel proprio workflow un blocco contenente del testo.
+Il\glossario{blocco} di testo consente all'utente di inserire nel proprio\glossario{workflow} un testo.
 \begin{enumerate}
 	\item Inserire nell'apposito campo di input un testo a piacere;
 	\item Confermare e salvare cliccando sul pulsante "AGGIUNGI" per aggiungere il blocco al workflow.
@@ -66,7 +65,7 @@ Tale blocco consente all'utente di inserire nel proprio workflow un blocco conte
 \end{enumerate}
 \newpage
 \subsubsection{Blocco PIN}
-Lo scopo di questo blocco è quello di effettuare una sorta di autenticazione dell'utente prima dell'esecuzione dei blocchi Read Email, Calendar, TwitterWrite, TwitterHomeTimeline in modo da avere un minimo di privacy per l'utente.
+Lo scopo del\glossario{blocco} PIN è di effettuare un'autenticazione da parte dell'utente prima dell'esecuzione dei blocchi Read Email, Calendar, TwitterWrite, TwitterHomeTimeline.
 \begin{enumerate}
 	\item Inserire nel campo di testo il proprio PIN segreto di 4 cifre;
 	\item Cliccare sul tasto "SALVA" per confermare e salvare.
@@ -80,9 +79,9 @@ Lo scopo di questo blocco è quello di effettuare una sorta di autenticazione de
 \newpage
 
 \subsubsection{Blocco Filter} \label{filter}
-Consente di impostare il numero limite di elementi che un determinato blocco deve considerare. \\
+Il\glossario{blocco} Filter consente di impostare un numero limite di elementi che un determinato blocco deve considerare. 
 Il seguente procedimento, uguale per tutti i blocchi con filtro, spiegherà come aggiungere il blocco filtro. \\
-Come esempio illustrativo andremo ad aggiungere un filtro al blocco News. \\
+Come esempio illustrativo andremmo ad aggiungere un filtro al blocco News. \\
 \textbf{NOTA BENE:} il blocco filtro è applicabile solo ai seguenti blocchi: Stock, Crypto, FeedRSS, News, Read Email, Calendar, TwitterUserTimeline, TwitterHomeTimeline, TwitterHashtag e Sport. Il filtro viene aggiunto in automatico a tutti i questi blocchi e viene impostato per default a 10 elementi (5 per Read Mail).
 \begin{enumerate}
 	\item Cliccare sul simbolo a forma di imbuto;
@@ -92,9 +91,9 @@ Come esempio illustrativo andremo ad aggiungere un filtro al blocco News. \\
 		\caption{Blocco filtro}
 	\end{figure}
 	\newpage
-	\item Nella finestra che appare:
+	\item Successivamente:
 	\begin{enumerate}
-		\item Nella finestra che appare scegliamo il numero di elementi che ci interessa ascoltare;
+		\item Nella finestra che appare scegliamo il numero di elementi che ci interessa selezionare;
 		\item Premere "CANCEL" per annullare l'operazione di inserimento del filtro;
 		\item Oppure per confermare cliccare "CONFIRM".
 	\end{enumerate}
@@ -113,7 +112,7 @@ Come esempio illustrativo andremo ad aggiungere un filtro al blocco News. \\
 \end{enumerate}
 \newpage
 \subsubsection{Blocco FeedRSS}
-Questo blocco permette all'utente di inserire un qualsiasi feedRSS e successivamente far riprodurre al dispositivo Alexa il suo contenuto.
+Il\glossario{blocco} FeedRSS permette all'utente di inserire un qualsiasi feedRSS di interesse e successivamente il suo contenuto viene riprodotto dal dispositivo Alexa.
 \begin{enumerate}
 	\item Inserire nell'apposito campo di testo l'URL del feedRSS;
 	\item (Facoltativo) Inserire un filtro (vedi \ref{filter});
@@ -126,7 +125,7 @@ Questo blocco permette all'utente di inserire un qualsiasi feedRSS e successivam
 \end{enumerate}
 \newpage
 \subsubsection{Blocco News}
-Tale blocco consente all'utente di ascoltare le ultime news prese da un sito a scelta tra i seguenti: Sky, Google News, Ansa, BBC, CNBC e Wall Street.
+Il\glossario{blocco} News consente all'utente di ascoltare le ultime news prese da un sito a scelta tra i seguenti: Sky, Google News, Ansa, BBC, CNBC e Wall Street.
 \begin{enumerate}
 	\item (Facoltativo) Inserire un filtro (vedi \ref{filter});
 	\item Cliccare su un tasto a piacere tra quelli elencati per scegliere il sito da cui ricevere news.
@@ -139,7 +138,7 @@ Tale blocco consente all'utente di ascoltare le ultime news prese da un sito a s
 \newpage
 
 \subsubsection{Blocco Sport}
-Con l'aggiunta di questo blocco l'utente potrà ascoltare le ultime news riguardanti uno sport a sua scelta tra i seguenti: tennis, calcio, basket americano, formula1, football americano e motogp.
+Con l'aggiunta del\glossario{blocco} Sport l'utente potrà ascoltare le ultime news riguardanti uno sport a sua scelta tra i seguenti: tennis, calcio, basket americano, formula1, football americano e motogp.
 \begin{enumerate}
 	\item (Facoltativo) Inserire un filtro (vedi \ref{filter});
 	\item Cliccare su un tasto a piacere tra quelli proposti per scegliere il sito da cui ricevere news sullo sport.
@@ -151,7 +150,7 @@ Con l'aggiunta di questo blocco l'utente potrà ascoltare le ultime news riguard
 \end{enumerate}
 \newpage
 \subsubsection{Blocco Crypto}
-Con questo blocco l'utente può scegliere da quale feedRSS ascoltare le ultime news sulle cryptovalute.
+Con il\glossario{blocco} Crypto l'utente può scegliere da quale feedRSS ascoltare le ultime news sulle cryptovalute.
 \begin{enumerate}
 	\item (Facoltativo) Inserire un filtro (vedi \ref{filter});
 	\item Cliccare su un tasto a piacere tra quelli proposti per scegliere da quale FeedRSS ricevere news sulle cryptovalute.
@@ -163,7 +162,7 @@ Con questo blocco l'utente può scegliere da quale feedRSS ascoltare le ultime n
 \end{enumerate}
 \newpage
 \subsubsection{Blocco Stock}
-Con questo blocco l'utente può scegliere da quale feedRSS ascoltare le ultime news sull'andamento della borsa economica.
+Con il\glossario{blocco} Stock l'utente può scegliere da quale feedRSS ascoltare le ultime news sull'andamento della borsa economica.
 \begin{enumerate}
 	\item (Facoltativo) Inserire un filtro (vedi \ref{filter});
 	\item Cliccare su un feedRSS a scelta per scegliere da quale borsa ricevere news.
@@ -175,8 +174,8 @@ Con questo blocco l'utente può scegliere da quale feedRSS ascoltare le ultime n
 \end{enumerate}
 \newpage
 \subsubsection{Blocco List}
-Questo blocco permette all'utente di creare, aggiungere e modificare degli elementi di testo di una lista.
-È possibile modificare la lista tramite app oppure tramite interazione con l'\textit{Amazon Echo$_{G}$}. \\ 
+Il\glossario{blocco} List permette all'utente di creare, aggiungere e modificare degli elementi di testo di una lista.
+È possibile modificare la lista tramite \glossario{applicazione} oppure tramite l'interazione vocale con l'\textit{Amazon Echo$_{G}$}. \\ 
 Cliccare sul tasto "CONFERMA" per aggiungere al proprio workflow una lista vuota.
 \begin{figure}[!ht]
 	\centering
@@ -220,7 +219,7 @@ Cliccare sul tasto "CONFERMA" per aggiungere al proprio workflow una lista vuota
 \end{itemize}
 \newpage
 \subsubsection{Blocco TwitterHashtag} \label{twitterHa}
-L'utente con l'aggiunta di questo blocco può effettuare una ricerca dei tweets su Twitter tramite hashtag.
+L'utente con l'aggiunta del\glossario{blocco} TwitterHashtag può effettuare una ricerca dei tweets su Twitter tramite\glossario{hashtag} che verrà successivamente riprodotta da Alexa.
 
 \begin{enumerate}
 	\item Nella schermata di elenco dei blocchi cliccare sulla voce "Twitter";
@@ -242,7 +241,7 @@ L'utente con l'aggiunta di questo blocco può effettuare una ricerca dei tweets 
 \end{enumerate}
 \newpage
 \subsubsection{Blocco TwitterUserTimeline} \label{twitterU}
-L'utente inserendo questo blocco nel suo\glossario{workflow}potrà ascoltare i tweets di un altro utente a sua scelta tramite \textit{Alexa$_{G}$}.
+Attraversol'aggiunta del blocco TwitterUserTimeline al\glossario{workflow} l'utente potrà ascoltare i tweets di un altro utente a sua scelta tramite \textit{Alexa$_{G}$}.
 \begin{enumerate}
 	\item Nella schermata di elenco dei blocchi cliccare su "Twitter";
 	\item Cliccare il blocco "Tweets di un utente" come mostrato in figura;
@@ -263,7 +262,7 @@ L'utente inserendo questo blocco nel suo\glossario{workflow}potrà ascoltare i t
 \end{enumerate}
 \newpage
 \subsubsection{Blocco TwitterHomeTimeline} \label{twitterHo}
-L'utente inserendo questo blocco nel suo workflow potrà ascoltare i tweets presenti sulla sua home. \\
+Con l'aggiunta del\glossario{blocco} TwitterHomeTimeline l'utente potrà ascoltare i tweets presenti sulla sua home durente l'utilizzo di Alexa.\\
 \textbf{NOTA BENE:} una volta effettuato l'accesso con l'account Twitter non è più possibile cambiare account all'interno dello stesso workflow.
 \begin{enumerate}
 	\item Nella schermata di elenco dei blocchi cliccare su "Twitter";
@@ -304,7 +303,7 @@ L'utente inserendo questo blocco nel suo workflow potrà ascoltare i tweets pres
 \end{enumerate}
 \newpage
 \subsubsection{Blocco TwitterWrite} \label{twitterW}
-Questo blocco consente all'utente di pubblicare dei tweets tramite Alexa sul suo profilo Twitter. \\
+Il\glossario{blocco} TwitterWrite consente all'utente di pubblicare dei tweets durrante l'utilizzo di\glossario{Alexa} sul suo profilo Twitter. \\
 \textbf{NOTA BENE:} una volta effettuato l'accesso con l'account Twitter non è più possibile cambiare account all'interno dello stesso workflow. Il testo del tweet da pubblicare bisogna dettarlo durante l'esecuzione del workflow ad Alexa.
 \begin{enumerate}
 	\item Nella schermata di elenco dei blocchi cliccare su "Twitter";
@@ -344,7 +343,8 @@ Questo blocco consente all'utente di pubblicare dei tweets tramite Alexa sul suo
 \end{enumerate}
 \newpage
 \subsubsection{Blocco Weather}
-Il blocco Weather consente all'utente di sapere che meteo c'è in questo momento o nei prossimi giorni di una determinata città.
+\label{Blocchi}
+Il\glossario{blocco} Weather consente all'utente di avere informazioni riguardanti il meteo presente durante  l'utilizzo o nei prossimi giorni di una determinata città.
 \begin{enumerate}
 	\item Inserire il nome della città nel campo di testo;
 	\item Premere "AGGIUNGI" per confermare.
@@ -356,7 +356,7 @@ Il blocco Weather consente all'utente di sapere che meteo c'è in questo momento
 \end{enumerate}
 \newpage
 \subsubsection{Blocco ReadEmail}
-Con questo blocco l'utente può ascoltare tramite Alexa le sue email, di Gmail, non ancora lette.
+Attraverso il\glossario{blocco} ReadEmail l'utente può ascoltare tramite Alexa le email non ancora lette del servizio di posta elettronica\glossario{Gmail}.
 \begin{enumerate}
 	\item Nell'elenco dei blocchi cliccare sul blocco "Google";
 	\item Nella schermata che appare premere "Gmail";
@@ -386,7 +386,7 @@ Con questo blocco l'utente può ascoltare tramite Alexa le sue email, di Gmail, 
 \end{enumerate}
 \newpage
 \subsubsection{Blocco Calendar}
-Il blocco calendario permette all'utente di ascoltare o aggiungere i suoi appuntamenti di Google calendar tramite l'Amazon \textit{echo$_{G}$}.
+Il\glossario{blocco} calendario permette all'utente di ascoltare o aggiungere i suoi appuntamenti di \textit{Google Calendar$_{G}$}  tramite \textit{Alexa$_{G}$} .
 \begin{enumerate}
 	\item Nell'elenco dei blocchi cliccare sul blocco "Google";
 	\item Nella schermata che appare premere "Calendario";
@@ -416,7 +416,7 @@ Il blocco calendario permette all'utente di ascoltare o aggiungere i suoi appunt
 \end{enumerate}
 \newpage
 \subsection{Salvataggio workflow creato} \label{saveWorkflow}
-Una volta inseriti tutti i blocchi, cliccare sul pulsante in alto a destra della schermata per salvare e creare il workflow. \\
+Una volta inseriti tutti i \textit{blocchi$_{G}$}, cliccare sul pulsante in alto a destra della schermata per salvare e creare il workflow. \\
 	\begin{figure}[!ht]
 		\centering
 		\fbox{\includegraphics[scale=0.24]{images/SaveWorkflow.jpg}}
@@ -429,7 +429,7 @@ Una volta inseriti tutti i blocchi, cliccare sul pulsante in alto a destra della
 	\end{figure}
 \newpage
 \subsection{Visualizzare blocchi creati nel workflow}
-Per avere informazioni sui blocchi contenuti in un workflow, andare nella schermata che mostra l'elenco di tutti i workflow disponibili  e cliccare sul nome del workflow che ci interessa. \\
+Per avere informazioni sui \textit{blocchi$_{G}$} contenuti in un workflow, andare nella schermata che mostra l'elenco di tutti i workflow disponibili  e cliccare sul nome del workflow che ci interessa. \\
 In questo modo verrà visualizzato l'elenco dei blocchi al suo interno come mostrato nella seguente figura: \\
 \begin{figure}[!ht]
 	\centering
@@ -439,6 +439,7 @@ In questo modo verrà visualizzato l'elenco dei blocchi al suo interno come most
 \newpage
 
 \subsection{Modificare l'ordine dei blocchi}
+Per effettuare la modifica dell'ordine dei \textit{blocchi$_{G}$} all'interno di un \textit{workflow$_{G}$} seguire i seguenti passaggi:
 \begin{enumerate}
 	\item Andare nella schermata di elenco blocchi del workflow;
 	\begin{figure}[!ht]
@@ -447,7 +448,7 @@ In questo modo verrà visualizzato l'elenco dei blocchi al suo interno come most
 		\caption{Schermata blocchi del workflow}
 	\end{figure}
 	\newpage
-	\item Tenere premuto per un paio di secondi sul blocco interessato e trascinarlo nella posizione desiderata;
+	\item Tenere premuto per un paio di secondi il blocco d'interesse e trascinarlo nella posizione desiderata;
 	\begin{figure}[!ht]
 		\centering
 		\fbox{\includegraphics[scale=0.27]{images/ShiftBlock2.jpg}}
@@ -462,6 +463,7 @@ In questo modo verrà visualizzato l'elenco dei blocchi al suo interno come most
 \end{enumerate}
 \newpage
 \subsection{Eliminare un blocco nel workflow}
+Per effettuare l'eliminazione di un \textit{blocco$_{G}$} all'interno di un \textit{workflow$_{G}$} seguire i seguenti passaggi:
 \begin{enumerate}
 	\item Andare nella schermata che mostra l'elenco dei blocchi del workflow;
 	\begin{figure}[!ht]
@@ -496,6 +498,7 @@ In questo modo verrà visualizzato l'elenco dei blocchi al suo interno come most
 \end{enumerate}
 \newpage
 \subsection{Cambiare nome al workflow}
+Per cambiare il nome di un \textit{workflow$_{G}$} seguire i seguenti passaggi:
 \begin{enumerate}
 	\item Andare nella schermata che mostra l'elenco dei blocchi del workflow e cliccare sul nome del workflow scritto in alto nella schermata;
 	\begin{figure}[!ht]
@@ -525,6 +528,7 @@ In questo modo verrà visualizzato l'elenco dei blocchi al suo interno come most
 \end{enumerate}
 \newpage
 \subsection{Eliminare un workflow} \label{deleteWorkflow}
+Per effettuare l'eliminazione di un \textit{workflow$_{G}$} seguire i seguenti passaggi:
 \begin{enumerate}
 	\item Andare nella schermata di elenco workflow e tenere premuto per qualche secondo sul nome del workflow da eliminare;
 	\begin{figure}[!ht]
@@ -556,7 +560,7 @@ In questo modo verrà visualizzato l'elenco dei blocchi al suo interno come most
 \begin{itemize}
 \item  \textbf{Configurazione skill MegAlexa}\\
 \label{Configurazione MegAlexa}
-Per poter utilizzare la \glossario{skill} \glossario{MegAlexa} è necessario configurare il proprio account Amazon con la skill  attraverso l'applicazione Amazon Alexa installata sul dispositivo mobile. Per fare ciò seguire i seguenti passi:
+Per poter utilizzare la \textit{skill$_{G}$} \textit{MegAlexa$_{G}$} è necessario configurare il proprio \textit{account$_{G}$} Amazon con la skill  attraverso l'applicazione Amazon Alexa installata sul dispositivo mobile. Per fare ciò seguire i seguenti passi:
 \begin{enumerate}
 	\item  Cliccare sulla voce "Skill e giochi"  presente nella barra laterale nell'applicazione Amazon Alexa ;
 	
@@ -588,7 +592,7 @@ Per poter utilizzare la \glossario{skill} \glossario{MegAlexa} è necessario con
     	\caption{Abilitazione skill nell'applicazione Amazon Alexa}
     \end{figure}
     \newpage
-    \item Collegare l'account Amazon con la \glossario{skill}: dopo aver eseguito il punto numero 4, si verrà reindirizzati a una pagina di login di Amazon nella quale si dovranno inserire i dati relativi all'\glossario{account} Amazon che è in uso; \\
+    \item Collegare l'\textit{account$_{G}$} Amazon con la \glossario{skill}: dopo aver eseguito il punto numero 4, si verrà reindirizzati a una pagina di login di Amazon nella quale si dovranno inserire i dati relativi all'\glossario{account} Amazon che è in uso; \\
     
         \begin{figure}[H]
     	\centering
@@ -602,18 +606,18 @@ Per poter utilizzare la \glossario{skill} \glossario{MegAlexa} è necessario con
        \begin{figure}[H]
      	\centering
      	\includegraphics[width=0.5\textwidth]{images/AutenticazioneEseguita.png}
-     	\caption{Collegamento Skill con successo}
+     	\caption{Collegamento skill con successo}
      \end{figure}
     
     
     Ora il proprio account Amazon è collegato con la skill \glossario{MegAlexa} e si può procedere con l'esecuzione della skill
-    attraverso l'iterazione vocale utilizzando l'\glossario{Echo}.
+    attraverso l'iterazione vocale utilizzando l'\textit{Echo$_{G}$} .
     
 \end{enumerate}
 \newpage
 \item  \textbf{Esecuzione skill MegAlexa}\label{Esecuzione skill}
 
-Per avviare la skill MegAlexa attraverso l'\glossario{Echo} occorre pronunciare uno dei comandi vocali di avvio come ad esempio: "Alexa, open MegAlexa", oppure "Alexa, start MegAlexa".
+Per avviare la skill MegAlexa attraverso l'\textit{Echo$_{G}$}  occorre pronunciare uno dei comandi vocali di avvio come ad esempio: "Alexa, open MegAlexa", oppure "Alexa, start MegAlexa".
       
 Se \glossario{Alexa} risponde con una richiesta dei configurazione dell'account Amazon con la skill MegAlexa allora  bisogna seguire le istruzioni indicate nella sezione precedente
 \S\ref{Configurazione MegAlexa} "Configurazione Skill MegAlexa". 
@@ -624,7 +628,7 @@ Se \glossario{Alexa} risponde con una richiesta dei configurazione dell'account 
 	\caption{Richiesta Autenticazione}
 \end{figure}
 
-Altrimenti si può procedere al successivo passaggio con l'esecuzione della skill \glossario{MegAlexa} attraverso l'iterazione vocale con Alexa. \\
+Altrimenti si può procedere al successivo passaggio con l'esecuzione della skill\glossario{MegAlexa} attraverso l'iterazione vocale con Alexa. \\
 
 \begin{figure}[!ht]
 	\centering
@@ -634,12 +638,12 @@ Altrimenti si può procedere al successivo passaggio con l'esecuzione della skil
 
 \end{itemize}
 
-A questo punto l'utente può avviare i \glossario{workflow} creati nell'\glossario{applicazione}.\\
+A questo punto l'utente può avviare i \glossario{workflow} creati nell'\glossario{applicazione} MegAlexa.\\
 
 \newpage
 \section{Voice Dialog Flow}
 \label{VDF}
-Per riuscire a comprendere meglio come avviene l'interazione vocale con Alexa sono riportati dei Voice Dialog Flow, cioè degli esempi di conversazione.\\
+Per riuscire a comprendere meglio come avviene l'interazione vocale con \textit{Alexa$_{G}$} sono riportati dei Voice Dialog Flow, cioè degli esempi di conversazione.\\
 
 Le interazioni sono strutturate come segue:
 \begin{itemize}

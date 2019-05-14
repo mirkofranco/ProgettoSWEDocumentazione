@@ -1,5 +1,6 @@
 \begin{flushleft}
     \chapter{Consuntivo di periodo e preventivo a finire}
+    \label{consuntivoDiPeriodo}
     Il \textit{Consuntivo di periodo} contiene il prospetto economico che riporta le spese effettivamente sostenute. Vengono riportate le ore impiegate per svolgere i compiti preventivati, sia per
     ruolo che per persona. Il bilancio è ottenuto facendo la differenza di ore tra il preventivo e il consuntivo.\\
     Il bilancio può essere:
@@ -155,13 +156,13 @@ In questa tabella  sono riportate le differenze tra le ore di lavoro previste pe
   	\multirow{2}{*}{Nominativo} & \multicolumn{6}{c|}{Ore per ruolo} & \multirow{2}{*}{Ore totali} \\ \cline{2-7}
   					  & Re & Am & An & Pt & Ve & Pr &      \\ \hline
   	\endhead
-  	Mirko Franco       &   &    &    &    &  &   & 0        \\ \hline
-  	Bianca Ciuche      &   &    &    &    &  &   & 0        \\ \hline
-  	Stefano Zanatta    &   &    &  & +5 &   & -5  & 0        \\ \hline
-  	Andrea Deidda      &   &  &   &   &   &   & 0  		\\ \hline
-  	Ludovico Brocca    &   &  &   &   &  &   & 0        \\ \hline
-  	Matteo Depascale   &   &  &   &   & -5  & +5  & 0  		\\ \hline
-  	Gian Marco Bratzu  &   &  &   &   &  &   & 0        \\ \hline
+  	Mirko Franco       &   &    &  +2  &    &  & -5  & -3       \\ \hline
+  	Bianca Ciuche      &   &    & +2   &    & +2  &   & +4        \\ \hline
+  	Stefano Zanatta    &   &    &  & +1 &   &  & +1        \\ \hline
+  	Andrea Deidda      &   &  &   &   &   +2 &   -5 & -3  		\\ \hline
+  	Ludovico Brocca    &   &  &   & +4  &  &  -4 & 0        \\ \hline
+  	Matteo Depascale   &   &  &   & +1   &   +1 &   & +2 		\\ \hline
+  	Gian Marco Bratzu  &   &  &   & -1  &  &   & -1        \\ \hline
     
    	\end{tabularx}
   	\caption{Differenza tra le ore di lavoro previste per ogni membro del gruppo con le ore realmente impiegate }
@@ -299,15 +300,15 @@ La tabella riporta la differenza delle ore tra preventivo e consuntivo suddivise
 				\hline
 				\textcolor{white}{Ruolo} & \textcolor{white}{Ore} & \textcolor{white}{Costo in \euro}\\
 				\hline
-				Responsabile   & 11.50(+0.5)	&  	345 	\\ 
-				Amministratore & 16(5)	&  	320 	\\ 
-				Analista       & 8.83(3.17) &   220.75\\ 
-				Progettista    & 16(-2)&   2530	\\ 
-				Verificatore   & 70.50	(-1.50)&  	1057,50	\\ 
-				Programmatore  & 28.50(-3.50)&   427.50	\\ \hline
-				\textbf{Totale}& \textbf{161.33} & \textbf{2942.75}	\\ \hline 
+				Responsabile   & 11(+0.1)	&  	330(+30)	\\ 
+				Amministratore & 15(+6)	&  	300(+120)	\\ 
+				Analista       & 10(+2) &   300(+50)\\ 
+				Progettista    & 24 & 528   \\ 
+				Verificatore   & 66	(+3)&  	990 (+45) 	\\ 
+				Programmatore  & 30(-2)&   	450(-75)\\ \hline
+				\textbf{Totale}& \textbf{156} & \textbf{2848}	\\ \hline 
 				\textbf{Totale preventivato}& \textbf{163} & \textbf{3018}\\ \hline 
-				\textbf{Differenza}& \textbf{+1.67} & \textbf{+75.25}	\\ \hline  
+				\textbf{Differenza}& \textbf{+7} & \textbf{+170}	\\ \hline  
 			\end{tabular}
 			
 			\caption{Differenza delle ore tra preventivo e consuntivo divise per ruolo} 
@@ -326,12 +327,12 @@ La tabella riporta la differenza delle ore tra preventivo e consuntivo suddivise
 				\multirow{2}{*}{Nominativo} & \multicolumn{6}{c|}{Ore per ruolo} & \multirow{2}{*}{Ore totali} \\ \cline{2-7}
 				& Re & Am & An & Pt & Ve & Pr &      \\ \hline
 				\endhead
-				Mirko Franco       &   &  &   & 2.17   & 2 &  & 4.17        \\ \hline
+				Mirko Franco       &   &  &   & +2   & +2 &  & +4        \\ \hline
 				Bianca Ciuche      &   &   &  &    &  &  & 0        \\ \hline
-				Stefano Zanatta    &   & 5 & 4    &	 -2   & -1.5&  -6.5 & -1        \\ \hline
+				Stefano Zanatta    &   & +5 & -2    &	+1   & -5 &  & -1        \\ \hline
 				Andrea Deidda      &   &  &   &   &  &   & 0  		\\ \hline
-				Ludovico Brocca    &   &  &   &    &  -2&  & -2        \\ \hline
-				Matteo Depascale   &  0.5 & &  &  &  &    & 0.5  		\\ \hline
+				Ludovico Brocca    &   &  +1 &   &    &  -1 &  & 0        \\ \hline
+				Matteo Depascale   & +1   & &  &  &  &    & +1  		\\ \hline
 				Gian Marco Bratzu  & &  &   &   &  &   & 0        \\ \hline
 				
 			\end{tabularx}
@@ -362,8 +363,8 @@ La tabella riporta la differenza delle ore tra preventivo e consuntivo suddivise
 				Revisione analisi& 715,00 & 765,00 \\ 	
 				Progettazione della base tecnologica& 3642,00 & 3567,00\\ 
 				Progettazione di dettaglio e codifica& 6404,00   & 6450,00\\ 
-				Validazione e collaudo & 3018,00 & 2942.75\\ \hline
-				\textbf{Totale rendicontato}& \textbf{13779,00} & \textbf{13694,00}	\\ \hline   
+				Validazione e collaudo & 3018,00 & 2848,00\\ \hline
+				\textbf{Totale rendicontato}& \textbf{13779,00} & \textbf{13630,00}	\\ \hline   
 				
 			\end{tabular}
 			\caption{Preventivo a finire} 
@@ -375,13 +376,13 @@ La tabella riporta la differenza delle ore tra preventivo e consuntivo suddivise
 				\multirow{2}{*}{Nominativo} & \multicolumn{6}{c|}{Ore per ruolo} & \multirow{2}{*}{Ore totali} \\ \cline{2-7}
 				& Re & Am & An & Pt & Ve & Pr &      \\ \hline
 				\endhead
-				Mirko Franco       &   & -2 &   &  +0.17  & 8 & -2 & +4.17    \\ \hline
-				Bianca Ciuche      &   &  -2 & -1  &    &  &  & -3        \\ \hline
-				Stefano Zanatta    &   & +1 & +2   &  & +4.5 & -11.5   &  -4      \\ \hline
-				Andrea Deidda      &   & +2 &   &   & -1 & 2   & +3  		\\ \hline
-				Ludovico Brocca    &   &  &   &    &   & -6  & -6        \\ \hline
-				Matteo Depascale   &  0.5 & -1 &  & +2 & -6  & -1  & -5.5 		\\ \hline
-				Gian Marco Bratzu  & &  &   &   & -2 & +2  & 0        \\ \hline
+				Mirko Franco       &   & -2 &   +2 &    & +9 & -7 & +2  \\ \hline
+				Bianca Ciuche      & +2  &  -2 & -1  &    &  +2 &  +3 & +4       \\ \hline
+				Stefano Zanatta    &   & +4 &    & +1  & +2 & -8   &  -1      \\ \hline
+				Andrea Deidda      &   & &   &   & +2  & -3 & -1  		\\ \hline
+				Ludovico Brocca    & +1  &+1  & -1  & +4   &   & -6  & -1        \\ \hline
+				Matteo Depascale   &  +1 & -1 &  & +3 &  +2 & -6  & -1	\\ \hline
+				Gian Marco Bratzu  & &  &   & -1  & -2 & +2  & -1        \\ \hline
 				
 			\caption{Differenza tra le ore di lavoro previste per ogni membro del gruppo con le ore realmente impiegate }
 	\end{longtable}
