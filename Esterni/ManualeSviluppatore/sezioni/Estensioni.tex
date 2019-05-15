@@ -63,10 +63,10 @@ Il file contenente la richiesta dell'utente (dal Alexa) contiene anche un \textb
 Questo sistema è basato su oauth, anche se tutta la parte a basso livello è gestita da Amazon.\\
 Per aggiungere un altro sistema di autenticazione basato su oauth:
 \begin{itemize}
-	\item creare una nuova configurazione Oauth e ottenere i dati d'accesso (URI, clientID, secret...);
-	\item aprire il pannello di controllo di Alexa\footnote{\url{https://developer.amazon.com/alexa/console/ask}};
-	\item accedere alla skill MegAlexa;
-	\item aprire la sezione "account linking";
-	\item inserire i dati richiesti, generati da \textit{OAuth$_{G}$};
-	\item nella skill MegAlexa, modificare la funzione \textit{credentialsByAccessToken}, nella classe \textbf{User}, così che sia compatibile con il nuovo servizio (ciò che cambia sarà l'ID e la chiamata GET per ottenerlo).
+	\item Creare una nuova configurazione Oauth e ottenere i dati d'accesso (URI, clientID, secret...);
+	\item Aprire il pannello di controllo di Alexa\footnote{\url{https://developer.amazon.com/alexa/console/ask}};
+	\item Accedere alla skill MegAlexa;
+	\item Aprire la sezione "account linking";
+	\item Inserire i dati richiesti, generati da \textit{OAuth$_{G}$};
+	\item Nella skill MegAlexa, modificare la funzione \textit{credentialsByAccessToken}, nella classe \textbf{User}, così che sia compatibile con il nuovo servizio (ciò che cambia sarà l'ID e la chiamata GET per ottenerlo).
 \end{itemize}
